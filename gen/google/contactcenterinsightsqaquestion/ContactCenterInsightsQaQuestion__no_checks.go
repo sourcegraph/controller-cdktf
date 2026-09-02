@@ -56,6 +56,10 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestion) validateInterpolationForAttr
 	return nil
 }
 
+func (c *jsiiProxy_ContactCenterInsightsQaQuestion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContactCenterInsightsQaQuestion) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (c *jsiiProxy_ContactCenterInsightsQaQuestion) validatePutTuningMetadataPar
 	return nil
 }
 
+func (c *jsiiProxy_ContactCenterInsightsQaQuestion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateContactCenterInsightsQaQuestion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -132,7 +140,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaQuestion) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaQuestion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ContactCenterInsightsQaQuestion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

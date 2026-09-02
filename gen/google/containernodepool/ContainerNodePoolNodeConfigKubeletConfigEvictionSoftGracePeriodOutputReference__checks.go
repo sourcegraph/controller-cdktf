@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeri
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -227,7 +227,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeri
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeri
 	return nil
 }
 
-func validateNewContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerNodePoolNodeConfigKubeletConfigEvictionSoftGracePeriodOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

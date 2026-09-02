@@ -12,7 +12,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjects
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjects
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigMongodbSourceConfigExcludeObjects
 	return nil
 }
 
-func validateNewDatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDatastreamStreamSourceConfigMongodbSourceConfigExcludeObjectsDatabasesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaireasoningengine/internal"
 )
 
 type VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -48,7 +48,7 @@ type VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference 
 
 // The jsii proxy struct for VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference
 type jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOu
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOu
 }
 
 
-func NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference {
+func NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReferen
 	j := jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference",
+		"@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReferen
 	return &j
 }
 
-func NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference_Override(v VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference_Override(v VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference",
+		"@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOu
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOu
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -455,8 +455,8 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOu
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -468,16 +468,16 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOu
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOu
 	)
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecSecretEnvSecretRefOu
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

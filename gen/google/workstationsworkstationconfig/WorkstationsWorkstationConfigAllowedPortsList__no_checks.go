@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsList) validateGetPar
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigAllowedPortsList) validateSetWra
 	return nil
 }
 
-func validateNewWorkstationsWorkstationConfigAllowedPortsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkstationsWorkstationConfigAllowedPortsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleContainerClusterClusterAutoscalingAutoProvisioningDefau
 	return nil
 }
 
-func validateNewGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleContainerClusterClusterAutoscalingAutoProvisioningDefaultsManagementUpgradeOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

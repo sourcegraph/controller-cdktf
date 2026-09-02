@@ -40,11 +40,11 @@ func (l *jsiiProxy_LocationPlaceIndexDataSourceConfigurationOutputReference) val
 	return nil
 }
 
-func (l *jsiiProxy_LocationPlaceIndexDataSourceConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LocationPlaceIndexDataSourceConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LocationPlaceIndexDataSourceConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LocationPlaceIndexDataSourceConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_LocationPlaceIndexDataSourceConfigurationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_LocationPlaceIndexDataSourceConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LocationPlaceIndexDataSourceConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLocationPlaceIndexDataSourceConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLocationPlaceIndexDataSourceConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

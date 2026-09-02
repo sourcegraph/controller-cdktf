@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/developerconnectconnection/internal"
 )
 
 type DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOut
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Username() *string
 	UserTokenSecretVersion() *string
 	SetUserTokenSecretVersion(val *string)
@@ -46,7 +46,7 @@ type DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOut
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOut
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOut
 
 // The jsii proxy struct for DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference
 type jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference) ComplexObjectIndex() interface{} {
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorize
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -181,7 +181,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorize
 }
 
 
-func NewDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference {
+func NewDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -190,7 +190,7 @@ func NewDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential
 	j := jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -198,11 +198,11 @@ func NewDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential
 	return &j
 }
 
-func NewDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference_Override(d DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference_Override(d DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorize
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,11 +303,11 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorize
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -431,8 +431,8 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorize
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -444,24 +444,24 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorize
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -469,7 +469,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorize
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

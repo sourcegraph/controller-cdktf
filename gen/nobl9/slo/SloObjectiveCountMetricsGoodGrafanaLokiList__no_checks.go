@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodGrafanaLokiList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodGrafanaLokiList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodGrafanaLokiList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodGrafanaLokiList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodGrafanaLokiList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodGrafanaLokiList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodGrafanaLokiList) validateSetWraps
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsGoodGrafanaLokiListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveCountMetricsGoodGrafanaLokiListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

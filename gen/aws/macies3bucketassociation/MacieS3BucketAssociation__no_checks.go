@@ -56,6 +56,10 @@ func (m *jsiiProxy_MacieS3BucketAssociation) validateInterpolationForAttributePa
 	return nil
 }
 
+func (m *jsiiProxy_MacieS3BucketAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MacieS3BucketAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (m *jsiiProxy_MacieS3BucketAssociation) validateOverrideLogicalIdParameters
 }
 
 func (m *jsiiProxy_MacieS3BucketAssociation) validatePutClassificationTypeParameters(value *MacieS3BucketAssociationClassificationType) error {
+	return nil
+}
+
+func (m *jsiiProxy_MacieS3BucketAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_MacieS3BucketAssociation) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_MacieS3BucketAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MacieS3BucketAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

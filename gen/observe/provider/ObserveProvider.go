@@ -5,13 +5,13 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/provider/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs observe}.
 type ObserveProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -19,7 +19,7 @@ type ObserveProvider interface {
 	SetApiToken(val *string)
 	ApiTokenInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	Customer() *string
@@ -72,7 +72,7 @@ type ObserveProvider interface {
 	SetSourceFormat(val *string)
 	SourceFormatInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -88,6 +88,19 @@ type ObserveProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAlias()
 	ResetApiToken()
 	ResetDefaultRematerializationMode()
@@ -118,11 +131,20 @@ type ObserveProvider interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for ObserveProvider
 type jsiiProxy_ObserveProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_ObserveProvider) Alias() *string {
@@ -165,8 +187,8 @@ func (j *jsiiProxy_ObserveProvider) ApiTokenInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ObserveProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_ObserveProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -495,8 +517,8 @@ func (j *jsiiProxy_ObserveProvider) SourceFormatInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_ObserveProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_ObserveProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -576,7 +598,7 @@ func NewObserveProvider(scope constructs.Construct, id *string, config *ObserveP
 	j := jsiiProxy_ObserveProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.provider.ObserveProvider",
+		"@cdktn/provider-observe.provider.ObserveProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -589,7 +611,7 @@ func NewObserveProvider_Override(o ObserveProvider, scope constructs.Construct, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.provider.ObserveProvider",
+		"@cdktn/provider-observe.provider.ObserveProvider",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -740,17 +762,17 @@ func (j *jsiiProxy_ObserveProvider)SetUserPassword(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a ObserveProvider resource upon running "cdktf plan <stack-name>".
-func ObserveProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a ObserveProvider resource upon running "cdktn plan <stack-name>".
+func ObserveProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateObserveProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.provider.ObserveProvider",
+		"@cdktn/provider-observe.provider.ObserveProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -785,7 +807,7 @@ func ObserveProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.provider.ObserveProvider",
+		"@cdktn/provider-observe.provider.ObserveProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -804,7 +826,7 @@ func ObserveProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.provider.ObserveProvider",
+		"@cdktn/provider-observe.provider.ObserveProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -823,7 +845,7 @@ func ObserveProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.provider.ObserveProvider",
+		"@cdktn/provider-observe.provider.ObserveProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -836,7 +858,7 @@ func ObserveProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-observe.provider.ObserveProvider",
+		"@cdktn/provider-observe.provider.ObserveProvider",
 		"tfResourceType",
 		&returns,
 	)
@@ -862,6 +884,17 @@ func (o *jsiiProxy_ObserveProvider) OverrideLogicalId(newLogicalId *string) {
 		o,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (o *jsiiProxy_ObserveProvider) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := o.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -1073,6 +1106,24 @@ func (o *jsiiProxy_ObserveProvider) ToTerraform() interface{} {
 		o,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_ObserveProvider) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		o,
+		"with",
+		args,
 		&returns,
 	)
 

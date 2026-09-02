@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/migrationcenterpreferenceset/internal"
 )
 
 type MigrationCenterPreferenceSetTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type MigrationCenterPreferenceSetTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type MigrationCenterPreferenceSetTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type MigrationCenterPreferenceSetTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type MigrationCenterPreferenceSetTimeoutsOutputReference interface {
 
 // The jsii proxy struct for MigrationCenterPreferenceSetTimeoutsOutputReference
 type jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) UpdateIn
 }
 
 
-func NewMigrationCenterPreferenceSetTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MigrationCenterPreferenceSetTimeoutsOutputReference {
+func NewMigrationCenterPreferenceSetTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MigrationCenterPreferenceSetTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMigrationCenterPreferenceSetTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewMigrationCenterPreferenceSetTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeoutsOutputReference",
+		"@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewMigrationCenterPreferenceSetTimeoutsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewMigrationCenterPreferenceSetTimeoutsOutputReference_Override(m MigrationCenterPreferenceSetTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMigrationCenterPreferenceSetTimeoutsOutputReference_Override(m MigrationCenterPreferenceSetTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeoutsOutputReference",
+		"@cdktn/provider-google.migrationCenterPreferenceSet.MigrationCenterPreferenceSetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) GetAnyMa
 	return returns
 }
 
-func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -491,8 +491,8 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) GetStrin
 	return returns
 }
 
-func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -504,16 +504,16 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) Interpol
 	return returns
 }
 
-func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) ResetUpd
 	)
 }
 
-func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) Resolve(
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

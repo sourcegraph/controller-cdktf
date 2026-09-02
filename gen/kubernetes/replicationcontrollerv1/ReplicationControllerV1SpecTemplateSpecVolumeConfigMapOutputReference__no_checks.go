@@ -40,7 +40,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputR
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputR
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewReplicationControllerV1SpecTemplateSpecVolumeConfigMapOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

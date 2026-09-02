@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/discoveryengineassistant/internal"
 )
 
 type DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalSystemInstruction() *string
 	SetAdditionalSystemInstruction(val *string)
 	AdditionalSystemInstructionInput() *string
@@ -37,15 +37,15 @@ type DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAdditionalSystemInstruction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference in
 
 // The jsii proxy struct for DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference
 type jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference) AdditionalSystemInstruction() *string {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutp
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutp
 }
 
 
-func NewDiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference {
+func NewDiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewDiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference
 	j := jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference",
+		"@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewDiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference
 	return &j
 }
 
-func NewDiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference_Override(d DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference_Override(d DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference",
+		"@cdktn/provider-google.discoveryEngineAssistant.DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutp
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutp
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -421,8 +421,8 @@ func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutp
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -434,16 +434,16 @@ func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutp
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutp
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (d *jsiiProxy_DiscoveryEngineAssistantGenerationConfigSystemInstructionOutp
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

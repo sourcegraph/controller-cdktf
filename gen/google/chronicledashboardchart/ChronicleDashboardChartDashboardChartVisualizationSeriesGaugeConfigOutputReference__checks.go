@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -117,7 +117,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValues:
 		value := value.(*[]*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValues)
@@ -136,16 +136,16 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValues; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigThresholdValues; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -232,7 +232,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -240,7 +240,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 	return nil
 }
 
-func validateNewChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

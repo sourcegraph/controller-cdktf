@@ -40,7 +40,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDeploymentSpecTemplateSpecVolumeDownwardApiItemsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

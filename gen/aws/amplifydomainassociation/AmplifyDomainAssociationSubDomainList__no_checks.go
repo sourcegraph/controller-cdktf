@@ -12,7 +12,7 @@ func (a *jsiiProxy_AmplifyDomainAssociationSubDomainList) validateGetParameters(
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociationSubDomainList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmplifyDomainAssociationSubDomainList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AmplifyDomainAssociationSubDomainList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociationSubDomainList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AmplifyDomainAssociationSubDomainList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AmplifyDomainAssociationSubDomainList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewAmplifyDomainAssociationSubDomainListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAmplifyDomainAssociationSubDomainListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

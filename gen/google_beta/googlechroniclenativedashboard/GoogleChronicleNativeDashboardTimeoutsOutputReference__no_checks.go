@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboardTimeoutsOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleChronicleNativeDashboardTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleNativeDashboardTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleNativeDashboardTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleChronicleNativeDashboardTimeoutsOutputReference) valida
 	return nil
 }
 
-func validateNewGoogleChronicleNativeDashboardTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleNativeDashboardTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

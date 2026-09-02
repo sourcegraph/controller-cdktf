@@ -40,11 +40,11 @@ func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) validateSetUsa
 	return nil
 }
 
-func validateNewEcrpublicRepositoryCatalogDataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEcrpublicRepositoryCatalogDataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

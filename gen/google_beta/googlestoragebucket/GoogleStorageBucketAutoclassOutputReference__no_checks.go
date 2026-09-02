@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageBucketAutoclassOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleStorageBucketAutoclassOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleStorageBucketAutoclassOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

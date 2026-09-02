@@ -40,11 +40,11 @@ func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LambdaEventSourceMappingSelfManagedEventSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLambdaEventSourceMappingSelfManagedEventSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLambdaEventSourceMappingSelfManagedEventSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsThinkstCanarySettingsAuthentication
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsThinkstCanarySettingsAuthentication
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsThinkstCanarySettingsAuthentication
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

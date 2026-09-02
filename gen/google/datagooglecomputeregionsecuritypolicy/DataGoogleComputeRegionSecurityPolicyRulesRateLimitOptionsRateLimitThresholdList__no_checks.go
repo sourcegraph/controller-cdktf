@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRat
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRat
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRat
 	return nil
 }
 
-func validateNewDataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsRateLimitThresholdListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

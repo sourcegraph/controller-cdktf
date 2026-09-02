@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

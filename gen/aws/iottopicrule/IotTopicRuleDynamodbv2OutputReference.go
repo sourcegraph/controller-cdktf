@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/iottopicrule/internal"
 )
 
 type IotTopicRuleDynamodbv2OutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type IotTopicRuleDynamodbv2OutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type IotTopicRuleDynamodbv2OutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPutItem(value *IotTopicRuleDynamodbv2PutItem)
 	ResetPutItem()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type IotTopicRuleDynamodbv2OutputReference interface {
 
 // The jsii proxy struct for IotTopicRuleDynamodbv2OutputReference
 type jsiiProxy_IotTopicRuleDynamodbv2OutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) TerraformResource() cd
 }
 
 
-func NewIotTopicRuleDynamodbv2OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IotTopicRuleDynamodbv2OutputReference {
+func NewIotTopicRuleDynamodbv2OutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IotTopicRuleDynamodbv2OutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIotTopicRuleDynamodbv2OutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewIotTopicRuleDynamodbv2OutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_IotTopicRuleDynamodbv2OutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference",
+		"@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewIotTopicRuleDynamodbv2OutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewIotTopicRuleDynamodbv2OutputReference_Override(i IotTopicRuleDynamodbv2OutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewIotTopicRuleDynamodbv2OutputReference_Override(i IotTopicRuleDynamodbv2OutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference",
+		"@cdktn/provider-aws.iotTopicRule.IotTopicRuleDynamodbv2OutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -444,8 +444,8 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -457,16 +457,16 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) ResetPutItem() {
 	)
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) Resolve(_context cdktf
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

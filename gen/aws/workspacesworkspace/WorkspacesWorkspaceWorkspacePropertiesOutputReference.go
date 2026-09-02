@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/workspacesworkspace/internal"
 )
 
 type WorkspacesWorkspaceWorkspacePropertiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type WorkspacesWorkspaceWorkspacePropertiesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UserVolumeSizeGib() *float64
 	SetUserVolumeSizeGib(val *float64)
 	UserVolumeSizeGibInput() *float64
@@ -57,7 +57,7 @@ type WorkspacesWorkspaceWorkspacePropertiesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type WorkspacesWorkspaceWorkspacePropertiesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetComputeTypeName()
 	ResetRootVolumeSizeGib()
 	ResetRunningMode()
@@ -83,7 +83,7 @@ type WorkspacesWorkspaceWorkspacePropertiesOutputReference interface {
 	ResetUserVolumeSizeGib()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type WorkspacesWorkspaceWorkspacePropertiesOutputReference interface {
 
 // The jsii proxy struct for WorkspacesWorkspaceWorkspacePropertiesOutputReference
 type jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) ComplexObjectIndex() interface{} {
@@ -236,8 +236,8 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) UserVo
 }
 
 
-func NewWorkspacesWorkspaceWorkspacePropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkspacesWorkspaceWorkspacePropertiesOutputReference {
+func NewWorkspacesWorkspaceWorkspacePropertiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) WorkspacesWorkspaceWorkspacePropertiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkspacesWorkspaceWorkspacePropertiesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewWorkspacesWorkspaceWorkspacePropertiesOutputReference(terraformResource 
 	j := jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspacePropertiesOutputReference",
+		"@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspacePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewWorkspacesWorkspaceWorkspacePropertiesOutputReference(terraformResource 
 	return &j
 }
 
-func NewWorkspacesWorkspaceWorkspacePropertiesOutputReference_Override(w WorkspacesWorkspaceWorkspacePropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewWorkspacesWorkspaceWorkspacePropertiesOutputReference_Override(w WorkspacesWorkspaceWorkspacePropertiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspacePropertiesOutputReference",
+		"@cdktn/provider-aws.workspacesWorkspace.WorkspacesWorkspaceWorkspacePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetAny
 	return returns
 }
 
-func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -561,8 +561,8 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) GetStr
 	return returns
 }
 
-func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -574,16 +574,16 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) Interp
 	return returns
 }
 
-func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) ResetU
 	)
 }
 
-func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (w *jsiiProxy_WorkspacesWorkspaceWorkspacePropertiesOutputReference) Resolv
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

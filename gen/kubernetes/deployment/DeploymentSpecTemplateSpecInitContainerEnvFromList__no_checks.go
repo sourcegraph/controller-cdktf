@@ -12,7 +12,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvFromList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvFromList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvFromList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvFromList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvFromList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvFromList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvFromList) validateS
 	return nil
 }
 
-func validateNewDeploymentSpecTemplateSpecInitContainerEnvFromListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDeploymentSpecTemplateSpecInitContainerEnvFromListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

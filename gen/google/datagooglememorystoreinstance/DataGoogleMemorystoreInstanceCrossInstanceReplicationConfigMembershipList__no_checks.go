@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMe
 	return nil
 }
 
-func validateNewDataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

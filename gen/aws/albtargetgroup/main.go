@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroup",
+		"@cdktn/provider-aws.albTargetGroup.AlbTargetGroup",
 		reflect.TypeOf((*AlbTargetGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingAlgorithmType", GoGetter: "LoadBalancingAlgorithmType"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancingAlgorithmTypeInput", GoGetter: "LoadBalancingAlgorithmTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -75,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putStickiness", GoMethod: "PutStickiness"},
 			_jsii_.MemberMethod{JsiiMethod: "putTargetFailover", GoMethod: "PutTargetFailover"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectionTermination", GoMethod: "ResetConnectionTermination"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeregistrationDelay", GoMethod: "ResetDeregistrationDelay"},
 			_jsii_.MemberMethod{JsiiMethod: "resetHealthCheck", GoMethod: "ResetHealthCheck"},
@@ -120,23 +122,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbTargetGroup{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupConfig",
+		"@cdktn/provider-aws.albTargetGroup.AlbTargetGroupConfig",
 		reflect.TypeOf((*AlbTargetGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupHealthCheck",
+		"@cdktn/provider-aws.albTargetGroup.AlbTargetGroupHealthCheck",
 		reflect.TypeOf((*AlbTargetGroupHealthCheck)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference",
+		"@cdktn/provider-aws.albTargetGroup.AlbTargetGroupHealthCheckOutputReference",
 		reflect.TypeOf((*AlbTargetGroupHealthCheckOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -190,16 +193,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbTargetGroupHealthCheckOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupStickiness",
+		"@cdktn/provider-aws.albTargetGroup.AlbTargetGroupStickiness",
 		reflect.TypeOf((*AlbTargetGroupStickiness)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupStickinessOutputReference",
+		"@cdktn/provider-aws.albTargetGroup.AlbTargetGroupStickinessOutputReference",
 		reflect.TypeOf((*AlbTargetGroupStickinessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -237,16 +240,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbTargetGroupStickinessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailover",
+		"@cdktn/provider-aws.albTargetGroup.AlbTargetGroupTargetFailover",
 		reflect.TypeOf((*AlbTargetGroupTargetFailover)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverList",
+		"@cdktn/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverList",
 		reflect.TypeOf((*AlbTargetGroupTargetFailoverList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -263,12 +266,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbTargetGroupTargetFailoverList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference",
+		"@cdktn/provider-aws.albTargetGroup.AlbTargetGroupTargetFailoverOutputReference",
 		reflect.TypeOf((*AlbTargetGroupTargetFailoverOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -299,7 +302,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbTargetGroupTargetFailoverOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTem
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTem
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDialogflowCxGenerativeSettingsFallbackSettingsPromptTemplatesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

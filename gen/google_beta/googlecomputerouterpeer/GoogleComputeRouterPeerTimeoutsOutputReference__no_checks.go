@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRouterPeerTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterPeerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRouterPeerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterPeerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRouterPeerTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeerTimeoutsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRouterPeerTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleComputeRouterPeerTimeoutsOutputReference) validateSetUp
 	return nil
 }
 
-func validateNewGoogleComputeRouterPeerTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeRouterPeerTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

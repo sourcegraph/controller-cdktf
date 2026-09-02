@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataflowJob.DataflowJob",
+		"@cdktn/provider-google.dataflowJob.DataflowJob",
 		reflect.TypeOf((*DataflowJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperiments", GoGetter: "AdditionalExperiments"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "machineType", GoGetter: "MachineType"},
 			_jsii_.MemberProperty{JsiiProperty: "machineTypeInput", GoGetter: "MachineTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxWorkers", GoGetter: "MaxWorkers"},
 			_jsii_.MemberProperty{JsiiProperty: "maxWorkersInput", GoGetter: "MaxWorkersInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -73,6 +74,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalExperiments", GoMethod: "ResetAdditionalExperiments"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableStreamingEngine", GoMethod: "ResetEnableStreamingEngine"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -119,25 +121,26 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transformNameMapping", GoGetter: "TransformNameMapping"},
 			_jsii_.MemberProperty{JsiiProperty: "transformNameMappingInput", GoGetter: "TransformNameMappingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataflowJob{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataflowJob.DataflowJobConfig",
+		"@cdktn/provider-google.dataflowJob.DataflowJobConfig",
 		reflect.TypeOf((*DataflowJobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataflowJob.DataflowJobTimeouts",
+		"@cdktn/provider-google.dataflowJob.DataflowJobTimeouts",
 		reflect.TypeOf((*DataflowJobTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataflowJob.DataflowJobTimeoutsOutputReference",
+		"@cdktn/provider-google.dataflowJob.DataflowJobTimeoutsOutputReference",
 		reflect.TypeOf((*DataflowJobTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -167,7 +170,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataflowJobTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

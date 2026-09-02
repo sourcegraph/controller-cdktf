@@ -40,7 +40,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSagemakerUserProfileUserSettingsJupyterServerAppSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

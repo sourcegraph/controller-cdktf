@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMonitoringSloWindowsBasedSliMetricMeanInRangeRangeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPo
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPo
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigMasterConfigInstanceFlexibilityPo
 	return nil
 }
 
-func validateNewDataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataprocClusterClusterConfigMasterConfigInstanceFlexibilityPolicyInstanceSelectionListStructListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

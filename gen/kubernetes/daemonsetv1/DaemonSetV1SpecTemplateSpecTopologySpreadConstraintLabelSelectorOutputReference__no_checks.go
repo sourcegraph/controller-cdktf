@@ -40,7 +40,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelec
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelec
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelec
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDaemonSetV1SpecTemplateSpecTopologySpreadConstraintLabelSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

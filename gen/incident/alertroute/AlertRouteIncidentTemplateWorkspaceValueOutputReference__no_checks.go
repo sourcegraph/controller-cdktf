@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteIncidentTemplateWorkspaceValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlertRouteIncidentTemplateWorkspaceValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlertRouteIncidentTemplateWorkspaceValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

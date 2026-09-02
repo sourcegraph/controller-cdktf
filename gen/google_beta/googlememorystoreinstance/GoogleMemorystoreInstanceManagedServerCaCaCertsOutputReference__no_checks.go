@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceManagedServerCaCaCertsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceManagedServerCaCaCertsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMemorystoreInstanceManagedServerCaCaCertsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceManagedServerCaCaCertsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMemorystoreInstanceManagedServerCaCaCertsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceManagedServerCaCaCertsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceManagedServerCaCaCertsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceManagedServerCaCaCertsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMemorystoreInstanceManagedServerCaCaCertsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleMemorystoreInstanceManagedServerCaCaCertsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

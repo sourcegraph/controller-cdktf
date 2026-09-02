@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalElasticsearchList) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalElasticsearchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodTotalElasticsearchList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalElasticsearchList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalElasticsearchList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalElasticsearchList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodTotalElasticsearchList) validateS
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsGoodTotalElasticsearchListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveCountMetricsGoodTotalElasticsearchListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

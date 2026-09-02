@@ -12,7 +12,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtLi
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtLi
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtLi
 	return nil
 }
 
-func validateNewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSecurityhubInsightFiltersThreatIntelIndicatorLastObservedAtListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

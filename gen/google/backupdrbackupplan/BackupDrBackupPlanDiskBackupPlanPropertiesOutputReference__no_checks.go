@@ -40,11 +40,11 @@ func (b *jsiiProxy_BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) va
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBackupDrBackupPlanDiskBackupPlanPropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBackupDrBackupPlanDiskBackupPlanPropertiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

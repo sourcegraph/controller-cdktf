@@ -56,6 +56,10 @@ func (l *jsiiProxy_LambdaFunctionEventInvokeConfig) validateInterpolationForAttr
 	return nil
 }
 
+func (l *jsiiProxy_LambdaFunctionEventInvokeConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaFunctionEventInvokeConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (l *jsiiProxy_LambdaFunctionEventInvokeConfig) validateOverrideLogicalIdPar
 }
 
 func (l *jsiiProxy_LambdaFunctionEventInvokeConfig) validatePutDestinationConfigParameters(value *LambdaFunctionEventInvokeConfigDestinationConfig) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaFunctionEventInvokeConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_LambdaFunctionEventInvokeConfig) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunctionEventInvokeConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LambdaFunctionEventInvokeConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

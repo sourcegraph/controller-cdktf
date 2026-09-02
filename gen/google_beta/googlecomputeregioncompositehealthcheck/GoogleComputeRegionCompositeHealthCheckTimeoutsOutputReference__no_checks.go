@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRegionCompositeHealthCheckTimeoutsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionCompositeHealthCheckTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRegionCompositeHealthCheckTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionCompositeHealthCheckTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionCompositeHealthCheckTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleComputeRegionCompositeHealthCheckTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionCompositeHealthCheckTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionCompositeHealthCheckTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleComputeRegionCompositeHealthCheckTimeoutsOutputReferenc
 	return nil
 }
 
-func validateNewGoogleComputeRegionCompositeHealthCheckTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeRegionCompositeHealthCheckTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

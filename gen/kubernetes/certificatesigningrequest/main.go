@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequest",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequest",
 		reflect.TypeOf((*CertificateSigningRequest)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -52,6 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSpec", GoMethod: "PutSpec"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoApprove", GoMethod: "ResetAutoApprove"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -69,23 +71,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificateSigningRequest{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestConfig",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestConfig",
 		reflect.TypeOf((*CertificateSigningRequestConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestMetadata",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestMetadata",
 		reflect.TypeOf((*CertificateSigningRequestMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestMetadataOutputReference",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestMetadataOutputReference",
 		reflect.TypeOf((*CertificateSigningRequestMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -127,16 +130,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificateSigningRequestMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestSpec",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestSpec",
 		reflect.TypeOf((*CertificateSigningRequestSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestSpecOutputReference",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestSpecOutputReference",
 		reflect.TypeOf((*CertificateSigningRequestSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -171,16 +174,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificateSigningRequestSpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestTimeouts",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestTimeouts",
 		reflect.TypeOf((*CertificateSigningRequestTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestTimeoutsOutputReference",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestTimeoutsOutputReference",
 		reflect.TypeOf((*CertificateSigningRequestTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -210,7 +213,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CertificateSigningRequestTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

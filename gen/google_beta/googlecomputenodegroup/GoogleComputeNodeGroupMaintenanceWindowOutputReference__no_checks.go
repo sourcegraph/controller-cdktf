@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeNodeGroupMaintenanceWindowOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeNodeGroupMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeNodeGroupMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeNodeGroupMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeNodeGroupMaintenanceWindowOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleComputeNodeGroupMaintenanceWindowOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNodeGroupMaintenanceWindowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeNodeGroupMaintenanceWindowOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeNodeGroupMaintenanceWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeNodeGroupMaintenanceWindowOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeConfigMapItemsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeConfigMapItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeConfigMapItemsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeConfigMapItemsList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeConfigMapItemsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeConfigMapItemsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeConfigMapItemsList) validateS
 	return nil
 }
 
-func validateNewDeploymentSpecTemplateSpecVolumeConfigMapItemsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDeploymentSpecTemplateSpecVolumeConfigMapItemsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

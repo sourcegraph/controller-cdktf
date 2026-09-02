@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnf
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnf
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

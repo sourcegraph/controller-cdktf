@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesList) 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesList) 
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesList) 
 	return nil
 }
 
-func validateNewNetworkConnectivityMulticloudDataTransferConfigServicesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkConnectivityMulticloudDataTransferConfigServicesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

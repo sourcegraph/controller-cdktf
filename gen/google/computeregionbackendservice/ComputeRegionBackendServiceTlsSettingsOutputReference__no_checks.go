@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeRegionBackendServiceTlsSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRegionBackendServiceTlsSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsOutputReference) validatePutQueryParam
 	return nil
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPollerCloudwatchMetricsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPollerCloudwatchMetricsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

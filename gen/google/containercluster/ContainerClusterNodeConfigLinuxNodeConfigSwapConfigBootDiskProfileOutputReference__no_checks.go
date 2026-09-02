@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskPr
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskPr
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

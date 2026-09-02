@@ -40,11 +40,11 @@ func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) valida
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference) valida
 	return nil
 }
 
-func validateNewBiglakeIcebergTablePartitionSpecFieldsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewBiglakeIcebergTablePartitionSpecFieldsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

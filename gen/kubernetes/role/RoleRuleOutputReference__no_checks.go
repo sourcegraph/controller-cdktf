@@ -40,11 +40,11 @@ func (r *jsiiProxy_RoleRuleOutputReference) validateGetStringMapAttributeParamet
 	return nil
 }
 
-func (r *jsiiProxy_RoleRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RoleRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RoleRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RoleRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_RoleRuleOutputReference) validateSetTerraformAttributeParamet
 	return nil
 }
 
-func (j *jsiiProxy_RoleRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RoleRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_RoleRuleOutputReference) validateSetVerbsParameters(val *[]*s
 	return nil
 }
 
-func validateNewRoleRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRoleRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

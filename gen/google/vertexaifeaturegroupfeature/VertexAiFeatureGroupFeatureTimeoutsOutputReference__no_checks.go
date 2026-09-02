@@ -40,11 +40,11 @@ func (v *jsiiProxy_VertexAiFeatureGroupFeatureTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureGroupFeatureTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiFeatureGroupFeatureTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureGroupFeatureTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiFeatureGroupFeatureTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_VertexAiFeatureGroupFeatureTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureGroupFeatureTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VertexAiFeatureGroupFeatureTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_VertexAiFeatureGroupFeatureTimeoutsOutputReference) validateS
 	return nil
 }
 
-func validateNewVertexAiFeatureGroupFeatureTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVertexAiFeatureGroupFeatureTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputRe
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSsoadminInstanceAccessControlAttributesAttributeValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSsoadminInstanceAccessControlAttributesAttributeValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

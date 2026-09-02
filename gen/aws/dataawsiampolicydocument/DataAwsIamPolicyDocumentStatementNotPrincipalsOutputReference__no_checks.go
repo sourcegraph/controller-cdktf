@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DataAwsIamPolicyDocumentStatementNotPrincipalsOutputReference
 	return nil
 }
 
-func validateNewDataAwsIamPolicyDocumentStatementNotPrincipalsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsIamPolicyDocumentStatementNotPrincipalsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

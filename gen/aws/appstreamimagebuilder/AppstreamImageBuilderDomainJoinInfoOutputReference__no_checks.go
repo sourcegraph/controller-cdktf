@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppstreamImageBuilderDomainJoinInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppstreamImageBuilderDomainJoinInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppstreamImageBuilderDomainJoinInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

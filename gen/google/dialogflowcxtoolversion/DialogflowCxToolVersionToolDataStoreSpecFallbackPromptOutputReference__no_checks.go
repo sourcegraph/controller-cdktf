@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowCxToolVersionToolDataStoreSpecFallbackPromptOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

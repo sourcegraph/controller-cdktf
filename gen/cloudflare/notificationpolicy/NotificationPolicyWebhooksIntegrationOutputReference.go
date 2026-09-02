@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/notificationpolicy/internal"
 )
 
 type NotificationPolicyWebhooksIntegrationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type NotificationPolicyWebhooksIntegrationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type NotificationPolicyWebhooksIntegrationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type NotificationPolicyWebhooksIntegrationOutputReference interface {
 
 // The jsii proxy struct for NotificationPolicyWebhooksIntegrationOutputReference
 type jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) Terrafo
 }
 
 
-func NewNotificationPolicyWebhooksIntegrationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationPolicyWebhooksIntegrationOutputReference {
+func NewNotificationPolicyWebhooksIntegrationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NotificationPolicyWebhooksIntegrationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNotificationPolicyWebhooksIntegrationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewNotificationPolicyWebhooksIntegrationOutputReference(terraformResource c
 	j := jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationOutputReference",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewNotificationPolicyWebhooksIntegrationOutputReference(terraformResource c
 	return &j
 }
 
-func NewNotificationPolicyWebhooksIntegrationOutputReference_Override(n NotificationPolicyWebhooksIntegrationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewNotificationPolicyWebhooksIntegrationOutputReference_Override(n NotificationPolicyWebhooksIntegrationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationOutputReference",
+		"@cdktn/provider-cloudflare.notificationPolicy.NotificationPolicyWebhooksIntegrationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetAnyM
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -455,8 +455,8 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) GetStri
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -468,16 +468,16 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) Interpo
 	return returns
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) ResetNa
 	)
 }
 
-func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (n *jsiiProxy_NotificationPolicyWebhooksIntegrationOutputReference) Resolve
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

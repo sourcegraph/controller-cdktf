@@ -40,7 +40,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerStartupProbeO
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerStartupProbeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerStartupProbeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerStartupProbeO
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerStartupProbeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerStartupProbeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerStartupProbeO
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerStartupProbeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerStartupProbeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecContainerStartupProbeO
 	return nil
 }
 
-func validateNewReplicationControllerV1SpecTemplateSpecContainerStartupProbeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewReplicationControllerV1SpecTemplateSpecContainerStartupProbeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

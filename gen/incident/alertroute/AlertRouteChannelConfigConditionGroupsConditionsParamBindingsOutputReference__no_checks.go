@@ -40,7 +40,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsParamBindings
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsParamBindingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsParamBindingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsParamBindings
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsParamBindingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsParamBindingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsParamBindings
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsParamBindingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteChannelConfigConditionGroupsConditionsParamBindingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlertRouteChannelConfigConditionGroupsConditionsParamBindingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlertRouteChannelConfigConditionGroupsConditionsParamBindingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

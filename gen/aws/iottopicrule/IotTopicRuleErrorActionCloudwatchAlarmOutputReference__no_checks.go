@@ -40,11 +40,11 @@ func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchAlarmOutputReference) valida
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchAlarmOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchAlarmOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchAlarmOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchAlarmOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_IotTopicRuleErrorActionCloudwatchAlarmOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionCloudwatchAlarmOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionCloudwatchAlarmOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIotTopicRuleErrorActionCloudwatchAlarmOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIotTopicRuleErrorActionCloudwatchAlarmOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

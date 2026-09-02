@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlememorystoreinstance/internal"
 )
 
 type GoogleMemorystoreInstancePscAttachmentDetailsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type GoogleMemorystoreInstancePscAttachmentDetailsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type GoogleMemorystoreInstancePscAttachmentDetailsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type GoogleMemorystoreInstancePscAttachmentDetailsOutputReference interface {
 
 // The jsii proxy struct for GoogleMemorystoreInstancePscAttachmentDetailsOutputReference
 type jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference) ComplexObjectIndex() interface{} {
@@ -158,8 +158,8 @@ func (j *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference)
 }
 
 
-func NewGoogleMemorystoreInstancePscAttachmentDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleMemorystoreInstancePscAttachmentDetailsOutputReference {
+func NewGoogleMemorystoreInstancePscAttachmentDetailsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleMemorystoreInstancePscAttachmentDetailsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleMemorystoreInstancePscAttachmentDetailsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewGoogleMemorystoreInstancePscAttachmentDetailsOutputReference(terraformRe
 	j := jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePscAttachmentDetailsOutputReference",
+		"@cdktn/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePscAttachmentDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewGoogleMemorystoreInstancePscAttachmentDetailsOutputReference(terraformRe
 	return &j
 }
 
-func NewGoogleMemorystoreInstancePscAttachmentDetailsOutputReference_Override(g GoogleMemorystoreInstancePscAttachmentDetailsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleMemorystoreInstancePscAttachmentDetailsOutputReference_Override(g GoogleMemorystoreInstancePscAttachmentDetailsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePscAttachmentDetailsOutputReference",
+		"@cdktn/provider-google-beta.googleMemorystoreInstance.GoogleMemorystoreInstancePscAttachmentDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -408,8 +408,8 @@ func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -421,24 +421,24 @@ func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstancePscAttachmentDetailsOutputReference)
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

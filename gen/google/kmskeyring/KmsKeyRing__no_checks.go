@@ -56,6 +56,10 @@ func (k *jsiiProxy_KmsKeyRing) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (k *jsiiProxy_KmsKeyRing) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsKeyRing) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (k *jsiiProxy_KmsKeyRing) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (k *jsiiProxy_KmsKeyRing) validatePutTimeoutsParameters(value *KmsKeyRingTimeouts) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsKeyRing) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_KmsKeyRing) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_KmsKeyRing) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KmsKeyRing) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

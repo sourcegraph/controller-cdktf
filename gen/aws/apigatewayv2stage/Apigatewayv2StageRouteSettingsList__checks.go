@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (a *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateGetParameters(ind
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (a *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateResolveParameters
 
 func (j *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*Apigatewayv2StageRouteSettings:
 		val := val.(*[]*Apigatewayv2StageRouteSettings)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateSetInternalValueP
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*Apigatewayv2StageRouteSettings; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*Apigatewayv2StageRouteSettings; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_Apigatewayv2StageRouteSettingsList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewApigatewayv2StageRouteSettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApigatewayv2StageRouteSettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

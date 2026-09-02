@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementAdditionalNotific
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementAdditionalNotific
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementAdditionalNotific
 	return nil
 }
 
-func validateNewDataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGooglePrivilegedAccessManagerEntitlementAdditionalNotificationTargetsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

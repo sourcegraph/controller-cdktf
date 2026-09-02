@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containernodepool/internal"
 )
 
 type ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutStandardRolloutPolicy(value *ContainerNodePoolUpgradeSettingsBlueGreenSettingsStandardRolloutPolicy)
 	ResetNodePoolSoakDuration()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference interface 
 
 // The jsii proxy struct for ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference
 type jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputRefere
 }
 
 
-func NewContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference {
+func NewContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference(terrafo
 	j := jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference",
+		"@cdktn/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference(terrafo
 	return &j
 }
 
-func NewContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference_Override(c ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference_Override(c ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference",
+		"@cdktn/provider-google.containerNodePool.ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -444,8 +444,8 @@ func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -457,16 +457,16 @@ func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputRefere
 	)
 }
 
-func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (c *jsiiProxy_ContainerNodePoolUpgradeSettingsBlueGreenSettingsOutputRefere
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputRefe
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewHypercomputeclusterClusterStorageResourcesFilestoreOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewHypercomputeclusterClusterStorageResourcesFilestoreOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

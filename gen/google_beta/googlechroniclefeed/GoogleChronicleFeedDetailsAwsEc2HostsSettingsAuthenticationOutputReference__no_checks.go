@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOu
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

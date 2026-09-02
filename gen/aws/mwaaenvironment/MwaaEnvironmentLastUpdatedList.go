@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/mwaaenvironment/internal"
 )
 
 type MwaaEnvironmentLastUpdatedList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type MwaaEnvironmentLastUpdatedList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) MwaaEnvironmentLastUpdatedOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type MwaaEnvironmentLastUpdatedList interface {
 
 // The jsii proxy struct for MwaaEnvironmentLastUpdatedList
 type jsiiProxy_MwaaEnvironmentLastUpdatedList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_MwaaEnvironmentLastUpdatedList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_MwaaEnvironmentLastUpdatedList) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLastUpdatedList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MwaaEnvironmentLastUpdatedList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_MwaaEnvironmentLastUpdatedList) WrapsSet() *bool {
 }
 
 
-func NewMwaaEnvironmentLastUpdatedList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MwaaEnvironmentLastUpdatedList {
+func NewMwaaEnvironmentLastUpdatedList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MwaaEnvironmentLastUpdatedList {
 	_init_.Initialize()
 
 	if err := validateNewMwaaEnvironmentLastUpdatedListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewMwaaEnvironmentLastUpdatedList(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_MwaaEnvironmentLastUpdatedList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList",
+		"@cdktn/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewMwaaEnvironmentLastUpdatedList(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewMwaaEnvironmentLastUpdatedList_Override(m MwaaEnvironmentLastUpdatedList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewMwaaEnvironmentLastUpdatedList_Override(m MwaaEnvironmentLastUpdatedList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList",
+		"@cdktn/provider-aws.mwaaEnvironment.MwaaEnvironmentLastUpdatedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_MwaaEnvironmentLastUpdatedList)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLastUpdatedList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MwaaEnvironmentLastUpdatedList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_MwaaEnvironmentLastUpdatedList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLastUpdatedList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (m *jsiiProxy_MwaaEnvironmentLastUpdatedList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := m.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		m,
@@ -205,8 +208,8 @@ func (m *jsiiProxy_MwaaEnvironmentLastUpdatedList) Get(index *float64) MwaaEnvir
 	return returns
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLastUpdatedList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MwaaEnvironmentLastUpdatedList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (m *jsiiProxy_MwaaEnvironmentLastUpdatedList) Resolve(_context cdktf.IResol
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

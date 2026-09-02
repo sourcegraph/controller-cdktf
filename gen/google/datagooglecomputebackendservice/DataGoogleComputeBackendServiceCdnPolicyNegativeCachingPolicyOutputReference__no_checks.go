@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyNegativeCachingPolicy
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeBackendServiceCdnPolicyNegativeCachingPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

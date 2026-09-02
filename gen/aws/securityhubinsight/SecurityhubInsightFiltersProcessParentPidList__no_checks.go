@@ -12,7 +12,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersProcessParentPidList) validateGetPar
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersProcessParentPidList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersProcessParentPidList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersProcessParentPidList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersProcessParentPidList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersProcessParentPidList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersProcessParentPidList) validateSetWra
 	return nil
 }
 
-func validateNewSecurityhubInsightFiltersProcessParentPidListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSecurityhubInsightFiltersProcessParentPidListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

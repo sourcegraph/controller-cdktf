@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/dataobservemonitoraction/internal"
 )
 
 type DataObserveMonitorActionEmailOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BodyTemplate() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -30,7 +30,7 @@ type DataObserveMonitorActionEmailOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataObserveMonitorActionEmail
 	SetInternalValue(val *DataObserveMonitorActionEmail)
-	IsHtml() cdktf.IResolvable
+	IsHtml() cdktn.IResolvable
 	SubjectTemplate() *string
 	TargetAddresses() *[]*string
 	// Experimental.
@@ -38,15 +38,15 @@ type DataObserveMonitorActionEmailOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type DataObserveMonitorActionEmailOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DataObserveMonitorActionEmailOutputReference interface {
 
 // The jsii proxy struct for DataObserveMonitorActionEmailOutputReference
 type jsiiProxy_DataObserveMonitorActionEmailOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference) BodyTemplate() *string {
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference) InternalValue()
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference) IsHtml() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference) IsHtml() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isHtml",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -191,7 +191,7 @@ func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference) TerraformResour
 }
 
 
-func NewDataObserveMonitorActionEmailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveMonitorActionEmailOutputReference {
+func NewDataObserveMonitorActionEmailOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveMonitorActionEmailOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataObserveMonitorActionEmailOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -200,7 +200,7 @@ func NewDataObserveMonitorActionEmailOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_DataObserveMonitorActionEmailOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmailOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -208,11 +208,11 @@ func NewDataObserveMonitorActionEmailOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewDataObserveMonitorActionEmailOutputReference_Override(d DataObserveMonitorActionEmailOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataObserveMonitorActionEmailOutputReference_Override(d DataObserveMonitorActionEmailOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmailOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -262,7 +262,7 @@ func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataObserveMonitorActionEmailOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,11 +302,11 @@ func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -430,8 +430,8 @@ func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -443,24 +443,24 @@ func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) InterpolationAs
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -468,7 +468,7 @@ func (d *jsiiProxy_DataObserveMonitorActionEmailOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

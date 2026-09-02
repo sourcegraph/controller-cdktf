@@ -40,11 +40,11 @@ func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateGetS
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFirestoreFieldIndexConfigIndexesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewFirestoreFieldIndexConfigIndexesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

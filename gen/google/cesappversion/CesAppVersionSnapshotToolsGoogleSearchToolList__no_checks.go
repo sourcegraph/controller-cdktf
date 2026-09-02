@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsGoogleSearchToolList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsGoogleSearchToolList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotToolsGoogleSearchToolList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsGoogleSearchToolList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsGoogleSearchToolList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotToolsGoogleSearchToolList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsGoogleSearchToolList) validateSetWr
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotToolsGoogleSearchToolListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesAppVersionSnapshotToolsGoogleSearchToolListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

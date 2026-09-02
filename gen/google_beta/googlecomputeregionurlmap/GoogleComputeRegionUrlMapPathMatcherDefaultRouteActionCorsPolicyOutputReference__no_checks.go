@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPol
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPol
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeRegionUrlMapPathMatcherDefaultRouteActionCorsPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

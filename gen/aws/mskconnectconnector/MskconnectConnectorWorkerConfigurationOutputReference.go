@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/mskconnectconnector/internal"
 )
 
 type MskconnectConnectorWorkerConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Arn() *string
 	SetArn(val *string)
 	ArnInput() *string
@@ -40,15 +40,15 @@ type MskconnectConnectorWorkerConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type MskconnectConnectorWorkerConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type MskconnectConnectorWorkerConfigurationOutputReference interface {
 
 // The jsii proxy struct for MskconnectConnectorWorkerConfigurationOutputReference
 type jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) Arn() *string {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) Terraf
 }
 
 
-func NewMskconnectConnectorWorkerConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MskconnectConnectorWorkerConfigurationOutputReference {
+func NewMskconnectConnectorWorkerConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MskconnectConnectorWorkerConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMskconnectConnectorWorkerConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewMskconnectConnectorWorkerConfigurationOutputReference(terraformResource 
 	j := jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfigurationOutputReference",
+		"@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewMskconnectConnectorWorkerConfigurationOutputReference(terraformResource 
 	return &j
 }
 
-func NewMskconnectConnectorWorkerConfigurationOutputReference_Override(m MskconnectConnectorWorkerConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMskconnectConnectorWorkerConfigurationOutputReference_Override(m MskconnectConnectorWorkerConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfigurationOutputReference",
+		"@cdktn/provider-aws.mskconnectConnector.MskconnectConnectorWorkerConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) GetAny
 	return returns
 }
 
-func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -454,8 +454,8 @@ func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) GetStr
 	return returns
 }
 
-func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -467,24 +467,24 @@ func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) Interp
 	return returns
 }
 
-func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (m *jsiiProxy_MskconnectConnectorWorkerConfigurationOutputReference) Resolv
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

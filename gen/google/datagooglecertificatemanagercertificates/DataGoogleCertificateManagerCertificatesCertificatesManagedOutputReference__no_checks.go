@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedOu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedOu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleCertificateManagerCertificatesCertificatesManagedOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleCertificateManagerCertificatesCertificatesManagedOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleCertificateManagerCertificatesCertificatesManagedOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

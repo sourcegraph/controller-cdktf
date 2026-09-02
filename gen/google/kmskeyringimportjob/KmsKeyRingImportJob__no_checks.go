@@ -56,6 +56,10 @@ func (k *jsiiProxy_KmsKeyRingImportJob) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (k *jsiiProxy_KmsKeyRingImportJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsKeyRingImportJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (k *jsiiProxy_KmsKeyRingImportJob) validateOverrideLogicalIdParameters(newL
 }
 
 func (k *jsiiProxy_KmsKeyRingImportJob) validatePutTimeoutsParameters(value *KmsKeyRingImportJobTimeouts) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsKeyRingImportJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_KmsKeyRingImportJob) validateSetKeyRingParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KmsKeyRingImportJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

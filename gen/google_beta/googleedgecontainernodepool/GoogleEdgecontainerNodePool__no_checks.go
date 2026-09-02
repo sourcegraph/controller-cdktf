@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleEdgecontainerNodePool) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEdgecontainerNodePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgecontainerNodePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleEdgecontainerNodePool) validatePutNodeConfigParameters(
 }
 
 func (g *jsiiProxy_GoogleEdgecontainerNodePool) validatePutTimeoutsParameters(value *GoogleEdgecontainerNodePoolTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgecontainerNodePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleEdgecontainerNodePool) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerNodePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleEdgecontainerNodePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

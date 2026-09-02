@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsMemorydbParameterGroupParameterOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMemorydbParameterGroupParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsMemorydbParameterGroupParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMemorydbParameterGroupParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMemorydbParameterGroupParameterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsMemorydbParameterGroupParameterOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsMemorydbParameterGroupParameterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsMemorydbParameterGroupParameterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsMemorydbParameterGroupParameterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsMemorydbParameterGroupParameterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

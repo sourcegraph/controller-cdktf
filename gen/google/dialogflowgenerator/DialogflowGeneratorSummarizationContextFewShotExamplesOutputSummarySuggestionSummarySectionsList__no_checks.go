@@ -12,7 +12,7 @@ func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputS
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputS
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DialogflowGeneratorSummarizationContextFewShotExamplesOutputS
 	return nil
 }
 
-func validateNewDialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDialogflowGeneratorSummarizationContextFewShotExamplesOutputSummarySuggestionSummarySectionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

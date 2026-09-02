@@ -40,11 +40,11 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartExecOu
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartExecOu
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDeploymentV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDeploymentV1SpecTemplateSpecContainerLifecyclePostStartExecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurati
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurati
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurati
 	return nil
 }
 
-func validateNewDataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeRegionInstanceTemplateSchedulingMaxRunDurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

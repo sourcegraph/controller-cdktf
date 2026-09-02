@@ -56,6 +56,10 @@ func (d *jsiiProxy_DocdbSubnetGroup) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (d *jsiiProxy_DocdbSubnetGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbSubnetGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (d *jsiiProxy_DocdbSubnetGroup) validateMoveToIdParameters(id *string) erro
 }
 
 func (d *jsiiProxy_DocdbSubnetGroup) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocdbSubnetGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_DocdbSubnetGroup) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_DocdbSubnetGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DocdbSubnetGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

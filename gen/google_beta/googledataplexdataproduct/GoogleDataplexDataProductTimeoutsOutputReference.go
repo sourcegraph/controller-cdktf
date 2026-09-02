@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplexdataproduct/internal"
 )
 
 type GoogleDataplexDataProductTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type GoogleDataplexDataProductTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type GoogleDataplexDataProductTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type GoogleDataplexDataProductTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleDataplexDataProductTimeoutsOutputReference interface {
 
 // The jsii proxy struct for GoogleDataplexDataProductTimeoutsOutputReference
 type jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) UpdateInput
 }
 
 
-func NewGoogleDataplexDataProductTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataplexDataProductTimeoutsOutputReference {
+func NewGoogleDataplexDataProductTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDataplexDataProductTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDataplexDataProductTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleDataplexDataProductTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataplexDataProduct.GoogleDataplexDataProductTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleDataplexDataProduct.GoogleDataplexDataProductTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleDataplexDataProductTimeoutsOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewGoogleDataplexDataProductTimeoutsOutputReference_Override(g GoogleDataplexDataProductTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDataplexDataProductTimeoutsOutputReference_Override(g GoogleDataplexDataProductTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataplexDataProduct.GoogleDataplexDataProductTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleDataplexDataProduct.GoogleDataplexDataProductTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -491,8 +491,8 @@ func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) GetStringMa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,16 +504,16 @@ func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) Interpolati
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) ResetUpdate
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleDataplexDataProductTimeoutsOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocWorkflowTemplateJobsPrestoJobQueryListStructOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

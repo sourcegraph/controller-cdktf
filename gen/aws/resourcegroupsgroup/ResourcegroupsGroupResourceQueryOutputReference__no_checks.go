@@ -40,11 +40,11 @@ func (r *jsiiProxy_ResourcegroupsGroupResourceQueryOutputReference) validateGetS
 	return nil
 }
 
-func (r *jsiiProxy_ResourcegroupsGroupResourceQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourcegroupsGroupResourceQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ResourcegroupsGroupResourceQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourcegroupsGroupResourceQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ResourcegroupsGroupResourceQueryOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ResourcegroupsGroupResourceQueryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ResourcegroupsGroupResourceQueryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ResourcegroupsGroupResourceQueryOutputReference) validateSetT
 	return nil
 }
 
-func validateNewResourcegroupsGroupResourceQueryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewResourcegroupsGroupResourceQueryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

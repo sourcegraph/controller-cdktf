@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/healthcaredatasetiambinding/internal"
 )
 
 type HealthcareDatasetIamBindingConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type HealthcareDatasetIamBindingConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type HealthcareDatasetIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type HealthcareDatasetIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type HealthcareDatasetIamBindingConditionOutputReference interface {
 
 // The jsii proxy struct for HealthcareDatasetIamBindingConditionOutputReference
 type jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) TitleInp
 }
 
 
-func NewHealthcareDatasetIamBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcareDatasetIamBindingConditionOutputReference {
+func NewHealthcareDatasetIamBindingConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) HealthcareDatasetIamBindingConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewHealthcareDatasetIamBindingConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewHealthcareDatasetIamBindingConditionOutputReference(terraformResource cd
 	j := jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBindingConditionOutputReference",
+		"@cdktn/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewHealthcareDatasetIamBindingConditionOutputReference(terraformResource cd
 	return &j
 }
 
-func NewHealthcareDatasetIamBindingConditionOutputReference_Override(h HealthcareDatasetIamBindingConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewHealthcareDatasetIamBindingConditionOutputReference_Override(h HealthcareDatasetIamBindingConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBindingConditionOutputReference",
+		"@cdktn/provider-google.healthcareDatasetIamBinding.HealthcareDatasetIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) GetAnyMa
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -489,8 +489,8 @@ func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) GetStrin
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -502,16 +502,16 @@ func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) Interpol
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := h.validateInterpolationForAttributeParameters(property); err != nil {
+func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) ResetDes
 	)
 }
 
-func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (h *jsiiProxy_HealthcareDatasetIamBindingConditionOutputReference) Resolve(
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

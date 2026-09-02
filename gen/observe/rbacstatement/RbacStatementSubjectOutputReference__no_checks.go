@@ -40,11 +40,11 @@ func (r *jsiiProxy_RbacStatementSubjectOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (r *jsiiProxy_RbacStatementSubjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RbacStatementSubjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RbacStatementSubjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RbacStatementSubjectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_RbacStatementSubjectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RbacStatementSubjectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_RbacStatementSubjectOutputReference) validateSetUserParameter
 	return nil
 }
 
-func validateNewRbacStatementSubjectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRbacStatementSubjectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

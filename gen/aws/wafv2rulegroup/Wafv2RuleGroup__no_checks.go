@@ -56,6 +56,10 @@ func (w *jsiiProxy_Wafv2RuleGroup) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RuleGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RuleGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (w *jsiiProxy_Wafv2RuleGroup) validatePutRuleParameters(value interface{}) 
 }
 
 func (w *jsiiProxy_Wafv2RuleGroup) validatePutVisibilityConfigParameters(value *Wafv2RuleGroupVisibilityConfig) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2RuleGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_Wafv2RuleGroup) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Wafv2RuleGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

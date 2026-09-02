@@ -40,11 +40,11 @@ func (a *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AuthenticatedOriginPullsCertificateTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAuthenticatedOriginPullsCertificateTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAuthenticatedOriginPullsCertificateTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

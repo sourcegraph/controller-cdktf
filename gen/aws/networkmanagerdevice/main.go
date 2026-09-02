@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDevice",
+		"@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDevice",
 		reflect.TypeOf((*NetworkmanagerDevice)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "model", GoGetter: "Model"},
 			_jsii_.MemberProperty{JsiiProperty: "modelInput", GoGetter: "ModelInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -58,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putLocation", GoMethod: "PutLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAwsLocation", GoMethod: "ResetAwsLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -94,19 +96,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vendor", GoGetter: "Vendor"},
 			_jsii_.MemberProperty{JsiiProperty: "vendorInput", GoGetter: "VendorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkmanagerDevice{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation",
+		"@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocation",
 		reflect.TypeOf((*NetworkmanagerDeviceAwsLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocationOutputReference",
+		"@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceAwsLocationOutputReference",
 		reflect.TypeOf((*NetworkmanagerDeviceAwsLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,20 +142,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkmanagerDeviceAwsLocationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig",
+		"@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceConfig",
 		reflect.TypeOf((*NetworkmanagerDeviceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation",
+		"@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocation",
 		reflect.TypeOf((*NetworkmanagerDeviceLocation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocationOutputReference",
+		"@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceLocationOutputReference",
 		reflect.TypeOf((*NetworkmanagerDeviceLocationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -188,16 +191,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkmanagerDeviceLocationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts",
+		"@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeouts",
 		reflect.TypeOf((*NetworkmanagerDeviceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeoutsOutputReference",
+		"@cdktn/provider-aws.networkmanagerDevice.NetworkmanagerDeviceTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkmanagerDeviceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -233,7 +236,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkmanagerDeviceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

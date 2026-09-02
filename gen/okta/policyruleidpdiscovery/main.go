@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscovery",
 		reflect.TypeOf((*PolicyRuleIdpDiscovery)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -70,6 +71,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putPlatformInclude", GoMethod: "PutPlatformInclude"},
 			_jsii_.MemberMethod{JsiiMethod: "putUserIdentifierPatterns", GoMethod: "PutUserIdentifierPatterns"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppExclude", GoMethod: "ResetAppExclude"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppInclude", GoMethod: "ResetAppInclude"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -103,19 +105,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userIdentifierPatternsInput", GoGetter: "UserIdentifierPatternsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdentifierType", GoGetter: "UserIdentifierType"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdentifierTypeInput", GoGetter: "UserIdentifierTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleIdpDiscovery{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExclude",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExclude",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryAppExclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExcludeList",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExcludeList",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryAppExcludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -132,12 +135,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExcludeOutputReference",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppExcludeOutputReference",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryAppExcludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -172,16 +175,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleIdpDiscoveryAppExcludeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppInclude",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppInclude",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryAppInclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppIncludeList",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppIncludeList",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryAppIncludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -198,12 +201,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppIncludeOutputReference",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryAppIncludeOutputReference",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryAppIncludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,20 +241,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleIdpDiscoveryAppIncludeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryConfig",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryConfig",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformInclude",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformInclude",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryPlatformInclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeList",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeList",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryPlatformIncludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -268,12 +271,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -309,16 +312,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatterns",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatterns",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryUserIdentifierPatterns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsList",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsList",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryUserIdentifierPatternsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -335,12 +338,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference",
 		reflect.TypeOf((*PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -373,7 +376,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleIdpDiscoveryUserIdentifierPatternsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

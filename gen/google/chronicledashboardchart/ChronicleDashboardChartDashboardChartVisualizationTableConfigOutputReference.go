@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/chronicledashboardchart/internal"
 )
 
 type ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ColumnRenderTypeSettings() ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsList
 	ColumnRenderTypeSettingsInput() interface{}
 	ColumnTooltipSettings() ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnTooltipSettingsList
@@ -41,15 +41,15 @@ type ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReferenc
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,9 +65,9 @@ type ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReferenc
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutColumnRenderTypeSettings(value interface{})
 	PutColumnTooltipSettings(value interface{})
 	ResetColumnRenderTypeSettings()
@@ -75,7 +75,7 @@ type ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReferenc
 	ResetEnableTextWrap()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReferenc
 
 // The jsii proxy struct for ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference
 type jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference) ColumnRenderTypeSettings() ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsList {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfig
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfig
 }
 
 
-func NewChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference {
+func NewChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewChronicleDashboardChartDashboardChartVisualizationTableConfigOutputRefer
 	j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference",
+		"@cdktn/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewChronicleDashboardChartDashboardChartVisualizationTableConfigOutputRefer
 	return &j
 }
 
-func NewChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference_Override(c ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference_Override(c ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference",
+		"@cdktn/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfig
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,11 +341,11 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfig
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -469,8 +469,8 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfig
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -482,16 +482,16 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfig
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfig
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfig
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

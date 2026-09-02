@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinity
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinity
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinity
 	return nil
 }
 
-func validateNewGoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

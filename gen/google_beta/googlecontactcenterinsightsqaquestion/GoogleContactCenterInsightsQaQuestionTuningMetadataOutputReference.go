@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontactcenterinsightsqaquestion/internal"
 )
 
 type GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TotalValidLabelCount() *string
 	SetTotalValidLabelCount(val *string)
 	TotalValidLabelCountInput() *string
@@ -51,7 +51,7 @@ type GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference interfac
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDatasetValidationWarnings()
 	ResetTotalValidLabelCount()
 	ResetTuningError()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference interfac
 
 // The jsii proxy struct for GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference
 type jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference) ComplexObjectIndex() interface{} {
@@ -168,8 +168,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputRefe
 }
 
 
-func NewGoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference {
+func NewGoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleContactCenterInsightsQaQuestionTuningMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference(terra
 	j := jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContactCenterInsightsQaQuestion.GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference",
+		"@cdktn/provider-google-beta.googleContactCenterInsightsQaQuestion.GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference(terra
 	return &j
 }
 
-func NewGoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference_Override(g GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference_Override(g GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContactCenterInsightsQaQuestion.GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference",
+		"@cdktn/provider-google-beta.googleContactCenterInsightsQaQuestion.GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -491,8 +491,8 @@ func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,16 +504,16 @@ func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputRefe
 	)
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTuningMetadataOutputRefe
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

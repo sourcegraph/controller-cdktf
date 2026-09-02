@@ -12,7 +12,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsList) validateGetParam
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeConfigMapItemsList) validateSetWraps
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecVolumeConfigMapItemsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobSpecTemplateSpecVolumeConfigMapItemsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

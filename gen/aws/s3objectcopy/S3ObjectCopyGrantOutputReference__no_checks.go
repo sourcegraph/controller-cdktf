@@ -40,11 +40,11 @@ func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ObjectCopyGrantOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantOutputReference) validateSetUriParameters(va
 	return nil
 }
 
-func validateNewS3ObjectCopyGrantOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewS3ObjectCopyGrantOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

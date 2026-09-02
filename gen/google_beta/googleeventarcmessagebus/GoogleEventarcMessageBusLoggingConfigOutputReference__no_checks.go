@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEventarcMessageBusLoggingConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleEventarcMessageBusLoggingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleEventarcMessageBusLoggingConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRegionBackendServiceOutlierDetectionBaseEjectionTimeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

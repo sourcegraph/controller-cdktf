@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleAlloydbClusterNetworkConfigOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAlloydbClusterNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleAlloydbClusterNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAlloydbClusterNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAlloydbClusterNetworkConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleAlloydbClusterNetworkConfigOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterNetworkConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAlloydbClusterNetworkConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleAlloydbClusterNetworkConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleAlloydbClusterNetworkConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

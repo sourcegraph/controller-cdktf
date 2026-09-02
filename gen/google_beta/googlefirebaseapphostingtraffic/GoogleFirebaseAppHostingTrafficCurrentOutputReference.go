@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirebaseapphostingtraffic/internal"
 )
 
 type GoogleFirebaseAppHostingTrafficCurrentOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,15 +35,15 @@ type GoogleFirebaseAppHostingTrafficCurrentOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -59,12 +59,12 @@ type GoogleFirebaseAppHostingTrafficCurrentOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -74,7 +74,7 @@ type GoogleFirebaseAppHostingTrafficCurrentOutputReference interface {
 
 // The jsii proxy struct for GoogleFirebaseAppHostingTrafficCurrentOutputReference
 type jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) ComplexObjectIndex() interface{} {
@@ -147,8 +147,8 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -158,7 +158,7 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) Terraf
 }
 
 
-func NewGoogleFirebaseAppHostingTrafficCurrentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleFirebaseAppHostingTrafficCurrentOutputReference {
+func NewGoogleFirebaseAppHostingTrafficCurrentOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleFirebaseAppHostingTrafficCurrentOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleFirebaseAppHostingTrafficCurrentOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -167,7 +167,7 @@ func NewGoogleFirebaseAppHostingTrafficCurrentOutputReference(terraformResource 
 	j := jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleFirebaseAppHostingTraffic.GoogleFirebaseAppHostingTrafficCurrentOutputReference",
+		"@cdktn/provider-google-beta.googleFirebaseAppHostingTraffic.GoogleFirebaseAppHostingTrafficCurrentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -175,11 +175,11 @@ func NewGoogleFirebaseAppHostingTrafficCurrentOutputReference(terraformResource 
 	return &j
 }
 
-func NewGoogleFirebaseAppHostingTrafficCurrentOutputReference_Override(g GoogleFirebaseAppHostingTrafficCurrentOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleFirebaseAppHostingTrafficCurrentOutputReference_Override(g GoogleFirebaseAppHostingTrafficCurrentOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleFirebaseAppHostingTraffic.GoogleFirebaseAppHostingTrafficCurrentOutputReference",
+		"@cdktn/provider-google-beta.googleFirebaseAppHostingTraffic.GoogleFirebaseAppHostingTrafficCurrentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -229,7 +229,7 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -269,11 +269,11 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) GetAny
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -397,8 +397,8 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) GetStr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -410,24 +410,24 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) Interp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -435,7 +435,7 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficCurrentOutputReference) Resolv
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

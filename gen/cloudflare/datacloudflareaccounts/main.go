@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
+		"@cdktn/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccounts",
 		reflect.TypeOf((*DataCloudflareAccounts)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accounts", GoGetter: "Accounts"},
@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -51,19 +52,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareAccounts{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccounts",
+		"@cdktn/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccounts",
 		reflect.TypeOf((*DataCloudflareAccountsAccounts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsList",
+		"@cdktn/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsList",
 		reflect.TypeOf((*DataCloudflareAccountsAccountsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -79,12 +81,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareAccountsAccountsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsAccountsOutputReference",
 		reflect.TypeOf((*DataCloudflareAccountsAccountsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,12 +117,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareAccountsAccountsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareAccounts.DataCloudflareAccountsConfig",
 		reflect.TypeOf((*DataCloudflareAccountsConfig)(nil)).Elem(),
 	)
 }

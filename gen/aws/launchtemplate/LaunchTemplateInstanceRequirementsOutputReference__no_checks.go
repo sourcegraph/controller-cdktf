@@ -40,7 +40,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validatePu
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -148,11 +148,11 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLaunchTemplateInstanceRequirementsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLaunchTemplateInstanceRequirementsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

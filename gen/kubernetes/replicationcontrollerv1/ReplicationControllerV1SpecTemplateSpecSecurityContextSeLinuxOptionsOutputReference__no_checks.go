@@ -40,11 +40,11 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinux
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinux
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecSecurityContextSeLinux
 	return nil
 }
 
-func validateNewReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewReplicationControllerV1SpecTemplateSpecSecurityContextSeLinuxOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

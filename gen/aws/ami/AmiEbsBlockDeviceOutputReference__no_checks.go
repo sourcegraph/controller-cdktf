@@ -40,11 +40,11 @@ func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmiEbsBlockDeviceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -104,7 +104,7 @@ func (j *jsiiProxy_AmiEbsBlockDeviceOutputReference) validateSetVolumeTypeParame
 	return nil
 }
 
-func validateNewAmiEbsBlockDeviceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAmiEbsBlockDeviceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

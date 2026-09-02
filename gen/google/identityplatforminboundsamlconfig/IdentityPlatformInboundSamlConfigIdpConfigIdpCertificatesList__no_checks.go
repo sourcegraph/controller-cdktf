@@ -12,7 +12,7 @@ func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_IdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesList
 	return nil
 }
 
-func validateNewIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

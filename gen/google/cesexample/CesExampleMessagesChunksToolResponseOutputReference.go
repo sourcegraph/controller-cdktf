@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cesexample/internal"
 )
 
 type CesExampleMessagesChunksToolResponseOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,9 +41,9 @@ type CesExampleMessagesChunksToolResponseOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tool() *string
 	SetTool(val *string)
 	ToolInput() *string
@@ -54,7 +54,7 @@ type CesExampleMessagesChunksToolResponseOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type CesExampleMessagesChunksToolResponseOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutToolsetTool(value *CesExampleMessagesChunksToolResponseToolsetTool)
 	ResetId()
 	ResetTool()
 	ResetToolsetTool()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type CesExampleMessagesChunksToolResponseOutputReference interface {
 
 // The jsii proxy struct for CesExampleMessagesChunksToolResponseOutputReference
 type jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) ComplexObjectIndex() interface{} {
@@ -202,8 +202,8 @@ func (j *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -253,7 +253,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) ToolsetT
 }
 
 
-func NewCesExampleMessagesChunksToolResponseOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesExampleMessagesChunksToolResponseOutputReference {
+func NewCesExampleMessagesChunksToolResponseOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CesExampleMessagesChunksToolResponseOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesExampleMessagesChunksToolResponseOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -262,7 +262,7 @@ func NewCesExampleMessagesChunksToolResponseOutputReference(terraformResource cd
 	j := jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksToolResponseOutputReference",
+		"@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -270,11 +270,11 @@ func NewCesExampleMessagesChunksToolResponseOutputReference(terraformResource cd
 	return &j
 }
 
-func NewCesExampleMessagesChunksToolResponseOutputReference_Override(c CesExampleMessagesChunksToolResponseOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCesExampleMessagesChunksToolResponseOutputReference_Override(c CesExampleMessagesChunksToolResponseOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesExample.CesExampleMessagesChunksToolResponseOutputReference",
+		"@cdktn/provider-google.cesExample.CesExampleMessagesChunksToolResponseOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) GetAnyMa
 	return returns
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -525,8 +525,8 @@ func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) GetStrin
 	return returns
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -538,16 +538,16 @@ func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) Interpol
 	return returns
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -589,8 +589,8 @@ func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) ResetToo
 	)
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -598,7 +598,7 @@ func (c *jsiiProxy_CesExampleMessagesChunksToolResponseOutputReference) Resolve(
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

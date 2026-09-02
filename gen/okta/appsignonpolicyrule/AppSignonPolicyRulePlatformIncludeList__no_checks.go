@@ -12,7 +12,7 @@ func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) validateGetParameters
 	return nil
 }
 
-func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AppSignonPolicyRulePlatformIncludeList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewAppSignonPolicyRulePlatformIncludeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAppSignonPolicyRulePlatformIncludeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

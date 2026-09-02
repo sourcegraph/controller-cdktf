@@ -40,7 +40,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validatePutQ
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDiscoveryEngineControlConditionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDiscoveryEngineControlConditionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

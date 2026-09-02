@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleaccesscontextmanageraccesslevel/internal"
 )
 
 type GoogleAccessContextManagerAccessLevelBasicOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CombiningFunction() *string
 	SetCombiningFunction(val *string)
 	CombiningFunctionInput() *string
@@ -39,15 +39,15 @@ type GoogleAccessContextManagerAccessLevelBasicOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type GoogleAccessContextManagerAccessLevelBasicOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutConditions(value interface{})
 	ResetCombiningFunction()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type GoogleAccessContextManagerAccessLevelBasicOutputReference interface {
 
 // The jsii proxy struct for GoogleAccessContextManagerAccessLevelBasicOutputReference
 type jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) CombiningFunction() *string {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) Te
 }
 
 
-func NewGoogleAccessContextManagerAccessLevelBasicOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleAccessContextManagerAccessLevelBasicOutputReference {
+func NewGoogleAccessContextManagerAccessLevelBasicOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleAccessContextManagerAccessLevelBasicOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleAccessContextManagerAccessLevelBasicOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewGoogleAccessContextManagerAccessLevelBasicOutputReference(terraformResou
 	j := jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevelBasicOutputReference",
+		"@cdktn/provider-google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevelBasicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewGoogleAccessContextManagerAccessLevelBasicOutputReference(terraformResou
 	return &j
 }
 
-func NewGoogleAccessContextManagerAccessLevelBasicOutputReference_Override(g GoogleAccessContextManagerAccessLevelBasicOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleAccessContextManagerAccessLevelBasicOutputReference_Override(g GoogleAccessContextManagerAccessLevelBasicOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevelBasicOutputReference",
+		"@cdktn/provider-google-beta.googleAccessContextManagerAccessLevel.GoogleAccessContextManagerAccessLevelBasicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -444,8 +444,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -457,16 +457,16 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) In
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelBasicOutputReference) Re
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

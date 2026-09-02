@@ -40,7 +40,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) validateGetString
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) validatePutOpenAp
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolVersionToolOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxToolVersionToolOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDialogflowCxToolVersionToolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowCxToolVersionToolOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

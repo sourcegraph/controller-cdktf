@@ -56,6 +56,10 @@ func (m *jsiiProxy_MqBroker) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (m *jsiiProxy_MqBroker) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MqBroker) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (m *jsiiProxy_MqBroker) validatePutTimeoutsParameters(value *MqBrokerTimeou
 }
 
 func (m *jsiiProxy_MqBroker) validatePutUserParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MqBroker) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -160,7 +168,7 @@ func (j *jsiiProxy_MqBroker) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_MqBroker) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MqBroker) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

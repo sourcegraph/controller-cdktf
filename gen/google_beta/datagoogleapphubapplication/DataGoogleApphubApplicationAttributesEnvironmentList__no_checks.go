@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleApphubApplicationAttributesEnvironmentList) validat
 	return nil
 }
 
-func validateNewDataGoogleApphubApplicationAttributesEnvironmentListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleApphubApplicationAttributesEnvironmentListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumePersistentVolumeC
 	return nil
 }
 
-func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumePersistentVolumeC
 	return nil
 }
 
-func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CronJobSpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCronJobSpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCronJobSpecJobTemplateSpecTemplateSpecVolumePersistentVolumeClaimOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputRe
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputRe
 	return nil
 }
 
-func validateNewReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewReplicationControllerV1SpecTemplateSpecVolumeHostPathOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

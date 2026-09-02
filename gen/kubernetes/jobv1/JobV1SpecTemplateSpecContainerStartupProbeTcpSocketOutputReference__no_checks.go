@@ -40,11 +40,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewJobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewJobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

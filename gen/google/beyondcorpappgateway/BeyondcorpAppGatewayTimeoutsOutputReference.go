@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/beyondcorpappgateway/internal"
 )
 
 type BeyondcorpAppGatewayTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type BeyondcorpAppGatewayTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type BeyondcorpAppGatewayTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type BeyondcorpAppGatewayTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type BeyondcorpAppGatewayTimeoutsOutputReference interface {
 
 // The jsii proxy struct for BeyondcorpAppGatewayTimeoutsOutputReference
 type jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) UpdateInput() *s
 }
 
 
-func NewBeyondcorpAppGatewayTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BeyondcorpAppGatewayTimeoutsOutputReference {
+func NewBeyondcorpAppGatewayTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BeyondcorpAppGatewayTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBeyondcorpAppGatewayTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewBeyondcorpAppGatewayTimeoutsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayTimeoutsOutputReference",
+		"@cdktn/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewBeyondcorpAppGatewayTimeoutsOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewBeyondcorpAppGatewayTimeoutsOutputReference_Override(b BeyondcorpAppGatewayTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBeyondcorpAppGatewayTimeoutsOutputReference_Override(b BeyondcorpAppGatewayTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayTimeoutsOutputReference",
+		"@cdktn/provider-google.beyondcorpAppGateway.BeyondcorpAppGatewayTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -491,8 +491,8 @@ func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -504,16 +504,16 @@ func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) InterpolationAsL
 	return returns
 }
 
-func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (b *jsiiProxy_BeyondcorpAppGatewayTimeoutsOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

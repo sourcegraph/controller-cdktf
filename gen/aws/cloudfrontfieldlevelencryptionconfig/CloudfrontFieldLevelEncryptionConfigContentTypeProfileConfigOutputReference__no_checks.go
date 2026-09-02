@@ -40,7 +40,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigO
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigO
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigO
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudfrontFieldLevelEncryptionConfigContentTypeProfileConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

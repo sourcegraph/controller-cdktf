@@ -56,6 +56,10 @@ func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateInterpolationForAt
 	return nil
 }
 
+func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validatePutPropertyDefinit
 }
 
 func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validatePutTimeoutsParameters(value *DocumentAiWarehouseDocumentSchemaTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DocumentAiWarehouseDocumentSchema) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

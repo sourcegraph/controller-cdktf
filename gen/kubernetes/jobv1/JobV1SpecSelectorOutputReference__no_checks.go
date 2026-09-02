@@ -40,7 +40,7 @@ func (j *jsiiProxy_JobV1SpecSelectorOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (j *jsiiProxy_JobV1SpecSelectorOutputReference) validatePutMatchExpressions
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_JobV1SpecSelectorOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobV1SpecSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewJobV1SpecSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobV1SpecSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

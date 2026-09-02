@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType",
+		"@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotType",
 		reflect.TypeOf((*DataAwsLexSlotType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -43,6 +43,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetVersion", GoMethod: "ResetVersion"},
@@ -58,23 +59,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "valueSelectionStrategy", GoGetter: "ValueSelectionStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "versionInput", GoGetter: "VersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLexSlotType{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig",
+		"@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeConfig",
 		reflect.TypeOf((*DataAwsLexSlotTypeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValue",
+		"@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValue",
 		reflect.TypeOf((*DataAwsLexSlotTypeEnumerationValue)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueList",
+		"@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueList",
 		reflect.TypeOf((*DataAwsLexSlotTypeEnumerationValueList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -90,12 +92,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLexSlotTypeEnumerationValueList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueOutputReference",
+		"@cdktn/provider-aws.dataAwsLexSlotType.DataAwsLexSlotTypeEnumerationValueOutputReference",
 		reflect.TypeOf((*DataAwsLexSlotTypeEnumerationValueOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,7 +126,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
+		"@cdktn/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociation",
 		reflect.TypeOf((*AmplifyDomainAssociation)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -51,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putSubDomain", GoMethod: "PutSubDomain"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWaitForVerification", GoMethod: "ResetWaitForVerification"},
@@ -67,23 +69,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForVerification", GoGetter: "WaitForVerification"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForVerificationInput", GoGetter: "WaitForVerificationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AmplifyDomainAssociation{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationConfig",
+		"@cdktn/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationConfig",
 		reflect.TypeOf((*AmplifyDomainAssociationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomain",
+		"@cdktn/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomain",
 		reflect.TypeOf((*AmplifyDomainAssociationSubDomain)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainList",
+		"@cdktn/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainList",
 		reflect.TypeOf((*AmplifyDomainAssociationSubDomainList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -100,12 +103,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AmplifyDomainAssociationSubDomainList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainOutputReference",
+		"@cdktn/provider-aws.amplifyDomainAssociation.AmplifyDomainAssociationSubDomainOutputReference",
 		reflect.TypeOf((*AmplifyDomainAssociationSubDomainOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchName", GoGetter: "BranchName"},
@@ -138,7 +141,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

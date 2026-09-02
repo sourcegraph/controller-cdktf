@@ -12,7 +12,7 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathList) validateGetParameters(index *f
 	return nil
 }
 
-func (i *jsiiProxy_IngressV1SpecRuleHttpPathList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IngressV1SpecRuleHttpPathList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_IngressV1SpecRuleHttpPathList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_IngressV1SpecRuleHttpPathList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IngressV1SpecRuleHttpPathList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_IngressV1SpecRuleHttpPathList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewIngressV1SpecRuleHttpPathListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIngressV1SpecRuleHttpPathListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

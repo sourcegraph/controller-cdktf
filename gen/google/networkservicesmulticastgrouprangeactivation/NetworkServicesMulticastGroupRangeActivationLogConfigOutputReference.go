@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkservicesmulticastgrouprangeactivation/internal"
 )
 
 type NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference interf
 
 // The jsii proxy struct for NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference
 type jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputRe
 }
 
 
-func NewNetworkServicesMulticastGroupRangeActivationLogConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference {
+func NewNetworkServicesMulticastGroupRangeActivationLogConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkServicesMulticastGroupRangeActivationLogConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewNetworkServicesMulticastGroupRangeActivationLogConfigOutputReference(ter
 	j := jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference",
+		"@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewNetworkServicesMulticastGroupRangeActivationLogConfigOutputReference(ter
 	return &j
 }
 
-func NewNetworkServicesMulticastGroupRangeActivationLogConfigOutputReference_Override(n NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNetworkServicesMulticastGroupRangeActivationLogConfigOutputReference_Override(n NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference",
+		"@cdktn/provider-google.networkServicesMulticastGroupRangeActivation.NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputRe
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -421,8 +421,8 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputRe
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -434,16 +434,16 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputRe
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputRe
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRangeActivationLogConfigOutputRe
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

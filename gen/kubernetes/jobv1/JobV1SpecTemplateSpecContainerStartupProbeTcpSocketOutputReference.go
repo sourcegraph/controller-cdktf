@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/jobv1/internal"
 )
 
 type JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference interfac
 
 // The jsii proxy struct for JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference
 type jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputRefe
 }
 
 
-func NewJobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference {
+func NewJobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -179,7 +179,7 @@ func NewJobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference(terra
 	j := jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference",
+		"@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewJobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference(terra
 	return &j
 }
 
-func NewJobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference_Override(j JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewJobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference_Override(j JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference",
+		"@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputRefe
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -420,8 +420,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -433,24 +433,24 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerStartupProbeTcpSocketOutputRefe
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

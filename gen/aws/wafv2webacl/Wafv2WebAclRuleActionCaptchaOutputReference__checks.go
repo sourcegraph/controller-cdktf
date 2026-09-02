@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference) validateGetStrin
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -101,9 +101,9 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference) validatePutCusto
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (w *jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -190,7 +190,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -198,7 +198,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference) validateSetTerra
 	return nil
 }
 
-func validateNewWafv2WebAclRuleActionCaptchaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWafv2WebAclRuleActionCaptchaOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

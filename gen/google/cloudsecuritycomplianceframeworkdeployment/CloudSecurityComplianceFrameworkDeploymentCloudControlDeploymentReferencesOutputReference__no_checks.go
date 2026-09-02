@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentCloudControlDeploym
 	return nil
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentCloudControlDeploym
 	return nil
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudSecurityComplianceFrameworkDeploymentCloudControlDeploymentReferencesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

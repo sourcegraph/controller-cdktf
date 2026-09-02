@@ -40,11 +40,11 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesRegionPoolsOutputReference) validat
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesRegionPoolsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesRegionPoolsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesRegionPoolsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesRegionPoolsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesRegionPoolsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesRegionPoolsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesRegionPoolsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLoadBalancerRulesOverridesRegionPoolsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerRulesOverridesRegionPoolsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayVpnAttachment) validatePutTimeoutsPar
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsEc2TransitGatewayVpnAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsEc2TransitGatewayVpnAttachment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayVpnAttachment) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayVpnAttachment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayVpnAttachment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

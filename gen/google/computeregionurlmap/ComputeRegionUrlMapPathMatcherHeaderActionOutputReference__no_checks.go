@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherHeaderActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeRegionUrlMapPathMatcherHeaderActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRegionUrlMapPathMatcherHeaderActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

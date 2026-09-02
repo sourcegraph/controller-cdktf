@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

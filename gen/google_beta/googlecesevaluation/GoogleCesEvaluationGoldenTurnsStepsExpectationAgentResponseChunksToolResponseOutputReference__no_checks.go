@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseCh
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolResponseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolResponseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseCh
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolResponseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolResponseOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseCh
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolResponseOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolResponseOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseCh
 	return nil
 }
 
-func validateNewGoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolResponseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesEvaluationGoldenTurnsStepsExpectationAgentResponseChunksToolResponseOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

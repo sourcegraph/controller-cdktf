@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (r *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (r *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) valida
 	return nil
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (r *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (r *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (r *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -173,7 +173,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) valida
 
 func (j *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *Route53DomainsRegisteredDomainTimeouts:
 		val := val.(*Route53DomainsRegisteredDomainTimeouts)
@@ -188,7 +188,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) valida
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Route53DomainsRegisteredDomainTimeouts; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *Route53DomainsRegisteredDomainTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -203,7 +203,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_Route53DomainsRegisteredDomainTimeoutsOutputReference) valida
 	return nil
 }
 
-func validateNewRoute53DomainsRegisteredDomainTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRoute53DomainsRegisteredDomainTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

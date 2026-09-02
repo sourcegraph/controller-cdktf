@@ -40,7 +40,7 @@ func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudAssetOrganizationFeedFeedOutputConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudAssetOrganizationFeedFeedOutputConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudAssetOrganizationFeedFeedOutputConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

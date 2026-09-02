@@ -40,7 +40,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjects
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjects
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjects
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

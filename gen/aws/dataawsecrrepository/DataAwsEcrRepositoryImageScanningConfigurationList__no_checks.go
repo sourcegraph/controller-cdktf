@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsEcrRepositoryImageScanningConfigurationList) validateS
 	return nil
 }
 
-func validateNewDataAwsEcrRepositoryImageScanningConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsEcrRepositoryImageScanningConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

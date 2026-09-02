@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterControlPlaneNodeOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterControlPlaneNodeOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleGkeonpremVmwareAdminClusterControlPlaneNodeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGkeonpremVmwareAdminClusterControlPlaneNodeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

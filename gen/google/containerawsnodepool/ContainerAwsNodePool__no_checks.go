@@ -56,6 +56,10 @@ func (c *jsiiProxy_ContainerAwsNodePool) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAwsNodePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAwsNodePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (c *jsiiProxy_ContainerAwsNodePool) validatePutUpdateSettingsParameters(val
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAwsNodePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateContainerAwsNodePool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -136,7 +144,7 @@ func (j *jsiiProxy_ContainerAwsNodePool) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ContainerAwsNodePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

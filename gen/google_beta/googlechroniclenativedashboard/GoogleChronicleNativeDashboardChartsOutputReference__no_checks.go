@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboardChartsOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardChartsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardChartsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboardChartsOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardChartsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardChartsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleChronicleNativeDashboardChartsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleNativeDashboardChartsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleNativeDashboardChartsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleNativeDashboardChartsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleChronicleNativeDashboardChartsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

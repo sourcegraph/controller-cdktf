@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingBuild) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseAppHostingBuild) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAppHostingBuild) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingBuild) validatePutSourceParameters(va
 }
 
 func (g *jsiiProxy_GoogleFirebaseAppHostingBuild) validatePutTimeoutsParameters(value *GoogleFirebaseAppHostingBuildTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppHostingBuild) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingBuild) validateSetLabelsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingBuild) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingBuild) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

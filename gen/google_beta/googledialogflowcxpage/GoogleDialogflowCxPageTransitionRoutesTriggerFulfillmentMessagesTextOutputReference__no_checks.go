@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessa
 	return nil
 }
 
-func validateNewGoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesTextOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

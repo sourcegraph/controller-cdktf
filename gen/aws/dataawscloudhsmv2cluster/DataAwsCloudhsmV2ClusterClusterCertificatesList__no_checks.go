@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesList) validateSetW
 	return nil
 }
 
-func validateNewDataAwsCloudhsmV2ClusterClusterCertificatesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsCloudhsmV2ClusterClusterCertificatesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

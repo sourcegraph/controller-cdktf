@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecVolumeAzureDiskList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewDataKubernetesPodSpecVolumeAzureDiskListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesPodSpecVolumeAzureDiskListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

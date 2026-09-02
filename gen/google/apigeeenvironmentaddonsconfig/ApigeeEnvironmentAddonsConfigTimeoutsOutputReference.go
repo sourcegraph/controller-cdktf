@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/apigeeenvironmentaddonsconfig/internal"
 )
 
 type ApigeeEnvironmentAddonsConfigTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type ApigeeEnvironmentAddonsConfigTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type ApigeeEnvironmentAddonsConfigTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type ApigeeEnvironmentAddonsConfigTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ApigeeEnvironmentAddonsConfigTimeoutsOutputReference interface {
 
 // The jsii proxy struct for ApigeeEnvironmentAddonsConfigTimeoutsOutputReference
 type jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) UpdateI
 }
 
 
-func NewApigeeEnvironmentAddonsConfigTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApigeeEnvironmentAddonsConfigTimeoutsOutputReference {
+func NewApigeeEnvironmentAddonsConfigTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ApigeeEnvironmentAddonsConfigTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApigeeEnvironmentAddonsConfigTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewApigeeEnvironmentAddonsConfigTimeoutsOutputReference(terraformResource c
 	j := jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apigeeEnvironmentAddonsConfig.ApigeeEnvironmentAddonsConfigTimeoutsOutputReference",
+		"@cdktn/provider-google.apigeeEnvironmentAddonsConfig.ApigeeEnvironmentAddonsConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewApigeeEnvironmentAddonsConfigTimeoutsOutputReference(terraformResource c
 	return &j
 }
 
-func NewApigeeEnvironmentAddonsConfigTimeoutsOutputReference_Override(a ApigeeEnvironmentAddonsConfigTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewApigeeEnvironmentAddonsConfigTimeoutsOutputReference_Override(a ApigeeEnvironmentAddonsConfigTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apigeeEnvironmentAddonsConfig.ApigeeEnvironmentAddonsConfigTimeoutsOutputReference",
+		"@cdktn/provider-google.apigeeEnvironmentAddonsConfig.ApigeeEnvironmentAddonsConfigTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) GetAnyM
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -491,8 +491,8 @@ func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) GetStri
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -504,16 +504,16 @@ func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) Interpo
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) ResetUp
 	)
 }
 
-func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (a *jsiiProxy_ApigeeEnvironmentAddonsConfigTimeoutsOutputReference) Resolve
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

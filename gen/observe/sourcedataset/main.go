@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.sourceDataset.SourceDataset",
+		"@cdktn/provider-observe.sourceDataset.SourceDataset",
 		reflect.TypeOf((*SourceDataset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isInsertOnly", GoGetter: "IsInsertOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "isInsertOnlyInput", GoGetter: "IsInsertOnlyInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putField", GoMethod: "PutField"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBatchSeqField", GoMethod: "ResetBatchSeqField"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFreshness", GoMethod: "ResetFreshness"},
@@ -84,25 +86,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "validFromField", GoGetter: "ValidFromField"},
 			_jsii_.MemberProperty{JsiiProperty: "validFromFieldInput", GoGetter: "ValidFromFieldInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SourceDataset{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.sourceDataset.SourceDatasetConfig",
+		"@cdktn/provider-observe.sourceDataset.SourceDatasetConfig",
 		reflect.TypeOf((*SourceDatasetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.sourceDataset.SourceDatasetField",
+		"@cdktn/provider-observe.sourceDataset.SourceDatasetField",
 		reflect.TypeOf((*SourceDatasetField)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.sourceDataset.SourceDatasetFieldList",
+		"@cdktn/provider-observe.sourceDataset.SourceDatasetFieldList",
 		reflect.TypeOf((*SourceDatasetFieldList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -119,12 +122,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SourceDatasetFieldList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.sourceDataset.SourceDatasetFieldOutputReference",
+		"@cdktn/provider-observe.sourceDataset.SourceDatasetFieldOutputReference",
 		reflect.TypeOf((*SourceDatasetFieldOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -172,7 +175,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SourceDatasetFieldOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationIngressConfigurationOutpu
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationIngressConfigurationOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApprunnerServiceNetworkConfigurationIngressConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApprunnerServiceNetworkConfigurationIngressConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApprunnerServiceNetworkConfigurationIngressConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

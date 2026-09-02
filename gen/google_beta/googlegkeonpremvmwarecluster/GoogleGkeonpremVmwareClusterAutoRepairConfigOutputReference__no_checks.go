@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAutoRepairConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleGkeonpremVmwareClusterAutoRepairConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGkeonpremVmwareClusterAutoRepairConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

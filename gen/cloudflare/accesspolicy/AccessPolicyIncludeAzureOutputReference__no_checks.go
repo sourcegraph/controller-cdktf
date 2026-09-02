@@ -40,11 +40,11 @@ func (a *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessPolicyIncludeAzureOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAccessPolicyIncludeAzureOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAccessPolicyIncludeAzureOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

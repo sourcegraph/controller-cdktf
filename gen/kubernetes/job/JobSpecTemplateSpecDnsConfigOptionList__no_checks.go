@@ -12,7 +12,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecDnsConfigOptionList) validateGetParameters
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecDnsConfigOptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecDnsConfigOptionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecDnsConfigOptionList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecDnsConfigOptionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecDnsConfigOptionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecDnsConfigOptionList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecDnsConfigOptionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobSpecTemplateSpecDnsConfigOptionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

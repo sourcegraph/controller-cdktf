@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleOutputReference) valid
 	return nil
 }
 
-func validateNewDataAwsRoute53TrafficPolicyDocumentRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsRoute53TrafficPolicyDocumentRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

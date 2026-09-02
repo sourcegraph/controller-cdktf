@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlloydbClusterRestoreContinuousBackupSourceOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterRestoreContinuousBackupSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbClusterRestoreContinuousBackupSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterRestoreContinuousBackupSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterRestoreContinuousBackupSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AlloydbClusterRestoreContinuousBackupSourceOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterRestoreContinuousBackupSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlloydbClusterRestoreContinuousBackupSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlloydbClusterRestoreContinuousBackupSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlloydbClusterRestoreContinuousBackupSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

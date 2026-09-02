@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstanceGroupManager) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -124,6 +128,10 @@ func (c *jsiiProxy_ComputeInstanceGroupManager) validatePutVersionParameters(val
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstanceGroupManager) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateComputeInstanceGroupManager_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -160,7 +168,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManager) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManager) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeInstanceGroupManager) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

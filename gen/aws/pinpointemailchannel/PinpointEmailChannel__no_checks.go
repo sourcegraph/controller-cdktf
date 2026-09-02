@@ -56,6 +56,10 @@ func (p *jsiiProxy_PinpointEmailChannel) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (p *jsiiProxy_PinpointEmailChannel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointEmailChannel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PinpointEmailChannel) validateMoveToIdParameters(id *string) 
 }
 
 func (p *jsiiProxy_PinpointEmailChannel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PinpointEmailChannel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_PinpointEmailChannel) validateSetIdentityParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_PinpointEmailChannel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PinpointEmailChannel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigquerydatatransferconfig/internal"
 )
 
 type GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetSecretAccessKey()
 	ResetSecretAccessKeyWo()
 	ResetSecretAccessKeyWoVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference interface {
 
 // The jsii proxy struct for GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference
 type jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReferenc
 }
 
 
-func NewGoogleBigqueryDataTransferConfigSensitiveParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference {
+func NewGoogleBigqueryDataTransferConfigSensitiveParamsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleBigqueryDataTransferConfigSensitiveParamsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleBigqueryDataTransferConfigSensitiveParamsOutputReference(terraform
 	j := jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference",
+		"@cdktn/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleBigqueryDataTransferConfigSensitiveParamsOutputReference(terraform
 	return &j
 }
 
-func NewGoogleBigqueryDataTransferConfigSensitiveParamsOutputReference_Override(g GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleBigqueryDataTransferConfigSensitiveParamsOutputReference_Override(g GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference",
+		"@cdktn/provider-google-beta.googleBigqueryDataTransferConfig.GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -491,8 +491,8 @@ func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,16 +504,16 @@ func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReferenc
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleBigqueryDataTransferConfigSensitiveParamsOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

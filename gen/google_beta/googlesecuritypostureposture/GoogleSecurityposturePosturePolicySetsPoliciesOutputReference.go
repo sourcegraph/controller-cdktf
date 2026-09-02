@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesecuritypostureposture/internal"
 )
 
 type GoogleSecurityposturePosturePolicySetsPoliciesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -44,15 +44,15 @@ type GoogleSecurityposturePosturePolicySetsPoliciesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,16 +68,16 @@ type GoogleSecurityposturePosturePolicySetsPoliciesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutComplianceStandards(value interface{})
 	PutConstraint(value *GoogleSecurityposturePosturePolicySetsPoliciesConstraint)
 	ResetComplianceStandards()
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type GoogleSecurityposturePosturePolicySetsPoliciesOutputReference interface {
 
 // The jsii proxy struct for GoogleSecurityposturePosturePolicySetsPoliciesOutputReference
 type jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference) ComplexObjectIndex() interface{} {
@@ -230,8 +230,8 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -241,7 +241,7 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference
 }
 
 
-func NewGoogleSecurityposturePosturePolicySetsPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesOutputReference {
+func NewGoogleSecurityposturePosturePolicySetsPoliciesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleSecurityposturePosturePolicySetsPoliciesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleSecurityposturePosturePolicySetsPoliciesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -250,7 +250,7 @@ func NewGoogleSecurityposturePosturePolicySetsPoliciesOutputReference(terraformR
 	j := jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesOutputReference",
+		"@cdktn/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -258,11 +258,11 @@ func NewGoogleSecurityposturePosturePolicySetsPoliciesOutputReference(terraformR
 	return &j
 }
 
-func NewGoogleSecurityposturePosturePolicySetsPoliciesOutputReference_Override(g GoogleSecurityposturePosturePolicySetsPoliciesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleSecurityposturePosturePolicySetsPoliciesOutputReference_Override(g GoogleSecurityposturePosturePolicySetsPoliciesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesOutputReference",
+		"@cdktn/provider-google-beta.googleSecurityposturePosture.GoogleSecurityposturePosturePolicySetsPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -334,7 +334,7 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,11 +374,11 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -502,8 +502,8 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -515,16 +515,16 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -569,8 +569,8 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference
 	)
 }
 
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -578,7 +578,7 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesOutputReference
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

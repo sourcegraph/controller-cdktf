@@ -12,7 +12,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditi
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditi
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePassthroughExtensionsAdditi
 	return nil
 }
 
-func validateNewGooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGooglePrivatecaCertificateTemplatePassthroughExtensionsAdditionalExtensionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

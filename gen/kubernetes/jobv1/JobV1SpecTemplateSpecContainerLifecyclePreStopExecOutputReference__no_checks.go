@@ -40,11 +40,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewJobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobV1SpecTemplateSpecContainerLifecyclePreStopExecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

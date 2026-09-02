@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupNamedPortOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeInstanceGroupNamedPortOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeInstanceGroupNamedPortOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

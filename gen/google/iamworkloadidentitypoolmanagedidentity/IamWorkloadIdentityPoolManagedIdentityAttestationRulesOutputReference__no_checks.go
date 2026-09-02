@@ -40,11 +40,11 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputR
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewIamWorkloadIdentityPoolManagedIdentityAttestationRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

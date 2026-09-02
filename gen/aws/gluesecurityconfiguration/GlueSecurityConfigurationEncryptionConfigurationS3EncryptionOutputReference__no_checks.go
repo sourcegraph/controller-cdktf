@@ -40,11 +40,11 @@ func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionO
 	return nil
 }
 
-func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionO
 	return nil
 }
 
-func (j *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGlueSecurityConfigurationEncryptionConfigurationS3EncryptionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

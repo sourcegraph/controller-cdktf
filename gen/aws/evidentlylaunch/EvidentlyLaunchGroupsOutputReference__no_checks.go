@@ -40,11 +40,11 @@ func (e *jsiiProxy_EvidentlyLaunchGroupsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EvidentlyLaunchGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyLaunchGroupsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_EvidentlyLaunchGroupsOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchGroupsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EvidentlyLaunchGroupsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_EvidentlyLaunchGroupsOutputReference) validateSetVariationPar
 	return nil
 }
 
-func validateNewEvidentlyLaunchGroupsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEvidentlyLaunchGroupsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

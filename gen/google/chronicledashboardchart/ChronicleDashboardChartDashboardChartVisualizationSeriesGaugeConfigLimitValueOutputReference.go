@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/chronicledashboardchart/internal"
 )
 
 type ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Color() *string
 	SetColor(val *string)
 	ColorInput() *string
@@ -37,9 +37,9 @@ type ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitVal
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *float64
 	SetValue(val *float64)
 	ValueInput() *float64
@@ -48,7 +48,7 @@ type ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitVal
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitVal
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetColor()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitVal
 
 // The jsii proxy struct for ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference
 type jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference) Color() *string {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 }
 
 
-func NewChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference {
+func NewChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimit
 	j := jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference",
+		"@cdktn/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimit
 	return &j
 }
 
-func NewChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference_Override(c ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference_Override(c ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference",
+		"@cdktn/provider-google.chronicleDashboardChart.ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -456,8 +456,8 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -469,16 +469,16 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGaugeConfigLimitValueOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationSeriesGauge
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

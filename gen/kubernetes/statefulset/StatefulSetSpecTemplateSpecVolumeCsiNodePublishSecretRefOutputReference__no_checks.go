@@ -40,11 +40,11 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutpu
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutpu
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStatefulSetSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

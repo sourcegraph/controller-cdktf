@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) validateGetStringM
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -344,7 +344,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) validatePutWorkspa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -380,11 +380,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

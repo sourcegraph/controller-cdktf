@@ -40,11 +40,11 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutpu
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStorageInsightsDatasetConfigExcludeCloudStorageLocationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

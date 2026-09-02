@@ -40,7 +40,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputRefe
 	return nil
 }
 
-func validateNewCloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudRunV2WorkerPoolTemplateContainersLivenessProbeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

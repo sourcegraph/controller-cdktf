@@ -40,11 +40,11 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputRefer
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputRefer
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveCountMetricsTotalAzureMonitorWorkspaceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

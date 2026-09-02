@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkSecurityAuthzPolicyHttpRulesToOperationsPathsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

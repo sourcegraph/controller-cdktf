@@ -12,7 +12,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsList
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsList
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationLegendsList
 	return nil
 }
 
-func validateNewChronicleDashboardChartDashboardChartVisualizationLegendsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewChronicleDashboardChartDashboardChartVisualizationLegendsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

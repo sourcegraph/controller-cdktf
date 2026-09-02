@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketObjectContentContextsList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketObjectContentContextsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageBucketObjectContentContextsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContentContextsList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketObjectContentContextsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleStorageBucketObjectContentContextsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketObjectContentContextsList) validateSet
 	return nil
 }
 
-func validateNewDataGoogleStorageBucketObjectContentContextsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleStorageBucketObjectContentContextsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

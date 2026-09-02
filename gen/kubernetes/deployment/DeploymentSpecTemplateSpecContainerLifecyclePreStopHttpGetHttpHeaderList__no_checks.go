@@ -12,7 +12,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHtt
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHtt
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHtt
 	return nil
 }
 
-func validateNewDeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDeploymentSpecTemplateSpecContainerLifecyclePreStopHttpGetHttpHeaderListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

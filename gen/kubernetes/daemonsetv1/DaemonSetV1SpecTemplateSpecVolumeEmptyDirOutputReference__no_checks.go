@@ -40,11 +40,11 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDaemonSetV1SpecTemplateSpecVolumeEmptyDirOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

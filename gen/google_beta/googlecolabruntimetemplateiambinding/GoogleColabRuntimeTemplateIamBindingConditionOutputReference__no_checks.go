@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateIamBindingConditionOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateIamBindingConditionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateIamBindingConditionOutputReference)
 	return nil
 }
 
-func validateNewGoogleColabRuntimeTemplateIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleColabRuntimeTemplateIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

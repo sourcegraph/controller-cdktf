@@ -40,11 +40,11 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) v
 	return nil
 }
 
-func (l *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLustreInstanceAccessRulesOptionsAccessRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLustreInstanceAccessRulesOptionsAccessRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

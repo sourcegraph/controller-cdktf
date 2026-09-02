@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticatio
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticatio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

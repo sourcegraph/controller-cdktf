@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) vali
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference) vali
 	return nil
 }
 
-func validateNewNetworkConnectivityInternalRangeTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkConnectivityInternalRangeTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

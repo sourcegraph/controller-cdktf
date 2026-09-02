@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateGetStrin
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -172,11 +172,11 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateSetEncry
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -185,7 +185,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateSetEncry
 
 func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *OpsworksPhpAppLayerEbsVolume:
 		val := val.(*OpsworksPhpAppLayerEbsVolume)
@@ -200,7 +200,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateSetInter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OpsworksPhpAppLayerEbsVolume; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *OpsworksPhpAppLayerEbsVolume; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -255,7 +255,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -271,7 +271,7 @@ func (j *jsiiProxy_OpsworksPhpAppLayerEbsVolumeOutputReference) validateSetTypeP
 	return nil
 }
 
-func validateNewOpsworksPhpAppLayerEbsVolumeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOpsworksPhpAppLayerEbsVolumeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

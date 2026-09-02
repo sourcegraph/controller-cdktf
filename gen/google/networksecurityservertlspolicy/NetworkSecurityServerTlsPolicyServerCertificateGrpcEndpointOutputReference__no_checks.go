@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOu
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkSecurityServerTlsPolicyServerCertificateGrpcEndpointOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

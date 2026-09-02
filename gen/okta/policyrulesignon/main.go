@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignon",
+		"@cdktn/provider-okta.policyRuleSignon.PolicyRuleSignon",
 		reflect.TypeOf((*PolicyRuleSignon)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "access", GoGetter: "Access"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaLifetime", GoGetter: "MfaLifetime"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaLifetimeInput", GoGetter: "MfaLifetimeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "mfaPrompt", GoGetter: "MfaPrompt"},
@@ -79,6 +80,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putFactorSequence", GoMethod: "PutFactorSequence"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccess", GoMethod: "ResetAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthtype", GoMethod: "ResetAuthtype"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBehaviors", GoMethod: "ResetBehaviors"},
@@ -127,23 +129,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "usersExcluded", GoGetter: "UsersExcluded"},
 			_jsii_.MemberProperty{JsiiProperty: "usersExcludedInput", GoGetter: "UsersExcludedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleSignon{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonConfig",
+		"@cdktn/provider-okta.policyRuleSignon.PolicyRuleSignonConfig",
 		reflect.TypeOf((*PolicyRuleSignonConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence",
+		"@cdktn/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequence",
 		reflect.TypeOf((*PolicyRuleSignonFactorSequence)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList",
+		"@cdktn/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceList",
 		reflect.TypeOf((*PolicyRuleSignonFactorSequenceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -160,12 +163,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleSignonFactorSequenceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference",
+		"@cdktn/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceOutputReference",
 		reflect.TypeOf((*PolicyRuleSignonFactorSequenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -200,16 +203,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria",
+		"@cdktn/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteria",
 		reflect.TypeOf((*PolicyRuleSignonFactorSequenceSecondaryCriteria)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList",
+		"@cdktn/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaList",
 		reflect.TypeOf((*PolicyRuleSignonFactorSequenceSecondaryCriteriaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -226,12 +229,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference",
+		"@cdktn/provider-okta.policyRuleSignon.PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference",
 		reflect.TypeOf((*PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -262,7 +265,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

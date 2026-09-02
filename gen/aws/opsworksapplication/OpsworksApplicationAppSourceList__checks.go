@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (o *jsiiProxy_OpsworksApplicationAppSourceList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (o *jsiiProxy_OpsworksApplicationAppSourceList) validateGetParameters(index
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksApplicationAppSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OpsworksApplicationAppSourceList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (o *jsiiProxy_OpsworksApplicationAppSourceList) validateResolveParameters(_
 
 func (j *jsiiProxy_OpsworksApplicationAppSourceList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*OpsworksApplicationAppSource:
 		val := val.(*[]*OpsworksApplicationAppSource)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_OpsworksApplicationAppSourceList) validateSetInternalValuePar
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*OpsworksApplicationAppSource; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*OpsworksApplicationAppSource; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_OpsworksApplicationAppSourceList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksApplicationAppSourceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksApplicationAppSourceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_OpsworksApplicationAppSourceList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewOpsworksApplicationAppSourceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOpsworksApplicationAppSourceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

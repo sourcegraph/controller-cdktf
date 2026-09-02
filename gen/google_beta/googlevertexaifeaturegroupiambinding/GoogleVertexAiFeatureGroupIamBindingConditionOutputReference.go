@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeaturegroupiambinding/internal"
 )
 
 type GoogleVertexAiFeatureGroupIamBindingConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type GoogleVertexAiFeatureGroupIamBindingConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type GoogleVertexAiFeatureGroupIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type GoogleVertexAiFeatureGroupIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type GoogleVertexAiFeatureGroupIamBindingConditionOutputReference interface {
 
 // The jsii proxy struct for GoogleVertexAiFeatureGroupIamBindingConditionOutputReference
 type jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference)
 }
 
 
-func NewGoogleVertexAiFeatureGroupIamBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeatureGroupIamBindingConditionOutputReference {
+func NewGoogleVertexAiFeatureGroupIamBindingConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeatureGroupIamBindingConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleVertexAiFeatureGroupIamBindingConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewGoogleVertexAiFeatureGroupIamBindingConditionOutputReference(terraformRe
 	j := jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConditionOutputReference",
+		"@cdktn/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewGoogleVertexAiFeatureGroupIamBindingConditionOutputReference(terraformRe
 	return &j
 }
 
-func NewGoogleVertexAiFeatureGroupIamBindingConditionOutputReference_Override(g GoogleVertexAiFeatureGroupIamBindingConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleVertexAiFeatureGroupIamBindingConditionOutputReference_Override(g GoogleVertexAiFeatureGroupIamBindingConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConditionOutputReference",
+		"@cdktn/provider-google-beta.googleVertexAiFeatureGroupIamBinding.GoogleVertexAiFeatureGroupIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -489,8 +489,8 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -502,16 +502,16 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference)
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference)
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (g *jsiiProxy_GoogleVertexAiFeatureGroupIamBindingConditionOutputReference)
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

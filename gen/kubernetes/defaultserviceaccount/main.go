@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccount",
 		reflect.TypeOf((*DefaultServiceAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSecret", GoMethod: "PutSecret"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomountServiceAccountToken", GoMethod: "ResetAutomountServiceAccountToken"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetImagePullSecret", GoMethod: "ResetImagePullSecret"},
@@ -74,23 +76,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DefaultServiceAccount{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountConfig",
 		reflect.TypeOf((*DefaultServiceAccountConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecret",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecret",
 		reflect.TypeOf((*DefaultServiceAccountImagePullSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretList",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretList",
 		reflect.TypeOf((*DefaultServiceAccountImagePullSecretList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -107,12 +110,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DefaultServiceAccountImagePullSecretList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretOutputReference",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountImagePullSecretOutputReference",
 		reflect.TypeOf((*DefaultServiceAccountImagePullSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,16 +145,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DefaultServiceAccountImagePullSecretOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadata",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadata",
 		reflect.TypeOf((*DefaultServiceAccountMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadataOutputReference",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountMetadataOutputReference",
 		reflect.TypeOf((*DefaultServiceAccountMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -193,16 +196,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DefaultServiceAccountMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecret",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecret",
 		reflect.TypeOf((*DefaultServiceAccountSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretList",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretList",
 		reflect.TypeOf((*DefaultServiceAccountSecretList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -219,12 +222,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DefaultServiceAccountSecretList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountSecretOutputReference",
 		reflect.TypeOf((*DefaultServiceAccountSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -254,16 +257,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DefaultServiceAccountSecretOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeouts",
 		reflect.TypeOf((*DefaultServiceAccountTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeoutsOutputReference",
+		"@cdktn/provider-kubernetes.defaultServiceAccount.DefaultServiceAccountTimeoutsOutputReference",
 		reflect.TypeOf((*DefaultServiceAccountTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -293,7 +296,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DefaultServiceAccountTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

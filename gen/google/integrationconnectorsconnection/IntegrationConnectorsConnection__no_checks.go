@@ -56,6 +56,10 @@ func (i *jsiiProxy_IntegrationConnectorsConnection) validateInterpolationForAttr
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationConnectorsConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IntegrationConnectorsConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (i *jsiiProxy_IntegrationConnectorsConnection) validatePutTimeoutsParameter
 	return nil
 }
 
+func (i *jsiiProxy_IntegrationConnectorsConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateIntegrationConnectorsConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -152,7 +160,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnection) validateSetLabelsParameters(
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IntegrationConnectorsConnection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

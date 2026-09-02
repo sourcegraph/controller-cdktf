@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfig",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfig",
 		reflect.TypeOf((*DataLineageConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -54,6 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putIngestion", GoMethod: "PutIngestion"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTimeouts", GoMethod: "ResetTimeouts"},
@@ -68,23 +70,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataLineageConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigConfig",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigConfig",
 		reflect.TypeOf((*DataLineageConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestion",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestion",
 		reflect.TypeOf((*DataLineageConfigIngestion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionOutputReference",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionOutputReference",
 		reflect.TypeOf((*DataLineageConfigIngestionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,20 +117,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataLineageConfigIngestionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRule",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRule",
 		reflect.TypeOf((*DataLineageConfigIngestionRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleIntegrationSelector",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleIntegrationSelector",
 		reflect.TypeOf((*DataLineageConfigIngestionRuleIntegrationSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleIntegrationSelectorOutputReference",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleIntegrationSelectorOutputReference",
 		reflect.TypeOf((*DataLineageConfigIngestionRuleIntegrationSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,16 +159,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataLineageConfigIngestionRuleIntegrationSelectorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleLineageEnablement",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleLineageEnablement",
 		reflect.TypeOf((*DataLineageConfigIngestionRuleLineageEnablement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleLineageEnablementOutputReference",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleLineageEnablementOutputReference",
 		reflect.TypeOf((*DataLineageConfigIngestionRuleLineageEnablementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,12 +197,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataLineageConfigIngestionRuleLineageEnablementOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleList",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleList",
 		reflect.TypeOf((*DataLineageConfigIngestionRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -216,12 +219,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataLineageConfigIngestionRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleOutputReference",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigIngestionRuleOutputReference",
 		reflect.TypeOf((*DataLineageConfigIngestionRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -254,16 +257,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataLineageConfigIngestionRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigTimeouts",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeouts",
 		reflect.TypeOf((*DataLineageConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataLineageConfig.DataLineageConfigTimeoutsOutputReference",
+		"@cdktn/provider-google.dataLineageConfig.DataLineageConfigTimeoutsOutputReference",
 		reflect.TypeOf((*DataLineageConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -299,7 +302,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataLineageConfigTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

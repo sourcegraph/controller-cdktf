@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directdynatrace/internal"
 )
 
 type DirectDynatraceHistoricalDataRetrievalOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type DirectDynatraceHistoricalDataRetrievalOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,14 +62,14 @@ type DirectDynatraceHistoricalDataRetrievalOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDefaultDuration(value interface{})
 	PutMaxDuration(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type DirectDynatraceHistoricalDataRetrievalOutputReference interface {
 
 // The jsii proxy struct for DirectDynatraceHistoricalDataRetrievalOutputReference
 type jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) Terraf
 }
 
 
-func NewDirectDynatraceHistoricalDataRetrievalOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DirectDynatraceHistoricalDataRetrievalOutputReference {
+func NewDirectDynatraceHistoricalDataRetrievalOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DirectDynatraceHistoricalDataRetrievalOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDirectDynatraceHistoricalDataRetrievalOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewDirectDynatraceHistoricalDataRetrievalOutputReference(terraformResource 
 	j := jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalOutputReference",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewDirectDynatraceHistoricalDataRetrievalOutputReference(terraformResource 
 	return &j
 }
 
-func NewDirectDynatraceHistoricalDataRetrievalOutputReference_Override(d DirectDynatraceHistoricalDataRetrievalOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDirectDynatraceHistoricalDataRetrievalOutputReference_Override(d DirectDynatraceHistoricalDataRetrievalOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalOutputReference",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,11 +304,11 @@ func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) GetAny
 	return returns
 }
 
-func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -432,8 +432,8 @@ func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) GetStr
 	return returns
 }
 
-func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -445,16 +445,16 @@ func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -483,8 +483,8 @@ func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) PutMax
 	)
 }
 
-func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference) Resolv
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

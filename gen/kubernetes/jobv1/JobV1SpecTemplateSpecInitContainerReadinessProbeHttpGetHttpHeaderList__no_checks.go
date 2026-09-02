@@ -12,7 +12,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHe
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHe
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHe
 	return nil
 }
 
-func validateNewJobV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobV1SpecTemplateSpecInitContainerReadinessProbeHttpGetHttpHeaderListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datastreamstream/internal"
 )
 
 type DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Columns() DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesColumnsList
 	ColumnsInput() interface{}
 	// the index of the complex object in a list.
@@ -39,15 +39,15 @@ type DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesO
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesO
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutColumns(value interface{})
 	ResetColumns()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesO
 
 // The jsii proxy struct for DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference
 type jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference) Columns() DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesColumnsList {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjects
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjects
 }
 
 
-func NewDatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference {
+func NewDatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewDatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTabl
 	j := jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference",
+		"@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewDatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTabl
 	return &j
 }
 
-func NewDatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference_Override(d DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference_Override(d DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference",
+		"@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjects
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjects
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -444,8 +444,8 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjects
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -457,16 +457,16 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjects
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjects
 	)
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasTablesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjects
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

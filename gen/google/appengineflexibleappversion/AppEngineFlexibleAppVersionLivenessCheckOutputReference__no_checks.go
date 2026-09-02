@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionLivenessCheckOutputReference) vali
 	return nil
 }
 
-func validateNewAppEngineFlexibleAppVersionLivenessCheckOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppEngineFlexibleAppVersionLivenessCheckOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

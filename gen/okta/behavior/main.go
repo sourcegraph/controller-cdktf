@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.behavior.Behavior",
+		"@cdktn/provider-okta.behavior.Behavior",
 		reflect.TypeOf((*Behavior)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -38,6 +38,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "locationGranularityType", GoGetter: "LocationGranularityType"},
 			_jsii_.MemberProperty{JsiiProperty: "locationGranularityTypeInput", GoGetter: "LocationGranularityTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -52,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "radiusFromLocation", GoGetter: "RadiusFromLocation"},
 			_jsii_.MemberProperty{JsiiProperty: "radiusFromLocationInput", GoGetter: "RadiusFromLocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocationGranularityType", GoMethod: "ResetLocationGranularityType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNumberOfAuthentications", GoMethod: "ResetNumberOfAuthentications"},
@@ -74,15 +76,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "velocity", GoGetter: "Velocity"},
 			_jsii_.MemberProperty{JsiiProperty: "velocityInput", GoGetter: "VelocityInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Behavior{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.behavior.BehaviorConfig",
+		"@cdktn/provider-okta.behavior.BehaviorConfig",
 		reflect.TypeOf((*BehaviorConfig)(nil)).Elem(),
 	)
 }

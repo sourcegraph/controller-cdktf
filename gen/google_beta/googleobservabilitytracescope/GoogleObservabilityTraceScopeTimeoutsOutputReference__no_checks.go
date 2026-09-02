@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleObservabilityTraceScopeTimeoutsOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleObservabilityTraceScopeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleObservabilityTraceScopeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleObservabilityTraceScopeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleObservabilityTraceScopeTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleObservabilityTraceScopeTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleObservabilityTraceScopeTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleObservabilityTraceScopeTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleObservabilityTraceScopeTimeoutsOutputReference) validat
 	return nil
 }
 
-func validateNewGoogleObservabilityTraceScopeTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleObservabilityTraceScopeTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

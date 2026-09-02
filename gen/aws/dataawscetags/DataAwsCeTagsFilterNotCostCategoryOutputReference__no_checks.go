@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterNotCostCategoryOutputReference) validateSe
 	return nil
 }
 
-func validateNewDataAwsCeTagsFilterNotCostCategoryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAwsCeTagsFilterNotCostCategoryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

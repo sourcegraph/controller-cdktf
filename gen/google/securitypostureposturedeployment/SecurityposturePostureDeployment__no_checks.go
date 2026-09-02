@@ -56,6 +56,10 @@ func (s *jsiiProxy_SecurityposturePostureDeployment) validateInterpolationForAtt
 	return nil
 }
 
+func (s *jsiiProxy_SecurityposturePostureDeployment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityposturePostureDeployment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SecurityposturePostureDeployment) validateOverrideLogicalIdPa
 }
 
 func (s *jsiiProxy_SecurityposturePostureDeployment) validatePutTimeoutsParameters(value *SecurityposturePostureDeploymentTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityposturePostureDeployment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SecurityposturePostureDeployment) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePostureDeployment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SecurityposturePostureDeployment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

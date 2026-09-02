@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubFilterOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubFilterOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleContainerClusterNotificationConfigPubsubFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleContainerClusterNotificationConfigPubsubFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleContainerClusterNotificationConfigPubsubFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

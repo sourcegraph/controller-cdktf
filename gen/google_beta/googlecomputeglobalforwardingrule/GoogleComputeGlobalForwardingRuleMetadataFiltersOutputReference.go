@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeglobalforwardingrule/internal"
 )
 
 type GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,13 +63,13 @@ type GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutFilterLabels(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference interface {
 
 // The jsii proxy struct for GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference
 type jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferen
 }
 
 
-func NewGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference {
+func NewGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference(terrafor
 	j := jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference",
+		"@cdktn/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference(terrafor
 	return &j
 }
 
-func NewGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference_Override(g GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference_Override(g GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference",
+		"@cdktn/provider-google-beta.googleComputeGlobalForwardingRule.GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,11 +315,11 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -443,8 +443,8 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,16 +456,16 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -483,8 +483,8 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferen
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersOutputReferen
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

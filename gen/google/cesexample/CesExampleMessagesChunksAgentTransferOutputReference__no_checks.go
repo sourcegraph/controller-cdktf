@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesExampleMessagesChunksAgentTransferOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesExampleMessagesChunksAgentTransferOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesExampleMessagesChunksAgentTransferOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

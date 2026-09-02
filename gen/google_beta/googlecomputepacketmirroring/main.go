@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroring",
 		reflect.TypeOf((*GoogleComputePacketMirroring)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mirroredResources", GoGetter: "MirroredResources"},
 			_jsii_.MemberProperty{JsiiProperty: "mirroredResourcesInput", GoGetter: "MirroredResourcesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -69,6 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnable", GoMethod: "ResetEnable"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
@@ -89,19 +91,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputePacketMirroring{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringCollectorIlb",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringCollectorIlb",
 		reflect.TypeOf((*GoogleComputePacketMirroringCollectorIlb)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringCollectorIlbOutputReference",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringCollectorIlbOutputReference",
 		reflect.TypeOf((*GoogleComputePacketMirroringCollectorIlbOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -130,20 +133,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputePacketMirroringCollectorIlbOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringConfig",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringConfig",
 		reflect.TypeOf((*GoogleComputePacketMirroringConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringFilter",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringFilter",
 		reflect.TypeOf((*GoogleComputePacketMirroringFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringFilterOutputReference",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringFilterOutputReference",
 		reflect.TypeOf((*GoogleComputePacketMirroringFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cidrRanges", GoGetter: "CidrRanges"},
@@ -179,20 +182,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputePacketMirroringFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResources",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResources",
 		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResources)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstances",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstances",
 		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesInstances)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstancesList",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstancesList",
 		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesInstancesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -209,12 +212,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputePacketMirroringMirroredResourcesInstancesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstancesOutputReference",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesInstancesOutputReference",
 		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesInstancesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -243,12 +246,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputePacketMirroringMirroredResourcesInstancesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesOutputReference",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesOutputReference",
 		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -286,16 +289,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesSubnetworks",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesSubnetworks",
 		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesSubnetworks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesSubnetworksList",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesSubnetworksList",
 		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesSubnetworksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -312,12 +315,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference",
 		reflect.TypeOf((*GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -346,16 +349,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputePacketMirroringMirroredResourcesSubnetworksOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringNetwork",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringNetwork",
 		reflect.TypeOf((*GoogleComputePacketMirroringNetwork)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringNetworkOutputReference",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringNetworkOutputReference",
 		reflect.TypeOf((*GoogleComputePacketMirroringNetworkOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -384,16 +387,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputePacketMirroringNetworkOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringTimeouts",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringTimeouts",
 		reflect.TypeOf((*GoogleComputePacketMirroringTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleComputePacketMirroring.GoogleComputePacketMirroringTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputePacketMirroringTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -429,7 +432,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputePacketMirroringTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

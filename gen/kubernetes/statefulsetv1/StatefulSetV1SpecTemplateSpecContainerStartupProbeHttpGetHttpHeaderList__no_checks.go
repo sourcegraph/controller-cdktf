@@ -12,7 +12,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttp
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttp
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttp
 	return nil
 }
 
-func validateNewStatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStatefulSetV1SpecTemplateSpecContainerStartupProbeHttpGetHttpHeaderListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

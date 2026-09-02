@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeCephFsSecretRefList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeCephFsSecretRefList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeCephFsSecretRefList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeCephFsSecretRefList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeCephFsSecretRefList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeCephFsSecretRefList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeCephFsSecretRefList) validateSet
 	return nil
 }
 
-func validateNewDataKubernetesPodV1SpecVolumeCephFsSecretRefListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesPodV1SpecVolumeCephFsSecretRefListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeed",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeed",
 		reflect.TypeOf((*CloudAssetFolderFeed)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -65,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFeedOutputConfig", GoMethod: "PutFeedOutputConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssetNames", GoMethod: "ResetAssetNames"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssetTypes", GoMethod: "ResetAssetTypes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCondition", GoMethod: "ResetCondition"},
@@ -83,19 +85,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudAssetFolderFeed{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedCondition",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedCondition",
 		reflect.TypeOf((*CloudAssetFolderFeedCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedConditionOutputReference",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedConditionOutputReference",
 		reflect.TypeOf((*CloudAssetFolderFeedConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,20 +136,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudAssetFolderFeedConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedConfig",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedConfig",
 		reflect.TypeOf((*CloudAssetFolderFeedConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfig",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfig",
 		reflect.TypeOf((*CloudAssetFolderFeedFeedOutputConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigOutputReference",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigOutputReference",
 		reflect.TypeOf((*CloudAssetFolderFeedFeedOutputConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,16 +179,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudAssetFolderFeedFeedOutputConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigPubsubDestination",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigPubsubDestination",
 		reflect.TypeOf((*CloudAssetFolderFeedFeedOutputConfigPubsubDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference",
 		reflect.TypeOf((*CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -214,16 +217,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedTimeouts",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedTimeouts",
 		reflect.TypeOf((*CloudAssetFolderFeedTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedTimeoutsOutputReference",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedTimeoutsOutputReference",
 		reflect.TypeOf((*CloudAssetFolderFeedTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -259,7 +262,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudAssetFolderFeedTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

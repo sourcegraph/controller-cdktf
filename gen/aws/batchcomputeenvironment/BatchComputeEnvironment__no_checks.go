@@ -56,6 +56,10 @@ func (b *jsiiProxy_BatchComputeEnvironment) validateInterpolationForAttributePar
 	return nil
 }
 
+func (b *jsiiProxy_BatchComputeEnvironment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BatchComputeEnvironment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (b *jsiiProxy_BatchComputeEnvironment) validatePutComputeResourcesParameter
 }
 
 func (b *jsiiProxy_BatchComputeEnvironment) validatePutEksConfigurationParameters(value *BatchComputeEnvironmentEksConfiguration) error {
+	return nil
+}
+
+func (b *jsiiProxy_BatchComputeEnvironment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_BatchComputeEnvironment) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_BatchComputeEnvironment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BatchComputeEnvironment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

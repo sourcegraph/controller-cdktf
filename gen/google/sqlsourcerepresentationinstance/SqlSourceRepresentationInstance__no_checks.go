@@ -56,6 +56,10 @@ func (s *jsiiProxy_SqlSourceRepresentationInstance) validateInterpolationForAttr
 	return nil
 }
 
+func (s *jsiiProxy_SqlSourceRepresentationInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlSourceRepresentationInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SqlSourceRepresentationInstance) validateOverrideLogicalIdPar
 }
 
 func (s *jsiiProxy_SqlSourceRepresentationInstance) validatePutTimeoutsParameters(value *SqlSourceRepresentationInstanceTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlSourceRepresentationInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SqlSourceRepresentationInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

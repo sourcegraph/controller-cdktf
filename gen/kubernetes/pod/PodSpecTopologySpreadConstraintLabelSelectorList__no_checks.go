@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorList) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorList) validateSet
 	return nil
 }
 
-func validateNewPodSpecTopologySpreadConstraintLabelSelectorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSpecTopologySpreadConstraintLabelSelectorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

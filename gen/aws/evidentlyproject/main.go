@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.evidentlyProject.EvidentlyProject",
+		"@cdktn/provider-aws.evidentlyProject.EvidentlyProject",
 		reflect.TypeOf((*EvidentlyProject)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeExperimentCount", GoGetter: "ActiveExperimentCount"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lastUpdatedTime", GoGetter: "LastUpdatedTime"},
 			_jsii_.MemberProperty{JsiiProperty: "launchCount", GoGetter: "LaunchCount"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDataDelivery", GoMethod: "PutDataDelivery"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataDelivery", GoMethod: "ResetDataDelivery"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -83,27 +85,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EvidentlyProject{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectConfig",
+		"@cdktn/provider-aws.evidentlyProject.EvidentlyProjectConfig",
 		reflect.TypeOf((*EvidentlyProjectConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDelivery",
+		"@cdktn/provider-aws.evidentlyProject.EvidentlyProjectDataDelivery",
 		reflect.TypeOf((*EvidentlyProjectDataDelivery)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryCloudwatchLogs",
+		"@cdktn/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryCloudwatchLogs",
 		reflect.TypeOf((*EvidentlyProjectDataDeliveryCloudwatchLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference",
+		"@cdktn/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference",
 		reflect.TypeOf((*EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,12 +136,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EvidentlyProjectDataDeliveryCloudwatchLogsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryOutputReference",
+		"@cdktn/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryOutputReference",
 		reflect.TypeOf((*EvidentlyProjectDataDeliveryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogs", GoGetter: "CloudwatchLogs"},
@@ -173,16 +176,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EvidentlyProjectDataDeliveryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryS3Destination",
+		"@cdktn/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryS3Destination",
 		reflect.TypeOf((*EvidentlyProjectDataDeliveryS3Destination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryS3DestinationOutputReference",
+		"@cdktn/provider-aws.evidentlyProject.EvidentlyProjectDataDeliveryS3DestinationOutputReference",
 		reflect.TypeOf((*EvidentlyProjectDataDeliveryS3DestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -215,16 +218,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EvidentlyProjectDataDeliveryS3DestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectTimeouts",
+		"@cdktn/provider-aws.evidentlyProject.EvidentlyProjectTimeouts",
 		reflect.TypeOf((*EvidentlyProjectTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.evidentlyProject.EvidentlyProjectTimeoutsOutputReference",
+		"@cdktn/provider-aws.evidentlyProject.EvidentlyProjectTimeoutsOutputReference",
 		reflect.TypeOf((*EvidentlyProjectTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -260,7 +263,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EvidentlyProjectTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

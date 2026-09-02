@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDiscoveryEngineLicenseConfigStartDateOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineLicenseConfigStartDateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineLicenseConfigStartDateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineLicenseConfigStartDateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineLicenseConfigStartDateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineLicenseConfigStartDateOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineLicenseConfigStartDateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineLicenseConfigStartDateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineLicenseConfigStartDateOutputReference) v
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineLicenseConfigStartDateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDiscoveryEngineLicenseConfigStartDateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

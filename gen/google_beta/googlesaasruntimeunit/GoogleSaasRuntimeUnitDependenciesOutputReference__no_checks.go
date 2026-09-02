@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSaasRuntimeUnitDependenciesOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSaasRuntimeUnitDependenciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSaasRuntimeUnitDependenciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSaasRuntimeUnitDependenciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSaasRuntimeUnitDependenciesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleSaasRuntimeUnitDependenciesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSaasRuntimeUnitDependenciesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSaasRuntimeUnitDependenciesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSaasRuntimeUnitDependenciesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleSaasRuntimeUnitDependenciesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

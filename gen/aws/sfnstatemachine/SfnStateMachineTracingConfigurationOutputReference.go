@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/sfnstatemachine/internal"
 )
 
 type SfnStateMachineTracingConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type SfnStateMachineTracingConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type SfnStateMachineTracingConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type SfnStateMachineTracingConfigurationOutputReference interface {
 
 // The jsii proxy struct for SfnStateMachineTracingConfigurationOutputReference
 type jsiiProxy_SfnStateMachineTracingConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) Terraform
 }
 
 
-func NewSfnStateMachineTracingConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SfnStateMachineTracingConfigurationOutputReference {
+func NewSfnStateMachineTracingConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SfnStateMachineTracingConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSfnStateMachineTracingConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewSfnStateMachineTracingConfigurationOutputReference(terraformResource cdk
 	j := jsiiProxy_SfnStateMachineTracingConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference",
+		"@cdktn/provider-aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewSfnStateMachineTracingConfigurationOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewSfnStateMachineTracingConfigurationOutputReference_Override(s SfnStateMachineTracingConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSfnStateMachineTracingConfigurationOutputReference_Override(s SfnStateMachineTracingConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference",
+		"@cdktn/provider-aws.sfnStateMachine.SfnStateMachineTracingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) GetAnyMap
 	return returns
 }
 
-func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -421,8 +421,8 @@ func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) GetString
 	return returns
 }
 
-func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -434,16 +434,16 @@ func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) Interpola
 	return returns
 }
 
-func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) ResetEnab
 	)
 }
 
-func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (s *jsiiProxy_SfnStateMachineTracingConfigurationOutputReference) Resolve(_
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

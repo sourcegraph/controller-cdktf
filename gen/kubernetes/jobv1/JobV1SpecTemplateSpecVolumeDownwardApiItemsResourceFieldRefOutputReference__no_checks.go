@@ -40,11 +40,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOu
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOu
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewJobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobV1SpecTemplateSpecVolumeDownwardApiItemsResourceFieldRefOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

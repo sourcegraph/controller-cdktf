@@ -12,7 +12,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList) v
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList) v
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsList) v
 	return nil
 }
 
-func validateNewJobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobV1SpecTemplateSpecVolumeProjectedSourcesSecretItemsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

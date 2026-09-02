@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsKendraThesaurusSourceS3PathOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurusSourceS3PathOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsKendraThesaurusSourceS3PathOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsKendraThesaurusSourceS3PathOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsKendraThesaurusSourceS3PathOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

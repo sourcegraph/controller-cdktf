@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileHostAddressesO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileHostAddressesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileHostAddressesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileHostAddressesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileHostAddressesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileHostAddressesO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileHostAddressesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileMongodbProfileHostAddressesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamConnectionProfileMongodbProfileHostAddressesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDatastreamConnectionProfileMongodbProfileHostAddressesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

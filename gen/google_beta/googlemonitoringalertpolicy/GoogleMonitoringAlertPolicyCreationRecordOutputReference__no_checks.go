@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyCreationRecordOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMonitoringAlertPolicyCreationRecordOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleMonitoringAlertPolicyCreationRecordOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

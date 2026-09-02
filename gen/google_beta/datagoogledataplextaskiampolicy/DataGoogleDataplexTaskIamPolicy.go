@@ -5,15 +5,15 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogledataplextaskiampolicy/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google-beta/7.32.0/docs/data-sources/google_dataplex_task_iam_policy google_dataplex_task_iam_policy}.
 type DataGoogleDataplexTaskIamPolicy interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -26,9 +26,9 @@ type DataGoogleDataplexTaskIamPolicy interface {
 	SetDependsOn(val *[]*string)
 	Etag() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -40,9 +40,9 @@ type DataGoogleDataplexTaskIamPolicy interface {
 	SetLake(val *string)
 	LakeInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -53,16 +53,16 @@ type DataGoogleDataplexTaskIamPolicy interface {
 	SetProject(val *string)
 	ProjectInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	TaskId() *string
 	SetTaskId(val *string)
 	TaskIdInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -72,7 +72,7 @@ type DataGoogleDataplexTaskIamPolicy interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,10 +88,23 @@ type DataGoogleDataplexTaskIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
 	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -110,15 +123,24 @@ type DataGoogleDataplexTaskIamPolicy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataGoogleDataplexTaskIamPolicy
 type jsiiProxy_DataGoogleDataplexTaskIamPolicy struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -167,8 +189,8 @@ func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) Etag() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -237,8 +259,8 @@ func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) LakeInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -307,8 +329,8 @@ func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) ProjectInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -347,8 +369,8 @@ func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) TaskIdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -388,7 +410,7 @@ func NewDataGoogleDataplexTaskIamPolicy(scope constructs.Construct, id *string, 
 	j := jsiiProxy_DataGoogleDataplexTaskIamPolicy{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -401,7 +423,7 @@ func NewDataGoogleDataplexTaskIamPolicy_Override(d DataGoogleDataplexTaskIamPoli
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -426,7 +448,7 @@ func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy)SetDependsOn(val *[]*string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -456,7 +478,7 @@ func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy)SetLake(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,7 +511,7 @@ func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -508,17 +530,17 @@ func (j *jsiiProxy_DataGoogleDataplexTaskIamPolicy)SetTaskId(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataGoogleDataplexTaskIamPolicy resource upon running "cdktf plan <stack-name>".
-func DataGoogleDataplexTaskIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataGoogleDataplexTaskIamPolicy resource upon running "cdktn plan <stack-name>".
+func DataGoogleDataplexTaskIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDataplexTaskIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -553,7 +575,7 @@ func DataGoogleDataplexTaskIamPolicy_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -572,7 +594,7 @@ func DataGoogleDataplexTaskIamPolicy_IsTerraformDataSource(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -591,7 +613,7 @@ func DataGoogleDataplexTaskIamPolicy_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -604,7 +626,7 @@ func DataGoogleDataplexTaskIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
+		"@cdktn/provider-google-beta.dataGoogleDataplexTaskIamPolicy.DataGoogleDataplexTaskIamPolicy",
 		"tfResourceType",
 		&returns,
 	)
@@ -638,11 +660,11 @@ func (d *jsiiProxy_DataGoogleDataplexTaskIamPolicy) GetAnyMapAttribute(terraform
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataplexTaskIamPolicy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleDataplexTaskIamPolicy) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -766,11 +788,11 @@ func (d *jsiiProxy_DataGoogleDataplexTaskIamPolicy) GetStringMapAttribute(terraf
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataplexTaskIamPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleDataplexTaskIamPolicy) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -790,6 +812,17 @@ func (d *jsiiProxy_DataGoogleDataplexTaskIamPolicy) OverrideLogicalId(newLogical
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleDataplexTaskIamPolicy) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -897,6 +930,24 @@ func (d *jsiiProxy_DataGoogleDataplexTaskIamPolicy) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGoogleDataplexTaskIamPolicy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

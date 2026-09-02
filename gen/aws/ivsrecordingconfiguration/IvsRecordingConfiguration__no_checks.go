@@ -56,6 +56,10 @@ func (i *jsiiProxy_IvsRecordingConfiguration) validateInterpolationForAttributeP
 	return nil
 }
 
+func (i *jsiiProxy_IvsRecordingConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvsRecordingConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (i *jsiiProxy_IvsRecordingConfiguration) validatePutThumbnailConfigurationP
 }
 
 func (i *jsiiProxy_IvsRecordingConfiguration) validatePutTimeoutsParameters(value *IvsRecordingConfigurationTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvsRecordingConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_IvsRecordingConfiguration) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_IvsRecordingConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IvsRecordingConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

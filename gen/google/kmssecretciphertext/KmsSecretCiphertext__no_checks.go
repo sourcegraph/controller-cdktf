@@ -56,6 +56,10 @@ func (k *jsiiProxy_KmsSecretCiphertext) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (k *jsiiProxy_KmsSecretCiphertext) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsSecretCiphertext) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (k *jsiiProxy_KmsSecretCiphertext) validateOverrideLogicalIdParameters(newL
 }
 
 func (k *jsiiProxy_KmsSecretCiphertext) validatePutTimeoutsParameters(value *KmsSecretCiphertextTimeouts) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsSecretCiphertext) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_KmsSecretCiphertext) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_KmsSecretCiphertext) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KmsSecretCiphertext) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

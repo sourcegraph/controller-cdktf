@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueAppEngineRoutingOverrideOutputReference)
 	return nil
 }
 
-func validateNewGoogleCloudTasksQueueAppEngineRoutingOverrideOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudTasksQueueAppEngineRoutingOverrideOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

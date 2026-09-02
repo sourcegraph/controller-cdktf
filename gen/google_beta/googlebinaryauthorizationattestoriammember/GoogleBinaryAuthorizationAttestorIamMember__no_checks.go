@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateInterpola
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateOverrideL
 }
 
 func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validatePutConditionParameters(value *GoogleBinaryAuthorizationAttestorIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateSetIdPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBinaryAuthorizationAttestorIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

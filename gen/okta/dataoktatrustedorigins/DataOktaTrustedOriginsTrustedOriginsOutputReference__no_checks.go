@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataOktaTrustedOriginsTrustedOriginsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataOktaTrustedOriginsTrustedOriginsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (l *jsiiProxy_LbListener) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LbListener) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbListener) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (l *jsiiProxy_LbListener) validatePutDefaultActionParameters(value interfac
 }
 
 func (l *jsiiProxy_LbListener) validatePutTimeoutsParameters(value *LbListenerTimeouts) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbListener) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_LbListener) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LbListener) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LbListener) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

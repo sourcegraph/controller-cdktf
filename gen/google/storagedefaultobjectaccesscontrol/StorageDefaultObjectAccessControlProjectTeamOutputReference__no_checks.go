@@ -40,11 +40,11 @@ func (s *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageDefaultObjectAccessControlProjectTeamOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStorageDefaultObjectAccessControlProjectTeamOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewStorageDefaultObjectAccessControlProjectTeamOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerEbsVolumeList) validateGetParameters(inde
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksGangliaLayerEbsVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksGangliaLayerEbsVolumeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerEbsVolumeList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksGangliaLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_OpsworksGangliaLayerEbsVolumeList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewOpsworksGangliaLayerEbsVolumeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOpsworksGangliaLayerEbsVolumeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (s *jsiiProxy_SqlUser) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (s *jsiiProxy_SqlUser) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqlUser) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_SqlUser) validatePutPasswordPolicyParameters(value *SqlUserPa
 }
 
 func (s *jsiiProxy_SqlUser) validatePutTimeoutsParameters(value *SqlUserTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqlUser) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_SqlUser) validateSetInstanceParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SqlUser) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SqlUser) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

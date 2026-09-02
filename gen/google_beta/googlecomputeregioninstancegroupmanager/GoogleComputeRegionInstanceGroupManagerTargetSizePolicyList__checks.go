@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList) 
 
 func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleComputeRegionInstanceGroupManagerTargetSizePolicy:
 		val := val.(*[]*GoogleComputeRegionInstanceGroupManagerTargetSizePolicy)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList) 
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeRegionInstanceGroupManagerTargetSizePolicy; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*GoogleComputeRegionInstanceGroupManagerTargetSizePolicy; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerTargetSizePolicyList) 
 	return nil
 }
 
-func validateNewGoogleComputeRegionInstanceGroupManagerTargetSizePolicyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeRegionInstanceGroupManagerTargetSizePolicyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

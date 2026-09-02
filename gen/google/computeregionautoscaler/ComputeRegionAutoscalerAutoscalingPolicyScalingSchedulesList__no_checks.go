@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList)
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesList)
 	return nil
 }
 
-func validateNewComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRegionAutoscalerAutoscalingPolicyScalingSchedulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

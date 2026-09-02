@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkServicesTlsRoute) validateInterpolationForAttributePar
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesTlsRoute) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesTlsRoute) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (n *jsiiProxy_NetworkServicesTlsRoute) validatePutRulesParameters(value int
 }
 
 func (n *jsiiProxy_NetworkServicesTlsRoute) validatePutTimeoutsParameters(value *NetworkServicesTlsRouteTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesTlsRoute) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_NetworkServicesTlsRoute) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesTlsRoute) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkServicesTlsRoute) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

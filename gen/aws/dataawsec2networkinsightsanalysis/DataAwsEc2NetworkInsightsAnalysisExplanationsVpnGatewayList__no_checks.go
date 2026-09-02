@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayList) 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayList) 
 	return nil
 }
 
-func validateNewDataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsEc2NetworkInsightsAnalysisExplanationsVpnGatewayListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

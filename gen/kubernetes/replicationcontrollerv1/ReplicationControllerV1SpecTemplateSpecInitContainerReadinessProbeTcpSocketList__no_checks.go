@@ -12,7 +12,7 @@ func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadiness
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadiness
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ReplicationControllerV1SpecTemplateSpecInitContainerReadiness
 	return nil
 }
 
-func validateNewReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewReplicationControllerV1SpecTemplateSpecInitContainerReadinessProbeTcpSocketListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

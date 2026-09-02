@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirebaseHostingChannelTimeoutsOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingChannelTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseHostingChannelTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingChannelTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseHostingChannelTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannelTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingChannelTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseHostingChannelTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingChannelTimeoutsOutputReference) validate
 	return nil
 }
 
-func validateNewGoogleFirebaseHostingChannelTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleFirebaseHostingChannelTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

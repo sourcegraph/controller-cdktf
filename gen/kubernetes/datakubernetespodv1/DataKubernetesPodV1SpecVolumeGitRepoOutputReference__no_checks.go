@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeGitRepoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataKubernetesPodV1SpecVolumeGitRepoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataKubernetesPodV1SpecVolumeGitRepoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

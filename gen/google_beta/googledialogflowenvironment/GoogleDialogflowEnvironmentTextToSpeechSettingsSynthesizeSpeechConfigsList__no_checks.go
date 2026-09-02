@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDialogflowEnvironmentTextToSpeechSettingsSynthesizeSpee
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDialogflowEnvironmentTextToSpeechSettingsSynthesizeSpee
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDialogflowEnvironmentTextToSpeechSettingsSynthesizeSpee
 	return nil
 }
 
-func validateNewGoogleDialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowEnvironmentTextToSpeechSettingsSynthesizeSpeechConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

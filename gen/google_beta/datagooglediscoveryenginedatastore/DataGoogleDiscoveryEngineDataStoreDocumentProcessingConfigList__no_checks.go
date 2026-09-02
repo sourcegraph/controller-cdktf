@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleDiscoveryEngineDataStoreDocumentProcessingConfigLis
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDiscoveryEngineDataStoreDocumentProcessingConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDiscoveryEngineDataStoreDocumentProcessingConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleDiscoveryEngineDataStoreDocumentProcessingConfigLis
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDiscoveryEngineDataStoreDocumentProcessingConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleDiscoveryEngineDataStoreDocumentProcessingConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleDiscoveryEngineDataStoreDocumentProcessingConfigLis
 	return nil
 }
 
-func validateNewDataGoogleDiscoveryEngineDataStoreDocumentProcessingConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleDiscoveryEngineDataStoreDocumentProcessingConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

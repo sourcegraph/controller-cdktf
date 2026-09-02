@@ -40,7 +40,7 @@ func (d *jsiiProxy_DeploymentV1SpecStrategyOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentV1SpecStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentV1SpecStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DeploymentV1SpecStrategyOutputReference) validatePutRollingUp
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentV1SpecStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentV1SpecStrategyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DeploymentV1SpecStrategyOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecStrategyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentV1SpecStrategyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DeploymentV1SpecStrategyOutputReference) validateSetTypeParam
 	return nil
 }
 
-func validateNewDeploymentV1SpecStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDeploymentV1SpecStrategyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

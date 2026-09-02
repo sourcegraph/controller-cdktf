@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOut
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOut
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOut
 	return nil
 }
 
-func validateNewApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApigeeApiProductGraphqlOperationGroupOperationConfigsQuotaOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

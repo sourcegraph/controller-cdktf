@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatabasemigrationservicemigrationjob/internal"
 )
 
 type GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSourceObjectsConfig(value *GoogleDatabaseMigrationServiceMigrationJobObjectsConfigSourceObjectsConfig)
 	ResetSourceObjectsConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference inte
 
 // The jsii proxy struct for GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference
 type jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutput
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutput
 }
 
 
-func NewGoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference {
+func NewGoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewGoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference(t
 	j := jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceMigrationJob.GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDatabaseMigrationServiceMigrationJob.GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewGoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference(t
 	return &j
 }
 
-func NewGoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference_Override(g GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference_Override(g GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceMigrationJob.GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDatabaseMigrationServiceMigrationJob.GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutput
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -410,8 +410,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -423,16 +423,16 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutput
 	)
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobObjectsConfigOutput
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

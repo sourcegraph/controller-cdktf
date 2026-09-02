@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataprocWorkflowTemplateJobsPrestoJobOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataprocWorkflowTemplateJobsPrestoJobOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataprocWorkflowTemplateJobsPrestoJobOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

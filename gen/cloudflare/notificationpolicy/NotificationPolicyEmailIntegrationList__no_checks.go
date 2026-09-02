@@ -12,7 +12,7 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationList) validateGetParameters
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyEmailIntegrationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationPolicyEmailIntegrationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NotificationPolicyEmailIntegrationList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyEmailIntegrationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NotificationPolicyEmailIntegrationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NotificationPolicyEmailIntegrationList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewNotificationPolicyEmailIntegrationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNotificationPolicyEmailIntegrationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

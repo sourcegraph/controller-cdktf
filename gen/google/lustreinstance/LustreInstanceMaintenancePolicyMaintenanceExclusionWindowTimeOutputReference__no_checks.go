@@ -40,11 +40,11 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime
 	return nil
 }
 
-func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

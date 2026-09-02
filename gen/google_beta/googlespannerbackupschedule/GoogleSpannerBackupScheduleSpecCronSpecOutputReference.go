@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlespannerbackupschedule/internal"
 )
 
 type GoogleSpannerBackupScheduleSpecCronSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type GoogleSpannerBackupScheduleSpecCronSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Text() *string
 	SetText(val *string)
 	TextInput() *string
@@ -45,7 +45,7 @@ type GoogleSpannerBackupScheduleSpecCronSpecOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type GoogleSpannerBackupScheduleSpecCronSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetText()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type GoogleSpannerBackupScheduleSpecCronSpecOutputReference interface {
 
 // The jsii proxy struct for GoogleSpannerBackupScheduleSpecCronSpecOutputReference
 type jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -140,8 +140,8 @@ func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) TextI
 }
 
 
-func NewGoogleSpannerBackupScheduleSpecCronSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSpannerBackupScheduleSpecCronSpecOutputReference {
+func NewGoogleSpannerBackupScheduleSpecCronSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleSpannerBackupScheduleSpecCronSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleSpannerBackupScheduleSpecCronSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewGoogleSpannerBackupScheduleSpecCronSpecOutputReference(terraformResource
 	j := jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpecCronSpecOutputReference",
+		"@cdktn/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpecCronSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewGoogleSpannerBackupScheduleSpecCronSpecOutputReference(terraformResource
 	return &j
 }
 
-func NewGoogleSpannerBackupScheduleSpecCronSpecOutputReference_Override(g GoogleSpannerBackupScheduleSpecCronSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleSpannerBackupScheduleSpecCronSpecOutputReference_Override(g GoogleSpannerBackupScheduleSpecCronSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpecCronSpecOutputReference",
+		"@cdktn/provider-google-beta.googleSpannerBackupSchedule.GoogleSpannerBackupScheduleSpecCronSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) GetAn
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -421,8 +421,8 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) GetSt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,16 +434,16 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) Inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) Resol
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

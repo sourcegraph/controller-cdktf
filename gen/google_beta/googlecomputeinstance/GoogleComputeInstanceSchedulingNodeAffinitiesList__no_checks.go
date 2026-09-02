@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingNodeAffinitiesList) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceSchedulingNodeAffinitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingNodeAffinitiesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingNodeAffinitiesList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceSchedulingNodeAffinitiesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingNodeAffinitiesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingNodeAffinitiesList) validateSe
 	return nil
 }
 
-func validateNewGoogleComputeInstanceSchedulingNodeAffinitiesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeInstanceSchedulingNodeAffinitiesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

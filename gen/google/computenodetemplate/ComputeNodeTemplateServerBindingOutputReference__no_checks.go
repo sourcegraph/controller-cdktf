@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ComputeNodeTemplateServerBindingOutputReference) validateSetT
 	return nil
 }
 
-func validateNewComputeNodeTemplateServerBindingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeNodeTemplateServerBindingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

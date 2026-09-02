@@ -12,7 +12,7 @@ func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateGetParameters
 	return nil
 }
 
-func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_FolderIamAuditConfigAuditLogConfigList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewFolderIamAuditConfigAuditLogConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFolderIamAuditConfigAuditLogConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

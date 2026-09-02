@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcarefhirstore/internal"
 )
 
 type GoogleHealthcareFhirStoreValidationConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,15 +49,15 @@ type GoogleHealthcareFhirStoreValidationConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type GoogleHealthcareFhirStoreValidationConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDisableFhirpathValidation()
 	ResetDisableProfileValidation()
 	ResetDisableReferenceTypeValidation()
@@ -83,7 +83,7 @@ type GoogleHealthcareFhirStoreValidationConfigOutputReference interface {
 	ResetEnabledImplementationGuides()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type GoogleHealthcareFhirStoreValidationConfigOutputReference interface {
 
 // The jsii proxy struct for GoogleHealthcareFhirStoreValidationConfigOutputReference
 type jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -256,8 +256,8 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) Ter
 }
 
 
-func NewGoogleHealthcareFhirStoreValidationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleHealthcareFhirStoreValidationConfigOutputReference {
+func NewGoogleHealthcareFhirStoreValidationConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleHealthcareFhirStoreValidationConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleHealthcareFhirStoreValidationConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewGoogleHealthcareFhirStoreValidationConfigOutputReference(terraformResour
 	j := jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreValidationConfigOutputReference",
+		"@cdktn/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreValidationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewGoogleHealthcareFhirStoreValidationConfigOutputReference(terraformResour
 	return &j
 }
 
-func NewGoogleHealthcareFhirStoreValidationConfigOutputReference_Override(g GoogleHealthcareFhirStoreValidationConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleHealthcareFhirStoreValidationConfigOutputReference_Override(g GoogleHealthcareFhirStoreValidationConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreValidationConfigOutputReference",
+		"@cdktn/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreValidationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -393,7 +393,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) Get
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -561,8 +561,8 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) Get
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -574,16 +574,16 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) Int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) Res
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreValidationConfigOutputReference) Res
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

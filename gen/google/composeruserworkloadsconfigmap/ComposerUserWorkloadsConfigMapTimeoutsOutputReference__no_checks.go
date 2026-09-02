@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComposerUserWorkloadsConfigMapTimeoutsOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_ComposerUserWorkloadsConfigMapTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComposerUserWorkloadsConfigMapTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComposerUserWorkloadsConfigMapTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerUserWorkloadsConfigMapTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ComposerUserWorkloadsConfigMapTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ComposerUserWorkloadsConfigMapTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComposerUserWorkloadsConfigMapTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ComposerUserWorkloadsConfigMapTimeoutsOutputReference) valida
 	return nil
 }
 
-func validateNewComposerUserWorkloadsConfigMapTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComposerUserWorkloadsConfigMapTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

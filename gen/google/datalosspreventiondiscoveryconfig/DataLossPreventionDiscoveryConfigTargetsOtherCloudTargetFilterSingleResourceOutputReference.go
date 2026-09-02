@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datalosspreventiondiscoveryconfig/internal"
 )
 
 type DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AmazonS3Bucket() DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceAmazonS3BucketOutputReference
 	AmazonS3BucketInput() *DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceAmazonS3Bucket
 	// the index of the complex object in a list.
@@ -36,15 +36,15 @@ type DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourc
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourc
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAmazonS3Bucket(value *DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceAmazonS3Bucket)
 	ResetAmazonS3Bucket()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourc
 
 // The jsii proxy struct for DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference
 type jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference) AmazonS3Bucket() DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceAmazonS3BucketOutputReference {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilte
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilte
 }
 
 
-func NewDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference {
+func NewDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleReso
 	j := jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference",
+		"@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleReso
 	return &j
 }
 
-func NewDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference_Override(d DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference_Override(d DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference",
+		"@cdktn/provider-google.dataLossPreventionDiscoveryConfig.DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilte
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilte
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -410,8 +410,8 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilte
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -423,16 +423,16 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilte
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilte
 	)
 }
 
-func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilterSingleResourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (d *jsiiProxy_DataLossPreventionDiscoveryConfigTargetsOtherCloudTargetFilte
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

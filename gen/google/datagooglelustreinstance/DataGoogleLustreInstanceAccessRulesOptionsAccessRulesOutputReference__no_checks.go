@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleLustreInstanceAccessRulesOptionsAccessRulesOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleLustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleLustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleLustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleLustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleLustreInstanceAccessRulesOptionsAccessRulesOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleLustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleLustreInstanceAccessRulesOptionsAccessRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleLustreInstanceAccessRulesOptionsAccessRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleLustreInstanceAccessRulesOptionsAccessRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

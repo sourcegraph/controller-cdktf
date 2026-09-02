@@ -56,6 +56,10 @@ func (o *jsiiProxy_OsConfigPatchDeployment) validateInterpolationForAttributePar
 	return nil
 }
 
+func (o *jsiiProxy_OsConfigPatchDeployment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OsConfigPatchDeployment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (o *jsiiProxy_OsConfigPatchDeployment) validatePutTimeoutsParameters(value 
 	return nil
 }
 
+func (o *jsiiProxy_OsConfigPatchDeployment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateOsConfigPatchDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -132,7 +140,7 @@ func (j *jsiiProxy_OsConfigPatchDeployment) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeployment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OsConfigPatchDeployment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

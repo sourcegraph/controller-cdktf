@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBackupDrRestoreWorkload) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBackupDrRestoreWorkload) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBackupDrRestoreWorkload) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (g *jsiiProxy_GoogleBackupDrRestoreWorkload) validatePutRegionDiskTargetEnv
 }
 
 func (g *jsiiProxy_GoogleBackupDrRestoreWorkload) validatePutTimeoutsParameters(value *GoogleBackupDrRestoreWorkloadTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBackupDrRestoreWorkload) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_GoogleBackupDrRestoreWorkload) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBackupDrRestoreWorkload) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBackupDrRestoreWorkload) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

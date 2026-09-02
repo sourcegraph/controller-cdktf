@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datafusioninstanceiammember/internal"
 )
 
 type DataFusionInstanceIamMemberConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type DataFusionInstanceIamMemberConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type DataFusionInstanceIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type DataFusionInstanceIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type DataFusionInstanceIamMemberConditionOutputReference interface {
 
 // The jsii proxy struct for DataFusionInstanceIamMemberConditionOutputReference
 type jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) TitleInp
 }
 
 
-func NewDataFusionInstanceIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataFusionInstanceIamMemberConditionOutputReference {
+func NewDataFusionInstanceIamMemberConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataFusionInstanceIamMemberConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataFusionInstanceIamMemberConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewDataFusionInstanceIamMemberConditionOutputReference(terraformResource cd
 	j := jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMemberConditionOutputReference",
+		"@cdktn/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewDataFusionInstanceIamMemberConditionOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDataFusionInstanceIamMemberConditionOutputReference_Override(d DataFusionInstanceIamMemberConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataFusionInstanceIamMemberConditionOutputReference_Override(d DataFusionInstanceIamMemberConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMemberConditionOutputReference",
+		"@cdktn/provider-google.dataFusionInstanceIamMember.DataFusionInstanceIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -489,8 +489,8 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -502,16 +502,16 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) ResetDes
 	)
 }
 
-func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (d *jsiiProxy_DataFusionInstanceIamMemberConditionOutputReference) Resolve(
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeHubScopeRbacRoleBindingStateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGkeHubScopeRbacRoleBindingStateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGkeHubScopeRbacRoleBindingStateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

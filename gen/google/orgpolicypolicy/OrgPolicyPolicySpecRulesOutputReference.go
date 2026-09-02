@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/orgpolicypolicy/internal"
 )
 
 type OrgPolicyPolicySpecRulesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowAll() *string
 	SetAllowAll(val *string)
 	AllowAllInput() *string
@@ -48,9 +48,9 @@ type OrgPolicyPolicySpecRulesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Values() OrgPolicyPolicySpecRulesValuesOutputReference
 	ValuesInput() *OrgPolicyPolicySpecRulesValues
 	// Experimental.
@@ -58,7 +58,7 @@ type OrgPolicyPolicySpecRulesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,9 +74,9 @@ type OrgPolicyPolicySpecRulesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCondition(value *OrgPolicyPolicySpecRulesCondition)
 	PutValues(value *OrgPolicyPolicySpecRulesValues)
 	ResetAllowAll()
@@ -87,7 +87,7 @@ type OrgPolicyPolicySpecRulesOutputReference interface {
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type OrgPolicyPolicySpecRulesOutputReference interface {
 
 // The jsii proxy struct for OrgPolicyPolicySpecRulesOutputReference
 type jsiiProxy_OrgPolicyPolicySpecRulesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) AllowAll() *string {
@@ -260,8 +260,8 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) ValuesInput() *OrgPo
 }
 
 
-func NewOrgPolicyPolicySpecRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OrgPolicyPolicySpecRulesOutputReference {
+func NewOrgPolicyPolicySpecRulesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OrgPolicyPolicySpecRulesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOrgPolicyPolicySpecRulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -300,7 +300,7 @@ func NewOrgPolicyPolicySpecRulesOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_OrgPolicyPolicySpecRulesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference",
+		"@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewOrgPolicyPolicySpecRulesOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewOrgPolicyPolicySpecRulesOutputReference_Override(o OrgPolicyPolicySpecRulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOrgPolicyPolicySpecRulesOutputReference_Override(o OrgPolicyPolicySpecRulesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference",
+		"@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicySpecRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
@@ -406,7 +406,7 @@ func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -446,11 +446,11 @@ func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -574,8 +574,8 @@ func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -587,16 +587,16 @@ func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) ResetValues() {
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (o *jsiiProxy_OrgPolicyPolicySpecRulesOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

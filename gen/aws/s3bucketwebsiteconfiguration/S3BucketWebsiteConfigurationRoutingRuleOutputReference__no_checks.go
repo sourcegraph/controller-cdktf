@@ -40,7 +40,7 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketWebsiteConfigurationRoutingRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewS3BucketWebsiteConfigurationRoutingRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewS3BucketWebsiteConfigurationRoutingRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

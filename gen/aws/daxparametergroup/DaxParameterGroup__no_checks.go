@@ -56,6 +56,10 @@ func (d *jsiiProxy_DaxParameterGroup) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (d *jsiiProxy_DaxParameterGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DaxParameterGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DaxParameterGroup) validateOverrideLogicalIdParameters(newLog
 }
 
 func (d *jsiiProxy_DaxParameterGroup) validatePutParametersParameters(value interface{}) error {
+	return nil
+}
+
+func (d *jsiiProxy_DaxParameterGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_DaxParameterGroup) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_DaxParameterGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DaxParameterGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

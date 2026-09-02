@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsList)
 	return nil
 }
 
-func validateNewGoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleFirestoreIndexFieldsSearchConfigTextSpecIndexSpecsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

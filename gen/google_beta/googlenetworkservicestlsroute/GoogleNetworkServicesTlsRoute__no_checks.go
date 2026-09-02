@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validatePutRulesParameters(val
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validatePutTimeoutsParameters(value *GoogleNetworkServicesTlsRouteTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesTlsRoute) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetworkServicesTlsRoute) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesAppAudioProcessingConfigBargeInConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesAppAudioProcessingConfigBargeInConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

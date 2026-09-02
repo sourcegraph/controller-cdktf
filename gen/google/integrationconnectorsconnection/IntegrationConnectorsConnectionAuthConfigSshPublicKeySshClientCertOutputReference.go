@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/integrationconnectorsconnection/internal"
 )
 
 type IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputRef
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputRef
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputRef
 
 // The jsii proxy struct for IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference
 type jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClien
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClien
 }
 
 
-func NewIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference {
+func NewIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutput
 	j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference",
+		"@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutput
 	return &j
 }
 
-func NewIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference_Override(i IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference_Override(i IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference",
+		"@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClien
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClien
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -420,8 +420,8 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClien
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -433,24 +433,24 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClien
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClientCertOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigSshPublicKeySshClien
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

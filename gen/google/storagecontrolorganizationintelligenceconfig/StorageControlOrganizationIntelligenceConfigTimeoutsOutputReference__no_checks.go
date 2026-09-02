@@ -40,11 +40,11 @@ func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigTimeoutsOutputRef
 	return nil
 }
 
-func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageControlOrganizationIntelligenceConfigTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTimeoutsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_StorageControlOrganizationIntelligenceConfigTimeoutsOutputRef
 	return nil
 }
 
-func validateNewStorageControlOrganizationIntelligenceConfigTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStorageControlOrganizationIntelligenceConfigTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

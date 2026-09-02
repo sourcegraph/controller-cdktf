@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_MonitoringSloBasicSliLatencyOutputReference) validateSetThres
 	return nil
 }
 
-func validateNewMonitoringSloBasicSliLatencyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitoringSloBasicSliLatencyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

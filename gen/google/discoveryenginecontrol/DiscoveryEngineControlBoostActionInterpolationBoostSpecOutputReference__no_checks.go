@@ -40,7 +40,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutput
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutput
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutput
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDiscoveryEngineControlBoostActionInterpolationBoostSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

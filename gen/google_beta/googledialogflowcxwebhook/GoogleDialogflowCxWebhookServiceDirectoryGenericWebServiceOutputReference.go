@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxwebhook/internal"
 )
 
 type GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedCaCerts() *[]*string
 	SetAllowedCaCerts(val *[]*string)
 	AllowedCaCertsInput() *[]*string
@@ -61,9 +61,9 @@ type GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uri() *string
 	SetUri(val *string)
 	UriInput() *string
@@ -75,7 +75,7 @@ type GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference i
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,9 +91,9 @@ type GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOauthConfig(value *GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOauthConfig)
 	PutSecretVersionsForRequestHeaders(value interface{})
 	PutServiceAccountAuthConfig(value *GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceServiceAccountAuthConfig)
@@ -110,7 +110,7 @@ type GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference i
 	ResetWebhookType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,7 +120,7 @@ type GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference i
 
 // The jsii proxy struct for GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference
 type jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) AllowedCaCerts() *[]*string {
@@ -383,8 +383,8 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -434,7 +434,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOut
 }
 
 
-func NewGoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference {
+func NewGoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -443,7 +443,7 @@ func NewGoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReferenc
 	j := jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference",
+		"@cdktn/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -451,11 +451,11 @@ func NewGoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReferenc
 	return &j
 }
 
-func NewGoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference_Override(g GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference_Override(g GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference",
+		"@cdktn/provider-google-beta.googleDialogflowCxWebhook.GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -582,7 +582,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOut
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -644,11 +644,11 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -772,8 +772,8 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -785,16 +785,16 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -922,8 +922,8 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOut
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -931,7 +931,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookServiceDirectoryGenericWebServiceOut
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

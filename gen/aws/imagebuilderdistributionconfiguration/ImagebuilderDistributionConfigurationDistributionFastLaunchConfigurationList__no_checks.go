@@ -12,7 +12,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchCo
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchCo
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionFastLaunchCo
 	return nil
 }
 
-func validateNewImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewImagebuilderDistributionConfigurationDistributionFastLaunchConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

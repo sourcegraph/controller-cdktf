@@ -56,6 +56,10 @@ func (g *jsiiProxy_GlueConnection) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (g *jsiiProxy_GlueConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GlueConnection) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (g *jsiiProxy_GlueConnection) validatePutPhysicalConnectionRequirementsParameters(value *GlueConnectionPhysicalConnectionRequirements) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GlueConnection) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GlueConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GlueConnection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

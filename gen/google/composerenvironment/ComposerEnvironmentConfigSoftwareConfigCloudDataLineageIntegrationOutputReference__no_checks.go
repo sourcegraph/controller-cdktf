@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegr
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegr
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComposerEnvironmentConfigSoftwareConfigCloudDataLineageIntegrationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

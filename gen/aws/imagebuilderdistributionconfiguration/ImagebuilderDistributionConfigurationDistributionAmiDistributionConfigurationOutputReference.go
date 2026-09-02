@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/imagebuilderdistributionconfiguration/internal"
 )
 
 type ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AmiTags() *map[string]*string
 	SetAmiTags(val *map[string]*string)
 	AmiTagsInput() *map[string]*string
@@ -51,15 +51,15 @@ type ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurati
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,9 +75,9 @@ type ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurati
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutLaunchPermission(value *ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationLaunchPermission)
 	ResetAmiTags()
 	ResetDescription()
@@ -87,7 +87,7 @@ type ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurati
 	ResetTargetAccountIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurati
 
 // The jsii proxy struct for ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference
 type jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) AmiTags() *map[string]*string {
@@ -280,8 +280,8 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistribut
 	return returns
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistribut
 }
 
 
-func NewImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference {
+func NewImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewImagebuilderDistributionConfigurationDistributionAmiDistributionConfigur
 	j := jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference",
+		"@cdktn/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewImagebuilderDistributionConfigurationDistributionAmiDistributionConfigur
 	return &j
 }
 
-func NewImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference_Override(i ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference_Override(i ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference",
+		"@cdktn/provider-aws.imagebuilderDistributionConfiguration.ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -417,7 +417,7 @@ func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistribut
 	)
 }
 
-func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -457,11 +457,11 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistribut
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -585,8 +585,8 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistribut
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -598,16 +598,16 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistribut
 	return returns
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistribut
 	)
 }
 
-func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistributionConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (i *jsiiProxy_ImagebuilderDistributionConfigurationDistributionAmiDistribut
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

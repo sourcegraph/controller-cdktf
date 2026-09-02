@@ -56,6 +56,10 @@ func (d *jsiiProxy_DefaultSubnet) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DefaultSubnet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DefaultSubnet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DefaultSubnet) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (d *jsiiProxy_DefaultSubnet) validatePutTimeoutsParameters(value *DefaultSubnetTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DefaultSubnet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_DefaultSubnet) validateSetIpv6NativeParameters(val interface{
 	return nil
 }
 
-func (j *jsiiProxy_DefaultSubnet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DefaultSubnet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewJobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobV1SpecTemplateSpecVolumeGcePersistentDiskOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

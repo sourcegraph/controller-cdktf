@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaiindexendpointdeployedindex/internal"
 )
 
 type VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,14 +66,14 @@ type VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutMachineSpec(value *VertexAiIndexEndpointDeployedIndexDedicatedResourcesMachineSpec)
 	ResetMaxReplicaCount()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference interfa
 
 // The jsii proxy struct for VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference
 type jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference) ComplexObjectIndex() interface{} {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputRef
 }
 
 
-func NewVertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference {
+func NewVertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewVertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference(terr
 	j := jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiIndexEndpointDeployedIndex.VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference",
+		"@cdktn/provider-google.vertexAiIndexEndpointDeployedIndex.VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewVertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference(terr
 	return &j
 }
 
-func NewVertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference_Override(v VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference_Override(v VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiIndexEndpointDeployedIndex.VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference",
+		"@cdktn/provider-google.vertexAiIndexEndpointDeployedIndex.VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputRef
 	)
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,11 +350,11 @@ func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputRef
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -478,8 +478,8 @@ func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputRef
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -491,16 +491,16 @@ func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputRef
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputRef
 	)
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDedicatedResourcesOutputRef
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

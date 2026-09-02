@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleTranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleTranscoderJobConfigEncryptionsDrmSystemsPlayreadyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

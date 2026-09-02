@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApigeeEnvironmentClientIpResolutionConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleApigeeEnvironmentClientIpResolutionConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApigeeEnvironmentClientIpResolutionConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

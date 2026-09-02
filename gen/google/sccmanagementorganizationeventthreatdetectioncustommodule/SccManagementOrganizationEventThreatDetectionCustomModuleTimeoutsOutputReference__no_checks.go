@@ -40,11 +40,11 @@ func (s *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModuleTime
 	return nil
 }
 
-func (s *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModuleTime
 	return nil
 }
 
-func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_SccManagementOrganizationEventThreatDetectionCustomModuleTime
 	return nil
 }
 
-func validateNewSccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSccManagementOrganizationEventThreatDetectionCustomModuleTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

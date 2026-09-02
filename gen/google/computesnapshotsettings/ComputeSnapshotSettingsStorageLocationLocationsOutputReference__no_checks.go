@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeSnapshotSettingsStorageLocationLocationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeSnapshotSettingsStorageLocationLocationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputeSnapshotSettingsStorageLocationLocationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

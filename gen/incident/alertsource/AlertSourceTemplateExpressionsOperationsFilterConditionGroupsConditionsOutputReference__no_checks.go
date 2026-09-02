@@ -40,7 +40,7 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroups
 	return nil
 }
 
-func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroups
 	return nil
 }
 
-func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroups
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlertSourceTemplateExpressionsOperationsFilterConditionGroupsConditionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlertSourceTemplateExpressionsOperationsFilterConditionGroupsConditionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

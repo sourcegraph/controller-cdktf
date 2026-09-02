@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.endpointsService.EndpointsService",
+		"@cdktn/provider-google.endpointsService.EndpointsService",
 		reflect.TypeOf((*EndpointsService)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -57,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrpcConfig", GoMethod: "ResetGrpcConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOpenapiConfig", GoMethod: "ResetOpenapiConfig"},
@@ -77,19 +79,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsService{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceApis",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceApis",
 		reflect.TypeOf((*EndpointsServiceApis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceApisList",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceApisList",
 		reflect.TypeOf((*EndpointsServiceApisList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -105,16 +108,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsServiceApisList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethods",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceApisMethods",
 		reflect.TypeOf((*EndpointsServiceApisMethods)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethodsList",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceApisMethodsList",
 		reflect.TypeOf((*EndpointsServiceApisMethodsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -130,12 +133,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsServiceApisMethodsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceApisMethodsOutputReference",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceApisMethodsOutputReference",
 		reflect.TypeOf((*EndpointsServiceApisMethodsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -166,12 +169,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsServiceApisMethodsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceApisOutputReference",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceApisOutputReference",
 		reflect.TypeOf((*EndpointsServiceApisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -202,20 +205,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsServiceApisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceConfig",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceConfig",
 		reflect.TypeOf((*EndpointsServiceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceEndpoints",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceEndpoints",
 		reflect.TypeOf((*EndpointsServiceEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceEndpointsList",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceEndpointsList",
 		reflect.TypeOf((*EndpointsServiceEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -231,12 +234,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsServiceEndpointsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceEndpointsOutputReference",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceEndpointsOutputReference",
 		reflect.TypeOf((*EndpointsServiceEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -265,16 +268,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsServiceEndpointsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceTimeouts",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceTimeouts",
 		reflect.TypeOf((*EndpointsServiceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.endpointsService.EndpointsServiceTimeoutsOutputReference",
+		"@cdktn/provider-google.endpointsService.EndpointsServiceTimeoutsOutputReference",
 		reflect.TypeOf((*EndpointsServiceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -310,7 +313,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EndpointsServiceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

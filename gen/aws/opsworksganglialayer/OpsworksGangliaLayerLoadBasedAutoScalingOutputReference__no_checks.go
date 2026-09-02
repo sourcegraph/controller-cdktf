@@ -40,7 +40,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (o *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksGangliaLayerLoadBasedAutoScalingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOpsworksGangliaLayerLoadBasedAutoScalingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpsworksGangliaLayerLoadBasedAutoScalingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

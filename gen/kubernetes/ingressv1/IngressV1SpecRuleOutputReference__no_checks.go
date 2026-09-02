@@ -40,7 +40,7 @@ func (i *jsiiProxy_IngressV1SpecRuleOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (i *jsiiProxy_IngressV1SpecRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IngressV1SpecRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (i *jsiiProxy_IngressV1SpecRuleOutputReference) validatePutHttpParameters(v
 	return nil
 }
 
-func (i *jsiiProxy_IngressV1SpecRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IngressV1SpecRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_IngressV1SpecRuleOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_IngressV1SpecRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IngressV1SpecRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIngressV1SpecRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewIngressV1SpecRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

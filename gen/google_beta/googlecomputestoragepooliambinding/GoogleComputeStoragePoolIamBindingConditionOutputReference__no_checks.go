@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeStoragePoolIamBindingConditionOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeStoragePoolIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeStoragePoolIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeStoragePoolIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeStoragePoolIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamBindingConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePoolIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeStoragePoolIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleComputeStoragePoolIamBindingConditionOutputReference) v
 	return nil
 }
 
-func validateNewGoogleComputeStoragePoolIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeStoragePoolIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

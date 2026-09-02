@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validatePutTimeoutsParam
 }
 
 func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validatePutTrustStoresParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCertificateManagerTrustConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) validateSetLabelsParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleCertificateManagerTrustConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

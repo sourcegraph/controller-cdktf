@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataKubernetesConfigMapV1MetadataOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesConfigMapV1MetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesConfigMapV1MetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesConfigMapV1MetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesConfigMapV1MetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_DataKubernetesConfigMapV1MetadataOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesConfigMapV1MetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesConfigMapV1MetadataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataKubernetesConfigMapV1MetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataKubernetesConfigMapV1MetadataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

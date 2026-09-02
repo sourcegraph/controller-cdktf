@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesTimeoutsOutputReference) 
 	return nil
 }
 
-func validateNewGoogleComputeFirewallPolicyWithRulesTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeFirewallPolicyWithRulesTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

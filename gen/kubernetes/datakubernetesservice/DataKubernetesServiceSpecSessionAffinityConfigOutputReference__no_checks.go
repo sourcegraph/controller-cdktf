@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesServiceSpecSessionAffinityConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataKubernetesServiceSpecSessionAffinityConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataKubernetesServiceSpecSessionAffinityConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

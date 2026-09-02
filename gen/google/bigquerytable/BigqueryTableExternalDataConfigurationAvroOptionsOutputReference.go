@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigquerytable/internal"
 )
 
 type BigqueryTableExternalDataConfigurationAvroOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type BigqueryTableExternalDataConfigurationAvroOptionsOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UseAvroLogicalTypes() interface{}
 	SetUseAvroLogicalTypes(val interface{})
 	UseAvroLogicalTypesInput() interface{}
@@ -45,7 +45,7 @@ type BigqueryTableExternalDataConfigurationAvroOptionsOutputReference interface 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type BigqueryTableExternalDataConfigurationAvroOptionsOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type BigqueryTableExternalDataConfigurationAvroOptionsOutputReference interface 
 
 // The jsii proxy struct for BigqueryTableExternalDataConfigurationAvroOptionsOutputReference
 type jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -139,8 +139,8 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputRefere
 }
 
 
-func NewBigqueryTableExternalDataConfigurationAvroOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryTableExternalDataConfigurationAvroOptionsOutputReference {
+func NewBigqueryTableExternalDataConfigurationAvroOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BigqueryTableExternalDataConfigurationAvroOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBigqueryTableExternalDataConfigurationAvroOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewBigqueryTableExternalDataConfigurationAvroOptionsOutputReference(terrafo
 	j := jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
+		"@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewBigqueryTableExternalDataConfigurationAvroOptionsOutputReference(terrafo
 	return &j
 }
 
-func NewBigqueryTableExternalDataConfigurationAvroOptionsOutputReference_Override(b BigqueryTableExternalDataConfigurationAvroOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBigqueryTableExternalDataConfigurationAvroOptionsOutputReference_Override(b BigqueryTableExternalDataConfigurationAvroOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
+		"@cdktn/provider-google.bigqueryTable.BigqueryTableExternalDataConfigurationAvroOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputRefere
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -420,8 +420,8 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputRefere
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -433,24 +433,24 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputRefere
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationAvroOptionsOutputRefere
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

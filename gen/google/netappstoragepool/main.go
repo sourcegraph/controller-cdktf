@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappStoragePool.NetappStoragePool",
+		"@cdktn/provider-google.netappStoragePool.NetappStoragePool",
 		reflect.TypeOf((*NetappStoragePool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeDirectory", GoGetter: "ActiveDirectory"},
@@ -63,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
 			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -82,6 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "qosType", GoGetter: "QosType"},
 			_jsii_.MemberProperty{JsiiProperty: "qosTypeInput", GoGetter: "QosTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaZone", GoGetter: "ReplicaZone"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaZoneInput", GoGetter: "ReplicaZoneInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActiveDirectory", GoMethod: "ResetActiveDirectory"},
@@ -129,25 +131,26 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeCapacityGib", GoGetter: "VolumeCapacityGib"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeCount", GoGetter: "VolumeCount"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zone", GoGetter: "Zone"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneInput", GoGetter: "ZoneInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappStoragePool{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappStoragePool.NetappStoragePoolConfig",
+		"@cdktn/provider-google.netappStoragePool.NetappStoragePoolConfig",
 		reflect.TypeOf((*NetappStoragePoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappStoragePool.NetappStoragePoolTimeouts",
+		"@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeouts",
 		reflect.TypeOf((*NetappStoragePoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference",
+		"@cdktn/provider-google.netappStoragePool.NetappStoragePoolTimeoutsOutputReference",
 		reflect.TypeOf((*NetappStoragePoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,7 +186,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappStoragePoolTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourceVersionOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourceVersionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectSecondarySourceVersionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourceVersionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectSecondarySourceVersionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourceVersionOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourceVersionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildProjectSecondarySourceVersionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCodebuildProjectSecondarySourceVersionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCodebuildProjectSecondarySourceVersionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsList) validateGetParame
 	return nil
 }
 
-func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexBotAliasConversationLogsLogSettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LexBotAliasConversationLogsLogSettingsList) validateSetWrapsS
 	return nil
 }
 
-func validateNewLexBotAliasConversationLogsLogSettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLexBotAliasConversationLogsLogSettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

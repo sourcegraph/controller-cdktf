@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsAppconfigConfigurationProfiles) validateOverrideLogica
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsAppconfigConfigurationProfiles) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsAppconfigConfigurationProfiles_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsAppconfigConfigurationProfiles) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAppconfigConfigurationProfiles) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsAppconfigConfigurationProfiles) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

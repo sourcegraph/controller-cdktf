@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleTagsTagKeyIamBinding) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTagsTagKeyIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTagsTagKeyIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleTagsTagKeyIamBinding) validateOverrideLogicalIdParamete
 }
 
 func (g *jsiiProxy_GoogleTagsTagKeyIamBinding) validatePutConditionParameters(value *GoogleTagsTagKeyIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTagsTagKeyIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleTagsTagKeyIamBinding) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTagsTagKeyIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleTagsTagKeyIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

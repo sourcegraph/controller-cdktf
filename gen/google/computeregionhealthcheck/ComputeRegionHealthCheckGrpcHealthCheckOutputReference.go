@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregionhealthcheck/internal"
 )
 
 type ComputeRegionHealthCheckGrpcHealthCheckOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type ComputeRegionHealthCheckGrpcHealthCheckOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type ComputeRegionHealthCheckGrpcHealthCheckOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetGrpcServiceName()
 	ResetPort()
 	ResetPortName()
 	ResetPortSpecification()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type ComputeRegionHealthCheckGrpcHealthCheckOutputReference interface {
 
 // The jsii proxy struct for ComputeRegionHealthCheckGrpcHealthCheckOutputReference
 type jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) Terra
 }
 
 
-func NewComputeRegionHealthCheckGrpcHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionHealthCheckGrpcHealthCheckOutputReference {
+func NewComputeRegionHealthCheckGrpcHealthCheckOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeRegionHealthCheckGrpcHealthCheckOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeRegionHealthCheckGrpcHealthCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewComputeRegionHealthCheckGrpcHealthCheckOutputReference(terraformResource
 	j := jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheckOutputReference",
+		"@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewComputeRegionHealthCheckGrpcHealthCheckOutputReference(terraformResource
 	return &j
 }
 
-func NewComputeRegionHealthCheckGrpcHealthCheckOutputReference_Override(c ComputeRegionHealthCheckGrpcHealthCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeRegionHealthCheckGrpcHealthCheckOutputReference_Override(c ComputeRegionHealthCheckGrpcHealthCheckOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheckOutputReference",
+		"@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckGrpcHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) GetAn
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -526,8 +526,8 @@ func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) GetSt
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -539,16 +539,16 @@ func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) Inter
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) Reset
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckGrpcHealthCheckOutputReference) Resol
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatastreamstream/internal"
 )
 
 type GoogleDatastreamStreamBackfillAllOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,15 +48,15 @@ type GoogleDatastreamStreamBackfillAllOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type GoogleDatastreamStreamBackfillAllOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutMongodbExcludedObjects(value *GoogleDatastreamStreamBackfillAllMongodbExcludedObjects)
 	PutMysqlExcludedObjects(value *GoogleDatastreamStreamBackfillAllMysqlExcludedObjects)
 	PutOracleExcludedObjects(value *GoogleDatastreamStreamBackfillAllOracleExcludedObjects)
@@ -91,7 +91,7 @@ type GoogleDatastreamStreamBackfillAllOutputReference interface {
 	ResetSqlServerExcludedObjects()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,7 +101,7 @@ type GoogleDatastreamStreamBackfillAllOutputReference interface {
 
 // The jsii proxy struct for GoogleDatastreamStreamBackfillAllOutputReference
 type jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) ComplexObjectIndex() interface{} {
@@ -304,8 +304,8 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) TerraformRe
 }
 
 
-func NewGoogleDatastreamStreamBackfillAllOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDatastreamStreamBackfillAllOutputReference {
+func NewGoogleDatastreamStreamBackfillAllOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDatastreamStreamBackfillAllOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDatastreamStreamBackfillAllOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -324,7 +324,7 @@ func NewGoogleDatastreamStreamBackfillAllOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllOutputReference",
+		"@cdktn/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewGoogleDatastreamStreamBackfillAllOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewGoogleDatastreamStreamBackfillAllOutputReference_Override(g GoogleDatastreamStreamBackfillAllOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDatastreamStreamBackfillAllOutputReference_Override(g GoogleDatastreamStreamBackfillAllOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllOutputReference",
+		"@cdktn/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamBackfillAllOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -386,7 +386,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -426,11 +426,11 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -554,8 +554,8 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) GetStringMa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -567,16 +567,16 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) Interpolati
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -716,8 +716,8 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) ResetSqlSer
 	)
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -725,7 +725,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

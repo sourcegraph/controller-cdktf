@@ -12,7 +12,7 @@ func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalDefaultDurationList)
 	return nil
 }
 
-func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalDefaultDurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalDefaultDurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalDefaultDurationList)
 	return nil
 }
 
-func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalDefaultDurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalDefaultDurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalDefaultDurationList)
 	return nil
 }
 
-func validateNewDirectAzureMonitorHistoricalDataRetrievalDefaultDurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDirectAzureMonitorHistoricalDataRetrievalDefaultDurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validatePutTimeoutsParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOsConfigPatchDeployment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleOsConfigPatchDeployment_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeployment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

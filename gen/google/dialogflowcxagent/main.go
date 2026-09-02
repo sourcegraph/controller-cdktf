@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgent",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgent",
 		reflect.TypeOf((*DialogflowCxAgent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -66,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "locked", GoGetter: "Locked"},
 			_jsii_.MemberProperty{JsiiProperty: "lockedInput", GoGetter: "LockedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -88,6 +89,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTextToSpeechSettings", GoMethod: "PutTextToSpeechSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedSettings", GoMethod: "ResetAdvancedSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnswerFeedbackSettings", GoMethod: "ResetAnswerFeedbackSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvatarUri", GoMethod: "ResetAvatarUri"},
@@ -136,23 +138,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgent{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettings",
 		reflect.TypeOf((*DialogflowCxAgentAdvancedSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsAudioExportGcsDestination",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsAudioExportGcsDestination",
 		reflect.TypeOf((*DialogflowCxAgentAdvancedSettingsAudioExportGcsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -182,16 +185,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentAdvancedSettingsAudioExportGcsDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettings",
 		reflect.TypeOf((*DialogflowCxAgentAdvancedSettingsDtmfSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -227,16 +230,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentAdvancedSettingsDtmfSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettings",
 		reflect.TypeOf((*DialogflowCxAgentAdvancedSettingsLoggingSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -272,12 +275,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentAdvancedSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioExportGcsDestination", GoGetter: "AudioExportGcsDestination"},
@@ -320,16 +323,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettings",
 		reflect.TypeOf((*DialogflowCxAgentAdvancedSettingsSpeechSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -368,16 +371,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentAdvancedSettingsSpeechSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettings",
 		reflect.TypeOf((*DialogflowCxAgentAnswerFeedbackSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentAnswerFeedbackSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentAnswerFeedbackSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -407,16 +410,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentAnswerFeedbackSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettings",
 		reflect.TypeOf((*DialogflowCxAgentClientCertificateSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentClientCertificateSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentClientCertificateSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -450,20 +453,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentClientCertificateSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentConfig",
 		reflect.TypeOf((*DialogflowCxAgentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettings",
 		reflect.TypeOf((*DialogflowCxAgentGenAppBuilderSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGenAppBuilderSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentGenAppBuilderSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -492,20 +495,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentGenAppBuilderSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettings",
 		reflect.TypeOf((*DialogflowCxAgentGitIntegrationSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsGithubSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsGithubSettings",
 		reflect.TypeOf((*DialogflowCxAgentGitIntegrationSettingsGithubSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
@@ -547,12 +550,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentGitIntegrationSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentGitIntegrationSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -583,16 +586,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentGitIntegrationSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettings",
 		reflect.TypeOf((*DialogflowCxAgentPersonalizationSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentPersonalizationSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentPersonalizationSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -622,16 +625,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentPersonalizationSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettings",
 		reflect.TypeOf((*DialogflowCxAgentSpeechToTextSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentSpeechToTextSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentSpeechToTextSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -661,16 +664,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentSpeechToTextSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettings",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettings",
 		reflect.TypeOf((*DialogflowCxAgentTextToSpeechSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTextToSpeechSettingsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentTextToSpeechSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -700,16 +703,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentTextToSpeechSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeouts",
 		reflect.TypeOf((*DialogflowCxAgentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference",
+		"@cdktn/provider-google.dialogflowCxAgent.DialogflowCxAgentTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowCxAgentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -745,7 +748,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxAgentTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

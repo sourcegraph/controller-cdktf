@@ -40,11 +40,11 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference)
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfigCmekSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLoggingBillingAccountBucketConfigCmekSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLoggingBillingAccountBucketConfigCmekSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

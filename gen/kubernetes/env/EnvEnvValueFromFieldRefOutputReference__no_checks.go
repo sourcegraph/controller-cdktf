@@ -40,11 +40,11 @@ func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EnvEnvValueFromFieldRefOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEnvEnvValueFromFieldRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEnvEnvValueFromFieldRefOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

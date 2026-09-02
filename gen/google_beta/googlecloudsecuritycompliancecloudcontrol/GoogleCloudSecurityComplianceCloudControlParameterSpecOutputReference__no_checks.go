@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -104,7 +104,7 @@ func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlParameterSpecOutputR
 	return nil
 }
 
-func validateNewGoogleCloudSecurityComplianceCloudControlParameterSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCloudSecurityComplianceCloudControlParameterSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

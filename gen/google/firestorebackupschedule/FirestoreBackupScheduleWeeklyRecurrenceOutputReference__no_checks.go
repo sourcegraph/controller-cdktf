@@ -40,11 +40,11 @@ func (f *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) valid
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirestoreBackupScheduleWeeklyRecurrenceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFirestoreBackupScheduleWeeklyRecurrenceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFirestoreBackupScheduleWeeklyRecurrenceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

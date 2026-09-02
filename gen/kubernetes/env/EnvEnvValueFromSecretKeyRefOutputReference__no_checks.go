@@ -40,11 +40,11 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEnvEnvValueFromSecretKeyRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEnvEnvValueFromSecretKeyRefOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

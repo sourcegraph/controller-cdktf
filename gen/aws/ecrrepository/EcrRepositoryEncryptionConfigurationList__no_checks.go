@@ -12,7 +12,7 @@ func (e *jsiiProxy_EcrRepositoryEncryptionConfigurationList) validateGetParamete
 	return nil
 }
 
-func (e *jsiiProxy_EcrRepositoryEncryptionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcrRepositoryEncryptionConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EcrRepositoryEncryptionConfigurationList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_EcrRepositoryEncryptionConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcrRepositoryEncryptionConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EcrRepositoryEncryptionConfigurationList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewEcrRepositoryEncryptionConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEcrRepositoryEncryptionConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectatio
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectatio
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectatio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsToolExpectationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesEvaluationScenarioScenarioExpectationsToolExpectationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesEvaluationScenarioScenarioExpectationsToolExpectationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

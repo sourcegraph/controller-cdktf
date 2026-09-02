@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeurlmap/internal"
 )
 
 type GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReferen
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReferen
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetHttpStatus()
 	ResetPercentage()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReferen
 
 // The jsii proxy struct for GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference
 type jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbor
 }
 
 
-func NewGoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference {
+func NewGoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputRefe
 	j := jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
+		"@cdktn/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputRefe
 	return &j
 }
 
-func NewGoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference_Override(g GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference_Override(g GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
+		"@cdktn/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbor
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbor
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,8 +456,8 @@ func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbor
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -469,16 +469,16 @@ func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbor
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbor
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbortOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionFaultInjectionPolicyAbor
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

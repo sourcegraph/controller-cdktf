@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestsConnectivityTests
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestsConnectivityTestsDestinationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestsConnectivityTestsDestinationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleNetworkManagementConnectivityTestsConnectivityTests
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleNetworkManagementConnectivityTestsConnectivityTestsDestinationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleNetworkManagementConnectivityTestsConnectivityTestsDestinationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleNetworkManagementConnectivityTestsConnectivityTests
 	return nil
 }
 
-func validateNewDataGoogleNetworkManagementConnectivityTestsConnectivityTestsDestinationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleNetworkManagementConnectivityTestsConnectivityTestsDestinationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

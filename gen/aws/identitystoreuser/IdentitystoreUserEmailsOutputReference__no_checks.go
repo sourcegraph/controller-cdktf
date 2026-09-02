@@ -40,11 +40,11 @@ func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_IdentitystoreUserEmailsOutputReference) validateSetValueParam
 	return nil
 }
 
-func validateNewIdentitystoreUserEmailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIdentitystoreUserEmailsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CaptchaOrgWideSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CaptchaOrgWideSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_CaptchaOrgWideSettings) validateMoveToIdParameters(id *string
 }
 
 func (c *jsiiProxy_CaptchaOrgWideSettings) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CaptchaOrgWideSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_CaptchaOrgWideSettings) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_CaptchaOrgWideSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CaptchaOrgWideSettings) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

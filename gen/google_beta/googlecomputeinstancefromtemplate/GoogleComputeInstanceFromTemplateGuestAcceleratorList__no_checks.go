@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateGuestAcceleratorList) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateGuestAcceleratorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateGuestAcceleratorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateGuestAcceleratorList) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateGuestAcceleratorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateGuestAcceleratorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateGuestAcceleratorList) valida
 	return nil
 }
 
-func validateNewGoogleComputeInstanceFromTemplateGuestAcceleratorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeInstanceFromTemplateGuestAcceleratorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

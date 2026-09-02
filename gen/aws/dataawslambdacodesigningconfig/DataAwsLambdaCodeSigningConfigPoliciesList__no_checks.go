@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsLambdaCodeSigningConfigPoliciesList) validateSetWrapsS
 	return nil
 }
 
-func validateNewDataAwsLambdaCodeSigningConfigPoliciesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsLambdaCodeSigningConfigPoliciesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

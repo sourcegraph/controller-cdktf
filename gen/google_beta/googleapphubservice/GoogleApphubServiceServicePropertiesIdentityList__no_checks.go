@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleApphubServiceServicePropertiesIdentityList) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApphubServiceServicePropertiesIdentityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApphubServiceServicePropertiesIdentityList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleApphubServiceServicePropertiesIdentityList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubServiceServicePropertiesIdentityList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApphubServiceServicePropertiesIdentityList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleApphubServiceServicePropertiesIdentityList) validateSet
 	return nil
 }
 
-func validateNewGoogleApphubServiceServicePropertiesIdentityListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleApphubServiceServicePropertiesIdentityListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

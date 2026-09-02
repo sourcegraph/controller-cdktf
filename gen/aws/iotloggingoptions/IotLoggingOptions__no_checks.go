@@ -56,6 +56,10 @@ func (i *jsiiProxy_IotLoggingOptions) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (i *jsiiProxy_IotLoggingOptions) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotLoggingOptions) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (i *jsiiProxy_IotLoggingOptions) validateMoveToIdParameters(id *string) err
 }
 
 func (i *jsiiProxy_IotLoggingOptions) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotLoggingOptions) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_IotLoggingOptions) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_IotLoggingOptions) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IotLoggingOptions) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

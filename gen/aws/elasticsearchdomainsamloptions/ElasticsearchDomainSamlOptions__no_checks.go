@@ -56,6 +56,10 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateInterpolationForAttri
 	return nil
 }
 
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validatePutSamlOptionsParamet
 }
 
 func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validatePutTimeoutsParameters(value *ElasticsearchDomainSamlOptionsTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticsearchDomainSamlOptions) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ElasticsearchDomainSamlOptions) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

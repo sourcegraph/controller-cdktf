@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesAppRootAgentAssociationTimeoutsOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppRootAgentAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesAppRootAgentAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppRootAgentAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppRootAgentAssociationTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleCesAppRootAgentAssociationTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppRootAgentAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppRootAgentAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleCesAppRootAgentAssociationTimeoutsOutputReference) vali
 	return nil
 }
 
-func validateNewGoogleCesAppRootAgentAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesAppRootAgentAssociationTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

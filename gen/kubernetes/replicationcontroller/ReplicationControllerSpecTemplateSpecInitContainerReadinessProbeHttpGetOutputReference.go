@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/replicationcontroller/internal"
 )
 
 type ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,15 +48,15 @@ type ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutp
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutp
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutHttpHeader(value interface{})
 	ResetHost()
 	ResetHttpHeader()
@@ -83,7 +83,7 @@ type ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutp
 	ResetScheme()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutp
 
 // The jsii proxy struct for ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference
 type jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) ComplexObjectIndex() interface{} {
@@ -256,8 +256,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessPr
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessPr
 }
 
 
-func NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference {
+func NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetO
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference",
+		"@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetO
 	return &j
 }
 
-func NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference_Override(r ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference_Override(r ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference",
+		"@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessPr
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,11 +422,11 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessPr
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -550,8 +550,8 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessPr
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -563,16 +563,16 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessPr
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessPr
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessProbeHttpGetOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecInitContainerReadinessPr
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

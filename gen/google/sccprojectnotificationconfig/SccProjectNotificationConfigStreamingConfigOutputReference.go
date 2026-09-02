@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/sccprojectnotificationconfig/internal"
 )
 
 type SccProjectNotificationConfigStreamingConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type SccProjectNotificationConfigStreamingConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type SccProjectNotificationConfigStreamingConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type SccProjectNotificationConfigStreamingConfigOutputReference interface {
 
 // The jsii proxy struct for SccProjectNotificationConfigStreamingConfigOutputReference
 type jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) T
 }
 
 
-func NewSccProjectNotificationConfigStreamingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SccProjectNotificationConfigStreamingConfigOutputReference {
+func NewSccProjectNotificationConfigStreamingConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SccProjectNotificationConfigStreamingConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSccProjectNotificationConfigStreamingConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewSccProjectNotificationConfigStreamingConfigOutputReference(terraformReso
 	j := jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigStreamingConfigOutputReference",
+		"@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigStreamingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewSccProjectNotificationConfigStreamingConfigOutputReference(terraformReso
 	return &j
 }
 
-func NewSccProjectNotificationConfigStreamingConfigOutputReference_Override(s SccProjectNotificationConfigStreamingConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSccProjectNotificationConfigStreamingConfigOutputReference_Override(s SccProjectNotificationConfigStreamingConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigStreamingConfigOutputReference",
+		"@cdktn/provider-google.sccProjectNotificationConfig.SccProjectNotificationConfigStreamingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) G
 	return returns
 }
 
-func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -420,8 +420,8 @@ func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) G
 	return returns
 }
 
-func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -433,24 +433,24 @@ func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) I
 	return returns
 }
 
-func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (s *jsiiProxy_SccProjectNotificationConfigStreamingConfigOutputReference) R
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

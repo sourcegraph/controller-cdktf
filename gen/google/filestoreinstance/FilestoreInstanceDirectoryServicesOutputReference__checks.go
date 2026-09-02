@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateGe
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -101,9 +101,9 @@ func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validatePu
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (f *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -190,7 +190,7 @@ func (j *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -198,7 +198,7 @@ func (j *jsiiProxy_FilestoreInstanceDirectoryServicesOutputReference) validateSe
 	return nil
 }
 
-func validateNewFilestoreInstanceDirectoryServicesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFilestoreInstanceDirectoryServicesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

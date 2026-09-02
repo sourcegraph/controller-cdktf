@@ -40,11 +40,11 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsC
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsC
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewChronicleDashboardChartDashboardChartVisualizationGoogleMapsConfigDataSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

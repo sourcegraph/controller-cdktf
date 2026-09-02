@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBinding",
+		"@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBinding",
 		reflect.TypeOf((*StorageBucketIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "members", GoGetter: "Members"},
 			_jsii_.MemberProperty{JsiiProperty: "membersInput", GoGetter: "MembersInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -53,6 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCondition", GoMethod: "PutCondition"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCondition", GoMethod: "ResetCondition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -70,19 +72,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageBucketIamBinding{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition",
+		"@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingCondition",
 		reflect.TypeOf((*StorageBucketIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingConditionOutputReference",
+		"@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConditionOutputReference",
 		reflect.TypeOf((*StorageBucketIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -116,20 +119,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageBucketIamBindingConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig",
+		"@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingConfig",
 		reflect.TypeOf((*StorageBucketIamBindingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts",
+		"@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeouts",
 		reflect.TypeOf((*StorageBucketIamBindingTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference",
+		"@cdktn/provider-google.storageBucketIamBinding.StorageBucketIamBindingTimeoutsOutputReference",
 		reflect.TypeOf((*StorageBucketIamBindingTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,7 +162,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_StorageBucketIamBindingTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

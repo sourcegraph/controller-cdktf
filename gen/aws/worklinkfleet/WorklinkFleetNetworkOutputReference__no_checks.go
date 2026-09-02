@@ -40,11 +40,11 @@ func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorklinkFleetNetworkOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_WorklinkFleetNetworkOutputReference) validateSetVpcIdParamete
 	return nil
 }
 
-func validateNewWorklinkFleetNetworkOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorklinkFleetNetworkOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

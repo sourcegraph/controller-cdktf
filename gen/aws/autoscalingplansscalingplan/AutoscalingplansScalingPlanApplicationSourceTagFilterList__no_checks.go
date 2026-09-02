@@ -12,7 +12,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterList) va
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterList) va
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanApplicationSourceTagFilterList) va
 	return nil
 }
 
-func validateNewAutoscalingplansScalingPlanApplicationSourceTagFilterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAutoscalingplansScalingPlanApplicationSourceTagFilterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

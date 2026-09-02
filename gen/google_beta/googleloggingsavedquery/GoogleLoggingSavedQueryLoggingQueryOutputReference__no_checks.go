@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleLoggingSavedQueryLoggingQueryOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingSavedQueryLoggingQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleLoggingSavedQueryLoggingQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleLoggingSavedQueryLoggingQueryOutputReference) validateP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingSavedQueryLoggingQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleLoggingSavedQueryLoggingQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleLoggingSavedQueryLoggingQueryOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingSavedQueryLoggingQueryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleLoggingSavedQueryLoggingQueryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleLoggingSavedQueryLoggingQueryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleLoggingSavedQueryLoggingQueryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

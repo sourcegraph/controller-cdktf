@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCloudbuildTrigger) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildTrigger) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildTrigger) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (g *jsiiProxy_GoogleCloudbuildTrigger) validatePutWebhookConfigParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildTrigger) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleCloudbuildTrigger_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -176,7 +184,7 @@ func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetIncludedFilesParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleCloudbuildTrigger) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

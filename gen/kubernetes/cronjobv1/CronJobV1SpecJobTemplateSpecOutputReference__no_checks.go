@@ -40,7 +40,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecOutputReference) validatePutTempl
 	return nil
 }
 
-func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CronJobV1SpecJobTemplateSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -104,7 +104,7 @@ func (j *jsiiProxy_CronJobV1SpecJobTemplateSpecOutputReference) validateSetTtlSe
 	return nil
 }
 
-func validateNewCronJobV1SpecJobTemplateSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCronJobV1SpecJobTemplateSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

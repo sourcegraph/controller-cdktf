@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/internetgatewayattachment/internal"
 )
 
 type InternetGatewayAttachmentTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type InternetGatewayAttachmentTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type InternetGatewayAttachmentTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type InternetGatewayAttachmentTimeoutsOutputReference interface {
 
 // The jsii proxy struct for InternetGatewayAttachmentTimeoutsOutputReference
 type jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) TerraformRe
 }
 
 
-func NewInternetGatewayAttachmentTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) InternetGatewayAttachmentTimeoutsOutputReference {
+func NewInternetGatewayAttachmentTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) InternetGatewayAttachmentTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewInternetGatewayAttachmentTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewInternetGatewayAttachmentTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeoutsOutputReference",
+		"@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewInternetGatewayAttachmentTimeoutsOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewInternetGatewayAttachmentTimeoutsOutputReference_Override(i InternetGatewayAttachmentTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewInternetGatewayAttachmentTimeoutsOutputReference_Override(i InternetGatewayAttachmentTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeoutsOutputReference",
+		"@cdktn/provider-aws.internetGatewayAttachment.InternetGatewayAttachmentTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -456,8 +456,8 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) GetStringMa
 	return returns
 }
 
-func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -469,16 +469,16 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) Interpolati
 	return returns
 }
 
-func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) ResetDelete
 	)
 }
 
-func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (i *jsiiProxy_InternetGatewayAttachmentTimeoutsOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

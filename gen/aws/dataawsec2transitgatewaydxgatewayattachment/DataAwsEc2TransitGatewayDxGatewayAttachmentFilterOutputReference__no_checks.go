@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputRefere
 	return nil
 }
 
-func validateNewDataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsEc2TransitGatewayDxGatewayAttachmentFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (a *jsiiProxy_AlloydbInstance) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_AlloydbInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlloydbInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (a *jsiiProxy_AlloydbInstance) validatePutReadPoolConfigParameters(value *A
 }
 
 func (a *jsiiProxy_AlloydbInstance) validatePutTimeoutsParameters(value *AlloydbInstanceTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlloydbInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -172,7 +180,7 @@ func (j *jsiiProxy_AlloydbInstance) validateSetLabelsParameters(val *map[string]
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AlloydbInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

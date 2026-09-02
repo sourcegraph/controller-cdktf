@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesTlsRouteRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesTlsRouteRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkServicesTlsRouteRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

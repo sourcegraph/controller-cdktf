@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/poller/internal"
 )
 
 type PollerCloudwatchMetricsQueryResourceFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,15 +45,15 @@ type PollerCloudwatchMetricsQueryResourceFilterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,16 +69,16 @@ type PollerCloudwatchMetricsQueryResourceFilterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTagFilter(value interface{})
 	ResetDimensionName()
 	ResetPattern()
 	ResetResourceType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type PollerCloudwatchMetricsQueryResourceFilterOutputReference interface {
 
 // The jsii proxy struct for PollerCloudwatchMetricsQueryResourceFilterOutputReference
 type jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) ComplexObjectIndex() interface{} {
@@ -231,8 +231,8 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) Te
 }
 
 
-func NewPollerCloudwatchMetricsQueryResourceFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PollerCloudwatchMetricsQueryResourceFilterOutputReference {
+func NewPollerCloudwatchMetricsQueryResourceFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PollerCloudwatchMetricsQueryResourceFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPollerCloudwatchMetricsQueryResourceFilterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -251,7 +251,7 @@ func NewPollerCloudwatchMetricsQueryResourceFilterOutputReference(terraformResou
 	j := jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterOutputReference",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewPollerCloudwatchMetricsQueryResourceFilterOutputReference(terraformResou
 	return &j
 }
 
-func NewPollerCloudwatchMetricsQueryResourceFilterOutputReference_Override(p PollerCloudwatchMetricsQueryResourceFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewPollerCloudwatchMetricsQueryResourceFilterOutputReference_Override(p PollerCloudwatchMetricsQueryResourceFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterOutputReference",
+		"@cdktn/provider-observe.poller.PollerCloudwatchMetricsQueryResourceFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,11 +386,11 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) Ge
 	return returns
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -514,8 +514,8 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) Ge
 	return returns
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -527,16 +527,16 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) In
 	return returns
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) Re
 	)
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryResourceFilterOutputReference) Re
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

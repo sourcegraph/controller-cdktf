@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBinding",
+		"@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBinding",
 		reflect.TypeOf((*IapWebRegionForwardingRuleServiceIamBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "members", GoGetter: "Members"},
 			_jsii_.MemberProperty{JsiiProperty: "membersInput", GoGetter: "MembersInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -56,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCondition", GoMethod: "ResetCondition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -72,19 +74,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IapWebRegionForwardingRuleServiceIamBinding{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingCondition",
+		"@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingCondition",
 		reflect.TypeOf((*IapWebRegionForwardingRuleServiceIamBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConditionOutputReference",
+		"@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConditionOutputReference",
 		reflect.TypeOf((*IapWebRegionForwardingRuleServiceIamBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -118,12 +121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IapWebRegionForwardingRuleServiceIamBindingConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig",
+		"@cdktn/provider-google.iapWebRegionForwardingRuleServiceIamBinding.IapWebRegionForwardingRuleServiceIamBindingConfig",
 		reflect.TypeOf((*IapWebRegionForwardingRuleServiceIamBindingConfig)(nil)).Elem(),
 	)
 }

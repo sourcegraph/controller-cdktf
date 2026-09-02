@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkServicesLbTrafficExtensionTimeoutsOutputReference) val
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtensionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesLbTrafficExtensionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesLbTrafficExtensionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesLbTrafficExtensionTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtensionTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesLbTrafficExtensionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesLbTrafficExtensionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_NetworkServicesLbTrafficExtensionTimeoutsOutputReference) val
 	return nil
 }
 
-func validateNewNetworkServicesLbTrafficExtensionTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkServicesLbTrafficExtensionTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

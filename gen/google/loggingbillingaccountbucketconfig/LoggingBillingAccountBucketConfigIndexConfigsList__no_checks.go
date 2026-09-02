@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsList) validateSe
 	return nil
 }
 
-func validateNewLoggingBillingAccountBucketConfigIndexConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoggingBillingAccountBucketConfigIndexConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

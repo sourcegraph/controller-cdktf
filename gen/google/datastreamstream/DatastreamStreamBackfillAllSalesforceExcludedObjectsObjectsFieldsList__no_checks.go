@@ -12,7 +12,7 @@ func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFi
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFi
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFi
 	return nil
 }
 
-func validateNewDatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDatastreamStreamBackfillAllSalesforceExcludedObjectsObjectsFieldsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

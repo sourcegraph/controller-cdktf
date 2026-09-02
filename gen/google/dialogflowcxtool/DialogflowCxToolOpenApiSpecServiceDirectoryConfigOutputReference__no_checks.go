@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowCxToolOpenApiSpecServiceDirectoryConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

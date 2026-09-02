@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigtableAuthorizedView) validateInterpolationForAttributePara
 	return nil
 }
 
+func (b *jsiiProxy_BigtableAuthorizedView) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableAuthorizedView) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (b *jsiiProxy_BigtableAuthorizedView) validatePutSubsetViewParameters(value
 }
 
 func (b *jsiiProxy_BigtableAuthorizedView) validatePutTimeoutsParameters(value *BigtableAuthorizedViewTimeouts) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableAuthorizedView) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_BigtableAuthorizedView) validateSetInstanceNameParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAuthorizedView) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BigtableAuthorizedView) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

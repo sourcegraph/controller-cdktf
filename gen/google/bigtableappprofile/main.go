@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfile",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfile",
 		reflect.TypeOf((*BigtableAppProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "instanceInput", GoGetter: "InstanceInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -65,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putStandardIsolation", GoMethod: "PutStandardIsolation"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataBoostIsolationReadOnly", GoMethod: "ResetDataBoostIsolationReadOnly"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -95,23 +97,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_BigtableAppProfile{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileConfig",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileConfig",
 		reflect.TypeOf((*BigtableAppProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnly",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnly",
 		reflect.TypeOf((*BigtableAppProfileDataBoostIsolationReadOnly)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnlyOutputReference",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileDataBoostIsolationReadOnlyOutputReference",
 		reflect.TypeOf((*BigtableAppProfileDataBoostIsolationReadOnlyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -140,16 +143,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigtableAppProfileDataBoostIsolationReadOnlyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRouting",
 		reflect.TypeOf((*BigtableAppProfileSingleClusterRouting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileSingleClusterRoutingOutputReference",
 		reflect.TypeOf((*BigtableAppProfileSingleClusterRoutingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowTransactionalWrites", GoGetter: "AllowTransactionalWrites"},
@@ -181,16 +184,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolation",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolation",
 		reflect.TypeOf((*BigtableAppProfileStandardIsolation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolationOutputReference",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileStandardIsolationOutputReference",
 		reflect.TypeOf((*BigtableAppProfileStandardIsolationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -219,16 +222,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigtableAppProfileStandardIsolationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeouts",
 		reflect.TypeOf((*BigtableAppProfileTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference",
+		"@cdktn/provider-google.bigtableAppProfile.BigtableAppProfileTimeoutsOutputReference",
 		reflect.TypeOf((*BigtableAppProfileTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,7 +267,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigtableAppProfileTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

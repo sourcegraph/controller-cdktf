@@ -56,6 +56,10 @@ func (h *jsiiProxy_HealthcareFhirStore) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareFhirStore) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirStore) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (h *jsiiProxy_HealthcareFhirStore) validatePutTimeoutsParameters(value *Hea
 }
 
 func (h *jsiiProxy_HealthcareFhirStore) validatePutValidationConfigParameters(value *HealthcareFhirStoreValidationConfig) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareFhirStore) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_HealthcareFhirStore) validateSetLabelsParameters(val *map[str
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStore) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_HealthcareFhirStore) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

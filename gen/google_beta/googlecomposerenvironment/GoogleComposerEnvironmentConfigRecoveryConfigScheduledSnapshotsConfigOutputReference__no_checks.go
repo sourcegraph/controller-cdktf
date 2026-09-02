@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapsho
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapsho
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapsho
 	return nil
 }
 
-func validateNewGoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComposerEnvironmentConfigRecoveryConfigScheduledSnapshotsConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

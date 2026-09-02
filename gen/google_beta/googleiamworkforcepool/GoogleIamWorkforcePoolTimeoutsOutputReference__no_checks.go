@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolTimeoutsOutputReference) validateSetUpd
 	return nil
 }
 
-func validateNewGoogleIamWorkforcePoolTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIamWorkforcePoolTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

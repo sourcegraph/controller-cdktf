@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/lookerinstance/internal"
 )
 
 type LookerInstanceAdminSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedEmailDomains() *[]*string
 	SetAllowedEmailDomains(val *[]*string)
 	AllowedEmailDomainsInput() *[]*string
@@ -37,15 +37,15 @@ type LookerInstanceAdminSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type LookerInstanceAdminSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowedEmailDomains()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type LookerInstanceAdminSettingsOutputReference interface {
 
 // The jsii proxy struct for LookerInstanceAdminSettingsOutputReference
 type jsiiProxy_LookerInstanceAdminSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LookerInstanceAdminSettingsOutputReference) AllowedEmailDomains() *[]*string {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_LookerInstanceAdminSettingsOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstanceAdminSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LookerInstanceAdminSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LookerInstanceAdminSettingsOutputReference) TerraformResource
 }
 
 
-func NewLookerInstanceAdminSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LookerInstanceAdminSettingsOutputReference {
+func NewLookerInstanceAdminSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LookerInstanceAdminSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLookerInstanceAdminSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewLookerInstanceAdminSettingsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_LookerInstanceAdminSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceAdminSettingsOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceAdminSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewLookerInstanceAdminSettingsOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewLookerInstanceAdminSettingsOutputReference_Override(l LookerInstanceAdminSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLookerInstanceAdminSettingsOutputReference_Override(l LookerInstanceAdminSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceAdminSettingsOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceAdminSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_LookerInstanceAdminSettingsOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceAdminSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LookerInstanceAdminSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -421,8 +421,8 @@ func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -434,16 +434,16 @@ func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) ResetAllowedEmail
 	)
 }
 
-func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (l *jsiiProxy_LookerInstanceAdminSettingsOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

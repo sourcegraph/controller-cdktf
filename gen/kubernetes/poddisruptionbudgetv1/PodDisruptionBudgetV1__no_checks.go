@@ -56,6 +56,10 @@ func (p *jsiiProxy_PodDisruptionBudgetV1) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (p *jsiiProxy_PodDisruptionBudgetV1) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PodDisruptionBudgetV1) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (p *jsiiProxy_PodDisruptionBudgetV1) validatePutMetadataParameters(value *P
 }
 
 func (p *jsiiProxy_PodDisruptionBudgetV1) validatePutSpecParameters(value *PodDisruptionBudgetV1Spec) error {
+	return nil
+}
+
+func (p *jsiiProxy_PodDisruptionBudgetV1) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_PodDisruptionBudgetV1) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PodDisruptionBudgetV1) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

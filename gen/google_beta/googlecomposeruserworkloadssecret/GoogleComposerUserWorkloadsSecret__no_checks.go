@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validatePutTimeoutsParameters(value *GoogleComposerUserWorkloadsSecretTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComposerUserWorkloadsSecret) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

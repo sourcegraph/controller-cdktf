@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemanagedkafkaconnector/internal"
 )
 
 type GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMaximumBackoff()
 	ResetMinimumBackoff()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference interface {
 
 // The jsii proxy struct for GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference
 type jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) 
 }
 
 
-func NewGoogleManagedKafkaConnectorTaskRestartPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference {
+func NewGoogleManagedKafkaConnectorTaskRestartPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleManagedKafkaConnectorTaskRestartPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleManagedKafkaConnectorTaskRestartPolicyOutputReference(terraformRes
 	j := jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleManagedKafkaConnector.GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleManagedKafkaConnector.GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleManagedKafkaConnectorTaskRestartPolicyOutputReference(terraformRes
 	return &j
 }
 
-func NewGoogleManagedKafkaConnectorTaskRestartPolicyOutputReference_Override(g GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleManagedKafkaConnectorTaskRestartPolicyOutputReference_Override(g GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleManagedKafkaConnector.GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleManagedKafkaConnector.GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,8 +456,8 @@ func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -469,16 +469,16 @@ func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) 
 	)
 }
 
-func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleManagedKafkaConnectorTaskRestartPolicyOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

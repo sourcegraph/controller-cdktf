@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateInterpolationForAt
 	return nil
 }
 
+func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateOverrideLogicalIdP
 }
 
 func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validatePutTimeoutsParameters(value *ComputeBackendServiceSignedUrlKeyTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateSetKeyValueParamet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeBackendServiceSignedUrlKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

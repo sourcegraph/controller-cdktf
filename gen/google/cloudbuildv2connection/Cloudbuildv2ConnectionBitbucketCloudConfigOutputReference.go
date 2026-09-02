@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudbuildv2connection/internal"
 )
 
 type Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthorizerCredential() Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference
 	AuthorizerCredentialInput() *Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential
 	// the index of the complex object in a list.
@@ -38,9 +38,9 @@ type Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WebhookSecretSecretVersion() *string
 	SetWebhookSecretSecretVersion(val *string)
 	WebhookSecretSecretVersionInput() *string
@@ -52,7 +52,7 @@ type Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,14 +68,14 @@ type Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthorizerCredential(value *Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredential)
 	PutReadAuthorizerCredential(value *Cloudbuildv2ConnectionBitbucketCloudConfigReadAuthorizerCredential)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference interface {
 
 // The jsii proxy struct for Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference
 type jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) AuthorizerCredential() Cloudbuildv2ConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -239,7 +239,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) Wo
 }
 
 
-func NewCloudbuildv2ConnectionBitbucketCloudConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference {
+func NewCloudbuildv2ConnectionBitbucketCloudConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudbuildv2ConnectionBitbucketCloudConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -248,7 +248,7 @@ func NewCloudbuildv2ConnectionBitbucketCloudConfigOutputReference(terraformResou
 	j := jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudbuildv2Connection.Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference",
+		"@cdktn/provider-google.cloudbuildv2Connection.Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -256,11 +256,11 @@ func NewCloudbuildv2ConnectionBitbucketCloudConfigOutputReference(terraformResou
 	return &j
 }
 
-func NewCloudbuildv2ConnectionBitbucketCloudConfigOutputReference_Override(c Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudbuildv2ConnectionBitbucketCloudConfigOutputReference_Override(c Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudbuildv2Connection.Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference",
+		"@cdktn/provider-google.cloudbuildv2Connection.Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,11 +372,11 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) Ge
 	return returns
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -500,8 +500,8 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) Ge
 	return returns
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -513,16 +513,16 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) In
 	return returns
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -551,8 +551,8 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) Pu
 	)
 }
 
-func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -560,7 +560,7 @@ func (c *jsiiProxy_Cloudbuildv2ConnectionBitbucketCloudConfigOutputReference) Re
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

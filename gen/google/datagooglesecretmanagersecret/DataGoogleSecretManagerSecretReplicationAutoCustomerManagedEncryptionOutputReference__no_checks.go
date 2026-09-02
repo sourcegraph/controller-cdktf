@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEn
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEn
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleSecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/integrationconnectorsconnection/internal"
 )
 
 type IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthUri() *string
 	SetAuthUri(val *string)
 	AuthUriInput() *string
@@ -48,15 +48,15 @@ type IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutClientSecret(value *IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowClientSecret)
 	ResetAuthUri()
 	ResetClientId()
@@ -83,7 +83,7 @@ type IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference 
 	ResetScopes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference 
 
 // The jsii proxy struct for IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference
 type jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) AuthUri() *string {
@@ -256,8 +256,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 }
 
 
-func NewIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference {
+func NewIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReferen
 	j := jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference",
+		"@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReferen
 	return &j
 }
 
-func NewIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference_Override(i IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference_Override(i IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference",
+		"@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,11 +422,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -550,8 +550,8 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -563,16 +563,16 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 	)
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionAuthConfigOauth2AuthCodeFlowOu
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderList) vali
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderList) vali
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersCacheKeyCustomKeyHeaderList) vali
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersCacheKeyCustomKeyHeaderListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRulesetRulesActionParametersCacheKeyCustomKeyHeaderListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

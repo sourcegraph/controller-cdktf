@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsCloudformationStack) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsCloudformationStack) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsCloudformationStack_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsCloudformationStack) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudformationStack) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsCloudformationStack) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

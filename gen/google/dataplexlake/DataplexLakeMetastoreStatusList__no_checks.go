@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataplexLakeMetastoreStatusList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DataplexLakeMetastoreStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexLakeMetastoreStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataplexLakeMetastoreStatusList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_DataplexLakeMetastoreStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexLakeMetastoreStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataplexLakeMetastoreStatusList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewDataplexLakeMetastoreStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataplexLakeMetastoreStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

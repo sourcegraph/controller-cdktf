@@ -56,6 +56,10 @@ func (f *jsiiProxy_FilestoreSnapshot) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (f *jsiiProxy_FilestoreSnapshot) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FilestoreSnapshot) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (f *jsiiProxy_FilestoreSnapshot) validateOverrideLogicalIdParameters(newLog
 }
 
 func (f *jsiiProxy_FilestoreSnapshot) validatePutTimeoutsParameters(value *FilestoreSnapshotTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FilestoreSnapshot) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_FilestoreSnapshot) validateSetLabelsParameters(val *map[strin
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreSnapshot) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FilestoreSnapshot) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

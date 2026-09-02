@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/escalationpath/internal"
 )
 
 type EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetRotateAfterSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference interf
 
 // The jsii proxy struct for EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference
 type jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 }
 
 
-func NewEscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference {
+func NewEscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewEscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference(ter
 	j := jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewEscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference(ter
 	return &j
 }
 
-func NewEscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference_Override(e EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference_Override(e EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -455,8 +455,8 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -468,16 +468,16 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	)
 }
 
-func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (e *jsiiProxy_EscalationPathPathIfElseElsePathLevelRoundRobinConfigOutputRe
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (s *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateOutputReference) va
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetSpecUpdateStrategyRollingUpdateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStatefulSetSpecUpdateStrategyRollingUpdateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewStatefulSetSpecUpdateStrategyRollingUpdateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

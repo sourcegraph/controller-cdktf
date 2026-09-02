@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validatePutConditionParameters(value *GoogleCloudfunctionsFunctionIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleCloudfunctionsFunctionIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

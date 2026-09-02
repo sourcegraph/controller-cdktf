@@ -40,7 +40,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) validateGetStringMapAttributePar
 	return nil
 }
 
-func (m *jsiiProxy_ManifestWaitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManifestWaitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (m *jsiiProxy_ManifestWaitOutputReference) validatePutConditionParameters(v
 	return nil
 }
 
-func (m *jsiiProxy_ManifestWaitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManifestWaitOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ManifestWaitOutputReference) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_ManifestWaitOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ManifestWaitOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewManifestWaitOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewManifestWaitOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

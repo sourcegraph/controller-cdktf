@@ -56,6 +56,10 @@ func (b *jsiiProxy_BillingBudget) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (b *jsiiProxy_BillingBudget) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BillingBudget) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (b *jsiiProxy_BillingBudget) validatePutThresholdRulesParameters(value inte
 }
 
 func (b *jsiiProxy_BillingBudget) validatePutTimeoutsParameters(value *BillingBudgetTimeouts) error {
+	return nil
+}
+
+func (b *jsiiProxy_BillingBudget) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_BillingBudget) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudget) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BillingBudget) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (p *jsiiProxy_PagesProject) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (p *jsiiProxy_PagesProject) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PagesProject) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (p *jsiiProxy_PagesProject) validatePutDeploymentConfigsParameters(value *P
 }
 
 func (p *jsiiProxy_PagesProject) validatePutSourceParameters(value *PagesProjectSource) error {
+	return nil
+}
+
+func (p *jsiiProxy_PagesProject) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_PagesProject) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_PagesProject) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PagesProject) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputRe
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesAppVersionSnapshotToolsOpenApiToolTlsConfigCaCertsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

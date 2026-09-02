@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKey",
+		"@cdktn/provider-google.kmsCryptoKey.KmsCryptoKey",
 		reflect.TypeOf((*KmsCryptoKey)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -62,6 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVersionTemplate", GoMethod: "PutVersionTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCryptoKeyBackend", GoMethod: "ResetCryptoKeyBackend"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestroyScheduledDuration", GoMethod: "ResetDestroyScheduledDuration"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -91,23 +93,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "versionTemplate", GoGetter: "VersionTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "versionTemplateInput", GoGetter: "VersionTemplateInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsCryptoKey{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyConfig",
+		"@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyConfig",
 		reflect.TypeOf((*KmsCryptoKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyPrimary",
+		"@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimary",
 		reflect.TypeOf((*KmsCryptoKeyPrimary)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryList",
+		"@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryList",
 		reflect.TypeOf((*KmsCryptoKeyPrimaryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -123,12 +126,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsCryptoKeyPrimaryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryOutputReference",
+		"@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyPrimaryOutputReference",
 		reflect.TypeOf((*KmsCryptoKeyPrimaryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,16 +160,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsCryptoKeyPrimaryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts",
+		"@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeouts",
 		reflect.TypeOf((*KmsCryptoKeyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference",
+		"@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyTimeoutsOutputReference",
 		reflect.TypeOf((*KmsCryptoKeyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -202,16 +205,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsCryptoKeyTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplate",
+		"@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplate",
 		reflect.TypeOf((*KmsCryptoKeyVersionTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference",
+		"@cdktn/provider-google.kmsCryptoKey.KmsCryptoKeyVersionTemplateOutputReference",
 		reflect.TypeOf((*KmsCryptoKeyVersionTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -243,7 +246,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsCryptoKeyVersionTemplateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

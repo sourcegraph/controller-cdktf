@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudrundomainmapping/internal"
 )
 
 type GoogleCloudRunDomainMappingSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CertificateMode() *string
 	SetCertificateMode(val *string)
 	CertificateModeInput() *string
@@ -43,15 +43,15 @@ type GoogleCloudRunDomainMappingSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type GoogleCloudRunDomainMappingSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCertificateMode()
 	ResetForceOverride()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type GoogleCloudRunDomainMappingSpecOutputReference interface {
 
 // The jsii proxy struct for GoogleCloudRunDomainMappingSpecOutputReference
 type jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) CertificateMode() *string {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) TerraformReso
 }
 
 
-func NewGoogleCloudRunDomainMappingSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudRunDomainMappingSpecOutputReference {
+func NewGoogleCloudRunDomainMappingSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleCloudRunDomainMappingSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCloudRunDomainMappingSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewGoogleCloudRunDomainMappingSpecOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpecOutputReference",
+		"@cdktn/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewGoogleCloudRunDomainMappingSpecOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewGoogleCloudRunDomainMappingSpecOutputReference_Override(g GoogleCloudRunDomainMappingSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleCloudRunDomainMappingSpecOutputReference_Override(g GoogleCloudRunDomainMappingSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpecOutputReference",
+		"@cdktn/provider-google-beta.googleCloudRunDomainMapping.GoogleCloudRunDomainMappingSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -490,8 +490,8 @@ func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) GetStringMapA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -503,16 +503,16 @@ func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) Interpolation
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) ResetForceOve
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (g *jsiiProxy_GoogleCloudRunDomainMappingSpecOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

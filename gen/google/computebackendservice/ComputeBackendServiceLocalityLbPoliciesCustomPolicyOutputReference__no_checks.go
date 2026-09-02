@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeBackendServiceLocalityLbPoliciesCustomPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

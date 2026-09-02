@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/ecrrepository/internal"
 )
 
 type EcrRepositoryImageScanningConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type EcrRepositoryImageScanningConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type EcrRepositoryImageScanningConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type EcrRepositoryImageScanningConfigurationOutputReference interface {
 
 // The jsii proxy struct for EcrRepositoryImageScanningConfigurationOutputReference
 type jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) Terra
 }
 
 
-func NewEcrRepositoryImageScanningConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EcrRepositoryImageScanningConfigurationOutputReference {
+func NewEcrRepositoryImageScanningConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EcrRepositoryImageScanningConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEcrRepositoryImageScanningConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewEcrRepositoryImageScanningConfigurationOutputReference(terraformResource
 	j := jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference",
+		"@cdktn/provider-aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewEcrRepositoryImageScanningConfigurationOutputReference(terraformResource
 	return &j
 }
 
-func NewEcrRepositoryImageScanningConfigurationOutputReference_Override(e EcrRepositoryImageScanningConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEcrRepositoryImageScanningConfigurationOutputReference_Override(e EcrRepositoryImageScanningConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference",
+		"@cdktn/provider-aws.ecrRepository.EcrRepositoryImageScanningConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) GetAn
 	return returns
 }
 
-func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -420,8 +420,8 @@ func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) GetSt
 	return returns
 }
 
-func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -433,24 +433,24 @@ func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) Inter
 	return returns
 }
 
-func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (e *jsiiProxy_EcrRepositoryImageScanningConfigurationOutputReference) Resol
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

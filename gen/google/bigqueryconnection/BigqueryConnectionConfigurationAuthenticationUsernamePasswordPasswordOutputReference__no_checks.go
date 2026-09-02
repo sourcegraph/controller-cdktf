@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePassword
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePassword
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryConnectionConfigurationAuthenticationUsernamePasswordPasswordOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/escalationpath/internal"
 )
 
 type EscalationPathPathLevelOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AckMode() *string
 	SetAckMode(val *string)
 	AckModeInput() *string
@@ -41,9 +41,9 @@ type EscalationPathPathLevelOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeToAckIntervalCondition() *string
 	SetTimeToAckIntervalCondition(val *string)
 	TimeToAckIntervalConditionInput() *string
@@ -58,7 +58,7 @@ type EscalationPathPathLevelOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,9 +74,9 @@ type EscalationPathPathLevelOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutRoundRobinConfig(value *EscalationPathPathLevelRoundRobinConfig)
 	PutTargets(value interface{})
 	ResetAckMode()
@@ -86,7 +86,7 @@ type EscalationPathPathLevelOutputReference interface {
 	ResetTimeToAckWeekdayIntervalConfigId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type EscalationPathPathLevelOutputReference interface {
 
 // The jsii proxy struct for EscalationPathPathLevelOutputReference
 type jsiiProxy_EscalationPathPathLevelOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EscalationPathPathLevelOutputReference) AckMode() *string {
@@ -219,8 +219,8 @@ func (j *jsiiProxy_EscalationPathPathLevelOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_EscalationPathPathLevelOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EscalationPathPathLevelOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_EscalationPathPathLevelOutputReference) TimeToAckWeekdayInter
 }
 
 
-func NewEscalationPathPathLevelOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EscalationPathPathLevelOutputReference {
+func NewEscalationPathPathLevelOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EscalationPathPathLevelOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEscalationPathPathLevelOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -299,7 +299,7 @@ func NewEscalationPathPathLevelOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_EscalationPathPathLevelOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathLevelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -307,11 +307,11 @@ func NewEscalationPathPathLevelOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewEscalationPathPathLevelOutputReference_Override(e EscalationPathPathLevelOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEscalationPathPathLevelOutputReference_Override(e EscalationPathPathLevelOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.escalationPath.EscalationPathPathLevelOutputReference",
+		"@cdktn/provider-incident.escalationPath.EscalationPathPathLevelOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -372,7 +372,7 @@ func (j *jsiiProxy_EscalationPathPathLevelOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_EscalationPathPathLevelOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EscalationPathPathLevelOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,11 +445,11 @@ func (e *jsiiProxy_EscalationPathPathLevelOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathLevelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EscalationPathPathLevelOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -573,8 +573,8 @@ func (e *jsiiProxy_EscalationPathPathLevelOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathLevelOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EscalationPathPathLevelOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -586,16 +586,16 @@ func (e *jsiiProxy_EscalationPathPathLevelOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (e *jsiiProxy_EscalationPathPathLevelOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EscalationPathPathLevelOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -664,8 +664,8 @@ func (e *jsiiProxy_EscalationPathPathLevelOutputReference) ResetTimeToAckWeekday
 	)
 }
 
-func (e *jsiiProxy_EscalationPathPathLevelOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EscalationPathPathLevelOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -673,7 +673,7 @@ func (e *jsiiProxy_EscalationPathPathLevelOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

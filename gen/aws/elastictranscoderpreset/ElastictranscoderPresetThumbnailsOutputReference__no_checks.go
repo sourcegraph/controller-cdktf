@@ -40,11 +40,11 @@ func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ElastictranscoderPresetThumbnailsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewElastictranscoderPresetThumbnailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewElastictranscoderPresetThumbnailsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

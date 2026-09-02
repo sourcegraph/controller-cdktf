@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigSecondaryBootDisksOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerNodePoolNodeConfigSecondaryBootDisksOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleContainerNodePoolNodeConfigSecondaryBootDisksOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

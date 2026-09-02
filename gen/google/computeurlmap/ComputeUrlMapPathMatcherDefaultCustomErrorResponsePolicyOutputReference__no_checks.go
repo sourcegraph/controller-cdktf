@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeUrlMapPathMatcherDefaultCustomErrorResponsePolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

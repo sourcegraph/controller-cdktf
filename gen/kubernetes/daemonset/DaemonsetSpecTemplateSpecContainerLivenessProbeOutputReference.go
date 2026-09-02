@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/daemonset/internal"
 )
 
 type DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,9 +52,9 @@ type DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeoutSeconds() *float64
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
@@ -63,7 +63,7 @@ type DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutExec(value *DaemonsetSpecTemplateSpecContainerLivenessProbeExec)
 	PutHttpGet(value *DaemonsetSpecTemplateSpecContainerLivenessProbeHttpGet)
 	PutTcpSocket(value interface{})
@@ -95,7 +95,7 @@ type DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference interface {
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference interface {
 
 // The jsii proxy struct for DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference
 type jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference) ComplexObjectIndex() interface{} {
@@ -308,8 +308,8 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReferenc
 }
 
 
-func NewDaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference {
+func NewDaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDaemonsetSpecTemplateSpecContainerLivenessProbeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -348,7 +348,7 @@ func NewDaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference(terraform
 	j := jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference",
+		"@cdktn/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -356,11 +356,11 @@ func NewDaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference(terraform
 	return &j
 }
 
-func NewDaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference_Override(d DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference_Override(d DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference",
+		"@cdktn/provider-kubernetes.daemonset.DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -454,7 +454,7 @@ func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,11 +505,11 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -633,8 +633,8 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -646,16 +646,16 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReferenc
 	return returns
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -759,8 +759,8 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReferenc
 	)
 }
 
-func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -768,7 +768,7 @@ func (d *jsiiProxy_DaemonsetSpecTemplateSpecContainerLivenessProbeOutputReferenc
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

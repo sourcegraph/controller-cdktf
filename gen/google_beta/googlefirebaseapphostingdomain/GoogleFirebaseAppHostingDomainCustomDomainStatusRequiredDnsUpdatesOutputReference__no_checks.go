@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingDomainCustomDomainStatusRequiredDnsUp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingDomainCustomDomainStatusRequiredDnsUp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleFirebaseAppHostingDomainCustomDomainStatusRequiredDnsUpdatesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

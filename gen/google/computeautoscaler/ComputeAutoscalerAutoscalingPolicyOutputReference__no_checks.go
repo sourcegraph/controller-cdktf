@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -100,11 +100,11 @@ func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeAutoscalerAutoscalingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeAutoscalerAutoscalingPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputerolloutplan/internal"
 )
 
 type GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetIncludedFolders()
 	ResetIncludedOrganizations()
 	ResetIncludedProjects()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputRefere
 
 // The jsii proxy struct for GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference
 type jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelect
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelect
 }
 
 
-func NewGoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference {
+func NewGoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputRef
 	j := jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRolloutPlan.GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRolloutPlan.GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputRef
 	return &j
 }
 
-func NewGoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference_Override(g GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference_Override(g GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRolloutPlan.GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRolloutPlan.GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelect
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelect
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -491,8 +491,8 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelect
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,16 +504,16 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelect
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelect
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelectorOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesSelectorsResourceHierarchySelect
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

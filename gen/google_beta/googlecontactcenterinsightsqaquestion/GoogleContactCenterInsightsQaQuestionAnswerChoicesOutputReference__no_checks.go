@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionAnswerChoicesOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionAnswerChoicesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionAnswerChoicesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContactCenterInsightsQaQuestionAnswerChoicesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleContactCenterInsightsQaQuestionAnswerChoicesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSetti
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSetti
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

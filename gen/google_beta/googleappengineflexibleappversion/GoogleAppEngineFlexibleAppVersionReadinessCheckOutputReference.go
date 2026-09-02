@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleappengineflexibleappversion/internal"
 )
 
 type GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AppStartTimeout() *string
 	SetAppStartTimeout(val *string)
 	AppStartTimeoutInput() *string
@@ -52,9 +52,9 @@ type GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timeout() *string
 	SetTimeout(val *string)
 	TimeoutInput() *string
@@ -63,7 +63,7 @@ type GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAppStartTimeout()
 	ResetCheckInterval()
 	ResetFailureThreshold()
@@ -90,7 +90,7 @@ type GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference interface {
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,7 +100,7 @@ type GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference interface {
 
 // The jsii proxy struct for GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference
 type jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference) AppStartTimeout() *string {
@@ -283,8 +283,8 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -314,7 +314,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReferenc
 }
 
 
-func NewGoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference {
+func NewGoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleAppEngineFlexibleAppVersionReadinessCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -323,7 +323,7 @@ func NewGoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference(terraform
 	j := jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference",
+		"@cdktn/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -331,11 +331,11 @@ func NewGoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference(terraform
 	return &j
 }
 
-func NewGoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference_Override(g GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference_Override(g GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference",
+		"@cdktn/provider-google-beta.googleAppEngineFlexibleAppVersion.GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -451,7 +451,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,11 +502,11 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -630,8 +630,8 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -643,16 +643,16 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -707,8 +707,8 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReferenc
 	)
 }
 
-func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -716,7 +716,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionReadinessCheckOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

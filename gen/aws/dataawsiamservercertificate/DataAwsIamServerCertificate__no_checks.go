@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsIamServerCertificate) validateOverrideLogicalIdParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsIamServerCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsIamServerCertificate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsIamServerCertificate) validateSetLatestParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamServerCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsIamServerCertificate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

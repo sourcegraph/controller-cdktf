@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStatePkOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStatePkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStatePkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStatePkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStatePkOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStatePkOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStatePkOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeImageShieldedInstanceInitialStatePkOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeImageShieldedInstanceInitialStatePkOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeImageShieldedInstanceInitialStatePkOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

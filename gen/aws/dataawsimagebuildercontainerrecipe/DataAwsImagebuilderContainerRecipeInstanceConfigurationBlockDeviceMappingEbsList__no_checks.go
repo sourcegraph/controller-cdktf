@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockD
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockD
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipeInstanceConfigurationBlockD
 	return nil
 }
 
-func validateNewDataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

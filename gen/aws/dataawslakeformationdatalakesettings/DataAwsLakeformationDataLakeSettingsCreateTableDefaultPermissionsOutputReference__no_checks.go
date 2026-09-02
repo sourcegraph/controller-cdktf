@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermiss
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermiss
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsLakeformationDataLakeSettingsCreateTableDefaultPermissionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

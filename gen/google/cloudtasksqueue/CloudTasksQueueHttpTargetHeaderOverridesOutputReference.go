@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudtasksqueue/internal"
 )
 
 type CloudTasksQueueHttpTargetHeaderOverridesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type CloudTasksQueueHttpTargetHeaderOverridesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,13 +60,13 @@ type CloudTasksQueueHttpTargetHeaderOverridesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutHeader(value *CloudTasksQueueHttpTargetHeaderOverridesHeader)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type CloudTasksQueueHttpTargetHeaderOverridesOutputReference interface {
 
 // The jsii proxy struct for CloudTasksQueueHttpTargetHeaderOverridesOutputReference
 type jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) Terr
 }
 
 
-func NewCloudTasksQueueHttpTargetHeaderOverridesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudTasksQueueHttpTargetHeaderOverridesOutputReference {
+func NewCloudTasksQueueHttpTargetHeaderOverridesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudTasksQueueHttpTargetHeaderOverridesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudTasksQueueHttpTargetHeaderOverridesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -179,7 +179,7 @@ func NewCloudTasksQueueHttpTargetHeaderOverridesOutputReference(terraformResourc
 	j := jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetHeaderOverridesOutputReference",
+		"@cdktn/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetHeaderOverridesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewCloudTasksQueueHttpTargetHeaderOverridesOutputReference(terraformResourc
 	return &j
 }
 
-func NewCloudTasksQueueHttpTargetHeaderOverridesOutputReference_Override(c CloudTasksQueueHttpTargetHeaderOverridesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCloudTasksQueueHttpTargetHeaderOverridesOutputReference_Override(c CloudTasksQueueHttpTargetHeaderOverridesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetHeaderOverridesOutputReference",
+		"@cdktn/provider-google.cloudTasksQueue.CloudTasksQueueHttpTargetHeaderOverridesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,11 +281,11 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) GetA
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -409,8 +409,8 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) GetS
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -422,16 +422,16 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) Inte
 	return returns
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -449,8 +449,8 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) PutH
 	)
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetHeaderOverridesOutputReference) Reso
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleMatchExprOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeSecurityPolicyRuleMatchExprOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeSecurityPolicyRuleMatchExprOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

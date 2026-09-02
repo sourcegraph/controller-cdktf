@@ -40,11 +40,11 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadInfluxdbOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadInfluxdbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadInfluxdbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadInfluxdbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadInfluxdbOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadInfluxdbOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadInfluxdbOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadInfluxdbOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsBadInfluxdbOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveCountMetricsBadInfluxdbOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

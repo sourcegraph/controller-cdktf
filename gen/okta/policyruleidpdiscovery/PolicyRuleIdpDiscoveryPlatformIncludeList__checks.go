@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateGetParamet
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateResolvePar
 
 func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PolicyRuleIdpDiscoveryPlatformInclude:
 		val := val.(*[]*PolicyRuleIdpDiscoveryPlatformInclude)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateSetInterna
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*PolicyRuleIdpDiscoveryPlatformInclude; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*PolicyRuleIdpDiscoveryPlatformInclude; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewPolicyRuleIdpDiscoveryPlatformIncludeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPolicyRuleIdpDiscoveryPlatformIncludeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

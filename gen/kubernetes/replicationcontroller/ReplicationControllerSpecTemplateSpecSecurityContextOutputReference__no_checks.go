@@ -40,7 +40,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputRef
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputRef
 	return nil
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecSecurityContextOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewReplicationControllerSpecTemplateSpecSecurityContextOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewReplicationControllerSpecTemplateSpecSecurityContextOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

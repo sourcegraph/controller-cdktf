@@ -12,7 +12,7 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageFormParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxPageFormParametersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageFormParametersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxPageFormParametersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewDialogflowCxPageFormParametersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDialogflowCxPageFormParametersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

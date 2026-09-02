@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeArrayValueOutputReferen
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeArrayValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeArrayValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeArrayValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertRouteIncidentTemplateIncidentModeArrayValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateIncidentModeArrayValueOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateIncidentModeArrayValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteIncidentTemplateIncidentModeArrayValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlertRouteIncidentTemplateIncidentModeArrayValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlertRouteIncidentTemplateIncidentModeArrayValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

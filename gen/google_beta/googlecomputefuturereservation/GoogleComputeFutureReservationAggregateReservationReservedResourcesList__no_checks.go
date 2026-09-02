@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedRes
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedRes
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedResourcesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeFutureReservationAggregateReservationReservedRes
 	return nil
 }
 
-func validateNewGoogleComputeFutureReservationAggregateReservationReservedResourcesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeFutureReservationAggregateReservationReservedResourcesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeGr
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpcList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeGr
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpcList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpcList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleCloudRunServiceTemplateSpecContainersStartupProbeGr
 	return nil
 }
 
-func validateNewDataGoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpcListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleCloudRunServiceTemplateSpecContainersStartupProbeGrpcListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

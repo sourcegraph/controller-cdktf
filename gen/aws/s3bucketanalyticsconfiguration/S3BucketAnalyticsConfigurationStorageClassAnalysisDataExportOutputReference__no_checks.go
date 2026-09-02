@@ -40,7 +40,7 @@ func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportO
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportO
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportO
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewS3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketAnalyticsConfigurationStorageClassAnalysisDataExportOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

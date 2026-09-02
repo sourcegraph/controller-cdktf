@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/storageobjectaccesscontrol/internal"
 )
 
 type StorageObjectAccessControlTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type StorageObjectAccessControlTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type StorageObjectAccessControlTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type StorageObjectAccessControlTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type StorageObjectAccessControlTimeoutsOutputReference interface {
 
 // The jsii proxy struct for StorageObjectAccessControlTimeoutsOutputReference
 type jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) UpdateInpu
 }
 
 
-func NewStorageObjectAccessControlTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageObjectAccessControlTimeoutsOutputReference {
+func NewStorageObjectAccessControlTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) StorageObjectAccessControlTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStorageObjectAccessControlTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewStorageObjectAccessControlTimeoutsOutputReference(terraformResource cdkt
 	j := jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference",
+		"@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewStorageObjectAccessControlTimeoutsOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewStorageObjectAccessControlTimeoutsOutputReference_Override(s StorageObjectAccessControlTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewStorageObjectAccessControlTimeoutsOutputReference_Override(s StorageObjectAccessControlTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference",
+		"@cdktn/provider-google.storageObjectAccessControl.StorageObjectAccessControlTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) GetAnyMapA
 	return returns
 }
 
-func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -491,8 +491,8 @@ func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) GetStringM
 	return returns
 }
 
-func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -504,16 +504,16 @@ func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) Interpolat
 	return returns
 }
 
-func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) ResetUpdat
 	)
 }
 
-func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (s *jsiiProxy_StorageObjectAccessControlTimeoutsOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

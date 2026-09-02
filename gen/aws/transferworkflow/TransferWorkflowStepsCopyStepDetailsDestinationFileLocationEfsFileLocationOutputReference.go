@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/transferworkflow/internal"
 )
 
 type TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationO
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationO
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFileSystemId()
 	ResetPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationO
 
 // The jsii proxy struct for TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference
 type jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEf
 	return returns
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEf
 }
 
 
-func NewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference {
+func NewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocati
 	j := jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference",
+		"@cdktn/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocati
 	return &j
 }
 
-func NewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference_Override(t TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewTransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference_Override(t TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference",
+		"@cdktn/provider-aws.transferWorkflow.TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEf
 	)
 }
 
-func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEf
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -456,8 +456,8 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEf
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -469,16 +469,16 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEf
 	return returns
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEf
 	)
 }
 
-func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEfsFileLocationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (t *jsiiProxy_TransferWorkflowStepsCopyStepDetailsDestinationFileLocationEf
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

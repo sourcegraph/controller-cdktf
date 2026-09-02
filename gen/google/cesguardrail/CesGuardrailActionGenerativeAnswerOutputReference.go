@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cesguardrail/internal"
 )
 
 type CesGuardrailActionGenerativeAnswerOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type CesGuardrailActionGenerativeAnswerOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type CesGuardrailActionGenerativeAnswerOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type CesGuardrailActionGenerativeAnswerOutputReference interface {
 
 // The jsii proxy struct for CesGuardrailActionGenerativeAnswerOutputReference
 type jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) TerraformR
 }
 
 
-func NewCesGuardrailActionGenerativeAnswerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesGuardrailActionGenerativeAnswerOutputReference {
+func NewCesGuardrailActionGenerativeAnswerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CesGuardrailActionGenerativeAnswerOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesGuardrailActionGenerativeAnswerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewCesGuardrailActionGenerativeAnswerOutputReference(terraformResource cdkt
 	j := jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionGenerativeAnswerOutputReference",
+		"@cdktn/provider-google.cesGuardrail.CesGuardrailActionGenerativeAnswerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewCesGuardrailActionGenerativeAnswerOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewCesGuardrailActionGenerativeAnswerOutputReference_Override(c CesGuardrailActionGenerativeAnswerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCesGuardrailActionGenerativeAnswerOutputReference_Override(c CesGuardrailActionGenerativeAnswerOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesGuardrail.CesGuardrailActionGenerativeAnswerOutputReference",
+		"@cdktn/provider-google.cesGuardrail.CesGuardrailActionGenerativeAnswerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) GetAnyMapA
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -420,8 +420,8 @@ func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) GetStringM
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -433,24 +433,24 @@ func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) Interpolat
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (c *jsiiProxy_CesGuardrailActionGenerativeAnswerOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

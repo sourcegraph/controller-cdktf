@@ -12,7 +12,7 @@ func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DatastreamStreamRuleSetsCustomizationRulesList) validateSetWr
 	return nil
 }
 
-func validateNewDatastreamStreamRuleSetsCustomizationRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDatastreamStreamRuleSetsCustomizationRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

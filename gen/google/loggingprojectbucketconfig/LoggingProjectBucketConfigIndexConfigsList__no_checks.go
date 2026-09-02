@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) validateGetParame
 	return nil
 }
 
-func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoggingProjectBucketConfigIndexConfigsList) validateSetWrapsS
 	return nil
 }
 
-func validateNewLoggingProjectBucketConfigIndexConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoggingProjectBucketConfigIndexConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -121,6 +125,10 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutSourceMachi
 }
 
 func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validatePutTimeoutsParameters(value *GoogleComputeInstanceFromMachineImageTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -192,7 +200,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetLabelsParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImage) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

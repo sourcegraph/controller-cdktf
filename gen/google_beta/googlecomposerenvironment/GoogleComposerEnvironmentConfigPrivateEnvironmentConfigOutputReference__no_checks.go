@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutput
 	return nil
 }
 
-func validateNewGoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComposerEnvironmentConfigPrivateEnvironmentConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

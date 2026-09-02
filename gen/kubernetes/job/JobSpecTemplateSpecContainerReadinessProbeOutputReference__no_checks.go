@@ -40,7 +40,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeOutputReference) va
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecContainerReadinessProbeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobSpecTemplateSpecContainerReadinessProbeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

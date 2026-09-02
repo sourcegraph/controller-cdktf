@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/schedulerschedule/internal"
 )
 
 type SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Base() *float64
 	SetBase(val *float64)
 	BaseInput() *float64
@@ -40,9 +40,9 @@ type SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Weight() *float64
 	SetWeight(val *float64)
 	WeightInput() *float64
@@ -51,7 +51,7 @@ type SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBase()
 	ResetWeight()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference
 
 // The jsii proxy struct for SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference
 type jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) Base() *float64 {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyO
 	return returns
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyO
 }
 
 
-func NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference {
+func NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -227,7 +227,7 @@ func NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputRefere
 	j := jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputRefere
 	return &j
 }
 
-func NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference_Override(s SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference_Override(s SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -311,7 +311,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyO
 	)
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyO
 	return returns
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -490,8 +490,8 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyO
 	return returns
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -503,16 +503,16 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyO
 	return returns
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyO
 	)
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyO
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

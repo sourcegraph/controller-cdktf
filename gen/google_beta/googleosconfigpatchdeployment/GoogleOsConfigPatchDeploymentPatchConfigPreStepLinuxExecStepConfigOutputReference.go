@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleosconfigpatchdeployment/internal"
 )
 
 type GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedSuccessCodes() *[]*float64
 	SetAllowedSuccessCodes(val *[]*float64)
 	AllowedSuccessCodesInput() *[]*float64
@@ -45,15 +45,15 @@ type GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputRef
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,9 +69,9 @@ type GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputRef
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutGcsObject(value *GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigGcsObject)
 	ResetAllowedSuccessCodes()
 	ResetGcsObject()
@@ -79,7 +79,7 @@ type GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputRef
 	ResetLocalPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputRef
 
 // The jsii proxy struct for GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference
 type jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference) AllowedSuccessCodes() *[]*float64 {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepC
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepC
 }
 
 
-func NewGoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference {
+func NewGoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutput
 	j := jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference",
+		"@cdktn/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutput
 	return &j
 }
 
-func NewGoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference_Override(g GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference_Override(g GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference",
+		"@cdktn/provider-google-beta.googleOsConfigPatchDeployment.GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepC
 	)
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,11 +387,11 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepC
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -515,8 +515,8 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepC
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -528,16 +528,16 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepC
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepC
 	)
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepLinuxExecStepC
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

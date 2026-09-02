@@ -56,6 +56,10 @@ func (u *jsiiProxy_User) validateInterpolationForAttributeParameters(terraformAt
 	return nil
 }
 
+func (u *jsiiProxy_User) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_User) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (u *jsiiProxy_User) validateOverrideLogicalIdParameters(newLogicalId *strin
 }
 
 func (u *jsiiProxy_User) validatePutPasswordHashParameters(value *UserPasswordHash) error {
+	return nil
+}
+
+func (u *jsiiProxy_User) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -164,7 +172,7 @@ func (j *jsiiProxy_User) validateSetLastNameParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_User) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_User) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

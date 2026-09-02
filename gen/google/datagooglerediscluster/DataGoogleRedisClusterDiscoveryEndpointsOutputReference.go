@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglerediscluster/internal"
 )
 
 type DataGoogleRedisClusterDiscoveryEndpointsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Address() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -37,15 +37,15 @@ type DataGoogleRedisClusterDiscoveryEndpointsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type DataGoogleRedisClusterDiscoveryEndpointsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type DataGoogleRedisClusterDiscoveryEndpointsOutputReference interface {
 
 // The jsii proxy struct for DataGoogleRedisClusterDiscoveryEndpointsOutputReference
 type jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) Address() *string {
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -180,7 +180,7 @@ func (j *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) Terr
 }
 
 
-func NewDataGoogleRedisClusterDiscoveryEndpointsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleRedisClusterDiscoveryEndpointsOutputReference {
+func NewDataGoogleRedisClusterDiscoveryEndpointsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleRedisClusterDiscoveryEndpointsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleRedisClusterDiscoveryEndpointsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -189,7 +189,7 @@ func NewDataGoogleRedisClusterDiscoveryEndpointsOutputReference(terraformResourc
 	j := jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpointsOutputReference",
+		"@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -197,11 +197,11 @@ func NewDataGoogleRedisClusterDiscoveryEndpointsOutputReference(terraformResourc
 	return &j
 }
 
-func NewDataGoogleRedisClusterDiscoveryEndpointsOutputReference_Override(d DataGoogleRedisClusterDiscoveryEndpointsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleRedisClusterDiscoveryEndpointsOutputReference_Override(d DataGoogleRedisClusterDiscoveryEndpointsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpointsOutputReference",
+		"@cdktn/provider-google.dataGoogleRedisCluster.DataGoogleRedisClusterDiscoveryEndpointsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,11 +291,11 @@ func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) GetA
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -419,8 +419,8 @@ func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) GetS
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -432,24 +432,24 @@ func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -457,7 +457,7 @@ func (d *jsiiProxy_DataGoogleRedisClusterDiscoveryEndpointsOutputReference) Reso
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

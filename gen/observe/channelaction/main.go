@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.channelAction.ChannelAction",
+		"@cdktn/provider-observe.channelAction.ChannelAction",
 		reflect.TypeOf((*ChannelAction)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -61,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rateLimit", GoGetter: "RateLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "rateLimitInput", GoGetter: "RateLimitInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChannels", GoMethod: "ResetChannels"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmail", GoMethod: "ResetEmail"},
@@ -81,25 +83,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "webhook", GoGetter: "Webhook"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookInput", GoGetter: "WebhookInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ChannelAction{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.channelAction.ChannelActionConfig",
+		"@cdktn/provider-observe.channelAction.ChannelActionConfig",
 		reflect.TypeOf((*ChannelActionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.channelAction.ChannelActionEmail",
+		"@cdktn/provider-observe.channelAction.ChannelActionEmail",
 		reflect.TypeOf((*ChannelActionEmail)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.channelAction.ChannelActionEmailOutputReference",
+		"@cdktn/provider-observe.channelAction.ChannelActionEmailOutputReference",
 		reflect.TypeOf((*ChannelActionEmailOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -135,16 +138,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChannelActionEmailOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.channelAction.ChannelActionWebhook",
+		"@cdktn/provider-observe.channelAction.ChannelActionWebhook",
 		reflect.TypeOf((*ChannelActionWebhook)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.channelAction.ChannelActionWebhookOutputReference",
+		"@cdktn/provider-observe.channelAction.ChannelActionWebhookOutputReference",
 		reflect.TypeOf((*ChannelActionWebhookOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -181,7 +184,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChannelActionWebhookOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

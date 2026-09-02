@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigquerydataset/internal"
 )
 
 type GoogleBigqueryDatasetAccessOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -55,9 +55,9 @@ type GoogleBigqueryDatasetAccessOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UserByEmail() *string
 	SetUserByEmail(val *string)
 	UserByEmailInput() *string
@@ -68,7 +68,7 @@ type GoogleBigqueryDatasetAccessOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,9 +84,9 @@ type GoogleBigqueryDatasetAccessOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCondition(value *GoogleBigqueryDatasetAccessCondition)
 	PutDataset(value *GoogleBigqueryDatasetAccessDataset)
 	PutRoutine(value *GoogleBigqueryDatasetAccessRoutine)
@@ -103,7 +103,7 @@ type GoogleBigqueryDatasetAccessOutputReference interface {
 	ResetView()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,7 +113,7 @@ type GoogleBigqueryDatasetAccessOutputReference interface {
 
 // The jsii proxy struct for GoogleBigqueryDatasetAccessOutputReference
 type jsiiProxy_GoogleBigqueryDatasetAccessOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) ComplexObjectIndex() interface{} {
@@ -336,8 +336,8 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) ViewInput() *Goog
 }
 
 
-func NewGoogleBigqueryDatasetAccessOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleBigqueryDatasetAccessOutputReference {
+func NewGoogleBigqueryDatasetAccessOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleBigqueryDatasetAccessOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleBigqueryDatasetAccessOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -396,7 +396,7 @@ func NewGoogleBigqueryDatasetAccessOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_GoogleBigqueryDatasetAccessOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessOutputReference",
+		"@cdktn/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -404,11 +404,11 @@ func NewGoogleBigqueryDatasetAccessOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewGoogleBigqueryDatasetAccessOutputReference_Override(g GoogleBigqueryDatasetAccessOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleBigqueryDatasetAccessOutputReference_Override(g GoogleBigqueryDatasetAccessOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessOutputReference",
+		"@cdktn/provider-google-beta.googleBigqueryDataset.GoogleBigqueryDatasetAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -513,7 +513,7 @@ func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,11 +564,11 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -692,8 +692,8 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -705,16 +705,16 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -845,8 +845,8 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) ResetView() {
 	)
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -854,7 +854,7 @@ func (g *jsiiProxy_GoogleBigqueryDatasetAccessOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

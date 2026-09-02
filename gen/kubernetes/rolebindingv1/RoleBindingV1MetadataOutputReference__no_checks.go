@@ -40,11 +40,11 @@ func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RoleBindingV1MetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_RoleBindingV1MetadataOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_RoleBindingV1MetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RoleBindingV1MetadataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRoleBindingV1MetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRoleBindingV1MetadataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

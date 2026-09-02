@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleStorageControlFolderIntelligenceConfig) validateOve
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleStorageControlFolderIntelligenceConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleStorageControlFolderIntelligenceConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleStorageControlFolderIntelligenceConfig) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageControlFolderIntelligenceConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleStorageControlFolderIntelligenceConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

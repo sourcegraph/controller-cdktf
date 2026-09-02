@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivationStateList) validateGe
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivationStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivationStateList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivationStateList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivationStateList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivationStateList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivationStateList) validateSe
 	return nil
 }
 
-func validateNewNetworkServicesMulticastDomainActivationStateListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkServicesMulticastDomainActivationStateListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

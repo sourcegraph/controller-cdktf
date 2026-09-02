@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/slo/internal"
 )
 
 type SloObjectiveCountMetricsGoodHoneycombOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Attribute() *string
 	SetAttribute(val *string)
 	AttributeInput() *string
@@ -40,15 +40,15 @@ type SloObjectiveCountMetricsGoodHoneycombOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type SloObjectiveCountMetricsGoodHoneycombOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAttribute()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type SloObjectiveCountMetricsGoodHoneycombOutputReference interface {
 
 // The jsii proxy struct for SloObjectiveCountMetricsGoodHoneycombOutputReference
 type jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) Attribute() *string {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) Terrafo
 }
 
 
-func NewSloObjectiveCountMetricsGoodHoneycombOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsGoodHoneycombOutputReference {
+func NewSloObjectiveCountMetricsGoodHoneycombOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsGoodHoneycombOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSloObjectiveCountMetricsGoodHoneycombOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewSloObjectiveCountMetricsGoodHoneycombOutputReference(terraformResource c
 	j := jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodHoneycombOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCountMetricsGoodHoneycombOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewSloObjectiveCountMetricsGoodHoneycombOutputReference(terraformResource c
 	return &j
 }
 
-func NewSloObjectiveCountMetricsGoodHoneycombOutputReference_Override(s SloObjectiveCountMetricsGoodHoneycombOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSloObjectiveCountMetricsGoodHoneycombOutputReference_Override(s SloObjectiveCountMetricsGoodHoneycombOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsGoodHoneycombOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCountMetricsGoodHoneycombOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) GetAnyM
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -455,8 +455,8 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) GetStri
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -468,16 +468,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) Interpo
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) ResetAt
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodHoneycombOutputReference) Resolve
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

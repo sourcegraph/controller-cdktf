@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFirebaseStorageDefaultBucketBucketOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleFirebaseStorageDefaultBucketBucketOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsOpensearchDomainAdvancedSecurityOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsOpensearchDomainAdvancedSecurityOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsOpensearchDomainAdvancedSecurityOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

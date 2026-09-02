@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsSignerSigningProfileRevocationRecordList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSignerSigningProfileRevocationRecordList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSignerSigningProfileRevocationRecordList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsSignerSigningProfileRevocationRecordList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSignerSigningProfileRevocationRecordList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsSignerSigningProfileRevocationRecordList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsSignerSigningProfileRevocationRecordList) validateSetW
 	return nil
 }
 
-func validateNewDataAwsSignerSigningProfileRevocationRecordListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsSignerSigningProfileRevocationRecordListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

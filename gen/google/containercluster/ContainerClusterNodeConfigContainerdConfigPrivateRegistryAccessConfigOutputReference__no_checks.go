@@ -40,7 +40,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigPrivateRegistryAcce
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigPrivateRegistryAcce
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigPrivateRegistryAcce
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeRegionDiskIamPolicy) validateInterpolationForAttribute
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionDiskIamPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionDiskIamPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_ComputeRegionDiskIamPolicy) validateMoveToIdParameters(id *st
 }
 
 func (c *jsiiProxy_ComputeRegionDiskIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionDiskIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_ComputeRegionDiskIamPolicy) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionDiskIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeRegionDiskIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

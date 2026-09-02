@@ -40,11 +40,11 @@ func (a *jsiiProxy_AddressMapMembershipsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (a *jsiiProxy_AddressMapMembershipsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AddressMapMembershipsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AddressMapMembershipsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AddressMapMembershipsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AddressMapMembershipsOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_AddressMapMembershipsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AddressMapMembershipsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAddressMapMembershipsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAddressMapMembershipsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

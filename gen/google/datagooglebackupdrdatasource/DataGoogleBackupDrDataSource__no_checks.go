@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSource) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleBackupDrDataSource) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleBackupDrDataSource_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSource) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleBackupDrDataSource) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

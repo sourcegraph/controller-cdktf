@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseDbServersDbServersList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseDbServersDbServersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseDbServersDbServersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbServersDbServersList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseDbServersDbServersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleOracleDatabaseDbServersDbServersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseDbServersDbServersList) validateSetWr
 	return nil
 }
 
-func validateNewDataGoogleOracleDatabaseDbServersDbServersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleOracleDatabaseDbServersDbServersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dataawscetags/internal"
 )
 
 type DataAwsCeTagsFilterCostCategoryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type DataAwsCeTagsFilterCostCategoryOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Values() *[]*string
 	SetValues(val *[]*string)
 	ValuesInput() *[]*string
@@ -51,7 +51,7 @@ type DataAwsCeTagsFilterCostCategoryOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type DataAwsCeTagsFilterCostCategoryOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKey()
 	ResetMatchOptions()
 	ResetValues()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type DataAwsCeTagsFilterCostCategoryOutputReference interface {
 
 // The jsii proxy struct for DataAwsCeTagsFilterCostCategoryOutputReference
 type jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) ValuesInput()
 }
 
 
-func NewDataAwsCeTagsFilterCostCategoryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterCostCategoryOutputReference {
+func NewDataAwsCeTagsFilterCostCategoryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataAwsCeTagsFilterCostCategoryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataAwsCeTagsFilterCostCategoryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewDataAwsCeTagsFilterCostCategoryOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategoryOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewDataAwsCeTagsFilterCostCategoryOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewDataAwsCeTagsFilterCostCategoryOutputReference_Override(d DataAwsCeTagsFilterCostCategoryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataAwsCeTagsFilterCostCategoryOutputReference_Override(d DataAwsCeTagsFilterCostCategoryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategoryOutputReference",
+		"@cdktn/provider-aws.dataAwsCeTags.DataAwsCeTagsFilterCostCategoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -491,8 +491,8 @@ func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) GetStringMapA
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -504,16 +504,16 @@ func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) Interpolation
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) ResetValues()
 	)
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (d *jsiiProxy_DataAwsCeTagsFilterCostCategoryOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputRe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputRe
 	return nil
 }
 
-func validateNewComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

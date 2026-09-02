@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateInterpola
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validatePutDeiden
 }
 
 func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validatePutTimeoutsParameters(value *GoogleDataLossPreventionDeidentifyTemplateTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateSetIdPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDeidentifyTemplate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

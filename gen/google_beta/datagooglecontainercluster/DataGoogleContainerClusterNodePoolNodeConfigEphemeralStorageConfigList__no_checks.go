@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageC
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageC
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageC
 	return nil
 }
 
-func validateNewDataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleContainerClusterNodePoolNodeConfigEphemeralStorageConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

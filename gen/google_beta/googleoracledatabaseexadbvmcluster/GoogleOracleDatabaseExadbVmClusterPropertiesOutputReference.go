@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleoracledatabaseexadbvmcluster/internal"
 )
 
 type GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalEcpuCountPerNode() *float64
 	SetAdditionalEcpuCountPerNode(val *float64)
 	AdditionalEcpuCountPerNodeInput() *float64
@@ -74,9 +74,9 @@ type GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeZone() GoogleOracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference
 	TimeZoneInput() *GoogleOracleDatabaseExadbVmClusterPropertiesTimeZone
 	VmFileSystemStorage() GoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference
@@ -86,7 +86,7 @@ type GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -102,9 +102,9 @@ type GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDataCollectionOptions(value *GoogleOracleDatabaseExadbVmClusterPropertiesDataCollectionOptions)
 	PutTimeZone(value *GoogleOracleDatabaseExadbVmClusterPropertiesTimeZone)
 	PutVmFileSystemStorage(value *GoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorage)
@@ -116,7 +116,7 @@ type GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference interface {
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -126,7 +126,7 @@ type GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference interface {
 
 // The jsii proxy struct for GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference
 type jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) AdditionalEcpuCountPerNode() *float64 {
@@ -479,8 +479,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -530,7 +530,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) 
 }
 
 
-func NewGoogleOracleDatabaseExadbVmClusterPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference {
+func NewGoogleOracleDatabaseExadbVmClusterPropertiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleOracleDatabaseExadbVmClusterPropertiesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -539,7 +539,7 @@ func NewGoogleOracleDatabaseExadbVmClusterPropertiesOutputReference(terraformRes
 	j := jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOracleDatabaseExadbVmCluster.GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference",
+		"@cdktn/provider-google-beta.googleOracleDatabaseExadbVmCluster.GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -547,11 +547,11 @@ func NewGoogleOracleDatabaseExadbVmClusterPropertiesOutputReference(terraformRes
 	return &j
 }
 
-func NewGoogleOracleDatabaseExadbVmClusterPropertiesOutputReference_Override(g GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleOracleDatabaseExadbVmClusterPropertiesOutputReference_Override(g GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOracleDatabaseExadbVmCluster.GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference",
+		"@cdktn/provider-google-beta.googleOracleDatabaseExadbVmCluster.GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -722,7 +722,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -762,11 +762,11 @@ func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -890,8 +890,8 @@ func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -903,16 +903,16 @@ func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1000,8 +1000,8 @@ func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) 
 	)
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1009,7 +1009,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

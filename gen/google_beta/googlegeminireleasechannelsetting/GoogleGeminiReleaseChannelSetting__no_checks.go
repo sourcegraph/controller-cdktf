@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSetting) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGeminiReleaseChannelSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGeminiReleaseChannelSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleGeminiReleaseChannelSetting) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleGeminiReleaseChannelSetting) validatePutTimeoutsParameters(value *GoogleGeminiReleaseChannelSettingTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGeminiReleaseChannelSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleGeminiReleaseChannelSetting) validateSetLabelsParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiReleaseChannelSetting) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleGeminiReleaseChannelSetting) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

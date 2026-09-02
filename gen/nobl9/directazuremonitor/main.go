@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitor",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitor",
 		reflect.TypeOf((*DirectAzureMonitor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logCollectionEnabled", GoGetter: "LogCollectionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "logCollectionEnabledInput", GoGetter: "LogCollectionEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "queryDelay", GoGetter: "QueryDelay"},
 			_jsii_.MemberProperty{JsiiProperty: "queryDelayInput", GoGetter: "QueryDelayInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannel", GoGetter: "ReleaseChannel"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannelInput", GoGetter: "ReleaseChannelInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientId", GoMethod: "ResetClientId"},
@@ -91,27 +93,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAzureMonitor{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitorConfig",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitorConfig",
 		reflect.TypeOf((*DirectAzureMonitorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrieval",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrieval",
 		reflect.TypeOf((*DirectAzureMonitorHistoricalDataRetrieval)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalDefaultDuration",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalDefaultDuration",
 		reflect.TypeOf((*DirectAzureMonitorHistoricalDataRetrievalDefaultDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalDefaultDurationList",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalDefaultDurationList",
 		reflect.TypeOf((*DirectAzureMonitorHistoricalDataRetrievalDefaultDurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -128,12 +131,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalDefaultDurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalDefaultDurationOutputReference",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalDefaultDurationOutputReference",
 		reflect.TypeOf((*DirectAzureMonitorHistoricalDataRetrievalDefaultDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -164,16 +167,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalDefaultDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalMaxDuration",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalMaxDuration",
 		reflect.TypeOf((*DirectAzureMonitorHistoricalDataRetrievalMaxDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalMaxDurationList",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalMaxDurationList",
 		reflect.TypeOf((*DirectAzureMonitorHistoricalDataRetrievalMaxDurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -190,12 +193,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalMaxDurationOutputReference",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalMaxDurationOutputReference",
 		reflect.TypeOf((*DirectAzureMonitorHistoricalDataRetrievalMaxDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -226,12 +229,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalMaxDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalOutputReference",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitorHistoricalDataRetrievalOutputReference",
 		reflect.TypeOf((*DirectAzureMonitorHistoricalDataRetrievalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -264,16 +267,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAzureMonitorHistoricalDataRetrievalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitorQueryDelay",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitorQueryDelay",
 		reflect.TypeOf((*DirectAzureMonitorQueryDelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAzureMonitor.DirectAzureMonitorQueryDelayOutputReference",
+		"@cdktn/provider-nobl9.directAzureMonitor.DirectAzureMonitorQueryDelayOutputReference",
 		reflect.TypeOf((*DirectAzureMonitorQueryDelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,7 +307,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAzureMonitorQueryDelayOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

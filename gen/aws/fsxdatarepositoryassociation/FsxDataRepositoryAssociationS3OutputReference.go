@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/fsxdatarepositoryassociation/internal"
 )
 
 type FsxDataRepositoryAssociationS3OutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AutoExportPolicy() FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference
 	AutoExportPolicyInput() *FsxDataRepositoryAssociationS3AutoExportPolicy
 	AutoImportPolicy() FsxDataRepositoryAssociationS3AutoImportPolicyOutputReference
@@ -38,15 +38,15 @@ type FsxDataRepositoryAssociationS3OutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type FsxDataRepositoryAssociationS3OutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAutoExportPolicy(value *FsxDataRepositoryAssociationS3AutoExportPolicy)
 	PutAutoImportPolicy(value *FsxDataRepositoryAssociationS3AutoImportPolicy)
 	ResetAutoExportPolicy()
 	ResetAutoImportPolicy()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type FsxDataRepositoryAssociationS3OutputReference interface {
 
 // The jsii proxy struct for FsxDataRepositoryAssociationS3OutputReference
 type jsiiProxy_FsxDataRepositoryAssociationS3OutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) AutoExportPolicy() FsxDataRepositoryAssociationS3AutoExportPolicyOutputReference {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) TerraformResou
 }
 
 
-func NewFsxDataRepositoryAssociationS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FsxDataRepositoryAssociationS3OutputReference {
+func NewFsxDataRepositoryAssociationS3OutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FsxDataRepositoryAssociationS3OutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFsxDataRepositoryAssociationS3OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewFsxDataRepositoryAssociationS3OutputReference(terraformResource cdktf.II
 	j := jsiiProxy_FsxDataRepositoryAssociationS3OutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference",
+		"@cdktn/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewFsxDataRepositoryAssociationS3OutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewFsxDataRepositoryAssociationS3OutputReference_Override(f FsxDataRepositoryAssociationS3OutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFsxDataRepositoryAssociationS3OutputReference_Override(f FsxDataRepositoryAssociationS3OutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference",
+		"@cdktn/provider-aws.fsxDataRepositoryAssociation.FsxDataRepositoryAssociationS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -434,8 +434,8 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) GetStringMapAt
 	return returns
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -447,16 +447,16 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) InterpolationA
 	return returns
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) ResetAutoImpor
 	)
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

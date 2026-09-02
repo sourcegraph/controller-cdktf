@@ -56,6 +56,10 @@ func (d *jsiiProxy_DxGatewayAssociationProposal) validateInterpolationForAttribu
 	return nil
 }
 
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxGatewayAssociationProposal) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (d *jsiiProxy_DxGatewayAssociationProposal) validateMoveToIdParameters(id *
 }
 
 func (d *jsiiProxy_DxGatewayAssociationProposal) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxGatewayAssociationProposal) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DxGatewayAssociationProposal) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

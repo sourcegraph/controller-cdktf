@@ -56,6 +56,10 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) validateInterpolationForAttribute
 	return nil
 }
 
+func (a *jsiiProxy_AccessMutualTlsCertificate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessMutualTlsCertificate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (a *jsiiProxy_AccessMutualTlsCertificate) validateMoveToIdParameters(id *st
 }
 
 func (a *jsiiProxy_AccessMutualTlsCertificate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessMutualTlsCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_AccessMutualTlsCertificate) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_AccessMutualTlsCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AccessMutualTlsCertificate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

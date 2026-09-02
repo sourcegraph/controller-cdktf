@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionEmailOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionEmailOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataObserveMonitorV2ActionEmailOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionEmailOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveMonitorV2ActionEmailOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionEmailOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionEmailOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2ActionEmailOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataObserveMonitorV2ActionEmailOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataObserveMonitorV2ActionEmailOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

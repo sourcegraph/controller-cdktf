@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFilestoreInstancePerformanceConfigIopsPerTbOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstancePerformanceConfigIopsPerTbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFilestoreInstancePerformanceConfigIopsPerTbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFilestoreInstancePerformanceConfigIopsPerTbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFilestoreInstancePerformanceConfigIopsPerTbOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleFilestoreInstancePerformanceConfigIopsPerTbOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstancePerformanceConfigIopsPerTbOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFilestoreInstancePerformanceConfigIopsPerTbOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFilestoreInstancePerformanceConfigIopsPerTbOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleFilestoreInstancePerformanceConfigIopsPerTbOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

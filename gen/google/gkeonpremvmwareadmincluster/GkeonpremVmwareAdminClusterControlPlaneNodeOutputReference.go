@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/gkeonpremvmwareadmincluster/internal"
 )
 
 type GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCpus()
 	ResetMemory()
 	ResetReplicas()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference interface {
 
 // The jsii proxy struct for GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference
 type jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) T
 }
 
 
-func NewGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference {
+func NewGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGkeonpremVmwareAdminClusterControlPlaneNodeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference(terraformReso
 	j := jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference",
+		"@cdktn/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference(terraformReso
 	return &j
 }
 
-func NewGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference_Override(g GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGkeonpremVmwareAdminClusterControlPlaneNodeOutputReference_Override(g GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference",
+		"@cdktn/provider-google.gkeonpremVmwareAdminCluster.GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -491,8 +491,8 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,16 +504,16 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) I
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) R
 	)
 }
 
-func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GkeonpremVmwareAdminClusterControlPlaneNodeOutputReference) R
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

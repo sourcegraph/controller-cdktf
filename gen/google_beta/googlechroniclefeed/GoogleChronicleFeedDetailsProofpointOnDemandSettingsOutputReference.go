@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Authentication() GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationOutputReference
 	AuthenticationInput() *GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthentication
 	ClusterId() *string
@@ -39,15 +39,15 @@ type GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthentication(value *GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthentication)
 	ResetAuthentication()
 	ResetClusterId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference interfa
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference) Authentication() GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationOutputReference {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputRef
 }
 
 
-func NewGoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference {
+func NewGoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference(terr
 	j := jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference(terr
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference_Override(g GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference_Override(g GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -445,8 +445,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -458,16 +458,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputRef
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputRef
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

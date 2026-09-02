@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlbListenerRuleConditionList) validateGetParameters(index *fl
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerRuleConditionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AlbListenerRuleConditionList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerRuleConditionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlbListenerRuleConditionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AlbListenerRuleConditionList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewAlbListenerRuleConditionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlbListenerRuleConditionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) validateGet
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLoggingOrganizationSinkExclusionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoggingOrganizationSinkExclusionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

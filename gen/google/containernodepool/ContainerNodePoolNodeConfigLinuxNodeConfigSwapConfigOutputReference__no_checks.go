@@ -40,7 +40,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerNodePoolNodeConfigLinuxNodeConfigSwapConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

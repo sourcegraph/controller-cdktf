@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsInternetGatewayAttachmentsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsInternetGatewayAttachmentsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsInternetGatewayAttachmentsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsInternetGatewayAttachmentsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsInternetGatewayAttachmentsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsInternetGatewayAttachmentsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsInternetGatewayAttachmentsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDataAwsInternetGatewayAttachmentsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsInternetGatewayAttachmentsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

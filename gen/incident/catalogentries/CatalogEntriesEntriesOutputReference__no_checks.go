@@ -40,7 +40,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) validatePutAttributeVal
 	return nil
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CatalogEntriesEntriesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CatalogEntriesEntriesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCatalogEntriesEntriesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) error {
+func validateNewCatalogEntriesEntriesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectKey *string) error {
 	return nil
 }
 

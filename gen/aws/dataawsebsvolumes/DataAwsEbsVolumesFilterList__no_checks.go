@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsEbsVolumesFilterList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEbsVolumesFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEbsVolumesFilterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataAwsEbsVolumesFilterList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsVolumesFilterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEbsVolumesFilterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataAwsEbsVolumesFilterList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewDataAwsEbsVolumesFilterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsEbsVolumesFilterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

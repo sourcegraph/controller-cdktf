@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataPipelinePipeline) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataPipelinePipeline) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataPipelinePipeline) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleDataPipelinePipeline) validatePutTimeoutsParameters(val
 }
 
 func (g *jsiiProxy_GoogleDataPipelinePipeline) validatePutWorkloadParameters(value *GoogleDataPipelinePipelineWorkload) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataPipelinePipeline) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleDataPipelinePipeline) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipeline) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataPipelinePipeline) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

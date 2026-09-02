@@ -40,11 +40,11 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesAnthosClustersOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesAnthosClustersOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesAnthosClustersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewClouddeployTargetAssociatedEntitiesAnthosClustersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewClouddeployTargetAssociatedEntitiesAnthosClustersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

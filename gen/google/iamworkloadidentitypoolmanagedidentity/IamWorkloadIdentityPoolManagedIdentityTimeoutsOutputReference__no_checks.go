@@ -40,11 +40,11 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReference
 	return nil
 }
 
-func validateNewIamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIamWorkloadIdentityPoolManagedIdentityTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

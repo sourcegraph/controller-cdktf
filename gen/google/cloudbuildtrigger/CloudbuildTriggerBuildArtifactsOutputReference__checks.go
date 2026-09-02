@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutMa
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*CloudbuildTriggerBuildArtifactsMavenArtifacts:
 		value := value.(*[]*CloudbuildTriggerBuildArtifactsMavenArtifacts)
@@ -114,7 +114,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutMa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CloudbuildTriggerBuildArtifactsMavenArtifacts; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*CloudbuildTriggerBuildArtifactsMavenArtifacts; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutNp
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*CloudbuildTriggerBuildArtifactsNpmPackages:
 		value := value.(*[]*CloudbuildTriggerBuildArtifactsNpmPackages)
@@ -145,7 +145,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutNp
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CloudbuildTriggerBuildArtifactsNpmPackages; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*CloudbuildTriggerBuildArtifactsNpmPackages; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -168,7 +168,7 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutPy
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*CloudbuildTriggerBuildArtifactsPythonPackages:
 		value := value.(*[]*CloudbuildTriggerBuildArtifactsPythonPackages)
@@ -187,16 +187,16 @@ func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validatePutPy
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CloudbuildTriggerBuildArtifactsPythonPackages; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*CloudbuildTriggerBuildArtifactsPythonPackages; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -291,7 +291,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -299,7 +299,7 @@ func (j *jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference) validateSetTe
 	return nil
 }
 
-func validateNewCloudbuildTriggerBuildArtifactsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudbuildTriggerBuildArtifactsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/macie2findingsfilter/internal"
 )
 
 type Macie2FindingsFilterFindingCriteriaOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type Macie2FindingsFilterFindingCriteriaOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type Macie2FindingsFilterFindingCriteriaOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCriterion(value interface{})
 	ResetCriterion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type Macie2FindingsFilterFindingCriteriaOutputReference interface {
 
 // The jsii proxy struct for Macie2FindingsFilterFindingCriteriaOutputReference
 type jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) Terraform
 }
 
 
-func NewMacie2FindingsFilterFindingCriteriaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Macie2FindingsFilterFindingCriteriaOutputReference {
+func NewMacie2FindingsFilterFindingCriteriaOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Macie2FindingsFilterFindingCriteriaOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMacie2FindingsFilterFindingCriteriaOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewMacie2FindingsFilterFindingCriteriaOutputReference(terraformResource cdk
 	j := jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference",
+		"@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewMacie2FindingsFilterFindingCriteriaOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewMacie2FindingsFilterFindingCriteriaOutputReference_Override(m Macie2FindingsFilterFindingCriteriaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMacie2FindingsFilterFindingCriteriaOutputReference_Override(m Macie2FindingsFilterFindingCriteriaOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference",
+		"@cdktn/provider-aws.macie2FindingsFilter.Macie2FindingsFilterFindingCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) GetAnyMap
 	return returns
 }
 
-func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -410,8 +410,8 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) GetString
 	return returns
 }
 
-func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -423,16 +423,16 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) Interpola
 	return returns
 }
 
-func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) ResetCrit
 	)
 }
 
-func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (m *jsiiProxy_Macie2FindingsFilterFindingCriteriaOutputReference) Resolve(_
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

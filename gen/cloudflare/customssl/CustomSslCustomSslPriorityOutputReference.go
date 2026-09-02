@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/customssl/internal"
 )
 
 type CustomSslCustomSslPriorityOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type CustomSslCustomSslPriorityOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type CustomSslCustomSslPriorityOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetId()
 	ResetPriority()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type CustomSslCustomSslPriorityOutputReference interface {
 
 // The jsii proxy struct for CustomSslCustomSslPriorityOutputReference
 type jsiiProxy_CustomSslCustomSslPriorityOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference) TerraformResource(
 }
 
 
-func NewCustomSslCustomSslPriorityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CustomSslCustomSslPriorityOutputReference {
+func NewCustomSslCustomSslPriorityOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CustomSslCustomSslPriorityOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCustomSslCustomSslPriorityOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewCustomSslCustomSslPriorityOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_CustomSslCustomSslPriorityOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriorityOutputReference",
+		"@cdktn/provider-cloudflare.customSsl.CustomSslCustomSslPriorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewCustomSslCustomSslPriorityOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewCustomSslCustomSslPriorityOutputReference_Override(c CustomSslCustomSslPriorityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCustomSslCustomSslPriorityOutputReference_Override(c CustomSslCustomSslPriorityOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.customSsl.CustomSslCustomSslPriorityOutputReference",
+		"@cdktn/provider-cloudflare.customSsl.CustomSslCustomSslPriorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomSslCustomSslPriorityOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -456,8 +456,8 @@ func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -469,16 +469,16 @@ func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) ResetPriority() {
 	)
 }
 
-func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (c *jsiiProxy_CustomSslCustomSslPriorityOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

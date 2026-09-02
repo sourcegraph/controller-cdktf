@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGkeHubNamespaceTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubNamespaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeHubNamespaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubNamespaceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeHubNamespaceTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleGkeHubNamespaceTimeoutsOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubNamespaceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeHubNamespaceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleGkeHubNamespaceTimeoutsOutputReference) validateSetUpda
 	return nil
 }
 
-func validateNewGoogleGkeHubNamespaceTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGkeHubNamespaceTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

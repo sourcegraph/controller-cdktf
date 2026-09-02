@@ -40,11 +40,11 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputRefere
 	return nil
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewZoneSettingsOverrideInitialSettingsSecurityHeaderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

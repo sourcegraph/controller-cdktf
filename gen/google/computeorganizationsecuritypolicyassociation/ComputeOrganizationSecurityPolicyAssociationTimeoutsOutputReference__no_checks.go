@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputRef
 	return nil
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeOrganizationSecurityPolicyAssociationTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

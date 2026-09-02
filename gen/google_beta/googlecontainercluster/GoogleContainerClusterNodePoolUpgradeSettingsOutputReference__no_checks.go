@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolUpgradeSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterNodePoolUpgradeSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterNodePoolUpgradeSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

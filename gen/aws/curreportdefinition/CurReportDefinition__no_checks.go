@@ -56,6 +56,10 @@ func (c *jsiiProxy_CurReportDefinition) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_CurReportDefinition) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CurReportDefinition) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_CurReportDefinition) validateMoveToIdParameters(id *string) e
 }
 
 func (c *jsiiProxy_CurReportDefinition) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CurReportDefinition) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_CurReportDefinition) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_CurReportDefinition) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CurReportDefinition) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

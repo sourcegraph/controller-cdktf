@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAcl",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAcl",
 		reflect.TypeOf((*Wafv2WebAcl)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "lockToken", GoGetter: "LockToken"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -59,6 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRule", GoMethod: "PutRule"},
 			_jsii_.MemberMethod{JsiiMethod: "putVisibilityConfig", GoMethod: "PutVisibilityConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomResponseBody", GoMethod: "ResetCustomResponseBody"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -85,23 +87,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityConfig", GoGetter: "VisibilityConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityConfigInput", GoGetter: "VisibilityConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAcl{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclConfig",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclConfig",
 		reflect.TypeOf((*Wafv2WebAclConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBody",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBody",
 		reflect.TypeOf((*Wafv2WebAclCustomResponseBody)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyList",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyList",
 		reflect.TypeOf((*Wafv2WebAclCustomResponseBodyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -118,12 +121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclCustomResponseBodyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclCustomResponseBodyOutputReference",
 		reflect.TypeOf((*Wafv2WebAclCustomResponseBodyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,28 +159,28 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclCustomResponseBodyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultAction",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultAction",
 		reflect.TypeOf((*Wafv2WebAclDefaultAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllow",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllow",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionAllow)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandling",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandling",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionAllowCustomRequestHandling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -194,12 +197,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -230,12 +233,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,12 +268,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionAllowOutputReference",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionAllowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -301,20 +304,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclDefaultActionAllowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlock",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlock",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionBlock)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponse",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponse",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionBlockCustomResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseOutputReference",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionBlockCustomResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -350,16 +353,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclDefaultActionBlockCustomResponseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionBlockCustomResponseResponseHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -376,12 +379,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderOutputReference",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -412,12 +415,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclDefaultActionBlockCustomResponseResponseHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionBlockOutputReference",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionBlockOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -448,12 +451,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclDefaultActionBlockOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclDefaultActionOutputReference",
 		reflect.TypeOf((*Wafv2WebAclDefaultActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
@@ -488,32 +491,32 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclDefaultActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRule",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRule",
 		reflect.TypeOf((*Wafv2WebAclRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleAction",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleAction",
 		reflect.TypeOf((*Wafv2WebAclRuleAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllow",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllow",
 		reflect.TypeOf((*Wafv2WebAclRuleActionAllow)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandling",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandling",
 		reflect.TypeOf((*Wafv2WebAclRuleActionAllowCustomRequestHandling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader",
 		reflect.TypeOf((*Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderList",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderList",
 		reflect.TypeOf((*Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -530,12 +533,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -566,12 +569,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionAllowCustomRequestHandlingInsertHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowCustomRequestHandlingOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionAllowCustomRequestHandlingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -601,12 +604,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionAllowCustomRequestHandlingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionAllowOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionAllowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -637,20 +640,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionAllowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlock",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlock",
 		reflect.TypeOf((*Wafv2WebAclRuleActionBlock)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponse",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponse",
 		reflect.TypeOf((*Wafv2WebAclRuleActionBlockCustomResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionBlockCustomResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -686,16 +689,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionBlockCustomResponseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeader",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeader",
 		reflect.TypeOf((*Wafv2WebAclRuleActionBlockCustomResponseResponseHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderList",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderList",
 		reflect.TypeOf((*Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -712,12 +715,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -748,12 +751,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionBlockCustomResponseResponseHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionBlockOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionBlockOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -784,24 +787,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionBlockOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptcha",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptcha",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCaptcha)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandling",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandling",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCaptchaCustomRequestHandling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -818,12 +821,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -854,12 +857,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionCaptchaCustomRequestHandlingInsertHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -889,12 +892,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionCaptchaCustomRequestHandlingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCaptchaOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCaptchaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -925,24 +928,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionCaptchaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallenge",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallenge",
 		reflect.TypeOf((*Wafv2WebAclRuleActionChallenge)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandling",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandling",
 		reflect.TypeOf((*Wafv2WebAclRuleActionChallengeCustomRequestHandling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader",
 		reflect.TypeOf((*Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderList",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderList",
 		reflect.TypeOf((*Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -959,12 +962,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -995,12 +998,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionChallengeCustomRequestHandlingInsertHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeCustomRequestHandlingOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionChallengeCustomRequestHandlingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1030,12 +1033,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionChallengeCustomRequestHandlingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionChallengeOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionChallengeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1066,24 +1069,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionChallengeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCount",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCount",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCount)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandling",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandling",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCountCustomRequestHandling)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1100,12 +1103,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1136,12 +1139,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingInsertHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountCustomRequestHandlingOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCountCustomRequestHandlingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1171,12 +1174,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionCountCustomRequestHandlingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionCountOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionCountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1207,12 +1210,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionCountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleActionOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
@@ -1259,12 +1262,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleList",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleList",
 		reflect.TypeOf((*Wafv2WebAclRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1281,12 +1284,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -1335,20 +1338,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideAction",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideAction",
 		reflect.TypeOf((*Wafv2WebAclRuleOverrideAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCount",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCount",
 		reflect.TypeOf((*Wafv2WebAclRuleOverrideActionCount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCountOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCountOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleOverrideActionCountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1375,16 +1378,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNone",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNone",
 		reflect.TypeOf((*Wafv2WebAclRuleOverrideActionNone)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNoneOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionNoneOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleOverrideActionNoneOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1411,12 +1414,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleOverrideActionNoneOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleOverrideActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1451,16 +1454,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleOverrideActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleRuleLabel",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleRuleLabel",
 		reflect.TypeOf((*Wafv2WebAclRuleRuleLabel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleRuleLabelList",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleRuleLabelList",
 		reflect.TypeOf((*Wafv2WebAclRuleRuleLabelList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1477,12 +1480,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleRuleLabelList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleRuleLabelOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleRuleLabelOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleRuleLabelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1511,16 +1514,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfig",
 		reflect.TypeOf((*Wafv2WebAclRuleVisibilityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfigOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleVisibilityConfigOutputReference",
 		reflect.TypeOf((*Wafv2WebAclRuleVisibilityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchMetricsEnabled", GoGetter: "CloudwatchMetricsEnabled"},
@@ -1553,16 +1556,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclRuleVisibilityConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfig",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfig",
 		reflect.TypeOf((*Wafv2WebAclVisibilityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfigOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclVisibilityConfigOutputReference",
 		reflect.TypeOf((*Wafv2WebAclVisibilityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchMetricsEnabled", GoGetter: "CloudwatchMetricsEnabled"},
@@ -1595,7 +1598,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Wafv2WebAclVisibilityConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

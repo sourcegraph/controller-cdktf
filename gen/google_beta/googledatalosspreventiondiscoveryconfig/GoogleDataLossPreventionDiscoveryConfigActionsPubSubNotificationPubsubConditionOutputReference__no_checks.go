@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataLossPreventionDiscoveryConfigActionsPubSubNotificationPubsubConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

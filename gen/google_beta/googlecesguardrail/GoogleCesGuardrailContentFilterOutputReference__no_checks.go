@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesGuardrailContentFilterOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesGuardrailContentFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesGuardrailContentFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesGuardrailContentFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesGuardrailContentFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleCesGuardrailContentFilterOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesGuardrailContentFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesGuardrailContentFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesGuardrailContentFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesGuardrailContentFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

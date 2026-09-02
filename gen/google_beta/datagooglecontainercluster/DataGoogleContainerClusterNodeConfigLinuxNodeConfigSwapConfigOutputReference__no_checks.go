@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfig
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfig
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

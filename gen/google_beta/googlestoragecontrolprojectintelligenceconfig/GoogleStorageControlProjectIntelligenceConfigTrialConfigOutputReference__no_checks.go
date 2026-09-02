@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigTrialConfigOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigTrialConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigTrialConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigTrialConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigTrialConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigTrialConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigTrialConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageControlProjectIntelligenceConfigTrialConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleStorageControlProjectIntelligenceConfigTrialConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleStorageControlProjectIntelligenceConfigTrialConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

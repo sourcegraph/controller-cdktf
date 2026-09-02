@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesAppTimeZoneSettingsOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppTimeZoneSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesAppTimeZoneSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppTimeZoneSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppTimeZoneSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleCesAppTimeZoneSettingsOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppTimeZoneSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppTimeZoneSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleCesAppTimeZoneSettingsOutputReference) validateSetTimeZ
 	return nil
 }
 
-func validateNewGoogleCesAppTimeZoneSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesAppTimeZoneSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

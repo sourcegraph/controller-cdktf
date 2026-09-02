@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleCloudbuildTriggerDeveloperConnectEventConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

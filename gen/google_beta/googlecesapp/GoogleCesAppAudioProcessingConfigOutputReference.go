@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecesapp/internal"
 )
 
 type GoogleCesAppAudioProcessingConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AmbientSoundConfig() GoogleCesAppAudioProcessingConfigAmbientSoundConfigOutputReference
 	AmbientSoundConfigInput() *GoogleCesAppAudioProcessingConfigAmbientSoundConfig
 	BargeInConfig() GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference
@@ -43,15 +43,15 @@ type GoogleCesAppAudioProcessingConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,9 +67,9 @@ type GoogleCesAppAudioProcessingConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAmbientSoundConfig(value *GoogleCesAppAudioProcessingConfigAmbientSoundConfig)
 	PutBargeInConfig(value *GoogleCesAppAudioProcessingConfigBargeInConfig)
 	PutSynthesizeSpeechConfigs(value interface{})
@@ -79,7 +79,7 @@ type GoogleCesAppAudioProcessingConfigOutputReference interface {
 	ResetSynthesizeSpeechConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleCesAppAudioProcessingConfigOutputReference interface {
 
 // The jsii proxy struct for GoogleCesAppAudioProcessingConfigOutputReference
 type jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) AmbientSoundConfig() GoogleCesAppAudioProcessingConfigAmbientSoundConfigOutputReference {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) TerraformRe
 }
 
 
-func NewGoogleCesAppAudioProcessingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCesAppAudioProcessingConfigOutputReference {
+func NewGoogleCesAppAudioProcessingConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleCesAppAudioProcessingConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCesAppAudioProcessingConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleCesAppAudioProcessingConfigOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleCesAppAudioProcessingConfigOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewGoogleCesAppAudioProcessingConfigOutputReference_Override(g GoogleCesAppAudioProcessingConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleCesAppAudioProcessingConfigOutputReference_Override(g GoogleCesAppAudioProcessingConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -325,7 +325,7 @@ func (j *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -365,11 +365,11 @@ func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -493,8 +493,8 @@ func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) GetStringMa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -506,16 +506,16 @@ func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) Interpolati
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) ResetSynthe
 	)
 }
 
-func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

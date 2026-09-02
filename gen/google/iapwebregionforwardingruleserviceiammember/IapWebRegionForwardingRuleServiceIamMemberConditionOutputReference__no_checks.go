@@ -40,11 +40,11 @@ func (i *jsiiProxy_IapWebRegionForwardingRuleServiceIamMemberConditionOutputRefe
 	return nil
 }
 
-func (i *jsiiProxy_IapWebRegionForwardingRuleServiceIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IapWebRegionForwardingRuleServiceIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IapWebRegionForwardingRuleServiceIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IapWebRegionForwardingRuleServiceIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamMemberConditionOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_IapWebRegionForwardingRuleServiceIamMemberConditionOutputRefe
 	return nil
 }
 
-func validateNewIapWebRegionForwardingRuleServiceIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIapWebRegionForwardingRuleServiceIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

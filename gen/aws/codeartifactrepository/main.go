@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepository",
+		"@cdktn/provider-aws.codeartifactRepository.CodeartifactRepository",
 		reflect.TypeOf((*CodeartifactRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -56,6 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putExternalConnections", GoMethod: "PutExternalConnections"},
 			_jsii_.MemberMethod{JsiiMethod: "putUpstream", GoMethod: "PutUpstream"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "repository", GoGetter: "Repository"},
 			_jsii_.MemberProperty{JsiiProperty: "repositoryInput", GoGetter: "RepositoryInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -81,23 +83,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "upstream", GoGetter: "Upstream"},
 			_jsii_.MemberProperty{JsiiProperty: "upstreamInput", GoGetter: "UpstreamInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CodeartifactRepository{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryConfig",
+		"@cdktn/provider-aws.codeartifactRepository.CodeartifactRepositoryConfig",
 		reflect.TypeOf((*CodeartifactRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnections",
+		"@cdktn/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnections",
 		reflect.TypeOf((*CodeartifactRepositoryExternalConnections)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnectionsOutputReference",
+		"@cdktn/provider-aws.codeartifactRepository.CodeartifactRepositoryExternalConnectionsOutputReference",
 		reflect.TypeOf((*CodeartifactRepositoryExternalConnectionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -128,16 +131,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CodeartifactRepositoryExternalConnectionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstream",
+		"@cdktn/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstream",
 		reflect.TypeOf((*CodeartifactRepositoryUpstream)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamList",
+		"@cdktn/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamList",
 		reflect.TypeOf((*CodeartifactRepositoryUpstreamList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -154,12 +157,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CodeartifactRepositoryUpstreamList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamOutputReference",
+		"@cdktn/provider-aws.codeartifactRepository.CodeartifactRepositoryUpstreamOutputReference",
 		reflect.TypeOf((*CodeartifactRepositoryUpstreamOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,7 +191,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CodeartifactRepositoryUpstreamOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

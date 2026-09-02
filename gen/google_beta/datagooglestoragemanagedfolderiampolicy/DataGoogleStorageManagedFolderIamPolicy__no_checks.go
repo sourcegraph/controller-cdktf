@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleStorageManagedFolderIamPolicy) validateOverrideLogi
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleStorageManagedFolderIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleStorageManagedFolderIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleStorageManagedFolderIamPolicy) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageManagedFolderIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleStorageManagedFolderIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

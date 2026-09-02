@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroup",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroup",
 		reflect.TypeOf((*AccessGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "includeInput", GoGetter: "IncludeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putInclude", GoMethod: "PutInclude"},
 			_jsii_.MemberMethod{JsiiMethod: "putRequire", GoMethod: "PutRequire"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "require", GoGetter: "Require"},
 			_jsii_.MemberProperty{JsiiProperty: "requireInput", GoGetter: "RequireInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
@@ -72,29 +74,30 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroup{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupConfig",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupConfig",
 		reflect.TypeOf((*AccessGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExclude",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExclude",
 		reflect.TypeOf((*AccessGroupExclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzure",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeAzure",
 		reflect.TypeOf((*AccessGroupExcludeAzure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeAzureList",
 		reflect.TypeOf((*AccessGroupExcludeAzureList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -111,12 +114,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeAzureList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeAzureOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeAzureOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeAzureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -149,16 +152,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeAzureOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluation",
 		reflect.TypeOf((*AccessGroupExcludeExternalEvaluation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluationOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeExternalEvaluationOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeExternalEvaluationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -191,16 +194,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeExternalEvaluationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithub",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeGithub",
 		reflect.TypeOf((*AccessGroupExcludeGithub)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithubList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeGithubList",
 		reflect.TypeOf((*AccessGroupExcludeGithubList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -217,12 +220,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeGithubList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGithubOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeGithubOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeGithubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -258,16 +261,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeGithubOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeGsuite",
 		reflect.TypeOf((*AccessGroupExcludeGsuite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteList",
 		reflect.TypeOf((*AccessGroupExcludeGsuiteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -284,12 +287,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeGsuiteList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeGsuiteOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeGsuiteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -322,12 +325,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeGsuiteOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeList",
 		reflect.TypeOf((*AccessGroupExcludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -344,16 +347,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOkta",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeOkta",
 		reflect.TypeOf((*AccessGroupExcludeOkta)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOktaList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeOktaList",
 		reflect.TypeOf((*AccessGroupExcludeOktaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -370,12 +373,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeOktaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOktaOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeOktaOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeOktaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -408,12 +411,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeOktaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
@@ -506,16 +509,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSaml",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeSaml",
 		reflect.TypeOf((*AccessGroupExcludeSaml)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSamlList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeSamlList",
 		reflect.TypeOf((*AccessGroupExcludeSamlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -532,12 +535,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeSamlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeSamlOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeSamlOutputReference",
 		reflect.TypeOf((*AccessGroupExcludeSamlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
@@ -573,20 +576,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupExcludeSamlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupInclude",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupInclude",
 		reflect.TypeOf((*AccessGroupInclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzure",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeAzure",
 		reflect.TypeOf((*AccessGroupIncludeAzure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzureList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeAzureList",
 		reflect.TypeOf((*AccessGroupIncludeAzureList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -603,12 +606,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeAzureList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeAzureOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeAzureOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeAzureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -641,16 +644,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeAzureOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluation",
 		reflect.TypeOf((*AccessGroupIncludeExternalEvaluation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluationOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeExternalEvaluationOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeExternalEvaluationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -683,16 +686,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeExternalEvaluationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithub",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeGithub",
 		reflect.TypeOf((*AccessGroupIncludeGithub)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithubList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeGithubList",
 		reflect.TypeOf((*AccessGroupIncludeGithubList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -709,12 +712,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeGithubList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGithubOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeGithubOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeGithubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -750,16 +753,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeGithubOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeGsuite",
 		reflect.TypeOf((*AccessGroupIncludeGsuite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuiteList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeGsuiteList",
 		reflect.TypeOf((*AccessGroupIncludeGsuiteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -776,12 +779,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeGsuiteList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeGsuiteOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeGsuiteOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeGsuiteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -814,12 +817,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeGsuiteOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeList",
 		reflect.TypeOf((*AccessGroupIncludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -836,16 +839,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOkta",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeOkta",
 		reflect.TypeOf((*AccessGroupIncludeOkta)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOktaList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeOktaList",
 		reflect.TypeOf((*AccessGroupIncludeOktaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -862,12 +865,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeOktaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOktaOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeOktaOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeOktaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -900,12 +903,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeOktaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
@@ -998,16 +1001,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSaml",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeSaml",
 		reflect.TypeOf((*AccessGroupIncludeSaml)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSamlList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeSamlList",
 		reflect.TypeOf((*AccessGroupIncludeSamlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1024,12 +1027,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeSamlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupIncludeSamlOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupIncludeSamlOutputReference",
 		reflect.TypeOf((*AccessGroupIncludeSamlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
@@ -1065,20 +1068,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupIncludeSamlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequire",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequire",
 		reflect.TypeOf((*AccessGroupRequire)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzure",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireAzure",
 		reflect.TypeOf((*AccessGroupRequireAzure)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzureList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireAzureList",
 		reflect.TypeOf((*AccessGroupRequireAzureList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1095,12 +1098,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireAzureList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireAzureOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireAzureOutputReference",
 		reflect.TypeOf((*AccessGroupRequireAzureOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1133,16 +1136,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireAzureOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluation",
 		reflect.TypeOf((*AccessGroupRequireExternalEvaluation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluationOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireExternalEvaluationOutputReference",
 		reflect.TypeOf((*AccessGroupRequireExternalEvaluationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1175,16 +1178,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireExternalEvaluationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithub",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireGithub",
 		reflect.TypeOf((*AccessGroupRequireGithub)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireGithubList",
 		reflect.TypeOf((*AccessGroupRequireGithubList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1201,12 +1204,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireGithubList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGithubOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireGithubOutputReference",
 		reflect.TypeOf((*AccessGroupRequireGithubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1242,16 +1245,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireGithubOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuite",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireGsuite",
 		reflect.TypeOf((*AccessGroupRequireGsuite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteList",
 		reflect.TypeOf((*AccessGroupRequireGsuiteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1268,12 +1271,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireGsuiteList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireGsuiteOutputReference",
 		reflect.TypeOf((*AccessGroupRequireGsuiteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1306,12 +1309,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireGsuiteOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireList",
 		reflect.TypeOf((*AccessGroupRequireList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1328,16 +1331,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOkta",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireOkta",
 		reflect.TypeOf((*AccessGroupRequireOkta)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireOktaList",
 		reflect.TypeOf((*AccessGroupRequireOktaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1354,12 +1357,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireOktaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOktaOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireOktaOutputReference",
 		reflect.TypeOf((*AccessGroupRequireOktaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1392,12 +1395,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireOktaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireOutputReference",
 		reflect.TypeOf((*AccessGroupRequireOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "anyValidServiceToken", GoGetter: "AnyValidServiceToken"},
@@ -1490,16 +1493,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSaml",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireSaml",
 		reflect.TypeOf((*AccessGroupRequireSaml)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSamlList",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireSamlList",
 		reflect.TypeOf((*AccessGroupRequireSamlList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1516,12 +1519,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireSamlList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupRequireSamlOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupRequireSamlOutputReference",
 		reflect.TypeOf((*AccessGroupRequireSamlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributeName", GoGetter: "AttributeName"},
@@ -1557,7 +1560,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessGroupRequireSamlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

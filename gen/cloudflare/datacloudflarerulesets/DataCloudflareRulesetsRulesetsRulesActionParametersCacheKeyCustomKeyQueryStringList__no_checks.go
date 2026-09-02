@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCu
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCu
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCu
 	return nil
 }
 
-func validateNewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataCloudflareRulesetsRulesetsRulesActionParametersCacheKeyCustomKeyQueryStringListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

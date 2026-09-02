@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleVertexAiReasoningEngineIamMember) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiReasoningEngineIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleVertexAiReasoningEngineIamMember) validateOverrideLogic
 }
 
 func (g *jsiiProxy_GoogleVertexAiReasoningEngineIamMember) validatePutConditionParameters(value *GoogleVertexAiReasoningEngineIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleVertexAiReasoningEngineIamMember) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiReasoningEngineIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleVertexAiReasoningEngineIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

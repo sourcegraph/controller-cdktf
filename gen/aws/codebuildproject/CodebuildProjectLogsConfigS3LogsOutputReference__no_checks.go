@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildProjectLogsConfigS3LogsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCodebuildProjectLogsConfigS3LogsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodebuildProjectLogsConfigS3LogsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/okta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/okta/policyruleidpdiscovery/internal"
 )
 
 type PolicyRuleIdpDiscoveryPlatformIncludeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type PolicyRuleIdpDiscoveryPlatformIncludeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -51,7 +51,7 @@ type PolicyRuleIdpDiscoveryPlatformIncludeOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type PolicyRuleIdpDiscoveryPlatformIncludeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetOsExpression()
 	ResetOsType()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type PolicyRuleIdpDiscoveryPlatformIncludeOutputReference interface {
 
 // The jsii proxy struct for PolicyRuleIdpDiscoveryPlatformIncludeOutputReference
 type jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) TypeInp
 }
 
 
-func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PolicyRuleIdpDiscoveryPlatformIncludeOutputReference {
+func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PolicyRuleIdpDiscoveryPlatformIncludeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPolicyRuleIdpDiscoveryPlatformIncludeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -228,7 +228,7 @@ func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference(terraformResource c
 	j := jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference(terraformResource c
 	return &j
 }
 
-func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference_Override(p PolicyRuleIdpDiscoveryPlatformIncludeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewPolicyRuleIdpDiscoveryPlatformIncludeOutputReference_Override(p PolicyRuleIdpDiscoveryPlatformIncludeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
+		"@cdktn/provider-okta.policyRuleIdpDiscovery.PolicyRuleIdpDiscoveryPlatformIncludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetAnyM
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -491,8 +491,8 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) GetStri
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -504,16 +504,16 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Interpo
 	return returns
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) ResetTy
 	)
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) Resolve
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

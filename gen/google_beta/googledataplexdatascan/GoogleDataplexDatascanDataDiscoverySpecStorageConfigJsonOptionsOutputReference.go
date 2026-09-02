@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplexdatascan/internal"
 )
 
 type GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TypeInferenceDisabled() interface{}
 	SetTypeInferenceDisabled(val interface{})
 	TypeInferenceDisabledInput() interface{}
@@ -48,7 +48,7 @@ type GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputRefere
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEncoding()
 	ResetTypeInferenceDisabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputRefere
 
 // The jsii proxy struct for GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference
 type jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptio
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptio
 }
 
 
-func NewGoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference {
+func NewGoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputRef
 	j := jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference",
+		"@cdktn/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputRef
 	return &j
 }
 
-func NewGoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference_Override(g GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference_Override(g GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference",
+		"@cdktn/provider-google-beta.googleDataplexDatascan.GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptio
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptio
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,8 +456,8 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptio
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -469,16 +469,16 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptio
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptio
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataDiscoverySpecStorageConfigJsonOptio
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

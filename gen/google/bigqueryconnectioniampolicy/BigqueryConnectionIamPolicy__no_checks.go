@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigqueryConnectionIamPolicy) validateInterpolationForAttribut
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryConnectionIamPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryConnectionIamPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (b *jsiiProxy_BigqueryConnectionIamPolicy) validateMoveToIdParameters(id *s
 }
 
 func (b *jsiiProxy_BigqueryConnectionIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryConnectionIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_BigqueryConnectionIamPolicy) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnectionIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BigqueryConnectionIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

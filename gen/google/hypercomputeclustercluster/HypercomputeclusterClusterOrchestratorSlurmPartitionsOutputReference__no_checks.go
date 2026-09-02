@@ -40,11 +40,11 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputRe
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewHypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewHypercomputeclusterClusterOrchestratorSlurmPartitionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

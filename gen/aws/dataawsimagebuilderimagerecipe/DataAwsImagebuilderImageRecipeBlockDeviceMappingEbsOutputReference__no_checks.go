@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsImagebuilderImageRecipeBlockDeviceMappingEbsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

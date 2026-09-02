@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/developerconnectconnection/internal"
 )
 
 type DeveloperConnectConnectionHttpConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BasicAuthentication() DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference
 	BasicAuthenticationInput() *DeveloperConnectConnectionHttpConfigBasicAuthentication
 	BearerTokenAuthentication() DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference
@@ -46,15 +46,15 @@ type DeveloperConnectConnectionHttpConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,9 +70,9 @@ type DeveloperConnectConnectionHttpConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBasicAuthentication(value *DeveloperConnectConnectionHttpConfigBasicAuthentication)
 	PutBearerTokenAuthentication(value *DeveloperConnectConnectionHttpConfigBearerTokenAuthentication)
 	PutServiceDirectoryConfig(value *DeveloperConnectConnectionHttpConfigServiceDirectoryConfig)
@@ -82,7 +82,7 @@ type DeveloperConnectConnectionHttpConfigOutputReference interface {
 	ResetSslCaCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type DeveloperConnectConnectionHttpConfigOutputReference interface {
 
 // The jsii proxy struct for DeveloperConnectConnectionHttpConfigOutputReference
 type jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) BasicAuthentication() DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference {
@@ -255,8 +255,8 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) Terrafor
 }
 
 
-func NewDeveloperConnectConnectionHttpConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionHttpConfigOutputReference {
+func NewDeveloperConnectConnectionHttpConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionHttpConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeveloperConnectConnectionHttpConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -275,7 +275,7 @@ func NewDeveloperConnectConnectionHttpConfigOutputReference(terraformResource cd
 	j := jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewDeveloperConnectConnectionHttpConfigOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDeveloperConnectConnectionHttpConfigOutputReference_Override(d DeveloperConnectConnectionHttpConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDeveloperConnectConnectionHttpConfigOutputReference_Override(d DeveloperConnectConnectionHttpConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -399,11 +399,11 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -527,8 +527,8 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -540,16 +540,16 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -621,8 +621,8 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) ResetSsl
 	)
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -630,7 +630,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) Resolve(
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

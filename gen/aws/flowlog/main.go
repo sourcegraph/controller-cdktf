@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.flowLog.FlowLog",
+		"@cdktn/provider-aws.flowLog.FlowLog",
 		reflect.TypeOf((*FlowLog)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "logFormatInput", GoGetter: "LogFormatInput"},
 			_jsii_.MemberProperty{JsiiProperty: "logGroupName", GoGetter: "LogGroupName"},
 			_jsii_.MemberProperty{JsiiProperty: "logGroupNameInput", GoGetter: "LogGroupNameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxAggregationInterval", GoGetter: "MaxAggregationInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "maxAggregationIntervalInput", GoGetter: "MaxAggregationIntervalInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -62,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putDestinationOptions", GoMethod: "PutDestinationOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDestinationOptions", GoMethod: "ResetDestinationOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEniId", GoMethod: "ResetEniId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIamRoleArn", GoMethod: "ResetIamRoleArn"},
@@ -102,23 +104,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transitGatewayIdInput", GoGetter: "TransitGatewayIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_FlowLog{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.flowLog.FlowLogConfig",
+		"@cdktn/provider-aws.flowLog.FlowLogConfig",
 		reflect.TypeOf((*FlowLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.flowLog.FlowLogDestinationOptions",
+		"@cdktn/provider-aws.flowLog.FlowLogDestinationOptions",
 		reflect.TypeOf((*FlowLogDestinationOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference",
+		"@cdktn/provider-aws.flowLog.FlowLogDestinationOptionsOutputReference",
 		reflect.TypeOf((*FlowLogDestinationOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -154,7 +157,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FlowLogDestinationOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

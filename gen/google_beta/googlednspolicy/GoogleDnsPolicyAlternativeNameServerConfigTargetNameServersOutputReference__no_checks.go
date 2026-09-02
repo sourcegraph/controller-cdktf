@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDnsPolicyAlternativeNameServerConfigTargetNameServersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/persistentvolume/internal"
 )
 
 type PersistentVolumeSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccessModes() *[]*string
 	SetAccessModes(val *[]*string)
 	AccessModesInput() *[]*string
@@ -55,9 +55,9 @@ type PersistentVolumeSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VolumeMode() *string
 	SetVolumeMode(val *string)
 	VolumeModeInput() *string
@@ -66,7 +66,7 @@ type PersistentVolumeSpecOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,9 +82,9 @@ type PersistentVolumeSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutClaimRef(value *PersistentVolumeSpecClaimRef)
 	PutNodeAffinity(value *PersistentVolumeSpecNodeAffinity)
 	PutPersistentVolumeSource(value *PersistentVolumeSpecPersistentVolumeSource)
@@ -96,7 +96,7 @@ type PersistentVolumeSpecOutputReference interface {
 	ResetVolumeMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,7 +106,7 @@ type PersistentVolumeSpecOutputReference interface {
 
 // The jsii proxy struct for PersistentVolumeSpecOutputReference
 type jsiiProxy_PersistentVolumeSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PersistentVolumeSpecOutputReference) AccessModes() *[]*string {
@@ -329,8 +329,8 @@ func (j *jsiiProxy_PersistentVolumeSpecOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PersistentVolumeSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -360,7 +360,7 @@ func (j *jsiiProxy_PersistentVolumeSpecOutputReference) VolumeModeInput() *strin
 }
 
 
-func NewPersistentVolumeSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PersistentVolumeSpecOutputReference {
+func NewPersistentVolumeSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PersistentVolumeSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPersistentVolumeSpecOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -369,7 +369,7 @@ func NewPersistentVolumeSpecOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_PersistentVolumeSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecOutputReference",
+		"@cdktn/provider-kubernetes.persistentVolume.PersistentVolumeSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -377,11 +377,11 @@ func NewPersistentVolumeSpecOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewPersistentVolumeSpecOutputReference_Override(p PersistentVolumeSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewPersistentVolumeSpecOutputReference_Override(p PersistentVolumeSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecOutputReference",
+		"@cdktn/provider-kubernetes.persistentVolume.PersistentVolumeSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -486,7 +486,7 @@ func (j *jsiiProxy_PersistentVolumeSpecOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PersistentVolumeSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -537,11 +537,11 @@ func (p *jsiiProxy_PersistentVolumeSpecOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PersistentVolumeSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -665,8 +665,8 @@ func (p *jsiiProxy_PersistentVolumeSpecOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PersistentVolumeSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -678,16 +678,16 @@ func (p *jsiiProxy_PersistentVolumeSpecOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PersistentVolumeSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -775,8 +775,8 @@ func (p *jsiiProxy_PersistentVolumeSpecOutputReference) ResetVolumeMode() {
 	)
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PersistentVolumeSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -784,7 +784,7 @@ func (p *jsiiProxy_PersistentVolumeSpecOutputReference) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

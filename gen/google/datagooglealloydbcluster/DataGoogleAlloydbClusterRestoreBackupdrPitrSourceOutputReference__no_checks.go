@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleAlloydbClusterRestoreBackupdrPitrSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

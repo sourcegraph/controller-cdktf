@@ -40,11 +40,11 @@ func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateGe
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_OpsworksStackCustomCookbooksSourceOutputReference) validateSe
 	return nil
 }
 
-func validateNewOpsworksStackCustomCookbooksSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpsworksStackCustomCookbooksSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

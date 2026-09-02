@@ -5,7 +5,7 @@ package googledialogflowintent
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (g *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateGetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateSetWrap
 	return nil
 }
 
-func validateNewGoogleDialogflowIntentFollowupIntentInfoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowIntentFollowupIntentInfoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

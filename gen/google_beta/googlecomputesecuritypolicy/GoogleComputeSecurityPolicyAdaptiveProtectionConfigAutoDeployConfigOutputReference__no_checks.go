@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeploy
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeploy
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeSecurityPolicyAdaptiveProtectionConfigAutoDeployConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

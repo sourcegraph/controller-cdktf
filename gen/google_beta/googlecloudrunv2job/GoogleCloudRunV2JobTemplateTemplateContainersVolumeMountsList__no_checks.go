@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsList
 	return nil
 }
 
-func validateNewGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCloudRunV2JobTemplateTemplateContainersVolumeMountsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

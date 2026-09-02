@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -106,7 +106,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validatePu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ColabRuntimeTemplateSoftwareConfigEnv:
 		value := value.(*[]*ColabRuntimeTemplateSoftwareConfigEnv)
@@ -125,7 +125,7 @@ func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validatePu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ColabRuntimeTemplateSoftwareConfigEnv; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ColabRuntimeTemplateSoftwareConfigEnv; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -143,9 +143,9 @@ func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validatePu
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -232,7 +232,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -240,7 +240,7 @@ func (j *jsiiProxy_ColabRuntimeTemplateSoftwareConfigOutputReference) validateSe
 	return nil
 }
 
-func validateNewColabRuntimeTemplateSoftwareConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewColabRuntimeTemplateSoftwareConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

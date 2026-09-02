@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

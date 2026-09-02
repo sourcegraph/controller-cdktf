@@ -40,11 +40,11 @@ func (a *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AthenaDatabaseEncryptionConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAthenaDatabaseEncryptionConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAthenaDatabaseEncryptionConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

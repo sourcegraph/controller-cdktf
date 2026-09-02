@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ApigeeOrganizationPropertiesPropertyOutputReference) validate
 	return nil
 }
 
-func validateNewApigeeOrganizationPropertiesPropertyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewApigeeOrganizationPropertiesPropertyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

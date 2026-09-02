@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesAgentBeforeModelCallbacksOutputReference) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAgentBeforeModelCallbacksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesAgentBeforeModelCallbacksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAgentBeforeModelCallbacksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAgentBeforeModelCallbacksOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleCesAgentBeforeModelCallbacksOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAgentBeforeModelCallbacksOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAgentBeforeModelCallbacksOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesAgentBeforeModelCallbacksOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCesAgentBeforeModelCallbacksOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validatePutSpecParame
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStatefulSetSpecTemplateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStatefulSetSpecTemplateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

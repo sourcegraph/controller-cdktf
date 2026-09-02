@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOut
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_DialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOut
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowCxPageFormParametersAdvancedSettingsDtmfSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLock) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLock) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLock) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLock) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLock) validatePutTimeoutsParameters(value *GoogleFirebaseAiLogicPromptTemplateLockTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLock) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLock) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLock) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFirebaseAiLogicPromptTemplateLock) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

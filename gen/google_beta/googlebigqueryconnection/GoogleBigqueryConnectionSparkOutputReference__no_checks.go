@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validateGetStri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validatePutSpar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionSparkOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBigqueryConnectionSparkOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryConnectionSparkOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

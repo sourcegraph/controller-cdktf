@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalPrometheusList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalPrometheusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalPrometheusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPrometheusList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalPrometheusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalPrometheusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalPrometheusList) validateSetWraps
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsTotalPrometheusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveCountMetricsTotalPrometheusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEvidentlyLaunchScheduledSplitsConfigStepsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEvidentlyLaunchScheduledSplitsConfigStepsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

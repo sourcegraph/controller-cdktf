@@ -40,11 +40,11 @@ func (a *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateGe
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -104,11 +104,11 @@ func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAmplifyAppAutoBranchCreationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAmplifyAppAutoBranchCreationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

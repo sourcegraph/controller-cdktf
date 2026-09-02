@@ -40,11 +40,11 @@ func (s *jsiiProxy_StorageBatchOperationsJobBucketListBucketsManifestOutputRefer
 	return nil
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_StorageBatchOperationsJobBucketListBucketsManifestOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_StorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageBatchOperationsJobBucketListBucketsManifestOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStorageBatchOperationsJobBucketListBucketsManifestOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStorageBatchOperationsJobBucketListBucketsManifestOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

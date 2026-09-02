@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (e *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (e *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (e *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (e *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -181,7 +181,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validate
 
 func (j *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *Ec2TransitGatewayConnectPeerTimeouts:
 		val := val.(*Ec2TransitGatewayConnectPeerTimeouts)
@@ -196,7 +196,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validate
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *Ec2TransitGatewayConnectPeerTimeouts; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *Ec2TransitGatewayConnectPeerTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -211,7 +211,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_Ec2TransitGatewayConnectPeerTimeoutsOutputReference) validate
 	return nil
 }
 
-func validateNewEc2TransitGatewayConnectPeerTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEc2TransitGatewayConnectPeerTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

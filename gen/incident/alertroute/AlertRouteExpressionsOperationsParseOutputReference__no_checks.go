@@ -40,7 +40,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOperationsParseOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteExpressionsOperationsParseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertRouteExpressionsOperationsParseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOperationsParseOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteExpressionsOperationsParseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertRouteExpressionsOperationsParseOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AlertRouteExpressionsOperationsParseOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOperationsParseOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteExpressionsOperationsParseOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlertRouteExpressionsOperationsParseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlertRouteExpressionsOperationsParseOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryMavenArtifacts) validateOverrideLog
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleArtifactRegistryMavenArtifacts) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleArtifactRegistryMavenArtifacts_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryMavenArtifacts) validateSetIdParame
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryMavenArtifacts) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryMavenArtifacts) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

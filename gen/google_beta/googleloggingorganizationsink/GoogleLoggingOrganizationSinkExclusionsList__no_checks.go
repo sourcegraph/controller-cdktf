@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleLoggingOrganizationSinkExclusionsList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLoggingOrganizationSinkExclusionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleLoggingOrganizationSinkExclusionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSinkExclusionsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingOrganizationSinkExclusionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleLoggingOrganizationSinkExclusionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleLoggingOrganizationSinkExclusionsList) validateSetWraps
 	return nil
 }
 
-func validateNewGoogleLoggingOrganizationSinkExclusionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleLoggingOrganizationSinkExclusionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

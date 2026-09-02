@@ -40,11 +40,11 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

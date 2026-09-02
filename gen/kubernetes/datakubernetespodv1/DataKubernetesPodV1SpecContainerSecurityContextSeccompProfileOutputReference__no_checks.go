@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextSeccompProfile
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextSeccompProfile
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodV1SpecContainerSecurityContextSeccompProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataKubernetesPodV1SpecContainerSecurityContextSeccompProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataKubernetesPodV1SpecContainerSecurityContextSeccompProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerSchedule",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerSchedule",
 		reflect.TypeOf((*SchedulerSchedule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArn", GoGetter: "KmsKeyArn"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArnInput", GoGetter: "KmsKeyArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -61,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFlexibleTimeWindow", GoMethod: "PutFlexibleTimeWindow"},
 			_jsii_.MemberMethod{JsiiMethod: "putTarget", GoMethod: "PutTarget"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEndDate", GoMethod: "ResetEndDate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroupName", GoMethod: "ResetGroupName"},
@@ -91,23 +93,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerSchedule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleConfig",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleConfig",
 		reflect.TypeOf((*SchedulerScheduleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindow",
 		reflect.TypeOf((*SchedulerScheduleFlexibleTimeWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindowOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleFlexibleTimeWindowOutputReference",
 		reflect.TypeOf((*SchedulerScheduleFlexibleTimeWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,20 +142,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleFlexibleTimeWindowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTarget",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTarget",
 		reflect.TypeOf((*SchedulerScheduleTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfig",
 		reflect.TypeOf((*SchedulerScheduleTargetDeadLetterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetDeadLetterConfigOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetDeadLetterConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -182,20 +185,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetDeadLetterConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParameters",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategy",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersCapacityProviderStrategy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -212,12 +215,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "base", GoGetter: "Base"},
@@ -252,16 +255,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetEcsParametersCapacityProviderStrategyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfiguration",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersNetworkConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "assignPublicIp", GoGetter: "AssignPublicIp"},
@@ -296,12 +299,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetEcsParametersNetworkConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityProviderStrategy", GoGetter: "CapacityProviderStrategy"},
@@ -373,16 +376,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetEcsParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraints",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraints",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersPlacementConstraints)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsList",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsList",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersPlacementConstraintsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -399,12 +402,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -436,16 +439,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementConstraintsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategy",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategy",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersPlacementStrategy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyList",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyList",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersPlacementStrategyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -462,12 +465,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -499,16 +502,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParameters",
 		reflect.TypeOf((*SchedulerScheduleTargetEventbridgeParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParametersOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetEventbridgeParametersOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetEventbridgeParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -539,16 +542,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetEventbridgeParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParameters",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParameters",
 		reflect.TypeOf((*SchedulerScheduleTargetKinesisParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParametersOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetKinesisParametersOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetKinesisParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -577,12 +580,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetKinesisParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -644,16 +647,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicy",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicy",
 		reflect.TypeOf((*SchedulerScheduleTargetRetryPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicyOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetRetryPolicyOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetRetryPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -686,16 +689,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetRetryPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParameters",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParameters",
 		reflect.TypeOf((*SchedulerScheduleTargetSagemakerPipelineParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetSagemakerPipelineParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -726,16 +729,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter",
 		reflect.TypeOf((*SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList",
 		reflect.TypeOf((*SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -752,12 +755,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -788,16 +791,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetSagemakerPipelineParametersPipelineParameterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSqsParameters",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSqsParameters",
 		reflect.TypeOf((*SchedulerScheduleTargetSqsParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.schedulerSchedule.SchedulerScheduleTargetSqsParametersOutputReference",
+		"@cdktn/provider-aws.schedulerSchedule.SchedulerScheduleTargetSqsParametersOutputReference",
 		reflect.TypeOf((*SchedulerScheduleTargetSqsParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -827,7 +830,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SchedulerScheduleTargetSqsParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateInterpolationFo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validatePutSourceIpRang
 }
 
 func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validatePutTimeoutsParameters(value *GoogleVmwareengineExternalAccessRuleTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetIpProtocolPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAccessRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

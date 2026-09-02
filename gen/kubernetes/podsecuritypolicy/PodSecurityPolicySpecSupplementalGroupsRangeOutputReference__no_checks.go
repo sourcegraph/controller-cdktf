@@ -40,11 +40,11 @@ func (p *jsiiProxy_PodSecurityPolicySpecSupplementalGroupsRangeOutputReference) 
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecSupplementalGroupsRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSecurityPolicySpecSupplementalGroupsRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecSupplementalGroupsRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicySpecSupplementalGroupsRangeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PodSecurityPolicySpecSupplementalGroupsRangeOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSupplementalGroupsRangeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSecurityPolicySpecSupplementalGroupsRangeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPodSecurityPolicySpecSupplementalGroupsRangeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPodSecurityPolicySpecSupplementalGroupsRangeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

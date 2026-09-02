@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleKmsCryptoKey) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleKmsCryptoKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleKmsCryptoKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleKmsCryptoKey) validatePutTimeoutsParameters(value *Goog
 }
 
 func (g *jsiiProxy_GoogleKmsCryptoKey) validatePutVersionTemplateParameters(value *GoogleKmsCryptoKeyVersionTemplate) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleKmsCryptoKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GoogleKmsCryptoKey) validateSetLabelsParameters(val *map[stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleKmsCryptoKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

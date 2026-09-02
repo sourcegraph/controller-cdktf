@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableSchemaForeignTypeInfoList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableSchemaForeignTypeInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableSchemaForeignTypeInfoList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTableSchemaForeignTypeInfoList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryTableSchemaForeignTypeInfoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleBigqueryTableSchemaForeignTypeInfoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTableSchemaForeignTypeInfoList) validateSet
 	return nil
 }
 
-func validateNewDataGoogleBigqueryTableSchemaForeignTypeInfoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleBigqueryTableSchemaForeignTypeInfoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

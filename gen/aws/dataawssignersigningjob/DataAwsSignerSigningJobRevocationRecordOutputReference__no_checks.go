@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsSignerSigningJobRevocationRecordOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSignerSigningJobRevocationRecordOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSignerSigningJobRevocationRecordOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSignerSigningJobRevocationRecordOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSignerSigningJobRevocationRecordOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsSignerSigningJobRevocationRecordOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSignerSigningJobRevocationRecordOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsSignerSigningJobRevocationRecordOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsSignerSigningJobRevocationRecordOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsSignerSigningJobRevocationRecordOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

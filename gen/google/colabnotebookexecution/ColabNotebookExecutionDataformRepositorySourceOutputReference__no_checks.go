@@ -40,11 +40,11 @@ func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewColabNotebookExecutionDataformRepositorySourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewColabNotebookExecutionDataformRepositorySourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

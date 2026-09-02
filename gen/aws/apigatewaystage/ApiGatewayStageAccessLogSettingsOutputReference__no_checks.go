@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApiGatewayStageAccessLogSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApiGatewayStageAccessLogSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsUserInputToolResponsesTool
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsUserInputToolResponsesToolResponsesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsUserInputToolResponsesToolResponsesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsUserInputToolResponsesTool
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsUserInputToolResponsesToolResponsesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsUserInputToolResponsesToolResponsesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsUserInputToolResponsesTool
 	return nil
 }
 
-func validateNewGoogleCesEvaluationGoldenTurnsStepsUserInputToolResponsesToolResponsesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesEvaluationGoldenTurnsStepsUserInputToolResponsesToolResponsesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

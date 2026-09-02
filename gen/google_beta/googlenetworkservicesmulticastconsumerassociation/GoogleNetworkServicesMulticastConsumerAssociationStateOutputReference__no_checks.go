@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkServicesMulticastConsumerAssociationStateOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesMulticastConsumerAssociationStateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesMulticastConsumerAssociationStateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesMulticastConsumerAssociationStateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesMulticastConsumerAssociationStateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleNetworkServicesMulticastConsumerAssociationStateOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesMulticastConsumerAssociationStateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesMulticastConsumerAssociationStateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesMulticastConsumerAssociationStateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkServicesMulticastConsumerAssociationStateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

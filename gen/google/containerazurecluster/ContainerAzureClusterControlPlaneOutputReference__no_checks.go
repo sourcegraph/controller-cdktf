@@ -40,7 +40,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) validatePut
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -108,7 +108,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneOutputReference) validateSet
 	return nil
 }
 
-func validateNewContainerAzureClusterControlPlaneOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerAzureClusterControlPlaneOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

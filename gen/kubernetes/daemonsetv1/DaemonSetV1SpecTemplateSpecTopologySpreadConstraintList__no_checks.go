@@ -12,7 +12,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList) vali
 	return nil
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecTopologySpreadConstraintList) vali
 	return nil
 }
 
-func validateNewDaemonSetV1SpecTemplateSpecTopologySpreadConstraintListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDaemonSetV1SpecTemplateSpecTopologySpreadConstraintListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

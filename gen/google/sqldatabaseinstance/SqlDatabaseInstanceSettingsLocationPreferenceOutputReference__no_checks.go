@@ -40,11 +40,11 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsLocationPreferenceOutputReference)
 	return nil
 }
 
-func validateNewSqlDatabaseInstanceSettingsLocationPreferenceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSqlDatabaseInstanceSettingsLocationPreferenceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

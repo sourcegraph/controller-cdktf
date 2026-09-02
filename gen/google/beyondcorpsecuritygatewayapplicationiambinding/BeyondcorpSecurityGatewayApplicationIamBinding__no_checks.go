@@ -56,6 +56,10 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationIamBinding) validateInter
 	return nil
 }
 
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationIamBinding) validateOverr
 }
 
 func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationIamBinding) validatePutConditionParameters(value *BeyondcorpSecurityGatewayApplicationIamBindingCondition) error {
+	return nil
+}
+
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationIamBinding) validateSetId
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

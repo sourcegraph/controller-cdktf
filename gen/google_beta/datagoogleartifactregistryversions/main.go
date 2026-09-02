@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersions",
+		"@cdktn/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersions",
 		reflect.TypeOf((*DataGoogleArtifactRegistryVersions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "repositoryId", GoGetter: "RepositoryId"},
 			_jsii_.MemberProperty{JsiiProperty: "repositoryIdInput", GoGetter: "RepositoryIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
@@ -63,23 +64,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versions", GoGetter: "Versions"},
 			_jsii_.MemberProperty{JsiiProperty: "view", GoGetter: "View"},
 			_jsii_.MemberProperty{JsiiProperty: "viewInput", GoGetter: "ViewInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleArtifactRegistryVersions{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsConfig",
+		"@cdktn/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsConfig",
 		reflect.TypeOf((*DataGoogleArtifactRegistryVersionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersions",
+		"@cdktn/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersions",
 		reflect.TypeOf((*DataGoogleArtifactRegistryVersionsVersions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersionsList",
+		"@cdktn/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersionsList",
 		reflect.TypeOf((*DataGoogleArtifactRegistryVersionsVersionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -95,12 +97,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersionsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersionsOutputReference",
 		reflect.TypeOf((*DataGoogleArtifactRegistryVersionsVersionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotations", GoGetter: "Annotations"},
@@ -133,16 +135,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersionsRelatedTags",
+		"@cdktn/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersionsRelatedTags",
 		reflect.TypeOf((*DataGoogleArtifactRegistryVersionsVersionsRelatedTags)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersionsRelatedTagsList",
+		"@cdktn/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersionsRelatedTagsList",
 		reflect.TypeOf((*DataGoogleArtifactRegistryVersionsVersionsRelatedTagsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -158,12 +160,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsRelatedTagsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersionsRelatedTagsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleArtifactRegistryVersions.DataGoogleArtifactRegistryVersionsVersionsRelatedTagsOutputReference",
 		reflect.TypeOf((*DataGoogleArtifactRegistryVersionsVersionsRelatedTagsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -192,7 +194,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleArtifactRegistryVersionsVersionsRelatedTagsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsGrafanaWorkspace) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsGrafanaWorkspace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsGrafanaWorkspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsGrafanaWorkspace) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGrafanaWorkspace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsGrafanaWorkspace) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

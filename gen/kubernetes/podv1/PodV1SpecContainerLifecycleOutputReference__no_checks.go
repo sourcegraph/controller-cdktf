@@ -40,7 +40,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecycleOutputReference) validateGetString
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerLifecycleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecContainerLifecycleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (p *jsiiProxy_PodV1SpecContainerLifecycleOutputReference) validatePutPreSto
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerLifecycleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecContainerLifecycleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PodV1SpecContainerLifecycleOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerLifecycleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodV1SpecContainerLifecycleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPodV1SpecContainerLifecycleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPodV1SpecContainerLifecycleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

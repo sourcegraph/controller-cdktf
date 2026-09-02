@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants",
+		"@cdktn/provider-cloudflare.zoneCacheVariants.ZoneCacheVariants",
 		reflect.TypeOf((*ZoneCacheVariants)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jpg2Input", GoGetter: "Jpg2Input"},
 			_jsii_.MemberProperty{JsiiProperty: "jpgInput", GoGetter: "JpgInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAvif", GoMethod: "ResetAvif"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBmp", GoMethod: "ResetBmp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGif", GoMethod: "ResetGif"},
@@ -88,17 +90,18 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "webp", GoGetter: "Webp"},
 			_jsii_.MemberProperty{JsiiProperty: "webpInput", GoGetter: "WebpInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ZoneCacheVariants{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsConfig",
+		"@cdktn/provider-cloudflare.zoneCacheVariants.ZoneCacheVariantsConfig",
 		reflect.TypeOf((*ZoneCacheVariantsConfig)(nil)).Elem(),
 	)
 }

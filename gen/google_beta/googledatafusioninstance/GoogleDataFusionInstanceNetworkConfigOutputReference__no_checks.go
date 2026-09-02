@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataFusionInstanceNetworkConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataFusionInstanceNetworkConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataFusionInstanceNetworkConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

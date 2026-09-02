@@ -12,7 +12,7 @@ func (r *jsiiProxy_RdsClusterParameterGroupParameterList) validateGetParameters(
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsClusterParameterGroupParameterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_RdsClusterParameterGroupParameterList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RdsClusterParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_RdsClusterParameterGroupParameterList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewRdsClusterParameterGroupParameterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRdsClusterParameterGroupParameterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

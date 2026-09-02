@@ -12,7 +12,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceFilesList) validateGetParameters(in
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceFilesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaserulesRulesetSourceFilesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceFilesList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceFilesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirebaserulesRulesetSourceFilesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceFilesList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewFirebaserulesRulesetSourceFilesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFirebaserulesRulesetSourceFilesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

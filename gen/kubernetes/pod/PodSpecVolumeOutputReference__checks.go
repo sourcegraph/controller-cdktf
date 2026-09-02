@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (p *jsiiProxy_PodSpecVolumeOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (p *jsiiProxy_PodSpecVolumeOutputReference) validateGetStringMapAttributePa
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (p *jsiiProxy_PodSpecVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -326,7 +326,7 @@ func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutProjectedParameters(
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PodSpecVolumeProjected:
 		value := value.(*[]*PodSpecVolumeProjected)
@@ -345,7 +345,7 @@ func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutProjectedParameters(
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PodSpecVolumeProjected; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PodSpecVolumeProjected; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -396,9 +396,9 @@ func (p *jsiiProxy_PodSpecVolumeOutputReference) validatePutVsphereVolumeParamet
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PodSpecVolumeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -471,7 +471,7 @@ func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetComplexObjectIsFromS
 
 func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *PodSpecVolume:
 		val := val.(*PodSpecVolume)
@@ -486,7 +486,7 @@ func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetInternalValueParamet
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PodSpecVolume; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *PodSpecVolume; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -509,7 +509,7 @@ func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -517,7 +517,7 @@ func (j *jsiiProxy_PodSpecVolumeOutputReference) validateSetTerraformResourcePar
 	return nil
 }
 
-func validateNewPodSpecVolumeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPodSpecVolumeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

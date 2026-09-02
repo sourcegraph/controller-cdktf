@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/ecscluster/internal"
 )
 
 type EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CloudWatchEncryptionEnabled() interface{}
 	SetCloudWatchEncryptionEnabled(val interface{})
 	CloudWatchEncryptionEnabledInput() interface{}
@@ -49,15 +49,15 @@ type EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputRef
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputRef
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCloudWatchEncryptionEnabled()
 	ResetCloudWatchLogGroupName()
 	ResetS3BucketEncryptionEnabled()
@@ -83,7 +83,7 @@ type EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputRef
 	ResetS3KeyPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputRef
 
 // The jsii proxy struct for EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference
 type jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) CloudWatchEncryptionEnabled() interface{} {
@@ -256,8 +256,8 @@ func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigur
 	return returns
 }
 
-func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigur
 }
 
 
-func NewEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference {
+func NewEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutput
 	j := jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference",
+		"@cdktn/provider-aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutput
 	return &j
 }
 
-func NewEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference_Override(e EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference_Override(e EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference",
+		"@cdktn/provider-aws.ecsCluster.EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -393,7 +393,7 @@ func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigur
 	)
 }
 
-func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigur
 	return returns
 }
 
-func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -561,8 +561,8 @@ func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigur
 	return returns
 }
 
-func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -574,16 +574,16 @@ func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigur
 	return returns
 }
 
-func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigur
 	)
 }
 
-func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationLogConfigur
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

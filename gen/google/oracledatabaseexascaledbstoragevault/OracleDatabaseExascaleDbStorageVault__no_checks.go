@@ -56,6 +56,10 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) validateInterpolationFo
 	return nil
 }
 
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) validatePutPropertiesPa
 }
 
 func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) validatePutTimeoutsParameters(value *OracleDatabaseExascaleDbStorageVaultTimeouts) error {
+	return nil
+}
+
+func (o *jsiiProxy_OracleDatabaseExascaleDbStorageVault) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) validateSetLabelsParame
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OracleDatabaseExascaleDbStorageVault) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecuritymirroringendpoint/internal"
 )
 
 type NetworkSecurityMirroringEndpointTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type NetworkSecurityMirroringEndpointTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type NetworkSecurityMirroringEndpointTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type NetworkSecurityMirroringEndpointTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type NetworkSecurityMirroringEndpointTimeoutsOutputReference interface {
 
 // The jsii proxy struct for NetworkSecurityMirroringEndpointTimeoutsOutputReference
 type jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) Upda
 }
 
 
-func NewNetworkSecurityMirroringEndpointTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkSecurityMirroringEndpointTimeoutsOutputReference {
+func NewNetworkSecurityMirroringEndpointTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NetworkSecurityMirroringEndpointTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkSecurityMirroringEndpointTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewNetworkSecurityMirroringEndpointTimeoutsOutputReference(terraformResourc
 	j := jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkSecurityMirroringEndpoint.NetworkSecurityMirroringEndpointTimeoutsOutputReference",
+		"@cdktn/provider-google.networkSecurityMirroringEndpoint.NetworkSecurityMirroringEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewNetworkSecurityMirroringEndpointTimeoutsOutputReference(terraformResourc
 	return &j
 }
 
-func NewNetworkSecurityMirroringEndpointTimeoutsOutputReference_Override(n NetworkSecurityMirroringEndpointTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNetworkSecurityMirroringEndpointTimeoutsOutputReference_Override(n NetworkSecurityMirroringEndpointTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkSecurityMirroringEndpoint.NetworkSecurityMirroringEndpointTimeoutsOutputReference",
+		"@cdktn/provider-google.networkSecurityMirroringEndpoint.NetworkSecurityMirroringEndpointTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) GetA
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -491,8 +491,8 @@ func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) GetS
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -504,16 +504,16 @@ func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) Inte
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) Rese
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (n *jsiiProxy_NetworkSecurityMirroringEndpointTimeoutsOutputReference) Reso
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (m *jsiiProxy_Macie2ClassificationJobUserPausedDetailsList) validateGetPara
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationJobUserPausedDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2ClassificationJobUserPausedDetailsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_Macie2ClassificationJobUserPausedDetailsList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationJobUserPausedDetailsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Macie2ClassificationJobUserPausedDetailsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_Macie2ClassificationJobUserPausedDetailsList) validateSetWrap
 	return nil
 }
 
-func validateNewMacie2ClassificationJobUserPausedDetailsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMacie2ClassificationJobUserPausedDetailsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowIntent.DialogflowIntent",
+		"@cdktn/provider-google.dialogflowIntent.DialogflowIntent",
 		reflect.TypeOf((*DialogflowIntent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isFallback", GoGetter: "IsFallback"},
 			_jsii_.MemberProperty{JsiiProperty: "isFallbackInput", GoGetter: "IsFallbackInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mlDisabled", GoGetter: "MlDisabled"},
 			_jsii_.MemberProperty{JsiiProperty: "mlDisabledInput", GoGetter: "MlDisabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -67,6 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAction", GoMethod: "ResetAction"},
 			_jsii_.MemberProperty{JsiiProperty: "resetContexts", GoGetter: "ResetContexts"},
 			_jsii_.MemberProperty{JsiiProperty: "resetContextsInput", GoGetter: "ResetContextsInput"},
@@ -97,23 +99,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookState", GoGetter: "WebhookState"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookStateInput", GoGetter: "WebhookStateInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowIntent{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowIntent.DialogflowIntentConfig",
+		"@cdktn/provider-google.dialogflowIntent.DialogflowIntentConfig",
 		reflect.TypeOf((*DialogflowIntentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowIntent.DialogflowIntentFollowupIntentInfo",
+		"@cdktn/provider-google.dialogflowIntent.DialogflowIntentFollowupIntentInfo",
 		reflect.TypeOf((*DialogflowIntentFollowupIntentInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowIntent.DialogflowIntentFollowupIntentInfoList",
+		"@cdktn/provider-google.dialogflowIntent.DialogflowIntentFollowupIntentInfoList",
 		reflect.TypeOf((*DialogflowIntentFollowupIntentInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -129,12 +132,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowIntentFollowupIntentInfoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowIntent.DialogflowIntentFollowupIntentInfoOutputReference",
+		"@cdktn/provider-google.dialogflowIntent.DialogflowIntentFollowupIntentInfoOutputReference",
 		reflect.TypeOf((*DialogflowIntentFollowupIntentInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -163,16 +166,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowIntentFollowupIntentInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowIntent.DialogflowIntentTimeouts",
+		"@cdktn/provider-google.dialogflowIntent.DialogflowIntentTimeouts",
 		reflect.TypeOf((*DialogflowIntentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowIntent.DialogflowIntentTimeoutsOutputReference",
+		"@cdktn/provider-google.dialogflowIntent.DialogflowIntentTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowIntentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -208,7 +211,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowIntentTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystem",
 		reflect.TypeOf((*FsxOntapFileSystem)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyId", GoGetter: "KmsKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyIdInput", GoGetter: "KmsKeyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -67,6 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDiskIopsConfiguration", GoMethod: "PutDiskIopsConfiguration"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomaticBackupRetentionDays", GoMethod: "ResetAutomaticBackupRetentionDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDailyAutomaticBackupStartTime", GoMethod: "ResetDailyAutomaticBackupStartTime"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDiskIopsConfiguration", GoMethod: "ResetDiskIopsConfiguration"},
@@ -113,23 +115,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceStartTime", GoGetter: "WeeklyMaintenanceStartTime"},
 			_jsii_.MemberProperty{JsiiProperty: "weeklyMaintenanceStartTimeInput", GoGetter: "WeeklyMaintenanceStartTimeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_FsxOntapFileSystem{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemConfig",
 		reflect.TypeOf((*FsxOntapFileSystemConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfiguration",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfiguration",
 		reflect.TypeOf((*FsxOntapFileSystemDiskIopsConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfigurationOutputReference",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemDiskIopsConfigurationOutputReference",
 		reflect.TypeOf((*FsxOntapFileSystemDiskIopsConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -162,20 +165,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FsxOntapFileSystemDiskIopsConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpoints",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpoints",
 		reflect.TypeOf((*FsxOntapFileSystemEndpoints)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsIntercluster",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsIntercluster",
 		reflect.TypeOf((*FsxOntapFileSystemEndpointsIntercluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterList",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterList",
 		reflect.TypeOf((*FsxOntapFileSystemEndpointsInterclusterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -191,12 +194,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FsxOntapFileSystemEndpointsInterclusterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterOutputReference",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsInterclusterOutputReference",
 		reflect.TypeOf((*FsxOntapFileSystemEndpointsInterclusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,12 +228,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FsxOntapFileSystemEndpointsInterclusterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsList",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsList",
 		reflect.TypeOf((*FsxOntapFileSystemEndpointsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -246,16 +249,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FsxOntapFileSystemEndpointsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsManagement",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsManagement",
 		reflect.TypeOf((*FsxOntapFileSystemEndpointsManagement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsManagementList",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsManagementList",
 		reflect.TypeOf((*FsxOntapFileSystemEndpointsManagementList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -271,12 +274,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FsxOntapFileSystemEndpointsManagementList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsManagementOutputReference",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsManagementOutputReference",
 		reflect.TypeOf((*FsxOntapFileSystemEndpointsManagementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -305,12 +308,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FsxOntapFileSystemEndpointsManagementOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsOutputReference",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemEndpointsOutputReference",
 		reflect.TypeOf((*FsxOntapFileSystemEndpointsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -339,16 +342,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FsxOntapFileSystemEndpointsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeouts",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeouts",
 		reflect.TypeOf((*FsxOntapFileSystemTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeoutsOutputReference",
+		"@cdktn/provider-aws.fsxOntapFileSystem.FsxOntapFileSystemTimeoutsOutputReference",
 		reflect.TypeOf((*FsxOntapFileSystemTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -384,7 +387,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FsxOntapFileSystemTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (p *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (p *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsL
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (p *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsL
 
 func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions:
 		val := val.(*[]*PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsL
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*PodSpecTopologySpreadConstraintLabelSelectorMatchExpressions; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsL
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_PodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsL
 	return nil
 }
 
-func validateNewPodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSpecTopologySpreadConstraintLabelSelectorMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

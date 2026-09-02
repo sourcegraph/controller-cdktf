@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList) 
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList) 
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudfrontResponseHeadersPolicyCustomHeadersConfigItemsList) 
 	return nil
 }
 
-func validateNewCloudfrontResponseHeadersPolicyCustomHeadersConfigItemsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudfrontResponseHeadersPolicyCustomHeadersConfigItemsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

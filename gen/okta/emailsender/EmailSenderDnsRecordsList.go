@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/okta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/okta/emailsender/internal"
 )
 
 type EmailSenderDnsRecordsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type EmailSenderDnsRecordsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) EmailSenderDnsRecordsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type EmailSenderDnsRecordsList interface {
 
 // The jsii proxy struct for EmailSenderDnsRecordsList
 type jsiiProxy_EmailSenderDnsRecordsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_EmailSenderDnsRecordsList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_EmailSenderDnsRecordsList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_EmailSenderDnsRecordsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EmailSenderDnsRecordsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_EmailSenderDnsRecordsList) WrapsSet() *bool {
 }
 
 
-func NewEmailSenderDnsRecordsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailSenderDnsRecordsList {
+func NewEmailSenderDnsRecordsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) EmailSenderDnsRecordsList {
 	_init_.Initialize()
 
 	if err := validateNewEmailSenderDnsRecordsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewEmailSenderDnsRecordsList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_EmailSenderDnsRecordsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.emailSender.EmailSenderDnsRecordsList",
+		"@cdktn/provider-okta.emailSender.EmailSenderDnsRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewEmailSenderDnsRecordsList(terraformResource cdktf.IInterpolatingParent, 
 	return &j
 }
 
-func NewEmailSenderDnsRecordsList_Override(e EmailSenderDnsRecordsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewEmailSenderDnsRecordsList_Override(e EmailSenderDnsRecordsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.emailSender.EmailSenderDnsRecordsList",
+		"@cdktn/provider-okta.emailSender.EmailSenderDnsRecordsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_EmailSenderDnsRecordsList)SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_EmailSenderDnsRecordsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmailSenderDnsRecordsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_EmailSenderDnsRecordsList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (e *jsiiProxy_EmailSenderDnsRecordsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (e *jsiiProxy_EmailSenderDnsRecordsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := e.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		e,
@@ -205,8 +208,8 @@ func (e *jsiiProxy_EmailSenderDnsRecordsList) Get(index *float64) EmailSenderDns
 	return returns
 }
 
-func (e *jsiiProxy_EmailSenderDnsRecordsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EmailSenderDnsRecordsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (e *jsiiProxy_EmailSenderDnsRecordsList) Resolve(_context cdktf.IResolveCon
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

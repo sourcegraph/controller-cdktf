@@ -12,7 +12,7 @@ func (t *jsiiProxy_TranscoderJobConfigEncryptionsList) validateGetParameters(ind
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigEncryptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigEncryptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_TranscoderJobConfigEncryptionsList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEncryptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TranscoderJobConfigEncryptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_TranscoderJobConfigEncryptionsList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewTranscoderJobConfigEncryptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTranscoderJobConfigEncryptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

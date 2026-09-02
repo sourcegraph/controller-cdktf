@@ -56,6 +56,10 @@ func (m *jsiiProxy_Macie2FindingsFilter) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (m *jsiiProxy_Macie2FindingsFilter) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2FindingsFilter) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (m *jsiiProxy_Macie2FindingsFilter) validateOverrideLogicalIdParameters(new
 }
 
 func (m *jsiiProxy_Macie2FindingsFilter) validatePutFindingCriteriaParameters(value *Macie2FindingsFilterFindingCriteria) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2FindingsFilter) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_Macie2FindingsFilter) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_Macie2FindingsFilter) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Macie2FindingsFilter) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

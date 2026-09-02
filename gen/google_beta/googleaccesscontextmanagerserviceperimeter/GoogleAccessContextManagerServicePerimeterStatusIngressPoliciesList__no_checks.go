@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusIngressPolici
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusIngressPoliciesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusIngressPoliciesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusIngressPolici
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusIngressPoliciesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusIngressPoliciesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterStatusIngressPolici
 	return nil
 }
 
-func validateNewGoogleAccessContextManagerServicePerimeterStatusIngressPoliciesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleAccessContextManagerServicePerimeterStatusIngressPoliciesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

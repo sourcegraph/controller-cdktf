@@ -40,11 +40,11 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTim
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTim
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewS3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketReplicationConfigurationRuleDestinationReplicationTimeTimeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

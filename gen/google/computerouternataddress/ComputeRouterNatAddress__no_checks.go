@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeRouterNatAddress) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRouterNatAddress) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRouterNatAddress) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeRouterNatAddress) validateOverrideLogicalIdParameters(
 }
 
 func (c *jsiiProxy_ComputeRouterNatAddress) validatePutTimeoutsParameters(value *ComputeRouterNatAddressTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRouterNatAddress) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ComputeRouterNatAddress) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterNatAddress) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeRouterNatAddress) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

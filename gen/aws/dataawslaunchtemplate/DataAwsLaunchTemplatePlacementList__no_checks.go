@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplatePlacementList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplatePlacementList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplatePlacementList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplatePlacementList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplatePlacementList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLaunchTemplatePlacementList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplatePlacementList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewDataAwsLaunchTemplatePlacementListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsLaunchTemplatePlacementListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

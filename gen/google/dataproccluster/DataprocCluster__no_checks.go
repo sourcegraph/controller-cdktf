@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataprocCluster) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataprocCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (d *jsiiProxy_DataprocCluster) validatePutTimeoutsParameters(value *Datapro
 }
 
 func (d *jsiiProxy_DataprocCluster) validatePutVirtualClusterConfigParameters(value *DataprocClusterVirtualClusterConfig) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_DataprocCluster) validateSetLabelsParameters(val *map[string]
 	return nil
 }
 
-func (j *jsiiProxy_DataprocCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataprocCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

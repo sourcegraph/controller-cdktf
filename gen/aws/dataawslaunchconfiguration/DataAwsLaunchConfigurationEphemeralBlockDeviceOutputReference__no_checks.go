@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLaunchConfigurationEphemeralBlockDeviceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsLaunchConfigurationEphemeralBlockDeviceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsLaunchConfigurationEphemeralBlockDeviceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

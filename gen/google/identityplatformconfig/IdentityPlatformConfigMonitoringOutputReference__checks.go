@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateGetS
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -101,9 +101,9 @@ func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validatePutR
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -190,7 +190,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -198,7 +198,7 @@ func (j *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateSetT
 	return nil
 }
 
-func validateNewIdentityPlatformConfigMonitoringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIdentityPlatformConfigMonitoringOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlbSubnetMappingList) validateGetParameters(index *float64) e
 	return nil
 }
 
-func (a *jsiiProxy_AlbSubnetMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbSubnetMappingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AlbSubnetMappingList) validateSetTerraformAttributeParameters
 	return nil
 }
 
-func (j *jsiiProxy_AlbSubnetMappingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlbSubnetMappingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AlbSubnetMappingList) validateSetWrapsSetParameters(val *bool
 	return nil
 }
 
-func validateNewAlbSubnetMappingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlbSubnetMappingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

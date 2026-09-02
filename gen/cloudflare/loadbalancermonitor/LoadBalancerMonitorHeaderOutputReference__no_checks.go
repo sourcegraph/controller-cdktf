@@ -40,11 +40,11 @@ func (l *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateGetStringMa
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_LoadBalancerMonitorHeaderOutputReference) validateSetValuesPa
 	return nil
 }
 
-func validateNewLoadBalancerMonitorHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerMonitorHeaderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

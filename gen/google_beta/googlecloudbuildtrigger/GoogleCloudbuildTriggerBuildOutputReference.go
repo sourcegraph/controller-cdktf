@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudbuildtrigger/internal"
 )
 
 type GoogleCloudbuildTriggerBuildOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Artifacts() GoogleCloudbuildTriggerBuildArtifactsOutputReference
 	ArtifactsInput() *GoogleCloudbuildTriggerBuildArtifacts
 	AvailableSecrets() GoogleCloudbuildTriggerBuildAvailableSecretsOutputReference
@@ -61,9 +61,9 @@ type GoogleCloudbuildTriggerBuildOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timeout() *string
 	SetTimeout(val *string)
 	TimeoutInput() *string
@@ -72,7 +72,7 @@ type GoogleCloudbuildTriggerBuildOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,9 +88,9 @@ type GoogleCloudbuildTriggerBuildOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutArtifacts(value *GoogleCloudbuildTriggerBuildArtifacts)
 	PutAvailableSecrets(value *GoogleCloudbuildTriggerBuildAvailableSecrets)
 	PutOptions(value *GoogleCloudbuildTriggerBuildOptions)
@@ -110,7 +110,7 @@ type GoogleCloudbuildTriggerBuildOutputReference interface {
 	ResetTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -120,7 +120,7 @@ type GoogleCloudbuildTriggerBuildOutputReference interface {
 
 // The jsii proxy struct for GoogleCloudbuildTriggerBuildOutputReference
 type jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) Artifacts() GoogleCloudbuildTriggerBuildArtifactsOutputReference {
@@ -403,8 +403,8 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -434,7 +434,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) TimeoutInput() *
 }
 
 
-func NewGoogleCloudbuildTriggerBuildOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudbuildTriggerBuildOutputReference {
+func NewGoogleCloudbuildTriggerBuildOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleCloudbuildTriggerBuildOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCloudbuildTriggerBuildOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -443,7 +443,7 @@ func NewGoogleCloudbuildTriggerBuildOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildOutputReference",
+		"@cdktn/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -451,11 +451,11 @@ func NewGoogleCloudbuildTriggerBuildOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewGoogleCloudbuildTriggerBuildOutputReference_Override(g GoogleCloudbuildTriggerBuildOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleCloudbuildTriggerBuildOutputReference_Override(g GoogleCloudbuildTriggerBuildOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildOutputReference",
+		"@cdktn/provider-google-beta.googleCloudbuildTrigger.GoogleCloudbuildTriggerBuildOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -560,7 +560,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -611,11 +611,11 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -739,8 +739,8 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -752,16 +752,16 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) InterpolationAsL
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -922,8 +922,8 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) ResetTimeout() {
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -931,7 +931,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

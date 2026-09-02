@@ -12,7 +12,7 @@ func (s *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_StoragegatewayGatewayGatewayNetworkInterfaceList) validateSet
 	return nil
 }
 
-func validateNewStoragegatewayGatewayGatewayNetworkInterfaceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStoragegatewayGatewayGatewayNetworkInterfaceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

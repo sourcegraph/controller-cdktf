@@ -40,11 +40,11 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryOpentsdbOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryOpentsdbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryOpentsdbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryOpentsdbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryOpentsdbOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryOpentsdbOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryOpentsdbOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryOpentsdbOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSloObjectiveRawMetricQueryOpentsdbOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveRawMetricQueryOpentsdbOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAdBreaksList) validateGetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAdBreaksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAdBreaksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAdBreaksList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAdBreaksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigAdBreaksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAdBreaksList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewGoogleTranscoderJobConfigAdBreaksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleTranscoderJobConfigAdBreaksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (f *jsiiProxy_FlowLog) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (f *jsiiProxy_FlowLog) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FlowLog) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (f *jsiiProxy_FlowLog) validateOverrideLogicalIdParameters(newLogicalId *st
 }
 
 func (f *jsiiProxy_FlowLog) validatePutDestinationOptionsParameters(value *FlowLogDestinationOptions) error {
+	return nil
+}
+
+func (f *jsiiProxy_FlowLog) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_FlowLog) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_FlowLog) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FlowLog) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

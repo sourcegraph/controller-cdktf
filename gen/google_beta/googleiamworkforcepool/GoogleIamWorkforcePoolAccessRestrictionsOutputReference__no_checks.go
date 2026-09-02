@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolAccessRestrictionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleIamWorkforcePoolAccessRestrictionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIamWorkforcePoolAccessRestrictionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

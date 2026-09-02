@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeys",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeys",
 		reflect.TypeOf((*DataGoogleDnsKeys)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -53,28 +54,29 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneSigningKeys", GoGetter: "ZoneSigningKeys"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleDnsKeys{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysConfig",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysConfig",
 		reflect.TypeOf((*DataGoogleDnsKeysConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeys",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeys",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeys)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigests",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigests",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysDigests)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsList",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsList",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysDigestsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -90,12 +92,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleDnsKeysKeySigningKeysDigestsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysDigestsOutputReference",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysDigestsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,12 +126,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleDnsKeysKeySigningKeysDigestsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysList",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysList",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -145,12 +147,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleDnsKeysKeySigningKeysList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysKeySigningKeysOutputReference",
 		reflect.TypeOf((*DataGoogleDnsKeysKeySigningKeysOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -187,20 +189,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleDnsKeysKeySigningKeysOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeys",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeys",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeys)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigests",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigests",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysDigests)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigestsList",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigestsList",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysDigestsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -216,12 +218,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -250,12 +252,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleDnsKeysZoneSigningKeysDigestsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysList",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysList",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -271,12 +273,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleDnsKeysZoneSigningKeysList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleDnsKeys.DataGoogleDnsKeysZoneSigningKeysOutputReference",
 		reflect.TypeOf((*DataGoogleDnsKeysZoneSigningKeysOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "algorithm", GoGetter: "Algorithm"},
@@ -312,7 +314,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleDnsKeysZoneSigningKeysOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

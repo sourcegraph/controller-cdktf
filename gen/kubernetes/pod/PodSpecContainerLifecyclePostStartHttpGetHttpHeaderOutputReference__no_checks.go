@@ -40,11 +40,11 @@ func (p *jsiiProxy_PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputRefe
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputRefe
 	return nil
 }
 
-func validateNewPodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPodSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

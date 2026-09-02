@@ -40,11 +40,11 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleStaticServiceI
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleStaticServiceI
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatabaseMigrationServiceConnectionProfileOracleStaticServiceIpConnectivityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

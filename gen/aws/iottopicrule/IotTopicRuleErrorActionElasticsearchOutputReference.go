@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/iottopicrule/internal"
 )
 
 type IotTopicRuleErrorActionElasticsearchOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type IotTopicRuleErrorActionElasticsearchOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -57,7 +57,7 @@ type IotTopicRuleErrorActionElasticsearchOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,12 +73,12 @@ type IotTopicRuleErrorActionElasticsearchOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type IotTopicRuleErrorActionElasticsearchOutputReference interface {
 
 // The jsii proxy struct for IotTopicRuleErrorActionElasticsearchOutputReference
 type jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) ComplexObjectIndex() interface{} {
@@ -231,8 +231,8 @@ func (j *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -262,7 +262,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) TypeInpu
 }
 
 
-func NewIotTopicRuleErrorActionElasticsearchOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionElasticsearchOutputReference {
+func NewIotTopicRuleErrorActionElasticsearchOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IotTopicRuleErrorActionElasticsearchOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIotTopicRuleErrorActionElasticsearchOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -271,7 +271,7 @@ func NewIotTopicRuleErrorActionElasticsearchOutputReference(terraformResource cd
 	j := jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference",
+		"@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -279,11 +279,11 @@ func NewIotTopicRuleErrorActionElasticsearchOutputReference(terraformResource cd
 	return &j
 }
 
-func NewIotTopicRuleErrorActionElasticsearchOutputReference_Override(i IotTopicRuleErrorActionElasticsearchOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIotTopicRuleErrorActionElasticsearchOutputReference_Override(i IotTopicRuleErrorActionElasticsearchOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference",
+		"@cdktn/provider-aws.iotTopicRule.IotTopicRuleErrorActionElasticsearchOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -377,7 +377,7 @@ func (j *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -428,11 +428,11 @@ func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) GetAnyMa
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -556,8 +556,8 @@ func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) GetStrin
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -569,24 +569,24 @@ func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) Interpol
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -594,7 +594,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionElasticsearchOutputReference) Resolve(
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

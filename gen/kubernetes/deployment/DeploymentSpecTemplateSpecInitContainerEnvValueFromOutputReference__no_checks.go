@@ -40,7 +40,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvValueFromOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvValueFromOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvValueFromOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvValueFromOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvValueFromOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvValueFromOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvValueFromOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvValueFromOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecInitContainerEnvValueFromOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDeploymentSpecTemplateSpecInitContainerEnvValueFromOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDeploymentSpecTemplateSpecInitContainerEnvValueFromOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

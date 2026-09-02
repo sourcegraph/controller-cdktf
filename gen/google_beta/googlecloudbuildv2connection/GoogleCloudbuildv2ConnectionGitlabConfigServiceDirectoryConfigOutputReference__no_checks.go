@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudbuildv2ConnectionGitlabConfigServiceDirectoryConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/eventarctrigger/internal"
 )
 
 type EventarcTriggerRetryPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type EventarcTriggerRetryPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type EventarcTriggerRetryPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMaxAttempts()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type EventarcTriggerRetryPolicyOutputReference interface {
 
 // The jsii proxy struct for EventarcTriggerRetryPolicyOutputReference
 type jsiiProxy_EventarcTriggerRetryPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) TerraformResource(
 }
 
 
-func NewEventarcTriggerRetryPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EventarcTriggerRetryPolicyOutputReference {
+func NewEventarcTriggerRetryPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EventarcTriggerRetryPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEventarcTriggerRetryPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewEventarcTriggerRetryPolicyOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_EventarcTriggerRetryPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewEventarcTriggerRetryPolicyOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewEventarcTriggerRetryPolicyOutputReference_Override(e EventarcTriggerRetryPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEventarcTriggerRetryPolicyOutputReference_Override(e EventarcTriggerRetryPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_EventarcTriggerRetryPolicyOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerRetryPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventarcTriggerRetryPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -421,8 +421,8 @@ func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -434,16 +434,16 @@ func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) ResetMaxAttempts()
 	)
 }
 
-func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (e *jsiiProxy_EventarcTriggerRetryPolicyOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

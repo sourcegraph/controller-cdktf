@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validatePutTimeoutsParameters(val
 }
 
 func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validatePutWorkerConfigParameters(value *GoogleCloudbuildWorkerPoolWorkerConfig) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudbuildWorkerPool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

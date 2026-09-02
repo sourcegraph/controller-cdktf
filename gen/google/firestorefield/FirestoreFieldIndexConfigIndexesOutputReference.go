@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/firestorefield/internal"
 )
 
 type FirestoreFieldIndexConfigIndexesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ArrayConfig() *string
 	SetArrayConfig(val *string)
 	ArrayConfigInput() *string
@@ -43,15 +43,15 @@ type FirestoreFieldIndexConfigIndexesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type FirestoreFieldIndexConfigIndexesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetArrayConfig()
 	ResetOrder()
 	ResetQueryScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type FirestoreFieldIndexConfigIndexesOutputReference interface {
 
 // The jsii proxy struct for FirestoreFieldIndexConfigIndexesOutputReference
 type jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) ArrayConfig() *string {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) TerraformRes
 }
 
 
-func NewFirestoreFieldIndexConfigIndexesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FirestoreFieldIndexConfigIndexesOutputReference {
+func NewFirestoreFieldIndexConfigIndexesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) FirestoreFieldIndexConfigIndexesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFirestoreFieldIndexConfigIndexesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -228,7 +228,7 @@ func NewFirestoreFieldIndexConfigIndexesOutputReference(terraformResource cdktf.
 	j := jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.firestoreField.FirestoreFieldIndexConfigIndexesOutputReference",
+		"@cdktn/provider-google.firestoreField.FirestoreFieldIndexConfigIndexesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewFirestoreFieldIndexConfigIndexesOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewFirestoreFieldIndexConfigIndexesOutputReference_Override(f FirestoreFieldIndexConfigIndexesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewFirestoreFieldIndexConfigIndexesOutputReference_Override(f FirestoreFieldIndexConfigIndexesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.firestoreField.FirestoreFieldIndexConfigIndexesOutputReference",
+		"@cdktn/provider-google.firestoreField.FirestoreFieldIndexConfigIndexesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		f,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -491,8 +491,8 @@ func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) GetStringMap
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -504,16 +504,16 @@ func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) Interpolatio
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) ResetQuerySc
 	)
 }
 
-func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (f *jsiiProxy_FirestoreFieldIndexConfigIndexesOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputRef
 	return nil
 }
 
-func validateNewGoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryDatapolicyDataPolicyIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

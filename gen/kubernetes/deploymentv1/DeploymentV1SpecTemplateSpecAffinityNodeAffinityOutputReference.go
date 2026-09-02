@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/deploymentv1/internal"
 )
 
 type DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPreferredDuringSchedulingIgnoredDuringExecution(value interface{})
 	PutRequiredDuringSchedulingIgnoredDuringExecution(value *DeploymentV1SpecTemplateSpecAffinityNodeAffinityRequiredDuringSchedulingIgnoredDuringExecution)
 	ResetPreferredDuringSchedulingIgnoredDuringExecution()
 	ResetRequiredDuringSchedulingIgnoredDuringExecution()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference interface {
 
 // The jsii proxy struct for DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference
 type jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 }
 
 
-func NewDeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference {
+func NewDeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewDeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference(terrafor
 	j := jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference",
+		"@cdktn/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewDeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference(terrafor
 	return &j
 }
 
-func NewDeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference_Override(d DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference_Override(d DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference",
+		"@cdktn/provider-kubernetes.deploymentV1.DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -434,8 +434,8 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -447,16 +447,16 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 	)
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecAffinityNodeAffinityOutputReferen
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

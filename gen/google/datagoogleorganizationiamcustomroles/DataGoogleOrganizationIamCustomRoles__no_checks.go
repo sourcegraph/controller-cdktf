@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleOrganizationIamCustomRoles) validateOverrideLogical
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleOrganizationIamCustomRoles) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleOrganizationIamCustomRoles_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleOrganizationIamCustomRoles) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleOrganizationIamCustomRoles) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleOrganizationIamCustomRoles) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

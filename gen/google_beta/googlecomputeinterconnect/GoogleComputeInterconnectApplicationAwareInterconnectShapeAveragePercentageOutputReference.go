@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinterconnect/internal"
 )
 
 type GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TrafficClass() *string
 	SetTrafficClass(val *string)
 	TrafficClassInput() *string
@@ -48,7 +48,7 @@ type GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPercentage()
 	ResetTrafficClass()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentage
 
 // The jsii proxy struct for GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference
 type jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference) ComplexObjectIndex() interface{} {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAve
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAve
 }
 
 
-func NewGoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference {
+func NewGoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercent
 	j := jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference",
+		"@cdktn/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercent
 	return &j
 }
 
-func NewGoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference_Override(g GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference_Override(g GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference",
+		"@cdktn/provider-google-beta.googleComputeInterconnect.GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAve
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAve
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,8 +456,8 @@ func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAve
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -469,16 +469,16 @@ func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAve
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAve
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAveragePercentageOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectApplicationAwareInterconnectShapeAve
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

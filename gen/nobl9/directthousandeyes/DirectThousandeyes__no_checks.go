@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectThousandeyes) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DirectThousandeyes) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectThousandeyes) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DirectThousandeyes) validateOverrideLogicalIdParameters(newLo
 }
 
 func (d *jsiiProxy_DirectThousandeyes) validatePutQueryDelayParameters(value *DirectThousandeyesQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectThousandeyes) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DirectThousandeyes) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DirectThousandeyes) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectThousandeyes) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

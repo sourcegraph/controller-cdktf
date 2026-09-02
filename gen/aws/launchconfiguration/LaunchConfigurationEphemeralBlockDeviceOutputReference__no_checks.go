@@ -40,11 +40,11 @@ func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) valid
 	return nil
 }
 
-func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference) valid
 	return nil
 }
 
-func validateNewLaunchConfigurationEphemeralBlockDeviceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLaunchConfigurationEphemeralBlockDeviceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

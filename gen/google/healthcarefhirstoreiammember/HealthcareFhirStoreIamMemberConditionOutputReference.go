@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/healthcarefhirstoreiammember/internal"
 )
 
 type HealthcareFhirStoreIamMemberConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type HealthcareFhirStoreIamMemberConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type HealthcareFhirStoreIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type HealthcareFhirStoreIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type HealthcareFhirStoreIamMemberConditionOutputReference interface {
 
 // The jsii proxy struct for HealthcareFhirStoreIamMemberConditionOutputReference
 type jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) TitleIn
 }
 
 
-func NewHealthcareFhirStoreIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) HealthcareFhirStoreIamMemberConditionOutputReference {
+func NewHealthcareFhirStoreIamMemberConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) HealthcareFhirStoreIamMemberConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewHealthcareFhirStoreIamMemberConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewHealthcareFhirStoreIamMemberConditionOutputReference(terraformResource c
 	j := jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMemberConditionOutputReference",
+		"@cdktn/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewHealthcareFhirStoreIamMemberConditionOutputReference(terraformResource c
 	return &j
 }
 
-func NewHealthcareFhirStoreIamMemberConditionOutputReference_Override(h HealthcareFhirStoreIamMemberConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewHealthcareFhirStoreIamMemberConditionOutputReference_Override(h HealthcareFhirStoreIamMemberConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMemberConditionOutputReference",
+		"@cdktn/provider-google.healthcareFhirStoreIamMember.HealthcareFhirStoreIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		h,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) GetAnyM
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -489,8 +489,8 @@ func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) GetStri
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -502,16 +502,16 @@ func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) Interpo
 	return returns
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := h.validateInterpolationForAttributeParameters(property); err != nil {
+func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) ResetDe
 	)
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (h *jsiiProxy_HealthcareFhirStoreIamMemberConditionOutputReference) Resolve
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionX509Descripti
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionX509Descripti
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGooglePrivatecaCertificateCertificateDescriptionX509DescriptionPolicyIdsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

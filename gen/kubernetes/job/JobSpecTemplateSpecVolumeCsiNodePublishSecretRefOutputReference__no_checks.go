@@ -40,11 +40,11 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobSpecTemplateSpecVolumeCsiNodePublishSecretRefOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

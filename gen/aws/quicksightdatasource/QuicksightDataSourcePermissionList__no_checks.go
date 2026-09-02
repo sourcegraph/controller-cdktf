@@ -12,7 +12,7 @@ func (q *jsiiProxy_QuicksightDataSourcePermissionList) validateGetParameters(ind
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourcePermissionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourcePermissionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourcePermissionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_QuicksightDataSourcePermissionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewQuicksightDataSourcePermissionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewQuicksightDataSourcePermissionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

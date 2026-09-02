@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleEssentialContactsContact) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEssentialContactsContact) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEssentialContactsContact) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleEssentialContactsContact) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleEssentialContactsContact) validatePutTimeoutsParameters(value *GoogleEssentialContactsContactTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEssentialContactsContact) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleEssentialContactsContact) validateSetLanguageTagParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEssentialContactsContact) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleEssentialContactsContact) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApiServiceSpecServiceOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (a *jsiiProxy_ApiServiceSpecServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiServiceSpecServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiServiceSpecServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiServiceSpecServiceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ApiServiceSpecServiceOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_ApiServiceSpecServiceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApiServiceSpecServiceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApiServiceSpecServiceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApiServiceSpecServiceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

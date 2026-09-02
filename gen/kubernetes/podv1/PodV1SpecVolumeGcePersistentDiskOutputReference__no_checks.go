@@ -40,11 +40,11 @@ func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) validateGetS
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodV1SpecVolumeGcePersistentDiskOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPodV1SpecVolumeGcePersistentDiskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPodV1SpecVolumeGcePersistentDiskOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

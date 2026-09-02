@@ -5,7 +5,7 @@ package apphubservice
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataList) validateG
 	return nil
 }
 
-func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataList) validateS
 	return nil
 }
 
-func validateNewApphubServiceServicePropertiesExtendedMetadataListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApphubServiceServicePropertiesExtendedMetadataListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

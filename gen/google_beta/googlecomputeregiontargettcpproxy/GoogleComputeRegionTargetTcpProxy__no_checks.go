@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeRegionTargetTcpProxy) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionTargetTcpProxy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionTargetTcpProxy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeRegionTargetTcpProxy) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleComputeRegionTargetTcpProxy) validatePutTimeoutsParameters(value *GoogleComputeRegionTargetTcpProxyTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionTargetTcpProxy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleComputeRegionTargetTcpProxy) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionTargetTcpProxy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeRegionTargetTcpProxy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

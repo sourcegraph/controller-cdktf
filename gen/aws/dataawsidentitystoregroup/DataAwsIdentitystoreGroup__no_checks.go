@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsIdentitystoreGroup) validatePutFilterParameters(value 
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsIdentitystoreGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsIdentitystoreGroup_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -92,7 +96,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreGroup) validateSetIdentityStoreIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsIdentitystoreGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

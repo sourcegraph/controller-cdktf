@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterMonitoringConfigManagedPrometheusAutoMonitoringConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

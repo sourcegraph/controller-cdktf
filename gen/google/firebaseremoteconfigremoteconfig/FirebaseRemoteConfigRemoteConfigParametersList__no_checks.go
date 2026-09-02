@@ -12,7 +12,7 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersList) validateGetPa
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersList) validateSetWr
 	return nil
 }
 
-func validateNewFirebaseRemoteConfigRemoteConfigParametersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFirebaseRemoteConfigRemoteConfigParametersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

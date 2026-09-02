@@ -56,6 +56,10 @@ func (i *jsiiProxy_IotIndexingConfiguration) validateInterpolationForAttributePa
 	return nil
 }
 
+func (i *jsiiProxy_IotIndexingConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IotIndexingConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (i *jsiiProxy_IotIndexingConfiguration) validatePutThingGroupIndexingConfig
 }
 
 func (i *jsiiProxy_IotIndexingConfiguration) validatePutThingIndexingConfigurationParameters(value *IotIndexingConfigurationThingIndexingConfiguration) error {
+	return nil
+}
+
+func (i *jsiiProxy_IotIndexingConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_IotIndexingConfiguration) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_IotIndexingConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IotIndexingConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

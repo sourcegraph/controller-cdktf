@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/developerconnectconnection/internal"
 )
 
 type DeveloperConnectConnectionGitlabConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthorizerCredential() DeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference
 	AuthorizerCredentialInput() *DeveloperConnectConnectionGitlabConfigAuthorizerCredential
 	// the index of the complex object in a list.
@@ -38,9 +38,9 @@ type DeveloperConnectConnectionGitlabConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WebhookSecretSecretVersion() *string
 	SetWebhookSecretSecretVersion(val *string)
 	WebhookSecretSecretVersionInput() *string
@@ -49,7 +49,7 @@ type DeveloperConnectConnectionGitlabConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,14 +65,14 @@ type DeveloperConnectConnectionGitlabConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthorizerCredential(value *DeveloperConnectConnectionGitlabConfigAuthorizerCredential)
 	PutReadAuthorizerCredential(value *DeveloperConnectConnectionGitlabConfigReadAuthorizerCredential)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DeveloperConnectConnectionGitlabConfigOutputReference interface {
 
 // The jsii proxy struct for DeveloperConnectConnectionGitlabConfigOutputReference
 type jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) AuthorizerCredential() DeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) Webhoo
 }
 
 
-func NewDeveloperConnectConnectionGitlabConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGitlabConfigOutputReference {
+func NewDeveloperConnectConnectionGitlabConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGitlabConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeveloperConnectConnectionGitlabConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewDeveloperConnectConnectionGitlabConfigOutputReference(terraformResource 
 	j := jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewDeveloperConnectConnectionGitlabConfigOutputReference(terraformResource 
 	return &j
 }
 
-func NewDeveloperConnectConnectionGitlabConfigOutputReference_Override(d DeveloperConnectConnectionGitlabConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDeveloperConnectConnectionGitlabConfigOutputReference_Override(d DeveloperConnectConnectionGitlabConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,11 +338,11 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) GetAny
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -466,8 +466,8 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) GetStr
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -479,16 +479,16 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -517,8 +517,8 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) PutRea
 	)
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference) Resolv
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

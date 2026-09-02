@@ -56,6 +56,10 @@ func (p *jsiiProxy_PriorityClass) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (p *jsiiProxy_PriorityClass) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PriorityClass) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (p *jsiiProxy_PriorityClass) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (p *jsiiProxy_PriorityClass) validatePutMetadataParameters(value *PriorityClassMetadata) error {
+	return nil
+}
+
+func (p *jsiiProxy_PriorityClass) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_PriorityClass) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_PriorityClass) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PriorityClass) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

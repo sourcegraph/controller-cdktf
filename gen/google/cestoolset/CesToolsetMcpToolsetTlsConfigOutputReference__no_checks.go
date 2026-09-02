@@ -40,7 +40,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetTlsConfigOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CesToolsetMcpToolsetTlsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesToolsetMcpToolsetTlsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetTlsConfigOutputReference) validatePutCaCe
 	return nil
 }
 
-func (c *jsiiProxy_CesToolsetMcpToolsetTlsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesToolsetMcpToolsetTlsConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CesToolsetMcpToolsetTlsConfigOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetTlsConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesToolsetMcpToolsetTlsConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesToolsetMcpToolsetTlsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesToolsetMcpToolsetTlsConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

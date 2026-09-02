@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSock
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSock
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataKubernetesPodV1SpecInitContainerLifecyclePostStartTcpSocketOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

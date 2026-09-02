@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglegkehubmembership/internal"
 )
 
 type DataGoogleGkeHubMembershipEndpointGkeClusterList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type DataGoogleGkeHubMembershipEndpointGkeClusterList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataGoogleGkeHubMembershipEndpointGkeClusterOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type DataGoogleGkeHubMembershipEndpointGkeClusterList interface {
 
 // The jsii proxy struct for DataGoogleGkeHubMembershipEndpointGkeClusterList
 type jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList) WrapsSet() 
 }
 
 
-func NewDataGoogleGkeHubMembershipEndpointGkeClusterList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubMembershipEndpointGkeClusterList {
+func NewDataGoogleGkeHubMembershipEndpointGkeClusterList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleGkeHubMembershipEndpointGkeClusterList {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleGkeHubMembershipEndpointGkeClusterListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewDataGoogleGkeHubMembershipEndpointGkeClusterList(terraformResource cdktf
 	j := jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipEndpointGkeClusterList",
+		"@cdktn/provider-google-beta.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipEndpointGkeClusterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewDataGoogleGkeHubMembershipEndpointGkeClusterList(terraformResource cdktf
 	return &j
 }
 
-func NewDataGoogleGkeHubMembershipEndpointGkeClusterList_Override(d DataGoogleGkeHubMembershipEndpointGkeClusterList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataGoogleGkeHubMembershipEndpointGkeClusterList_Override(d DataGoogleGkeHubMembershipEndpointGkeClusterList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipEndpointGkeClusterList",
+		"@cdktn/provider-google-beta.dataGoogleGkeHubMembership.DataGoogleGkeHubMembershipEndpointGkeClusterList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList)SetWrapsSet(
 	)
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -205,8 +208,8 @@ func (d *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList) Get(index *
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (d *jsiiProxy_DataGoogleGkeHubMembershipEndpointGkeClusterList) Resolve(_co
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

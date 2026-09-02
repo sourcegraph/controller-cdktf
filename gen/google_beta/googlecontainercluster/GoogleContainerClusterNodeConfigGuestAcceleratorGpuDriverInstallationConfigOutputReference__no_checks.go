@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInst
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInst
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterNodeConfigGuestAcceleratorGpuDriverInstallationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

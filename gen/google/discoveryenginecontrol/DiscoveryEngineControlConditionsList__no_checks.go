@@ -12,7 +12,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlConditionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineControlConditionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewDiscoveryEngineControlConditionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDiscoveryEngineControlConditionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

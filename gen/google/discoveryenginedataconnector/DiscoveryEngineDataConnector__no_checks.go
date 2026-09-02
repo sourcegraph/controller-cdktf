@@ -56,6 +56,10 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) validateInterpolationForAttribu
 	return nil
 }
 
+func (d *jsiiProxy_DiscoveryEngineDataConnector) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DiscoveryEngineDataConnector) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (d *jsiiProxy_DiscoveryEngineDataConnector) validatePutEntitiesParameters(v
 }
 
 func (d *jsiiProxy_DiscoveryEngineDataConnector) validatePutTimeoutsParameters(value *DiscoveryEngineDataConnectorTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DiscoveryEngineDataConnector) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -160,7 +168,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnector) validateSetKmsKeyNameParameters
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnector) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DiscoveryEngineDataConnector) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

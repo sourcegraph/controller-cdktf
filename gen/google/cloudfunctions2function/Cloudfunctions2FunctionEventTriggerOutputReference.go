@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudfunctions2function/internal"
 )
 
 type Cloudfunctions2FunctionEventTriggerOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,9 +48,9 @@ type Cloudfunctions2FunctionEventTriggerOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Trigger() *string
 	TriggerRegion() *string
 	SetTriggerRegion(val *string)
@@ -60,7 +60,7 @@ type Cloudfunctions2FunctionEventTriggerOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type Cloudfunctions2FunctionEventTriggerOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEventFilters(value interface{})
 	ResetEventFilters()
 	ResetPubsubTopic()
@@ -87,7 +87,7 @@ type Cloudfunctions2FunctionEventTriggerOutputReference interface {
 	ResetTriggerRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type Cloudfunctions2FunctionEventTriggerOutputReference interface {
 
 // The jsii proxy struct for Cloudfunctions2FunctionEventTriggerOutputReference
 type jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) ComplexObjectIndex() interface{} {
@@ -260,8 +260,8 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -301,7 +301,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) TriggerRe
 }
 
 
-func NewCloudfunctions2FunctionEventTriggerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Cloudfunctions2FunctionEventTriggerOutputReference {
+func NewCloudfunctions2FunctionEventTriggerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Cloudfunctions2FunctionEventTriggerOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudfunctions2FunctionEventTriggerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -310,7 +310,7 @@ func NewCloudfunctions2FunctionEventTriggerOutputReference(terraformResource cdk
 	j := jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference",
+		"@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -318,11 +318,11 @@ func NewCloudfunctions2FunctionEventTriggerOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewCloudfunctions2FunctionEventTriggerOutputReference_Override(c Cloudfunctions2FunctionEventTriggerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudfunctions2FunctionEventTriggerOutputReference_Override(c Cloudfunctions2FunctionEventTriggerOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference",
+		"@cdktn/provider-google.cloudfunctions2Function.Cloudfunctions2FunctionEventTriggerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -416,7 +416,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,11 +467,11 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetAnyMap
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -595,8 +595,8 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) GetString
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -608,16 +608,16 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) Interpola
 	return returns
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -675,8 +675,8 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) ResetTrig
 	)
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -684,7 +684,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerOutputReference) Resolve(_
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

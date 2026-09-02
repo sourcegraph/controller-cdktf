@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApigeeSharedflowDeploymentTimeoutsOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeSharedflowDeploymentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApigeeSharedflowDeploymentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeSharedflowDeploymentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApigeeSharedflowDeploymentTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleApigeeSharedflowDeploymentTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSharedflowDeploymentTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApigeeSharedflowDeploymentTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleApigeeSharedflowDeploymentTimeoutsOutputReference) vali
 	return nil
 }
 
-func validateNewGoogleApigeeSharedflowDeploymentTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApigeeSharedflowDeploymentTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

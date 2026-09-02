@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datalosspreventionstoredinfotype/internal"
 )
 
 type DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference i
 
 // The jsii proxy struct for DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference
 type jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOut
 	return returns
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOut
 }
 
 
-func NewDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference {
+func NewDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReferenc
 	j := jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference",
+		"@cdktn/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReferenc
 	return &j
 }
 
-func NewDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference_Override(d DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference_Override(d DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference",
+		"@cdktn/provider-google.dataLossPreventionStoredInfoType.DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOut
 	)
 }
 
-func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOut
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -420,8 +420,8 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOut
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -433,24 +433,24 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOut
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (d *jsiiProxy_DataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOut
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

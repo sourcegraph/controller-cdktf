@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinstance/internal"
 )
 
 type GoogleComputeInstanceSchedulingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AutomaticRestart() interface{}
 	SetAutomaticRestart(val interface{})
 	AutomaticRestartInput() interface{}
@@ -79,15 +79,15 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -103,9 +103,9 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutGracefulShutdown(value *GoogleComputeInstanceSchedulingGracefulShutdown)
 	PutLocalSsdRecoveryTimeout(value *GoogleComputeInstanceSchedulingLocalSsdRecoveryTimeout)
 	PutMaxRunDuration(value *GoogleComputeInstanceSchedulingMaxRunDuration)
@@ -131,7 +131,7 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 	ResetTerminationTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -141,7 +141,7 @@ type GoogleComputeInstanceSchedulingOutputReference interface {
 
 // The jsii proxy struct for GoogleComputeInstanceSchedulingOutputReference
 type jsiiProxy_GoogleComputeInstanceSchedulingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) AutomaticRestart() interface{} {
@@ -544,8 +544,8 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -555,7 +555,7 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) TerraformReso
 }
 
 
-func NewGoogleComputeInstanceSchedulingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceSchedulingOutputReference {
+func NewGoogleComputeInstanceSchedulingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceSchedulingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeInstanceSchedulingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -564,7 +564,7 @@ func NewGoogleComputeInstanceSchedulingOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleComputeInstanceSchedulingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingOutputReference",
+		"@cdktn/provider-google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -572,11 +572,11 @@ func NewGoogleComputeInstanceSchedulingOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewGoogleComputeInstanceSchedulingOutputReference_Override(g GoogleComputeInstanceSchedulingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeInstanceSchedulingOutputReference_Override(g GoogleComputeInstanceSchedulingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingOutputReference",
+		"@cdktn/provider-google-beta.googleComputeInstance.GoogleComputeInstanceSchedulingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -747,7 +747,7 @@ func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -787,11 +787,11 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -915,8 +915,8 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) GetStringMapA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -928,16 +928,16 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) Interpolation
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1146,8 +1146,8 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) ResetTerminat
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1155,7 +1155,7 @@ func (g *jsiiProxy_GoogleComputeInstanceSchedulingOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

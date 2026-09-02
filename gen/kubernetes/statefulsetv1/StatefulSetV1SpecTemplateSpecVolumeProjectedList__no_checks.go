@@ -12,7 +12,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecVolumeProjectedList) validateSet
 	return nil
 }
 
-func validateNewStatefulSetV1SpecTemplateSpecVolumeProjectedListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStatefulSetV1SpecTemplateSpecVolumeProjectedListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

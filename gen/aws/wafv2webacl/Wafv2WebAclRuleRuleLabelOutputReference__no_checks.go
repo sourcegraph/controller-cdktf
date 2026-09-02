@@ -40,11 +40,11 @@ func (w *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateGetStringMap
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Wafv2WebAclRuleRuleLabelOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWafv2WebAclRuleRuleLabelOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWafv2WebAclRuleRuleLabelOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

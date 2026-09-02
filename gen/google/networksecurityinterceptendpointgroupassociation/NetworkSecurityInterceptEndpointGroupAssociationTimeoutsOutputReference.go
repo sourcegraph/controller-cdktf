@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecurityinterceptendpointgroupassociation/internal"
 )
 
 type NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference int
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference int
 
 // The jsii proxy struct for NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference
 type jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutpu
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutpu
 }
 
 
-func NewNetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference {
+func NewNetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewNetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference(
 	j := jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkSecurityInterceptEndpointGroupAssociation.NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference",
+		"@cdktn/provider-google.networkSecurityInterceptEndpointGroupAssociation.NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewNetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference(
 	return &j
 }
 
-func NewNetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference_Override(n NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference_Override(n NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkSecurityInterceptEndpointGroupAssociation.NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference",
+		"@cdktn/provider-google.networkSecurityInterceptEndpointGroupAssociation.NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutpu
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutpu
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -491,8 +491,8 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutpu
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -504,16 +504,16 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutpu
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutpu
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociationTimeoutsOutpu
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

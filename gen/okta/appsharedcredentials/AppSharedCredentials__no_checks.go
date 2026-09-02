@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppSharedCredentials) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AppSharedCredentials) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSharedCredentials) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AppSharedCredentials) validateOverrideLogicalIdParameters(new
 }
 
 func (a *jsiiProxy_AppSharedCredentials) validatePutTimeoutsParameters(value *AppSharedCredentialsTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSharedCredentials) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_AppSharedCredentials) validateSetLabelParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_AppSharedCredentials) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppSharedCredentials) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

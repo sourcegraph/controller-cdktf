@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaList) validateGetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleVectorSearchCollectionVectorSchemaList) validateSetWrap
 	return nil
 }
 
-func validateNewGoogleVectorSearchCollectionVectorSchemaListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleVectorSearchCollectionVectorSchemaListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

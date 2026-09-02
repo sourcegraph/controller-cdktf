@@ -56,6 +56,10 @@ func (i *jsiiProxy_IapClient) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (i *jsiiProxy_IapClient) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IapClient) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (i *jsiiProxy_IapClient) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (i *jsiiProxy_IapClient) validatePutTimeoutsParameters(value *IapClientTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IapClient) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_IapClient) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_IapClient) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IapClient) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

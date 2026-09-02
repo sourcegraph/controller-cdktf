@@ -40,7 +40,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputRefe
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputRefe
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WafregionalWebAclLoggingConfigurationRedactedFieldsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWafregionalWebAclLoggingConfigurationRedactedFieldsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWafregionalWebAclLoggingConfigurationRedactedFieldsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

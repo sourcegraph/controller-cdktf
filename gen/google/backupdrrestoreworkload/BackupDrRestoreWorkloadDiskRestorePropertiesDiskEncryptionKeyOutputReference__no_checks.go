@@ -40,11 +40,11 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKey
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

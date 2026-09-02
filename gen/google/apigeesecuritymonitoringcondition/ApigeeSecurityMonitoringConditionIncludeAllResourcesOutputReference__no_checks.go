@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApigeeSecurityMonitoringConditionIncludeAllResourcesOutputRef
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_ApigeeSecurityMonitoringConditionIncludeAllResourcesOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApigeeSecurityMonitoringConditionIncludeAllResourcesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

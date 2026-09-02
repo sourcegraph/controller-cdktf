@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataCloudflareApiTokenPermissionGroups) validateOverrideLogic
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareApiTokenPermissionGroups) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareApiTokenPermissionGroups_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataCloudflareApiTokenPermissionGroups) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

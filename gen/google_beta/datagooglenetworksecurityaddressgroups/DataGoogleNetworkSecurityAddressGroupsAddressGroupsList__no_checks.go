@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroupsAddressGroupsList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroupsAddressGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleNetworkSecurityAddressGroupsAddressGroupsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroupsAddressGroupsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroupsAddressGroupsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroupsAddressGroupsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleNetworkSecurityAddressGroupsAddressGroupsList) vali
 	return nil
 }
 
-func validateNewDataGoogleNetworkSecurityAddressGroupsAddressGroupsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleNetworkSecurityAddressGroupsAddressGroupsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

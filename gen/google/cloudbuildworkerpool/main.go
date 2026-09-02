@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
+		"@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPool",
 		reflect.TypeOf((*CloudbuildWorkerPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -65,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkerConfig", GoMethod: "PutWorkerConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -88,25 +90,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workerConfig", GoGetter: "WorkerConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "workerConfigInput", GoGetter: "WorkerConfigInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildWorkerPool{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig",
+		"@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolConfig",
 		reflect.TypeOf((*CloudbuildWorkerPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfig",
+		"@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfig",
 		reflect.TypeOf((*CloudbuildWorkerPoolNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfigOutputReference",
+		"@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolNetworkConfigOutputReference",
 		reflect.TypeOf((*CloudbuildWorkerPoolNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,16 +141,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildWorkerPoolNetworkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnect",
+		"@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnect",
 		reflect.TypeOf((*CloudbuildWorkerPoolPrivateServiceConnect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnectOutputReference",
+		"@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolPrivateServiceConnectOutputReference",
 		reflect.TypeOf((*CloudbuildWorkerPoolPrivateServiceConnectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -179,16 +182,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts",
+		"@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeouts",
 		reflect.TypeOf((*CloudbuildWorkerPoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeoutsOutputReference",
+		"@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolTimeoutsOutputReference",
 		reflect.TypeOf((*CloudbuildWorkerPoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -224,16 +227,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildWorkerPoolTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfig",
+		"@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfig",
 		reflect.TypeOf((*CloudbuildWorkerPoolWorkerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfigOutputReference",
+		"@cdktn/provider-google.cloudbuildWorkerPool.CloudbuildWorkerPoolWorkerConfigOutputReference",
 		reflect.TypeOf((*CloudbuildWorkerPoolWorkerConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -272,7 +275,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildWorkerPoolWorkerConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

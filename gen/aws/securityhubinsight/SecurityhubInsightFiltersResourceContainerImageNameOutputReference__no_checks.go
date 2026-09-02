@@ -40,11 +40,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputRefe
 	return nil
 }
 
-func validateNewSecurityhubInsightFiltersResourceContainerImageNameOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSecurityhubInsightFiltersResourceContainerImageNameOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

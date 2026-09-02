@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstance",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstance",
 		reflect.TypeOf((*WorkbenchInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -74,6 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putGceSetup", GoMethod: "PutGceSetup"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDesiredState", GoMethod: "ResetDesiredState"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableProxyAccess", GoMethod: "ResetDisableProxyAccess"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableManagedEuc", GoMethod: "ResetEnableManagedEuc"},
@@ -101,27 +103,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "upgradeHistory", GoGetter: "UpgradeHistory"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceConfig",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceConfig",
 		reflect.TypeOf((*WorkbenchInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetup",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetup",
 		reflect.TypeOf((*WorkbenchInstanceGceSetup)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupAcceleratorConfigs",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupAcceleratorConfigs",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupAcceleratorConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupAcceleratorConfigsList",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupAcceleratorConfigsList",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupAcceleratorConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -138,12 +141,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,16 +179,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupAcceleratorConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupBootDisk",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupBootDisk",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupBootDisk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupBootDiskOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupBootDiskOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupBootDiskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -224,16 +227,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupBootDiskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupConfidentialInstanceConfig",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupConfidentialInstanceConfig",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupConfidentialInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -263,16 +266,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupConfidentialInstanceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupContainerImage",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupContainerImage",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupContainerImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupContainerImageOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupContainerImageOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupContainerImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,16 +307,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupContainerImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisks",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisks",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupDataDisks)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupDataDisksOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupDataDisksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -352,20 +355,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupDataDisksOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfaces",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfaces",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupNetworkInterfaces)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigs",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigs",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -382,12 +385,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -416,12 +419,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesAccessConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfacesList",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfacesList",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupNetworkInterfacesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -438,12 +441,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfacesOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupNetworkInterfacesOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupNetworkInterfacesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessConfigs", GoGetter: "AccessConfigs"},
@@ -483,12 +486,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupNetworkInterfacesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorConfigs", GoGetter: "AcceleratorConfigs"},
@@ -570,16 +573,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupReservationAffinity",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupReservationAffinity",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupReservationAffinity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupReservationAffinityOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupReservationAffinityOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupReservationAffinityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -615,16 +618,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupReservationAffinityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupServiceAccounts",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupServiceAccounts",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupServiceAccounts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupServiceAccountsList",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupServiceAccountsList",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupServiceAccountsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -641,12 +644,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupServiceAccountsOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupServiceAccountsOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupServiceAccountsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -677,16 +680,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupServiceAccountsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupShieldedInstanceConfig",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupShieldedInstanceConfig",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupShieldedInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -722,16 +725,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupShieldedInstanceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupVmImage",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupVmImage",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupVmImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupVmImageOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupVmImageOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceGceSetupVmImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -767,16 +770,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceHealthInfo",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceHealthInfo",
 		reflect.TypeOf((*WorkbenchInstanceHealthInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceHealthInfoList",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceHealthInfoList",
 		reflect.TypeOf((*WorkbenchInstanceHealthInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -792,12 +795,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceHealthInfoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceHealthInfoOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceHealthInfoOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceHealthInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -824,16 +827,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceHealthInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceTimeouts",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceTimeouts",
 		reflect.TypeOf((*WorkbenchInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceTimeoutsOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -869,16 +872,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceUpgradeHistory",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceUpgradeHistory",
 		reflect.TypeOf((*WorkbenchInstanceUpgradeHistory)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceUpgradeHistoryList",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceUpgradeHistoryList",
 		reflect.TypeOf((*WorkbenchInstanceUpgradeHistoryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -894,12 +897,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceUpgradeHistoryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceUpgradeHistoryOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceUpgradeHistoryOutputReference",
 		reflect.TypeOf((*WorkbenchInstanceUpgradeHistoryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -935,7 +938,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkbenchInstanceUpgradeHistoryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -56,6 +56,10 @@ func (s *jsiiProxy_SourcerepoRepository) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_SourcerepoRepository) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SourcerepoRepository) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_SourcerepoRepository) validatePutPubsubConfigsParameters(valu
 }
 
 func (s *jsiiProxy_SourcerepoRepository) validatePutTimeoutsParameters(value *SourcerepoRepositoryTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SourcerepoRepository) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_SourcerepoRepository) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_SourcerepoRepository) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SourcerepoRepository) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

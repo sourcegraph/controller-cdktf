@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataplextaskiambinding/internal"
 )
 
 type DataplexTaskIamBindingConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type DataplexTaskIamBindingConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type DataplexTaskIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type DataplexTaskIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type DataplexTaskIamBindingConditionOutputReference interface {
 
 // The jsii proxy struct for DataplexTaskIamBindingConditionOutputReference
 type jsiiProxy_DataplexTaskIamBindingConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) TitleInput() 
 }
 
 
-func NewDataplexTaskIamBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataplexTaskIamBindingConditionOutputReference {
+func NewDataplexTaskIamBindingConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataplexTaskIamBindingConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataplexTaskIamBindingConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewDataplexTaskIamBindingConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_DataplexTaskIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataplexTaskIamBinding.DataplexTaskIamBindingConditionOutputReference",
+		"@cdktn/provider-google.dataplexTaskIamBinding.DataplexTaskIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewDataplexTaskIamBindingConditionOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewDataplexTaskIamBindingConditionOutputReference_Override(d DataplexTaskIamBindingConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataplexTaskIamBindingConditionOutputReference_Override(d DataplexTaskIamBindingConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataplexTaskIamBinding.DataplexTaskIamBindingConditionOutputReference",
+		"@cdktn/provider-google.dataplexTaskIamBinding.DataplexTaskIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_DataplexTaskIamBindingConditionOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_DataplexTaskIamBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataplexTaskIamBindingConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -489,8 +489,8 @@ func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) GetStringMapA
 	return returns
 }
 
-func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -502,16 +502,16 @@ func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) Interpolation
 	return returns
 }
 
-func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) ResetDescript
 	)
 }
 
-func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (d *jsiiProxy_DataplexTaskIamBindingConditionOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

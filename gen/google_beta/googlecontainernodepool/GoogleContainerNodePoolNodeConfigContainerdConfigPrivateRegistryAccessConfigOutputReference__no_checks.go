@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegis
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegis
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegis
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

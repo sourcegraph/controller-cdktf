@@ -12,7 +12,7 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaList) validateGetParameters
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchCollectionVectorSchemaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchCollectionVectorSchemaList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewVectorSearchCollectionVectorSchemaListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewVectorSearchCollectionVectorSchemaListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

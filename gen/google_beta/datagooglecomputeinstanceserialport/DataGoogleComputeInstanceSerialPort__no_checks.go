@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleComputeInstanceSerialPort) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleComputeInstanceSerialPort) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleComputeInstanceSerialPort_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSerialPort) validateSetInstanceParam
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceSerialPort) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceSerialPort) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

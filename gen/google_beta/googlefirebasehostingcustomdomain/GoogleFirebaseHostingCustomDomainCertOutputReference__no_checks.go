@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirebaseHostingCustomDomainCertOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingCustomDomainCertOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseHostingCustomDomainCertOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingCustomDomainCertOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseHostingCustomDomainCertOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainCertOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainCertOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainCertOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFirebaseHostingCustomDomainCertOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleFirebaseHostingCustomDomainCertOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

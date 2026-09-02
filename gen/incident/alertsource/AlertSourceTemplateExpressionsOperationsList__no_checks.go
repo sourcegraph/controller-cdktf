@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsList) validateGetPara
 	return nil
 }
 
-func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsList) validateSetWrap
 	return nil
 }
 
-func validateNewAlertSourceTemplateExpressionsOperationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlertSourceTemplateExpressionsOperationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

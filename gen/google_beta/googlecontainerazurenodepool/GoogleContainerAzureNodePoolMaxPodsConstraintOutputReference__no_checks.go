@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolMaxPodsConstraintOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerAzureNodePoolMaxPodsConstraintOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerAzureNodePoolMaxPodsConstraintOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

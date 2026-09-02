@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRe
 	return nil
 }
 
-func validateNewGoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowCxWebhookGenericWebServiceSecretVersionsForRequestHeadersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

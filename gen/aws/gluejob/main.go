@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.glueJob.GlueJob",
+		"@cdktn/provider-aws.glueJob.GlueJob",
 		reflect.TypeOf((*GlueJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxCapacity", GoGetter: "MaxCapacity"},
 			_jsii_.MemberProperty{JsiiProperty: "maxCapacityInput", GoGetter: "MaxCapacityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maxRetries", GoGetter: "MaxRetries"},
@@ -74,6 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putExecutionProperty", GoMethod: "PutExecutionProperty"},
 			_jsii_.MemberMethod{JsiiMethod: "putNotificationProperty", GoMethod: "PutNotificationProperty"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnections", GoMethod: "ResetConnections"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultArguments", GoMethod: "ResetDefaultArguments"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -111,21 +113,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workerType", GoGetter: "WorkerType"},
 			_jsii_.MemberProperty{JsiiProperty: "workerTypeInput", GoGetter: "WorkerTypeInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GlueJob{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.glueJob.GlueJobCommand",
+		"@cdktn/provider-aws.glueJob.GlueJobCommand",
 		reflect.TypeOf((*GlueJobCommand)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.glueJob.GlueJobCommandOutputReference",
+		"@cdktn/provider-aws.glueJob.GlueJobCommandOutputReference",
 		reflect.TypeOf((*GlueJobCommandOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,20 +163,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GlueJobCommandOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.glueJob.GlueJobConfig",
+		"@cdktn/provider-aws.glueJob.GlueJobConfig",
 		reflect.TypeOf((*GlueJobConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.glueJob.GlueJobExecutionProperty",
+		"@cdktn/provider-aws.glueJob.GlueJobExecutionProperty",
 		reflect.TypeOf((*GlueJobExecutionProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.glueJob.GlueJobExecutionPropertyOutputReference",
+		"@cdktn/provider-aws.glueJob.GlueJobExecutionPropertyOutputReference",
 		reflect.TypeOf((*GlueJobExecutionPropertyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -203,16 +206,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GlueJobExecutionPropertyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.glueJob.GlueJobNotificationProperty",
+		"@cdktn/provider-aws.glueJob.GlueJobNotificationProperty",
 		reflect.TypeOf((*GlueJobNotificationProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.glueJob.GlueJobNotificationPropertyOutputReference",
+		"@cdktn/provider-aws.glueJob.GlueJobNotificationPropertyOutputReference",
 		reflect.TypeOf((*GlueJobNotificationPropertyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -242,7 +245,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GlueJobNotificationPropertyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

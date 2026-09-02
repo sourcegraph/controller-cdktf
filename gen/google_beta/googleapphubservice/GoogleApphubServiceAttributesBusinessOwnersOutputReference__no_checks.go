@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApphubServiceAttributesBusinessOwnersOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApphubServiceAttributesBusinessOwnersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApphubServiceAttributesBusinessOwnersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApphubServiceAttributesBusinessOwnersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApphubServiceAttributesBusinessOwnersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleApphubServiceAttributesBusinessOwnersOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubServiceAttributesBusinessOwnersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApphubServiceAttributesBusinessOwnersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleApphubServiceAttributesBusinessOwnersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleApphubServiceAttributesBusinessOwnersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

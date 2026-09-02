@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/hypercomputeclustercluster/internal"
 )
 
 type HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -50,15 +50,15 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,9 +74,9 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutComputeInstance(value *HypercomputeclusterClusterOrchestratorSlurmNodeSetsComputeInstance)
 	PutStorageConfigs(value interface{})
 	ResetComputeId()
@@ -86,7 +86,7 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference interfac
 	ResetStorageConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference interfac
 
 // The jsii proxy struct for HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference
 type jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) ComplexObjectIndex() interface{} {
@@ -279,8 +279,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 }
 
 
-func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference {
+func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewHypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -299,7 +299,7 @@ func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference(terra
 	j := jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference",
+		"@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -307,11 +307,11 @@ func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference(terra
 	return &j
 }
 
-func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference_Override(h HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewHypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference_Override(h HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference",
+		"@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		h,
 	)
@@ -405,7 +405,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,11 +445,11 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -573,8 +573,8 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -586,16 +586,16 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := h.validateInterpolationForAttributeParameters(property); err != nil {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -664,8 +664,8 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	)
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -673,7 +673,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmNodeSetsOutputRefe
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

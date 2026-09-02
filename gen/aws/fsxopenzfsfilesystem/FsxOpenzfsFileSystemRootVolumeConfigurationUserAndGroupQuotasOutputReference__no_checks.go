@@ -40,11 +40,11 @@ func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotas
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotas
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_FsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotas
 	return nil
 }
 
-func validateNewFsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewFsxOpenzfsFileSystemRootVolumeConfigurationUserAndGroupQuotasOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

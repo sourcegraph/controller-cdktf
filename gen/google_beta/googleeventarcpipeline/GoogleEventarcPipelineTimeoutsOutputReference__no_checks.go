@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleEventarcPipelineTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEventarcPipelineTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleEventarcPipelineTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEventarcPipelineTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEventarcPipelineTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleEventarcPipelineTimeoutsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcPipelineTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEventarcPipelineTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleEventarcPipelineTimeoutsOutputReference) validateSetUpd
 	return nil
 }
 
-func validateNewGoogleEventarcPipelineTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleEventarcPipelineTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

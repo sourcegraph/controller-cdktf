@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStatusStatefulPerInstanceCon
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatusStatefulPerInstanceCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatusStatefulPerInstanceCon
 	return nil
 }
 
-func validateNewGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeInstanceGroupManagerStatusStatefulPerInstanceConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleContactCenterInsightsView) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContactCenterInsightsView) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContactCenterInsightsView) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleContactCenterInsightsView) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleContactCenterInsightsView) validatePutTimeoutsParameters(value *GoogleContactCenterInsightsViewTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContactCenterInsightsView) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsView) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsView) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsView) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

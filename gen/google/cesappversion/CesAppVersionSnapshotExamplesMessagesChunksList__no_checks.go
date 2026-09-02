@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksList) validateSetW
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotExamplesMessagesChunksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesAppVersionSnapshotExamplesMessagesChunksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

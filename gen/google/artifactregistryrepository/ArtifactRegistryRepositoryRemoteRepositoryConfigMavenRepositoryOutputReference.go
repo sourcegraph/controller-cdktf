@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/artifactregistryrepository/internal"
 )
 
 type ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomRepository(value *ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryCustomRepository)
 	ResetCustomRepository()
 	ResetPublicRepository()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputRefere
 
 // The jsii proxy struct for ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference
 type jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenReposito
 	return returns
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenReposito
 }
 
 
-func NewArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference {
+func NewArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputRef
 	j := jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
+		"@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputRef
 	return &j
 }
 
-func NewArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference_Override(a ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference_Override(a ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
+		"@cdktn/provider-google.artifactRegistryRepository.ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenReposito
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenReposito
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -445,8 +445,8 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenReposito
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -458,16 +458,16 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenReposito
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenReposito
 	)
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenRepositoryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryRemoteRepositoryConfigMavenReposito
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

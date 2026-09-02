@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesEndpointPolicyEndpointMatcherOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesEndpointPolicyEndpointMatcherOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkServicesEndpointPolicyEndpointMatcherOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

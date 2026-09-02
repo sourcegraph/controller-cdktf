@@ -56,6 +56,10 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (e *jsiiProxy_Ec2ClientVpnEndpoint) validatePutClientLoginBannerOptionsPara
 }
 
 func (e *jsiiProxy_Ec2ClientVpnEndpoint) validatePutConnectionLogOptionsParameters(value *Ec2ClientVpnEndpointConnectionLogOptions) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2ClientVpnEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Ec2ClientVpnEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

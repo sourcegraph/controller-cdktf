@@ -40,11 +40,11 @@ func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DnsPolicyDns64ConfigScopeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDnsPolicyDns64ConfigScopeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDnsPolicyDns64ConfigScopeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

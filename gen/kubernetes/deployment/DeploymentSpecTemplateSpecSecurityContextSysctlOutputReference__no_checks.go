@@ -40,11 +40,11 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecSecurityContextSysctlOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecSecurityContextSysctlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecSecurityContextSysctlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecSecurityContextSysctlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecSecurityContextSysctlOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecSecurityContextSysctlOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecSecurityContextSysctlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecSecurityContextSysctlOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecSecurityContextSysctlOutputReferenc
 	return nil
 }
 
-func validateNewDeploymentSpecTemplateSpecSecurityContextSysctlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDeploymentSpecTemplateSpecSecurityContextSysctlOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

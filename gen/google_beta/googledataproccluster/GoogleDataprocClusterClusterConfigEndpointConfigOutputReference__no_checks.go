@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigEndpointConfigOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigEndpointConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigEndpointConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigEndpointConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigEndpointConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigEndpointConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigEndpointConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigEndpointConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataprocClusterClusterConfigEndpointConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataprocClusterClusterConfigEndpointConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

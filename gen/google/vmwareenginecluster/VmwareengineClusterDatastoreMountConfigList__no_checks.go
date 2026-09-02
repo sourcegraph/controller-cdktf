@@ -12,7 +12,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) validateGetParam
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigList) validateSetWraps
 	return nil
 }
 
-func validateNewVmwareengineClusterDatastoreMountConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewVmwareengineClusterDatastoreMountConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

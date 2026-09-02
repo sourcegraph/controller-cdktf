@@ -12,7 +12,7 @@ func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceList) validateGetParameters(index 
 	return nil
 }
 
-func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewAmiCopyEphemeralBlockDeviceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAmiCopyEphemeralBlockDeviceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

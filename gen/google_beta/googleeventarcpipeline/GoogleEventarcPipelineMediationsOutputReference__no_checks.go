@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validatePutT
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEventarcPipelineMediationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleEventarcPipelineMediationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleEventarcPipelineMediationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

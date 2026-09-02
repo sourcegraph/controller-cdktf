@@ -40,11 +40,11 @@ func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) 
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PolicyRuleProfileEnrollmentProfileAttributesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPolicyRuleProfileEnrollmentProfileAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPolicyRuleProfileEnrollmentProfileAttributesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

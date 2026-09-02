@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) validatePutTimeoutsParameters(value 
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsEbsDefaultKmsKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsEbsDefaultKmsKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsEbsDefaultKmsKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

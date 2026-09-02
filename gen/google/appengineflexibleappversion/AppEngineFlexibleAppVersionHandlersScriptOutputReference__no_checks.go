@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersScriptOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersScriptOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersScriptOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersScriptOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineFlexibleAppVersionHandlersScriptOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersScriptOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersScriptOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppEngineFlexibleAppVersionHandlersScriptOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppEngineFlexibleAppVersionHandlersScriptOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppEngineFlexibleAppVersionHandlersScriptOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

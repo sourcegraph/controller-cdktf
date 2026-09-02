@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainercluster/internal"
 )
 
 type GoogleContainerClusterUserManagedKeysConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AggregationCa() *string
 	SetAggregationCa(val *string)
 	AggregationCaInput() *string
@@ -59,15 +59,15 @@ type GoogleContainerClusterUserManagedKeysConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -83,9 +83,9 @@ type GoogleContainerClusterUserManagedKeysConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAggregationCa()
 	ResetClusterCa()
 	ResetControlPlaneDiskEncryptionKey()
@@ -96,7 +96,7 @@ type GoogleContainerClusterUserManagedKeysConfigOutputReference interface {
 	ResetServiceAccountVerificationKeys()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -106,7 +106,7 @@ type GoogleContainerClusterUserManagedKeysConfigOutputReference interface {
 
 // The jsii proxy struct for GoogleContainerClusterUserManagedKeysConfigOutputReference
 type jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) AggregationCa() *string {
@@ -339,8 +339,8 @@ func (j *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -350,7 +350,7 @@ func (j *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) T
 }
 
 
-func NewGoogleContainerClusterUserManagedKeysConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterUserManagedKeysConfigOutputReference {
+func NewGoogleContainerClusterUserManagedKeysConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterUserManagedKeysConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleContainerClusterUserManagedKeysConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -359,7 +359,7 @@ func NewGoogleContainerClusterUserManagedKeysConfigOutputReference(terraformReso
 	j := jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterUserManagedKeysConfigOutputReference",
+		"@cdktn/provider-google-beta.googleContainerCluster.GoogleContainerClusterUserManagedKeysConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -367,11 +367,11 @@ func NewGoogleContainerClusterUserManagedKeysConfigOutputReference(terraformReso
 	return &j
 }
 
-func NewGoogleContainerClusterUserManagedKeysConfigOutputReference_Override(g GoogleContainerClusterUserManagedKeysConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleContainerClusterUserManagedKeysConfigOutputReference_Override(g GoogleContainerClusterUserManagedKeysConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterUserManagedKeysConfigOutputReference",
+		"@cdktn/provider-google-beta.googleContainerCluster.GoogleContainerClusterUserManagedKeysConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -509,7 +509,7 @@ func (j *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -549,11 +549,11 @@ func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -677,8 +677,8 @@ func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -690,16 +690,16 @@ func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) I
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -770,8 +770,8 @@ func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) R
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -779,7 +779,7 @@ func (g *jsiiProxy_GoogleContainerClusterUserManagedKeysConfigOutputReference) R
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

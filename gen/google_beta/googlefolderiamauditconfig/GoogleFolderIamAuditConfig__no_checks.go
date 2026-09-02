@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFolderIamAuditConfig) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFolderIamAuditConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFolderIamAuditConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleFolderIamAuditConfig) validateOverrideLogicalIdParamete
 }
 
 func (g *jsiiProxy_GoogleFolderIamAuditConfig) validatePutAuditLogConfigParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFolderIamAuditConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleFolderIamAuditConfig) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderIamAuditConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFolderIamAuditConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

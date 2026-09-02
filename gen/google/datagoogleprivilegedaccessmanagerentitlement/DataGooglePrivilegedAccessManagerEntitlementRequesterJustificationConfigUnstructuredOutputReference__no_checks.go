@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementRequesterJustific
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementRequesterJustific
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGooglePrivilegedAccessManagerEntitlementRequesterJustificationConfigUnstructuredOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

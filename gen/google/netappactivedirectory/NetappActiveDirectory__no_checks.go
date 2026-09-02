@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetappActiveDirectory) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (n *jsiiProxy_NetappActiveDirectory) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappActiveDirectory) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetappActiveDirectory) validateOverrideLogicalIdParameters(ne
 }
 
 func (n *jsiiProxy_NetappActiveDirectory) validatePutTimeoutsParameters(value *NetappActiveDirectoryTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappActiveDirectory) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_NetappActiveDirectory) validateSetLdapSigningParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_NetappActiveDirectory) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetappActiveDirectory) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

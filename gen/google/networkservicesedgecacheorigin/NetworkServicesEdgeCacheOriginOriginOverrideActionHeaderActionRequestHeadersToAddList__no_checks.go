@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActio
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActio
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActio
 	return nil
 }
 
-func validateNewNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderActionRequestHeadersToAddListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

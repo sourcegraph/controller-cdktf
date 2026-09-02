@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkconnectivitymulticlouddatatransferconfig/internal"
 )
 
 type NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference inte
 
 // The jsii proxy struct for NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference
 type jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference) ComplexObjectIndex() interface{} {
@@ -170,8 +170,8 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutput
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -181,7 +181,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutput
 }
 
 
-func NewNetworkConnectivityMulticloudDataTransferConfigServicesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference {
+func NewNetworkConnectivityMulticloudDataTransferConfigServicesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkConnectivityMulticloudDataTransferConfigServicesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -190,7 +190,7 @@ func NewNetworkConnectivityMulticloudDataTransferConfigServicesOutputReference(t
 	j := jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference",
+		"@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -198,11 +198,11 @@ func NewNetworkConnectivityMulticloudDataTransferConfigServicesOutputReference(t
 	return &j
 }
 
-func NewNetworkConnectivityMulticloudDataTransferConfigServicesOutputReference_Override(n NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewNetworkConnectivityMulticloudDataTransferConfigServicesOutputReference_Override(n NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference",
+		"@cdktn/provider-google.networkConnectivityMulticloudDataTransferConfig.NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
@@ -263,7 +263,7 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutput
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,11 +303,11 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutput
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -431,8 +431,8 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutput
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -444,24 +444,24 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutput
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -469,7 +469,7 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesOutput
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

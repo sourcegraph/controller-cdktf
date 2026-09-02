@@ -40,7 +40,7 @@ func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validatePut
 	return nil
 }
 
-func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GameliftFleetRuntimeConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGameliftFleetRuntimeConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGameliftFleetRuntimeConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

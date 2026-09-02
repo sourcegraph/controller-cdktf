@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetworkServicesAgentGateway) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesAgentGateway) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesAgentGateway) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GoogleNetworkServicesAgentGateway) validatePutSelfManagedPara
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesAgentGateway) validatePutTimeoutsParameters(value *GoogleNetworkServicesAgentGatewayTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesAgentGateway) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleNetworkServicesAgentGateway) validateSetLabelsParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesAgentGateway) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetworkServicesAgentGateway) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

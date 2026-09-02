@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyDenyOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyDenyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyDenyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyDenyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyDenyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyDenyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyDenyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleProjectOrganizationPolicyListPolicyDenyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleProjectOrganizationPolicyListPolicyDenyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleProjectOrganizationPolicyListPolicyDenyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

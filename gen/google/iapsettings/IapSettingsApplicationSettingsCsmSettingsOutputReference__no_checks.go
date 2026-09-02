@@ -40,11 +40,11 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference) val
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IapSettingsApplicationSettingsCsmSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIapSettingsApplicationSettingsCsmSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIapSettingsApplicationSettingsCsmSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

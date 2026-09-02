@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputesecuritypolicy/internal"
 )
 
 type GoogleComputeSecurityPolicyRuleHeaderActionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type GoogleComputeSecurityPolicyRuleHeaderActionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,13 +60,13 @@ type GoogleComputeSecurityPolicyRuleHeaderActionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutRequestHeadersToAdds(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type GoogleComputeSecurityPolicyRuleHeaderActionOutputReference interface {
 
 // The jsii proxy struct for GoogleComputeSecurityPolicyRuleHeaderActionOutputReference
 type jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) T
 }
 
 
-func NewGoogleComputeSecurityPolicyRuleHeaderActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRuleHeaderActionOutputReference {
+func NewGoogleComputeSecurityPolicyRuleHeaderActionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeSecurityPolicyRuleHeaderActionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeSecurityPolicyRuleHeaderActionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewGoogleComputeSecurityPolicyRuleHeaderActionOutputReference(terraformReso
 	j := jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionOutputReference",
+		"@cdktn/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewGoogleComputeSecurityPolicyRuleHeaderActionOutputReference(terraformReso
 	return &j
 }
 
-func NewGoogleComputeSecurityPolicyRuleHeaderActionOutputReference_Override(g GoogleComputeSecurityPolicyRuleHeaderActionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeSecurityPolicyRuleHeaderActionOutputReference_Override(g GoogleComputeSecurityPolicyRuleHeaderActionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionOutputReference",
+		"@cdktn/provider-google-beta.googleComputeSecurityPolicy.GoogleComputeSecurityPolicyRuleHeaderActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,11 +281,11 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -409,8 +409,8 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -422,16 +422,16 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) I
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -449,8 +449,8 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) P
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleHeaderActionOutputReference) R
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

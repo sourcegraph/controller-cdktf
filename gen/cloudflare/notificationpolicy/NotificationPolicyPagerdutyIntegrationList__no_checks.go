@@ -12,7 +12,7 @@ func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) validateGetParame
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NotificationPolicyPagerdutyIntegrationList) validateSetWrapsS
 	return nil
 }
 
-func validateNewNotificationPolicyPagerdutyIntegrationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNotificationPolicyPagerdutyIntegrationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolKubeletConfigOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAwsNodePoolKubeletConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerAwsNodePoolKubeletConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAwsNodePoolKubeletConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAwsNodePoolKubeletConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolKubeletConfigOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolKubeletConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolKubeletConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerAwsNodePoolKubeletConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerAwsNodePoolKubeletConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

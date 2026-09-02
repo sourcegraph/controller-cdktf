@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeReservationShareSettingsProjectMapOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeReservationShareSettingsProjectMapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeReservationShareSettingsProjectMapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeReservationShareSettingsProjectMapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeReservationShareSettingsProjectMapOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeReservationShareSettingsProjectMapOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservationShareSettingsProjectMapOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeReservationShareSettingsProjectMapOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeReservationShareSettingsProjectMapOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeReservationShareSettingsProjectMapOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

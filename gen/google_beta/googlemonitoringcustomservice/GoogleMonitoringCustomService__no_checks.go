@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleMonitoringCustomService) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringCustomService) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringCustomService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleMonitoringCustomService) validatePutTelemetryParameters
 }
 
 func (g *jsiiProxy_GoogleMonitoringCustomService) validatePutTimeoutsParameters(value *GoogleMonitoringCustomServiceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringCustomService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleMonitoringCustomService) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringCustomService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleMonitoringCustomService) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

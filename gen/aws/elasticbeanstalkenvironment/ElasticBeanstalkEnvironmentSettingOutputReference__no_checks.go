@@ -40,11 +40,11 @@ func (e *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironmentSettingOutputReference) validateSe
 	return nil
 }
 
-func validateNewElasticBeanstalkEnvironmentSettingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewElasticBeanstalkEnvironmentSettingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

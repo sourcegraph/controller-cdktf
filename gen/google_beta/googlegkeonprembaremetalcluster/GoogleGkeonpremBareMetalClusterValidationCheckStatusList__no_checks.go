@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterValidationCheckStatusList) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterValidationCheckStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterValidationCheckStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterValidationCheckStatusList) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterValidationCheckStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterValidationCheckStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterValidationCheckStatusList) val
 	return nil
 }
 
-func validateNewGoogleGkeonpremBareMetalClusterValidationCheckStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleGkeonpremBareMetalClusterValidationCheckStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

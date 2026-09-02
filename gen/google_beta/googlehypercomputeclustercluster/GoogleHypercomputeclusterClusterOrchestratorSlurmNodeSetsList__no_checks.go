@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterOrchestratorSlurmNodeSetsList
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterOrchestratorSlurmNodeSetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterOrchestratorSlurmNodeSetsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterOrchestratorSlurmNodeSetsList
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHypercomputeclusterClusterOrchestratorSlurmNodeSetsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHypercomputeclusterClusterOrchestratorSlurmNodeSetsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterOrchestratorSlurmNodeSetsList
 	return nil
 }
 
-func validateNewGoogleHypercomputeclusterClusterOrchestratorSlurmNodeSetsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleHypercomputeclusterClusterOrchestratorSlurmNodeSetsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

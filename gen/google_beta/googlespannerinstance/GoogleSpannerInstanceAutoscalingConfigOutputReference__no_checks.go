@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSpannerInstanceAutoscalingConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSpannerInstanceAutoscalingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSpannerInstanceAutoscalingConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

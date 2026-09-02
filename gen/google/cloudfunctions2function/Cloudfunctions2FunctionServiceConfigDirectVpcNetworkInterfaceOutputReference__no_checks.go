@@ -40,11 +40,11 @@ func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterface
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudfunctions2FunctionServiceConfigDirectVpcNetworkInterfaceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

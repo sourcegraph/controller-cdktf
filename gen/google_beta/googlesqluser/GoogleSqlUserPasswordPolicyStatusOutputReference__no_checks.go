@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSqlUserPasswordPolicyStatusOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlUserPasswordPolicyStatusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSqlUserPasswordPolicyStatusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlUserPasswordPolicyStatusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSqlUserPasswordPolicyStatusOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleSqlUserPasswordPolicyStatusOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlUserPasswordPolicyStatusOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSqlUserPasswordPolicyStatusOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSqlUserPasswordPolicyStatusOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleSqlUserPasswordPolicyStatusOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway",
+		"@cdktn/provider-aws.dataAwsInternetGateway.DataAwsInternetGateway",
 		reflect.TypeOf((*DataAwsInternetGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInternetGatewayId", GoMethod: "ResetInternetGatewayId"},
@@ -64,19 +65,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsInternetGateway{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachments",
+		"@cdktn/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachments",
 		reflect.TypeOf((*DataAwsInternetGatewayAttachments)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsList",
+		"@cdktn/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsList",
 		reflect.TypeOf((*DataAwsInternetGatewayAttachmentsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -92,12 +94,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsInternetGatewayAttachmentsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsOutputReference",
+		"@cdktn/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayAttachmentsOutputReference",
 		reflect.TypeOf((*DataAwsInternetGatewayAttachmentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,20 +128,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsInternetGatewayAttachmentsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayConfig",
+		"@cdktn/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayConfig",
 		reflect.TypeOf((*DataAwsInternetGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayFilter",
+		"@cdktn/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayFilter",
 		reflect.TypeOf((*DataAwsInternetGatewayFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayFilterList",
+		"@cdktn/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayFilterList",
 		reflect.TypeOf((*DataAwsInternetGatewayFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -156,12 +158,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsInternetGatewayFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayFilterOutputReference",
+		"@cdktn/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayFilterOutputReference",
 		reflect.TypeOf((*DataAwsInternetGatewayFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -192,16 +194,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsInternetGatewayFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayTimeouts",
+		"@cdktn/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayTimeouts",
 		reflect.TypeOf((*DataAwsInternetGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayTimeoutsOutputReference",
+		"@cdktn/provider-aws.dataAwsInternetGateway.DataAwsInternetGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsInternetGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -231,7 +233,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsInternetGatewayTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

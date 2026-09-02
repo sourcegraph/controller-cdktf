@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataKubernetesPodV1SpecVolumeDownwardApiItemsFieldRefOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

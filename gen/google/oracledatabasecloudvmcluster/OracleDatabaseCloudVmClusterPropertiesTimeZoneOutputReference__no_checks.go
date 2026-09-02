@@ -40,11 +40,11 @@ func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_OracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReference
 	return nil
 }
 
-func validateNewOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOracleDatabaseCloudVmClusterPropertiesTimeZoneOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

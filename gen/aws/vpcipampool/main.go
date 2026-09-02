@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPool",
+		"@cdktn/provider-aws.vpcIpamPool.VpcIpamPool",
 		reflect.TypeOf((*VpcIpamPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "locale", GoGetter: "Locale"},
 			_jsii_.MemberProperty{JsiiProperty: "localeInput", GoGetter: "LocaleInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -72,6 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publiclyAdvertisableInput", GoGetter: "PubliclyAdvertisableInput"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllocationDefaultNetmaskLength", GoMethod: "ResetAllocationDefaultNetmaskLength"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllocationMaxNetmaskLength", GoMethod: "ResetAllocationMaxNetmaskLength"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllocationMinNetmaskLength", GoMethod: "ResetAllocationMinNetmaskLength"},
@@ -106,23 +108,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_VpcIpamPool{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPoolConfig",
+		"@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolConfig",
 		reflect.TypeOf((*VpcIpamPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts",
+		"@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeouts",
 		reflect.TypeOf((*VpcIpamPoolTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.vpcIpamPool.VpcIpamPoolTimeoutsOutputReference",
+		"@cdktn/provider-aws.vpcIpamPool.VpcIpamPoolTimeoutsOutputReference",
 		reflect.TypeOf((*VpcIpamPoolTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,7 +161,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VpcIpamPoolTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

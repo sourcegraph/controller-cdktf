@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeresourcepolicy/internal"
 )
 
 type ComputeResourcePolicyInstanceSchedulePolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type ComputeResourcePolicyInstanceSchedulePolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeZone() *string
 	SetTimeZone(val *string)
 	TimeZoneInput() *string
@@ -55,7 +55,7 @@ type ComputeResourcePolicyInstanceSchedulePolicyOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,9 +71,9 @@ type ComputeResourcePolicyInstanceSchedulePolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutVmStartSchedule(value *ComputeResourcePolicyInstanceSchedulePolicyVmStartSchedule)
 	PutVmStopSchedule(value *ComputeResourcePolicyInstanceSchedulePolicyVmStopSchedule)
 	ResetExpirationTime()
@@ -82,7 +82,7 @@ type ComputeResourcePolicyInstanceSchedulePolicyOutputReference interface {
 	ResetVmStopSchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type ComputeResourcePolicyInstanceSchedulePolicyOutputReference interface {
 
 // The jsii proxy struct for ComputeResourcePolicyInstanceSchedulePolicyOutputReference
 type jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) ComplexObjectIndex() interface{} {
@@ -195,8 +195,8 @@ func (j *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) V
 }
 
 
-func NewComputeResourcePolicyInstanceSchedulePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeResourcePolicyInstanceSchedulePolicyOutputReference {
+func NewComputeResourcePolicyInstanceSchedulePolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeResourcePolicyInstanceSchedulePolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeResourcePolicyInstanceSchedulePolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -275,7 +275,7 @@ func NewComputeResourcePolicyInstanceSchedulePolicyOutputReference(terraformReso
 	j := jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyOutputReference",
+		"@cdktn/provider-google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewComputeResourcePolicyInstanceSchedulePolicyOutputReference(terraformReso
 	return &j
 }
 
-func NewComputeResourcePolicyInstanceSchedulePolicyOutputReference_Override(c ComputeResourcePolicyInstanceSchedulePolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeResourcePolicyInstanceSchedulePolicyOutputReference_Override(c ComputeResourcePolicyInstanceSchedulePolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyOutputReference",
+		"@cdktn/provider-google.computeResourcePolicy.ComputeResourcePolicyInstanceSchedulePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -359,7 +359,7 @@ func (j *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,11 +410,11 @@ func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -538,8 +538,8 @@ func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -551,16 +551,16 @@ func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) I
 	return returns
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -621,8 +621,8 @@ func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -630,7 +630,7 @@ func (c *jsiiProxy_ComputeResourcePolicyInstanceSchedulePolicyOutputReference) R
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeInstantSnapshot) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstantSnapshot) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstantSnapshot) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_ComputeInstantSnapshot) validatePutParamsParameters(value *Co
 }
 
 func (c *jsiiProxy_ComputeInstantSnapshot) validatePutTimeoutsParameters(value *ComputeInstantSnapshotTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstantSnapshot) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_ComputeInstantSnapshot) validateSetLabelsParameters(val *map[
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstantSnapshot) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeInstantSnapshot) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

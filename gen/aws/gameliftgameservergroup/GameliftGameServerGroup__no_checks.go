@@ -56,6 +56,10 @@ func (g *jsiiProxy_GameliftGameServerGroup) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GameliftGameServerGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GameliftGameServerGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GameliftGameServerGroup) validatePutLaunchTemplateParameters(
 }
 
 func (g *jsiiProxy_GameliftGameServerGroup) validatePutTimeoutsParameters(value *GameliftGameServerGroupTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GameliftGameServerGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GameliftGameServerGroup) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GameliftGameServerGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GameliftGameServerGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

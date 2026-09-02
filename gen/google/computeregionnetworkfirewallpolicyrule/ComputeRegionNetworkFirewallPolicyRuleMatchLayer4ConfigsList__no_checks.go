@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList)
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsList)
 	return nil
 }
 
-func validateNewComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRegionNetworkFirewallPolicyRuleMatchLayer4ConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

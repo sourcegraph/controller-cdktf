@@ -40,11 +40,11 @@ func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateG
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_KeyspacesTableCapacitySpecificationOutputReference) validateS
 	return nil
 }
 
-func validateNewKeyspacesTableCapacitySpecificationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKeyspacesTableCapacitySpecificationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

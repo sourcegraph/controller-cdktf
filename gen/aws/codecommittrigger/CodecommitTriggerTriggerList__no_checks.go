@@ -12,7 +12,7 @@ func (c *jsiiProxy_CodecommitTriggerTriggerList) validateGetParameters(index *fl
 	return nil
 }
 
-func (c *jsiiProxy_CodecommitTriggerTriggerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodecommitTriggerTriggerList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CodecommitTriggerTriggerList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_CodecommitTriggerTriggerList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodecommitTriggerTriggerList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CodecommitTriggerTriggerList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewCodecommitTriggerTriggerListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCodecommitTriggerTriggerListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

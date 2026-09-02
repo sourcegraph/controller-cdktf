@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/comprehenddocumentclassifier/internal"
 )
 
 type ComprehendDocumentClassifierInputDataConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AugmentedManifests() ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList
 	AugmentedManifestsInput() interface{}
 	// the index of the complex object in a list.
@@ -45,9 +45,9 @@ type ComprehendDocumentClassifierInputDataConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TestS3Uri() *string
 	SetTestS3Uri(val *string)
 	TestS3UriInput() *string
@@ -56,7 +56,7 @@ type ComprehendDocumentClassifierInputDataConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type ComprehendDocumentClassifierInputDataConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAugmentedManifests(value interface{})
 	ResetAugmentedManifests()
 	ResetDataFormat()
@@ -83,7 +83,7 @@ type ComprehendDocumentClassifierInputDataConfigOutputReference interface {
 	ResetTestS3Uri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type ComprehendDocumentClassifierInputDataConfigOutputReference interface {
 
 // The jsii proxy struct for ComprehendDocumentClassifierInputDataConfigOutputReference
 type jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) AugmentedManifests() ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList {
@@ -236,8 +236,8 @@ func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) T
 }
 
 
-func NewComprehendDocumentClassifierInputDataConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComprehendDocumentClassifierInputDataConfigOutputReference {
+func NewComprehendDocumentClassifierInputDataConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComprehendDocumentClassifierInputDataConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComprehendDocumentClassifierInputDataConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewComprehendDocumentClassifierInputDataConfigOutputReference(terraformReso
 	j := jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigOutputReference",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewComprehendDocumentClassifierInputDataConfigOutputReference(terraformReso
 	return &j
 }
 
-func NewComprehendDocumentClassifierInputDataConfigOutputReference_Override(c ComprehendDocumentClassifierInputDataConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComprehendDocumentClassifierInputDataConfigOutputReference_Override(c ComprehendDocumentClassifierInputDataConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigOutputReference",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -371,7 +371,7 @@ func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,11 +422,11 @@ func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -550,8 +550,8 @@ func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -563,16 +563,16 @@ func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) I
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (c *jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference) R
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

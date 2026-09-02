@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSpannerSourceConfigExcludeO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSpannerSourceConfigExcludeO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSpannerSourceConfigExcludeO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDatastreamStreamSourceConfigSpannerSourceConfigExcludeObjectsSchemasTablesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

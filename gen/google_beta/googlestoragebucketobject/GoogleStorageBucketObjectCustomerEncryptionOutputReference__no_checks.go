@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleStorageBucketObjectCustomerEncryptionOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketObjectCustomerEncryptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageBucketObjectCustomerEncryptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketObjectCustomerEncryptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageBucketObjectCustomerEncryptionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleStorageBucketObjectCustomerEncryptionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketObjectCustomerEncryptionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageBucketObjectCustomerEncryptionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleStorageBucketObjectCustomerEncryptionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleStorageBucketObjectCustomerEncryptionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

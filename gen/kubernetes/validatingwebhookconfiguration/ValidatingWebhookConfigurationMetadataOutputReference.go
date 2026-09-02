@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/validatingwebhookconfiguration/internal"
 )
 
 type ValidatingWebhookConfigurationMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -48,16 +48,16 @@ type ValidatingWebhookConfigurationMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type ValidatingWebhookConfigurationMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetGenerateName()
 	ResetLabels()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type ValidatingWebhookConfigurationMetadataOutputReference interface {
 
 // The jsii proxy struct for ValidatingWebhookConfigurationMetadataOutputReference
 type jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) Annotations() *map[string]*string {
@@ -255,8 +255,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -276,7 +276,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) Uid() 
 }
 
 
-func NewValidatingWebhookConfigurationMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ValidatingWebhookConfigurationMetadataOutputReference {
+func NewValidatingWebhookConfigurationMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ValidatingWebhookConfigurationMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewValidatingWebhookConfigurationMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -285,7 +285,7 @@ func NewValidatingWebhookConfigurationMetadataOutputReference(terraformResource 
 	j := jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationMetadataOutputReference",
+		"@cdktn/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -293,11 +293,11 @@ func NewValidatingWebhookConfigurationMetadataOutputReference(terraformResource 
 	return &j
 }
 
-func NewValidatingWebhookConfigurationMetadataOutputReference_Override(v ValidatingWebhookConfigurationMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewValidatingWebhookConfigurationMetadataOutputReference_Override(v ValidatingWebhookConfigurationMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationMetadataOutputReference",
+		"@cdktn/provider-kubernetes.validatingWebhookConfiguration.ValidatingWebhookConfigurationMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,11 +431,11 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) GetAny
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -559,8 +559,8 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) GetStr
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -572,16 +572,16 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) Interp
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -620,8 +620,8 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) ResetN
 	)
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -629,7 +629,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationMetadataOutputReference) Resolv
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

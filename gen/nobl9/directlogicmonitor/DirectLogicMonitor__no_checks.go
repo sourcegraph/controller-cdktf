@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectLogicMonitor) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DirectLogicMonitor) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectLogicMonitor) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DirectLogicMonitor) validatePutHistoricalDataRetrievalParamet
 }
 
 func (d *jsiiProxy_DirectLogicMonitor) validatePutQueryDelayParameters(value *DirectLogicMonitorQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectLogicMonitor) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_DirectLogicMonitor) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DirectLogicMonitor) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectLogicMonitor) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

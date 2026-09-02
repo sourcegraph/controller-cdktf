@@ -56,6 +56,10 @@ func (p *jsiiProxy_Pod) validateInterpolationForAttributeParameters(terraformAtt
 	return nil
 }
 
+func (p *jsiiProxy_Pod) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_Pod) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (p *jsiiProxy_Pod) validatePutSpecParameters(value *PodSpec) error {
 }
 
 func (p *jsiiProxy_Pod) validatePutTimeoutsParameters(value *PodTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_Pod) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_Pod) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Pod) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Pod) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

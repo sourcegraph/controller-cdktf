@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainernodepool/internal"
 )
 
 type GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ThreadsPerCore() *float64
 	SetThreadsPerCore(val *float64)
 	ThreadsPerCoreInput() *float64
@@ -51,7 +51,7 @@ type GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference int
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnableNestedVirtualization()
 	ResetPerformanceMonitoringUnit()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference int
 
 // The jsii proxy struct for GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference
 type jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 }
 
 
-func NewGoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference {
+func NewGoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewGoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference(
 	j := jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
+		"@cdktn/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewGoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference(
 	return &j
 }
 
-func NewGoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference_Override(g GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference_Override(g GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
+		"@cdktn/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -311,7 +311,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -490,8 +490,8 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -503,16 +503,16 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigAdvancedMachineFeaturesOutpu
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

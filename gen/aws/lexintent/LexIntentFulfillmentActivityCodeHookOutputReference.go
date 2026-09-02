@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/lexintent/internal"
 )
 
 type LexIntentFulfillmentActivityCodeHookOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type LexIntentFulfillmentActivityCodeHookOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uri() *string
 	SetUri(val *string)
 	UriInput() *string
@@ -48,7 +48,7 @@ type LexIntentFulfillmentActivityCodeHookOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type LexIntentFulfillmentActivityCodeHookOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type LexIntentFulfillmentActivityCodeHookOutputReference interface {
 
 // The jsii proxy struct for LexIntentFulfillmentActivityCodeHookOutputReference
 type jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) UriInput
 }
 
 
-func NewLexIntentFulfillmentActivityCodeHookOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LexIntentFulfillmentActivityCodeHookOutputReference {
+func NewLexIntentFulfillmentActivityCodeHookOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LexIntentFulfillmentActivityCodeHookOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLexIntentFulfillmentActivityCodeHookOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewLexIntentFulfillmentActivityCodeHookOutputReference(terraformResource cd
 	j := jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
+		"@cdktn/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewLexIntentFulfillmentActivityCodeHookOutputReference(terraformResource cd
 	return &j
 }
 
-func NewLexIntentFulfillmentActivityCodeHookOutputReference_Override(l LexIntentFulfillmentActivityCodeHookOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLexIntentFulfillmentActivityCodeHookOutputReference_Override(l LexIntentFulfillmentActivityCodeHookOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
+		"@cdktn/provider-aws.lexIntent.LexIntentFulfillmentActivityCodeHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetAnyMa
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -454,8 +454,8 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) GetStrin
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -467,24 +467,24 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) Interpol
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (l *jsiiProxy_LexIntentFulfillmentActivityCodeHookOutputReference) Resolve(
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

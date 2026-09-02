@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScript",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScript",
 		reflect.TypeOf((*WorkerScript)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kvNamespaceBinding", GoGetter: "KvNamespaceBinding"},
 			_jsii_.MemberProperty{JsiiProperty: "kvNamespaceBindingInput", GoGetter: "KvNamespaceBindingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "module", GoGetter: "Module"},
 			_jsii_.MemberProperty{JsiiProperty: "moduleInput", GoGetter: "ModuleInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -74,6 +75,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "r2BucketBinding", GoGetter: "R2BucketBinding"},
 			_jsii_.MemberProperty{JsiiProperty: "r2BucketBindingInput", GoGetter: "R2BucketBindingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnalyticsEngineBinding", GoMethod: "ResetAnalyticsEngineBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompatibilityDate", GoMethod: "ResetCompatibilityDate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompatibilityFlags", GoMethod: "ResetCompatibilityFlags"},
@@ -102,19 +104,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "webassemblyBinding", GoGetter: "WebassemblyBinding"},
 			_jsii_.MemberProperty{JsiiProperty: "webassemblyBindingInput", GoGetter: "WebassemblyBindingInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScript{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBinding",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBinding",
 		reflect.TypeOf((*WorkerScriptAnalyticsEngineBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingList",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingList",
 		reflect.TypeOf((*WorkerScriptAnalyticsEngineBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -131,12 +134,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptAnalyticsEngineBindingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingOutputReference",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptAnalyticsEngineBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -167,20 +170,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptConfig",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptConfig",
 		reflect.TypeOf((*WorkerScriptConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBinding",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBinding",
 		reflect.TypeOf((*WorkerScriptKvNamespaceBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingList",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingList",
 		reflect.TypeOf((*WorkerScriptKvNamespaceBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -197,12 +200,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptKvNamespaceBindingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingOutputReference",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptKvNamespaceBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptKvNamespaceBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -233,16 +236,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptKvNamespaceBindingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBinding",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptPlainTextBinding",
 		reflect.TypeOf((*WorkerScriptPlainTextBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingList",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingList",
 		reflect.TypeOf((*WorkerScriptPlainTextBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -259,12 +262,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptPlainTextBindingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingOutputReference",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptPlainTextBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptPlainTextBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,16 +298,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptPlainTextBindingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBinding",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptQueueBinding",
 		reflect.TypeOf((*WorkerScriptQueueBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBindingList",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptQueueBindingList",
 		reflect.TypeOf((*WorkerScriptQueueBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -321,12 +324,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptQueueBindingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptQueueBindingOutputReference",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptQueueBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptQueueBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "binding", GoGetter: "Binding"},
@@ -357,16 +360,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptQueueBindingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBinding",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptR2BucketBinding",
 		reflect.TypeOf((*WorkerScriptR2BucketBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBindingList",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptR2BucketBindingList",
 		reflect.TypeOf((*WorkerScriptR2BucketBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -383,12 +386,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptR2BucketBindingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptR2BucketBindingOutputReference",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptR2BucketBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptR2BucketBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -419,16 +422,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptR2BucketBindingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBinding",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptSecretTextBinding",
 		reflect.TypeOf((*WorkerScriptSecretTextBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingList",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingList",
 		reflect.TypeOf((*WorkerScriptSecretTextBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -445,12 +448,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptSecretTextBindingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingOutputReference",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptSecretTextBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -481,16 +484,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptSecretTextBindingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBinding",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptServiceBinding",
 		reflect.TypeOf((*WorkerScriptServiceBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBindingList",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptServiceBindingList",
 		reflect.TypeOf((*WorkerScriptServiceBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -507,12 +510,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptServiceBindingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptServiceBindingOutputReference",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptServiceBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptServiceBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -546,16 +549,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptServiceBindingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBinding",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptWebassemblyBinding",
 		reflect.TypeOf((*WorkerScriptWebassemblyBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBindingList",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptWebassemblyBindingList",
 		reflect.TypeOf((*WorkerScriptWebassemblyBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -572,12 +575,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptWebassemblyBindingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptWebassemblyBindingOutputReference",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptWebassemblyBindingOutputReference",
 		reflect.TypeOf((*WorkerScriptWebassemblyBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -608,7 +611,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkerScriptWebassemblyBindingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

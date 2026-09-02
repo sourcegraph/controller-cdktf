@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOut
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOut
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataCloudflareRulesetsRulesetsRulesActionParametersUriPathOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

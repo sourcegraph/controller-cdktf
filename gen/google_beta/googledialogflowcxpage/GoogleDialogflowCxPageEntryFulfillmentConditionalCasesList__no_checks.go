@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesList) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesList) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageEntryFulfillmentConditionalCasesList) v
 	return nil
 }
 
-func validateNewGoogleDialogflowCxPageEntryFulfillmentConditionalCasesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowCxPageEntryFulfillmentConditionalCasesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

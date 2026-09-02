@@ -40,7 +40,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateGetStri
 	return nil
 }
 
-func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validatePutLabe
 	return nil
 }
 
-func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorOutputReference) validateSetValu
 	return nil
 }
 
-func validateNewLoggingMetricMetricDescriptorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLoggingMetricMetricDescriptorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

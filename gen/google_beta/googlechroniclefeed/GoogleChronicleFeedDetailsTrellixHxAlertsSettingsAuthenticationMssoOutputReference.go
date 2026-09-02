@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApiEndpoint() *string
 	SetApiEndpoint(val *string)
 	ApiEndpointInput() *string
@@ -40,9 +40,9 @@ type GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputRe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -51,7 +51,7 @@ type GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputRe
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputRe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetApiEndpoint()
 	ResetPassword()
 	ResetUsername()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputRe
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference) ApiEndpoint() *string {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticati
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticati
 }
 
 
-func NewGoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference {
+func NewGoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutpu
 	j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutpu
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference_Override(g GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference_Override(g GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticati
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticati
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -491,8 +491,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticati
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,16 +504,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticati
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticati
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticati
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

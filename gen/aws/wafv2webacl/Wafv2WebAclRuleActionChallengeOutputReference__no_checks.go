@@ -40,7 +40,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionChallengeOutputReference) validateGetStr
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionChallengeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclRuleActionChallengeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleActionChallengeOutputReference) validatePutCus
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleActionChallengeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclRuleActionChallengeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_Wafv2WebAclRuleActionChallengeOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleActionChallengeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Wafv2WebAclRuleActionChallengeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWafv2WebAclRuleActionChallengeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWafv2WebAclRuleActionChallengeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

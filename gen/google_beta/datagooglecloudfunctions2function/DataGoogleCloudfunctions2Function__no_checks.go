@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleCloudfunctions2Function) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleCloudfunctions2Function) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleCloudfunctions2Function_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctions2Function) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctions2Function) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleCloudfunctions2Function) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

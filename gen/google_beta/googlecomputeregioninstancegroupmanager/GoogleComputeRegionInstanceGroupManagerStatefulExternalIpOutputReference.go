@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregioninstancegroupmanager/internal"
 )
 
 type GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDeleteRule()
 	ResetInterfaceName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference in
 
 // The jsii proxy struct for GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference
 type jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutp
 }
 
 
-func NewGoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference {
+func NewGoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference
 	j := jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference
 	return &j
 }
 
-func NewGoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference_Override(g GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference_Override(g GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRegionInstanceGroupManager.GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,8 +456,8 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -469,16 +469,16 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutp
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceGroupManagerStatefulExternalIpOutp
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

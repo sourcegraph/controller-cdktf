@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datastreamstream/internal"
 )
 
 type DatastreamStreamDestinationConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BigqueryDestinationConfig() DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference
 	BigqueryDestinationConfigInput() *DatastreamStreamDestinationConfigBigqueryDestinationConfig
 	// the index of the complex object in a list.
@@ -41,15 +41,15 @@ type DatastreamStreamDestinationConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,16 +65,16 @@ type DatastreamStreamDestinationConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBigqueryDestinationConfig(value *DatastreamStreamDestinationConfigBigqueryDestinationConfig)
 	PutGcsDestinationConfig(value *DatastreamStreamDestinationConfigGcsDestinationConfig)
 	ResetBigqueryDestinationConfig()
 	ResetGcsDestinationConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type DatastreamStreamDestinationConfigOutputReference interface {
 
 // The jsii proxy struct for DatastreamStreamDestinationConfigOutputReference
 type jsiiProxy_DatastreamStreamDestinationConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) BigqueryDestinationConfig() DatastreamStreamDestinationConfigBigqueryDestinationConfigOutputReference {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) TerraformRe
 }
 
 
-func NewDatastreamStreamDestinationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatastreamStreamDestinationConfigOutputReference {
+func NewDatastreamStreamDestinationConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatastreamStreamDestinationConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatastreamStreamDestinationConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewDatastreamStreamDestinationConfigOutputReference(terraformResource cdktf
 	j := jsiiProxy_DatastreamStreamDestinationConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference",
+		"@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewDatastreamStreamDestinationConfigOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewDatastreamStreamDestinationConfigOutputReference_Override(d DatastreamStreamDestinationConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatastreamStreamDestinationConfigOutputReference_Override(d DatastreamStreamDestinationConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference",
+		"@cdktn/provider-google.datastreamStream.DatastreamStreamDestinationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DatastreamStreamDestinationConfigOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamDestinationConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamStreamDestinationConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -340,11 +340,11 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -468,8 +468,8 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) GetStringMa
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -481,16 +481,16 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) Interpolati
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) ResetGcsDes
 	)
 }
 
-func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (d *jsiiProxy_DatastreamStreamDestinationConfigOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

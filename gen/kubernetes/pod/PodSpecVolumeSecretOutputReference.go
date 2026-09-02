@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/pod/internal"
 )
 
 type PodSpecVolumeSecretOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,15 +45,15 @@ type PodSpecVolumeSecretOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,9 +69,9 @@ type PodSpecVolumeSecretOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutItems(value interface{})
 	ResetDefaultMode()
 	ResetItems()
@@ -79,7 +79,7 @@ type PodSpecVolumeSecretOutputReference interface {
 	ResetSecretName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type PodSpecVolumeSecretOutputReference interface {
 
 // The jsii proxy struct for PodSpecVolumeSecretOutputReference
 type jsiiProxy_PodSpecVolumeSecretOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PodSpecVolumeSecretOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_PodSpecVolumeSecretOutputReference) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecVolumeSecretOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PodSpecVolumeSecretOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_PodSpecVolumeSecretOutputReference) TerraformResource() cdktf
 }
 
 
-func NewPodSpecVolumeSecretOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodSpecVolumeSecretOutputReference {
+func NewPodSpecVolumeSecretOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PodSpecVolumeSecretOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPodSpecVolumeSecretOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewPodSpecVolumeSecretOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_PodSpecVolumeSecretOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.pod.PodSpecVolumeSecretOutputReference",
+		"@cdktn/provider-kubernetes.pod.PodSpecVolumeSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewPodSpecVolumeSecretOutputReference(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewPodSpecVolumeSecretOutputReference_Override(p PodSpecVolumeSecretOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPodSpecVolumeSecretOutputReference_Override(p PodSpecVolumeSecretOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.pod.PodSpecVolumeSecretOutputReference",
+		"@cdktn/provider-kubernetes.pod.PodSpecVolumeSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_PodSpecVolumeSecretOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_PodSpecVolumeSecretOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecVolumeSecretOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,11 +387,11 @@ func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -515,8 +515,8 @@ func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) GetStringMapAttribute(ter
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -528,16 +528,16 @@ func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) ResetSecretName() {
 	)
 }
 
-func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (p *jsiiProxy_PodSpecVolumeSecretOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

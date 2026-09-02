@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareValuesOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareValuesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareValuesOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareValuesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareValuesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataObserveMonitorV2RulesThresholdCompareValuesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataObserveMonitorV2RulesThresholdCompareValuesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxy",
+		"@cdktn/provider-aws.dataAwsDbProxy.DataAwsDbProxy",
 		reflect.TypeOf((*DataAwsDbProxy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requireTls", GoGetter: "RequireTls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -60,19 +61,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSubnetIds", GoGetter: "VpcSubnetIds"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsDbProxy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuth",
+		"@cdktn/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuth",
 		reflect.TypeOf((*DataAwsDbProxyAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthList",
+		"@cdktn/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthList",
 		reflect.TypeOf((*DataAwsDbProxyAuthList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -88,12 +90,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsDbProxyAuthList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthOutputReference",
+		"@cdktn/provider-aws.dataAwsDbProxy.DataAwsDbProxyAuthOutputReference",
 		reflect.TypeOf((*DataAwsDbProxyAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
@@ -125,12 +127,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsDbProxyAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig",
+		"@cdktn/provider-aws.dataAwsDbProxy.DataAwsDbProxyConfig",
 		reflect.TypeOf((*DataAwsDbProxyConfig)(nil)).Elem(),
 	)
 }

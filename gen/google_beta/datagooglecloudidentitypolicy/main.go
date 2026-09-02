@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleCloudIdentityPolicy.DataGoogleCloudIdentityPolicy",
+		"@cdktn/provider-google-beta.dataGoogleCloudIdentityPolicy.DataGoogleCloudIdentityPolicy",
 		reflect.TypeOf((*DataGoogleCloudIdentityPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "policyQuery", GoGetter: "PolicyQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "setting", GoGetter: "Setting"},
@@ -53,23 +54,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleCloudIdentityPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleCloudIdentityPolicy.DataGoogleCloudIdentityPolicyConfig",
+		"@cdktn/provider-google-beta.dataGoogleCloudIdentityPolicy.DataGoogleCloudIdentityPolicyConfig",
 		reflect.TypeOf((*DataGoogleCloudIdentityPolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleCloudIdentityPolicy.DataGoogleCloudIdentityPolicyPolicyQuery",
+		"@cdktn/provider-google-beta.dataGoogleCloudIdentityPolicy.DataGoogleCloudIdentityPolicyPolicyQuery",
 		reflect.TypeOf((*DataGoogleCloudIdentityPolicyPolicyQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleCloudIdentityPolicy.DataGoogleCloudIdentityPolicyPolicyQueryList",
+		"@cdktn/provider-google-beta.dataGoogleCloudIdentityPolicy.DataGoogleCloudIdentityPolicyPolicyQueryList",
 		reflect.TypeOf((*DataGoogleCloudIdentityPolicyPolicyQueryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -85,12 +87,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleCloudIdentityPolicyPolicyQueryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleCloudIdentityPolicy.DataGoogleCloudIdentityPolicyPolicyQueryOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleCloudIdentityPolicy.DataGoogleCloudIdentityPolicyPolicyQueryOutputReference",
 		reflect.TypeOf((*DataGoogleCloudIdentityPolicyPolicyQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,7 +123,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleCloudIdentityPolicyPolicyQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

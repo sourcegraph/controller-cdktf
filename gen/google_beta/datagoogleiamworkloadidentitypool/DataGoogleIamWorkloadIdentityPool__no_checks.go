@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPool) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleIamWorkloadIdentityPool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleIamWorkloadIdentityPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPool) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleIamWorkloadIdentityPool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

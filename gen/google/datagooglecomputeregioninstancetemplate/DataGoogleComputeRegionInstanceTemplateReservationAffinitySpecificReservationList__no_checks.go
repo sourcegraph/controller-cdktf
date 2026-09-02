@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinitySpe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinitySpecificReservationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinitySpecificReservationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinitySpe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinitySpecificReservationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinitySpecificReservationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionInstanceTemplateReservationAffinitySpe
 	return nil
 }
 
-func validateNewDataGoogleComputeRegionInstanceTemplateReservationAffinitySpecificReservationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeRegionInstanceTemplateReservationAffinitySpecificReservationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

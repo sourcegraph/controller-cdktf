@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/colabnotebookexecution/internal"
 )
 
 type ColabNotebookExecutionDirectNotebookSourceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type ColabNotebookExecutionDirectNotebookSourceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type ColabNotebookExecutionDirectNotebookSourceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type ColabNotebookExecutionDirectNotebookSourceOutputReference interface {
 
 // The jsii proxy struct for ColabNotebookExecutionDirectNotebookSourceOutputReference
 type jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) Te
 }
 
 
-func NewColabNotebookExecutionDirectNotebookSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionDirectNotebookSourceOutputReference {
+func NewColabNotebookExecutionDirectNotebookSourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionDirectNotebookSourceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewColabNotebookExecutionDirectNotebookSourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewColabNotebookExecutionDirectNotebookSourceOutputReference(terraformResou
 	j := jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.colabNotebookExecution.ColabNotebookExecutionDirectNotebookSourceOutputReference",
+		"@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionDirectNotebookSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewColabNotebookExecutionDirectNotebookSourceOutputReference(terraformResou
 	return &j
 }
 
-func NewColabNotebookExecutionDirectNotebookSourceOutputReference_Override(c ColabNotebookExecutionDirectNotebookSourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewColabNotebookExecutionDirectNotebookSourceOutputReference_Override(c ColabNotebookExecutionDirectNotebookSourceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.colabNotebookExecution.ColabNotebookExecutionDirectNotebookSourceOutputReference",
+		"@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionDirectNotebookSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) Ge
 	return returns
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -420,8 +420,8 @@ func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) Ge
 	return returns
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -433,24 +433,24 @@ func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) In
 	return returns
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (c *jsiiProxy_ColabNotebookExecutionDirectNotebookSourceOutputReference) Re
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

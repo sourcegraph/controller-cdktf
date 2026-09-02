@@ -40,7 +40,7 @@ func (a *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validatePutP
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppmeshVirtualRouterSpecListenerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppmeshVirtualRouterSpecListenerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAppmeshVirtualRouterSpecListenerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

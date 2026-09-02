@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServi
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleAccessContextManagerSupportedServicesSupportedServicesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

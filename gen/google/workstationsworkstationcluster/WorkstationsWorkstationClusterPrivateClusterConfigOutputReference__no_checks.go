@@ -40,11 +40,11 @@ func (w *jsiiProxy_WorkstationsWorkstationClusterPrivateClusterConfigOutputRefer
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationClusterPrivateClusterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkstationsWorkstationClusterPrivateClusterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationClusterPrivateClusterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkstationsWorkstationClusterPrivateClusterConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_WorkstationsWorkstationClusterPrivateClusterConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationClusterPrivateClusterConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkstationsWorkstationClusterPrivateClusterConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkstationsWorkstationClusterPrivateClusterConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkstationsWorkstationClusterPrivateClusterConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

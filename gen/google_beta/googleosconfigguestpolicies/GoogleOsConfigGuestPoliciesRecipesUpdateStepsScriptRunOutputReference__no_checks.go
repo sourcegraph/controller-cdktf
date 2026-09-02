@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOsConfigGuestPoliciesRecipesUpdateStepsScriptRunOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

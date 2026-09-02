@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/certificatesigningrequest/internal"
 )
 
 type CertificateSigningRequestMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -48,16 +48,16 @@ type CertificateSigningRequestMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type CertificateSigningRequestMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetGenerateName()
 	ResetLabels()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type CertificateSigningRequestMetadataOutputReference interface {
 
 // The jsii proxy struct for CertificateSigningRequestMetadataOutputReference
 type jsiiProxy_CertificateSigningRequestMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CertificateSigningRequestMetadataOutputReference) Annotations() *map[string]*string {
@@ -255,8 +255,8 @@ func (j *jsiiProxy_CertificateSigningRequestMetadataOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_CertificateSigningRequestMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CertificateSigningRequestMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -276,7 +276,7 @@ func (j *jsiiProxy_CertificateSigningRequestMetadataOutputReference) Uid() *stri
 }
 
 
-func NewCertificateSigningRequestMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CertificateSigningRequestMetadataOutputReference {
+func NewCertificateSigningRequestMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CertificateSigningRequestMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCertificateSigningRequestMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -285,7 +285,7 @@ func NewCertificateSigningRequestMetadataOutputReference(terraformResource cdktf
 	j := jsiiProxy_CertificateSigningRequestMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestMetadataOutputReference",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -293,11 +293,11 @@ func NewCertificateSigningRequestMetadataOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewCertificateSigningRequestMetadataOutputReference_Override(c CertificateSigningRequestMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCertificateSigningRequestMetadataOutputReference_Override(c CertificateSigningRequestMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestMetadataOutputReference",
+		"@cdktn/provider-kubernetes.certificateSigningRequest.CertificateSigningRequestMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -391,7 +391,7 @@ func (j *jsiiProxy_CertificateSigningRequestMetadataOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_CertificateSigningRequestMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CertificateSigningRequestMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,11 +431,11 @@ func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -559,8 +559,8 @@ func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) GetStringMa
 	return returns
 }
 
-func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -572,16 +572,16 @@ func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) Interpolati
 	return returns
 }
 
-func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -620,8 +620,8 @@ func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) ResetName()
 	)
 }
 
-func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -629,7 +629,7 @@ func (c *jsiiProxy_CertificateSigningRequestMetadataOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatastreamStreamSourceConfigOracleSourceConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

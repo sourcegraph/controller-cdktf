@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleIapWebTypeComputeIamPolicy) validateOverrideLogical
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleIapWebTypeComputeIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleIapWebTypeComputeIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleIapWebTypeComputeIamPolicy) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIapWebTypeComputeIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleIapWebTypeComputeIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

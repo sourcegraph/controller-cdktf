@@ -5,15 +5,15 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagoogledataprocmetastoretableiampolicy/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/dataproc_metastore_table_iam_policy google_dataproc_metastore_table_iam_policy}.
 type DataGoogleDataprocMetastoreTableIamPolicy interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -29,9 +29,9 @@ type DataGoogleDataprocMetastoreTableIamPolicy interface {
 	SetDependsOn(val *[]*string)
 	Etag() *string
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -40,9 +40,9 @@ type DataGoogleDataprocMetastoreTableIamPolicy interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -53,9 +53,9 @@ type DataGoogleDataprocMetastoreTableIamPolicy interface {
 	SetProject(val *string)
 	ProjectInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	ServiceId() *string
@@ -65,7 +65,7 @@ type DataGoogleDataprocMetastoreTableIamPolicy interface {
 	SetTable(val *string)
 	TableInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -75,7 +75,7 @@ type DataGoogleDataprocMetastoreTableIamPolicy interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,10 +91,23 @@ type DataGoogleDataprocMetastoreTableIamPolicy interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
 	ResetLocation()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -113,15 +126,24 @@ type DataGoogleDataprocMetastoreTableIamPolicy interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataGoogleDataprocMetastoreTableIamPolicy
 type jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -190,8 +212,8 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) Etag() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -240,8 +262,8 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) IdInput() *string 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -310,8 +332,8 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) ProjectInput() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -370,8 +392,8 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) TableInput() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -411,7 +433,7 @@ func NewDataGoogleDataprocMetastoreTableIamPolicy(scope constructs.Construct, id
 	j := jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
+		"@cdktn/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -424,7 +446,7 @@ func NewDataGoogleDataprocMetastoreTableIamPolicy_Override(d DataGoogleDataprocM
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
+		"@cdktn/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -460,7 +482,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy)SetDependsOn(val *[
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -479,7 +501,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy)SetId(val *string) 
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -512,7 +534,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy)SetProject(val *str
 	)
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -542,17 +564,17 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy)SetTable(val *strin
 	)
 }
 
-// Generates CDKTF code for importing a DataGoogleDataprocMetastoreTableIamPolicy resource upon running "cdktf plan <stack-name>".
-func DataGoogleDataprocMetastoreTableIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataGoogleDataprocMetastoreTableIamPolicy resource upon running "cdktn plan <stack-name>".
+func DataGoogleDataprocMetastoreTableIamPolicy_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataGoogleDataprocMetastoreTableIamPolicy_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
+		"@cdktn/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -587,7 +609,7 @@ func DataGoogleDataprocMetastoreTableIamPolicy_IsConstruct(x interface{}) *bool 
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
+		"@cdktn/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -606,7 +628,7 @@ func DataGoogleDataprocMetastoreTableIamPolicy_IsTerraformDataSource(x interface
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
+		"@cdktn/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -625,7 +647,7 @@ func DataGoogleDataprocMetastoreTableIamPolicy_IsTerraformElement(x interface{})
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
+		"@cdktn/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -638,7 +660,7 @@ func DataGoogleDataprocMetastoreTableIamPolicy_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
+		"@cdktn/provider-google.dataGoogleDataprocMetastoreTableIamPolicy.DataGoogleDataprocMetastoreTableIamPolicy",
 		"tfResourceType",
 		&returns,
 	)
@@ -672,11 +694,11 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) GetAnyMapAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -800,11 +822,11 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) GetStringMapAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -824,6 +846,17 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) OverrideLogicalId(
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -931,6 +964,24 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) ToTerraform() inte
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

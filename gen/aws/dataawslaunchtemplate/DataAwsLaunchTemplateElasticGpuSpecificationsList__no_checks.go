@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateElasticGpuSpecificationsList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateElasticGpuSpecificationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateElasticGpuSpecificationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplateElasticGpuSpecificationsList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplateElasticGpuSpecificationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLaunchTemplateElasticGpuSpecificationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplateElasticGpuSpecificationsList) validateSe
 	return nil
 }
 
-func validateNewDataAwsLaunchTemplateElasticGpuSpecificationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsLaunchTemplateElasticGpuSpecificationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

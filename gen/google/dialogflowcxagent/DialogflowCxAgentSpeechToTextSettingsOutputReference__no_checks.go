@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowCxAgentSpeechToTextSettingsOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxAgentSpeechToTextSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxAgentSpeechToTextSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxAgentSpeechToTextSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxAgentSpeechToTextSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DialogflowCxAgentSpeechToTextSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxAgentSpeechToTextSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxAgentSpeechToTextSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDialogflowCxAgentSpeechToTextSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowCxAgentSpeechToTextSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

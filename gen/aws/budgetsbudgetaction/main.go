@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetAction",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetAction",
 		reflect.TypeOf((*BudgetsBudgetAction)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -65,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDefinition", GoMethod: "PutDefinition"},
 			_jsii_.MemberMethod{JsiiMethod: "putSubscriber", GoMethod: "PutSubscriber"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -80,19 +82,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetsBudgetAction{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThreshold",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThreshold",
 		reflect.TypeOf((*BudgetsBudgetActionActionThreshold)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThresholdOutputReference",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionActionThresholdOutputReference",
 		reflect.TypeOf((*BudgetsBudgetActionActionThresholdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionThresholdType", GoGetter: "ActionThresholdType"},
@@ -123,24 +126,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetsBudgetActionActionThresholdOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionConfig",
 		reflect.TypeOf((*BudgetsBudgetActionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinition",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinition",
 		reflect.TypeOf((*BudgetsBudgetActionDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinition",
 		reflect.TypeOf((*BudgetsBudgetActionDefinitionIamActionDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference",
 		reflect.TypeOf((*BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -178,12 +181,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetsBudgetActionDefinitionIamActionDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionOutputReference",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionOutputReference",
 		reflect.TypeOf((*BudgetsBudgetActionDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,16 +225,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetsBudgetActionDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinition",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinition",
 		reflect.TypeOf((*BudgetsBudgetActionDefinitionScpActionDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference",
 		reflect.TypeOf((*BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -262,16 +265,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinition",
 		reflect.TypeOf((*BudgetsBudgetActionDefinitionSsmActionDefinition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference",
 		reflect.TypeOf((*BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionSubType", GoGetter: "ActionSubType"},
@@ -304,16 +307,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetsBudgetActionDefinitionSsmActionDefinitionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriber",
 		reflect.TypeOf((*BudgetsBudgetActionSubscriber)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberList",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberList",
 		reflect.TypeOf((*BudgetsBudgetActionSubscriberList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -330,12 +333,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetsBudgetActionSubscriberList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference",
+		"@cdktn/provider-aws.budgetsBudgetAction.BudgetsBudgetActionSubscriberOutputReference",
 		reflect.TypeOf((*BudgetsBudgetActionSubscriberOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -366,7 +369,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BudgetsBudgetActionSubscriberOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

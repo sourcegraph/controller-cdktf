@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsC
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelConditionDevicePolicyOsC
 	return nil
 }
 
-func validateNewGoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleAccessContextManagerAccessLevelConditionDevicePolicyOsConstraintsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dlmlifecyclepolicy/internal"
 )
 
 type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -55,9 +55,9 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VariableTags() *map[string]*string
 	SetVariableTags(val *map[string]*string)
 	VariableTagsInput() *map[string]*string
@@ -66,7 +66,7 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -82,9 +82,9 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCreateRule(value *DlmLifecyclePolicyPolicyDetailsScheduleCreateRule)
 	PutCrossRegionCopyRule(value interface{})
 	PutDeprecateRule(value *DlmLifecyclePolicyPolicyDetailsScheduleDeprecateRule)
@@ -100,7 +100,7 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 	ResetVariableTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,7 +110,7 @@ type DlmLifecyclePolicyPolicyDetailsScheduleOutputReference interface {
 
 // The jsii proxy struct for DlmLifecyclePolicyPolicyDetailsScheduleOutputReference
 type jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) ComplexObjectIndex() interface{} {
@@ -353,8 +353,8 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -384,7 +384,7 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Varia
 }
 
 
-func NewDlmLifecyclePolicyPolicyDetailsScheduleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DlmLifecyclePolicyPolicyDetailsScheduleOutputReference {
+func NewDlmLifecyclePolicyPolicyDetailsScheduleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DlmLifecyclePolicyPolicyDetailsScheduleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDlmLifecyclePolicyPolicyDetailsScheduleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -393,7 +393,7 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleOutputReference(terraformResource
 	j := jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleOutputReference",
+		"@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -401,11 +401,11 @@ func NewDlmLifecyclePolicyPolicyDetailsScheduleOutputReference(terraformResource
 	return &j
 }
 
-func NewDlmLifecyclePolicyPolicyDetailsScheduleOutputReference_Override(d DlmLifecyclePolicyPolicyDetailsScheduleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDlmLifecyclePolicyPolicyDetailsScheduleOutputReference_Override(d DlmLifecyclePolicyPolicyDetailsScheduleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleOutputReference",
+		"@cdktn/provider-aws.dlmLifecyclePolicy.DlmLifecyclePolicyPolicyDetailsScheduleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -488,7 +488,7 @@ func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -539,11 +539,11 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetAn
 	return returns
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -667,8 +667,8 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) GetSt
 	return returns
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -680,16 +680,16 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Inter
 	return returns
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -818,8 +818,8 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Reset
 	)
 }
 
-func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -827,7 +827,7 @@ func (d *jsiiProxy_DlmLifecyclePolicyPolicyDetailsScheduleOutputReference) Resol
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

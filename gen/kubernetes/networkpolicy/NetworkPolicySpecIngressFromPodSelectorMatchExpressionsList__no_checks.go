@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList) 
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList) 
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorMatchExpressionsList) 
 	return nil
 }
 
-func validateNewNetworkPolicySpecIngressFromPodSelectorMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkPolicySpecIngressFromPodSelectorMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

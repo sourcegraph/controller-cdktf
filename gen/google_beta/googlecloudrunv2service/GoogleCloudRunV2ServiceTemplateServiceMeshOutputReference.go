@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudrunv2service/internal"
 )
 
 type GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMesh()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference interface {
 
 // The jsii proxy struct for GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference
 type jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) Te
 }
 
 
-func NewGoogleCloudRunV2ServiceTemplateServiceMeshOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference {
+func NewGoogleCloudRunV2ServiceTemplateServiceMeshOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCloudRunV2ServiceTemplateServiceMeshOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewGoogleCloudRunV2ServiceTemplateServiceMeshOutputReference(terraformResou
 	j := jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference",
+		"@cdktn/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewGoogleCloudRunV2ServiceTemplateServiceMeshOutputReference(terraformResou
 	return &j
 }
 
-func NewGoogleCloudRunV2ServiceTemplateServiceMeshOutputReference_Override(g GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleCloudRunV2ServiceTemplateServiceMeshOutputReference_Override(g GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference",
+		"@cdktn/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -421,8 +421,8 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,16 +434,16 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) In
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateServiceMeshOutputReference) Re
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

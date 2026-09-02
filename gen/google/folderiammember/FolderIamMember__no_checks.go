@@ -56,6 +56,10 @@ func (f *jsiiProxy_FolderIamMember) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (f *jsiiProxy_FolderIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FolderIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (f *jsiiProxy_FolderIamMember) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (f *jsiiProxy_FolderIamMember) validatePutConditionParameters(value *FolderIamMemberCondition) error {
+	return nil
+}
+
+func (f *jsiiProxy_FolderIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_FolderIamMember) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_FolderIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FolderIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

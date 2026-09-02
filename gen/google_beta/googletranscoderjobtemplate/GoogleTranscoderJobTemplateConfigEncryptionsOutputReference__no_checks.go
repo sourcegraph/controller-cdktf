@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleTranscoderJobTemplateConfigEncryptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleTranscoderJobTemplateConfigEncryptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

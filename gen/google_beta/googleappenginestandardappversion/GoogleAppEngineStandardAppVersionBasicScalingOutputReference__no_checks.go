@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersionBasicScalingOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineStandardAppVersionBasicScalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersionBasicScalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineStandardAppVersionBasicScalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersionBasicScalingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersionBasicScalingOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersionBasicScalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersionBasicScalingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleAppEngineStandardAppVersionBasicScalingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleAppEngineStandardAppVersionBasicScalingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

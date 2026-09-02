@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigMembershipPrim
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigMembershipPrim
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleRedisClusterCrossClusterReplicationConfigMembershipPrimaryClusterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

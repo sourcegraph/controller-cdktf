@@ -40,11 +40,11 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutput
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutput
 	return nil
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKinesisFirehoseDeliveryStreamKinesisSourceConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

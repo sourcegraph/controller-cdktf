@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTierTimeoutsOutputReference) validate
 	return nil
 }
 
-func validateNewComputeProjectCloudArmorTierTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeProjectCloudArmorTierTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

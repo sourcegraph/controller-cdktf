@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validatePutConditionParameters(value *GoogleBigqueryConnectionIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryConnectionIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleBigqueryConnectionIamMember) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

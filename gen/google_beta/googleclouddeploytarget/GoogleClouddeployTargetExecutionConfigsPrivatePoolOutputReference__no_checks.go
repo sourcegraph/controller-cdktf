@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleClouddeployTargetExecutionConfigsPrivatePoolOutputRefer
 	return nil
 }
 
-func validateNewGoogleClouddeployTargetExecutionConfigsPrivatePoolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleClouddeployTargetExecutionConfigsPrivatePoolOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

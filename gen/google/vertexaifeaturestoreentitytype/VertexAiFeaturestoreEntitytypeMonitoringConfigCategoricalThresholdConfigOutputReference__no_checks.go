@@ -40,11 +40,11 @@ func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThre
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThre
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThre
 	return nil
 }
 
-func validateNewVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

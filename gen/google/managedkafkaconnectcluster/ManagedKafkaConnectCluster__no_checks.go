@@ -56,6 +56,10 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) validateInterpolationForAttribute
 	return nil
 }
 
+func (m *jsiiProxy_ManagedKafkaConnectCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedKafkaConnectCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (m *jsiiProxy_ManagedKafkaConnectCluster) validatePutGcpConfigParameters(va
 }
 
 func (m *jsiiProxy_ManagedKafkaConnectCluster) validatePutTimeoutsParameters(value *ManagedKafkaConnectClusterTimeouts) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedKafkaConnectCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_ManagedKafkaConnectCluster) validateSetLabelsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaConnectCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ManagedKafkaConnectCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cesappversion/internal"
 )
 
 type CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApiKeyConfig() CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -38,15 +38,15 @@ type CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference inter
 
 // The jsii proxy struct for CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference
 type jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference) ApiKeyConfig() CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationApiKeyConfigList {
@@ -180,8 +180,8 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputR
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -191,7 +191,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputR
 }
 
 
-func NewCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference {
+func NewCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -200,7 +200,7 @@ func NewCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference(te
 	j := jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference",
+		"@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -208,11 +208,11 @@ func NewCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference(te
 	return &j
 }
 
-func NewCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference_Override(c CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference_Override(c CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference",
+		"@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -262,7 +262,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputR
 	)
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,11 +302,11 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputR
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -430,8 +430,8 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputR
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -443,24 +443,24 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputR
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -468,7 +468,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsOpenApiToolApiAuthenticationOutputR
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

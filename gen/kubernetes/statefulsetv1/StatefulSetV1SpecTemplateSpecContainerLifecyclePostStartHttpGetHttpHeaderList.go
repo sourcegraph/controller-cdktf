@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/statefulsetv1/internal"
 )
 
 type StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderLi
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderLi
 
 // The jsii proxy struct for StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList
 type jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpG
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpG
 }
 
 
-func NewStatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList {
+func NewStatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList {
 	_init_.Initialize()
 
 	if err := validateNewStatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewStatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeade
 	j := jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList",
+		"@cdktn/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewStatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeade
 	return &j
 }
 
-func NewStatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList_Override(s StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewStatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList_Override(s StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList",
+		"@cdktn/provider-kubernetes.statefulSetV1.StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpG
 	)
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpG
 	)
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := s.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		s,
@@ -228,8 +231,8 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpG
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpGetHttpHeaderList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecContainerLifecyclePostStartHttpG
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

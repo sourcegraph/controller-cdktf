@@ -40,11 +40,11 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutp
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutp
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerSecurityContextSeccompProfileOutp
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobSpecTemplateSpecContainerSecurityContextSeccompProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

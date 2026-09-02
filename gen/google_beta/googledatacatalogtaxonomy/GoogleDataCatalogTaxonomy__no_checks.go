@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validatePutTimeoutsParameters(value *GoogleDataCatalogTaxonomyTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogTaxonomy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleDataCatalogTaxonomy) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogTaxonomy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataCatalogTaxonomy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (c *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (c *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CesGuardrailModelSafetyOutputReference) validatePutSafetySett
 	return nil
 }
 
-func (c *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesGuardrailModelSafetyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesGuardrailModelSafetyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesGuardrailModelSafetyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

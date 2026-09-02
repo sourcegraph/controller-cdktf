@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsApiGatewayRestApi) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsApiGatewayRestApi) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsApiGatewayRestApi_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsApiGatewayRestApi) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsApiGatewayRestApi) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsApiGatewayRestApi) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

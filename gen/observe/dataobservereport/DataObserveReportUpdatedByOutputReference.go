@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/dataobservereport/internal"
 )
 
 type DataObserveReportUpdatedByOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type DataObserveReportUpdatedByOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type DataObserveReportUpdatedByOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type DataObserveReportUpdatedByOutputReference interface {
 
 // The jsii proxy struct for DataObserveReportUpdatedByOutputReference
 type jsiiProxy_DataObserveReportUpdatedByOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataObserveReportUpdatedByOutputReference) ComplexObjectIndex() interface{} {
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataObserveReportUpdatedByOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveReportUpdatedByOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataObserveReportUpdatedByOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_DataObserveReportUpdatedByOutputReference) TerraformResource(
 }
 
 
-func NewDataObserveReportUpdatedByOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveReportUpdatedByOutputReference {
+func NewDataObserveReportUpdatedByOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveReportUpdatedByOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataObserveReportUpdatedByOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewDataObserveReportUpdatedByOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_DataObserveReportUpdatedByOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportUpdatedByOutputReference",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportUpdatedByOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewDataObserveReportUpdatedByOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewDataObserveReportUpdatedByOutputReference_Override(d DataObserveReportUpdatedByOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataObserveReportUpdatedByOutputReference_Override(d DataObserveReportUpdatedByOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportUpdatedByOutputReference",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportUpdatedByOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataObserveReportUpdatedByOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_DataObserveReportUpdatedByOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataObserveReportUpdatedByOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -408,8 +408,8 @@ func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -421,24 +421,24 @@ func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (d *jsiiProxy_DataObserveReportUpdatedByOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

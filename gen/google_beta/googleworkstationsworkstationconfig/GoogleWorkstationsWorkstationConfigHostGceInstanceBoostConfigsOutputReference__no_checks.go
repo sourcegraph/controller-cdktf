@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

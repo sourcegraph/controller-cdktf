@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolAutoscalingList) validateSe
 	return nil
 }
 
-func validateNewDataGoogleContainerClusterNodePoolAutoscalingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleContainerClusterNodePoolAutoscalingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

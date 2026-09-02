@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApigeeKeystoresAliasesPkcs12TimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

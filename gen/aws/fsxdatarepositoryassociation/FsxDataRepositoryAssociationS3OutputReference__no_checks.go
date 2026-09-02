@@ -40,7 +40,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateGetStr
 	return nil
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validatePutAut
 	return nil
 }
 
-func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FsxDataRepositoryAssociationS3OutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFsxDataRepositoryAssociationS3OutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFsxDataRepositoryAssociationS3OutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

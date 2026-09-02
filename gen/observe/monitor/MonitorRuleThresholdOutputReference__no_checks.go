@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitorRuleThresholdOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (m *jsiiProxy_MonitorRuleThresholdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorRuleThresholdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorRuleThresholdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorRuleThresholdOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_MonitorRuleThresholdOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_MonitorRuleThresholdOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorRuleThresholdOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_MonitorRuleThresholdOutputReference) validateSetThresholdAggF
 	return nil
 }
 
-func validateNewMonitorRuleThresholdOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitorRuleThresholdOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

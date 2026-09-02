@@ -12,7 +12,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) vali
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) vali
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) vali
 	return nil
 }
 
-func validateNewModelArmorTemplateFilterConfigRaiSettingsRaiFiltersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewModelArmorTemplateFilterConfigRaiSettingsRaiFiltersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

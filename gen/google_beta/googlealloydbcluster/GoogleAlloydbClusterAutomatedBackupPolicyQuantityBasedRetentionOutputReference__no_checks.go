@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetenti
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetenti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleAlloydbClusterAutomatedBackupPolicyQuantityBasedRetentionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

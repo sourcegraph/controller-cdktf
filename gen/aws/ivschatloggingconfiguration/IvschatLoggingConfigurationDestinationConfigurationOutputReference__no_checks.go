@@ -40,7 +40,7 @@ func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputRefe
 	return nil
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputRefe
 	return nil
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIvschatLoggingConfigurationDestinationConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIvschatLoggingConfigurationDestinationConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

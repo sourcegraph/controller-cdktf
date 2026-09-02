@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListener",
+		"@cdktn/provider-aws.albListener.AlbListener",
 		reflect.TypeOf((*AlbListener)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancerArn", GoGetter: "LoadBalancerArn"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancerArnInput", GoGetter: "LoadBalancerArnInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -59,6 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDefaultAction", GoMethod: "PutDefaultAction"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlpnPolicy", GoMethod: "ResetAlpnPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateArn", GoMethod: "ResetCertificateArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -86,27 +88,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListener{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albListener.AlbListenerConfig",
+		"@cdktn/provider-aws.albListener.AlbListenerConfig",
 		reflect.TypeOf((*AlbListenerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultAction",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultAction",
 		reflect.TypeOf((*AlbListenerDefaultAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognito",
 		reflect.TypeOf((*AlbListenerDefaultActionAuthenticateCognito)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognitoOutputReference",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionAuthenticateCognitoOutputReference",
 		reflect.TypeOf((*AlbListenerDefaultActionAuthenticateCognitoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
@@ -154,16 +157,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidc",
 		reflect.TypeOf((*AlbListenerDefaultActionAuthenticateOidc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidcOutputReference",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionAuthenticateOidcOutputReference",
 		reflect.TypeOf((*AlbListenerDefaultActionAuthenticateOidcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
@@ -217,16 +220,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListenerDefaultActionAuthenticateOidcOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponse",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionFixedResponse",
 		reflect.TypeOf((*AlbListenerDefaultActionFixedResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionFixedResponseOutputReference",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionFixedResponseOutputReference",
 		reflect.TypeOf((*AlbListenerDefaultActionFixedResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -261,16 +264,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListenerDefaultActionFixedResponseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForward",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionForward",
 		reflect.TypeOf((*AlbListenerDefaultActionForward)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionForwardOutputReference",
 		reflect.TypeOf((*AlbListenerDefaultActionForwardOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,16 +307,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListenerDefaultActionForwardOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionForwardStickiness",
 		reflect.TypeOf((*AlbListenerDefaultActionForwardStickiness)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionForwardStickinessOutputReference",
 		reflect.TypeOf((*AlbListenerDefaultActionForwardStickinessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -345,16 +348,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListenerDefaultActionForwardStickinessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroup",
 		reflect.TypeOf((*AlbListenerDefaultActionForwardTargetGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupList",
 		reflect.TypeOf((*AlbListenerDefaultActionForwardTargetGroupList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -371,12 +374,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListenerDefaultActionForwardTargetGroupList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionForwardTargetGroupOutputReference",
 		reflect.TypeOf((*AlbListenerDefaultActionForwardTargetGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -408,12 +411,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListenerDefaultActionForwardTargetGroupOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionList",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionList",
 		reflect.TypeOf((*AlbListenerDefaultActionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -430,12 +433,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListenerDefaultActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionOutputReference",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionOutputReference",
 		reflect.TypeOf((*AlbListenerDefaultActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticateCognito", GoGetter: "AuthenticateCognito"},
@@ -490,16 +493,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListenerDefaultActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirect",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionRedirect",
 		reflect.TypeOf((*AlbListenerDefaultActionRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListenerDefaultActionRedirectOutputReference",
+		"@cdktn/provider-aws.albListener.AlbListenerDefaultActionRedirectOutputReference",
 		reflect.TypeOf((*AlbListenerDefaultActionRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -543,16 +546,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListenerDefaultActionRedirectOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.albListener.AlbListenerTimeouts",
+		"@cdktn/provider-aws.albListener.AlbListenerTimeouts",
 		reflect.TypeOf((*AlbListenerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.albListener.AlbListenerTimeoutsOutputReference",
+		"@cdktn/provider-aws.albListener.AlbListenerTimeoutsOutputReference",
 		reflect.TypeOf((*AlbListenerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -582,7 +585,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AlbListenerTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

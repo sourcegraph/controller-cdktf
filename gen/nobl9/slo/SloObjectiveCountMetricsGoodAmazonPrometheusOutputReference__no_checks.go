@@ -40,11 +40,11 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodAmazonPrometheusOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsGoodAmazonPrometheusOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveCountMetricsGoodAmazonPrometheusOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

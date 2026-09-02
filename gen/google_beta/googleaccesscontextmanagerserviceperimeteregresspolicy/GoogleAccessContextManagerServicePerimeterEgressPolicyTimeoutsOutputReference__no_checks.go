@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyTimeout
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyTimeout
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleAccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleAccessContextManagerServicePerimeterEgressPolicyTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

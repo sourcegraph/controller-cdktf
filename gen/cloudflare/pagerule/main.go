@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRule",
+		"@cdktn/provider-cloudflare.pageRule.PageRule",
 		reflect.TypeOf((*PageRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
@@ -38,6 +38,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -49,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putActions", GoMethod: "PutActions"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetPriority", GoMethod: "ResetPriority"},
@@ -66,29 +68,30 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActions",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActions",
 		reflect.TypeOf((*PageRuleActions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFields",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFields",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookie",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookie",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsCookie)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookieOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsCookieOutputReference",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsCookieOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkPresence", GoGetter: "CheckPresence"},
@@ -121,16 +124,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsCookieOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeader",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeader",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeaderOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHeaderOutputReference",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "checkPresence", GoGetter: "CheckPresence"},
@@ -166,16 +169,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHost",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHost",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsHost)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHostOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsHostOutputReference",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsHostOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -205,12 +208,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsHostOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsOutputReference",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -254,16 +257,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryString",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryString",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsQueryString)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryStringOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsQueryStringOutputReference",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsQueryStringOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -299,16 +302,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsQueryStringOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUser",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUser",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsUser)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUserOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheKeyFieldsUserOutputReference",
 		reflect.TypeOf((*PageRuleActionsCacheKeyFieldsUserOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -344,16 +347,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsCacheKeyFieldsUserOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatus",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatus",
 		reflect.TypeOf((*PageRuleActionsCacheTtlByStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatusList",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatusList",
 		reflect.TypeOf((*PageRuleActionsCacheTtlByStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -370,12 +373,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsCacheTtlByStatusList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatusOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsCacheTtlByStatusOutputReference",
 		reflect.TypeOf((*PageRuleActionsCacheTtlByStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "codes", GoGetter: "Codes"},
@@ -406,16 +409,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsCacheTtlByStatusOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrl",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsForwardingUrl",
 		reflect.TypeOf((*PageRuleActionsForwardingUrl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference",
 		reflect.TypeOf((*PageRuleActionsForwardingUrlOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -446,16 +449,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsForwardingUrlOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinify",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsMinify",
 		reflect.TypeOf((*PageRuleActionsMinify)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinifyList",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsMinifyList",
 		reflect.TypeOf((*PageRuleActionsMinifyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -472,12 +475,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsMinifyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsMinifyOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsMinifyOutputReference",
 		reflect.TypeOf((*PageRuleActionsMinifyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -510,12 +513,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsMinifyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsOutputReference",
 		reflect.TypeOf((*PageRuleActionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alwaysUseHttps", GoGetter: "AlwaysUseHttps"},
@@ -657,12 +660,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PageRuleActionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleConfig",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleConfig",
 		reflect.TypeOf((*PageRuleConfig)(nil)).Elem(),
 	)
 }

@@ -12,7 +12,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadTargetResourceList) validateGetParamet
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadTargetResourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadTargetResourceList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadTargetResourceList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadTargetResourceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadTargetResourceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadTargetResourceList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewBackupDrRestoreWorkloadTargetResourceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBackupDrRestoreWorkloadTargetResourceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

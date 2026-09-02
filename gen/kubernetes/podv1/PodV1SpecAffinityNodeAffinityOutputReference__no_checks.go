@@ -40,7 +40,7 @@ func (p *jsiiProxy_PodV1SpecAffinityNodeAffinityOutputReference) validateGetStri
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecAffinityNodeAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecAffinityNodeAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (p *jsiiProxy_PodV1SpecAffinityNodeAffinityOutputReference) validatePutRequ
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecAffinityNodeAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecAffinityNodeAffinityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PodV1SpecAffinityNodeAffinityOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecAffinityNodeAffinityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodV1SpecAffinityNodeAffinityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPodV1SpecAffinityNodeAffinityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPodV1SpecAffinityNodeAffinityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

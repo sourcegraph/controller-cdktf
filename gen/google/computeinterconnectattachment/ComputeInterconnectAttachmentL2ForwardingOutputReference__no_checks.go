@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_ComputeInterconnectAttachmentL2ForwardingOutputReference) val
 	return nil
 }
 
-func validateNewComputeInterconnectAttachmentL2ForwardingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeInterconnectAttachmentL2ForwardingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

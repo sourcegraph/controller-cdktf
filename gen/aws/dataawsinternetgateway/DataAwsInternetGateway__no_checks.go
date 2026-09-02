@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsInternetGateway) validatePutTimeoutsParameters(value *
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsInternetGateway) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsInternetGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataAwsInternetGateway) validateSetInternetGatewayIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsInternetGateway) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsInternetGateway) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

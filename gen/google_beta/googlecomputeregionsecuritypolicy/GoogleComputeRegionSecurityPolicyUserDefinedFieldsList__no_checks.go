@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsList) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyUserDefinedFieldsList) valid
 	return nil
 }
 
-func validateNewGoogleComputeRegionSecurityPolicyUserDefinedFieldsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeRegionSecurityPolicyUserDefinedFieldsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

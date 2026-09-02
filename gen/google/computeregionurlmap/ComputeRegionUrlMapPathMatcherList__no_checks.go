@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherList) validateGetParameters(ind
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionUrlMapPathMatcherList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapPathMatcherList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewComputeRegionUrlMapPathMatcherListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRegionUrlMapPathMatcherListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

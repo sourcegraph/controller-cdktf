@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsList) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsList) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorErrorsList) validat
 	return nil
 }
 
-func validateNewComputeResizeRequestStatusLastAttemptErrorErrorsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeResizeRequestStatusLastAttemptErrorErrorsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

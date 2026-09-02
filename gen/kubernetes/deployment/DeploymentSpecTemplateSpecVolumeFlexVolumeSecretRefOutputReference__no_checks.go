@@ -40,11 +40,11 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDeploymentSpecTemplateSpecVolumeFlexVolumeSecretRefOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

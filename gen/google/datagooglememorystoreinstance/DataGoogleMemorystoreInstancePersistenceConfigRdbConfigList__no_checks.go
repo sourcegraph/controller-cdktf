@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigRdbConfigList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigRdbConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigRdbConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigRdbConfigList) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigRdbConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigRdbConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleMemorystoreInstancePersistenceConfigRdbConfigList) 
 	return nil
 }
 
-func validateNewDataGoogleMemorystoreInstancePersistenceConfigRdbConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleMemorystoreInstancePersistenceConfigRdbConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

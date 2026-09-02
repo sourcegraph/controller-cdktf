@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudrunv2service/internal"
 )
 
 type CloudRunV2ServiceTemplateContainersPortsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type CloudRunV2ServiceTemplateContainersPortsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type CloudRunV2ServiceTemplateContainersPortsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetContainerPort()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type CloudRunV2ServiceTemplateContainersPortsOutputReference interface {
 
 // The jsii proxy struct for CloudRunV2ServiceTemplateContainersPortsOutputReference
 type jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) Terr
 }
 
 
-func NewCloudRunV2ServiceTemplateContainersPortsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudRunV2ServiceTemplateContainersPortsOutputReference {
+func NewCloudRunV2ServiceTemplateContainersPortsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CloudRunV2ServiceTemplateContainersPortsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudRunV2ServiceTemplateContainersPortsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewCloudRunV2ServiceTemplateContainersPortsOutputReference(terraformResourc
 	j := jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewCloudRunV2ServiceTemplateContainersPortsOutputReference(terraformResourc
 	return &j
 }
 
-func NewCloudRunV2ServiceTemplateContainersPortsOutputReference_Override(c CloudRunV2ServiceTemplateContainersPortsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudRunV2ServiceTemplateContainersPortsOutputReference_Override(c CloudRunV2ServiceTemplateContainersPortsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsOutputReference",
+		"@cdktn/provider-google.cloudRunV2Service.CloudRunV2ServiceTemplateContainersPortsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) GetA
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -456,8 +456,8 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) GetS
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -469,16 +469,16 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) Inte
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) Rese
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateContainersPortsOutputReference) Reso
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

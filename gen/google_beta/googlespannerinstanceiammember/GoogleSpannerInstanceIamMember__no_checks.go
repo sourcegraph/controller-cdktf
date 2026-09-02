@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validatePutConditionParameters(value *GoogleSpannerInstanceIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSpannerInstanceIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleSpannerInstanceIamMember) validateSetInstanceParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerInstanceIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSpannerInstanceIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,13 +4,13 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/okta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktatrustedorigins/internal"
 )
 
 type DataOktaTrustedOriginsTrustedOriginsOutputReference interface {
-	cdktf.ComplexObject
-	Active() cdktf.IResolvable
+	cdktn.ComplexObject
+	Active() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type DataOktaTrustedOriginsTrustedOriginsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type DataOktaTrustedOriginsTrustedOriginsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,11 +78,11 @@ type DataOktaTrustedOriginsTrustedOriginsOutputReference interface {
 
 // The jsii proxy struct for DataOktaTrustedOriginsTrustedOriginsOutputReference
 type jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) Active() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) Active() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"active",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) Terrafor
 }
 
 
-func NewDataOktaTrustedOriginsTrustedOriginsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOktaTrustedOriginsTrustedOriginsOutputReference {
+func NewDataOktaTrustedOriginsTrustedOriginsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOktaTrustedOriginsTrustedOriginsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataOktaTrustedOriginsTrustedOriginsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -211,7 +211,7 @@ func NewDataOktaTrustedOriginsTrustedOriginsOutputReference(terraformResource cd
 	j := jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsOutputReference",
+		"@cdktn/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -219,11 +219,11 @@ func NewDataOktaTrustedOriginsTrustedOriginsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDataOktaTrustedOriginsTrustedOriginsOutputReference_Override(d DataOktaTrustedOriginsTrustedOriginsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataOktaTrustedOriginsTrustedOriginsOutputReference_Override(d DataOktaTrustedOriginsTrustedOriginsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsOutputReference",
+		"@cdktn/provider-okta.dataOktaTrustedOrigins.DataOktaTrustedOriginsTrustedOriginsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -273,7 +273,7 @@ func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,11 +313,11 @@ func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -441,8 +441,8 @@ func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -454,24 +454,24 @@ func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -479,7 +479,7 @@ func (d *jsiiProxy_DataOktaTrustedOriginsTrustedOriginsOutputReference) Resolve(
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

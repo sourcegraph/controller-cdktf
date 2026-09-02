@@ -56,6 +56,10 @@ func (g *jsiiProxy_GooglePubsubLiteReservation) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GooglePubsubLiteReservation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GooglePubsubLiteReservation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GooglePubsubLiteReservation) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GooglePubsubLiteReservation) validatePutTimeoutsParameters(value *GooglePubsubLiteReservationTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GooglePubsubLiteReservation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GooglePubsubLiteReservation) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubLiteReservation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GooglePubsubLiteReservation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

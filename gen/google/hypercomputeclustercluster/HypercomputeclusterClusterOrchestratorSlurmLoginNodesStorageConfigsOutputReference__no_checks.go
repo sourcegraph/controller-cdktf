@@ -40,11 +40,11 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageC
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageC
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewHypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewHypercomputeclusterClusterOrchestratorSlurmLoginNodesStorageConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

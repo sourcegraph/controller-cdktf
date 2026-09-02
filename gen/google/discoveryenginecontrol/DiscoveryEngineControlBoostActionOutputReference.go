@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/discoveryenginecontrol/internal"
 )
 
 type DiscoveryEngineControlBoostActionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -45,15 +45,15 @@ type DiscoveryEngineControlBoostActionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,15 +69,15 @@ type DiscoveryEngineControlBoostActionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutInterpolationBoostSpec(value *DiscoveryEngineControlBoostActionInterpolationBoostSpec)
 	ResetFixedBoost()
 	ResetInterpolationBoostSpec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type DiscoveryEngineControlBoostActionOutputReference interface {
 
 // The jsii proxy struct for DiscoveryEngineControlBoostActionOutputReference
 type jsiiProxy_DiscoveryEngineControlBoostActionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) ComplexObjectIndex() interface{} {
@@ -230,8 +230,8 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -241,7 +241,7 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) TerraformRe
 }
 
 
-func NewDiscoveryEngineControlBoostActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlBoostActionOutputReference {
+func NewDiscoveryEngineControlBoostActionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineControlBoostActionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDiscoveryEngineControlBoostActionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -250,7 +250,7 @@ func NewDiscoveryEngineControlBoostActionOutputReference(terraformResource cdktf
 	j := jsiiProxy_DiscoveryEngineControlBoostActionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -258,11 +258,11 @@ func NewDiscoveryEngineControlBoostActionOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewDiscoveryEngineControlBoostActionOutputReference_Override(d DiscoveryEngineControlBoostActionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDiscoveryEngineControlBoostActionOutputReference_Override(d DiscoveryEngineControlBoostActionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionOutputReference",
+		"@cdktn/provider-google.discoveryEngineControl.DiscoveryEngineControlBoostActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -345,7 +345,7 @@ func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,11 +385,11 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -513,8 +513,8 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) GetStringMa
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -526,16 +526,16 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) Interpolati
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -569,8 +569,8 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) ResetInterp
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -578,7 +578,7 @@ func (d *jsiiProxy_DiscoveryEngineControlBoostActionOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

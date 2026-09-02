@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (b *jsiiProxy_BigqueryJobCopySourceTablesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesList) validateGetParameters(index 
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobCopySourceTablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (b *jsiiProxy_BigqueryJobCopySourceTablesList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesList) validateResolveParameters(_c
 
 func (j *jsiiProxy_BigqueryJobCopySourceTablesList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*BigqueryJobCopySourceTables:
 		val := val.(*[]*BigqueryJobCopySourceTables)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_BigqueryJobCopySourceTablesList) validateSetInternalValuePara
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*BigqueryJobCopySourceTables; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*BigqueryJobCopySourceTables; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_BigqueryJobCopySourceTablesList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobCopySourceTablesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryJobCopySourceTablesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_BigqueryJobCopySourceTablesList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewBigqueryJobCopySourceTablesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBigqueryJobCopySourceTablesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

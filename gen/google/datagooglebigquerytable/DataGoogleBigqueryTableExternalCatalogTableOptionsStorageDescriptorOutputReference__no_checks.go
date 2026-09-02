@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsStorageDesc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsStorageDesc
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleBigqueryTableExternalCatalogTableOptionsStorageDescriptorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroup",
+		"@cdktn/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroup",
 		reflect.TypeOf((*GoogleApigeeAppGroup)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lastModifiedAt", GoGetter: "LastModifiedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -62,6 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAttributes", GoMethod: "PutAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAttributes", GoMethod: "ResetAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChannelId", GoMethod: "ResetChannelId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChannelUri", GoMethod: "ResetChannelUri"},
@@ -83,19 +85,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleApigeeAppGroup{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupAttributes",
+		"@cdktn/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupAttributes",
 		reflect.TypeOf((*GoogleApigeeAppGroupAttributes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupAttributesList",
+		"@cdktn/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupAttributesList",
 		reflect.TypeOf((*GoogleApigeeAppGroupAttributesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -112,12 +115,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleApigeeAppGroupAttributesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupAttributesOutputReference",
+		"@cdktn/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupAttributesOutputReference",
 		reflect.TypeOf((*GoogleApigeeAppGroupAttributesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,20 +153,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleApigeeAppGroupAttributesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupConfig",
+		"@cdktn/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupConfig",
 		reflect.TypeOf((*GoogleApigeeAppGroupConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupTimeouts",
+		"@cdktn/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupTimeouts",
 		reflect.TypeOf((*GoogleApigeeAppGroupTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleApigeeAppGroup.GoogleApigeeAppGroupTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleApigeeAppGroupTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -199,7 +202,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleApigeeAppGroupTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

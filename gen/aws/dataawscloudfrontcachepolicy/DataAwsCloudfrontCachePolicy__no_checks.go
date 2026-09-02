@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsCloudfrontCachePolicy) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsCloudfrontCachePolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsCloudfrontCachePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsCloudfrontCachePolicy) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontCachePolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsCloudfrontCachePolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

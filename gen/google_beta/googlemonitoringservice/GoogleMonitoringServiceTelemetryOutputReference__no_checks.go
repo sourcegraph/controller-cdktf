@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMonitoringServiceTelemetryOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringServiceTelemetryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringServiceTelemetryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringServiceTelemetryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringServiceTelemetryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleMonitoringServiceTelemetryOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringServiceTelemetryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringServiceTelemetryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMonitoringServiceTelemetryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleMonitoringServiceTelemetryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUser",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUser",
 		reflect.TypeOf((*IdentitystoreUser)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "locale", GoGetter: "Locale"},
 			_jsii_.MemberProperty{JsiiProperty: "localeInput", GoGetter: "LocaleInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -69,6 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putName", GoMethod: "PutName"},
 			_jsii_.MemberMethod{JsiiMethod: "putPhoneNumbers", GoMethod: "PutPhoneNumbers"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAddresses", GoMethod: "ResetAddresses"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmails", GoMethod: "ResetEmails"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -99,19 +101,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userNameInput", GoGetter: "UserNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userType", GoGetter: "UserType"},
 			_jsii_.MemberProperty{JsiiProperty: "userTypeInput", GoGetter: "UserTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentitystoreUser{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserAddresses",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddresses",
 		reflect.TypeOf((*IdentitystoreUserAddresses)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserAddressesOutputReference",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserAddressesOutputReference",
 		reflect.TypeOf((*IdentitystoreUserAddressesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -162,20 +165,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentitystoreUserAddressesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserConfig",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserConfig",
 		reflect.TypeOf((*IdentitystoreUserConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserEmails",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserEmails",
 		reflect.TypeOf((*IdentitystoreUserEmails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserEmailsOutputReference",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserEmailsOutputReference",
 		reflect.TypeOf((*IdentitystoreUserEmailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -211,16 +214,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentitystoreUserEmailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserExternalIds",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserExternalIds",
 		reflect.TypeOf((*IdentitystoreUserExternalIds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserExternalIdsList",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserExternalIdsList",
 		reflect.TypeOf((*IdentitystoreUserExternalIdsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -236,12 +239,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentitystoreUserExternalIdsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserExternalIdsOutputReference",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserExternalIdsOutputReference",
 		reflect.TypeOf((*IdentitystoreUserExternalIdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -270,16 +273,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentitystoreUserExternalIdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserName",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserName",
 		reflect.TypeOf((*IdentitystoreUserName)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserNameOutputReference",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserNameOutputReference",
 		reflect.TypeOf((*IdentitystoreUserNameOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -322,16 +325,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentitystoreUserNameOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbers",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbers",
 		reflect.TypeOf((*IdentitystoreUserPhoneNumbers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbersOutputReference",
+		"@cdktn/provider-aws.identitystoreUser.IdentitystoreUserPhoneNumbersOutputReference",
 		reflect.TypeOf((*IdentitystoreUserPhoneNumbersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -367,7 +370,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentitystoreUserPhoneNumbersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

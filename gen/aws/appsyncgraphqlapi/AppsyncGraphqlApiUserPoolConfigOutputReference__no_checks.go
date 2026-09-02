@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateGetSt
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_AppsyncGraphqlApiUserPoolConfigOutputReference) validateSetUs
 	return nil
 }
 
-func validateNewAppsyncGraphqlApiUserPoolConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppsyncGraphqlApiUserPoolConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

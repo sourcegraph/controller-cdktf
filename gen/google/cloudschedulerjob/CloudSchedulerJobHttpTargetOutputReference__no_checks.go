@@ -40,7 +40,7 @@ func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validatePutOidcTo
 	return nil
 }
 
-func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_CloudSchedulerJobHttpTargetOutputReference) validateSetUriPar
 	return nil
 }
 
-func validateNewCloudSchedulerJobHttpTargetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudSchedulerJobHttpTargetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

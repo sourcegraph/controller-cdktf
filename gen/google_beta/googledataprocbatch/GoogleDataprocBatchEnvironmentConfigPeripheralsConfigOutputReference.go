@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocbatch/internal"
 )
 
 type GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSparkHistoryServerConfig(value *GoogleDataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfig)
 	ResetMetastoreService()
 	ResetSparkHistoryServerConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference interf
 
 // The jsii proxy struct for GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference
 type jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputRe
 }
 
 
-func NewGoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference {
+func NewGoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference(ter
 	j := jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataprocBatch.GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDataprocBatch.GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference(ter
 	return &j
 }
 
-func NewGoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference_Override(g GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference_Override(g GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataprocBatch.GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDataprocBatch.GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputRe
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputRe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -445,8 +445,8 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputRe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -458,16 +458,16 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputRe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputRe
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleDataprocBatchEnvironmentConfigPeripheralsConfigOutputRe
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

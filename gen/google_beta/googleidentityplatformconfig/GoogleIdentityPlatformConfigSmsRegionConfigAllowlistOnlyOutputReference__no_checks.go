@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIdentityPlatformConfigSmsRegionConfigAllowlistOnlyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/edgecontainercluster/internal"
 )
 
 type EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputRefer
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputRefer
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEndTime()
 	ResetStartTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputRefer
 
 // The jsii proxy struct for EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference
 type jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWin
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWin
 }
 
 
-func NewEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference {
+func NewEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputRe
 	j := jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference",
+		"@cdktn/provider-google.edgecontainerCluster.EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputRe
 	return &j
 }
 
-func NewEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference_Override(e EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference_Override(e EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.edgecontainerCluster.EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference",
+		"@cdktn/provider-google.edgecontainerCluster.EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWin
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWin
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -456,8 +456,8 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWin
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -469,16 +469,16 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWin
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWin
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWindowOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenancePolicyMaintenanceExclusionsWin
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

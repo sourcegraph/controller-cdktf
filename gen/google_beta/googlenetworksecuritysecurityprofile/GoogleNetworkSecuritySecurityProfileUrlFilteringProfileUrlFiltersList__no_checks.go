@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFil
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFil
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFil
 	return nil
 }
 
-func validateNewGoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkSecuritySecurityProfileUrlFilteringProfileUrlFiltersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

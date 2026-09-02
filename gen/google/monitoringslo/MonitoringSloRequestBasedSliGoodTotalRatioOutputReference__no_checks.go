@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_MonitoringSloRequestBasedSliGoodTotalRatioOutputReference) va
 	return nil
 }
 
-func validateNewMonitoringSloRequestBasedSliGoodTotalRatioOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitoringSloRequestBasedSliGoodTotalRatioOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

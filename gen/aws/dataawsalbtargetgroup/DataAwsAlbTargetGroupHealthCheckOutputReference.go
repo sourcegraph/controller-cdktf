@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dataawsalbtargetgroup/internal"
 )
 
 type DataAwsAlbTargetGroupHealthCheckOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,7 +25,7 @@ type DataAwsAlbTargetGroupHealthCheckOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Enabled() cdktf.IResolvable
+	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	HealthyThreshold() *float64
@@ -41,9 +41,9 @@ type DataAwsAlbTargetGroupHealthCheckOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timeout() *float64
 	UnhealthyThreshold() *float64
 	// Experimental.
@@ -51,7 +51,7 @@ type DataAwsAlbTargetGroupHealthCheckOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type DataAwsAlbTargetGroupHealthCheckOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DataAwsAlbTargetGroupHealthCheckOutputReference interface {
 
 // The jsii proxy struct for DataAwsAlbTargetGroupHealthCheckOutputReference
 type jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) ComplexObjectIndex() interface{} {
@@ -115,8 +115,8 @@ func (j *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) CreationStac
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -246,7 +246,7 @@ func (j *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) UnhealthyThr
 }
 
 
-func NewDataAwsAlbTargetGroupHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsAlbTargetGroupHealthCheckOutputReference {
+func NewDataAwsAlbTargetGroupHealthCheckOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsAlbTargetGroupHealthCheckOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataAwsAlbTargetGroupHealthCheckOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -255,7 +255,7 @@ func NewDataAwsAlbTargetGroupHealthCheckOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckOutputReference",
+		"@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -263,11 +263,11 @@ func NewDataAwsAlbTargetGroupHealthCheckOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewDataAwsAlbTargetGroupHealthCheckOutputReference_Override(d DataAwsAlbTargetGroupHealthCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataAwsAlbTargetGroupHealthCheckOutputReference_Override(d DataAwsAlbTargetGroupHealthCheckOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckOutputReference",
+		"@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -317,7 +317,7 @@ func (j *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -357,11 +357,11 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -485,8 +485,8 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) GetStringMap
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -498,24 +498,24 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) Interpolatio
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -523,7 +523,7 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupHealthCheckOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

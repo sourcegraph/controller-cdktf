@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppstreamImageBuilderVpcConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppstreamImageBuilderVpcConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppstreamImageBuilderVpcConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

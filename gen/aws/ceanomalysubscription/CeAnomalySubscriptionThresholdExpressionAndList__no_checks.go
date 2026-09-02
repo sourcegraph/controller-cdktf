@@ -12,7 +12,7 @@ func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CeAnomalySubscriptionThresholdExpressionAndList) validateSetW
 	return nil
 }
 
-func validateNewCeAnomalySubscriptionThresholdExpressionAndListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCeAnomalySubscriptionThresholdExpressionAndListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

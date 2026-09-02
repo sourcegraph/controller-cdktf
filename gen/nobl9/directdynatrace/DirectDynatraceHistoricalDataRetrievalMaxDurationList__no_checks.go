@@ -12,7 +12,7 @@ func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationList) valida
 	return nil
 }
 
-func validateNewDirectDynatraceHistoricalDataRetrievalMaxDurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDirectDynatraceHistoricalDataRetrievalMaxDurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

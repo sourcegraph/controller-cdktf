@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConf
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConf
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataKubernetesMutatingWebhookConfigurationV1WebhookClientConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

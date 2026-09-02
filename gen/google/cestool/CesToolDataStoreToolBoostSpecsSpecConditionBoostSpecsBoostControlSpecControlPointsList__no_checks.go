@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostCon
 	return nil
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostCon
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostCon
 	return nil
 }
 
-func validateNewCesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesToolDataStoreToolBoostSpecsSpecConditionBoostSpecsBoostControlSpecControlPointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

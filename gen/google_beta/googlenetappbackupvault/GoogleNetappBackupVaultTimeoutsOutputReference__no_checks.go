@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetappBackupVaultTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappBackupVaultTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetappBackupVaultTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappBackupVaultTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetappBackupVaultTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleNetappBackupVaultTimeoutsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappBackupVaultTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetappBackupVaultTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleNetappBackupVaultTimeoutsOutputReference) validateSetUp
 	return nil
 }
 
-func validateNewGoogleNetappBackupVaultTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetappBackupVaultTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

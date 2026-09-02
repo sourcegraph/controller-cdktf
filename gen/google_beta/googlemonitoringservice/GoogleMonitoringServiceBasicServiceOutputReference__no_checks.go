@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringServiceBasicServiceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMonitoringServiceBasicServiceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMonitoringServiceBasicServiceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

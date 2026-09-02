@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleStorageBucketHierarchicalNamespaceOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketHierarchicalNamespaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleStorageBucketHierarchicalNamespaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketHierarchicalNamespaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageBucketHierarchicalNamespaceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleStorageBucketHierarchicalNamespaceOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketHierarchicalNamespaceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleStorageBucketHierarchicalNamespaceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleStorageBucketHierarchicalNamespaceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleStorageBucketHierarchicalNamespaceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

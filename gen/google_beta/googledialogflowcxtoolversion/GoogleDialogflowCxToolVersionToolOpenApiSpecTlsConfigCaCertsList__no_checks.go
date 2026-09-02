@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsL
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsL
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsL
 	return nil
 }
 
-func validateNewGoogleDialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowCxToolVersionToolOpenApiSpecTlsConfigCaCertsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

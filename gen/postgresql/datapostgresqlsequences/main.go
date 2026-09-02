@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences",
+		"@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequences",
 		reflect.TypeOf((*DataPostgresqlSequences)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "regexPattern", GoGetter: "RegexPattern"},
 			_jsii_.MemberProperty{JsiiProperty: "regexPatternInput", GoGetter: "RegexPatternInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLikeAllPatterns", GoMethod: "ResetLikeAllPatterns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLikeAnyPatterns", GoMethod: "ResetLikeAnyPatterns"},
@@ -65,23 +66,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataPostgresqlSequences{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesConfig",
+		"@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesConfig",
 		reflect.TypeOf((*DataPostgresqlSequencesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequences",
+		"@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequences",
 		reflect.TypeOf((*DataPostgresqlSequencesSequences)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequencesList",
+		"@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequencesList",
 		reflect.TypeOf((*DataPostgresqlSequencesSequencesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -97,12 +99,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataPostgresqlSequencesSequencesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequencesOutputReference",
+		"@cdktn/provider-postgresql.dataPostgresqlSequences.DataPostgresqlSequencesSequencesOutputReference",
 		reflect.TypeOf((*DataPostgresqlSequencesSequencesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -132,7 +134,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataPostgresqlSequencesSequencesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

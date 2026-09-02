@@ -40,7 +40,7 @@ func (c *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (c *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConnectUserHierarchyStructureHierarchyStructureOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewConnectUserHierarchyStructureHierarchyStructureOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewConnectUserHierarchyStructureHierarchyStructureOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

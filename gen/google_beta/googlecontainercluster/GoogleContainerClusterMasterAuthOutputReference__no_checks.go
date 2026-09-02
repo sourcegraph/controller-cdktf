@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validatePutC
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterMasterAuthOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterMasterAuthOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

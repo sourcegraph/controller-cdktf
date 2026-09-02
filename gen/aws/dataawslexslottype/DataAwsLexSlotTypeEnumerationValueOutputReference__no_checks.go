@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLexSlotTypeEnumerationValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsLexSlotTypeEnumerationValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsLexSlotTypeEnumerationValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

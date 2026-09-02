@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxflow/internal"
 )
 
 type DialogflowCxFlowAdvancedSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AudioExportGcsDestination() DialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationOutputReference
 	AudioExportGcsDestinationInput() *DialogflowCxFlowAdvancedSettingsAudioExportGcsDestination
 	// the index of the complex object in a list.
@@ -42,15 +42,15 @@ type DialogflowCxFlowAdvancedSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,9 +66,9 @@ type DialogflowCxFlowAdvancedSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAudioExportGcsDestination(value *DialogflowCxFlowAdvancedSettingsAudioExportGcsDestination)
 	PutDtmfSettings(value *DialogflowCxFlowAdvancedSettingsDtmfSettings)
 	PutLoggingSettings(value *DialogflowCxFlowAdvancedSettingsLoggingSettings)
@@ -79,7 +79,7 @@ type DialogflowCxFlowAdvancedSettingsOutputReference interface {
 	ResetSpeechSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type DialogflowCxFlowAdvancedSettingsOutputReference interface {
 
 // The jsii proxy struct for DialogflowCxFlowAdvancedSettingsOutputReference
 type jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) AudioExportGcsDestination() DialogflowCxFlowAdvancedSettingsAudioExportGcsDestinationOutputReference {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) TerraformRes
 }
 
 
-func NewDialogflowCxFlowAdvancedSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxFlowAdvancedSettingsOutputReference {
+func NewDialogflowCxFlowAdvancedSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DialogflowCxFlowAdvancedSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDialogflowCxFlowAdvancedSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewDialogflowCxFlowAdvancedSettingsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowAdvancedSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowAdvancedSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewDialogflowCxFlowAdvancedSettingsOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewDialogflowCxFlowAdvancedSettingsOutputReference_Override(d DialogflowCxFlowAdvancedSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDialogflowCxFlowAdvancedSettingsOutputReference_Override(d DialogflowCxFlowAdvancedSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowCxFlow.DialogflowCxFlowAdvancedSettingsOutputReference",
+		"@cdktn/provider-google.dialogflowCxFlow.DialogflowCxFlowAdvancedSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -314,7 +314,7 @@ func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,11 +354,11 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -482,8 +482,8 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) GetStringMap
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -495,16 +495,16 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) Interpolatio
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) ResetSpeechS
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (d *jsiiProxy_DialogflowCxFlowAdvancedSettingsOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

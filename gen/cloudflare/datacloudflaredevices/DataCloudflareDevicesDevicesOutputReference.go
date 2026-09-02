@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/datacloudflaredevices/internal"
 )
 
 type DataCloudflareDevicesDevicesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -26,7 +26,7 @@ type DataCloudflareDevicesDevicesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Deleted() cdktf.IResolvable
+	Deleted() cdktn.IResolvable
 	DeviceType() *string
 	// Experimental.
 	Fqn() *string
@@ -50,9 +50,9 @@ type DataCloudflareDevicesDevicesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Updated() *string
 	UserEmail() *string
 	UserId() *string
@@ -63,7 +63,7 @@ type DataCloudflareDevicesDevicesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,12 +79,12 @@ type DataCloudflareDevicesDevicesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,7 +94,7 @@ type DataCloudflareDevicesDevicesOutputReference interface {
 
 // The jsii proxy struct for DataCloudflareDevicesDevicesOutputReference
 type jsiiProxy_DataCloudflareDevicesDevicesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) ComplexObjectIndex() interface{} {
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) CreationStack() 
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) Deleted() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) Deleted() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"deleted",
@@ -317,8 +317,8 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -378,7 +378,7 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) Version() *strin
 }
 
 
-func NewDataCloudflareDevicesDevicesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareDevicesDevicesOutputReference {
+func NewDataCloudflareDevicesDevicesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCloudflareDevicesDevicesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCloudflareDevicesDevicesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -387,7 +387,7 @@ func NewDataCloudflareDevicesDevicesOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataCloudflareDevicesDevicesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -395,11 +395,11 @@ func NewDataCloudflareDevicesDevicesOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewDataCloudflareDevicesDevicesOutputReference_Override(d DataCloudflareDevicesDevicesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCloudflareDevicesDevicesOutputReference_Override(d DataCloudflareDevicesDevicesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareDevices.DataCloudflareDevicesDevicesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -449,7 +449,7 @@ func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCloudflareDevicesDevicesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -489,11 +489,11 @@ func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -617,8 +617,8 @@ func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -630,24 +630,24 @@ func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) InterpolationAsL
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -655,7 +655,7 @@ func (d *jsiiProxy_DataCloudflareDevicesDevicesOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

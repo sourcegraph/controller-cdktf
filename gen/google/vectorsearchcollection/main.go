@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollection",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollection",
 		reflect.TypeOf((*VectorSearchCollection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVectorSchema", GoMethod: "PutVectorSchema"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataSchema", GoMethod: "ResetDataSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
@@ -91,23 +93,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorSchema", GoGetter: "VectorSchema"},
 			_jsii_.MemberProperty{JsiiProperty: "vectorSchemaInput", GoGetter: "VectorSchemaInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_VectorSearchCollection{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionConfig",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionConfig",
 		reflect.TypeOf((*VectorSearchCollectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionEncryptionSpec",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionEncryptionSpec",
 		reflect.TypeOf((*VectorSearchCollectionEncryptionSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionEncryptionSpecOutputReference",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionEncryptionSpecOutputReference",
 		reflect.TypeOf((*VectorSearchCollectionEncryptionSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,16 +139,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VectorSearchCollectionEncryptionSpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionTimeouts",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionTimeouts",
 		reflect.TypeOf((*VectorSearchCollectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionTimeoutsOutputReference",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionTimeoutsOutputReference",
 		reflect.TypeOf((*VectorSearchCollectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -181,20 +184,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VectorSearchCollectionTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchema",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchema",
 		reflect.TypeOf((*VectorSearchCollectionVectorSchema)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVector",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVector",
 		reflect.TypeOf((*VectorSearchCollectionVectorSchemaDenseVector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorOutputReference",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorOutputReference",
 		reflect.TypeOf((*VectorSearchCollectionVectorSchemaDenseVectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -228,16 +231,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig",
 		reflect.TypeOf((*VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference",
 		reflect.TypeOf((*VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -270,12 +273,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaList",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaList",
 		reflect.TypeOf((*VectorSearchCollectionVectorSchemaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -292,12 +295,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VectorSearchCollectionVectorSchemaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaOutputReference",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaOutputReference",
 		reflect.TypeOf((*VectorSearchCollectionVectorSchemaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -334,16 +337,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VectorSearchCollectionVectorSchemaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaSparseVector",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaSparseVector",
 		reflect.TypeOf((*VectorSearchCollectionVectorSchemaSparseVector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaSparseVectorOutputReference",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaSparseVectorOutputReference",
 		reflect.TypeOf((*VectorSearchCollectionVectorSchemaSparseVectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -370,7 +373,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_VectorSearchCollectionVectorSchemaSparseVectorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

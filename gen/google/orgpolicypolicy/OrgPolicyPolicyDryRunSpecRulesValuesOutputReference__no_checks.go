@@ -40,11 +40,11 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) validate
 	return nil
 }
 
-func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesValuesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOrgPolicyPolicyDryRunSpecRulesValuesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOrgPolicyPolicyDryRunSpecRulesValuesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

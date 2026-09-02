@@ -40,11 +40,11 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputRe
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

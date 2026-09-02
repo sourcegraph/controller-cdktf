@@ -5,7 +5,7 @@ package dataawssignersigningjob
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3List) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (d *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3List) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3List) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3List) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3List) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3List) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3List) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_DataAwsSignerSigningJobSignedObjectS3List) validateSetWrapsSe
 	return nil
 }
 
-func validateNewDataAwsSignerSigningJobSignedObjectS3ListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsSignerSigningJobSignedObjectS3ListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

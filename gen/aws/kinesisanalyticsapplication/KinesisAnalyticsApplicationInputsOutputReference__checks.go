@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateGet
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -150,7 +150,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validatePut
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*KinesisAnalyticsApplicationInputsStartingPositionConfiguration:
 		value := value.(*[]*KinesisAnalyticsApplicationInputsStartingPositionConfiguration)
@@ -169,16 +169,16 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validatePut
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*KinesisAnalyticsApplicationInputsStartingPositionConfiguration; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*KinesisAnalyticsApplicationInputsStartingPositionConfiguration; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -273,7 +273,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -281,7 +281,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsOutputReference) validateSet
 	return nil
 }
 
-func validateNewKinesisAnalyticsApplicationInputsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKinesisAnalyticsApplicationInputsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

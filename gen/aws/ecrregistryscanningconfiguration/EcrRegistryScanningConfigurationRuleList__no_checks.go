@@ -12,7 +12,7 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateGetParamete
 	return nil
 }
 
-func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewEcrRegistryScanningConfigurationRuleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEcrRegistryScanningConfigurationRuleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

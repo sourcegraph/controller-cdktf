@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutput
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutput
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudRunV2JobTemplateTemplateVpcAccessNetworkInterfacesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApigeeDeveloperAppCredentialsApiProductsOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeDeveloperAppCredentialsApiProductsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApigeeDeveloperAppCredentialsApiProductsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeDeveloperAppCredentialsApiProductsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApigeeDeveloperAppCredentialsApiProductsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleApigeeDeveloperAppCredentialsApiProductsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeDeveloperAppCredentialsApiProductsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApigeeDeveloperAppCredentialsApiProductsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleApigeeDeveloperAppCredentialsApiProductsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleApigeeDeveloperAppCredentialsApiProductsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

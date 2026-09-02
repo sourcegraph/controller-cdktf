@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReferenc
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

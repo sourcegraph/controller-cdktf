@@ -40,7 +40,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) val
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewArtifactRegistryRepositoryCleanupPoliciesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewArtifactRegistryRepositoryCleanupPoliciesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

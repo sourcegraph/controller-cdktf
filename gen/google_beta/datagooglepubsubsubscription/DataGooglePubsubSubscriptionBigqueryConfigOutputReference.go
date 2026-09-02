@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglepubsubsubscription/internal"
 )
 
 type DataGooglePubsubSubscriptionBigqueryConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,7 +25,7 @@ type DataGooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DropUnknownFields() cdktf.IResolvable
+	DropUnknownFields() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGooglePubsubSubscriptionBigqueryConfig
@@ -37,18 +37,18 @@ type DataGooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	UseTableSchema() cdktf.IResolvable
-	UseTopicSchema() cdktf.IResolvable
-	WriteMetadata() cdktf.IResolvable
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	UseTableSchema() cdktn.IResolvable
+	UseTopicSchema() cdktn.IResolvable
+	WriteMetadata() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DataGooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type DataGooglePubsubSubscriptionBigqueryConfigOutputReference interface {
 
 // The jsii proxy struct for DataGooglePubsubSubscriptionBigqueryConfigOutputReference
 type jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -112,8 +112,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Cr
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) DropUnknownFields() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) DropUnknownFields() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"dropUnknownFields",
@@ -172,8 +172,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -182,8 +182,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) UseTableSchema() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) UseTableSchema() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"useTableSchema",
@@ -192,8 +192,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Us
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) UseTopicSchema() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) UseTopicSchema() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"useTopicSchema",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Us
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) WriteMetadata() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) WriteMetadata() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"writeMetadata",
@@ -213,7 +213,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Wr
 }
 
 
-func NewDataGooglePubsubSubscriptionBigqueryConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionBigqueryConfigOutputReference {
+func NewDataGooglePubsubSubscriptionBigqueryConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGooglePubsubSubscriptionBigqueryConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGooglePubsubSubscriptionBigqueryConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -222,7 +222,7 @@ func NewDataGooglePubsubSubscriptionBigqueryConfigOutputReference(terraformResou
 	j := jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigOutputReference",
+		"@cdktn/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -230,11 +230,11 @@ func NewDataGooglePubsubSubscriptionBigqueryConfigOutputReference(terraformResou
 	return &j
 }
 
-func NewDataGooglePubsubSubscriptionBigqueryConfigOutputReference_Override(d DataGooglePubsubSubscriptionBigqueryConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGooglePubsubSubscriptionBigqueryConfigOutputReference_Override(d DataGooglePubsubSubscriptionBigqueryConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigOutputReference",
+		"@cdktn/provider-google-beta.dataGooglePubsubSubscription.DataGooglePubsubSubscriptionBigqueryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -284,7 +284,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,11 +324,11 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -452,8 +452,8 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -465,24 +465,24 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) In
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -490,7 +490,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionBigqueryConfigOutputReference) Re
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataplexDatascanIamMember) validateInterpolationForAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DataplexDatascanIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexDatascanIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DataplexDatascanIamMember) validateOverrideLogicalIdParameter
 }
 
 func (d *jsiiProxy_DataplexDatascanIamMember) validatePutConditionParameters(value *DataplexDatascanIamMemberCondition) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexDatascanIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_DataplexDatascanIamMember) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataplexDatascanIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

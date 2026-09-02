@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validatePutSharingEnv
 }
 
 func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validatePutTimeoutsParameters(value *GoogleBigqueryAnalyticsHubDataExchangeTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubDataExchange) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

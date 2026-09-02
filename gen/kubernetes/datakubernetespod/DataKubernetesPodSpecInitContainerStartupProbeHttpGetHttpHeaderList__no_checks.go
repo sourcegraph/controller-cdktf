@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerStartupProbeHttpGetHttpHead
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerStartupProbeHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerStartupProbeHttpGetHttpHeaderList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerStartupProbeHttpGetHttpHead
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecInitContainerStartupProbeHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodSpecInitContainerStartupProbeHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerStartupProbeHttpGetHttpHead
 	return nil
 }
 
-func validateNewDataKubernetesPodSpecInitContainerStartupProbeHttpGetHttpHeaderListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesPodSpecInitContainerStartupProbeHttpGetHttpHeaderListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

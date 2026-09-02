@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolConnectorSpecEndUserAuthConf
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolConnectorSpecEndUserAuthConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolConnectorSpecEndUserAuthConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolConnectorSpecEndUserAuthConf
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolConnectorSpecEndUserAuthConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolConnectorSpecEndUserAuthConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDialogflowCxToolVersionToolConnectorSpecEndUserAuthConf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolVersionToolConnectorSpecEndUserAuthConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolVersionToolConnectorSpecEndUserAuthConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDialogflowCxToolVersionToolConnectorSpecEndUserAuthConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowCxToolVersionToolConnectorSpecEndUserAuthConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

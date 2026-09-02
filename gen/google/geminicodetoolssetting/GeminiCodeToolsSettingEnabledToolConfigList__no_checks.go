@@ -12,7 +12,7 @@ func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GeminiCodeToolsSettingEnabledToolConfigList) validateSetWraps
 	return nil
 }
 
-func validateNewGeminiCodeToolsSettingEnabledToolConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGeminiCodeToolsSettingEnabledToolConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

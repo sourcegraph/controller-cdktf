@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vectorsearchcollection/internal"
 )
 
 type VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputRef
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TextTemplate() *string
 	SetTextTemplate(val *string)
 	TextTemplateInput() *string
@@ -51,7 +51,7 @@ type VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputRef
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputRef
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputRef
 
 // The jsii proxy struct for VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference
 type jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingC
 	return returns
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingC
 }
 
 
-func NewVectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference {
+func NewVectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewVectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutput
 	j := jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewVectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutput
 	return &j
 }
 
-func NewVectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference_Override(v VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference_Override(v VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference",
+		"@cdktn/provider-google.vectorSearchCollection.VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingC
 	)
 }
 
-func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingC
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -488,8 +488,8 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingC
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -501,24 +501,24 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingC
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (v *jsiiProxy_VectorSearchCollectionVectorSchemaDenseVectorVertexEmbeddingC
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

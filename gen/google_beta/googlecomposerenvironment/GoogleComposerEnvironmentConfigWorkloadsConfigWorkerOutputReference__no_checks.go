@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigWorkerOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigWorkerOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComposerEnvironmentConfigWorkloadsConfigWorkerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComposerEnvironmentConfigWorkloadsConfigWorkerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComposerEnvironmentConfigWorkloadsConfigWorkerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOut
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOut
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOut
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewStatefulSetV1SpecTemplateSpecInitContainerLifecyclePreStopOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

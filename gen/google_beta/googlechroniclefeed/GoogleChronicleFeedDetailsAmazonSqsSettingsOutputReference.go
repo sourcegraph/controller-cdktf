@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccountNumber() *string
 	SetAccountNumber(val *string)
 	AccountNumberInput() *string
@@ -48,15 +48,15 @@ type GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthentication(value *GoogleChronicleFeedDetailsAmazonSqsSettingsAuthentication)
 	ResetAccountNumber()
 	ResetAuthentication()
@@ -83,7 +83,7 @@ type GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference interface {
 	ResetSourceDeletionOption()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference interface {
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) AccountNumber() *string {
@@ -256,8 +256,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) T
 }
 
 
-func NewGoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference {
+func NewGoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsAmazonSqsSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewGoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference(terraformReso
 	j := jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewGoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference(terraformReso
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference_Override(g GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference_Override(g GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,11 +422,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -550,8 +550,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -563,16 +563,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) I
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) R
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference) R
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeTcpSocketList) 
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeTcpSocketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeTcpSocketList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeTcpSocketList) 
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeTcpSocketList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeTcpSocketList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerReadinessProbeTcpSocketList) 
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecInitContainerReadinessProbeTcpSocketListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobSpecTemplateSpecInitContainerReadinessProbeTcpSocketListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

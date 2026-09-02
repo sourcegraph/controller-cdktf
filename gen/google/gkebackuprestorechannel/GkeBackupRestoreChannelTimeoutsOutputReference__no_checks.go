@@ -40,11 +40,11 @@ func (g *jsiiProxy_GkeBackupRestoreChannelTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestoreChannelTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeBackupRestoreChannelTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestoreChannelTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupRestoreChannelTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GkeBackupRestoreChannelTimeoutsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestoreChannelTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeBackupRestoreChannelTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GkeBackupRestoreChannelTimeoutsOutputReference) validateSetUp
 	return nil
 }
 
-func validateNewGkeBackupRestoreChannelTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGkeBackupRestoreChannelTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

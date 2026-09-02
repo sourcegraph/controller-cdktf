@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (o *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -229,7 +229,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 
 func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *OpsworksRailsAppLayerCloudwatchConfigurationLogStreams:
 		val := val.(*OpsworksRailsAppLayerCloudwatchConfigurationLogStreams)
@@ -244,7 +244,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *OpsworksRailsAppLayerCloudwatchConfigurationLogStreams; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *OpsworksRailsAppLayerCloudwatchConfigurationLogStreams; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -275,7 +275,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -291,7 +291,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputR
 	return nil
 }
 
-func validateNewOpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOpsworksRailsAppLayerCloudwatchConfigurationLogStreamsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

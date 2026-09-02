@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusL
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusL
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusL
 	return nil
 }
 
-func validateNewGoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleGkeonpremVmwareAdminClusterPlatformConfigBundlesStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (o *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReference
 	return nil
 }
 
-func validateNewOracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOracleDatabaseExadbVmClusterPropertiesTimeZoneOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

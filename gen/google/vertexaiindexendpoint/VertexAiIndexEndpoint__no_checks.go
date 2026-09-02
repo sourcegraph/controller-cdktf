@@ -56,6 +56,10 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiIndexEndpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiIndexEndpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (v *jsiiProxy_VertexAiIndexEndpoint) validatePutPrivateServiceConnectConfig
 }
 
 func (v *jsiiProxy_VertexAiIndexEndpoint) validatePutTimeoutsParameters(value *VertexAiIndexEndpointTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiIndexEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_VertexAiIndexEndpoint) validateSetLabelsParameters(val *map[s
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VertexAiIndexEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

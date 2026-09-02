@@ -40,7 +40,7 @@ func (c *jsiiProxy_CodebuildProjectSourceOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (c *jsiiProxy_CodebuildProjectSourceOutputReference) validatePutGitSubmodul
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -104,7 +104,7 @@ func (j *jsiiProxy_CodebuildProjectSourceOutputReference) validateSetTypeParamet
 	return nil
 }
 
-func validateNewCodebuildProjectSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodebuildProjectSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

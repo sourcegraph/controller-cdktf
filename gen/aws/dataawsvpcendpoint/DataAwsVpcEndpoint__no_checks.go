@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsVpcEndpoint) validatePutTimeoutsParameters(value *Data
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsVpcEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsVpcEndpoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataAwsVpcEndpoint) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsVpcEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationOutputReference) va
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (o *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationOutputReference) va
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksPhpAppLayerCloudwatchConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOpsworksPhpAppLayerCloudwatchConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpsworksPhpAppLayerCloudwatchConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

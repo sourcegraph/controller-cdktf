@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesComplianceStand
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesComplianceStand
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleSecurityposturePosturePolicySetsPoliciesComplianceStandardsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

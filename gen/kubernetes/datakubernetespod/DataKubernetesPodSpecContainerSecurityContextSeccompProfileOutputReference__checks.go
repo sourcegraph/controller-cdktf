@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (d *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOu
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -179,7 +179,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOu
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecContainerSecurityContextSeccompProfileOu
 	return nil
 }
 
-func validateNewDataKubernetesPodSpecContainerSecurityContextSeccompProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataKubernetesPodSpecContainerSecurityContextSeccompProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

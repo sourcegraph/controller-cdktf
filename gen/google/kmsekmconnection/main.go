@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnection",
+		"@cdktn/provider-google.kmsEkmConnection.KmsEkmConnection",
 		reflect.TypeOf((*KmsEkmConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -59,6 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putServiceResolvers", GoMethod: "PutServiceResolvers"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCryptoSpacePath", GoMethod: "ResetCryptoSpacePath"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEtag", GoMethod: "ResetEtag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -79,23 +81,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsEkmConnection{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnectionConfig",
+		"@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionConfig",
 		reflect.TypeOf((*KmsEkmConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers",
+		"@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolvers",
 		reflect.TypeOf((*KmsEkmConnectionServiceResolvers)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList",
+		"@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversList",
 		reflect.TypeOf((*KmsEkmConnectionServiceResolversList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -112,12 +115,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsEkmConnectionServiceResolversList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference",
+		"@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversOutputReference",
 		reflect.TypeOf((*KmsEkmConnectionServiceResolversOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -154,16 +157,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsEkmConnectionServiceResolversOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates",
+		"@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificates",
 		reflect.TypeOf((*KmsEkmConnectionServiceResolversServerCertificates)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList",
+		"@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesList",
 		reflect.TypeOf((*KmsEkmConnectionServiceResolversServerCertificatesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -180,12 +183,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference",
+		"@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionServiceResolversServerCertificatesOutputReference",
 		reflect.TypeOf((*KmsEkmConnectionServiceResolversServerCertificatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -224,16 +227,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsEkmConnectionServiceResolversServerCertificatesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts",
+		"@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeouts",
 		reflect.TypeOf((*KmsEkmConnectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference",
+		"@cdktn/provider-google.kmsEkmConnection.KmsEkmConnectionTimeoutsOutputReference",
 		reflect.TypeOf((*KmsEkmConnectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -269,7 +272,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_KmsEkmConnectionTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

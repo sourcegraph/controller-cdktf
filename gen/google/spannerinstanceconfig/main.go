@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigA",
+		"@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigA",
 		reflect.TypeOf((*SpannerInstanceConfigA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -58,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putReplicas", GoMethod: "PutReplicas"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "replicas", GoGetter: "Replicas"},
 			_jsii_.MemberProperty{JsiiProperty: "replicasInput", GoGetter: "ReplicasInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBaseConfig", GoMethod: "ResetBaseConfig"},
@@ -79,23 +81,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SpannerInstanceConfigA{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig",
+		"@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigAConfig",
 		reflect.TypeOf((*SpannerInstanceConfigAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicas",
+		"@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicas",
 		reflect.TypeOf((*SpannerInstanceConfigReplicas)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasList",
+		"@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasList",
 		reflect.TypeOf((*SpannerInstanceConfigReplicasList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -112,12 +115,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpannerInstanceConfigReplicasList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasOutputReference",
+		"@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasOutputReference",
 		reflect.TypeOf((*SpannerInstanceConfigReplicasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -153,16 +156,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpannerInstanceConfigReplicasOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeouts",
+		"@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeouts",
 		reflect.TypeOf((*SpannerInstanceConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeoutsOutputReference",
+		"@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigTimeoutsOutputReference",
 		reflect.TypeOf((*SpannerInstanceConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -198,7 +201,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SpannerInstanceConfigTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

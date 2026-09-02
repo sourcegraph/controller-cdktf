@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsOpensearchDomainClusterConfigZoneAwarenessConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

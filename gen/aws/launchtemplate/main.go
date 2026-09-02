@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplate",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplate",
 		reflect.TypeOf((*LaunchTemplate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -84,6 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceOptions", GoGetter: "MaintenanceOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceOptionsInput", GoGetter: "MaintenanceOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataOptions", GoGetter: "MetadataOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataOptionsInput", GoGetter: "MetadataOptionsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitoring", GoGetter: "Monitoring"},
@@ -127,6 +128,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ramDiskId", GoGetter: "RamDiskId"},
 			_jsii_.MemberProperty{JsiiProperty: "ramDiskIdInput", GoGetter: "RamDiskIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockDeviceMappings", GoMethod: "ResetBlockDeviceMappings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCapacityReservationSpecification", GoMethod: "ResetCapacityReservationSpecification"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCpuOptions", GoMethod: "ResetCpuOptions"},
@@ -190,23 +192,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userDataInput", GoGetter: "UserDataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIdsInput", GoGetter: "VpcSecurityGroupIdsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplate{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappings",
 		reflect.TypeOf((*LaunchTemplateBlockDeviceMappings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbs",
 		reflect.TypeOf((*LaunchTemplateBlockDeviceMappingsEbs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsEbsOutputReference",
 		reflect.TypeOf((*LaunchTemplateBlockDeviceMappingsEbsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -257,12 +260,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsList",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsList",
 		reflect.TypeOf((*LaunchTemplateBlockDeviceMappingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -279,12 +282,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateBlockDeviceMappingsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateBlockDeviceMappingsOutputReference",
 		reflect.TypeOf((*LaunchTemplateBlockDeviceMappingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -324,20 +327,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateBlockDeviceMappingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecification",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecification",
 		reflect.TypeOf((*LaunchTemplateCapacityReservationSpecification)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget",
 		reflect.TypeOf((*LaunchTemplateCapacityReservationSpecificationCapacityReservationTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference",
 		reflect.TypeOf((*LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityReservationId", GoGetter: "CapacityReservationId"},
@@ -370,12 +373,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateCapacityReservationSpecificationCapacityReservationTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateCapacityReservationSpecificationOutputReference",
 		reflect.TypeOf((*LaunchTemplateCapacityReservationSpecificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacityReservationPreference", GoGetter: "CapacityReservationPreference"},
@@ -409,20 +412,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateCapacityReservationSpecificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateConfig",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateConfig",
 		reflect.TypeOf((*LaunchTemplateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptions",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateCpuOptions",
 		reflect.TypeOf((*LaunchTemplateCpuOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCpuOptionsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateCpuOptionsOutputReference",
 		reflect.TypeOf((*LaunchTemplateCpuOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -455,16 +458,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateCpuOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecification",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateCreditSpecification",
 		reflect.TypeOf((*LaunchTemplateCreditSpecification)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateCreditSpecificationOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateCreditSpecificationOutputReference",
 		reflect.TypeOf((*LaunchTemplateCreditSpecificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -494,16 +497,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateCreditSpecificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecifications",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecifications",
 		reflect.TypeOf((*LaunchTemplateElasticGpuSpecifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsList",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsList",
 		reflect.TypeOf((*LaunchTemplateElasticGpuSpecificationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -520,12 +523,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateElasticGpuSpecificationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateElasticGpuSpecificationsOutputReference",
 		reflect.TypeOf((*LaunchTemplateElasticGpuSpecificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -554,16 +557,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAccelerator",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAccelerator",
 		reflect.TypeOf((*LaunchTemplateElasticInferenceAccelerator)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAcceleratorOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateElasticInferenceAcceleratorOutputReference",
 		reflect.TypeOf((*LaunchTemplateElasticInferenceAcceleratorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -592,16 +595,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateElasticInferenceAcceleratorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptions",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateEnclaveOptions",
 		reflect.TypeOf((*LaunchTemplateEnclaveOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateEnclaveOptionsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateEnclaveOptionsOutputReference",
 		reflect.TypeOf((*LaunchTemplateEnclaveOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -631,16 +634,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateEnclaveOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptions",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateHibernationOptions",
 		reflect.TypeOf((*LaunchTemplateHibernationOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateHibernationOptionsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateHibernationOptionsOutputReference",
 		reflect.TypeOf((*LaunchTemplateHibernationOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -669,16 +672,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateHibernationOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfile",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfile",
 		reflect.TypeOf((*LaunchTemplateIamInstanceProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfileOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateIamInstanceProfileOutputReference",
 		reflect.TypeOf((*LaunchTemplateIamInstanceProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -711,16 +714,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateIamInstanceProfileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptions",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptions",
 		reflect.TypeOf((*LaunchTemplateInstanceMarketOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsOutputReference",
 		reflect.TypeOf((*LaunchTemplateInstanceMarketOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -754,16 +757,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateInstanceMarketOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptions",
 		reflect.TypeOf((*LaunchTemplateInstanceMarketOptionsSpotOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference",
 		reflect.TypeOf((*LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "blockDurationMinutes", GoGetter: "BlockDurationMinutes"},
@@ -805,20 +808,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateInstanceMarketOptionsSpotOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirements",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirements)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCount",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsAcceleratorCount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -851,16 +854,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMib)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -893,16 +896,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorTotalMemoryMibOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -935,16 +938,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsBaselineEbsBandwidthMbpsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpu",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsMemoryGibPerVcpu)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -977,16 +980,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsMemoryGibPerVcpuOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMib",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsMemoryMib)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMibOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsMemoryMibOutputReference",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsMemoryMibOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1018,16 +1021,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsMemoryMibOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCount",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsNetworkInterfaceCount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1060,12 +1063,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsNetworkInterfaceCountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsOutputReference",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acceleratorCount", GoGetter: "AcceleratorCount"},
@@ -1161,16 +1164,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGb",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsTotalLocalStorageGb)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1203,16 +1206,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsTotalLocalStorageGbOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCount",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsVcpuCount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCountOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateInstanceRequirementsVcpuCountOutputReference",
 		reflect.TypeOf((*LaunchTemplateInstanceRequirementsVcpuCountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1244,16 +1247,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateInstanceRequirementsVcpuCountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecification",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateLicenseSpecification",
 		reflect.TypeOf((*LaunchTemplateLicenseSpecification)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationList",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationList",
 		reflect.TypeOf((*LaunchTemplateLicenseSpecificationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1270,12 +1273,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateLicenseSpecificationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateLicenseSpecificationOutputReference",
 		reflect.TypeOf((*LaunchTemplateLicenseSpecificationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1304,16 +1307,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateLicenseSpecificationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptions",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptions",
 		reflect.TypeOf((*LaunchTemplateMaintenanceOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptionsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateMaintenanceOptionsOutputReference",
 		reflect.TypeOf((*LaunchTemplateMaintenanceOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "autoRecovery", GoGetter: "AutoRecovery"},
@@ -1343,16 +1346,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateMaintenanceOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptions",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateMetadataOptions",
 		reflect.TypeOf((*LaunchTemplateMetadataOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMetadataOptionsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateMetadataOptionsOutputReference",
 		reflect.TypeOf((*LaunchTemplateMetadataOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1394,16 +1397,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateMetadataOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoring",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateMonitoring",
 		reflect.TypeOf((*LaunchTemplateMonitoring)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateMonitoringOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateMonitoringOutputReference",
 		reflect.TypeOf((*LaunchTemplateMonitoringOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1433,16 +1436,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateMonitoringOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateNetworkInterfaces",
 		reflect.TypeOf((*LaunchTemplateNetworkInterfaces)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesList",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesList",
 		reflect.TypeOf((*LaunchTemplateNetworkInterfacesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1459,12 +1462,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateNetworkInterfacesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateNetworkInterfacesOutputReference",
 		reflect.TypeOf((*LaunchTemplateNetworkInterfacesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "associateCarrierIpAddress", GoGetter: "AssociateCarrierIpAddress"},
@@ -1548,16 +1551,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateNetworkInterfacesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacement",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplatePlacement",
 		reflect.TypeOf((*LaunchTemplatePlacement)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePlacementOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplatePlacementOutputReference",
 		reflect.TypeOf((*LaunchTemplatePlacementOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "affinity", GoGetter: "Affinity"},
@@ -1608,16 +1611,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplatePlacementOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptions",
 		reflect.TypeOf((*LaunchTemplatePrivateDnsNameOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptionsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplatePrivateDnsNameOptionsOutputReference",
 		reflect.TypeOf((*LaunchTemplatePrivateDnsNameOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1653,16 +1656,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplatePrivateDnsNameOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecifications",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateTagSpecifications",
 		reflect.TypeOf((*LaunchTemplateTagSpecifications)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsList",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsList",
 		reflect.TypeOf((*LaunchTemplateTagSpecificationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1679,12 +1682,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateTagSpecificationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference",
+		"@cdktn/provider-aws.launchTemplate.LaunchTemplateTagSpecificationsOutputReference",
 		reflect.TypeOf((*LaunchTemplateTagSpecificationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1717,7 +1720,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchTemplateTagSpecificationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

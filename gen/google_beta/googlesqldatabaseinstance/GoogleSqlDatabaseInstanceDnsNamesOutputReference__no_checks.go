@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceDnsNamesOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceDnsNamesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceDnsNamesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceDnsNamesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceDnsNamesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceDnsNamesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceDnsNamesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceDnsNamesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSqlDatabaseInstanceDnsNamesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleSqlDatabaseInstanceDnsNamesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

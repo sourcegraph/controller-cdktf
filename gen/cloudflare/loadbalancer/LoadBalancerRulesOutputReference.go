@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/loadbalancer/internal"
 )
 
 type LoadBalancerRulesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -53,15 +53,15 @@ type LoadBalancerRulesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -77,9 +77,9 @@ type LoadBalancerRulesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutFixedResponse(value *LoadBalancerRulesFixedResponse)
 	PutOverrides(value interface{})
 	ResetCondition()
@@ -90,7 +90,7 @@ type LoadBalancerRulesOutputReference interface {
 	ResetTerminates()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,7 +100,7 @@ type LoadBalancerRulesOutputReference interface {
 
 // The jsii proxy struct for LoadBalancerRulesOutputReference
 type jsiiProxy_LoadBalancerRulesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LoadBalancerRulesOutputReference) ComplexObjectIndex() interface{} {
@@ -303,8 +303,8 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LoadBalancerRulesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -314,7 +314,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference) TerraformResource() cdktf.I
 }
 
 
-func NewLoadBalancerRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerRulesOutputReference {
+func NewLoadBalancerRulesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoadBalancerRulesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLoadBalancerRulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -323,7 +323,7 @@ func NewLoadBalancerRulesOutputReference(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_LoadBalancerRulesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference",
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -331,11 +331,11 @@ func NewLoadBalancerRulesOutputReference(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewLoadBalancerRulesOutputReference_Override(l LoadBalancerRulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLoadBalancerRulesOutputReference_Override(l LoadBalancerRulesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference",
+		"@cdktn/provider-cloudflare.loadBalancer.LoadBalancerRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
@@ -440,7 +440,7 @@ func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoadBalancerRulesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -480,11 +480,11 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetAnyMapAttribute(terrafor
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -608,8 +608,8 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) GetStringMapAttribute(terra
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -621,16 +621,16 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) InterpolationAsList() cdktf
 	return returns
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -707,8 +707,8 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) ResetTerminates() {
 	)
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LoadBalancerRulesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -716,7 +716,7 @@ func (l *jsiiProxy_LoadBalancerRulesOutputReference) Resolve(_context cdktf.IRes
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

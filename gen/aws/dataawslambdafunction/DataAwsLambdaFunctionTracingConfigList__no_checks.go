@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionTracingConfigList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionTracingConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLambdaFunctionTracingConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionTracingConfigList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionTracingConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLambdaFunctionTracingConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionTracingConfigList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewDataAwsLambdaFunctionTracingConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsLambdaFunctionTracingConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

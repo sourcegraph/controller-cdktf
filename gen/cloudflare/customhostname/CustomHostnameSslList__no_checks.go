@@ -12,7 +12,7 @@ func (c *jsiiProxy_CustomHostnameSslList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameSslList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomHostnameSslList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CustomHostnameSslList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CustomHostnameSslList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CustomHostnameSslList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewCustomHostnameSslListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCustomHostnameSslListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

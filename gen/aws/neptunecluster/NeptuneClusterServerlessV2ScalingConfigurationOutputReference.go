@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/neptunecluster/internal"
 )
 
 type NeptuneClusterServerlessV2ScalingConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type NeptuneClusterServerlessV2ScalingConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type NeptuneClusterServerlessV2ScalingConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMaxCapacity()
 	ResetMinCapacity()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type NeptuneClusterServerlessV2ScalingConfigurationOutputReference interface {
 
 // The jsii proxy struct for NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 type jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 }
 
 
-func NewNeptuneClusterServerlessV2ScalingConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NeptuneClusterServerlessV2ScalingConfigurationOutputReference {
+func NewNeptuneClusterServerlessV2ScalingConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NeptuneClusterServerlessV2ScalingConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNeptuneClusterServerlessV2ScalingConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewNeptuneClusterServerlessV2ScalingConfigurationOutputReference(terraformR
 	j := jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference",
+		"@cdktn/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewNeptuneClusterServerlessV2ScalingConfigurationOutputReference(terraformR
 	return &j
 }
 
-func NewNeptuneClusterServerlessV2ScalingConfigurationOutputReference_Override(n NeptuneClusterServerlessV2ScalingConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNeptuneClusterServerlessV2ScalingConfigurationOutputReference_Override(n NeptuneClusterServerlessV2ScalingConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference",
+		"@cdktn/provider-aws.neptuneCluster.NeptuneClusterServerlessV2ScalingConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 	)
 }
 
-func (j *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -456,8 +456,8 @@ func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -469,16 +469,16 @@ func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 	return returns
 }
 
-func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 	)
 }
 
-func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (n *jsiiProxy_NeptuneClusterServerlessV2ScalingConfigurationOutputReference
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamStreamSourceConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatastreamStreamSourceConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

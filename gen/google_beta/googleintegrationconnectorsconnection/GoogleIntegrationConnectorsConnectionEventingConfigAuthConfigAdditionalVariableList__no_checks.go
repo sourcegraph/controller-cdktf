@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigAuthConfig
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigAuthConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionEventingConfigAuthConfig
 	return nil
 }
 
-func validateNewGoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleIntegrationConnectorsConnectionEventingConfigAuthConfigAdditionalVariableListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

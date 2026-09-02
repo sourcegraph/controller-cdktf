@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigShieldedIns
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigShieldedIns
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataprocClusterClusterConfigGceClusterConfigShieldedInstanceConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

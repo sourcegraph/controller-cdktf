@@ -40,11 +40,11 @@ func (o *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateGetString
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeOutputReference) validateSetTypePa
 	return nil
 }
 
-func validateNewOpsworksMysqlLayerEbsVolumeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOpsworksMysqlLayerEbsVolumeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

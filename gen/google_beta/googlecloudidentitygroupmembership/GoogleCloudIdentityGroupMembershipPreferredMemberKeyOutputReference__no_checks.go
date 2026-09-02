@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudIdentityGroupMembershipPreferredMemberKeyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

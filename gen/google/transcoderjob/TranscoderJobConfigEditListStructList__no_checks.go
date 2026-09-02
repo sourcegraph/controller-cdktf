@@ -12,7 +12,7 @@ func (t *jsiiProxy_TranscoderJobConfigEditListStructList) validateGetParameters(
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigEditListStructList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigEditListStructList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_TranscoderJobConfigEditListStructList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigEditListStructList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TranscoderJobConfigEditListStructList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_TranscoderJobConfigEditListStructList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewTranscoderJobConfigEditListStructListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTranscoderJobConfigEditListStructListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

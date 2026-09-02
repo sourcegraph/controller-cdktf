@@ -12,7 +12,7 @@ func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DiscoveryEngineTargetSiteFailureReasonList) validateSetWrapsS
 	return nil
 }
 
-func validateNewDiscoveryEngineTargetSiteFailureReasonListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDiscoveryEngineTargetSiteFailureReasonListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

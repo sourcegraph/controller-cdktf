@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) valida
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) valida
 	return nil
 }
 
-func validateNewBigqueryAnalyticsHubListingPubsubTopicOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryAnalyticsHubListingPubsubTopicOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

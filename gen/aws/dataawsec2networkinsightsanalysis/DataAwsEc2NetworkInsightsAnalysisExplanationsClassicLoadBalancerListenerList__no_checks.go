@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalan
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalan
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalan
 	return nil
 }
 
-func validateNewDataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsEc2NetworkInsightsAnalysisExplanationsClassicLoadBalancerListenerListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

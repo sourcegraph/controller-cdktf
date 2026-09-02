@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateOverrideLogical
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsConnectUserHierarchyStructure_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateSetInstanceIdPa
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsConnectUserHierarchyStructure) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

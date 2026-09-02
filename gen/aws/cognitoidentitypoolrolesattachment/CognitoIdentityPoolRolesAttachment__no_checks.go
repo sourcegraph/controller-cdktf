@@ -56,6 +56,10 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateInterpolationForA
 	return nil
 }
 
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateOverrideLogicalId
 }
 
 func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validatePutRoleMappingParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetIdentityPoolId
 	return nil
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

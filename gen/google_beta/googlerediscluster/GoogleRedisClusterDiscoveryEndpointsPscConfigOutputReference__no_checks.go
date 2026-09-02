@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleRedisClusterDiscoveryEndpointsPscConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleRedisClusterDiscoveryEndpointsPscConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleRedisClusterDiscoveryEndpointsPscConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

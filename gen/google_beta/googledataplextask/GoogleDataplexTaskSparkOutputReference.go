@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataplextask/internal"
 )
 
 type GoogleDataplexTaskSparkOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ArchiveUris() *[]*string
 	SetArchiveUris(val *[]*string)
 	ArchiveUrisInput() *[]*string
@@ -57,15 +57,15 @@ type GoogleDataplexTaskSparkOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,9 +81,9 @@ type GoogleDataplexTaskSparkOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutInfrastructureSpec(value *GoogleDataplexTaskSparkInfrastructureSpec)
 	ResetArchiveUris()
 	ResetFileUris()
@@ -95,7 +95,7 @@ type GoogleDataplexTaskSparkOutputReference interface {
 	ResetSqlScriptFile()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type GoogleDataplexTaskSparkOutputReference interface {
 
 // The jsii proxy struct for GoogleDataplexTaskSparkOutputReference
 type jsiiProxy_GoogleDataplexTaskSparkOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference) ArchiveUris() *[]*string {
@@ -328,8 +328,8 @@ func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -339,7 +339,7 @@ func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference) TerraformResource() c
 }
 
 
-func NewGoogleDataplexTaskSparkOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataplexTaskSparkOutputReference {
+func NewGoogleDataplexTaskSparkOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDataplexTaskSparkOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDataplexTaskSparkOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -348,7 +348,7 @@ func NewGoogleDataplexTaskSparkOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_GoogleDataplexTaskSparkOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataplexTask.GoogleDataplexTaskSparkOutputReference",
+		"@cdktn/provider-google-beta.googleDataplexTask.GoogleDataplexTaskSparkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -356,11 +356,11 @@ func NewGoogleDataplexTaskSparkOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewGoogleDataplexTaskSparkOutputReference_Override(g GoogleDataplexTaskSparkOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDataplexTaskSparkOutputReference_Override(g GoogleDataplexTaskSparkOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataplexTask.GoogleDataplexTaskSparkOutputReference",
+		"@cdktn/provider-google-beta.googleDataplexTask.GoogleDataplexTaskSparkOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -487,7 +487,7 @@ func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataplexTaskSparkOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,11 +527,11 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -655,8 +655,8 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -668,16 +668,16 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -759,8 +759,8 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) ResetSqlScriptFile() 
 	)
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -768,7 +768,7 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkServicesMulticastProducerAssociationStateList) validat
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastProducerAssociationStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesMulticastProducerAssociationStateList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_NetworkServicesMulticastProducerAssociationStateList) validat
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastProducerAssociationStateList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesMulticastProducerAssociationStateList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_NetworkServicesMulticastProducerAssociationStateList) validat
 	return nil
 }
 
-func validateNewNetworkServicesMulticastProducerAssociationStateListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkServicesMulticastProducerAssociationStateListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

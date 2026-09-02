@@ -56,6 +56,10 @@ func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateInterpolation
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateMoveToIdParam
 }
 
 func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Ec2TransitGatewayRouteTablePropagation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

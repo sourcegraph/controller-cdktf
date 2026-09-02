@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputRefe
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetworkServicesMulticastDomainActivationTrafficSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkServicesMulticastDomainActivationTrafficSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

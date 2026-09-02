@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSecureSourceManagerHookPushOptionOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerHookPushOptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSecureSourceManagerHookPushOptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerHookPushOptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSecureSourceManagerHookPushOptionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleSecureSourceManagerHookPushOptionOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerHookPushOptionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerHookPushOptionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSecureSourceManagerHookPushOptionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSecureSourceManagerHookPushOptionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

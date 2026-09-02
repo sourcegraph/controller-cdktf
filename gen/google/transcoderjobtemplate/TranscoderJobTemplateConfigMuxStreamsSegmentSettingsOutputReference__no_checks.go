@@ -40,11 +40,11 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputRef
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTranscoderJobTemplateConfigMuxStreamsSegmentSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

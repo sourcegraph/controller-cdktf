@@ -40,11 +40,11 @@ func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) validateGetStringM
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_EksNodeGroupLaunchTemplateOutputReference) validateSetVersion
 	return nil
 }
 
-func validateNewEksNodeGroupLaunchTemplateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEksNodeGroupLaunchTemplateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateGetPar
 	return nil
 }
 
-func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_MedialiveInputSecurityGroupWhitelistRulesList) validateSetWra
 	return nil
 }
 
-func validateNewMedialiveInputSecurityGroupWhitelistRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMedialiveInputSecurityGroupWhitelistRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

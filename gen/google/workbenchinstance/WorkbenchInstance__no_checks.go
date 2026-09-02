@@ -56,6 +56,10 @@ func (w *jsiiProxy_WorkbenchInstance) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (w *jsiiProxy_WorkbenchInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkbenchInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (w *jsiiProxy_WorkbenchInstance) validatePutGceSetupParameters(value *Workb
 }
 
 func (w *jsiiProxy_WorkbenchInstance) validatePutTimeoutsParameters(value *WorkbenchInstanceTimeouts) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkbenchInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -136,7 +144,7 @@ func (j *jsiiProxy_WorkbenchInstance) validateSetLabelsParameters(val *map[strin
 	return nil
 }
 
-func (j *jsiiProxy_WorkbenchInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_WorkbenchInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

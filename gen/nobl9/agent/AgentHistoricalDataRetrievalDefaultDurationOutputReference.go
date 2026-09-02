@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/agent/internal"
 )
 
 type AgentHistoricalDataRetrievalDefaultDurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type AgentHistoricalDataRetrievalDefaultDurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Unit() *string
 	SetUnit(val *string)
 	UnitInput() *string
@@ -48,7 +48,7 @@ type AgentHistoricalDataRetrievalDefaultDurationOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type AgentHistoricalDataRetrievalDefaultDurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type AgentHistoricalDataRetrievalDefaultDurationOutputReference interface {
 
 // The jsii proxy struct for AgentHistoricalDataRetrievalDefaultDurationOutputReference
 type jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) ComplexObjectIndex() interface{} {
@@ -142,8 +142,8 @@ func (j *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) V
 }
 
 
-func NewAgentHistoricalDataRetrievalDefaultDurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AgentHistoricalDataRetrievalDefaultDurationOutputReference {
+func NewAgentHistoricalDataRetrievalDefaultDurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AgentHistoricalDataRetrievalDefaultDurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAgentHistoricalDataRetrievalDefaultDurationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewAgentHistoricalDataRetrievalDefaultDurationOutputReference(terraformReso
 	j := jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDurationOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewAgentHistoricalDataRetrievalDefaultDurationOutputReference(terraformReso
 	return &j
 }
 
-func NewAgentHistoricalDataRetrievalDefaultDurationOutputReference_Override(a AgentHistoricalDataRetrievalDefaultDurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAgentHistoricalDataRetrievalDefaultDurationOutputReference_Override(a AgentHistoricalDataRetrievalDefaultDurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDurationOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) G
 	return returns
 }
 
-func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -454,8 +454,8 @@ func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) G
 	return returns
 }
 
-func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -467,24 +467,24 @@ func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) I
 	return returns
 }
 
-func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (a *jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference) R
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

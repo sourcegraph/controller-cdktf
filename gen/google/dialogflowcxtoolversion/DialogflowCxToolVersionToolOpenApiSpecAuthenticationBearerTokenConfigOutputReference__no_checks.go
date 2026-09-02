@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTok
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTok
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTok
 	return nil
 }
 
-func validateNewDialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowCxToolVersionToolOpenApiSpecAuthenticationBearerTokenConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

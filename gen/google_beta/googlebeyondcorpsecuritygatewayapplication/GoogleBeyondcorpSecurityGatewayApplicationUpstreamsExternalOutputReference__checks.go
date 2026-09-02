@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints:
 		value := value.(*[]*GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints)
@@ -114,16 +114,16 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -210,7 +210,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,7 +218,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 	return nil
 }
 
-func validateNewGoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectAppdynamics) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (d *jsiiProxy_DirectAppdynamics) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectAppdynamics) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DirectAppdynamics) validatePutHistoricalDataRetrievalParamete
 }
 
 func (d *jsiiProxy_DirectAppdynamics) validatePutQueryDelayParameters(value *DirectAppdynamicsQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectAppdynamics) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_DirectAppdynamics) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_DirectAppdynamics) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectAppdynamics) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

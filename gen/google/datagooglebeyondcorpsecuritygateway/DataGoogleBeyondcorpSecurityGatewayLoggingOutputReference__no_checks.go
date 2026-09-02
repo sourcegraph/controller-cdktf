@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayLoggingOutputReference) va
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayLoggingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayLoggingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayLoggingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayLoggingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayLoggingOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayLoggingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleBeyondcorpSecurityGatewayLoggingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleBeyondcorpSecurityGatewayLoggingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleBeyondcorpSecurityGatewayLoggingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

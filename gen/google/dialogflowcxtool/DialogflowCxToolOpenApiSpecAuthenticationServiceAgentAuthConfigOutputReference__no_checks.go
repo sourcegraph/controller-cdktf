@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConf
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConf
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowCxToolOpenApiSpecAuthenticationServiceAgentAuthConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

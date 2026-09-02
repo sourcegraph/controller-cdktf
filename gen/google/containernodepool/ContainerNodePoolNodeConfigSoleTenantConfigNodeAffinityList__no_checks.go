@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList) 
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList) 
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityList) 
 	return nil
 }
 
-func validateNewContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerNodePoolNodeConfigSoleTenantConfigNodeAffinityListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

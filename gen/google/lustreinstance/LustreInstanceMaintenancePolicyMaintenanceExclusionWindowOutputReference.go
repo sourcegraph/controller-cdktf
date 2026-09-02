@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/lustreinstance/internal"
 )
 
 type LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,9 +38,9 @@ type LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Time() LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference
 	TimeInput() *LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime
 	// Experimental.
@@ -48,7 +48,7 @@ type LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference in
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,15 +64,15 @@ type LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEndDate(value *LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate)
 	PutStartDate(value *LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate)
 	PutTime(value *LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference in
 
 // The jsii proxy struct for LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference
 type jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) ComplexObjectIndex() interface{} {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	return returns
 }
 
-func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 }
 
 
-func NewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference {
+func NewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference
 	j := jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference
 	return &j
 }
 
-func NewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference_Override(l LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference_Override(l LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	return returns
 }
 
-func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -455,8 +455,8 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	return returns
 }
 
-func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -468,16 +468,16 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	return returns
 }
 
-func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -517,8 +517,8 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	)
 }
 
-func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

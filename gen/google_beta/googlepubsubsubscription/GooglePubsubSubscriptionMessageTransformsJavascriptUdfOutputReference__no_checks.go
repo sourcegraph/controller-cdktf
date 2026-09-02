@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePubsubSubscriptionMessageTransformsJavascriptUdfOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

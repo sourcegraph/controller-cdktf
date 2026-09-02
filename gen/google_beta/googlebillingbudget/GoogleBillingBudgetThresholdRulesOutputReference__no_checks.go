@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBillingBudgetThresholdRulesOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBillingBudgetThresholdRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBillingBudgetThresholdRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBillingBudgetThresholdRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBillingBudgetThresholdRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleBillingBudgetThresholdRulesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetThresholdRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBillingBudgetThresholdRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleBillingBudgetThresholdRulesOutputReference) validateSet
 	return nil
 }
 
-func validateNewGoogleBillingBudgetThresholdRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleBillingBudgetThresholdRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

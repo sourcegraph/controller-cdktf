@@ -40,11 +40,11 @@ func (f *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateGet
 	return nil
 }
 
-func (f *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_FisExperimentTemplateActionTargetOutputReference) validateSet
 	return nil
 }
 
-func validateNewFisExperimentTemplateActionTargetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFisExperimentTemplateActionTargetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

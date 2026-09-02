@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
+		"@cdktn/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplication",
 		reflect.TypeOf((*GoogleAppEngineApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "locationId", GoGetter: "LocationId"},
 			_jsii_.MemberProperty{JsiiProperty: "locationIdInput", GoGetter: "LocationIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -65,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putIap", GoMethod: "PutIap"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthDomain", GoMethod: "ResetAuthDomain"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseType", GoMethod: "ResetDatabaseType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFeatureSettings", GoMethod: "ResetFeatureSettings"},
@@ -91,23 +93,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "urlDispatchRule", GoGetter: "UrlDispatchRule"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleAppEngineApplication{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationConfig",
+		"@cdktn/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationConfig",
 		reflect.TypeOf((*GoogleAppEngineApplicationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettings",
+		"@cdktn/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettings",
 		reflect.TypeOf((*GoogleAppEngineApplicationFeatureSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationFeatureSettingsOutputReference",
 		reflect.TypeOf((*GoogleAppEngineApplicationFeatureSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,16 +139,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleAppEngineApplicationFeatureSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationIap",
+		"@cdktn/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationIap",
 		reflect.TypeOf((*GoogleAppEngineApplicationIap)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationIapOutputReference",
+		"@cdktn/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationIapOutputReference",
 		reflect.TypeOf((*GoogleAppEngineApplicationIapOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -180,16 +183,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleAppEngineApplicationIapOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationTimeouts",
+		"@cdktn/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationTimeouts",
 		reflect.TypeOf((*GoogleAppEngineApplicationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleAppEngineApplicationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -222,16 +225,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleAppEngineApplicationTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationUrlDispatchRule",
+		"@cdktn/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationUrlDispatchRule",
 		reflect.TypeOf((*GoogleAppEngineApplicationUrlDispatchRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationUrlDispatchRuleList",
+		"@cdktn/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationUrlDispatchRuleList",
 		reflect.TypeOf((*GoogleAppEngineApplicationUrlDispatchRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -247,12 +250,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleAppEngineApplicationUrlDispatchRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationUrlDispatchRuleOutputReference",
+		"@cdktn/provider-google-beta.googleAppEngineApplication.GoogleAppEngineApplicationUrlDispatchRuleOutputReference",
 		reflect.TypeOf((*GoogleAppEngineApplicationUrlDispatchRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -282,7 +285,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleAppEngineApplicationUrlDispatchRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

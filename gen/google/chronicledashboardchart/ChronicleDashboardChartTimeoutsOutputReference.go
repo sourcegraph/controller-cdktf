@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/chronicledashboardchart/internal"
 )
 
 type ChronicleDashboardChartTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type ChronicleDashboardChartTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type ChronicleDashboardChartTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type ChronicleDashboardChartTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ChronicleDashboardChartTimeoutsOutputReference interface {
 
 // The jsii proxy struct for ChronicleDashboardChartTimeoutsOutputReference
 type jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) UpdateInput()
 }
 
 
-func NewChronicleDashboardChartTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ChronicleDashboardChartTimeoutsOutputReference {
+func NewChronicleDashboardChartTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ChronicleDashboardChartTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewChronicleDashboardChartTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewChronicleDashboardChartTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartTimeoutsOutputReference",
+		"@cdktn/provider-google.chronicleDashboardChart.ChronicleDashboardChartTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewChronicleDashboardChartTimeoutsOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewChronicleDashboardChartTimeoutsOutputReference_Override(c ChronicleDashboardChartTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewChronicleDashboardChartTimeoutsOutputReference_Override(c ChronicleDashboardChartTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.chronicleDashboardChart.ChronicleDashboardChartTimeoutsOutputReference",
+		"@cdktn/provider-google.chronicleDashboardChart.ChronicleDashboardChartTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -491,8 +491,8 @@ func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) GetStringMapA
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -504,16 +504,16 @@ func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) Interpolation
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) ResetUpdate()
 	)
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (c *jsiiProxy_ChronicleDashboardChartTimeoutsOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

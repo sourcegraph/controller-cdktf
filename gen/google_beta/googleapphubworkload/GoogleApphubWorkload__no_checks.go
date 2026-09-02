@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleApphubWorkload) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApphubWorkload) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApphubWorkload) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleApphubWorkload) validatePutAttributesParameters(value *
 }
 
 func (g *jsiiProxy_GoogleApphubWorkload) validatePutTimeoutsParameters(value *GoogleApphubWorkloadTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApphubWorkload) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleApphubWorkload) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubWorkload) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleApphubWorkload) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

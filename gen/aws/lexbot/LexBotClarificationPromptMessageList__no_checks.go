@@ -12,7 +12,7 @@ func (l *jsiiProxy_LexBotClarificationPromptMessageList) validateGetParameters(i
 	return nil
 }
 
-func (l *jsiiProxy_LexBotClarificationPromptMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexBotClarificationPromptMessageList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LexBotClarificationPromptMessageList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_LexBotClarificationPromptMessageList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LexBotClarificationPromptMessageList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LexBotClarificationPromptMessageList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewLexBotClarificationPromptMessageListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLexBotClarificationPromptMessageListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

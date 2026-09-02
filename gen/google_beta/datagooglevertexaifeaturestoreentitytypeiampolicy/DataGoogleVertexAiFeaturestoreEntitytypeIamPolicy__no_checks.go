@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleVertexAiFeaturestoreEntitytypeIamPolicy) validateOv
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleVertexAiFeaturestoreEntitytypeIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleVertexAiFeaturestoreEntitytypeIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataGoogleVertexAiFeaturestoreEntitytypeIamPolicy) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVertexAiFeaturestoreEntitytypeIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleVertexAiFeaturestoreEntitytypeIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

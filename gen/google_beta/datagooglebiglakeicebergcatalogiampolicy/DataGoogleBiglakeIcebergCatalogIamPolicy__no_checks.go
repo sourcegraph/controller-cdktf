@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleBiglakeIcebergCatalogIamPolicy) validateOverrideLog
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleBiglakeIcebergCatalogIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleBiglakeIcebergCatalogIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleBiglakeIcebergCatalogIamPolicy) validateSetIdParame
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBiglakeIcebergCatalogIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleBiglakeIcebergCatalogIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterList) validateGetParameters(inde
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableInstanceClusterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigtableInstanceClusterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewGoogleBigtableInstanceClusterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleBigtableInstanceClusterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

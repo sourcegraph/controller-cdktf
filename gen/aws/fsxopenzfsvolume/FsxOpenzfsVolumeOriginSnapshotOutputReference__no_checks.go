@@ -40,11 +40,11 @@ func (f *jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference) validateGetStr
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeOriginSnapshotOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFsxOpenzfsVolumeOriginSnapshotOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFsxOpenzfsVolumeOriginSnapshotOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

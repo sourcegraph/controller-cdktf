@@ -40,7 +40,7 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	return nil
 }
 
-func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	return nil
 }
 
-func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeters) validateInterpolationF
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerServicePerimeters) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerServicePerimeters) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeters) validatePutServicePeri
 }
 
 func (a *jsiiProxy_AccessContextManagerServicePerimeters) validatePutTimeoutsParameters(value *AccessContextManagerServicePerimetersTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimeters) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeters) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeters) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeters) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

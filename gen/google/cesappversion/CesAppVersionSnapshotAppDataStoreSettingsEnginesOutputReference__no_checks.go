@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesAppVersionSnapshotAppDataStoreSettingsEnginesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

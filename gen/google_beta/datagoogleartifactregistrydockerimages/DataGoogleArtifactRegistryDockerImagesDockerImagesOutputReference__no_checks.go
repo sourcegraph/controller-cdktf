@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryDockerImagesDockerImagesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleArtifactRegistryDockerImagesDockerImagesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleArtifactRegistryDockerImagesDockerImagesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

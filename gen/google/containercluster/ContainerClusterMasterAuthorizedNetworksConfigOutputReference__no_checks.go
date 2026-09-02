@@ -40,7 +40,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterMasterAuthorizedNetworksConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterMasterAuthorizedNetworksConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

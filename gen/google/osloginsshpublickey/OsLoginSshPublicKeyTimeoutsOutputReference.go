@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/osloginsshpublickey/internal"
 )
 
 type OsLoginSshPublicKeyTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type OsLoginSshPublicKeyTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type OsLoginSshPublicKeyTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type OsLoginSshPublicKeyTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type OsLoginSshPublicKeyTimeoutsOutputReference interface {
 
 // The jsii proxy struct for OsLoginSshPublicKeyTimeoutsOutputReference
 type jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) UpdateInput() *st
 }
 
 
-func NewOsLoginSshPublicKeyTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OsLoginSshPublicKeyTimeoutsOutputReference {
+func NewOsLoginSshPublicKeyTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) OsLoginSshPublicKeyTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOsLoginSshPublicKeyTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewOsLoginSshPublicKeyTimeoutsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeoutsOutputReference",
+		"@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewOsLoginSshPublicKeyTimeoutsOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewOsLoginSshPublicKeyTimeoutsOutputReference_Override(o OsLoginSshPublicKeyTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOsLoginSshPublicKeyTimeoutsOutputReference_Override(o OsLoginSshPublicKeyTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeoutsOutputReference",
+		"@cdktn/provider-google.osLoginSshPublicKey.OsLoginSshPublicKeyTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -491,8 +491,8 @@ func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -504,16 +504,16 @@ func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (o *jsiiProxy_OsLoginSshPublicKeyTimeoutsOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

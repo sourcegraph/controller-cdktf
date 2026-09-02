@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerConta
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerConta
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleOracleDatabaseAutonomousDatabasePropertiesCustomerContactsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

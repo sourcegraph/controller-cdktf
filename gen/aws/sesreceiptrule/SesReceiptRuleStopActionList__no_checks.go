@@ -12,7 +12,7 @@ func (s *jsiiProxy_SesReceiptRuleStopActionList) validateGetParameters(index *fl
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRuleStopActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SesReceiptRuleStopActionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SesReceiptRuleStopActionList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRuleStopActionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SesReceiptRuleStopActionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SesReceiptRuleStopActionList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewSesReceiptRuleStopActionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSesReceiptRuleStopActionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

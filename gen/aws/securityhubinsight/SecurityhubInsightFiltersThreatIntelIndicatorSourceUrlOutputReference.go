@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/securityhubinsight/internal"
 )
 
 type SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Comparison() *string
 	SetComparison(val *string)
 	ComparisonInput() *string
@@ -37,9 +37,9 @@ type SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -48,7 +48,7 @@ type SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference inter
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference inter
 
 // The jsii proxy struct for SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference
 type jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference) Comparison() *string {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputR
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputR
 }
 
 
-func NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference {
+func NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference(te
 	j := jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference",
+		"@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference(te
 	return &j
 }
 
-func NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference_Override(s SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference_Override(s SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference",
+		"@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputR
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputR
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -454,8 +454,8 @@ func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputR
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -467,24 +467,24 @@ func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputR
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersThreatIntelIndicatorSourceUrlOutputR
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

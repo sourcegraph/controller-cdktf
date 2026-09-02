@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseList) vali
 	return nil
 }
 
-func validateNewGoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleAssuredWorkloadsWorkloadSaaEnrollmentResponseListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

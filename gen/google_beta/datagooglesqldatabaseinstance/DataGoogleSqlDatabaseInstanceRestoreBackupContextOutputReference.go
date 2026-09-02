@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglesqldatabaseinstance/internal"
 )
 
 type DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BackupRunId() *float64
 	// the index of the complex object in a list.
 	// Experimental.
@@ -37,15 +37,15 @@ type DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference interface 
 
 // The jsii proxy struct for DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference
 type jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference) BackupRunId() *float64 {
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -180,7 +180,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputRefere
 }
 
 
-func NewDataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference {
+func NewDataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -189,7 +189,7 @@ func NewDataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference(terrafo
 	j := jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -197,11 +197,11 @@ func NewDataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference(terrafo
 	return &j
 }
 
-func NewDataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference_Override(d DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference_Override(d DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,11 +291,11 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -419,8 +419,8 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -432,24 +432,24 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -457,7 +457,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceRestoreBackupContextOutputRefere
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

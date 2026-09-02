@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMongodbExcludedObjectsDataba
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMongodbExcludedObjectsDataba
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDatastreamStreamBackfillAllMongodbExcludedObjectsDatabasesCollectionsFieldsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

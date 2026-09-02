@@ -40,11 +40,11 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) va
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsTimeoutsOutputReference) va
 	return nil
 }
 
-func validateNewRedisClusterUserCreatedConnectionsTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRedisClusterUserCreatedConnectionsTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

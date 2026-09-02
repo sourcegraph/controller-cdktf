@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGkeHubMembershipEndpointGkeClusterOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipEndpointGkeClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeHubMembershipEndpointGkeClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubMembershipEndpointGkeClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeHubMembershipEndpointGkeClusterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleGkeHubMembershipEndpointGkeClusterOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipEndpointGkeClusterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeHubMembershipEndpointGkeClusterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleGkeHubMembershipEndpointGkeClusterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGkeHubMembershipEndpointGkeClusterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

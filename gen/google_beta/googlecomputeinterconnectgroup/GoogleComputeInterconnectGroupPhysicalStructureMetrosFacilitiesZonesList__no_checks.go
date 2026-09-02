@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFaciliti
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFaciliti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFaciliti
 	return nil
 }
 
-func validateNewGoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

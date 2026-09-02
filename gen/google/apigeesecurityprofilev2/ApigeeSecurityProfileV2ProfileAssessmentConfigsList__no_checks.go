@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validate
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsList) validate
 	return nil
 }
 
-func validateNewApigeeSecurityProfileV2ProfileAssessmentConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApigeeSecurityProfileV2ProfileAssessmentConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

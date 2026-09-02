@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallEncryptionConfigurationOutputReference
 	return nil
 }
 
-func validateNewNetworkfirewallFirewallEncryptionConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkfirewallFirewallEncryptionConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

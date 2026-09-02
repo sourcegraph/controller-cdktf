@@ -40,11 +40,11 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryCleanupPoliciesConditionOutputRefer
 	return nil
 }
 
-func validateNewArtifactRegistryRepositoryCleanupPoliciesConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewArtifactRegistryRepositoryCleanupPoliciesConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

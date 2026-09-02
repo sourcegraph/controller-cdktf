@@ -56,6 +56,10 @@ func (c *jsiiProxy_CatalogEntries) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (c *jsiiProxy_CatalogEntries) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CatalogEntries) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CatalogEntries) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (c *jsiiProxy_CatalogEntries) validatePutEntriesParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CatalogEntries) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_CatalogEntries) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CatalogEntries) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CatalogEntries) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

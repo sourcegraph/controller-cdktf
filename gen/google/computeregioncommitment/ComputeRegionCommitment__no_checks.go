@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeRegionCommitment) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionCommitment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionCommitment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (c *jsiiProxy_ComputeRegionCommitment) validatePutResourcesParameters(value
 }
 
 func (c *jsiiProxy_ComputeRegionCommitment) validatePutTimeoutsParameters(value *ComputeRegionCommitmentTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionCommitment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_ComputeRegionCommitment) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionCommitment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeRegionCommitment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

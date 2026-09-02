@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsAmiIds) validatePutTimeoutsParameters(value *DataAwsAm
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsAmiIds) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsAmiIds_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataAwsAmiIds) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAmiIds) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsAmiIds) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

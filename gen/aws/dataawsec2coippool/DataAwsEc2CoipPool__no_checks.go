@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsEc2CoipPool) validatePutTimeoutsParameters(value *Data
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsEc2CoipPool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsEc2CoipPool_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataAwsEc2CoipPool) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2CoipPool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsEc2CoipPool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

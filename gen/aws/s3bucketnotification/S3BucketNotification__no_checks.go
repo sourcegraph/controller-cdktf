@@ -56,6 +56,10 @@ func (s *jsiiProxy_S3BucketNotification) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketNotification) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketNotification) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (s *jsiiProxy_S3BucketNotification) validatePutQueueParameters(value interf
 }
 
 func (s *jsiiProxy_S3BucketNotification) validatePutTopicParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketNotification) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_S3BucketNotification) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketNotification) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_S3BucketNotification) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

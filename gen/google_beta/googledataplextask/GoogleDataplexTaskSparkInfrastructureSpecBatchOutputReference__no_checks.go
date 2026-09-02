@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexTaskSparkInfrastructureSpecBatchOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataplexTaskSparkInfrastructureSpecBatchOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataplexTaskSparkInfrastructureSpecBatchOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

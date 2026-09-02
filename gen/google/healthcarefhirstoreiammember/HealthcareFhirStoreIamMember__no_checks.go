@@ -56,6 +56,10 @@ func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateInterpolationForAttribu
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateOverrideLogicalIdParame
 }
 
 func (h *jsiiProxy_HealthcareFhirStoreIamMember) validatePutConditionParameters(value *HealthcareFhirStoreIamMemberCondition) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareFhirStoreIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_HealthcareFhirStoreIamMember) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_HealthcareFhirStoreIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

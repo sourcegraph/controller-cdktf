@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ComputeRegionNetworkEndpointGroupAppEngineOutputReference) va
 	return nil
 }
 
-func validateNewComputeRegionNetworkEndpointGroupAppEngineOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRegionNetworkEndpointGroupAppEngineOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

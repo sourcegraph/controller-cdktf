@@ -40,11 +40,11 @@ func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalMaxDurationOutputRefere
 	return nil
 }
 
-func validateNewDirectHoneycombHistoricalDataRetrievalMaxDurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDirectHoneycombHistoricalDataRetrievalMaxDurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

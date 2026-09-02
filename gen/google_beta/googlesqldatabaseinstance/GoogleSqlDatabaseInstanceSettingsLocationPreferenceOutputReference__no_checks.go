@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputRefe
 	return nil
 }
 
-func validateNewGoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSqlDatabaseInstanceSettingsLocationPreferenceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

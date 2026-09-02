@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleKmsCryptoKeyPrimaryOutputReference) validateGetStringMa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsCryptoKeyPrimaryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleKmsCryptoKeyPrimaryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsCryptoKeyPrimaryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleKmsCryptoKeyPrimaryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyPrimaryOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyPrimaryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleKmsCryptoKeyPrimaryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleKmsCryptoKeyPrimaryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleKmsCryptoKeyPrimaryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

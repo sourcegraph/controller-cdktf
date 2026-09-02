@@ -40,11 +40,11 @@ func (p *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateGetStrin
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PodSpecSecurityContextSysctlOutputReference) validateSetValue
 	return nil
 }
 
-func validateNewPodSpecSecurityContextSysctlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPodSpecSecurityContextSysctlOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

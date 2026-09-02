@@ -12,7 +12,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHe
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHe
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHe
 	return nil
 }
 
-func validateNewDeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDeploymentSpecTemplateSpecContainerLivenessProbeHttpGetHttpHeaderListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

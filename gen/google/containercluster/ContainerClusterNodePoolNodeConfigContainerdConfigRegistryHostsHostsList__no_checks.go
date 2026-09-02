@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHos
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHos
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigRegistryHos
 	return nil
 }
 
-func validateNewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerClusterNodePoolNodeConfigContainerdConfigRegistryHostsHostsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

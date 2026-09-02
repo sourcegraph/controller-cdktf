@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeInterconnectGroupInterconnectsList) validateGetParamet
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupInterconnectsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectGroupInterconnectsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeInterconnectGroupInterconnectsList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectGroupInterconnectsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeInterconnectGroupInterconnectsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeInterconnectGroupInterconnectsList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewComputeInterconnectGroupInterconnectsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeInterconnectGroupInterconnectsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesTimeZoneOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesTimeZoneOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesTimeZoneOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesTimeZoneOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesTimeZoneOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesTimeZoneOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesTimeZoneOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesTimeZoneOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOracleDatabaseDbSystemPropertiesTimeZoneOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOracleDatabaseDbSystemPropertiesTimeZoneOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

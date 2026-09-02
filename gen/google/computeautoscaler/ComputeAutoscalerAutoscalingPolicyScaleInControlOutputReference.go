@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeautoscaler/internal"
 )
 
 type ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,9 +36,9 @@ type ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeWindowSec() *float64
 	SetTimeWindowSec(val *float64)
 	TimeWindowSecInput() *float64
@@ -47,7 +47,7 @@ type ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutMaxScaledInReplicas(value *ComputeAutoscalerAutoscalingPolicyScaleInControlMaxScaledInReplicas)
 	ResetMaxScaledInReplicas()
 	ResetTimeWindowSec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference interface {
 
 // The jsii proxy struct for ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference
 type jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference) ComplexObjectIndex() interface{} {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReferen
 }
 
 
-func NewComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference {
+func NewComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeAutoscalerAutoscalingPolicyScaleInControlOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference(terrafor
 	j := jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference",
+		"@cdktn/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference(terrafor
 	return &j
 }
 
-func NewComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference_Override(c ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference_Override(c ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference",
+		"@cdktn/provider-google.computeAutoscaler.ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReferen
 	)
 }
 
-func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReferen
 	return returns
 }
 
-func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -445,8 +445,8 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReferen
 	return returns
 }
 
-func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -458,16 +458,16 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReferen
 	return returns
 }
 
-func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReferen
 	)
 }
 
-func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (c *jsiiProxy_ComputeAutoscalerAutoscalingPolicyScaleInControlOutputReferen
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

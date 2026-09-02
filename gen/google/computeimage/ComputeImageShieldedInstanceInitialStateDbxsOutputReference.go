@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeimage/internal"
 )
 
 type ComputeImageShieldedInstanceInitialStateDbxsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ComputeImageShieldedInstanceInitialStateDbxsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type ComputeImageShieldedInstanceInitialStateDbxsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFileType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ComputeImageShieldedInstanceInitialStateDbxsOutputReference interface {
 
 // The jsii proxy struct for ComputeImageShieldedInstanceInitialStateDbxsOutputReference
 type jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) 
 }
 
 
-func NewComputeImageShieldedInstanceInitialStateDbxsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeImageShieldedInstanceInitialStateDbxsOutputReference {
+func NewComputeImageShieldedInstanceInitialStateDbxsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeImageShieldedInstanceInitialStateDbxsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeImageShieldedInstanceInitialStateDbxsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewComputeImageShieldedInstanceInitialStateDbxsOutputReference(terraformRes
 	j := jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbxsOutputReference",
+		"@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbxsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewComputeImageShieldedInstanceInitialStateDbxsOutputReference(terraformRes
 	return &j
 }
 
-func NewComputeImageShieldedInstanceInitialStateDbxsOutputReference_Override(c ComputeImageShieldedInstanceInitialStateDbxsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputeImageShieldedInstanceInitialStateDbxsOutputReference_Override(c ComputeImageShieldedInstanceInitialStateDbxsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbxsOutputReference",
+		"@cdktn/provider-google.computeImage.ComputeImageShieldedInstanceInitialStateDbxsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -455,8 +455,8 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -468,16 +468,16 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) 
 	)
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

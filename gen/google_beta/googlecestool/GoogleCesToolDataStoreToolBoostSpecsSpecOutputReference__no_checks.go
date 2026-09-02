@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCesToolDataStoreToolBoostSpecsSpecOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolDataStoreToolBoostSpecsSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesToolDataStoreToolBoostSpecsSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleCesToolDataStoreToolBoostSpecsSpecOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolDataStoreToolBoostSpecsSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesToolDataStoreToolBoostSpecsSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleCesToolDataStoreToolBoostSpecsSpecOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesToolDataStoreToolBoostSpecsSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesToolDataStoreToolBoostSpecsSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesToolDataStoreToolBoostSpecsSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCesToolDataStoreToolBoostSpecsSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

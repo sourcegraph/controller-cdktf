@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesOutputReference) validateSe
 	return nil
 }
 
-func validateNewGoogleOsConfigGuestPoliciesRecipesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleOsConfigGuestPoliciesRecipesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

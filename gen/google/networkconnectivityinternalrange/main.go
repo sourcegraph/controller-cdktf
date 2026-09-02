@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange",
+		"@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRange",
 		reflect.TypeOf((*NetworkConnectivityInternalRange)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "migration", GoGetter: "Migration"},
 			_jsii_.MemberProperty{JsiiProperty: "migrationInput", GoGetter: "MigrationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -74,6 +75,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMigration", GoMethod: "PutMigration"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllocationOptions", GoMethod: "ResetAllocationOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExcludeCidrRanges", GoMethod: "ResetExcludeCidrRanges"},
@@ -105,19 +107,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usage", GoGetter: "Usage"},
 			_jsii_.MemberProperty{JsiiProperty: "usageInput", GoGetter: "UsageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "users", GoGetter: "Users"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkConnectivityInternalRange{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions",
+		"@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptions",
 		reflect.TypeOf((*NetworkConnectivityInternalRangeAllocationOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference",
+		"@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeAllocationOptionsOutputReference",
 		reflect.TypeOf((*NetworkConnectivityInternalRangeAllocationOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationStrategy", GoGetter: "AllocationStrategy"},
@@ -150,20 +153,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkConnectivityInternalRangeAllocationOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig",
+		"@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeConfig",
 		reflect.TypeOf((*NetworkConnectivityInternalRangeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration",
+		"@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigration",
 		reflect.TypeOf((*NetworkConnectivityInternalRangeMigration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference",
+		"@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeMigrationOutputReference",
 		reflect.TypeOf((*NetworkConnectivityInternalRangeMigrationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,16 +197,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts",
+		"@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeouts",
 		reflect.TypeOf((*NetworkConnectivityInternalRangeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference",
+		"@cdktn/provider-google.networkConnectivityInternalRange.NetworkConnectivityInternalRangeTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkConnectivityInternalRangeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -239,7 +242,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkConnectivityInternalRangeTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

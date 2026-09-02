@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigBargeInCon
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigBargeInCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotAppAudioProcessingConfigBargeInConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

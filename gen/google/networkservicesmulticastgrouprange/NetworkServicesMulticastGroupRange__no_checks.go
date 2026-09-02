@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) validateInterpolationForA
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesMulticastGroupRange) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesMulticastGroupRange) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupRange) validatePutLogConfigParam
 }
 
 func (n *jsiiProxy_NetworkServicesMulticastGroupRange) validatePutTimeoutsParameters(value *NetworkServicesMulticastGroupRangeTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesMulticastGroupRange) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupRange) validateSetLabelsParamete
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupRange) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkServicesMulticastGroupRange) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

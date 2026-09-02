@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeList
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeList
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeList
 	return nil
 }
 
-func validateNewComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRegionInstanceTemplateNetworkInterfaceAliasIpRangeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

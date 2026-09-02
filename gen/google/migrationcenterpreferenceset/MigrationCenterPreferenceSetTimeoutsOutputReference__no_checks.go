@@ -40,11 +40,11 @@ func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_MigrationCenterPreferenceSetTimeoutsOutputReference) validate
 	return nil
 }
 
-func validateNewMigrationCenterPreferenceSetTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMigrationCenterPreferenceSetTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/apigeesharedflow/internal"
 )
 
 type ApigeeSharedflowMetaDataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type ApigeeSharedflowMetaDataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type ApigeeSharedflowMetaDataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type ApigeeSharedflowMetaDataOutputReference interface {
 
 // The jsii proxy struct for ApigeeSharedflowMetaDataOutputReference
 type jsiiProxy_ApigeeSharedflowMetaDataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) ComplexObjectIndex() interface{} {
@@ -169,8 +169,8 @@ func (j *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -180,7 +180,7 @@ func (j *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) TerraformResource() 
 }
 
 
-func NewApigeeSharedflowMetaDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApigeeSharedflowMetaDataOutputReference {
+func NewApigeeSharedflowMetaDataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApigeeSharedflowMetaDataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApigeeSharedflowMetaDataOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -189,7 +189,7 @@ func NewApigeeSharedflowMetaDataOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ApigeeSharedflowMetaDataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apigeeSharedflow.ApigeeSharedflowMetaDataOutputReference",
+		"@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowMetaDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -197,11 +197,11 @@ func NewApigeeSharedflowMetaDataOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewApigeeSharedflowMetaDataOutputReference_Override(a ApigeeSharedflowMetaDataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewApigeeSharedflowMetaDataOutputReference_Override(a ApigeeSharedflowMetaDataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apigeeSharedflow.ApigeeSharedflowMetaDataOutputReference",
+		"@cdktn/provider-google.apigeeSharedflow.ApigeeSharedflowMetaDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -251,7 +251,7 @@ func (j *jsiiProxy_ApigeeSharedflowMetaDataOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ApigeeSharedflowMetaDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeSharedflowMetaDataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,11 +291,11 @@ func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -419,8 +419,8 @@ func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -432,24 +432,24 @@ func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -457,7 +457,7 @@ func (a *jsiiProxy_ApigeeSharedflowMetaDataOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

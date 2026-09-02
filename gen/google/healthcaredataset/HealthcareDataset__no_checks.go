@@ -56,6 +56,10 @@ func (h *jsiiProxy_HealthcareDataset) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (h *jsiiProxy_HealthcareDataset) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HealthcareDataset) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (h *jsiiProxy_HealthcareDataset) validatePutEncryptionSpecParameters(value 
 }
 
 func (h *jsiiProxy_HealthcareDataset) validatePutTimeoutsParameters(value *HealthcareDatasetTimeouts) error {
+	return nil
+}
+
+func (h *jsiiProxy_HealthcareDataset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_HealthcareDataset) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareDataset) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_HealthcareDataset) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

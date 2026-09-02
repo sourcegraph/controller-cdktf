@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/guarddutydetector/internal"
 )
 
 type GuarddutyDetectorDatasourcesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type GuarddutyDetectorDatasourcesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,9 +64,9 @@ type GuarddutyDetectorDatasourcesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutKubernetes(value *GuarddutyDetectorDatasourcesKubernetes)
 	PutMalwareProtection(value *GuarddutyDetectorDatasourcesMalwareProtection)
 	PutS3Logs(value *GuarddutyDetectorDatasourcesS3Logs)
@@ -75,7 +75,7 @@ type GuarddutyDetectorDatasourcesOutputReference interface {
 	ResetS3Logs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GuarddutyDetectorDatasourcesOutputReference interface {
 
 // The jsii proxy struct for GuarddutyDetectorDatasourcesOutputReference
 type jsiiProxy_GuarddutyDetectorDatasourcesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) TerraformResourc
 }
 
 
-func NewGuarddutyDetectorDatasourcesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GuarddutyDetectorDatasourcesOutputReference {
+func NewGuarddutyDetectorDatasourcesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GuarddutyDetectorDatasourcesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGuarddutyDetectorDatasourcesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGuarddutyDetectorDatasourcesOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_GuarddutyDetectorDatasourcesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesOutputReference",
+		"@cdktn/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGuarddutyDetectorDatasourcesOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewGuarddutyDetectorDatasourcesOutputReference_Override(g GuarddutyDetectorDatasourcesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGuarddutyDetectorDatasourcesOutputReference_Override(g GuarddutyDetectorDatasourcesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesOutputReference",
+		"@cdktn/provider-aws.guarddutyDetector.GuarddutyDetectorDatasourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -290,7 +290,7 @@ func (j *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,11 +330,11 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -458,8 +458,8 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -471,16 +471,16 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) InterpolationAsL
 	return returns
 }
 
-func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) ResetS3Logs() {
 	)
 }
 
-func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GuarddutyDetectorDatasourcesOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

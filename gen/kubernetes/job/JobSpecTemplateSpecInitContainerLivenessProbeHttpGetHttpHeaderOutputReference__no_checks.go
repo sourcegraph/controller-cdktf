@@ -40,11 +40,11 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeade
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeade
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeade
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewJobSpecTemplateSpecInitContainerLivenessProbeHttpGetHttpHeaderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

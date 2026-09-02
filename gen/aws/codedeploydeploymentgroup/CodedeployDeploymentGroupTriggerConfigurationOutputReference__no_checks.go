@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationOutputReference)
 	return nil
 }
 
-func validateNewCodedeployDeploymentGroupTriggerConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCodedeployDeploymentGroupTriggerConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

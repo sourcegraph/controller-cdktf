@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigtableMaterializedViewTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (b *jsiiProxy_BigtableMaterializedViewTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableMaterializedViewTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigtableMaterializedViewTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableMaterializedViewTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_BigtableMaterializedViewTimeoutsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_BigtableMaterializedViewTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigtableMaterializedViewTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_BigtableMaterializedViewTimeoutsOutputReference) validateSetU
 	return nil
 }
 
-func validateNewBigtableMaterializedViewTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigtableMaterializedViewTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

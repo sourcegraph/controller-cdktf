@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/integrationconnectorsconnection/internal"
 )
 
 type IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BooleanValue() interface{}
 	SetBooleanValue(val interface{})
 	BooleanValueInput() interface{}
@@ -50,15 +50,15 @@ type IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,9 +74,9 @@ type IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEncryptionKeyValue(value *IntegrationConnectorsConnectionSslConfigAdditionalVariableEncryptionKeyValue)
 	PutSecretValue(value *IntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValue)
 	ResetBooleanValue()
@@ -86,7 +86,7 @@ type IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference i
 	ResetStringValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference i
 
 // The jsii proxy struct for IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference
 type jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) BooleanValue() interface{} {
@@ -279,8 +279,8 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 	return returns
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 }
 
 
-func NewIntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference {
+func NewIntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -299,7 +299,7 @@ func NewIntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReferenc
 	j := jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference",
+		"@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -307,11 +307,11 @@ func NewIntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReferenc
 	return &j
 }
 
-func NewIntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference_Override(i IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewIntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference_Override(i IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference",
+		"@cdktn/provider-google.integrationConnectorsConnection.IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		i,
 	)
@@ -405,7 +405,7 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 	)
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -445,11 +445,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -573,8 +573,8 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -586,16 +586,16 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 	return returns
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -664,8 +664,8 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 	)
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -673,7 +673,7 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigAdditionalVariableOut
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

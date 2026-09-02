@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/iottopicruledestination/internal"
 )
 
 type IotTopicRuleDestinationTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type IotTopicRuleDestinationTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type IotTopicRuleDestinationTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type IotTopicRuleDestinationTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type IotTopicRuleDestinationTimeoutsOutputReference interface {
 
 // The jsii proxy struct for IotTopicRuleDestinationTimeoutsOutputReference
 type jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) UpdateInput()
 }
 
 
-func NewIotTopicRuleDestinationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IotTopicRuleDestinationTimeoutsOutputReference {
+func NewIotTopicRuleDestinationTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IotTopicRuleDestinationTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIotTopicRuleDestinationTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewIotTopicRuleDestinationTimeoutsOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference",
+		"@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewIotTopicRuleDestinationTimeoutsOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewIotTopicRuleDestinationTimeoutsOutputReference_Override(i IotTopicRuleDestinationTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIotTopicRuleDestinationTimeoutsOutputReference_Override(i IotTopicRuleDestinationTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference",
+		"@cdktn/provider-aws.iotTopicRuleDestination.IotTopicRuleDestinationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -491,8 +491,8 @@ func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) GetStringMapA
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -504,16 +504,16 @@ func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) Interpolation
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) ResetUpdate()
 	)
 }
 
-func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (i *jsiiProxy_IotTopicRuleDestinationTimeoutsOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

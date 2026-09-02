@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleIapAppEngineVersionIamBindingConditionOutputReference) 
 	return nil
 }
 
-func validateNewGoogleIapAppEngineVersionIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIapAppEngineVersionIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

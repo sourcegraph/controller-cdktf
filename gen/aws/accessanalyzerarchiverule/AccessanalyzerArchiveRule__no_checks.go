@@ -56,6 +56,10 @@ func (a *jsiiProxy_AccessanalyzerArchiveRule) validateInterpolationForAttributeP
 	return nil
 }
 
+func (a *jsiiProxy_AccessanalyzerArchiveRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessanalyzerArchiveRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AccessanalyzerArchiveRule) validateOverrideLogicalIdParameter
 }
 
 func (a *jsiiProxy_AccessanalyzerArchiveRule) validatePutFilterParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessanalyzerArchiveRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AccessanalyzerArchiveRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

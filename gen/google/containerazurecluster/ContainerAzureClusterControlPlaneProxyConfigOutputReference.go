@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containerazurecluster/internal"
 )
 
 type ContainerAzureClusterControlPlaneProxyConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ContainerAzureClusterControlPlaneProxyConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type ContainerAzureClusterControlPlaneProxyConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ContainerAzureClusterControlPlaneProxyConfigOutputReference interface {
 
 // The jsii proxy struct for ContainerAzureClusterControlPlaneProxyConfigOutputReference
 type jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) 
 }
 
 
-func NewContainerAzureClusterControlPlaneProxyConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterControlPlaneProxyConfigOutputReference {
+func NewContainerAzureClusterControlPlaneProxyConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerAzureClusterControlPlaneProxyConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerAzureClusterControlPlaneProxyConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewContainerAzureClusterControlPlaneProxyConfigOutputReference(terraformRes
 	j := jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfigOutputReference",
+		"@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewContainerAzureClusterControlPlaneProxyConfigOutputReference(terraformRes
 	return &j
 }
 
-func NewContainerAzureClusterControlPlaneProxyConfigOutputReference_Override(c ContainerAzureClusterControlPlaneProxyConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerAzureClusterControlPlaneProxyConfigOutputReference_Override(c ContainerAzureClusterControlPlaneProxyConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfigOutputReference",
+		"@cdktn/provider-google.containerAzureCluster.ContainerAzureClusterControlPlaneProxyConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -454,8 +454,8 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -467,24 +467,24 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (c *jsiiProxy_ContainerAzureClusterControlPlaneProxyConfigOutputReference) 
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

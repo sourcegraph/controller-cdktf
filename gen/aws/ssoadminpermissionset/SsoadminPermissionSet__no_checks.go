@@ -56,6 +56,10 @@ func (s *jsiiProxy_SsoadminPermissionSet) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminPermissionSet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminPermissionSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SsoadminPermissionSet) validateMoveToIdParameters(id *string)
 }
 
 func (s *jsiiProxy_SsoadminPermissionSet) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminPermissionSet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SsoadminPermissionSet) validateSetInstanceArnParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionSet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SsoadminPermissionSet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

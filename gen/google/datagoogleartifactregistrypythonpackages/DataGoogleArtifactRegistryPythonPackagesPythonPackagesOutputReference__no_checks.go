@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryPythonPackagesPythonPackagesOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryPythonPackagesPythonPackagesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryPythonPackagesPythonPackagesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryPythonPackagesPythonPackagesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleArtifactRegistryPythonPackagesPythonPackagesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryPythonPackagesPythonPackagesOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryPythonPackagesPythonPackagesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryPythonPackagesPythonPackagesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleArtifactRegistryPythonPackagesPythonPackagesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleArtifactRegistryPythonPackagesPythonPackagesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

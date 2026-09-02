@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusList) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsNetworkfirewallFirewallFirewallStatusList) validateSet
 	return nil
 }
 
-func validateNewDataAwsNetworkfirewallFirewallFirewallStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsNetworkfirewallFirewallFirewallStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

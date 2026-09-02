@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplication",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplication",
 		reflect.TypeOf((*EmrserverlessApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "initialCapacityInput", GoGetter: "InitialCapacityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumCapacity", GoGetter: "MaximumCapacity"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumCapacityInput", GoGetter: "MaximumCapacityInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMaximumCapacity", GoMethod: "PutMaximumCapacity"},
 			_jsii_.MemberMethod{JsiiMethod: "putNetworkConfiguration", GoMethod: "PutNetworkConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseLabel", GoGetter: "ReleaseLabel"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseLabelInput", GoGetter: "ReleaseLabelInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetArchitecture", GoMethod: "ResetArchitecture"},
@@ -91,19 +93,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EmrserverlessApplication{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfiguration",
 		reflect.TypeOf((*EmrserverlessApplicationAutoStartConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfigurationOutputReference",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStartConfigurationOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationAutoStartConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,16 +136,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmrserverlessApplicationAutoStartConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfiguration",
 		reflect.TypeOf((*EmrserverlessApplicationAutoStopConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfigurationOutputReference",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationAutoStopConfigurationOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationAutoStopConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,24 +178,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmrserverlessApplicationAutoStopConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationConfig",
 		reflect.TypeOf((*EmrserverlessApplicationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacity",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacity)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfig",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,16 +228,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -268,12 +271,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmrserverlessApplicationInitialCapacityInitialCapacityConfigWorkerConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityList",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -290,12 +293,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmrserverlessApplicationInitialCapacityList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityOutputReference",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationInitialCapacityOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationInitialCapacityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -328,16 +331,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmrserverlessApplicationInitialCapacityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacity",
 		reflect.TypeOf((*EmrserverlessApplicationMaximumCapacity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationMaximumCapacityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -371,16 +374,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfiguration",
 		reflect.TypeOf((*EmrserverlessApplicationNetworkConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationNetworkConfigurationOutputReference",
 		reflect.TypeOf((*EmrserverlessApplicationNetworkConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -413,7 +416,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EmrserverlessApplicationNetworkConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

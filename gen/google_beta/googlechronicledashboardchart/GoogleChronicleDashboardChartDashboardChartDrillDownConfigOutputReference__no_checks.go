@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartDrillDownConfigOut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartDrillDownConfigOut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartDrillDownConfigOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartDrillDownConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleDashboardChartDashboardChartDrillDownConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleDashboardChartDashboardChartDrillDownConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

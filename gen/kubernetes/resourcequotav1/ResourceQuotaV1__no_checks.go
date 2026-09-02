@@ -56,6 +56,10 @@ func (r *jsiiProxy_ResourceQuotaV1) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (r *jsiiProxy_ResourceQuotaV1) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_ResourceQuotaV1) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (r *jsiiProxy_ResourceQuotaV1) validatePutSpecParameters(value *ResourceQuo
 }
 
 func (r *jsiiProxy_ResourceQuotaV1) validatePutTimeoutsParameters(value *ResourceQuotaV1Timeouts) error {
+	return nil
+}
+
+func (r *jsiiProxy_ResourceQuotaV1) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_ResourceQuotaV1) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ResourceQuotaV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ResourceQuotaV1) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

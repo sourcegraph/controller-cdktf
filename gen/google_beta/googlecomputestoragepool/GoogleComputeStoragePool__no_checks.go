@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeStoragePool) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeStoragePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeStoragePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleComputeStoragePool) validatePutParamsParameters(value *
 }
 
 func (g *jsiiProxy_GoogleComputeStoragePool) validatePutTimeoutsParameters(value *GoogleComputeStoragePoolTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeStoragePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleComputeStoragePool) validateSetLabelsParameters(val *ma
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeStoragePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeStoragePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBinding",
+		"@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBinding",
 		reflect.TypeOf((*IamProjectsPolicyBinding)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -68,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTarget", GoMethod: "PutTarget"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCondition", GoMethod: "ResetCondition"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
@@ -91,19 +93,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IamProjectsPolicyBinding{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingCondition",
+		"@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingCondition",
 		reflect.TypeOf((*IamProjectsPolicyBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConditionOutputReference",
+		"@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConditionOutputReference",
 		reflect.TypeOf((*IamProjectsPolicyBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,20 +145,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IamProjectsPolicyBindingConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig",
+		"@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingConfig",
 		reflect.TypeOf((*IamProjectsPolicyBindingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTarget",
+		"@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTarget",
 		reflect.TypeOf((*IamProjectsPolicyBindingTarget)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTargetOutputReference",
+		"@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTargetOutputReference",
 		reflect.TypeOf((*IamProjectsPolicyBindingTargetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -185,16 +188,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IamProjectsPolicyBindingTargetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts",
+		"@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeouts",
 		reflect.TypeOf((*IamProjectsPolicyBindingTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeoutsOutputReference",
+		"@cdktn/provider-google.iamProjectsPolicyBinding.IamProjectsPolicyBindingTimeoutsOutputReference",
 		reflect.TypeOf((*IamProjectsPolicyBindingTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -230,7 +233,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IamProjectsPolicyBindingTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

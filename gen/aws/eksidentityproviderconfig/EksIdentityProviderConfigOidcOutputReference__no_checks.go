@@ -40,11 +40,11 @@ func (e *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_EksIdentityProviderConfigOidcOutputReference) validateSetUser
 	return nil
 }
 
-func validateNewEksIdentityProviderConfigOidcOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEksIdentityProviderConfigOidcOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

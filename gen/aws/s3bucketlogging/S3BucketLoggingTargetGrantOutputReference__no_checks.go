@@ -40,7 +40,7 @@ func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateGetStringM
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validatePutGrantee
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketLoggingTargetGrantOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewS3BucketLoggingTargetGrantOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewS3BucketLoggingTargetGrantOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

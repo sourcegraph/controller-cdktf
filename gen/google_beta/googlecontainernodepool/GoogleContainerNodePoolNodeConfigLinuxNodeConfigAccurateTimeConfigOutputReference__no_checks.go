@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeC
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerNodePoolNodeConfigLinuxNodeConfigAccurateTimeConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

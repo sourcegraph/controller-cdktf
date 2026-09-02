@@ -40,11 +40,11 @@ func (r *jsiiProxy_ReportSystemHealthReviewColumnLabelOutputReference) validateG
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewColumnLabelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReportSystemHealthReviewColumnLabelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewColumnLabelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReportSystemHealthReviewColumnLabelOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewColumnLabelOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewColumnLabelOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReportSystemHealthReviewColumnLabelOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewColumnLabelOutputReference) validateS
 	return nil
 }
 
-func validateNewReportSystemHealthReviewColumnLabelOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewReportSystemHealthReviewColumnLabelOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

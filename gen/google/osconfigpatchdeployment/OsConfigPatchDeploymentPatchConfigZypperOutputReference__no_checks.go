@@ -40,11 +40,11 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) vali
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigZypperOutputReference) vali
 	return nil
 }
 
-func validateNewOsConfigPatchDeploymentPatchConfigZypperOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOsConfigPatchDeploymentPatchConfigZypperOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleStorageObjectSignedUrl) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleStorageObjectSignedUrl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleStorageObjectSignedUrl_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -104,7 +108,7 @@ func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleStorageObjectSignedUrl) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

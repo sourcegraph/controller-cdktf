@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigMuxStreamsList) validateGetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigMuxStreamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigMuxStreamsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigMuxStreamsList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigMuxStreamsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigMuxStreamsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigMuxStreamsList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewGoogleTranscoderJobConfigMuxStreamsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleTranscoderJobConfigMuxStreamsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

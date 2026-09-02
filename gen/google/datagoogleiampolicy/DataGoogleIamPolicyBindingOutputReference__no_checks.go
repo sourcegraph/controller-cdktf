@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataGoogleIamPolicyBindingOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamPolicyBindingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleIamPolicyBindingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataGoogleIamPolicyBindingOutputReference) validatePutConditi
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamPolicyBindingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleIamPolicyBindingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_DataGoogleIamPolicyBindingOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIamPolicyBindingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleIamPolicyBindingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleIamPolicyBindingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleIamPolicyBindingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

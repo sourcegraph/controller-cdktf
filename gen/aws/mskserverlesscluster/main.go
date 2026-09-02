@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessCluster",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessCluster",
 		reflect.TypeOf((*MskServerlessCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -52,6 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVpcConfig", GoMethod: "PutVpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetTags", GoMethod: "ResetTags"},
@@ -74,19 +76,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MskServerlessCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthentication",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthentication",
 		reflect.TypeOf((*MskServerlessClusterClientAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationOutputReference",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationOutputReference",
 		reflect.TypeOf((*MskServerlessClusterClientAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -116,20 +119,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MskServerlessClusterClientAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSasl",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSasl",
 		reflect.TypeOf((*MskServerlessClusterClientAuthenticationSasl)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslIam",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslIam",
 		reflect.TypeOf((*MskServerlessClusterClientAuthenticationSaslIam)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslIamOutputReference",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslIamOutputReference",
 		reflect.TypeOf((*MskServerlessClusterClientAuthenticationSaslIamOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,12 +161,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MskServerlessClusterClientAuthenticationSaslIamOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslOutputReference",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterClientAuthenticationSaslOutputReference",
 		reflect.TypeOf((*MskServerlessClusterClientAuthenticationSaslOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,20 +196,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MskServerlessClusterClientAuthenticationSaslOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterConfig",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterConfig",
 		reflect.TypeOf((*MskServerlessClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterTimeouts",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterTimeouts",
 		reflect.TypeOf((*MskServerlessClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterTimeoutsOutputReference",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterTimeoutsOutputReference",
 		reflect.TypeOf((*MskServerlessClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -239,16 +242,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MskServerlessClusterTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfig",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfig",
 		reflect.TypeOf((*MskServerlessClusterVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigList",
 		reflect.TypeOf((*MskServerlessClusterVpcConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -265,12 +268,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MskServerlessClusterVpcConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigOutputReference",
+		"@cdktn/provider-aws.mskServerlessCluster.MskServerlessClusterVpcConfigOutputReference",
 		reflect.TypeOf((*MskServerlessClusterVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -302,7 +305,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MskServerlessClusterVpcConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

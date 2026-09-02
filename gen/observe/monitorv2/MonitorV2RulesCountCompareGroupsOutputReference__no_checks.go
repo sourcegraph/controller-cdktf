@@ -40,7 +40,7 @@ func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateGetS
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validatePutC
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMonitorV2RulesCountCompareGroupsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMonitorV2RulesCountCompareGroupsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

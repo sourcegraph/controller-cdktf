@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGkeonpremVmwareClusterLoadBalancerVipConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

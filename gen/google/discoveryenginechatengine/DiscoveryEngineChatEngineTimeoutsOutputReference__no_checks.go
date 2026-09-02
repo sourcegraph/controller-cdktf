@@ -40,11 +40,11 @@ func (d *jsiiProxy_DiscoveryEngineChatEngineTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineChatEngineTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineChatEngineTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineChatEngineTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineChatEngineTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DiscoveryEngineChatEngineTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineChatEngineTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineChatEngineTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DiscoveryEngineChatEngineTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func validateNewDiscoveryEngineChatEngineTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDiscoveryEngineChatEngineTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputRefe
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIdentityPlatformConfigSmsRegionConfigAllowByDefaultOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

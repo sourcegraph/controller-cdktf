@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigIamMemberConditionOutputReference) v
 	return nil
 }
 
-func validateNewGoogleApiGatewayApiConfigIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApiGatewayApiConfigIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

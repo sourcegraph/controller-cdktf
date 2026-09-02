@@ -12,7 +12,7 @@ func (c *jsiiProxy_CatalogEntriesEntriesAttributeValuesMap) validateInterpolatio
 	return nil
 }
 
-func (c *jsiiProxy_CatalogEntriesEntriesAttributeValuesMap) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CatalogEntriesEntriesAttributeValuesMap) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,11 +24,11 @@ func (j *jsiiProxy_CatalogEntriesEntriesAttributeValuesMap) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_CatalogEntriesEntriesAttributeValuesMap) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CatalogEntriesEntriesAttributeValuesMap) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCatalogEntriesEntriesAttributeValuesMapParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCatalogEntriesEntriesAttributeValuesMapParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

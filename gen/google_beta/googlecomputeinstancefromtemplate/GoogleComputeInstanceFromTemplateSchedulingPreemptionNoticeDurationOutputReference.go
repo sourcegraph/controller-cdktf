@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeinstancefromtemplate/internal"
 )
 
 type GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputRe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputRe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetNanos()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputRe
 
 // The jsii proxy struct for GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference
 type jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDu
 }
 
 
-func NewGoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference {
+func NewGoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewGoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutpu
 	j := jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference",
+		"@cdktn/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewGoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutpu
 	return &j
 }
 
-func NewGoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference_Override(g GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference_Override(g GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference",
+		"@cdktn/provider-google-beta.googleComputeInstanceFromTemplate.GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDu
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -455,8 +455,8 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -468,16 +468,16 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDu
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingPreemptionNoticeDu
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

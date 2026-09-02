@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodSpecContainerStartupProbeHttpGetHttpHeaderList) validateSe
 	return nil
 }
 
-func validateNewPodSpecContainerStartupProbeHttpGetHttpHeaderListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSpecContainerStartupProbeHttpGetHttpHeaderListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

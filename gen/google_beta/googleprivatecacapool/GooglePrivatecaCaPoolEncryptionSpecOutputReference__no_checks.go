@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePrivatecaCaPoolEncryptionSpecOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPoolEncryptionSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePrivatecaCaPoolEncryptionSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCaPoolEncryptionSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePrivatecaCaPoolEncryptionSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GooglePrivatecaCaPoolEncryptionSpecOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCaPoolEncryptionSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePrivatecaCaPoolEncryptionSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePrivatecaCaPoolEncryptionSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePrivatecaCaPoolEncryptionSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

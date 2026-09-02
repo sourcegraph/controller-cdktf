@@ -40,11 +40,11 @@ func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyOutputRe
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SchedulerScheduleTargetEcsParametersPlacementStrategyOutputRe
 	return nil
 }
 
-func validateNewSchedulerScheduleTargetEcsParametersPlacementStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSchedulerScheduleTargetEcsParametersPlacementStrategyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

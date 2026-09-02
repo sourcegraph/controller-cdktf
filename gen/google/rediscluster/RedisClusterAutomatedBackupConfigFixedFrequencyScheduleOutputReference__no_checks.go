@@ -40,7 +40,7 @@ func (r *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutput
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (r *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutput
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutput
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRedisClusterAutomatedBackupConfigFixedFrequencyScheduleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

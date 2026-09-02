@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleServiceAccountKey) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleServiceAccountKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleServiceAccountKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (g *jsiiProxy_GoogleServiceAccountKey) validateMoveToIdParameters(id *strin
 }
 
 func (g *jsiiProxy_GoogleServiceAccountKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleServiceAccountKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleServiceAccountKey) validateSetKeyAlgorithmParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceAccountKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleServiceAccountKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

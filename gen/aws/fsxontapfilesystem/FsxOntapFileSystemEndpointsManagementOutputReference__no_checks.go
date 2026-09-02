@@ -40,11 +40,11 @@ func (f *jsiiProxy_FsxOntapFileSystemEndpointsManagementOutputReference) validat
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapFileSystemEndpointsManagementOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOntapFileSystemEndpointsManagementOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FsxOntapFileSystemEndpointsManagementOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOntapFileSystemEndpointsManagementOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_FsxOntapFileSystemEndpointsManagementOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_FsxOntapFileSystemEndpointsManagementOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FsxOntapFileSystemEndpointsManagementOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFsxOntapFileSystemEndpointsManagementOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewFsxOntapFileSystemEndpointsManagementOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

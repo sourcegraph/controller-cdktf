@@ -56,6 +56,10 @@ func (r *jsiiProxy_RdsClusterActivityStream) validateInterpolationForAttributePa
 	return nil
 }
 
+func (r *jsiiProxy_RdsClusterActivityStream) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RdsClusterActivityStream) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (r *jsiiProxy_RdsClusterActivityStream) validateMoveToIdParameters(id *stri
 }
 
 func (r *jsiiProxy_RdsClusterActivityStream) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RdsClusterActivityStream) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_RdsClusterActivityStream) validateSetKmsKeyIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterActivityStream) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RdsClusterActivityStream) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

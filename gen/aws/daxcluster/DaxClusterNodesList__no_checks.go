@@ -12,7 +12,7 @@ func (d *jsiiProxy_DaxClusterNodesList) validateGetParameters(index *float64) er
 	return nil
 }
 
-func (d *jsiiProxy_DaxClusterNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DaxClusterNodesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DaxClusterNodesList) validateSetTerraformAttributeParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DaxClusterNodesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DaxClusterNodesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DaxClusterNodesList) validateSetWrapsSetParameters(val *bool)
 	return nil
 }
 
-func validateNewDaxClusterNodesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDaxClusterNodesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

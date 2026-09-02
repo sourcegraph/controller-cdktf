@@ -40,11 +40,11 @@ func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) validate
 	return nil
 }
 
-func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ManagedHeadersManagedResponseHeadersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewManagedHeadersManagedResponseHeadersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewManagedHeadersManagedResponseHeadersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

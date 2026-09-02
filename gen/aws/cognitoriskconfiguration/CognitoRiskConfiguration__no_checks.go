@@ -56,6 +56,10 @@ func (c *jsiiProxy_CognitoRiskConfiguration) validateInterpolationForAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_CognitoRiskConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CognitoRiskConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_CognitoRiskConfiguration) validatePutCompromisedCredentialsRi
 }
 
 func (c *jsiiProxy_CognitoRiskConfiguration) validatePutRiskExceptionConfigurationParameters(value *CognitoRiskConfigurationRiskExceptionConfiguration) error {
+	return nil
+}
+
+func (c *jsiiProxy_CognitoRiskConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_CognitoRiskConfiguration) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_CognitoRiskConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CognitoRiskConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

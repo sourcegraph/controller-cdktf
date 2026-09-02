@@ -5,7 +5,7 @@ package zonesettingsoverride
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) validateGetParameter
 	return nil
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewZoneSettingsOverrideInitialSettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewZoneSettingsOverrideInitialSettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

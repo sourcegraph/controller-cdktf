@@ -56,6 +56,10 @@ func (v *jsiiProxy_VpcAccessConnector) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (v *jsiiProxy_VpcAccessConnector) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcAccessConnector) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (v *jsiiProxy_VpcAccessConnector) validatePutSubnetParameters(value *VpcAcc
 }
 
 func (v *jsiiProxy_VpcAccessConnector) validatePutTimeoutsParameters(value *VpcAccessConnectorTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcAccessConnector) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_VpcAccessConnector) validateSetIpCidrRangeParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_VpcAccessConnector) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VpcAccessConnector) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

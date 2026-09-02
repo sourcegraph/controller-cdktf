@@ -5,13 +5,13 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/provider/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/aws/4.54.0/docs aws}.
 type AwsProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	AccessKey() *string
 	SetAccessKey(val *string)
 	AccessKeyInput() *string
@@ -28,7 +28,7 @@ type AwsProvider interface {
 	SetAssumeRoleWithWebIdentity(val interface{})
 	AssumeRoleWithWebIdentityInput() interface{}
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	CustomCaBundle() *string
@@ -114,7 +114,7 @@ type AwsProvider interface {
 	SetStsRegion(val *string)
 	StsRegionInput() *string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -133,6 +133,19 @@ type AwsProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccessKey()
 	ResetAlias()
 	ResetAllowedAccountIds()
@@ -179,11 +192,20 @@ type AwsProvider interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for AwsProvider
 type jsiiProxy_AwsProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_AwsProvider) AccessKey() *string {
@@ -286,8 +308,8 @@ func (j *jsiiProxy_AwsProvider) AssumeRoleWithWebIdentityInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_AwsProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -836,8 +858,8 @@ func (j *jsiiProxy_AwsProvider) StsRegionInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_AwsProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_AwsProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -937,7 +959,7 @@ func NewAwsProvider(scope constructs.Construct, id *string, config *AwsProviderC
 	j := jsiiProxy_AwsProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.provider.AwsProvider",
+		"@cdktn/provider-aws.provider.AwsProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -950,7 +972,7 @@ func NewAwsProvider_Override(a AwsProvider, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.provider.AwsProvider",
+		"@cdktn/provider-aws.provider.AwsProvider",
 		[]interface{}{scope, id, config},
 		a,
 	)
@@ -1254,17 +1276,17 @@ func (j *jsiiProxy_AwsProvider)SetUseFipsEndpoint(val interface{}) {
 	)
 }
 
-// Generates CDKTF code for importing a AwsProvider resource upon running "cdktf plan <stack-name>".
-func AwsProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a AwsProvider resource upon running "cdktn plan <stack-name>".
+func AwsProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateAwsProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-aws.provider.AwsProvider",
+		"@cdktn/provider-aws.provider.AwsProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -1299,7 +1321,7 @@ func AwsProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-aws.provider.AwsProvider",
+		"@cdktn/provider-aws.provider.AwsProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -1318,7 +1340,7 @@ func AwsProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-aws.provider.AwsProvider",
+		"@cdktn/provider-aws.provider.AwsProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1337,7 +1359,7 @@ func AwsProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-aws.provider.AwsProvider",
+		"@cdktn/provider-aws.provider.AwsProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -1350,7 +1372,7 @@ func AwsProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-aws.provider.AwsProvider",
+		"@cdktn/provider-aws.provider.AwsProvider",
 		"tfResourceType",
 		&returns,
 	)
@@ -1376,6 +1398,17 @@ func (a *jsiiProxy_AwsProvider) OverrideLogicalId(newLogicalId *string) {
 		a,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (a *jsiiProxy_AwsProvider) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := a.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		a,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -1715,6 +1748,24 @@ func (a *jsiiProxy_AwsProvider) ToTerraform() interface{} {
 		a,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (a *jsiiProxy_AwsProvider) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		a,
+		"with",
+		args,
 		&returns,
 	)
 

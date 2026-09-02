@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowCxGenerativeSettingsKnowledgeConnectorSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

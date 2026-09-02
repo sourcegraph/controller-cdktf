@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsEksClusterVpcConfigList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEksClusterVpcConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEksClusterVpcConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsEksClusterVpcConfigList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEksClusterVpcConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEksClusterVpcConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsEksClusterVpcConfigList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewDataAwsEksClusterVpcConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsEksClusterVpcConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

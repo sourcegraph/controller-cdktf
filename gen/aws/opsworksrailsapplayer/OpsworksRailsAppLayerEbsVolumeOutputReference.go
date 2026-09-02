@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/opsworksrailsapplayer/internal"
 )
 
 type OpsworksRailsAppLayerEbsVolumeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,9 +52,9 @@ type OpsworksRailsAppLayerEbsVolumeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -63,7 +63,7 @@ type OpsworksRailsAppLayerEbsVolumeOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,16 +79,16 @@ type OpsworksRailsAppLayerEbsVolumeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEncrypted()
 	ResetIops()
 	ResetRaidLevel()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -98,7 +98,7 @@ type OpsworksRailsAppLayerEbsVolumeOutputReference interface {
 
 // The jsii proxy struct for OpsworksRailsAppLayerEbsVolumeOutputReference
 type jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) ComplexObjectIndex() interface{} {
@@ -281,8 +281,8 @@ func (j *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -312,7 +312,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) TypeInput() *s
 }
 
 
-func NewOpsworksRailsAppLayerEbsVolumeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OpsworksRailsAppLayerEbsVolumeOutputReference {
+func NewOpsworksRailsAppLayerEbsVolumeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OpsworksRailsAppLayerEbsVolumeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOpsworksRailsAppLayerEbsVolumeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -321,7 +321,7 @@ func NewOpsworksRailsAppLayerEbsVolumeOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeOutputReference",
+		"@cdktn/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -329,11 +329,11 @@ func NewOpsworksRailsAppLayerEbsVolumeOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewOpsworksRailsAppLayerEbsVolumeOutputReference_Override(o OpsworksRailsAppLayerEbsVolumeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOpsworksRailsAppLayerEbsVolumeOutputReference_Override(o OpsworksRailsAppLayerEbsVolumeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeOutputReference",
+		"@cdktn/provider-aws.opsworksRailsAppLayer.OpsworksRailsAppLayerEbsVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
@@ -449,7 +449,7 @@ func (j *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -500,11 +500,11 @@ func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -628,8 +628,8 @@ func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) GetStringMapAt
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -641,16 +641,16 @@ func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) InterpolationA
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -689,8 +689,8 @@ func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) ResetType() {
 	)
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -698,7 +698,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerEbsVolumeOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

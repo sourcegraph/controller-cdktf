@@ -56,6 +56,10 @@ func (e *jsiiProxy_EmrStudio) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (e *jsiiProxy_EmrStudio) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrStudio) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_EmrStudio) validateMoveToIdParameters(id *string) error {
 }
 
 func (e *jsiiProxy_EmrStudio) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrStudio) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_EmrStudio) validateSetIdpRelayStateParameterNameParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_EmrStudio) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EmrStudio) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

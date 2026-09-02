@@ -56,6 +56,10 @@ func (p *jsiiProxy_PinpointGcmChannel) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (p *jsiiProxy_PinpointGcmChannel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointGcmChannel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PinpointGcmChannel) validateMoveToIdParameters(id *string) er
 }
 
 func (p *jsiiProxy_PinpointGcmChannel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PinpointGcmChannel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_PinpointGcmChannel) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_PinpointGcmChannel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PinpointGcmChannel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

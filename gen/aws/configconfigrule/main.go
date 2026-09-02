@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.configConfigRule.ConfigConfigRule",
+		"@cdktn/provider-aws.configConfigRule.ConfigConfigRule",
 		reflect.TypeOf((*ConfigConfigRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "inputParametersInput", GoGetter: "InputParametersInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumExecutionFrequency", GoGetter: "MaximumExecutionFrequency"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumExecutionFrequencyInput", GoGetter: "MaximumExecutionFrequencyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putScope", GoMethod: "PutScope"},
 			_jsii_.MemberMethod{JsiiMethod: "putSource", GoMethod: "PutSource"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInputParameters", GoMethod: "ResetInputParameters"},
@@ -81,23 +83,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigConfigRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleConfig",
+		"@cdktn/provider-aws.configConfigRule.ConfigConfigRuleConfig",
 		reflect.TypeOf((*ConfigConfigRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScope",
+		"@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScope",
 		reflect.TypeOf((*ConfigConfigRuleScope)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference",
+		"@cdktn/provider-aws.configConfigRule.ConfigConfigRuleScopeOutputReference",
 		reflect.TypeOf((*ConfigConfigRuleScopeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,20 +139,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigConfigRuleScopeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSource",
+		"@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSource",
 		reflect.TypeOf((*ConfigConfigRuleSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails",
+		"@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetails",
 		reflect.TypeOf((*ConfigConfigRuleSourceCustomPolicyDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference",
+		"@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceCustomPolicyDetailsOutputReference",
 		reflect.TypeOf((*ConfigConfigRuleSourceCustomPolicyDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,12 +186,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference",
+		"@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceOutputReference",
 		reflect.TypeOf((*ConfigConfigRuleSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -228,16 +231,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigConfigRuleSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail",
+		"@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetail",
 		reflect.TypeOf((*ConfigConfigRuleSourceSourceDetail)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList",
+		"@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailList",
 		reflect.TypeOf((*ConfigConfigRuleSourceSourceDetailList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -254,12 +257,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigConfigRuleSourceSourceDetailList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference",
+		"@cdktn/provider-aws.configConfigRule.ConfigConfigRuleSourceSourceDetailOutputReference",
 		reflect.TypeOf((*ConfigConfigRuleSourceSourceDetailOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,7 +298,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigConfigRuleSourceSourceDetailOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

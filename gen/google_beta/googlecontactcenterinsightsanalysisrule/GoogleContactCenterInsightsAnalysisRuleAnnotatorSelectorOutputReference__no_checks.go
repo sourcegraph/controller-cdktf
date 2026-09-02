@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -116,11 +116,11 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContactCenterInsightsAnalysisRuleAnnotatorSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

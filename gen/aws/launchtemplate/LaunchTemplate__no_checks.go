@@ -56,6 +56,10 @@ func (l *jsiiProxy_LaunchTemplate) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (l *jsiiProxy_LaunchTemplate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LaunchTemplate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -148,6 +152,10 @@ func (l *jsiiProxy_LaunchTemplate) validatePutTagSpecificationsParameters(value 
 	return nil
 }
 
+func (l *jsiiProxy_LaunchTemplate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateLaunchTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -216,7 +224,7 @@ func (j *jsiiProxy_LaunchTemplate) validateSetKeyNameParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LaunchTemplate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

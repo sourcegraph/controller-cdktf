@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -181,7 +181,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputRefer
 
 func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *GoogleApigeeKeystoresAliasesSelfSignedCertTimeouts:
 		val := val.(*GoogleApigeeKeystoresAliasesSelfSignedCertTimeouts)
@@ -196,7 +196,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputRefer
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleApigeeKeystoresAliasesSelfSignedCertTimeouts; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *GoogleApigeeKeystoresAliasesSelfSignedCertTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -211,7 +211,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputRefer
 	return nil
 }
 
-func validateNewGoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApigeeKeystoresAliasesSelfSignedCertTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesExampleMessagesChunksToolCallToolsetToolOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesExampleMessagesChunksToolCallToolsetToolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesExampleMessagesChunksToolCallToolsetToolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesExampleMessagesChunksToolCallToolsetToolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesExampleMessagesChunksToolCallToolsetToolOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleCesExampleMessagesChunksToolCallToolsetToolOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesExampleMessagesChunksToolCallToolsetToolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesExampleMessagesChunksToolCallToolsetToolOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleCesExampleMessagesChunksToolCallToolsetToolOutputRefere
 	return nil
 }
 
-func validateNewGoogleCesExampleMessagesChunksToolCallToolsetToolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesExampleMessagesChunksToolCallToolsetToolOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

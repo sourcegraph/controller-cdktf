@@ -40,11 +40,11 @@ func (e *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputRefer
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewElasticsearchDomainClusterConfigColdStorageOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewElasticsearchDomainClusterConfigColdStorageOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

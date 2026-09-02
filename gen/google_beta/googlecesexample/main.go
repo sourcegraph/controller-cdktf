@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExample",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExample",
 		reflect.TypeOf((*GoogleCesExample)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "messages", GoGetter: "Messages"},
 			_jsii_.MemberProperty{JsiiProperty: "messagesInput", GoGetter: "MessagesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMessages", GoMethod: "PutMessages"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEntryAgent", GoMethod: "ResetEntryAgent"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -85,31 +87,32 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExample{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleConfig",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleConfig",
 		reflect.TypeOf((*GoogleCesExampleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessages",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessages",
 		reflect.TypeOf((*GoogleCesExampleMessages)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunks",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunks",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunks)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksAgentTransfer",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksAgentTransfer",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksAgentTransfer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksAgentTransferOutputReference",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksAgentTransferOutputReference",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksAgentTransferOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,16 +142,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExampleMessagesChunksAgentTransferOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksImage",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksImage",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksImage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksImageOutputReference",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksImageOutputReference",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksImageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -179,12 +182,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExampleMessagesChunksImageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksList",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksList",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -201,12 +204,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExampleMessagesChunksList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksOutputReference",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksOutputReference",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "agentTransfer", GoGetter: "AgentTransfer"},
@@ -255,16 +258,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExampleMessagesChunksOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolCall",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolCall",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksToolCall)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolCallOutputReference",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolCallOutputReference",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksToolCallOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -305,16 +308,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExampleMessagesChunksToolCallOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolCallToolsetTool",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolCallToolsetTool",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksToolCallToolsetTool)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolCallToolsetToolOutputReference",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolCallToolsetToolOutputReference",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksToolCallToolsetToolOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -346,16 +349,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExampleMessagesChunksToolCallToolsetToolOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolResponse",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolResponse",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksToolResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolResponseOutputReference",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolResponseOutputReference",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksToolResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -395,16 +398,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExampleMessagesChunksToolResponseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolResponseToolsetTool",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolResponseToolsetTool",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksToolResponseToolsetTool)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolResponseToolsetToolOutputReference",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesChunksToolResponseToolsetToolOutputReference",
 		reflect.TypeOf((*GoogleCesExampleMessagesChunksToolResponseToolsetToolOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -436,12 +439,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExampleMessagesChunksToolResponseToolsetToolOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesList",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesList",
 		reflect.TypeOf((*GoogleCesExampleMessagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -458,12 +461,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExampleMessagesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleMessagesOutputReference",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleMessagesOutputReference",
 		reflect.TypeOf((*GoogleCesExampleMessagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "chunks", GoGetter: "Chunks"},
@@ -497,16 +500,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExampleMessagesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleTimeouts",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleTimeouts",
 		reflect.TypeOf((*GoogleCesExampleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesExample.GoogleCesExampleTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleCesExample.GoogleCesExampleTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleCesExampleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -542,7 +545,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesExampleTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

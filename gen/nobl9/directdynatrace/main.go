@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatrace",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatrace",
 		reflect.TypeOf((*DirectDynatrace)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logCollectionEnabled", GoGetter: "LogCollectionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "logCollectionEnabledInput", GoGetter: "LogCollectionEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -62,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "queryDelay", GoGetter: "QueryDelay"},
 			_jsii_.MemberProperty{JsiiProperty: "queryDelayInput", GoGetter: "QueryDelayInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannel", GoGetter: "ReleaseChannel"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannelInput", GoGetter: "ReleaseChannelInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -88,27 +90,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectDynatrace{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceConfig",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceConfig",
 		reflect.TypeOf((*DirectDynatraceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrieval",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrieval",
 		reflect.TypeOf((*DirectDynatraceHistoricalDataRetrieval)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalDefaultDuration",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalDefaultDuration",
 		reflect.TypeOf((*DirectDynatraceHistoricalDataRetrievalDefaultDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalDefaultDurationList",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalDefaultDurationList",
 		reflect.TypeOf((*DirectDynatraceHistoricalDataRetrievalDefaultDurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -125,12 +128,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectDynatraceHistoricalDataRetrievalDefaultDurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalDefaultDurationOutputReference",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalDefaultDurationOutputReference",
 		reflect.TypeOf((*DirectDynatraceHistoricalDataRetrievalDefaultDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -161,16 +164,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectDynatraceHistoricalDataRetrievalDefaultDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalMaxDuration",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalMaxDuration",
 		reflect.TypeOf((*DirectDynatraceHistoricalDataRetrievalMaxDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalMaxDurationList",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalMaxDurationList",
 		reflect.TypeOf((*DirectDynatraceHistoricalDataRetrievalMaxDurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -187,12 +190,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalMaxDurationOutputReference",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalMaxDurationOutputReference",
 		reflect.TypeOf((*DirectDynatraceHistoricalDataRetrievalMaxDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -223,12 +226,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectDynatraceHistoricalDataRetrievalMaxDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalOutputReference",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceHistoricalDataRetrievalOutputReference",
 		reflect.TypeOf((*DirectDynatraceHistoricalDataRetrievalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -261,16 +264,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectDynatraceHistoricalDataRetrievalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceQueryDelay",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceQueryDelay",
 		reflect.TypeOf((*DirectDynatraceQueryDelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directDynatrace.DirectDynatraceQueryDelayOutputReference",
+		"@cdktn/provider-nobl9.directDynatrace.DirectDynatraceQueryDelayOutputReference",
 		reflect.TypeOf((*DirectDynatraceQueryDelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -301,7 +304,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectDynatraceQueryDelayOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

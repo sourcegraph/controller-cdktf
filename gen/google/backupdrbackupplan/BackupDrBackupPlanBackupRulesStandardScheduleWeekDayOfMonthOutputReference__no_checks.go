@@ -40,11 +40,11 @@ func (b *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOu
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOu
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_BackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOu
 	return nil
 }
 
-func validateNewBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

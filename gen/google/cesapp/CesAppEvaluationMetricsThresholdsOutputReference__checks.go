@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -101,9 +101,9 @@ func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validatePut
 	return nil
 }
 
-func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -190,7 +190,7 @@ func (j *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -198,7 +198,7 @@ func (j *jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference) validateSet
 	return nil
 }
 
-func validateNewCesAppEvaluationMetricsThresholdsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesAppEvaluationMetricsThresholdsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

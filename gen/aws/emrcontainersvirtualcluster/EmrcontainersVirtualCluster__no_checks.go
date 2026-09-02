@@ -56,6 +56,10 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) validateInterpolationForAttribut
 	return nil
 }
 
+func (e *jsiiProxy_EmrcontainersVirtualCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrcontainersVirtualCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_EmrcontainersVirtualCluster) validatePutContainerProviderPara
 }
 
 func (e *jsiiProxy_EmrcontainersVirtualCluster) validatePutTimeoutsParameters(value *EmrcontainersVirtualClusterTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrcontainersVirtualCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_EmrcontainersVirtualCluster) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_EmrcontainersVirtualCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EmrcontainersVirtualCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

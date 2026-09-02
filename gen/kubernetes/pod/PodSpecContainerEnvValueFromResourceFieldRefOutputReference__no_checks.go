@@ -40,11 +40,11 @@ func (p *jsiiProxy_PodSpecContainerEnvValueFromResourceFieldRefOutputReference) 
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerEnvValueFromResourceFieldRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecContainerEnvValueFromResourceFieldRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerEnvValueFromResourceFieldRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecContainerEnvValueFromResourceFieldRefOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_PodSpecContainerEnvValueFromResourceFieldRefOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvValueFromResourceFieldRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecContainerEnvValueFromResourceFieldRefOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPodSpecContainerEnvValueFromResourceFieldRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPodSpecContainerEnvValueFromResourceFieldRefOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

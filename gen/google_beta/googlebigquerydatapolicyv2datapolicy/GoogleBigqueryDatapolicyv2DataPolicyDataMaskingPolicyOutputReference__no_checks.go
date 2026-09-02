@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryDatapolicyv2DataPolicyDataMaskingPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

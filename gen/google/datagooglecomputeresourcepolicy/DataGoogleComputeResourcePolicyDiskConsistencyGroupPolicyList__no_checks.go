@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyList
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyList
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyList
 	return nil
 }
 
-func validateNewDataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

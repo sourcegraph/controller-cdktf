@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleContainerAwsClusterAuthorizationAdminUsersOutputReferen
 	return nil
 }
 
-func validateNewGoogleContainerAwsClusterAuthorizationAdminUsersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleContainerAwsClusterAuthorizationAdminUsersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

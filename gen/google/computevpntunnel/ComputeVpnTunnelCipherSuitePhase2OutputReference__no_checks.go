@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeVpnTunnelCipherSuitePhase2OutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeVpnTunnelCipherSuitePhase2OutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeVpnTunnelCipherSuitePhase2OutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

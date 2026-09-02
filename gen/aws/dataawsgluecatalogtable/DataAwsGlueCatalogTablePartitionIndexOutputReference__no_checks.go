@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsGlueCatalogTablePartitionIndexOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsGlueCatalogTablePartitionIndexOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsGlueCatalogTablePartitionIndexOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

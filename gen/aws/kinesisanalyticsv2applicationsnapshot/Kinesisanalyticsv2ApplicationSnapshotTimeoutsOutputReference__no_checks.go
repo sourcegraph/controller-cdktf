@@ -40,11 +40,11 @@ func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference)
 	return nil
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Kinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKinesisanalyticsv2ApplicationSnapshotTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

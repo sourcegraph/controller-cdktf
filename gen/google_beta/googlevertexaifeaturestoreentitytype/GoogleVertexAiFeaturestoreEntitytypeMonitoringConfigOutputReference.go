@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaifeaturestoreentitytype/internal"
 )
 
 type GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CategoricalThresholdConfig() GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference
 	CategoricalThresholdConfigInput() *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig
 	// the index of the complex object in a list.
@@ -42,15 +42,15 @@ type GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,9 +66,9 @@ type GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCategoricalThresholdConfig(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfig)
 	PutImportFeaturesAnalysis(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigImportFeaturesAnalysis)
 	PutNumericalThresholdConfig(value *GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigNumericalThresholdConfig)
@@ -79,7 +79,7 @@ type GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interfa
 	ResetSnapshotAnalysis()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference interfa
 
 // The jsii proxy struct for GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference
 type jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) CategoricalThresholdConfig() GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigCategoricalThresholdConfigOutputReference {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 }
 
 
-func NewGoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference {
+func NewGoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference(terr
 	j := jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytype.GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
+		"@cdktn/provider-google-beta.googleVertexAiFeaturestoreEntitytype.GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference(terr
 	return &j
 }
 
-func NewGoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference_Override(g GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference_Override(g GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleVertexAiFeaturestoreEntitytype.GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
+		"@cdktn/provider-google-beta.googleVertexAiFeaturestoreEntitytype.GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -314,7 +314,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,11 +354,11 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -482,8 +482,8 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -495,16 +495,16 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 	)
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeMonitoringConfigOutputRef
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

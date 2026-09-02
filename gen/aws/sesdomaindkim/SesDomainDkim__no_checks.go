@@ -56,6 +56,10 @@ func (s *jsiiProxy_SesDomainDkim) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SesDomainDkim) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesDomainDkim) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SesDomainDkim) validateMoveToIdParameters(id *string) error {
 }
 
 func (s *jsiiProxy_SesDomainDkim) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesDomainDkim) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_SesDomainDkim) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SesDomainDkim) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SesDomainDkim) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

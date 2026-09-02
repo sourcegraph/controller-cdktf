@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleSaasRuntimeUnitInputVariablesList) validateGetParameter
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSaasRuntimeUnitInputVariablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSaasRuntimeUnitInputVariablesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleSaasRuntimeUnitInputVariablesList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSaasRuntimeUnitInputVariablesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSaasRuntimeUnitInputVariablesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleSaasRuntimeUnitInputVariablesList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewGoogleSaasRuntimeUnitInputVariablesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleSaasRuntimeUnitInputVariablesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

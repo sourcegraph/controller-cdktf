@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/composerenvironment/internal"
 )
 
 type ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCount()
 	ResetCpu()
 	ResetMemoryGb()
 	ResetStorageGb()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference interface 
 
 // The jsii proxy struct for ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference
 type jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputRefere
 }
 
 
-func NewComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference {
+func NewComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference(terrafo
 	j := jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference",
+		"@cdktn/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference(terrafo
 	return &j
 }
 
-func NewComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference_Override(c ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference_Override(c ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference",
+		"@cdktn/provider-google.composerEnvironment.ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -526,8 +526,8 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -539,16 +539,16 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputRefere
 	)
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigWorkloadsConfigSchedulerOutputRefere
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

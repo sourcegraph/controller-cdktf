@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Authentication() GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference
 	AuthenticationInput() *GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthentication
 	AzureUri() *string
@@ -46,15 +46,15 @@ type GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthentication(value *GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthentication)
 	ResetMaxLookbackDays()
 	ResetSourceDeletionOption()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference interface
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference) Authentication() GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference {
@@ -241,8 +241,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -252,7 +252,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputRefer
 }
 
 
-func NewGoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference {
+func NewGoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -261,7 +261,7 @@ func NewGoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference(terraf
 	j := jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -269,11 +269,11 @@ func NewGoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference(terraf
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference_Override(g GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference_Override(g GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -356,7 +356,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,11 +396,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -524,8 +524,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -537,16 +537,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -580,8 +580,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputRefer
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -589,7 +589,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputRefer
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

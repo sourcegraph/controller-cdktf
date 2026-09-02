@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxtoolversion/internal"
 )
 
 type DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
@@ -49,9 +49,9 @@ type DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenEndpoint() *string
 	SetTokenEndpoint(val *string)
 	TokenEndpointInput() *string
@@ -60,7 +60,7 @@ type DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputRefere
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,15 +76,15 @@ type DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetClientSecret()
 	ResetScopes()
 	ResetSecretVersionForClientSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,7 +94,7 @@ type DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputRefere
 
 // The jsii proxy struct for DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference
 type jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference) ClientId() *string {
@@ -257,8 +257,8 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConf
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConf
 }
 
 
-func NewDialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference {
+func NewDialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -297,7 +297,7 @@ func NewDialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputRef
 	j := jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference",
+		"@cdktn/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -305,11 +305,11 @@ func NewDialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputRef
 	return &j
 }
 
-func NewDialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference_Override(d DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference_Override(d DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference",
+		"@cdktn/provider-google.dialogflowCxToolVersion.DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -414,7 +414,7 @@ func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConf
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,11 +465,11 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConf
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -593,8 +593,8 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConf
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -606,16 +606,16 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConf
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -646,8 +646,8 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConf
 	)
 }
 
-func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -655,7 +655,7 @@ func (d *jsiiProxy_DialogflowCxToolVersionToolOpenApiSpecAuthenticationOauthConf
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

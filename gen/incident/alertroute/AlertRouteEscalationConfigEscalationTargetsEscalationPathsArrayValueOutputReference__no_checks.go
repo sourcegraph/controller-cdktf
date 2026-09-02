@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsArr
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsArrayValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsArrayValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsArrayValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsArrayValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsArr
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsArrayValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteEscalationConfigEscalationTargetsEscalationPathsArrayValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlertRouteEscalationConfigEscalationTargetsEscalationPathsArrayValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlertRouteEscalationConfigEscalationTargetsEscalationPathsArrayValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePreStopHttpGetList
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePreStopHttpGetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePreStopHttpGetList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePreStopHttpGetList
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePreStopHttpGetList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePreStopHttpGetList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePreStopHttpGetList
 	return nil
 }
 
-func validateNewDataKubernetesPodSpecInitContainerLifecyclePreStopHttpGetListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesPodSpecInitContainerLifecyclePreStopHttpGetListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

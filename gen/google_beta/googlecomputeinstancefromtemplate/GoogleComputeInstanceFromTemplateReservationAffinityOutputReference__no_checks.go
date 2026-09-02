@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateReservationAffinityOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateReservationAffinityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateReservationAffinityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateReservationAffinityOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateReservationAffinityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateReservationAffinityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateReservationAffinityOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateReservationAffinityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateReservationAffinityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateReservationAffinityOutputRef
 	return nil
 }
 
-func validateNewGoogleComputeInstanceFromTemplateReservationAffinityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeInstanceFromTemplateReservationAffinityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

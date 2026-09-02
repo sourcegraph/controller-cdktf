@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleNetappVolumeCacheParametersOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeCacheParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetappVolumeCacheParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleNetappVolumeCacheParametersOutputReference) validatePut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeCacheParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetappVolumeCacheParametersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_GoogleNetappVolumeCacheParametersOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeCacheParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetappVolumeCacheParametersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetappVolumeCacheParametersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetappVolumeCacheParametersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

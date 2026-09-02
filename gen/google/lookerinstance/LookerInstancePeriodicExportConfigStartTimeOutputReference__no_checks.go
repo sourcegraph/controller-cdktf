@@ -40,11 +40,11 @@ func (l *jsiiProxy_LookerInstancePeriodicExportConfigStartTimeOutputReference) v
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstancePeriodicExportConfigStartTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LookerInstancePeriodicExportConfigStartTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LookerInstancePeriodicExportConfigStartTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LookerInstancePeriodicExportConfigStartTimeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_LookerInstancePeriodicExportConfigStartTimeOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_LookerInstancePeriodicExportConfigStartTimeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LookerInstancePeriodicExportConfigStartTimeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLookerInstancePeriodicExportConfigStartTimeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLookerInstancePeriodicExportConfigStartTimeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

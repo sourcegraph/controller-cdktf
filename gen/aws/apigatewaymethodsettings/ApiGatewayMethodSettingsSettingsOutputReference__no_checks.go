@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -108,7 +108,7 @@ func (j *jsiiProxy_ApiGatewayMethodSettingsSettingsOutputReference) validateSetU
 	return nil
 }
 
-func validateNewApiGatewayMethodSettingsSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApiGatewayMethodSettingsSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

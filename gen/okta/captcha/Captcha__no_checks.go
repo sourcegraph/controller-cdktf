@@ -56,6 +56,10 @@ func (c *jsiiProxy_Captcha) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_Captcha) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Captcha) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_Captcha) validateMoveToIdParameters(id *string) error {
 }
 
 func (c *jsiiProxy_Captcha) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_Captcha) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_Captcha) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Captcha) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Captcha) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigqueryconnection/internal"
 )
 
 type BigqueryConnectionCloudResourceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,15 +35,15 @@ type BigqueryConnectionCloudResourceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -59,12 +59,12 @@ type BigqueryConnectionCloudResourceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -74,7 +74,7 @@ type BigqueryConnectionCloudResourceOutputReference interface {
 
 // The jsii proxy struct for BigqueryConnectionCloudResourceOutputReference
 type jsiiProxy_BigqueryConnectionCloudResourceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) ComplexObjectIndex() interface{} {
@@ -147,8 +147,8 @@ func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -158,7 +158,7 @@ func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) TerraformReso
 }
 
 
-func NewBigqueryConnectionCloudResourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryConnectionCloudResourceOutputReference {
+func NewBigqueryConnectionCloudResourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BigqueryConnectionCloudResourceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBigqueryConnectionCloudResourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -167,7 +167,7 @@ func NewBigqueryConnectionCloudResourceOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_BigqueryConnectionCloudResourceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudResourceOutputReference",
+		"@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -175,11 +175,11 @@ func NewBigqueryConnectionCloudResourceOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewBigqueryConnectionCloudResourceOutputReference_Override(b BigqueryConnectionCloudResourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBigqueryConnectionCloudResourceOutputReference_Override(b BigqueryConnectionCloudResourceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionCloudResourceOutputReference",
+		"@cdktn/provider-google.bigqueryConnection.BigqueryConnectionCloudResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -229,7 +229,7 @@ func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryConnectionCloudResourceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -269,11 +269,11 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -397,8 +397,8 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) GetStringMapA
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -410,24 +410,24 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) Interpolation
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -435,7 +435,7 @@ func (b *jsiiProxy_BigqueryConnectionCloudResourceOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

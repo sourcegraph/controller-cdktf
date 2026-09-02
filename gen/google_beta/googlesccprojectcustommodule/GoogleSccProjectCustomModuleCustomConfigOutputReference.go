@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesccprojectcustommodule/internal"
 )
 
 type GoogleSccProjectCustomModuleCustomConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,15 +49,15 @@ type GoogleSccProjectCustomModuleCustomConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type GoogleSccProjectCustomModuleCustomConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomOutput(value *GoogleSccProjectCustomModuleCustomConfigCustomOutput)
 	PutPredicate(value *GoogleSccProjectCustomModuleCustomConfigPredicate)
 	PutResourceSelector(value *GoogleSccProjectCustomModuleCustomConfigResourceSelector)
@@ -83,7 +83,7 @@ type GoogleSccProjectCustomModuleCustomConfigOutputReference interface {
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type GoogleSccProjectCustomModuleCustomConfigOutputReference interface {
 
 // The jsii proxy struct for GoogleSccProjectCustomModuleCustomConfigOutputReference
 type jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -276,8 +276,8 @@ func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -287,7 +287,7 @@ func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Terr
 }
 
 
-func NewGoogleSccProjectCustomModuleCustomConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSccProjectCustomModuleCustomConfigOutputReference {
+func NewGoogleSccProjectCustomModuleCustomConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleSccProjectCustomModuleCustomConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleSccProjectCustomModuleCustomConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -296,7 +296,7 @@ func NewGoogleSccProjectCustomModuleCustomConfigOutputReference(terraformResourc
 	j := jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSccProjectCustomModule.GoogleSccProjectCustomModuleCustomConfigOutputReference",
+		"@cdktn/provider-google-beta.googleSccProjectCustomModule.GoogleSccProjectCustomModuleCustomConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -304,11 +304,11 @@ func NewGoogleSccProjectCustomModuleCustomConfigOutputReference(terraformResourc
 	return &j
 }
 
-func NewGoogleSccProjectCustomModuleCustomConfigOutputReference_Override(g GoogleSccProjectCustomModuleCustomConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleSccProjectCustomModuleCustomConfigOutputReference_Override(g GoogleSccProjectCustomModuleCustomConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSccProjectCustomModule.GoogleSccProjectCustomModuleCustomConfigOutputReference",
+		"@cdktn/provider-google-beta.googleSccProjectCustomModule.GoogleSccProjectCustomModuleCustomConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -391,7 +391,7 @@ func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,11 +431,11 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -559,8 +559,8 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) GetS
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -572,16 +572,16 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -637,8 +637,8 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -646,7 +646,7 @@ func (g *jsiiProxy_GoogleSccProjectCustomModuleCustomConfigOutputReference) Reso
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) validateGe
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NotificationPolicyEmailIntegrationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNotificationPolicyEmailIntegrationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewNotificationPolicyEmailIntegrationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

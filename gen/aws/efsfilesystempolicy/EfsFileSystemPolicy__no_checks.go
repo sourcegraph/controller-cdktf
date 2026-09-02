@@ -56,6 +56,10 @@ func (e *jsiiProxy_EfsFileSystemPolicy) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (e *jsiiProxy_EfsFileSystemPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EfsFileSystemPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_EfsFileSystemPolicy) validateMoveToIdParameters(id *string) e
 }
 
 func (e *jsiiProxy_EfsFileSystemPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EfsFileSystemPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_EfsFileSystemPolicy) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_EfsFileSystemPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EfsFileSystemPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

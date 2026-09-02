@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutBackendPara
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AppmeshVirtualNodeSpecBackend:
 		value := value.(*[]*AppmeshVirtualNodeSpecBackend)
@@ -114,7 +114,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutBackendPara
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AppmeshVirtualNodeSpecBackend; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AppmeshVirtualNodeSpecBackend; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -137,7 +137,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutListenerPar
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AppmeshVirtualNodeSpecListener:
 		value := value.(*[]*AppmeshVirtualNodeSpecListener)
@@ -156,7 +156,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutListenerPar
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AppmeshVirtualNodeSpecListener; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AppmeshVirtualNodeSpecListener; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -185,9 +185,9 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutServiceDisc
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -274,7 +274,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -282,7 +282,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateSetTerraformRe
 	return nil
 }
 
-func validateNewAppmeshVirtualNodeSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppmeshVirtualNodeSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

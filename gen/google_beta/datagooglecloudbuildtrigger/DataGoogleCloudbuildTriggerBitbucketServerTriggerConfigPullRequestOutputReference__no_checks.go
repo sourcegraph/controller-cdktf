@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

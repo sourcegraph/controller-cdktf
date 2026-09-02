@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRule",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRule",
 		reflect.TypeOf((*TeamsRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -63,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putRuleSettings", GoMethod: "PutRuleSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDevicePosture", GoMethod: "ResetDevicePosture"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilters", GoMethod: "ResetFilters"},
@@ -85,27 +87,28 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "traffic", GoGetter: "Traffic"},
 			_jsii_.MemberProperty{JsiiProperty: "trafficInput", GoGetter: "TrafficInput"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleConfig",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleConfig",
 		reflect.TypeOf((*TeamsRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettings",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettings",
 		reflect.TypeOf((*TeamsRuleRuleSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSsh",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSsh",
 		reflect.TypeOf((*TeamsRuleRuleSettingsAuditSsh)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSshOutputReference",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsAuditSshOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsAuditSshOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "commandLogging", GoGetter: "CommandLogging"},
@@ -134,16 +137,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsRuleRuleSettingsAuditSshOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControls",
 		reflect.TypeOf((*TeamsRuleRuleSettingsBisoAdminControls)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsBisoAdminControlsOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsBisoAdminControlsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -185,16 +188,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsRuleRuleSettingsBisoAdminControlsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSession",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSession",
 		reflect.TypeOf((*TeamsRuleRuleSettingsCheckSession)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSessionOutputReference",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsCheckSessionOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsCheckSessionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,16 +228,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsRuleRuleSettingsCheckSessionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgress",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgress",
 		reflect.TypeOf((*TeamsRuleRuleSettingsEgress)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsEgressOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsEgressOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -268,16 +271,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsRuleRuleSettingsEgressOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsL4Override",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsL4Override",
 		reflect.TypeOf((*TeamsRuleRuleSettingsL4Override)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsL4OverrideOutputReference",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsL4OverrideOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsL4OverrideOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -308,12 +311,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsRuleRuleSettingsL4OverrideOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsOutputReference",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addHeaders", GoGetter: "AddHeaders"},
@@ -395,16 +398,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsRuleRuleSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLog",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLog",
 		reflect.TypeOf((*TeamsRuleRuleSettingsPayloadLog)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLogOutputReference",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsPayloadLogOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsPayloadLogOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -433,16 +436,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsRuleRuleSettingsPayloadLogOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCert",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCert",
 		reflect.TypeOf((*TeamsRuleRuleSettingsUntrustedCert)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCertOutputReference",
+		"@cdktn/provider-cloudflare.teamsRule.TeamsRuleRuleSettingsUntrustedCertOutputReference",
 		reflect.TypeOf((*TeamsRuleRuleSettingsUntrustedCertOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -472,7 +475,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsRuleRuleSettingsUntrustedCertOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

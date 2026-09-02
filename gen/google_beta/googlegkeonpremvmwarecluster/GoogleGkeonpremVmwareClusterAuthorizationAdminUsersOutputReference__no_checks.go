@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputRefe
 	return nil
 }
 
-func validateNewGoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleGkeonpremVmwareClusterAuthorizationAdminUsersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateGetPa
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesList) validateSetWr
 	return nil
 }
 
-func validateNewHypercomputeclusterClusterStorageResourcesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewHypercomputeclusterClusterStorageResourcesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

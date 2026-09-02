@@ -56,6 +56,10 @@ func (d *jsiiProxy_DocdbEventSubscription) validateInterpolationForAttributePara
 	return nil
 }
 
+func (d *jsiiProxy_DocdbEventSubscription) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbEventSubscription) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DocdbEventSubscription) validateOverrideLogicalIdParameters(n
 }
 
 func (d *jsiiProxy_DocdbEventSubscription) validatePutTimeoutsParameters(value *DocdbEventSubscriptionTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocdbEventSubscription) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DocdbEventSubscription) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_DocdbEventSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DocdbEventSubscription) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

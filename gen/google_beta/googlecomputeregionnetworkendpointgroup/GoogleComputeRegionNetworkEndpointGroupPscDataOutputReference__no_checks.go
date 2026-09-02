@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkEndpointGroupPscDataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeRegionNetworkEndpointGroupPscDataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeRegionNetworkEndpointGroupPscDataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

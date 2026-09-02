@@ -56,6 +56,10 @@ func (c *jsiiProxy_ContainerAttachedCluster) validateInterpolationForAttributePa
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAttachedCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContainerAttachedCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (c *jsiiProxy_ContainerAttachedCluster) validatePutTimeoutsParameters(value
 	return nil
 }
 
+func (c *jsiiProxy_ContainerAttachedCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateContainerAttachedCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -152,7 +160,7 @@ func (j *jsiiProxy_ContainerAttachedCluster) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAttachedCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ContainerAttachedCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

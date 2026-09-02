@@ -40,11 +40,11 @@ func (m *jsiiProxy_Macie2ClassificationJobScheduleFrequencyOutputReference) vali
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationJobScheduleFrequencyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_Macie2ClassificationJobScheduleFrequencyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationJobScheduleFrequencyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2ClassificationJobScheduleFrequencyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_Macie2ClassificationJobScheduleFrequencyOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationJobScheduleFrequencyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Macie2ClassificationJobScheduleFrequencyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_Macie2ClassificationJobScheduleFrequencyOutputReference) vali
 	return nil
 }
 
-func validateNewMacie2ClassificationJobScheduleFrequencyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMacie2ClassificationJobScheduleFrequencyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

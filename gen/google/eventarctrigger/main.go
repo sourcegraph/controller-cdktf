@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTrigger",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTrigger",
 		reflect.TypeOf((*EventarcTrigger)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "matchingCriteria", GoGetter: "MatchingCriteria"},
 			_jsii_.MemberProperty{JsiiProperty: "matchingCriteriaInput", GoGetter: "MatchingCriteriaInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -69,6 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putTransport", GoMethod: "PutTransport"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChannel", GoMethod: "ResetChannel"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEventDataContentType", GoMethod: "ResetEventDataContentType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -99,27 +101,28 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transportInput", GoGetter: "TransportInput"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTrigger{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerConfig",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerConfig",
 		reflect.TypeOf((*EventarcTriggerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestination",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerDestination",
 		reflect.TypeOf((*EventarcTriggerDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationCloudRunService",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerDestinationCloudRunService",
 		reflect.TypeOf((*EventarcTriggerDestinationCloudRunService)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationCloudRunServiceOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerDestinationCloudRunServiceOutputReference",
 		reflect.TypeOf((*EventarcTriggerDestinationCloudRunServiceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -154,16 +157,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationGke",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerDestinationGke",
 		reflect.TypeOf((*EventarcTriggerDestinationGke)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationGkeOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerDestinationGkeOutputReference",
 		reflect.TypeOf((*EventarcTriggerDestinationGkeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cluster", GoGetter: "Cluster"},
@@ -201,16 +204,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTriggerDestinationGkeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationHttpEndpoint",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerDestinationHttpEndpoint",
 		reflect.TypeOf((*EventarcTriggerDestinationHttpEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationHttpEndpointOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerDestinationHttpEndpointOutputReference",
 		reflect.TypeOf((*EventarcTriggerDestinationHttpEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -239,16 +242,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTriggerDestinationHttpEndpointOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationNetworkConfig",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerDestinationNetworkConfig",
 		reflect.TypeOf((*EventarcTriggerDestinationNetworkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationNetworkConfigOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerDestinationNetworkConfigOutputReference",
 		reflect.TypeOf((*EventarcTriggerDestinationNetworkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -277,12 +280,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTriggerDestinationNetworkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerDestinationOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerDestinationOutputReference",
 		reflect.TypeOf((*EventarcTriggerDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudFunction", GoGetter: "CloudFunction"},
@@ -329,16 +332,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTriggerDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteria",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteria",
 		reflect.TypeOf((*EventarcTriggerMatchingCriteria)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaList",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaList",
 		reflect.TypeOf((*EventarcTriggerMatchingCriteriaList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -355,12 +358,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTriggerMatchingCriteriaList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaOutputReference",
 		reflect.TypeOf((*EventarcTriggerMatchingCriteriaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attribute", GoGetter: "Attribute"},
@@ -394,16 +397,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicy",
 		reflect.TypeOf((*EventarcTriggerRetryPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerRetryPolicyOutputReference",
 		reflect.TypeOf((*EventarcTriggerRetryPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -433,16 +436,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTriggerRetryPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTimeouts",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerTimeouts",
 		reflect.TypeOf((*EventarcTriggerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTimeoutsOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerTimeoutsOutputReference",
 		reflect.TypeOf((*EventarcTriggerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -478,16 +481,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTriggerTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransport",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerTransport",
 		reflect.TypeOf((*EventarcTriggerTransport)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerTransportOutputReference",
 		reflect.TypeOf((*EventarcTriggerTransportOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -518,16 +521,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTriggerTransportOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportPubsub",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerTransportPubsub",
 		reflect.TypeOf((*EventarcTriggerTransportPubsub)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportPubsubOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerTransportPubsubOutputReference",
 		reflect.TypeOf((*EventarcTriggerTransportPubsubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -558,7 +561,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_EventarcTriggerTransportPubsubOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

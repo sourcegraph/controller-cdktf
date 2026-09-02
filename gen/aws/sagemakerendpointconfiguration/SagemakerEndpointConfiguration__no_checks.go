@@ -56,6 +56,10 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) validateInterpolationForAttri
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerEndpointConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerEndpointConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (s *jsiiProxy_SagemakerEndpointConfiguration) validatePutProductionVariants
 }
 
 func (s *jsiiProxy_SagemakerEndpointConfiguration) validatePutShadowProductionVariantsParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerEndpointConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetKmsKeyArnParameter
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SagemakerEndpointConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

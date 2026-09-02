@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateGetParamet
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateResolvePar
 
 func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*JobV1SpecTemplateSpecImagePullSecrets:
 		val := val.(*[]*JobV1SpecTemplateSpecImagePullSecrets)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateSetInterna
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*JobV1SpecTemplateSpecImagePullSecrets; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*JobV1SpecTemplateSpecImagePullSecrets; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecImagePullSecretsList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewJobV1SpecTemplateSpecImagePullSecretsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobV1SpecTemplateSpecImagePullSecretsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

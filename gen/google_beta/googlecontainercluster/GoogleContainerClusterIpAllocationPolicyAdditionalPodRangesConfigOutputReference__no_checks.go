@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesCo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterIpAllocationPolicyAdditionalPodRangesConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

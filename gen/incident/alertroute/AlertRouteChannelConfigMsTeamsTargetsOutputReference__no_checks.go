@@ -40,7 +40,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlertRouteChannelConfigMsTeamsTargetsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlertRouteChannelConfigMsTeamsTargetsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

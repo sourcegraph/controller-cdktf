@@ -40,11 +40,11 @@ func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validat
 	return nil
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FolderOrganizationPolicyRestorePolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFolderOrganizationPolicyRestorePolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFolderOrganizationPolicyRestorePolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

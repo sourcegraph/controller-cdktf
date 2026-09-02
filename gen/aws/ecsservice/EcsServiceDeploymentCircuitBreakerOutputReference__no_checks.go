@@ -40,11 +40,11 @@ func (e *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsServiceDeploymentCircuitBreakerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEcsServiceDeploymentCircuitBreakerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEcsServiceDeploymentCircuitBreakerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

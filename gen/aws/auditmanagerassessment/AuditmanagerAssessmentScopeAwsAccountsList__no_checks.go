@@ -12,7 +12,7 @@ func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateGetParame
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AuditmanagerAssessmentScopeAwsAccountsList) validateSetWrapsS
 	return nil
 }
 
-func validateNewAuditmanagerAssessmentScopeAwsAccountsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAuditmanagerAssessmentScopeAwsAccountsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

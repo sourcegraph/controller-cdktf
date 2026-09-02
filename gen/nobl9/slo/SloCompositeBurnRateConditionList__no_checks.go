@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloCompositeBurnRateConditionList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_SloCompositeBurnRateConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloCompositeBurnRateConditionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloCompositeBurnRateConditionList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_SloCompositeBurnRateConditionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloCompositeBurnRateConditionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloCompositeBurnRateConditionList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewSloCompositeBurnRateConditionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloCompositeBurnRateConditionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

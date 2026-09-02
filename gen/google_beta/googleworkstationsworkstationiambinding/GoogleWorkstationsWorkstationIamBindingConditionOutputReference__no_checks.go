@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationIamBindingConditionOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationIamBindingConditionOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationIamBindingConditionOutputReferen
 	return nil
 }
 
-func validateNewGoogleWorkstationsWorkstationIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleWorkstationsWorkstationIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

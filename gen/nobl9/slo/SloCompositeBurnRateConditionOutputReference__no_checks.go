@@ -40,11 +40,11 @@ func (s *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SloCompositeBurnRateConditionOutputReference) validateSetValu
 	return nil
 }
 
-func validateNewSloCompositeBurnRateConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloCompositeBurnRateConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

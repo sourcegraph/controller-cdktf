@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesPopPoolsList) validateGetParameters
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesPopPoolsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesPopPoolsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesPopPoolsList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesPopPoolsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesPopPoolsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesPopPoolsList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewLoadBalancerRulesOverridesPopPoolsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoadBalancerRulesOverridesPopPoolsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

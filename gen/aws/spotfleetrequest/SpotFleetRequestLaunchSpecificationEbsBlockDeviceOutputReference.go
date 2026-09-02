@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/spotfleetrequest/internal"
 )
 
 type SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,9 +52,9 @@ type SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Throughput() *float64
 	SetThroughput(val *float64)
 	ThroughputInput() *float64
@@ -69,7 +69,7 @@ type SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference interface 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDeleteOnTermination()
 	ResetEncrypted()
 	ResetIops()
@@ -98,7 +98,7 @@ type SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference interface 
 	ResetVolumeType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +108,7 @@ type SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference interface 
 
 // The jsii proxy struct for SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference
 type jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) ComplexObjectIndex() interface{} {
@@ -291,8 +291,8 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -362,7 +362,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputRefere
 }
 
 
-func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference {
+func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -371,7 +371,7 @@ func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference(terrafo
 	j := jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference",
+		"@cdktn/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -379,11 +379,11 @@ func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference(terrafo
 	return &j
 }
 
-func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference_Override(s SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference_Override(s SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference",
+		"@cdktn/provider-aws.spotFleetRequest.SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -499,7 +499,7 @@ func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputRefere
 	)
 }
 
-func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,11 +572,11 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputRefere
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -700,8 +700,8 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputRefere
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -713,16 +713,16 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputRefere
 	return returns
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -793,8 +793,8 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputRefere
 	)
 }
 
-func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -802,7 +802,7 @@ func (s *jsiiProxy_SpotFleetRequestLaunchSpecificationEbsBlockDeviceOutputRefere
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

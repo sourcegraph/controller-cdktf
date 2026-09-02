@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/networkfirewallfirewallpolicy/internal"
 )
 
 type NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList 
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList 
 
 // The jsii proxy struct for NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList
 type jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroup
 	return returns
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroup
 }
 
 
-func NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList {
+func NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList {
 	_init_.Initialize()
 
 	if err := validateNewNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceLi
 	j := jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList",
+		"@cdktn/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceLi
 	return &j
 }
 
-func NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList_Override(n NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewNetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList_Override(n NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList",
+		"@cdktn/provider-aws.networkfirewallFirewallPolicy.NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroup
 	)
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroup
 	)
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := n.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		n,
@@ -228,8 +231,8 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroup
 	return returns
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroupReferenceList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallPolicyFirewallPolicyStatelessRuleGroup
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

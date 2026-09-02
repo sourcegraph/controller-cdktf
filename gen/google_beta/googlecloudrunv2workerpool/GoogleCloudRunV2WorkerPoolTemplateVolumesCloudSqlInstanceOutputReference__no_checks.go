@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudRunV2WorkerPoolTemplateVolumesCloudSqlInstanceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

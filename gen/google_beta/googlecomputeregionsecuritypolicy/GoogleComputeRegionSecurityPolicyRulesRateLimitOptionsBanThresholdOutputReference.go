@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionsecuritypolicy/internal"
 )
 
 type GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputRef
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputRef
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCount()
 	ResetIntervalSec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputRef
 
 // The jsii proxy struct for GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference
 type jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThre
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThre
 }
 
 
-func NewGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference {
+func NewGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutput
 	j := jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutput
 	return &j
 }
 
-func NewGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference_Override(g GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference_Override(g GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRegionSecurityPolicy.GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThre
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThre
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,8 +456,8 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThre
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -469,16 +469,16 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThre
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThre
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThresholdOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulesRateLimitOptionsBanThre
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

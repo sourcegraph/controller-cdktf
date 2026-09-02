@@ -56,6 +56,10 @@ func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicy) validateInterpolationForAtt
 	return nil
 }
 
+func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicy) validatePutDetailsParameter
 }
 
 func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicy) validatePutTimeoutsParameters(value *IamPrincipalAccessBoundaryPolicyTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IamPrincipalAccessBoundaryPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicy) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IamPrincipalAccessBoundaryPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

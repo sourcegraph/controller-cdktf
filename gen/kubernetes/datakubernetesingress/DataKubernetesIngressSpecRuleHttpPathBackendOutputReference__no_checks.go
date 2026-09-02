@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathBackendOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathBackendOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathBackendOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathBackendOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathBackendOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathBackendOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathBackendOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesIngressSpecRuleHttpPathBackendOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataKubernetesIngressSpecRuleHttpPathBackendOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataKubernetesIngressSpecRuleHttpPathBackendOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

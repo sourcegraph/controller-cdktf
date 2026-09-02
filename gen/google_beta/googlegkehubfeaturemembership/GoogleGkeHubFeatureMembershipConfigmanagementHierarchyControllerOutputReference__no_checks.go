@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControl
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControl
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGkeHubFeatureMembershipConfigmanagementHierarchyControllerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

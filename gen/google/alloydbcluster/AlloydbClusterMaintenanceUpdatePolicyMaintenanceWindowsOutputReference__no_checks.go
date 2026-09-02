@@ -40,7 +40,7 @@ func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutput
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutput
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutput
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

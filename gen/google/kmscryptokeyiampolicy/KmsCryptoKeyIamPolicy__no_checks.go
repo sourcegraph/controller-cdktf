@@ -56,6 +56,10 @@ func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateMoveToIdParameters(id *string)
 }
 
 func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsCryptoKeyIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KmsCryptoKeyIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

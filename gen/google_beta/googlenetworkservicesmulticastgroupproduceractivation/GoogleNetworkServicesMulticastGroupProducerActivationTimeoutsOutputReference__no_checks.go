@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationTimeouts
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationTimeouts
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivationTimeouts
 	return nil
 }
 
-func validateNewGoogleNetworkServicesMulticastGroupProducerActivationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkServicesMulticastGroupProducerActivationTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

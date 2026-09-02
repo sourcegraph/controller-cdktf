@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleApiGatewayApiConfigGrpcServicesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleApiGatewayApiConfigGrpcServicesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

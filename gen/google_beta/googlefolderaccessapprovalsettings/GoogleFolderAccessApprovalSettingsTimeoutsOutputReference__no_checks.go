@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleFolderAccessApprovalSettingsTimeoutsOutputReference) va
 	return nil
 }
 
-func validateNewGoogleFolderAccessApprovalSettingsTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleFolderAccessApprovalSettingsTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

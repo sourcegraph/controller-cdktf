@@ -56,6 +56,10 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validateInterpolationForAttribu
 	return nil
 }
 
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validatePutPropertiesParameters
 }
 
 func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validatePutTimeoutsParameters(value *OracleDatabaseExadbVmClusterTimeouts) error {
+	return nil
+}
+
+func (o *jsiiProxy_OracleDatabaseExadbVmCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetLabelsParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

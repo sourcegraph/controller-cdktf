@@ -40,7 +40,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateGetStr
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validatePutLab
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewReportSystemHealthReviewColumnOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewReportSystemHealthReviewColumnOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

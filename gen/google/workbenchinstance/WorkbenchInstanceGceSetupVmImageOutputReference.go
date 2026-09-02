@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/workbenchinstance/internal"
 )
 
 type WorkbenchInstanceGceSetupVmImageOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type WorkbenchInstanceGceSetupVmImageOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type WorkbenchInstanceGceSetupVmImageOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFamily()
 	ResetName()
 	ResetProject()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type WorkbenchInstanceGceSetupVmImageOutputReference interface {
 
 // The jsii proxy struct for WorkbenchInstanceGceSetupVmImageOutputReference
 type jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) TerraformRes
 }
 
 
-func NewWorkbenchInstanceGceSetupVmImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkbenchInstanceGceSetupVmImageOutputReference {
+func NewWorkbenchInstanceGceSetupVmImageOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) WorkbenchInstanceGceSetupVmImageOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkbenchInstanceGceSetupVmImageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewWorkbenchInstanceGceSetupVmImageOutputReference(terraformResource cdktf.
 	j := jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupVmImageOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupVmImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewWorkbenchInstanceGceSetupVmImageOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewWorkbenchInstanceGceSetupVmImageOutputReference_Override(w WorkbenchInstanceGceSetupVmImageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewWorkbenchInstanceGceSetupVmImageOutputReference_Override(w WorkbenchInstanceGceSetupVmImageOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.workbenchInstance.WorkbenchInstanceGceSetupVmImageOutputReference",
+		"@cdktn/provider-google.workbenchInstance.WorkbenchInstanceGceSetupVmImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -491,8 +491,8 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) GetStringMap
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -504,16 +504,16 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) Interpolatio
 	return returns
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) ResetProject
 	)
 }
 
-func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (w *jsiiProxy_WorkbenchInstanceGceSetupVmImageOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

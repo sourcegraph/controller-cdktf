@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaireasoningengine/internal"
 )
 
 type VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDnsPeeringConfigs(value interface{})
 	ResetDnsPeeringConfigs()
 	ResetNetworkAttachment()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference 
 
 // The jsii proxy struct for VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference
 type jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOu
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOu
 }
 
 
-func NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference {
+func NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReferen
 	j := jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference",
+		"@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReferen
 	return &j
 }
 
-func NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference_Override(v VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference_Override(v VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference",
+		"@cdktn/provider-google.vertexAiReasoningEngine.VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOu
 	)
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOu
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -445,8 +445,8 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOu
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -458,16 +458,16 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOu
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOu
 	)
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecDeploymentSpecPscInterfaceConfigOu
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

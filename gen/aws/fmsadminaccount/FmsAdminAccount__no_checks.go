@@ -56,6 +56,10 @@ func (f *jsiiProxy_FmsAdminAccount) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (f *jsiiProxy_FmsAdminAccount) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FmsAdminAccount) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (f *jsiiProxy_FmsAdminAccount) validateMoveToIdParameters(id *string) error
 }
 
 func (f *jsiiProxy_FmsAdminAccount) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (f *jsiiProxy_FmsAdminAccount) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_FmsAdminAccount) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_FmsAdminAccount) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FmsAdminAccount) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

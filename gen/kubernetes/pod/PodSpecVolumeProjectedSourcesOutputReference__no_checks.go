@@ -40,7 +40,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesOutputReference) validateGetStri
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesOutputReference) validatePutServ
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPodSpecVolumeProjectedSourcesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPodSpecVolumeProjectedSourcesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

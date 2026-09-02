@@ -40,11 +40,11 @@ func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGkeonpremVmwareClusterControlPlaneNodeAutoResizeConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

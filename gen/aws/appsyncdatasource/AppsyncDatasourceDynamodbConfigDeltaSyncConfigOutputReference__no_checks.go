@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppsyncDatasourceDynamodbConfigDeltaSyncConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

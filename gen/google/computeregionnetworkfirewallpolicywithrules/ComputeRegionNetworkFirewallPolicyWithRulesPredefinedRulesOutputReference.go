@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregionnetworkfirewallpolicywithrules/internal"
 )
 
 type ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Action() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -28,8 +28,8 @@ type ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference i
 	CreationStack() *[]*string
 	Description() *string
 	Direction() *string
-	Disabled() cdktf.IResolvable
-	EnableLogging() cdktf.IResolvable
+	Disabled() cdktn.IResolvable
+	EnableLogging() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRules
@@ -45,16 +45,16 @@ type ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	TlsInspect() cdktf.IResolvable
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	TlsInspect() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference i
 
 // The jsii proxy struct for ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference
 type jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) Action() *string {
@@ -148,8 +148,8 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOut
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) Disabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) Disabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOut
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) EnableLogging() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) EnableLogging() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableLogging",
@@ -258,8 +258,8 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOut
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOut
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) TlsInspect() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) TlsInspect() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"tlsInspect",
@@ -279,7 +279,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOut
 }
 
 
-func NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference {
+func NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -288,7 +288,7 @@ func NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReferenc
 	j := jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference",
+		"@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -296,11 +296,11 @@ func NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReferenc
 	return &j
 }
 
-func NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference_Override(c ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference_Override(c ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference",
+		"@cdktn/provider-google.computeRegionNetworkFirewallPolicyWithRules.ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOut
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,11 +390,11 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOut
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -518,8 +518,8 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOut
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -531,24 +531,24 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOut
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (c *jsiiProxy_ComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesOut
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

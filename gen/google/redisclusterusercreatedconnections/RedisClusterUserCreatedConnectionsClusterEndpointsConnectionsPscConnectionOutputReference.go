@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/redisclusterusercreatedconnections/internal"
 )
 
 type RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Address() *string
 	SetAddress(val *string)
 	AddressInput() *string
@@ -54,15 +54,15 @@ type RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionO
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,13 +78,13 @@ type RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionO
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,7 +94,7 @@ type RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionO
 
 // The jsii proxy struct for RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference
 type jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) Address() *string {
@@ -297,8 +297,8 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	return returns
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -308,7 +308,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 }
 
 
-func NewRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference {
+func NewRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -317,7 +317,7 @@ func NewRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnecti
 	j := jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference",
+		"@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -325,11 +325,11 @@ func NewRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnecti
 	return &j
 }
 
-func NewRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference_Override(r RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference_Override(r RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference",
+		"@cdktn/provider-google.redisClusterUserCreatedConnections.RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -445,7 +445,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -485,11 +485,11 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -613,8 +613,8 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -626,16 +626,16 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -650,8 +650,8 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	)
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnectionsPscConnectionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -659,7 +659,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsConnections
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

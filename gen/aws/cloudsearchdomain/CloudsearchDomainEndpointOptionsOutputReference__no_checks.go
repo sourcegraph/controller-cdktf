@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateGetS
 	return nil
 }
 
-func (c *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CloudsearchDomainEndpointOptionsOutputReference) validateSetT
 	return nil
 }
 
-func validateNewCloudsearchDomainEndpointOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudsearchDomainEndpointOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

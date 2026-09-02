@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeNetworkPeering.ComputeNetworkPeering",
+		"@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeering",
 		reflect.TypeOf((*ComputeNetworkPeering)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "importSubnetRoutesWithPublicIpInput", GoGetter: "ImportSubnetRoutesWithPublicIpInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -59,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExportCustomRoutes", GoMethod: "ResetExportCustomRoutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExportSubnetRoutesWithPublicIp", GoMethod: "ResetExportSubnetRoutesWithPublicIp"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -85,23 +87,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateStrategy", GoGetter: "UpdateStrategy"},
 			_jsii_.MemberProperty{JsiiProperty: "updateStrategyInput", GoGetter: "UpdateStrategyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeNetworkPeering{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig",
+		"@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringConfig",
 		reflect.TypeOf((*ComputeNetworkPeeringConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeouts",
+		"@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeouts",
 		reflect.TypeOf((*ComputeNetworkPeeringTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeoutsOutputReference",
+		"@cdktn/provider-google.computeNetworkPeering.ComputeNetworkPeeringTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeNetworkPeeringTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,7 +140,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeNetworkPeeringTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

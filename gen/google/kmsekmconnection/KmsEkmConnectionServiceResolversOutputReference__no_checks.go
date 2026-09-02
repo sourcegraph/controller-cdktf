@@ -40,7 +40,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateGetS
 	return nil
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validatePutS
 	return nil
 }
 
-func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KmsEkmConnectionServiceResolversOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKmsEkmConnectionServiceResolversOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewKmsEkmConnectionServiceResolversOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

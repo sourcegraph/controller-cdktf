@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeDiskAsyncReplicationSecondaryDiskOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeDiskAsyncReplicationSecondaryDiskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeDiskAsyncReplicationSecondaryDiskOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

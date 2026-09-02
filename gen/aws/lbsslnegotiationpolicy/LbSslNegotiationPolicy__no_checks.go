@@ -56,6 +56,10 @@ func (l *jsiiProxy_LbSslNegotiationPolicy) validateInterpolationForAttributePara
 	return nil
 }
 
+func (l *jsiiProxy_LbSslNegotiationPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LbSslNegotiationPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (l *jsiiProxy_LbSslNegotiationPolicy) validateOverrideLogicalIdParameters(n
 }
 
 func (l *jsiiProxy_LbSslNegotiationPolicy) validatePutAttributeParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LbSslNegotiationPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetLbPortParameters(val *floa
 	return nil
 }
 
-func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LbSslNegotiationPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

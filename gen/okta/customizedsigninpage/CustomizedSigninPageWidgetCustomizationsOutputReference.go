@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/okta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/okta/customizedsigninpage/internal"
 )
 
 type CustomizedSigninPageWidgetCustomizationsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthenticatorPageCustomLinkLabel() *string
 	SetAuthenticatorPageCustomLinkLabel(val *string)
 	AuthenticatorPageCustomLinkLabelInput() *string
@@ -82,9 +82,9 @@ type CustomizedSigninPageWidgetCustomizationsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UnlockAccountLabel() *string
 	SetUnlockAccountLabel(val *string)
 	UnlockAccountLabelInput() *string
@@ -105,7 +105,7 @@ type CustomizedSigninPageWidgetCustomizationsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -121,9 +121,9 @@ type CustomizedSigninPageWidgetCustomizationsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAuthenticatorPageCustomLinkLabel()
 	ResetAuthenticatorPageCustomLinkUrl()
 	ResetClassicRecoveryFlowEmailOrUsernameLabel()
@@ -146,7 +146,7 @@ type CustomizedSigninPageWidgetCustomizationsOutputReference interface {
 	ResetUsernameLabel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -156,7 +156,7 @@ type CustomizedSigninPageWidgetCustomizationsOutputReference interface {
 
 // The jsii proxy struct for CustomizedSigninPageWidgetCustomizationsOutputReference
 type jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) AuthenticatorPageCustomLinkLabel() *string {
@@ -539,8 +539,8 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -650,7 +650,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Widg
 }
 
 
-func NewCustomizedSigninPageWidgetCustomizationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CustomizedSigninPageWidgetCustomizationsOutputReference {
+func NewCustomizedSigninPageWidgetCustomizationsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CustomizedSigninPageWidgetCustomizationsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCustomizedSigninPageWidgetCustomizationsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -659,7 +659,7 @@ func NewCustomizedSigninPageWidgetCustomizationsOutputReference(terraformResourc
 	j := jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizationsOutputReference",
+		"@cdktn/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -667,11 +667,11 @@ func NewCustomizedSigninPageWidgetCustomizationsOutputReference(terraformResourc
 	return &j
 }
 
-func NewCustomizedSigninPageWidgetCustomizationsOutputReference_Override(c CustomizedSigninPageWidgetCustomizationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCustomizedSigninPageWidgetCustomizationsOutputReference_Override(c CustomizedSigninPageWidgetCustomizationsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizationsOutputReference",
+		"@cdktn/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -897,7 +897,7 @@ func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -992,11 +992,11 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetA
 	return returns
 }
 
-func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1120,8 +1120,8 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) GetS
 	return returns
 }
 
-func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -1133,16 +1133,16 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Inte
 	return returns
 }
 
-func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1309,8 +1309,8 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Rese
 	)
 }
 
-func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1318,7 +1318,7 @@ func (c *jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference) Reso
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

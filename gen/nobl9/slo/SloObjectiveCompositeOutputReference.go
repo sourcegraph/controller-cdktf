@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/slo/internal"
 )
 
 type SloObjectiveCompositeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type SloObjectiveCompositeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type SloObjectiveCompositeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutComponents(value *SloObjectiveCompositeComponents)
 	ResetComponents()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type SloObjectiveCompositeOutputReference interface {
 
 // The jsii proxy struct for SloObjectiveCompositeOutputReference
 type jsiiProxy_SloObjectiveCompositeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SloObjectiveCompositeOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_SloObjectiveCompositeOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCompositeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SloObjectiveCompositeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_SloObjectiveCompositeOutputReference) TerraformResource() cdk
 }
 
 
-func NewSloObjectiveCompositeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SloObjectiveCompositeOutputReference {
+func NewSloObjectiveCompositeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SloObjectiveCompositeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSloObjectiveCompositeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewSloObjectiveCompositeOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_SloObjectiveCompositeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCompositeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewSloObjectiveCompositeOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewSloObjectiveCompositeOutputReference_Override(s SloObjectiveCompositeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSloObjectiveCompositeOutputReference_Override(s SloObjectiveCompositeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCompositeOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCompositeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_SloObjectiveCompositeOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCompositeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCompositeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (s *jsiiProxy_SloObjectiveCompositeOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCompositeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SloObjectiveCompositeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -444,8 +444,8 @@ func (s *jsiiProxy_SloObjectiveCompositeOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCompositeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SloObjectiveCompositeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -457,16 +457,16 @@ func (s *jsiiProxy_SloObjectiveCompositeOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCompositeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SloObjectiveCompositeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (s *jsiiProxy_SloObjectiveCompositeOutputReference) ResetComponents() {
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCompositeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SloObjectiveCompositeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (s *jsiiProxy_SloObjectiveCompositeOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -104,7 +104,7 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigOutputReference) vali
 	return nil
 }
 
-func validateNewGoogleCloudfunctions2FunctionBuildConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudfunctions2FunctionBuildConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentOutputReference
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentOutputReference
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMonitoringAlertPolicyConditionsConditionAbsentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitoringAlertPolicyConditionsConditionAbsentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

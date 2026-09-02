@@ -12,7 +12,7 @@ func (r *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowList) val
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowList) val
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_RedisClusterMaintenancePolicyWeeklyMaintenanceWindowList) val
 	return nil
 }
 
-func validateNewRedisClusterMaintenancePolicyWeeklyMaintenanceWindowListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRedisClusterMaintenancePolicyWeeklyMaintenanceWindowListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

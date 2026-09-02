@@ -56,6 +56,10 @@ func (g *jsiiProxy_GkeonpremVmwareNodePool) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GkeonpremVmwareNodePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeonpremVmwareNodePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GkeonpremVmwareNodePool) validatePutNodePoolAutoscalingParame
 }
 
 func (g *jsiiProxy_GkeonpremVmwareNodePool) validatePutTimeoutsParameters(value *GkeonpremVmwareNodePoolTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeonpremVmwareNodePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePool) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GkeonpremVmwareNodePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

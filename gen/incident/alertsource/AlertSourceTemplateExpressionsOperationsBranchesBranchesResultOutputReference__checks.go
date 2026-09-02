@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResultOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResul
 	return nil
 }
 
-func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResultOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResultOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResul
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AlertSourceTemplateExpressionsOperationsBranchesBranchesResultArrayValue:
 		value := value.(*[]*AlertSourceTemplateExpressionsOperationsBranchesBranchesResultArrayValue)
@@ -114,7 +114,7 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResul
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AlertSourceTemplateExpressionsOperationsBranchesBranchesResultArrayValue; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AlertSourceTemplateExpressionsOperationsBranchesBranchesResultArrayValue; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -132,9 +132,9 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResul
 	return nil
 }
 
-func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResultOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResultOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -207,7 +207,7 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResul
 
 func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResultOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *AlertSourceTemplateExpressionsOperationsBranchesBranchesResult:
 		val := val.(*AlertSourceTemplateExpressionsOperationsBranchesBranchesResult)
@@ -222,7 +222,7 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResul
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AlertSourceTemplateExpressionsOperationsBranchesBranchesResult; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *AlertSourceTemplateExpressionsOperationsBranchesBranchesResult; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -237,7 +237,7 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResul
 	return nil
 }
 
-func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResultOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResultOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsBranchesBranchesResul
 	return nil
 }
 
-func validateNewAlertSourceTemplateExpressionsOperationsBranchesBranchesResultOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlertSourceTemplateExpressionsOperationsBranchesBranchesResultOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

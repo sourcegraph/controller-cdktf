@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditio
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDialogflowCxFlowEventHandlersTriggerFulfillmentConditionalCasesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

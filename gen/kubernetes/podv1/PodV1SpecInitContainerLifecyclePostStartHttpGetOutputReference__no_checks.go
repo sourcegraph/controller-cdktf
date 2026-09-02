@@ -40,7 +40,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerLifecyclePostStartHttpGetOutputReferenc
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerLifecyclePostStartHttpGetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecInitContainerLifecyclePostStartHttpGetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerLifecyclePostStartHttpGetOutputReferenc
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerLifecyclePostStartHttpGetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecInitContainerLifecyclePostStartHttpGetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_PodV1SpecInitContainerLifecyclePostStartHttpGetOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerLifecyclePostStartHttpGetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodV1SpecInitContainerLifecyclePostStartHttpGetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPodV1SpecInitContainerLifecyclePostStartHttpGetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPodV1SpecInitContainerLifecyclePostStartHttpGetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseC
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksBlobOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksBlobOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksBlobOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksBlobOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksBlobOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksBlobOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksBlobOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksBlobOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

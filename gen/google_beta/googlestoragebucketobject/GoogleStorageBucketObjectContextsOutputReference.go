@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlestoragebucketobject/internal"
 )
 
 type GoogleStorageBucketObjectContextsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type GoogleStorageBucketObjectContextsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,13 +60,13 @@ type GoogleStorageBucketObjectContextsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustom(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type GoogleStorageBucketObjectContextsOutputReference interface {
 
 // The jsii proxy struct for GoogleStorageBucketObjectContextsOutputReference
 type jsiiProxy_GoogleStorageBucketObjectContextsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) TerraformRe
 }
 
 
-func NewGoogleStorageBucketObjectContextsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleStorageBucketObjectContextsOutputReference {
+func NewGoogleStorageBucketObjectContextsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleStorageBucketObjectContextsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleStorageBucketObjectContextsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewGoogleStorageBucketObjectContextsOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleStorageBucketObjectContextsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObjectContextsOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObjectContextsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewGoogleStorageBucketObjectContextsOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewGoogleStorageBucketObjectContextsOutputReference_Override(g GoogleStorageBucketObjectContextsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleStorageBucketObjectContextsOutputReference_Override(g GoogleStorageBucketObjectContextsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObjectContextsOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucketObject.GoogleStorageBucketObjectContextsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,11 +281,11 @@ func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -409,8 +409,8 @@ func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) GetStringMa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -422,16 +422,16 @@ func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) Interpolati
 	return returns
 }
 
-func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -449,8 +449,8 @@ func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) PutCustom(v
 	)
 }
 
-func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (g *jsiiProxy_GoogleStorageBucketObjectContextsOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigFlatOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFirestoreIndexFieldsVectorConfigFlatOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleFirestoreIndexFieldsVectorConfigFlatOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

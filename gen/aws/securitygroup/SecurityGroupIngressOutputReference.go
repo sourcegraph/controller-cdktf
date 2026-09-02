@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/securitygroup/internal"
 )
 
 type SecurityGroupIngressOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CidrBlocks() *[]*string
 	SetCidrBlocks(val *[]*string)
 	CidrBlocksInput() *[]*string
@@ -58,9 +58,9 @@ type SecurityGroupIngressOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ToPort() *float64
 	SetToPort(val *float64)
 	ToPortInput() *float64
@@ -69,7 +69,7 @@ type SecurityGroupIngressOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type SecurityGroupIngressOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCidrBlocks()
 	ResetDescription()
 	ResetFromPort()
@@ -99,7 +99,7 @@ type SecurityGroupIngressOutputReference interface {
 	ResetToPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -109,7 +109,7 @@ type SecurityGroupIngressOutputReference interface {
 
 // The jsii proxy struct for SecurityGroupIngressOutputReference
 type jsiiProxy_SecurityGroupIngressOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SecurityGroupIngressOutputReference) CidrBlocks() *[]*string {
@@ -332,8 +332,8 @@ func (j *jsiiProxy_SecurityGroupIngressOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_SecurityGroupIngressOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SecurityGroupIngressOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -363,7 +363,7 @@ func (j *jsiiProxy_SecurityGroupIngressOutputReference) ToPortInput() *float64 {
 }
 
 
-func NewSecurityGroupIngressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityGroupIngressOutputReference {
+func NewSecurityGroupIngressOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityGroupIngressOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSecurityGroupIngressOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -372,7 +372,7 @@ func NewSecurityGroupIngressOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_SecurityGroupIngressOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.securityGroup.SecurityGroupIngressOutputReference",
+		"@cdktn/provider-aws.securityGroup.SecurityGroupIngressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -380,11 +380,11 @@ func NewSecurityGroupIngressOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewSecurityGroupIngressOutputReference_Override(s SecurityGroupIngressOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSecurityGroupIngressOutputReference_Override(s SecurityGroupIngressOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.securityGroup.SecurityGroupIngressOutputReference",
+		"@cdktn/provider-aws.securityGroup.SecurityGroupIngressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -522,7 +522,7 @@ func (j *jsiiProxy_SecurityGroupIngressOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_SecurityGroupIngressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityGroupIngressOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -573,11 +573,11 @@ func (s *jsiiProxy_SecurityGroupIngressOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (s *jsiiProxy_SecurityGroupIngressOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecurityGroupIngressOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -701,8 +701,8 @@ func (s *jsiiProxy_SecurityGroupIngressOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (s *jsiiProxy_SecurityGroupIngressOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SecurityGroupIngressOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -714,16 +714,16 @@ func (s *jsiiProxy_SecurityGroupIngressOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (s *jsiiProxy_SecurityGroupIngressOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SecurityGroupIngressOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -802,8 +802,8 @@ func (s *jsiiProxy_SecurityGroupIngressOutputReference) ResetToPort() {
 	)
 }
 
-func (s *jsiiProxy_SecurityGroupIngressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SecurityGroupIngressOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -811,7 +811,7 @@ func (s *jsiiProxy_SecurityGroupIngressOutputReference) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

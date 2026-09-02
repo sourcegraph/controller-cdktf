@@ -5,7 +5,7 @@ package googlecesappversion
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCa
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotGuardrailsCodeCallbackAfterAgentCallbackListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

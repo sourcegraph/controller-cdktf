@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineApplicationUrlDispatchRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppEngineApplicationUrlDispatchRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppEngineApplicationUrlDispatchRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAppEngineApplicationUrlDispatchRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

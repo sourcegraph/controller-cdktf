@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) v
 	return nil
 }
 
-func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) v
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch:
 		value := value.(*[]*WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch)
@@ -114,16 +114,16 @@ func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) v
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*WafWebAclLoggingConfigurationRedactedFieldsFieldToMatch; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -210,7 +210,7 @@ func (j *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,7 +218,7 @@ func (j *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsOutputReference) v
 	return nil
 }
 
-func validateNewWafWebAclLoggingConfigurationRedactedFieldsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWafWebAclLoggingConfigurationRedactedFieldsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

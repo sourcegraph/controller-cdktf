@@ -40,11 +40,11 @@ func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) valid
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionCloudwatchMetricOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIotTopicRuleErrorActionCloudwatchMetricOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIotTopicRuleErrorActionCloudwatchMetricOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

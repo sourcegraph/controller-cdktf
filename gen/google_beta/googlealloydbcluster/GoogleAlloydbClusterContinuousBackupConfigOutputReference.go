@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlealloydbcluster/internal"
 )
 
 type GoogleAlloydbClusterContinuousBackupConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type GoogleAlloydbClusterContinuousBackupConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,16 +66,16 @@ type GoogleAlloydbClusterContinuousBackupConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEncryptionConfig(value *GoogleAlloydbClusterContinuousBackupConfigEncryptionConfig)
 	ResetEnabled()
 	ResetEncryptionConfig()
 	ResetRecoveryWindowDays()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleAlloydbClusterContinuousBackupConfigOutputReference interface {
 
 // The jsii proxy struct for GoogleAlloydbClusterContinuousBackupConfigOutputReference
 type jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) Te
 }
 
 
-func NewGoogleAlloydbClusterContinuousBackupConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterContinuousBackupConfigOutputReference {
+func NewGoogleAlloydbClusterContinuousBackupConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleAlloydbClusterContinuousBackupConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleAlloydbClusterContinuousBackupConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleAlloydbClusterContinuousBackupConfigOutputReference(terraformResou
 	j := jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigOutputReference",
+		"@cdktn/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleAlloydbClusterContinuousBackupConfigOutputReference(terraformResou
 	return &j
 }
 
-func NewGoogleAlloydbClusterContinuousBackupConfigOutputReference_Override(g GoogleAlloydbClusterContinuousBackupConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleAlloydbClusterContinuousBackupConfigOutputReference_Override(g GoogleAlloydbClusterContinuousBackupConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigOutputReference",
+		"@cdktn/provider-google-beta.googleAlloydbCluster.GoogleAlloydbClusterContinuousBackupConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,11 +352,11 @@ func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -480,8 +480,8 @@ func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -493,16 +493,16 @@ func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) In
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupConfigOutputReference) Re
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

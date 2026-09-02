@@ -40,7 +40,7 @@ func (s *jsiiProxy_StorageClassAllowedTopologiesOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_StorageClassAllowedTopologiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageClassAllowedTopologiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_StorageClassAllowedTopologiesOutputReference) validatePutMatc
 	return nil
 }
 
-func (s *jsiiProxy_StorageClassAllowedTopologiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageClassAllowedTopologiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_StorageClassAllowedTopologiesOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_StorageClassAllowedTopologiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageClassAllowedTopologiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStorageClassAllowedTopologiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStorageClassAllowedTopologiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationMockToolRespons
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationMockToolResponseToolsetToolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationMockToolResponseToolsetToolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationMockToolResponseToolsetToolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationMockToolResponseToolsetToolOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationMockToolRespons
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationMockToolResponseToolsetToolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationMockToolResponseToolsetToolOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleCesEvaluationGoldenTurnsStepsExpectationMockToolRespons
 	return nil
 }
 
-func validateNewGoogleCesEvaluationGoldenTurnsStepsExpectationMockToolResponseToolsetToolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesEvaluationGoldenTurnsStepsExpectationMockToolResponseToolsetToolOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

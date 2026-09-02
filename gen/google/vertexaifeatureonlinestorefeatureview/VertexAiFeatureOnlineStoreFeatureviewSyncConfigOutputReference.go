@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaifeatureonlinestorefeatureview/internal"
 )
 
 type VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetContinuous()
 	ResetCron()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference interface {
 
 // The jsii proxy struct for VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference
 type jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReferenc
 }
 
 
-func NewVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference {
+func NewVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference(terraform
 	j := jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiFeatureOnlineStoreFeatureview.VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference",
+		"@cdktn/provider-google.vertexAiFeatureOnlineStoreFeatureview.VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference(terraform
 	return &j
 }
 
-func NewVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference_Override(v VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference_Override(v VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiFeatureOnlineStoreFeatureview.VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference",
+		"@cdktn/provider-google.vertexAiFeatureOnlineStoreFeatureview.VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReferenc
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -456,8 +456,8 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReferenc
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -469,16 +469,16 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReferenc
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReferenc
 	)
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreFeatureviewSyncConfigOutputReferenc
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

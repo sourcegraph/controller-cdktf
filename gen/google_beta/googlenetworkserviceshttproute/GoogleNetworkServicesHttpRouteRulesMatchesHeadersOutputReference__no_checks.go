@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkServicesHttpRouteRulesMatchesHeadersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

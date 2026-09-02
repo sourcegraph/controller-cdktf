@@ -4,16 +4,16 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagoogleoracledatabaseautonomousdatabase/internal"
 )
 
 type DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ActualUsedDataStorageSizeTb() *float64
 	AllocatedStorageSizeTb() *float64
 	ApexDetails() DataGoogleOracleDatabaseAutonomousDatabasePropertiesApexDetailsList
-	ArePrimaryAllowlistedIpsUsed() cdktf.IResolvable
+	ArePrimaryAllowlistedIpsUsed() cdktn.IResolvable
 	AutonomousContainerDatabaseId() *string
 	AvailableUpgradeVersions() *[]*string
 	BackupRetentionPeriodDays() *float64
@@ -50,9 +50,9 @@ type DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference interfa
 	Fqn() *string
 	InternalValue() *DataGoogleOracleDatabaseAutonomousDatabaseProperties
 	SetInternalValue(val *DataGoogleOracleDatabaseAutonomousDatabaseProperties)
-	IsAutoScalingEnabled() cdktf.IResolvable
-	IsLocalDataGuardEnabled() cdktf.IResolvable
-	IsStorageAutoScalingEnabled() cdktf.IResolvable
+	IsAutoScalingEnabled() cdktn.IResolvable
+	IsLocalDataGuardEnabled() cdktn.IResolvable
+	IsStorageAutoScalingEnabled() cdktn.IResolvable
 	LicenseType() *string
 	LifecycleDetails() *string
 	LocalAdgAutoFailoverMaxDataLossLimit() *float64
@@ -63,7 +63,7 @@ type DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference interfa
 	MaintenanceScheduleType() *string
 	MemoryPerOracleComputeUnitGbs() *float64
 	MemoryTableGbs() *float64
-	MtlsConnectionRequired() cdktf.IResolvable
+	MtlsConnectionRequired() cdktn.IResolvable
 	NCharacterSet() *string
 	NextLongTermBackupTime() *string
 	Ocid() *string
@@ -88,9 +88,9 @@ type DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TotalAutoBackupStorageSizeGbs() *float64
 	UsedDataStorageSizeTbs() *float64
 	VaultId() *string
@@ -99,7 +99,7 @@ type DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference interfa
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -115,12 +115,12 @@ type DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -130,7 +130,7 @@ type DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference interfa
 
 // The jsii proxy struct for DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference
 type jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) ActualUsedDataStorageSizeTb() *float64 {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) ArePrimaryAllowlistedIpsUsed() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) ArePrimaryAllowlistedIpsUsed() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"arePrimaryAllowlistedIpsUsed",
@@ -393,8 +393,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) IsAutoScalingEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) IsAutoScalingEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isAutoScalingEnabled",
@@ -403,8 +403,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) IsLocalDataGuardEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) IsLocalDataGuardEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isLocalDataGuardEnabled",
@@ -413,8 +413,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) IsStorageAutoScalingEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) IsStorageAutoScalingEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isStorageAutoScalingEnabled",
@@ -523,8 +523,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) MtlsConnectionRequired() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) MtlsConnectionRequired() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"mtlsConnectionRequired",
@@ -733,8 +733,8 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -774,7 +774,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 }
 
 
-func NewDataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference {
+func NewDataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -783,7 +783,7 @@ func NewDataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference(terr
 	j := jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleOracleDatabaseAutonomousDatabase.DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference",
+		"@cdktn/provider-google.dataGoogleOracleDatabaseAutonomousDatabase.DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -791,11 +791,11 @@ func NewDataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference(terr
 	return &j
 }
 
-func NewDataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference_Override(d DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference_Override(d DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleOracleDatabaseAutonomousDatabase.DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference",
+		"@cdktn/provider-google.dataGoogleOracleDatabaseAutonomousDatabase.DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -845,7 +845,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	)
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -885,11 +885,11 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1013,8 +1013,8 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1026,24 +1026,24 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1051,7 +1051,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseAutonomousDatabasePropertiesOutputRef
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

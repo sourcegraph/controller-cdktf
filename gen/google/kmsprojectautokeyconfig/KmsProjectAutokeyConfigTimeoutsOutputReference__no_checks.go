@@ -40,11 +40,11 @@ func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_KmsProjectAutokeyConfigTimeoutsOutputReference) validateSetUp
 	return nil
 }
 
-func validateNewKmsProjectAutokeyConfigTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKmsProjectAutokeyConfigTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

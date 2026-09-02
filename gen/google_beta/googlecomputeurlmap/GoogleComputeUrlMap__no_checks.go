@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeUrlMap) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMap) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeUrlMap) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (g *jsiiProxy_GoogleComputeUrlMap) validatePutTimeoutsParameters(value *Goo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeUrlMap) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleComputeUrlMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -140,7 +148,7 @@ func (j *jsiiProxy_GoogleComputeUrlMap) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeUrlMap) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

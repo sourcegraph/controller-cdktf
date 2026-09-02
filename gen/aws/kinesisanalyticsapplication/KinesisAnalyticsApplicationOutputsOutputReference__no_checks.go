@@ -40,7 +40,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateGe
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validatePu
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKinesisAnalyticsApplicationOutputsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewKinesisAnalyticsApplicationOutputsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

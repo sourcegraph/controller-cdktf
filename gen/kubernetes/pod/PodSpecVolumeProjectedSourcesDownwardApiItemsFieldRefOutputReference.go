@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/pod/internal"
 )
 
 type PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApiVersion() *string
 	SetApiVersion(val *string)
 	ApiVersionInput() *string
@@ -40,15 +40,15 @@ type PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetApiVersion()
 	ResetFieldPath()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference interf
 
 // The jsii proxy struct for PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference
 type jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) ApiVersion() *string {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputRe
 }
 
 
-func NewPodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference {
+func NewPodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewPodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference(ter
 	j := jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference",
+		"@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewPodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference(ter
 	return &j
 }
 
-func NewPodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference_Override(p PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference_Override(p PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference",
+		"@cdktn/provider-kubernetes.pod.PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputRe
 	)
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputRe
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -456,8 +456,8 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputRe
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -469,16 +469,16 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputRe
 	return returns
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputRe
 	)
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesDownwardApiItemsFieldRefOutputRe
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (g *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessa
 
 func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessages:
 		val := val.(*[]*GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessages)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessages; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessages; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_GoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessa
 	return nil
 }
 
-func validateNewGoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowCxPageTransitionRoutesTriggerFulfillmentMessagesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregionhealthcheck/internal"
 )
 
 type ComputeRegionHealthCheckSslHealthCheckOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,15 +52,15 @@ type ComputeRegionHealthCheckSslHealthCheckOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type ComputeRegionHealthCheckSslHealthCheckOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPort()
 	ResetPortName()
 	ResetPortSpecification()
@@ -87,7 +87,7 @@ type ComputeRegionHealthCheckSslHealthCheckOutputReference interface {
 	ResetResponse()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type ComputeRegionHealthCheckSslHealthCheckOutputReference interface {
 
 // The jsii proxy struct for ComputeRegionHealthCheckSslHealthCheckOutputReference
 type jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) ComplexObjectIndex() interface{} {
@@ -280,8 +280,8 @@ func (j *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) Terraf
 }
 
 
-func NewComputeRegionHealthCheckSslHealthCheckOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionHealthCheckSslHealthCheckOutputReference {
+func NewComputeRegionHealthCheckSslHealthCheckOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeRegionHealthCheckSslHealthCheckOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeRegionHealthCheckSslHealthCheckOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewComputeRegionHealthCheckSslHealthCheckOutputReference(terraformResource 
 	j := jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckSslHealthCheckOutputReference",
+		"@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckSslHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewComputeRegionHealthCheckSslHealthCheckOutputReference(terraformResource 
 	return &j
 }
 
-func NewComputeRegionHealthCheckSslHealthCheckOutputReference_Override(c ComputeRegionHealthCheckSslHealthCheckOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeRegionHealthCheckSslHealthCheckOutputReference_Override(c ComputeRegionHealthCheckSslHealthCheckOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckSslHealthCheckOutputReference",
+		"@cdktn/provider-google.computeRegionHealthCheck.ComputeRegionHealthCheckSslHealthCheckOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -428,7 +428,7 @@ func (j *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,11 +468,11 @@ func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) GetAny
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -596,8 +596,8 @@ func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) GetStr
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -609,16 +609,16 @@ func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) Interp
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) ResetR
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (c *jsiiProxy_ComputeRegionHealthCheckSslHealthCheckOutputReference) Resolv
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

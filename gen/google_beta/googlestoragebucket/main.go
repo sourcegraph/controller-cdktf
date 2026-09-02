@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucket",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucket",
 		reflect.TypeOf((*GoogleStorageBucket)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -63,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "logging", GoGetter: "Logging"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingInput", GoGetter: "LoggingInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -91,6 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putVersioning", GoMethod: "PutVersioning"},
 			_jsii_.MemberMethod{JsiiMethod: "putWebsite", GoMethod: "PutWebsite"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requesterPays", GoGetter: "RequesterPays"},
 			_jsii_.MemberProperty{JsiiProperty: "requesterPaysInput", GoGetter: "RequesterPaysInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoclass", GoMethod: "ResetAutoclass"},
@@ -148,19 +150,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versioningInput", GoGetter: "VersioningInput"},
 			_jsii_.MemberProperty{JsiiProperty: "website", GoGetter: "Website"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteInput", GoGetter: "WebsiteInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucket{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketAutoclass",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketAutoclass",
 		reflect.TypeOf((*GoogleStorageBucketAutoclass)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketAutoclassOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketAutoclassOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketAutoclassOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -192,20 +195,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketAutoclassOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketConfig",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketConfig",
 		reflect.TypeOf((*GoogleStorageBucketConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketCors",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketCors",
 		reflect.TypeOf((*GoogleStorageBucketCors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketCorsList",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketCorsList",
 		reflect.TypeOf((*GoogleStorageBucketCorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -222,12 +225,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketCorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketCorsOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketCorsOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketCorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -266,16 +269,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketCorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketCustomPlacementConfig",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketCustomPlacementConfig",
 		reflect.TypeOf((*GoogleStorageBucketCustomPlacementConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketCustomPlacementConfigOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketCustomPlacementConfigOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketCustomPlacementConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,20 +307,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketCustomPlacementConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryption",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryption",
 		reflect.TypeOf((*GoogleStorageBucketEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig",
 		reflect.TypeOf((*GoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -347,16 +350,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketEncryptionCustomerManagedEncryptionEnforcementConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig",
 		reflect.TypeOf((*GoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -386,16 +389,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig",
 		reflect.TypeOf((*GoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -425,12 +428,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketEncryptionGoogleManagedEncryptionEnforcementConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketEncryptionOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -472,16 +475,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketEncryptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketHierarchicalNamespace",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketHierarchicalNamespace",
 		reflect.TypeOf((*GoogleStorageBucketHierarchicalNamespace)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketHierarchicalNamespaceOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketHierarchicalNamespaceOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketHierarchicalNamespaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -510,16 +513,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketHierarchicalNamespaceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilter",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilter",
 		reflect.TypeOf((*GoogleStorageBucketIpFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketIpFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllServiceAgentAccess", GoGetter: "AllowAllServiceAgentAccess"},
@@ -562,16 +565,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketIpFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterPublicNetworkSource",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterPublicNetworkSource",
 		reflect.TypeOf((*GoogleStorageBucketIpFilterPublicNetworkSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterPublicNetworkSourceOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterPublicNetworkSourceOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketIpFilterPublicNetworkSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedIpCidrRanges", GoGetter: "AllowedIpCidrRanges"},
@@ -600,16 +603,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketIpFilterPublicNetworkSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterVpcNetworkSources",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterVpcNetworkSources",
 		reflect.TypeOf((*GoogleStorageBucketIpFilterVpcNetworkSources)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterVpcNetworkSourcesList",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterVpcNetworkSourcesList",
 		reflect.TypeOf((*GoogleStorageBucketIpFilterVpcNetworkSourcesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -626,12 +629,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterVpcNetworkSourcesOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketIpFilterVpcNetworkSourcesOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketIpFilterVpcNetworkSourcesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedIpCidrRanges", GoGetter: "AllowedIpCidrRanges"},
@@ -662,20 +665,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketIpFilterVpcNetworkSourcesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRule",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRule",
 		reflect.TypeOf((*GoogleStorageBucketLifecycleRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleAction",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleAction",
 		reflect.TypeOf((*GoogleStorageBucketLifecycleRuleAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleActionOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleActionOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketLifecycleRuleActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -707,16 +710,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleCondition",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleCondition",
 		reflect.TypeOf((*GoogleStorageBucketLifecycleRuleCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleConditionOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleConditionOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketLifecycleRuleConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "age", GoGetter: "Age"},
@@ -788,12 +791,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketLifecycleRuleConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleList",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleList",
 		reflect.TypeOf((*GoogleStorageBucketLifecycleRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -810,12 +813,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketLifecycleRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketLifecycleRuleOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketLifecycleRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -848,16 +851,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketLifecycleRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLogging",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketLogging",
 		reflect.TypeOf((*GoogleStorageBucketLogging)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketLoggingOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketLoggingOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketLoggingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -889,16 +892,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketLoggingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketRetentionPolicy",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketRetentionPolicy",
 		reflect.TypeOf((*GoogleStorageBucketRetentionPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketRetentionPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketRetentionPolicyOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketRetentionPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -930,16 +933,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketRetentionPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketSoftDeletePolicy",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketSoftDeletePolicy",
 		reflect.TypeOf((*GoogleStorageBucketSoftDeletePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketSoftDeletePolicyOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketSoftDeletePolicyOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketSoftDeletePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -970,16 +973,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketSoftDeletePolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketTimeouts",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketTimeouts",
 		reflect.TypeOf((*GoogleStorageBucketTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1015,16 +1018,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketVersioning",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketVersioning",
 		reflect.TypeOf((*GoogleStorageBucketVersioning)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketVersioningOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketVersioningOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketVersioningOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1053,16 +1056,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketVersioningOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketWebsite",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketWebsite",
 		reflect.TypeOf((*GoogleStorageBucketWebsite)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleStorageBucket.GoogleStorageBucketWebsiteOutputReference",
+		"@cdktn/provider-google-beta.googleStorageBucket.GoogleStorageBucketWebsiteOutputReference",
 		reflect.TypeOf((*GoogleStorageBucketWebsiteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1095,7 +1098,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleStorageBucketWebsiteOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

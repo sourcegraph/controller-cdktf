@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -108,11 +108,11 @@ func (j *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceOutlierDetectionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeBackendServiceOutlierDetectionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeBackendServiceOutlierDetectionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

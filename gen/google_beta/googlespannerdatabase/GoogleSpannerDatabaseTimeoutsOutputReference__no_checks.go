@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSpannerDatabaseTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSpannerDatabaseTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerDatabaseTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSpannerDatabaseTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleSpannerDatabaseTimeoutsOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerDatabaseTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSpannerDatabaseTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleSpannerDatabaseTimeoutsOutputReference) validateSetUpda
 	return nil
 }
 
-func validateNewGoogleSpannerDatabaseTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSpannerDatabaseTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

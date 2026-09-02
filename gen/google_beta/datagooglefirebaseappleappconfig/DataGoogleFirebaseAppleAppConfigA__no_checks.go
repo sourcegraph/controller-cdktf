@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleFirebaseAppleAppConfigA) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleFirebaseAppleAppConfigA) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleFirebaseAppleAppConfigA_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleFirebaseAppleAppConfigA) validateSetCountParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseAppleAppConfigA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleFirebaseAppleAppConfigA) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

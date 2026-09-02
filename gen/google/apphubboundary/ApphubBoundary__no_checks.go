@@ -56,6 +56,10 @@ func (a *jsiiProxy_ApphubBoundary) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_ApphubBoundary) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApphubBoundary) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_ApphubBoundary) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (a *jsiiProxy_ApphubBoundary) validatePutTimeoutsParameters(value *ApphubBoundaryTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApphubBoundary) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ApphubBoundary) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ApphubBoundary) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ApphubBoundary) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

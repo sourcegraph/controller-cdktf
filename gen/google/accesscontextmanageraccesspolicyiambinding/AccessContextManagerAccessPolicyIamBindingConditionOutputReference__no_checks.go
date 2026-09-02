@@ -40,11 +40,11 @@ func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputRefe
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_AccessContextManagerAccessPolicyIamBindingConditionOutputRefe
 	return nil
 }
 
-func validateNewAccessContextManagerAccessPolicyIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAccessContextManagerAccessPolicyIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

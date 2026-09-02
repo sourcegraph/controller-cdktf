@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetappStoragePool) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (n *jsiiProxy_NetappStoragePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappStoragePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetappStoragePool) validateOverrideLogicalIdParameters(newLog
 }
 
 func (n *jsiiProxy_NetappStoragePool) validatePutTimeoutsParameters(value *NetappStoragePoolTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappStoragePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_NetappStoragePool) validateSetLdapEnabledParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_NetappStoragePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetappStoragePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

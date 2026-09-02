@@ -76,6 +76,10 @@ func (d *jsiiProxy_DataObserveMonitorV2) validatePutStageParameters(value interf
 	return nil
 }
 
+func (d *jsiiProxy_DataObserveMonitorV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataObserveMonitorV2_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -100,7 +104,7 @@ func (j *jsiiProxy_DataObserveMonitorV2) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataObserveMonitorV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

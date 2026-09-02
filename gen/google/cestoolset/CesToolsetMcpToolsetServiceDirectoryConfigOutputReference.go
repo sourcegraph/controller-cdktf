@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cestoolset/internal"
 )
 
 type CesToolsetMcpToolsetServiceDirectoryConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type CesToolsetMcpToolsetServiceDirectoryConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type CesToolsetMcpToolsetServiceDirectoryConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type CesToolsetMcpToolsetServiceDirectoryConfigOutputReference interface {
 
 // The jsii proxy struct for CesToolsetMcpToolsetServiceDirectoryConfigOutputReference
 type jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) Te
 }
 
 
-func NewCesToolsetMcpToolsetServiceDirectoryConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesToolsetMcpToolsetServiceDirectoryConfigOutputReference {
+func NewCesToolsetMcpToolsetServiceDirectoryConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CesToolsetMcpToolsetServiceDirectoryConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesToolsetMcpToolsetServiceDirectoryConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewCesToolsetMcpToolsetServiceDirectoryConfigOutputReference(terraformResou
 	j := jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesToolset.CesToolsetMcpToolsetServiceDirectoryConfigOutputReference",
+		"@cdktn/provider-google.cesToolset.CesToolsetMcpToolsetServiceDirectoryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewCesToolsetMcpToolsetServiceDirectoryConfigOutputReference(terraformResou
 	return &j
 }
 
-func NewCesToolsetMcpToolsetServiceDirectoryConfigOutputReference_Override(c CesToolsetMcpToolsetServiceDirectoryConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCesToolsetMcpToolsetServiceDirectoryConfigOutputReference_Override(c CesToolsetMcpToolsetServiceDirectoryConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesToolset.CesToolsetMcpToolsetServiceDirectoryConfigOutputReference",
+		"@cdktn/provider-google.cesToolset.CesToolsetMcpToolsetServiceDirectoryConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) Ge
 	return returns
 }
 
-func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -420,8 +420,8 @@ func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) Ge
 	return returns
 }
 
-func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -433,24 +433,24 @@ func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) In
 	return returns
 }
 
-func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (c *jsiiProxy_CesToolsetMcpToolsetServiceDirectoryConfigOutputReference) Re
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

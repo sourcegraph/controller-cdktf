@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleFolderOrganizationPolicyRestorePolicyOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleFolderOrganizationPolicyRestorePolicyOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleFolderOrganizationPolicyRestorePolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleFolderOrganizationPolicyRestorePolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleFolderOrganizationPolicyRestorePolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

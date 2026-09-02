@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAlloydbClusterContinuousBackupInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleAlloydbClusterContinuousBackupInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleAlloydbClusterContinuousBackupInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

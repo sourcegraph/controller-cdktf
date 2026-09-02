@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectati
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectati
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

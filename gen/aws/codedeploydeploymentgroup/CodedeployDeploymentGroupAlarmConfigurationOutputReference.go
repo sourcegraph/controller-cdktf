@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/codedeploydeploymentgroup/internal"
 )
 
 type CodedeployDeploymentGroupAlarmConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Alarms() *[]*string
 	SetAlarms(val *[]*string)
 	AlarmsInput() *[]*string
@@ -43,15 +43,15 @@ type CodedeployDeploymentGroupAlarmConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type CodedeployDeploymentGroupAlarmConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAlarms()
 	ResetEnabled()
 	ResetIgnorePollAlarmFailure()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type CodedeployDeploymentGroupAlarmConfigurationOutputReference interface {
 
 // The jsii proxy struct for CodedeployDeploymentGroupAlarmConfigurationOutputReference
 type jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) Alarms() *[]*string {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) T
 }
 
 
-func NewCodedeployDeploymentGroupAlarmConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupAlarmConfigurationOutputReference {
+func NewCodedeployDeploymentGroupAlarmConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CodedeployDeploymentGroupAlarmConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCodedeployDeploymentGroupAlarmConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewCodedeployDeploymentGroupAlarmConfigurationOutputReference(terraformReso
 	j := jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
+		"@cdktn/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewCodedeployDeploymentGroupAlarmConfigurationOutputReference(terraformReso
 	return &j
 }
 
-func NewCodedeployDeploymentGroupAlarmConfigurationOutputReference_Override(c CodedeployDeploymentGroupAlarmConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCodedeployDeploymentGroupAlarmConfigurationOutputReference_Override(c CodedeployDeploymentGroupAlarmConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
+		"@cdktn/provider-aws.codedeployDeploymentGroup.CodedeployDeploymentGroupAlarmConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -491,8 +491,8 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -504,16 +504,16 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) I
 	return returns
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupAlarmConfigurationOutputReference) R
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

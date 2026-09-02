@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2Action",
+		"@cdktn/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2Action",
 		reflect.TypeOf((*DataObserveMonitorV2Action)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEmail", GoMethod: "PutEmail"},
 			_jsii_.MemberMethod{JsiiMethod: "putWebhook", GoMethod: "PutWebhook"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmail", GoMethod: "ResetEmail"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
@@ -63,25 +64,26 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "webhook", GoGetter: "Webhook"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookInput", GoGetter: "WebhookInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorV2Action{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionConfig",
+		"@cdktn/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionConfig",
 		reflect.TypeOf((*DataObserveMonitorV2ActionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionEmail",
+		"@cdktn/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionEmail",
 		reflect.TypeOf((*DataObserveMonitorV2ActionEmail)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionEmailList",
+		"@cdktn/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionEmailList",
 		reflect.TypeOf((*DataObserveMonitorV2ActionEmailList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -98,12 +100,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorV2ActionEmailList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionEmailOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionEmailOutputReference",
 		reflect.TypeOf((*DataObserveMonitorV2ActionEmailOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addresses", GoGetter: "Addresses"},
@@ -135,20 +137,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorV2ActionEmailOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhook",
+		"@cdktn/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhook",
 		reflect.TypeOf((*DataObserveMonitorV2ActionWebhook)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhookHeaders",
+		"@cdktn/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhookHeaders",
 		reflect.TypeOf((*DataObserveMonitorV2ActionWebhookHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhookHeadersList",
+		"@cdktn/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhookHeadersList",
 		reflect.TypeOf((*DataObserveMonitorV2ActionWebhookHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -165,12 +167,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorV2ActionWebhookHeadersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhookHeadersOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhookHeadersOutputReference",
 		reflect.TypeOf((*DataObserveMonitorV2ActionWebhookHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -199,12 +201,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorV2ActionWebhookHeadersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhookList",
+		"@cdktn/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhookList",
 		reflect.TypeOf((*DataObserveMonitorV2ActionWebhookList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -221,12 +223,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorV2ActionWebhookList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhookOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitorV2Action.DataObserveMonitorV2ActionWebhookOutputReference",
 		reflect.TypeOf((*DataObserveMonitorV2ActionWebhookOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -261,7 +263,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorV2ActionWebhookOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileAn
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileAn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkSecuritySecurityProfileThreatPreventionProfileAntivirusOverridesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

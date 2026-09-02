@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVertexAiReasoningEngineIamMemberConditionOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiReasoningEngineIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiReasoningEngineIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleVertexAiReasoningEngineIamMemberConditionOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiReasoningEngineIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVertexAiReasoningEngineIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleVertexAiReasoningEngineIamMemberConditionOutputReferenc
 	return nil
 }
 
-func validateNewGoogleVertexAiReasoningEngineIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVertexAiReasoningEngineIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
+		"@cdktn/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembership",
 		reflect.TypeOf((*GoogleGkeHubMembership)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "membershipId", GoGetter: "MembershipId"},
 			_jsii_.MemberProperty{JsiiProperty: "membershipIdInput", GoGetter: "MembershipIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -61,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEndpoint", GoMethod: "PutEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthority", GoMethod: "ResetAuthority"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEndpoint", GoMethod: "ResetEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -81,19 +83,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleGkeHubMembership{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipAuthority",
+		"@cdktn/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipAuthority",
 		reflect.TypeOf((*GoogleGkeHubMembershipAuthority)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipAuthorityOutputReference",
+		"@cdktn/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipAuthorityOutputReference",
 		reflect.TypeOf((*GoogleGkeHubMembershipAuthorityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,24 +125,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleGkeHubMembershipAuthorityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipConfig",
+		"@cdktn/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipConfig",
 		reflect.TypeOf((*GoogleGkeHubMembershipConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpoint",
+		"@cdktn/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpoint",
 		reflect.TypeOf((*GoogleGkeHubMembershipEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointGkeCluster",
+		"@cdktn/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointGkeCluster",
 		reflect.TypeOf((*GoogleGkeHubMembershipEndpointGkeCluster)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointGkeClusterOutputReference",
+		"@cdktn/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointGkeClusterOutputReference",
 		reflect.TypeOf((*GoogleGkeHubMembershipEndpointGkeClusterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -168,12 +171,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleGkeHubMembershipEndpointGkeClusterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointOutputReference",
+		"@cdktn/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipEndpointOutputReference",
 		reflect.TypeOf((*GoogleGkeHubMembershipEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -204,16 +207,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleGkeHubMembershipEndpointOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipTimeouts",
+		"@cdktn/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipTimeouts",
 		reflect.TypeOf((*GoogleGkeHubMembershipTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleGkeHubMembership.GoogleGkeHubMembershipTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleGkeHubMembershipTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -249,7 +252,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleGkeHubMembershipTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

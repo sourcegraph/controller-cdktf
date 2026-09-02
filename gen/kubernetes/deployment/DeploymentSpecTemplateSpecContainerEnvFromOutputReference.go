@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/deployment/internal"
 )
 
 type DeploymentSpecTemplateSpecContainerEnvFromOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -41,15 +41,15 @@ type DeploymentSpecTemplateSpecContainerEnvFromOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,9 +65,9 @@ type DeploymentSpecTemplateSpecContainerEnvFromOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutConfigMapRef(value *DeploymentSpecTemplateSpecContainerEnvFromConfigMapRef)
 	PutSecretRef(value *DeploymentSpecTemplateSpecContainerEnvFromSecretRef)
 	ResetConfigMapRef()
@@ -75,7 +75,7 @@ type DeploymentSpecTemplateSpecContainerEnvFromOutputReference interface {
 	ResetSecretRef()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type DeploymentSpecTemplateSpecContainerEnvFromOutputReference interface {
 
 // The jsii proxy struct for DeploymentSpecTemplateSpecContainerEnvFromOutputReference
 type jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) Te
 }
 
 
-func NewDeploymentSpecTemplateSpecContainerEnvFromOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerEnvFromOutputReference {
+func NewDeploymentSpecTemplateSpecContainerEnvFromOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DeploymentSpecTemplateSpecContainerEnvFromOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeploymentSpecTemplateSpecContainerEnvFromOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -228,7 +228,7 @@ func NewDeploymentSpecTemplateSpecContainerEnvFromOutputReference(terraformResou
 	j := jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromOutputReference",
+		"@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewDeploymentSpecTemplateSpecContainerEnvFromOutputReference(terraformResou
 	return &j
 }
 
-func NewDeploymentSpecTemplateSpecContainerEnvFromOutputReference_Override(d DeploymentSpecTemplateSpecContainerEnvFromOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDeploymentSpecTemplateSpecContainerEnvFromOutputReference_Override(d DeploymentSpecTemplateSpecContainerEnvFromOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromOutputReference",
+		"@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecContainerEnvFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,11 +341,11 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -469,8 +469,8 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) Ge
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -482,16 +482,16 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) In
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) Re
 	)
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecContainerEnvFromOutputReference) Re
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

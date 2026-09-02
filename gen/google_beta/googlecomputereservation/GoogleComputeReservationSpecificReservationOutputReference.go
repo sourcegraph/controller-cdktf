@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputereservation/internal"
 )
 
 type GoogleComputeReservationSpecificReservationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AssuredCount() *float64
 	// the index of the complex object in a list.
 	// Experimental.
@@ -44,15 +44,15 @@ type GoogleComputeReservationSpecificReservationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,15 +68,15 @@ type GoogleComputeReservationSpecificReservationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutInstanceProperties(value *GoogleComputeReservationSpecificReservationInstanceProperties)
 	ResetInstanceProperties()
 	ResetSourceInstanceTemplate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type GoogleComputeReservationSpecificReservationOutputReference interface {
 
 // The jsii proxy struct for GoogleComputeReservationSpecificReservationOutputReference
 type jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) AssuredCount() *float64 {
@@ -229,8 +229,8 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -240,7 +240,7 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) T
 }
 
 
-func NewGoogleComputeReservationSpecificReservationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeReservationSpecificReservationOutputReference {
+func NewGoogleComputeReservationSpecificReservationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeReservationSpecificReservationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeReservationSpecificReservationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -249,7 +249,7 @@ func NewGoogleComputeReservationSpecificReservationOutputReference(terraformReso
 	j := jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationOutputReference",
+		"@cdktn/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -257,11 +257,11 @@ func NewGoogleComputeReservationSpecificReservationOutputReference(terraformReso
 	return &j
 }
 
-func NewGoogleComputeReservationSpecificReservationOutputReference_Override(g GoogleComputeReservationSpecificReservationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeReservationSpecificReservationOutputReference_Override(g GoogleComputeReservationSpecificReservationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationOutputReference",
+		"@cdktn/provider-google-beta.googleComputeReservation.GoogleComputeReservationSpecificReservationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -333,7 +333,7 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,11 +373,11 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -514,16 +514,16 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) I
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -557,8 +557,8 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) R
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -566,7 +566,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationOutputReference) R
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

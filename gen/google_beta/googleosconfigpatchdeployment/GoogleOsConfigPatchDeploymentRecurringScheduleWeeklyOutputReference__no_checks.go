@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOsConfigPatchDeploymentRecurringScheduleWeeklyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

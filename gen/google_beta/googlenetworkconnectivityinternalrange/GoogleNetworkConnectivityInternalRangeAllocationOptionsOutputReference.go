@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkconnectivityinternalrange/internal"
 )
 
 type GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllocationStrategy() *string
 	SetAllocationStrategy(val *string)
 	AllocationStrategyInput() *string
@@ -40,15 +40,15 @@ type GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllocationStrategy()
 	ResetFirstAvailableRangesLookupSize()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference inte
 
 // The jsii proxy struct for GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference
 type jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference) AllocationStrategy() *string {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutput
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutput
 }
 
 
-func NewGoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference {
+func NewGoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference(t
 	j := jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference",
+		"@cdktn/provider-google-beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference(t
 	return &j
 }
 
-func NewGoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference_Override(g GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference_Override(g GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference",
+		"@cdktn/provider-google-beta.googleNetworkConnectivityInternalRange.GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutput
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,8 +456,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -469,16 +469,16 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutput
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityInternalRangeAllocationOptionsOutput
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

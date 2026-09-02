@@ -40,11 +40,11 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorAttributesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGlobalacceleratorAcceleratorAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGlobalacceleratorAcceleratorAttributesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

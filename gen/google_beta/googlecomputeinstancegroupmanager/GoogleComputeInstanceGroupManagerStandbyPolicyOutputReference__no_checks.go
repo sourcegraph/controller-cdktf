@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStandbyPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeInstanceGroupManagerStandbyPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeInstanceGroupManagerStandbyPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

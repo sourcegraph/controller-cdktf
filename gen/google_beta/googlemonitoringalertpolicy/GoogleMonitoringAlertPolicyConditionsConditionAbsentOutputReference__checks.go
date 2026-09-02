@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputRef
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations:
 		value := value.(*[]*GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations)
@@ -114,7 +114,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputRef
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleMonitoringAlertPolicyConditionsConditionAbsentAggregations; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -132,9 +132,9 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -237,7 +237,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -245,7 +245,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionAbsentOutputRef
 	return nil
 }
 
-func validateNewGoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMonitoringAlertPolicyConditionsConditionAbsentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

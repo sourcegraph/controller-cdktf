@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPool",
 		reflect.TypeOf((*LoadBalancerPool)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "loadSheddingInput", GoGetter: "LoadSheddingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "longitude", GoGetter: "Longitude"},
 			_jsii_.MemberProperty{JsiiProperty: "longitudeInput", GoGetter: "LongitudeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "minimumOrigins", GoGetter: "MinimumOrigins"},
 			_jsii_.MemberProperty{JsiiProperty: "minimumOriginsInput", GoGetter: "MinimumOriginsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "modifiedOn", GoGetter: "ModifiedOn"},
@@ -75,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOrigins", GoMethod: "PutOrigins"},
 			_jsii_.MemberMethod{JsiiMethod: "putOriginSteering", GoMethod: "PutOriginSteering"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCheckRegions", GoMethod: "ResetCheckRegions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
@@ -96,23 +98,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LoadBalancerPool{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolConfig",
 		reflect.TypeOf((*LoadBalancerPoolConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadShedding",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadShedding",
 		reflect.TypeOf((*LoadBalancerPoolLoadShedding)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingList",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingList",
 		reflect.TypeOf((*LoadBalancerPoolLoadSheddingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -129,12 +132,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoadBalancerPoolLoadSheddingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingOutputReference",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolLoadSheddingOutputReference",
 		reflect.TypeOf((*LoadBalancerPoolLoadSheddingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -173,16 +176,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoadBalancerPoolLoadSheddingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteering",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteering",
 		reflect.TypeOf((*LoadBalancerPoolOriginSteering)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringList",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringList",
 		reflect.TypeOf((*LoadBalancerPoolOriginSteeringList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -199,12 +202,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoadBalancerPoolOriginSteeringList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringOutputReference",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginSteeringOutputReference",
 		reflect.TypeOf((*LoadBalancerPoolOriginSteeringOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -234,20 +237,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoadBalancerPoolOriginSteeringOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOrigins",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOrigins",
 		reflect.TypeOf((*LoadBalancerPoolOrigins)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeader",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeader",
 		reflect.TypeOf((*LoadBalancerPoolOriginsHeader)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeaderList",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeaderList",
 		reflect.TypeOf((*LoadBalancerPoolOriginsHeaderList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -264,12 +267,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoadBalancerPoolOriginsHeaderList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeaderOutputReference",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsHeaderOutputReference",
 		reflect.TypeOf((*LoadBalancerPoolOriginsHeaderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -300,12 +303,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoadBalancerPoolOriginsHeaderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsList",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsList",
 		reflect.TypeOf((*LoadBalancerPoolOriginsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -322,12 +325,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoadBalancerPoolOriginsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsOutputReference",
+		"@cdktn/provider-cloudflare.loadBalancerPool.LoadBalancerPoolOriginsOutputReference",
 		reflect.TypeOf((*LoadBalancerPoolOriginsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -368,7 +371,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoadBalancerPoolOriginsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

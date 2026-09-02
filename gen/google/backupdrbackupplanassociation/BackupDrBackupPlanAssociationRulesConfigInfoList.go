@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/backupdrbackupplanassociation/internal"
 )
 
 type BackupDrBackupPlanAssociationRulesConfigInfoList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type BackupDrBackupPlanAssociationRulesConfigInfoList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) BackupDrBackupPlanAssociationRulesConfigInfoOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type BackupDrBackupPlanAssociationRulesConfigInfoList interface {
 
 // The jsii proxy struct for BackupDrBackupPlanAssociationRulesConfigInfoList
 type jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList) WrapsSet() 
 }
 
 
-func NewBackupDrBackupPlanAssociationRulesConfigInfoList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupDrBackupPlanAssociationRulesConfigInfoList {
+func NewBackupDrBackupPlanAssociationRulesConfigInfoList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) BackupDrBackupPlanAssociationRulesConfigInfoList {
 	_init_.Initialize()
 
 	if err := validateNewBackupDrBackupPlanAssociationRulesConfigInfoListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewBackupDrBackupPlanAssociationRulesConfigInfoList(terraformResource cdktf
 	j := jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.backupDrBackupPlanAssociation.BackupDrBackupPlanAssociationRulesConfigInfoList",
+		"@cdktn/provider-google.backupDrBackupPlanAssociation.BackupDrBackupPlanAssociationRulesConfigInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewBackupDrBackupPlanAssociationRulesConfigInfoList(terraformResource cdktf
 	return &j
 }
 
-func NewBackupDrBackupPlanAssociationRulesConfigInfoList_Override(b BackupDrBackupPlanAssociationRulesConfigInfoList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewBackupDrBackupPlanAssociationRulesConfigInfoList_Override(b BackupDrBackupPlanAssociationRulesConfigInfoList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.backupDrBackupPlanAssociation.BackupDrBackupPlanAssociationRulesConfigInfoList",
+		"@cdktn/provider-google.backupDrBackupPlanAssociation.BackupDrBackupPlanAssociationRulesConfigInfoList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		b,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList)SetWrapsSet(
 	)
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := b.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		b,
@@ -205,8 +208,8 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList) Get(index *
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (b *jsiiProxy_BackupDrBackupPlanAssociationRulesConfigInfoList) Resolve(_co
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

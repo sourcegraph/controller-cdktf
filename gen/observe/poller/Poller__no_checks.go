@@ -56,6 +56,10 @@ func (p *jsiiProxy_Poller) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (p *jsiiProxy_Poller) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_Poller) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (p *jsiiProxy_Poller) validatePutPubsubParameters(value *PollerPubsub) erro
 	return nil
 }
 
+func (p *jsiiProxy_Poller) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validatePoller_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -140,7 +148,7 @@ func (j *jsiiProxy_Poller) validateSetIntervalParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Poller) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Poller) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

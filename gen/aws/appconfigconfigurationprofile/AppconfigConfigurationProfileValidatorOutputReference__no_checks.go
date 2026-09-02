@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) valida
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference) valida
 	return nil
 }
 
-func validateNewAppconfigConfigurationProfileValidatorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAppconfigConfigurationProfileValidatorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

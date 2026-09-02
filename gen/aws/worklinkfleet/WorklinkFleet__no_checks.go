@@ -56,6 +56,10 @@ func (w *jsiiProxy_WorklinkFleet) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (w *jsiiProxy_WorklinkFleet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorklinkFleet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (w *jsiiProxy_WorklinkFleet) validatePutIdentityProviderParameters(value *W
 }
 
 func (w *jsiiProxy_WorklinkFleet) validatePutNetworkParameters(value *WorklinkFleetNetwork) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorklinkFleet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_WorklinkFleet) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_WorklinkFleet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_WorklinkFleet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

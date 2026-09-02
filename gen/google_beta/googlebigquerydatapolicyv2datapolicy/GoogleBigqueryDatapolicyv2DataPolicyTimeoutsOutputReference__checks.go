@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (g *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -181,7 +181,7 @@ func (j *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) 
 
 func (j *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *GoogleBigqueryDatapolicyv2DataPolicyTimeouts:
 		val := val.(*GoogleBigqueryDatapolicyv2DataPolicyTimeouts)
@@ -196,7 +196,7 @@ func (j *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) 
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleBigqueryDatapolicyv2DataPolicyTimeouts; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *GoogleBigqueryDatapolicyv2DataPolicyTimeouts; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -211,7 +211,7 @@ func (j *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +227,7 @@ func (j *jsiiProxy_GoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReference) 
 	return nil
 }
 
-func validateNewGoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryDatapolicyv2DataPolicyTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

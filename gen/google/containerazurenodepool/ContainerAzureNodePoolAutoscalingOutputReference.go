@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containerazurenodepool/internal"
 )
 
 type ContainerAzureNodePoolAutoscalingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ContainerAzureNodePoolAutoscalingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type ContainerAzureNodePoolAutoscalingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ContainerAzureNodePoolAutoscalingOutputReference interface {
 
 // The jsii proxy struct for ContainerAzureNodePoolAutoscalingOutputReference
 type jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) TerraformRe
 }
 
 
-func NewContainerAzureNodePoolAutoscalingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerAzureNodePoolAutoscalingOutputReference {
+func NewContainerAzureNodePoolAutoscalingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerAzureNodePoolAutoscalingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerAzureNodePoolAutoscalingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewContainerAzureNodePoolAutoscalingOutputReference(terraformResource cdktf
 	j := jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolAutoscalingOutputReference",
+		"@cdktn/provider-google.containerAzureNodePool.ContainerAzureNodePoolAutoscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewContainerAzureNodePoolAutoscalingOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewContainerAzureNodePoolAutoscalingOutputReference_Override(c ContainerAzureNodePoolAutoscalingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerAzureNodePoolAutoscalingOutputReference_Override(c ContainerAzureNodePoolAutoscalingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerAzureNodePool.ContainerAzureNodePoolAutoscalingOutputReference",
+		"@cdktn/provider-google.containerAzureNodePool.ContainerAzureNodePoolAutoscalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -454,8 +454,8 @@ func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) GetStringMa
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -467,24 +467,24 @@ func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) Interpolati
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (c *jsiiProxy_ContainerAzureNodePoolAutoscalingOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

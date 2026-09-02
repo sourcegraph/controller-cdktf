@@ -12,7 +12,7 @@ func (i *jsiiProxy_IngressStatusLoadBalancerList) validateGetParameters(index *f
 	return nil
 }
 
-func (i *jsiiProxy_IngressStatusLoadBalancerList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IngressStatusLoadBalancerList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_IngressStatusLoadBalancerList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_IngressStatusLoadBalancerList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IngressStatusLoadBalancerList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_IngressStatusLoadBalancerList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewIngressStatusLoadBalancerListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIngressStatusLoadBalancerListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

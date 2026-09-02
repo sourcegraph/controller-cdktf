@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsList) validateGetP
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudRunV2ServiceTemplateVolumesSecretItemsList) validateSetW
 	return nil
 }
 
-func validateNewCloudRunV2ServiceTemplateVolumesSecretItemsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudRunV2ServiceTemplateVolumesSecretItemsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

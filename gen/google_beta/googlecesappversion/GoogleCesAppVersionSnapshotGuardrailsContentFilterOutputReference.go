@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecesappversion/internal"
 )
 
 type GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BannedContents() *[]*string
 	BannedContentsInAgentResponse() *[]*string
 	BannedContentsInUserInput() *[]*string
@@ -28,7 +28,7 @@ type GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference interface
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisregardDiacritics() cdktf.IResolvable
+	DisregardDiacritics() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *GoogleCesAppVersionSnapshotGuardrailsContentFilter
@@ -39,15 +39,15 @@ type GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference interface
 
 // The jsii proxy struct for GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference
 type jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) BannedContents() *[]*string {
@@ -141,8 +141,8 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) DisregardDiacritics() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) DisregardDiacritics() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disregardDiacritics",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -202,7 +202,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputRefer
 }
 
 
-func NewGoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference {
+func NewGoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -211,7 +211,7 @@ func NewGoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference(terraf
 	j := jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesAppVersion.GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference",
+		"@cdktn/provider-google-beta.googleCesAppVersion.GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -219,11 +219,11 @@ func NewGoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference(terraf
 	return &j
 }
 
-func NewGoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference_Override(g GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference_Override(g GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesAppVersion.GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference",
+		"@cdktn/provider-google-beta.googleCesAppVersion.GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -273,7 +273,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,11 +313,11 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -441,8 +441,8 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -454,24 +454,24 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -479,7 +479,7 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsContentFilterOutputRefer
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

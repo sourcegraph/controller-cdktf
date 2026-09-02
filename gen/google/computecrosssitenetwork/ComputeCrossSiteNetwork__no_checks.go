@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeCrossSiteNetwork) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeCrossSiteNetwork) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeCrossSiteNetwork) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeCrossSiteNetwork) validateOverrideLogicalIdParameters(
 }
 
 func (c *jsiiProxy_ComputeCrossSiteNetwork) validatePutTimeoutsParameters(value *ComputeCrossSiteNetworkTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeCrossSiteNetwork) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ComputeCrossSiteNetwork) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeCrossSiteNetwork) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeCrossSiteNetwork) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

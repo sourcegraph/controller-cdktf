@@ -56,6 +56,10 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) validateInterpolationForAttr
 	return nil
 }
 
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElasticacheUserGroupAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_ElasticacheUserGroupAssociation) validateMoveToIdParameters(i
 }
 
 func (e *jsiiProxy_ElasticacheUserGroupAssociation) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElasticacheUserGroupAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_ElasticacheUserGroupAssociation) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ElasticacheUserGroupAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ElasticacheUserGroupAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

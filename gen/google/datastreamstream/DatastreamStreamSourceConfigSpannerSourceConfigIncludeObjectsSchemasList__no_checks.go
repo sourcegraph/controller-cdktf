@@ -12,7 +12,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjects
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjects
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigSpannerSourceConfigIncludeObjects
 	return nil
 }
 
-func validateNewDatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDatastreamStreamSourceConfigSpannerSourceConfigIncludeObjectsSchemasListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/monitorv2/internal"
 )
 
 type MonitorV2ActionsConditionsCompareTermsComparisonOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CompareFn() *string
 	SetCompareFn(val *string)
 	CompareFnInput() *string
@@ -37,9 +37,9 @@ type MonitorV2ActionsConditionsCompareTermsComparisonOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ValueBool() interface{}
 	SetValueBool(val interface{})
 	ValueBoolInput() interface{}
@@ -63,7 +63,7 @@ type MonitorV2ActionsConditionsCompareTermsComparisonOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type MonitorV2ActionsConditionsCompareTermsComparisonOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetValueBool()
 	ResetValueDuration()
 	ResetValueFloat64()
@@ -90,7 +90,7 @@ type MonitorV2ActionsConditionsCompareTermsComparisonOutputReference interface {
 	ResetValueTimestamp()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,7 +100,7 @@ type MonitorV2ActionsConditionsCompareTermsComparisonOutputReference interface {
 
 // The jsii proxy struct for MonitorV2ActionsConditionsCompareTermsComparisonOutputReference
 type jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference) CompareFn() *string {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -314,7 +314,7 @@ func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReferen
 }
 
 
-func NewMonitorV2ActionsConditionsCompareTermsComparisonOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorV2ActionsConditionsCompareTermsComparisonOutputReference {
+func NewMonitorV2ActionsConditionsCompareTermsComparisonOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) MonitorV2ActionsConditionsCompareTermsComparisonOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitorV2ActionsConditionsCompareTermsComparisonOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -323,7 +323,7 @@ func NewMonitorV2ActionsConditionsCompareTermsComparisonOutputReference(terrafor
 	j := jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitorV2.MonitorV2ActionsConditionsCompareTermsComparisonOutputReference",
+		"@cdktn/provider-observe.monitorV2.MonitorV2ActionsConditionsCompareTermsComparisonOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -331,11 +331,11 @@ func NewMonitorV2ActionsConditionsCompareTermsComparisonOutputReference(terrafor
 	return &j
 }
 
-func NewMonitorV2ActionsConditionsCompareTermsComparisonOutputReference_Override(m MonitorV2ActionsConditionsCompareTermsComparisonOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewMonitorV2ActionsConditionsCompareTermsComparisonOutputReference_Override(m MonitorV2ActionsConditionsCompareTermsComparisonOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitorV2.MonitorV2ActionsConditionsCompareTermsComparisonOutputReference",
+		"@cdktn/provider-observe.monitorV2.MonitorV2ActionsConditionsCompareTermsComparisonOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		m,
 	)
@@ -396,7 +396,7 @@ func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReferen
 	)
 }
 
-func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,11 +502,11 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReferen
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -630,8 +630,8 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReferen
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -643,16 +643,16 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReferen
 	return returns
 }
 
-func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -707,8 +707,8 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReferen
 	)
 }
 
-func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -716,7 +716,7 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsCompareTermsComparisonOutputReferen
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

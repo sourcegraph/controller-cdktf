@@ -40,11 +40,11 @@ func (d *jsiiProxy_DirectBigqueryQueryDelayOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DirectBigqueryQueryDelayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectBigqueryQueryDelayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectBigqueryQueryDelayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectBigqueryQueryDelayOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DirectBigqueryQueryDelayOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DirectBigqueryQueryDelayOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectBigqueryQueryDelayOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DirectBigqueryQueryDelayOutputReference) validateSetValuePara
 	return nil
 }
 
-func validateNewDirectBigqueryQueryDelayOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDirectBigqueryQueryDelayOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

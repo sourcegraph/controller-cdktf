@@ -40,11 +40,11 @@ func (k *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateGet
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KeyspacesTablePointInTimeRecoveryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKeyspacesTablePointInTimeRecoveryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKeyspacesTablePointInTimeRecoveryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

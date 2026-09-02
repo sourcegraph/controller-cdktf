@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateGetStr
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validatePutSec
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PolicyRuleSignonFactorSequenceSecondaryCriteria:
 		value := value.(*[]*PolicyRuleSignonFactorSequenceSecondaryCriteria)
@@ -114,16 +114,16 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validatePutSec
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PolicyRuleSignonFactorSequenceSecondaryCriteria; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PolicyRuleSignonFactorSequenceSecondaryCriteria; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -196,7 +196,7 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetCom
 
 func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *PolicyRuleSignonFactorSequence:
 		val := val.(*PolicyRuleSignonFactorSequence)
@@ -211,7 +211,7 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetInt
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PolicyRuleSignonFactorSequence; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *PolicyRuleSignonFactorSequence; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -242,7 +242,7 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -250,7 +250,7 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceOutputReference) validateSetTer
 	return nil
 }
 
-func validateNewPolicyRuleSignonFactorSequenceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPolicyRuleSignonFactorSequenceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

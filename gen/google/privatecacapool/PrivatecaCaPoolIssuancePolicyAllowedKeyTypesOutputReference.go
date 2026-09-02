@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/privatecacapool/internal"
 )
 
 type PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEllipticCurve(value *PrivatecaCaPoolIssuancePolicyAllowedKeyTypesEllipticCurve)
 	PutRsa(value *PrivatecaCaPoolIssuancePolicyAllowedKeyTypesRsa)
 	ResetEllipticCurve()
 	ResetRsa()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference interface {
 
 // The jsii proxy struct for PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference
 type jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) 
 }
 
 
-func NewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference {
+func NewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference(terraformRes
 	j := jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference",
+		"@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference(terraformRes
 	return &j
 }
 
-func NewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference_Override(p PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewPrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference_Override(p PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference",
+		"@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) 
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -434,8 +434,8 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) 
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -447,16 +447,16 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) 
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) 
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedKeyTypesOutputReference) 
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

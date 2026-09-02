@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
+		"@cdktn/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannel",
 		reflect.TypeOf((*DataGoogleMonitoringNotificationChannel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLabels", GoMethod: "ResetLabels"},
@@ -68,23 +69,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userLabels", GoGetter: "UserLabels"},
 			_jsii_.MemberProperty{JsiiProperty: "userLabelsInput", GoGetter: "UserLabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verificationStatus", GoGetter: "VerificationStatus"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleMonitoringNotificationChannel{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelConfig",
+		"@cdktn/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelConfig",
 		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabels",
+		"@cdktn/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabels",
 		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelSensitiveLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsList",
+		"@cdktn/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsList",
 		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelSensitiveLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -100,12 +102,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleMonitoringNotificationChannel.DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference",
 		reflect.TypeOf((*DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authToken", GoGetter: "AuthToken"},
@@ -141,7 +143,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleMonitoringNotificationChannelSensitiveLabelsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

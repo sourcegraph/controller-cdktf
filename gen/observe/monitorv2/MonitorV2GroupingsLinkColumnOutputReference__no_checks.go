@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitorV2GroupingsLinkColumnOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2GroupingsLinkColumnOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2GroupingsLinkColumnOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2GroupingsLinkColumnOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2GroupingsLinkColumnOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_MonitorV2GroupingsLinkColumnOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2GroupingsLinkColumnOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2GroupingsLinkColumnOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMonitorV2GroupingsLinkColumnOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitorV2GroupingsLinkColumnOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

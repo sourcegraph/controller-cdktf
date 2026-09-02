@@ -56,6 +56,10 @@ func (m *jsiiProxy_MemcacheInstance) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (m *jsiiProxy_MemcacheInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemcacheInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (m *jsiiProxy_MemcacheInstance) validatePutNodeConfigParameters(value *Memc
 }
 
 func (m *jsiiProxy_MemcacheInstance) validatePutTimeoutsParameters(value *MemcacheInstanceTimeouts) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemcacheInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_MemcacheInstance) validateSetLabelsParameters(val *map[string
 	return nil
 }
 
-func (j *jsiiProxy_MemcacheInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MemcacheInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

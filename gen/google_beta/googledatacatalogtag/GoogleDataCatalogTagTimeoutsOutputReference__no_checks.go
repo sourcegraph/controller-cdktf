@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataCatalogTagTimeoutsOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataCatalogTagTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataCatalogTagTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataCatalogTagTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataCatalogTagTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDataCatalogTagTimeoutsOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogTagTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataCatalogTagTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleDataCatalogTagTimeoutsOutputReference) validateSetUpdat
 	return nil
 }
 
-func validateNewGoogleDataCatalogTagTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataCatalogTagTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validatePutSqlSe
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamStreamSourceConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDatastreamStreamSourceConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatastreamStreamSourceConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (f *jsiiProxy_FsxOpenzfsVolume) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (f *jsiiProxy_FsxOpenzfsVolume) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxOpenzfsVolume) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (f *jsiiProxy_FsxOpenzfsVolume) validatePutTimeoutsParameters(value *FsxOpe
 }
 
 func (f *jsiiProxy_FsxOpenzfsVolume) validatePutUserAndGroupQuotasParameters(value interface{}) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxOpenzfsVolume) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_FsxOpenzfsVolume) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolume) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FsxOpenzfsVolume) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

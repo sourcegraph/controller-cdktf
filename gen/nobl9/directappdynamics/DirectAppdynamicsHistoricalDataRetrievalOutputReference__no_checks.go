@@ -40,7 +40,7 @@ func (d *jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (d *jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDirectAppdynamicsHistoricalDataRetrievalOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDirectAppdynamicsHistoricalDataRetrievalOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

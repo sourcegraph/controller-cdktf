@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesStates
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesStates
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewNetworkConnectivityMulticloudDataTransferConfigServicesStatesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

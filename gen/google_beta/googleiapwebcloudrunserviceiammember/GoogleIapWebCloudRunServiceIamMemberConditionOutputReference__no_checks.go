@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamMemberConditionOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIapWebCloudRunServiceIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamMemberConditionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleIapWebCloudRunServiceIamMemberConditionOutputReference)
 	return nil
 }
 
-func validateNewGoogleIapWebCloudRunServiceIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIapWebCloudRunServiceIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

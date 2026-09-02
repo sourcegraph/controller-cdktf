@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsAmazonS3SettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsAmazonS3SettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

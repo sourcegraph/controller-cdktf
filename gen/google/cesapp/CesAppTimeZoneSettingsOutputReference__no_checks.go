@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (c *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CesAppTimeZoneSettingsOutputReference) validateSetTimeZonePar
 	return nil
 }
 
-func validateNewCesAppTimeZoneSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesAppTimeZoneSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

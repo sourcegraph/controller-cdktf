@@ -40,11 +40,11 @@ func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileStandardConnectionFo
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileStandardConnectionFo
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatastreamConnectionProfileMongodbProfileStandardConnectionFormatOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

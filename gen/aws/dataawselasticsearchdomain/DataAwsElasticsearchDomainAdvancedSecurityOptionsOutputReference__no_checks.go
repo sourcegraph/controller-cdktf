@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsElasticsearchDomainAdvancedSecurityOptionsOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsElasticsearchDomainAdvancedSecurityOptionsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsElasticsearchDomainAdvancedSecurityOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsElasticsearchDomainAdvancedSecurityOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsElasticsearchDomainAdvancedSecurityOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

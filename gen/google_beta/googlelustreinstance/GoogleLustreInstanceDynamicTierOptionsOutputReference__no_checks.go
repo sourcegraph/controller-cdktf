@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleLustreInstanceDynamicTierOptionsOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLustreInstanceDynamicTierOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleLustreInstanceDynamicTierOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLustreInstanceDynamicTierOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleLustreInstanceDynamicTierOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleLustreInstanceDynamicTierOptionsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLustreInstanceDynamicTierOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleLustreInstanceDynamicTierOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleLustreInstanceDynamicTierOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleLustreInstanceDynamicTierOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

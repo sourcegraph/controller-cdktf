@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseSta
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseSta
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseSta
 	return nil
 }
 
-func validateNewGoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleMonitoringUptimeCheckConfigHttpCheckAcceptedResponseStatusCodesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

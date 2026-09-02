@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesToolsetMcpToolsetServiceDirectoryConfigOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolsetMcpToolsetServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesToolsetMcpToolsetServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolsetMcpToolsetServiceDirectoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesToolsetMcpToolsetServiceDirectoryConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleCesToolsetMcpToolsetServiceDirectoryConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesToolsetMcpToolsetServiceDirectoryConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesToolsetMcpToolsetServiceDirectoryConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesToolsetMcpToolsetServiceDirectoryConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesToolsetMcpToolsetServiceDirectoryConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

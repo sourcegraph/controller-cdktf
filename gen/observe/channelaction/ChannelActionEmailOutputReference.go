@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/channelaction/internal"
 )
 
 type ChannelActionEmailOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Body() *string
 	SetBody(val *string)
 	BodyInput() *string
@@ -43,9 +43,9 @@ type ChannelActionEmailOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	To() *[]*string
 	SetTo(val *[]*string)
 	ToInput() *[]*string
@@ -54,7 +54,7 @@ type ChannelActionEmailOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,13 +70,13 @@ type ChannelActionEmailOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetIsHtml()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type ChannelActionEmailOutputReference interface {
 
 // The jsii proxy struct for ChannelActionEmailOutputReference
 type jsiiProxy_ChannelActionEmailOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ChannelActionEmailOutputReference) Body() *string {
@@ -209,8 +209,8 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ChannelActionEmailOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -240,7 +240,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference) ToInput() *[]*string {
 }
 
 
-func NewChannelActionEmailOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ChannelActionEmailOutputReference {
+func NewChannelActionEmailOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ChannelActionEmailOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewChannelActionEmailOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -249,7 +249,7 @@ func NewChannelActionEmailOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_ChannelActionEmailOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.channelAction.ChannelActionEmailOutputReference",
+		"@cdktn/provider-observe.channelAction.ChannelActionEmailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -257,11 +257,11 @@ func NewChannelActionEmailOutputReference(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewChannelActionEmailOutputReference_Override(c ChannelActionEmailOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewChannelActionEmailOutputReference_Override(c ChannelActionEmailOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.channelAction.ChannelActionEmailOutputReference",
+		"@cdktn/provider-observe.channelAction.ChannelActionEmailOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -344,7 +344,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChannelActionEmailOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,11 +395,11 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) GetAnyMapAttribute(terrafo
 	return returns
 }
 
-func (c *jsiiProxy_ChannelActionEmailOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ChannelActionEmailOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -523,8 +523,8 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) GetStringMapAttribute(terr
 	return returns
 }
 
-func (c *jsiiProxy_ChannelActionEmailOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ChannelActionEmailOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -536,16 +536,16 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (c *jsiiProxy_ChannelActionEmailOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ChannelActionEmailOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -560,8 +560,8 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) ResetIsHtml() {
 	)
 }
 
-func (c *jsiiProxy_ChannelActionEmailOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ChannelActionEmailOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -569,7 +569,7 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

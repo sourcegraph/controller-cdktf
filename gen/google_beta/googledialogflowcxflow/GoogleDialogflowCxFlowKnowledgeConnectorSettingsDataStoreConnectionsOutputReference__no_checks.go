@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConn
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDialogflowCxFlowKnowledgeConnectorSettingsDataStoreConnectionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

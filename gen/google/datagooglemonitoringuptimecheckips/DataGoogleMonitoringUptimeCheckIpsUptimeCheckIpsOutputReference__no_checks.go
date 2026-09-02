@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleMonitoringUptimeCheckIpsUptimeCheckIpsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

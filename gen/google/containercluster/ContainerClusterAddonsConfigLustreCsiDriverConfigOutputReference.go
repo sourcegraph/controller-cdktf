@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containercluster/internal"
 )
 
 type ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDisableMultiNic()
 	ResetEnableLegacyLustrePort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference interface 
 
 // The jsii proxy struct for ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference
 type jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 }
 
 
-func NewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference {
+func NewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference(terrafo
 	j := jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference(terrafo
 	return &j
 }
 
-func NewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference_Override(c ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference_Override(c ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -490,8 +490,8 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -503,16 +503,16 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigLustreCsiDriverConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

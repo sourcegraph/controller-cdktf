@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleApigeeSecurityFeedbackFeedbackContextsList) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeSecurityFeedbackFeedbackContextsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApigeeSecurityFeedbackFeedbackContextsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleApigeeSecurityFeedbackFeedbackContextsList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSecurityFeedbackFeedbackContextsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApigeeSecurityFeedbackFeedbackContextsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleApigeeSecurityFeedbackFeedbackContextsList) validateSet
 	return nil
 }
 
-func validateNewGoogleApigeeSecurityFeedbackFeedbackContextsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleApigeeSecurityFeedbackFeedbackContextsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

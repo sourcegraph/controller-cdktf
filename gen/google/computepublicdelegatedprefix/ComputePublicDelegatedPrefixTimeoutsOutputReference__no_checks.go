@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefixTimeoutsOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefixTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputePublicDelegatedPrefixTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefixTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputePublicDelegatedPrefixTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefixTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefixTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputePublicDelegatedPrefixTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputePublicDelegatedPrefixTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputePublicDelegatedPrefixTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

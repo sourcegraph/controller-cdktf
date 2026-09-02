@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterGkeAutoUpgradeConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterGkeAutoUpgradeConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterGkeAutoUpgradeConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

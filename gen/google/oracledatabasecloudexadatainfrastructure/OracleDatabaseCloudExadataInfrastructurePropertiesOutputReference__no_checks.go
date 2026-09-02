@@ -40,7 +40,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesOutputRefer
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesOutputRefer
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_OracleDatabaseCloudExadataInfrastructurePropertiesOutputRefer
 	return nil
 }
 
-func validateNewOracleDatabaseCloudExadataInfrastructurePropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOracleDatabaseCloudExadataInfrastructurePropertiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

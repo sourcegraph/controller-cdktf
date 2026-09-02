@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleManagedKafkaClusterGcpConfigAccessConfigNetworkConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

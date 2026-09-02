@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadSplunkList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadSplunkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadSplunkList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadSplunkList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadSplunkList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadSplunkList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadSplunkList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsBadSplunkListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveCountMetricsBadSplunkListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

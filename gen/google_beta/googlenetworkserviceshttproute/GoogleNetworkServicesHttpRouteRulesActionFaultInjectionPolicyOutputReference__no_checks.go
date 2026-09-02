@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicy
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicy
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicy
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkServicesHttpRouteRulesActionFaultInjectionPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

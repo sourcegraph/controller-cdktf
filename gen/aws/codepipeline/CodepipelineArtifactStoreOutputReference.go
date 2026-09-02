@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/codepipeline/internal"
 )
 
 type CodepipelineArtifactStoreOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,9 +42,9 @@ type CodepipelineArtifactStoreOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -53,7 +53,7 @@ type CodepipelineArtifactStoreOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,15 +69,15 @@ type CodepipelineArtifactStoreOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEncryptionKey(value *CodepipelineArtifactStoreEncryptionKey)
 	ResetEncryptionKey()
 	ResetRegion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type CodepipelineArtifactStoreOutputReference interface {
 
 // The jsii proxy struct for CodepipelineArtifactStoreOutputReference
 type jsiiProxy_CodepipelineArtifactStoreOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) ComplexObjectIndex() interface{} {
@@ -210,8 +210,8 @@ func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -241,7 +241,7 @@ func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) TypeInput() *string
 }
 
 
-func NewCodepipelineArtifactStoreOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CodepipelineArtifactStoreOutputReference {
+func NewCodepipelineArtifactStoreOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CodepipelineArtifactStoreOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCodepipelineArtifactStoreOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -250,7 +250,7 @@ func NewCodepipelineArtifactStoreOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CodepipelineArtifactStoreOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreOutputReference",
+		"@cdktn/provider-aws.codepipeline.CodepipelineArtifactStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -258,11 +258,11 @@ func NewCodepipelineArtifactStoreOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewCodepipelineArtifactStoreOutputReference_Override(c CodepipelineArtifactStoreOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCodepipelineArtifactStoreOutputReference_Override(c CodepipelineArtifactStoreOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.codepipeline.CodepipelineArtifactStoreOutputReference",
+		"@cdktn/provider-aws.codepipeline.CodepipelineArtifactStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -334,7 +334,7 @@ func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -385,11 +385,11 @@ func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -513,8 +513,8 @@ func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -526,16 +526,16 @@ func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) InterpolationAsList
 	return returns
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -569,8 +569,8 @@ func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) ResetRegion() {
 	)
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -578,7 +578,7 @@ func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

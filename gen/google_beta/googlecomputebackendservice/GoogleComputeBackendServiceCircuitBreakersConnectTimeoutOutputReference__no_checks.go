@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeBackendServiceCircuitBreakersConnectTimeoutOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

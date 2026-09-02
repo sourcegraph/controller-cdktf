@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsConnectBotAssociationLexBotOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsConnectBotAssociationLexBotOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAwsConnectBotAssociationLexBotOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

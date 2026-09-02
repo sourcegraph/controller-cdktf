@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputeinstance/internal"
 )
 
 type DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -26,7 +26,7 @@ type DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference interfac
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EnableConfidentialCompute() cdktf.IResolvable
+	EnableConfidentialCompute() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleComputeInstanceConfidentialInstanceConfig
@@ -36,15 +36,15 @@ type DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference interfac
 
 // The jsii proxy struct for DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference
 type jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -118,8 +118,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) EnableConfidentialCompute() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) EnableConfidentialCompute() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableConfidentialCompute",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputRefe
 }
 
 
-func NewDataGoogleComputeInstanceConfidentialInstanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference {
+func NewDataGoogleComputeInstanceConfidentialInstanceConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleComputeInstanceConfidentialInstanceConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewDataGoogleComputeInstanceConfidentialInstanceConfigOutputReference(terra
 	j := jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewDataGoogleComputeInstanceConfidentialInstanceConfigOutputReference(terra
 	return &j
 }
 
-func NewDataGoogleComputeInstanceConfidentialInstanceConfigOutputReference_Override(d DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleComputeInstanceConfidentialInstanceConfigOutputReference_Override(d DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComputeInstance.DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputRefe
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -408,8 +408,8 @@ func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -421,24 +421,24 @@ func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputRefe
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceConfidentialInstanceConfigOutputRefe
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

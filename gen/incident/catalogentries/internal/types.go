@@ -1,7 +1,7 @@
 package internal
 import (
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
-type Type__cdktfTerraformResource = cdktf.TerraformResource
-type Type__cdktfComplexMap = cdktf.ComplexMap
-type Type__cdktfComplexObject = cdktf.ComplexObject
+type Type__cdktnTerraformResource = cdktn.TerraformResource
+type Type__cdktnComplexMap = cdktn.ComplexMap
+type Type__cdktnComplexObject = cdktn.ComplexObject

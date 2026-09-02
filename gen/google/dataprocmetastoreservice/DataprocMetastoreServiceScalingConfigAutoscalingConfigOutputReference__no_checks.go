@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputR
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocMetastoreServiceScalingConfigAutoscalingConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

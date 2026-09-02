@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsDynamodbTablePointInTimeRecoveryList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDynamodbTablePointInTimeRecoveryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDynamodbTablePointInTimeRecoveryList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsDynamodbTablePointInTimeRecoveryList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDynamodbTablePointInTimeRecoveryList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsDynamodbTablePointInTimeRecoveryList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsDynamodbTablePointInTimeRecoveryList) validateSetWraps
 	return nil
 }
 
-func validateNewDataAwsDynamodbTablePointInTimeRecoveryListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsDynamodbTablePointInTimeRecoveryListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) validateG
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PageRuleActionsCacheKeyFieldsHeaderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPageRuleActionsCacheKeyFieldsHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPageRuleActionsCacheKeyFieldsHeaderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

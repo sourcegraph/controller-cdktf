@@ -40,11 +40,11 @@ func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesOutputReference) 
 	return nil
 }
 
-func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FolderAccessApprovalSettingsEnrolledServicesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFolderAccessApprovalSettingsEnrolledServicesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewFolderAccessApprovalSettingsEnrolledServicesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

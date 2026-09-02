@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionRequestHeadersToAddList) valid
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionRequestHeadersToAddList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionUrlMapHeaderActionRequestHeadersToAddList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionRequestHeadersToAddList) valid
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionRequestHeadersToAddList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionRequestHeadersToAddList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeRegionUrlMapHeaderActionRequestHeadersToAddList) valid
 	return nil
 }
 
-func validateNewComputeRegionUrlMapHeaderActionRequestHeadersToAddListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRegionUrlMapHeaderActionRequestHeadersToAddListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

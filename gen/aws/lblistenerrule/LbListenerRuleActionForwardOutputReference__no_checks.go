@@ -40,7 +40,7 @@ func (l *jsiiProxy_LbListenerRuleActionForwardOutputReference) validateGetString
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerRuleActionForwardOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbListenerRuleActionForwardOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (l *jsiiProxy_LbListenerRuleActionForwardOutputReference) validatePutTarget
 	return nil
 }
 
-func (l *jsiiProxy_LbListenerRuleActionForwardOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbListenerRuleActionForwardOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_LbListenerRuleActionForwardOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_LbListenerRuleActionForwardOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LbListenerRuleActionForwardOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLbListenerRuleActionForwardOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLbListenerRuleActionForwardOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
+		"@cdktn/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepository",
 		reflect.TypeOf((*DataGoogleSourcerepoRepository)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "pubsubConfigs", GoGetter: "PubsubConfigs"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -56,23 +57,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleSourcerepoRepository{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryConfig",
+		"@cdktn/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryConfig",
 		reflect.TypeOf((*DataGoogleSourcerepoRepositoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryPubsubConfigs",
+		"@cdktn/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryPubsubConfigs",
 		reflect.TypeOf((*DataGoogleSourcerepoRepositoryPubsubConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryPubsubConfigsList",
+		"@cdktn/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryPubsubConfigsList",
 		reflect.TypeOf((*DataGoogleSourcerepoRepositoryPubsubConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -88,12 +90,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleSourcerepoRepositoryPubsubConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryPubsubConfigsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleSourcerepoRepository.DataGoogleSourcerepoRepositoryPubsubConfigsOutputReference",
 		reflect.TypeOf((*DataGoogleSourcerepoRepositoryPubsubConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -123,7 +125,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleSourcerepoRepositoryPubsubConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

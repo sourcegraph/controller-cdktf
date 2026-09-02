@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaOrgMetadataDomainsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataOktaOrgMetadataDomainsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataOktaOrgMetadataDomainsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

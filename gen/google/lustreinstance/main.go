@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstance",
+		"@cdktn/provider-google.lustreInstance.LustreInstance",
 		reflect.TypeOf((*LustreInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRulesOptions", GoGetter: "AccessRulesOptions"},
@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenancePolicy", GoGetter: "MaintenancePolicy"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenancePolicyInput", GoGetter: "MaintenancePolicyInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mountPoint", GoGetter: "MountPoint"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
@@ -82,6 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMaintenancePolicy", GoMethod: "PutMaintenancePolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessRulesOptions", GoMethod: "ResetAccessRulesOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDynamicTierOptions", GoMethod: "ResetDynamicTierOptions"},
@@ -112,23 +114,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "upcomingMaintenanceSchedule", GoGetter: "UpcomingMaintenanceSchedule"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptions",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptions",
 		reflect.TypeOf((*LustreInstanceAccessRulesOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRules",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRules",
 		reflect.TypeOf((*LustreInstanceAccessRulesOptionsAccessRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRulesList",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRulesList",
 		reflect.TypeOf((*LustreInstanceAccessRulesOptionsAccessRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -145,12 +148,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRulesOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsAccessRulesOutputReference",
 		reflect.TypeOf((*LustreInstanceAccessRulesOptionsAccessRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,12 +186,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceAccessRulesOptionsAccessRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsOutputReference",
 		reflect.TypeOf((*LustreInstanceAccessRulesOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessRules", GoGetter: "AccessRules"},
@@ -227,20 +230,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceConfig",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceConfig",
 		reflect.TypeOf((*LustreInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceDynamicTierOptions",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceDynamicTierOptions",
 		reflect.TypeOf((*LustreInstanceDynamicTierOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceDynamicTierOptionsOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceDynamicTierOptionsOutputReference",
 		reflect.TypeOf((*LustreInstanceDynamicTierOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -269,24 +272,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceDynamicTierOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicy",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicy",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindow",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindow",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateOutputReference",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -322,12 +325,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowEndDateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -363,16 +366,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -408,16 +411,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowStartDateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -456,12 +459,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyOutputReference",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -495,16 +498,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyWeeklyMaintenanceWindows)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -536,16 +539,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference",
 		reflect.TypeOf((*LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -584,16 +587,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceTimeouts",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceTimeouts",
 		reflect.TypeOf((*LustreInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceTimeoutsOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*LustreInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -629,16 +632,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceSchedule",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceSchedule",
 		reflect.TypeOf((*LustreInstanceUpcomingMaintenanceSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceScheduleList",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceScheduleList",
 		reflect.TypeOf((*LustreInstanceUpcomingMaintenanceScheduleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -654,12 +657,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceScheduleOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceUpcomingMaintenanceScheduleOutputReference",
 		reflect.TypeOf((*LustreInstanceUpcomingMaintenanceScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -688,7 +691,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LustreInstanceUpcomingMaintenanceScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

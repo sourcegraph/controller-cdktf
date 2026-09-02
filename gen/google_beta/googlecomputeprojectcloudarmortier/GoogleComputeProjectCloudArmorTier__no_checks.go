@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeProjectCloudArmorTier) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeProjectCloudArmorTier) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeProjectCloudArmorTier) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeProjectCloudArmorTier) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleComputeProjectCloudArmorTier) validatePutTimeoutsParameters(value *GoogleComputeProjectCloudArmorTierTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeProjectCloudArmorTier) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleComputeProjectCloudArmorTier) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeProjectCloudArmorTier) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeProjectCloudArmorTier) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

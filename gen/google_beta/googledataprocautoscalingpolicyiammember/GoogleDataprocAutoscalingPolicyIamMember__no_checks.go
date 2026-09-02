@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateInterpolati
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateOverrideLog
 }
 
 func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validatePutConditionParameters(value *GoogleDataprocAutoscalingPolicyIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateSetIdParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataprocAutoscalingPolicyIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/alblistenerrule/internal"
 )
 
 type AlbListenerRuleConditionSourceIpOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type AlbListenerRuleConditionSourceIpOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Values() *[]*string
 	SetValues(val *[]*string)
 	ValuesInput() *[]*string
@@ -45,7 +45,7 @@ type AlbListenerRuleConditionSourceIpOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type AlbListenerRuleConditionSourceIpOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type AlbListenerRuleConditionSourceIpOutputReference interface {
 
 // The jsii proxy struct for AlbListenerRuleConditionSourceIpOutputReference
 type jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) ComplexObjectIndex() interface{} {
@@ -139,8 +139,8 @@ func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) ValuesInput(
 }
 
 
-func NewAlbListenerRuleConditionSourceIpOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlbListenerRuleConditionSourceIpOutputReference {
+func NewAlbListenerRuleConditionSourceIpOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AlbListenerRuleConditionSourceIpOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlbListenerRuleConditionSourceIpOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewAlbListenerRuleConditionSourceIpOutputReference(terraformResource cdktf.
 	j := jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIpOutputReference",
+		"@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewAlbListenerRuleConditionSourceIpOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewAlbListenerRuleConditionSourceIpOutputReference_Override(a AlbListenerRuleConditionSourceIpOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlbListenerRuleConditionSourceIpOutputReference_Override(a AlbListenerRuleConditionSourceIpOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIpOutputReference",
+		"@cdktn/provider-aws.albListenerRule.AlbListenerRuleConditionSourceIpOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -420,8 +420,8 @@ func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) GetStringMap
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -433,24 +433,24 @@ func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) Interpolatio
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (a *jsiiProxy_AlbListenerRuleConditionSourceIpOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

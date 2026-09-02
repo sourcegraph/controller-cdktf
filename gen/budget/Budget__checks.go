@@ -8,7 +8,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (b *jsiiProxy_Budget) validateAddOverrideParameters(path *string, value interface{}) error {
@@ -28,22 +28,22 @@ func (b *jsiiProxy_Budget) validateAddProviderParameters(provider interface{}) e
 		return fmt.Errorf("parameter provider is required, but nil was provided")
 	}
 	switch provider.(type) {
-	case cdktf.TerraformProvider:
+	case cdktn.TerraformProvider:
 		// ok
-	case *cdktf.TerraformModuleProvider:
-		provider := provider.(*cdktf.TerraformModuleProvider)
+	case *cdktn.TerraformModuleProvider:
+		provider := provider.(*cdktn.TerraformModuleProvider)
 		if err := _jsii_.ValidateStruct(provider, func() string { return "parameter provider" }); err != nil {
 			return err
 		}
-	case cdktf.TerraformModuleProvider:
-		provider_ := provider.(cdktf.TerraformModuleProvider)
+	case cdktn.TerraformModuleProvider:
+		provider_ := provider.(cdktn.TerraformModuleProvider)
 		provider := &provider_
 		if err := _jsii_.ValidateStruct(provider, func() string { return "parameter provider" }); err != nil {
 			return err
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(provider) {
-			return fmt.Errorf("parameter provider must be one of the allowed types: cdktf.TerraformProvider, *cdktf.TerraformModuleProvider; received %#v (a %T)", provider, provider)
+			return fmt.Errorf("parameter provider must be one of the allowed types: cdktn.TerraformProvider, *cdktn.TerraformModuleProvider; received %#v (a %T)", provider, provider)
 		}
 	}
 
@@ -69,6 +69,14 @@ func (b *jsiiProxy_Budget) validateInterpolationForOutputParameters(moduleOutput
 func (b *jsiiProxy_Budget) validateOverrideLogicalIdParameters(newLogicalId *string) error {
 	if newLogicalId == nil {
 		return fmt.Errorf("parameter newLogicalId is required, but nil was provided")
+	}
+
+	return nil
+}
+
+func (b *jsiiProxy_Budget) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil

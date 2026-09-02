@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorList) validateGetParam
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAzureMonitorList) validateSetWraps
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsBadAzureMonitorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveCountMetricsBadAzureMonitorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

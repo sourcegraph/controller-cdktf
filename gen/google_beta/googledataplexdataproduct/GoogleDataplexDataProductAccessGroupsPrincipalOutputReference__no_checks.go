@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataplexDataProductAccessGroupsPrincipalOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDataProductAccessGroupsPrincipalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataplexDataProductAccessGroupsPrincipalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDataProductAccessGroupsPrincipalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexDataProductAccessGroupsPrincipalOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDataplexDataProductAccessGroupsPrincipalOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDataProductAccessGroupsPrincipalOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexDataProductAccessGroupsPrincipalOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataplexDataProductAccessGroupsPrincipalOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataplexDataProductAccessGroupsPrincipalOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

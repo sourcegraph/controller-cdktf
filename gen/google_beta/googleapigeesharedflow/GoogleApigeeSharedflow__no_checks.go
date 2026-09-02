@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleApigeeSharedflow) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeSharedflow) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeSharedflow) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleApigeeSharedflow) validateOverrideLogicalIdParameters(n
 }
 
 func (g *jsiiProxy_GoogleApigeeSharedflow) validatePutTimeoutsParameters(value *GoogleApigeeSharedflowTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeSharedflow) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleApigeeSharedflow) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

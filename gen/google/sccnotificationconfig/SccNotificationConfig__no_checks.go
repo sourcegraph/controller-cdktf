@@ -56,6 +56,10 @@ func (s *jsiiProxy_SccNotificationConfig) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SccNotificationConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccNotificationConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_SccNotificationConfig) validatePutStreamingConfigParameters(v
 }
 
 func (s *jsiiProxy_SccNotificationConfig) validatePutTimeoutsParameters(value *SccNotificationConfigTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccNotificationConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_SccNotificationConfig) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_SccNotificationConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SccNotificationConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsEc2NetworkInsightsPath) validatePutFilterParameters(va
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsEc2NetworkInsightsPath_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsEc2NetworkInsightsPath) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CesGuardrailActionRespondImmediatelyResponsesOutputReference)
 	return nil
 }
 
-func validateNewCesGuardrailActionRespondImmediatelyResponsesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesGuardrailActionRespondImmediatelyResponsesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

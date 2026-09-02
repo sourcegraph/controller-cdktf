@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeregionbackendservice/internal"
 )
 
 type GoogleComputeRegionBackendServiceCustomMetricsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type GoogleComputeRegionBackendServiceCustomMetricsList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) GoogleComputeRegionBackendServiceCustomMetricsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type GoogleComputeRegionBackendServiceCustomMetricsList interface {
 
 // The jsii proxy struct for GoogleComputeRegionBackendServiceCustomMetricsList
 type jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) WrapsSet(
 }
 
 
-func NewGoogleComputeRegionBackendServiceCustomMetricsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionBackendServiceCustomMetricsList {
+func NewGoogleComputeRegionBackendServiceCustomMetricsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) GoogleComputeRegionBackendServiceCustomMetricsList {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeRegionBackendServiceCustomMetricsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewGoogleComputeRegionBackendServiceCustomMetricsList(terraformResource cdk
 	j := jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceCustomMetricsList",
+		"@cdktn/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceCustomMetricsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewGoogleComputeRegionBackendServiceCustomMetricsList(terraformResource cdk
 	return &j
 }
 
-func NewGoogleComputeRegionBackendServiceCustomMetricsList_Override(g GoogleComputeRegionBackendServiceCustomMetricsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewGoogleComputeRegionBackendServiceCustomMetricsList_Override(g GoogleComputeRegionBackendServiceCustomMetricsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceCustomMetricsList",
+		"@cdktn/provider-google-beta.googleComputeRegionBackendService.GoogleComputeRegionBackendServiceCustomMetricsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		g,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList)SetWrapsSe
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := g.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		g,
@@ -228,8 +231,8 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) Get(index
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) Resolve(_
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

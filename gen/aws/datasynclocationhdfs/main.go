@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs",
+		"@cdktn/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfs",
 		reflect.TypeOf((*DatasyncLocationHdfs)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyProviderUri", GoGetter: "KmsKeyProviderUri"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyProviderUriInput", GoGetter: "KmsKeyProviderUriInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -65,6 +66,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "qopConfiguration", GoGetter: "QopConfiguration"},
 			_jsii_.MemberProperty{JsiiProperty: "qopConfigurationInput", GoGetter: "QopConfigurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationFactor", GoGetter: "ReplicationFactor"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationFactorInput", GoGetter: "ReplicationFactorInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuthenticationType", GoMethod: "ResetAuthenticationType"},
@@ -99,23 +101,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uri", GoGetter: "Uri"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DatasyncLocationHdfs{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsConfig",
+		"@cdktn/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsConfig",
 		reflect.TypeOf((*DatasyncLocationHdfsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNode",
+		"@cdktn/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNode",
 		reflect.TypeOf((*DatasyncLocationHdfsNameNode)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList",
+		"@cdktn/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeList",
 		reflect.TypeOf((*DatasyncLocationHdfsNameNodeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -132,12 +135,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatasyncLocationHdfsNameNodeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeOutputReference",
+		"@cdktn/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsNameNodeOutputReference",
 		reflect.TypeOf((*DatasyncLocationHdfsNameNodeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -168,16 +171,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatasyncLocationHdfsNameNodeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsQopConfiguration",
+		"@cdktn/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsQopConfiguration",
 		reflect.TypeOf((*DatasyncLocationHdfsQopConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsQopConfigurationOutputReference",
+		"@cdktn/provider-aws.datasyncLocationHdfs.DatasyncLocationHdfsQopConfigurationOutputReference",
 		reflect.TypeOf((*DatasyncLocationHdfsQopConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -210,7 +213,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DatasyncLocationHdfsQopConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIamFoldersPolicyBindingTimeoutsOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamFoldersPolicyBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIamFoldersPolicyBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamFoldersPolicyBindingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIamFoldersPolicyBindingTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBindingTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamFoldersPolicyBindingTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIamFoldersPolicyBindingTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleIamFoldersPolicyBindingTimeoutsOutputReference) validat
 	return nil
 }
 
-func validateNewGoogleIamFoldersPolicyBindingTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIamFoldersPolicyBindingTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

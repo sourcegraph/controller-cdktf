@@ -12,7 +12,7 @@ func (p *jsiiProxy_PollerCloudwatchMetricsQueryDimensionList) validateGetParamet
 	return nil
 }
 
-func (p *jsiiProxy_PollerCloudwatchMetricsQueryDimensionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PollerCloudwatchMetricsQueryDimensionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PollerCloudwatchMetricsQueryDimensionList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewPollerCloudwatchMetricsQueryDimensionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPollerCloudwatchMetricsQueryDimensionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validatePutLoggingCo
 	return nil
 }
 
-func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocJobPysparkConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataprocJobPysparkConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocJobPysparkConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

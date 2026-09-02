@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateGe
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorTimeoutsOutputReference) validateSe
 	return nil
 }
 
-func validateNewMonitoringMetricDescriptorTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitoringMetricDescriptorTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

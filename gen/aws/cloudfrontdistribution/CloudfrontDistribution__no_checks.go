@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudfrontDistribution) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontDistribution) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontDistribution) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -101,6 +105,10 @@ func (c *jsiiProxy_CloudfrontDistribution) validatePutRestrictionsParameters(val
 }
 
 func (c *jsiiProxy_CloudfrontDistribution) validatePutViewerCertificateParameters(value *CloudfrontDistributionViewerCertificate) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontDistribution) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -156,7 +164,7 @@ func (j *jsiiProxy_CloudfrontDistribution) validateSetIsIpv6EnabledParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistribution) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudfrontDistribution) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

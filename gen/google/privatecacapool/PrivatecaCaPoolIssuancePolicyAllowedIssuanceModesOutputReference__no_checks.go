@@ -40,11 +40,11 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputRefere
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPrivatecaCaPoolIssuancePolicyAllowedIssuanceModesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

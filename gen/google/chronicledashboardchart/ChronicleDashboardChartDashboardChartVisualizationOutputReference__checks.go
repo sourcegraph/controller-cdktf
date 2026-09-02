@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -106,7 +106,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ChronicleDashboardChartDashboardChartVisualizationColumnDefs:
 		value := value.(*[]*ChronicleDashboardChartDashboardChartVisualizationColumnDefs)
@@ -125,7 +125,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationColumnDefs; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationColumnDefs; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -148,7 +148,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ChronicleDashboardChartDashboardChartVisualizationLegends:
 		value := value.(*[]*ChronicleDashboardChartDashboardChartVisualizationLegends)
@@ -167,7 +167,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationLegends; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationLegends; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -190,7 +190,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ChronicleDashboardChartDashboardChartVisualizationSeries:
 		value := value.(*[]*ChronicleDashboardChartDashboardChartVisualizationSeries)
@@ -209,7 +209,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationSeries; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationSeries; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -243,7 +243,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ChronicleDashboardChartDashboardChartVisualizationVisualMaps:
 		value := value.(*[]*ChronicleDashboardChartDashboardChartVisualizationVisualMaps)
@@ -262,7 +262,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationVisualMaps; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationVisualMaps; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -274,7 +274,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ChronicleDashboardChartDashboardChartVisualizationXAxes:
 		value := value.(*[]*ChronicleDashboardChartDashboardChartVisualizationXAxes)
@@ -293,7 +293,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationXAxes; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationXAxes; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -305,7 +305,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ChronicleDashboardChartDashboardChartVisualizationYAxes:
 		value := value.(*[]*ChronicleDashboardChartDashboardChartVisualizationYAxes)
@@ -324,16 +324,16 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationYAxes; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ChronicleDashboardChartDashboardChartVisualizationYAxes; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -436,7 +436,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -453,18 +453,18 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationOutputRefer
 		// ok
 	case bool:
 		// ok
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktf.IResolvable; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *bool, cdktn.IResolvable; received %#v (a %T)", val, val)
 		}
 	}
 
 	return nil
 }
 
-func validateNewChronicleDashboardChartDashboardChartVisualizationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewChronicleDashboardChartDashboardChartVisualizationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

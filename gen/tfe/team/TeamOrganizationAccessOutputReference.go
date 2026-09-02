@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/tfe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/team/internal"
 )
 
 type TeamOrganizationAccessOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -64,15 +64,15 @@ type TeamOrganizationAccessOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,9 +88,9 @@ type TeamOrganizationAccessOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetManageModules()
 	ResetManagePolicies()
 	ResetManagePolicyOverrides()
@@ -103,7 +103,7 @@ type TeamOrganizationAccessOutputReference interface {
 	ResetReadWorkspaces()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,7 +113,7 @@ type TeamOrganizationAccessOutputReference interface {
 
 // The jsii proxy struct for TeamOrganizationAccessOutputReference
 type jsiiProxy_TeamOrganizationAccessOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TeamOrganizationAccessOutputReference) ComplexObjectIndex() interface{} {
@@ -376,8 +376,8 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) TerraformResource() cd
 }
 
 
-func NewTeamOrganizationAccessOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TeamOrganizationAccessOutputReference {
+func NewTeamOrganizationAccessOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) TeamOrganizationAccessOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTeamOrganizationAccessOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -396,7 +396,7 @@ func NewTeamOrganizationAccessOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_TeamOrganizationAccessOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference",
+		"@cdktn/provider-tfe.team.TeamOrganizationAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -404,11 +404,11 @@ func NewTeamOrganizationAccessOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewTeamOrganizationAccessOutputReference_Override(t TeamOrganizationAccessOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewTeamOrganizationAccessOutputReference_Override(t TeamOrganizationAccessOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tfe.team.TeamOrganizationAccessOutputReference",
+		"@cdktn/provider-tfe.team.TeamOrganizationAccessOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)
@@ -568,7 +568,7 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,11 +608,11 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (t *jsiiProxy_TeamOrganizationAccessOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -736,8 +736,8 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (t *jsiiProxy_TeamOrganizationAccessOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -749,16 +749,16 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (t *jsiiProxy_TeamOrganizationAccessOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -845,8 +845,8 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) ResetReadWorkspaces() 
 	)
 }
 
-func (t *jsiiProxy_TeamOrganizationAccessOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -854,7 +854,7 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) Resolve(_context cdktf
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

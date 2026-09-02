@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleartifactregistryrepository/internal"
 )
 
 type DataGoogleArtifactRegistryRepositoryDockerConfigList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type DataGoogleArtifactRegistryRepositoryDockerConfigList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataGoogleArtifactRegistryRepositoryDockerConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type DataGoogleArtifactRegistryRepositoryDockerConfigList interface {
 
 // The jsii proxy struct for DataGoogleArtifactRegistryRepositoryDockerConfigList
 type jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList) WrapsSe
 }
 
 
-func NewDataGoogleArtifactRegistryRepositoryDockerConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleArtifactRegistryRepositoryDockerConfigList {
+func NewDataGoogleArtifactRegistryRepositoryDockerConfigList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleArtifactRegistryRepositoryDockerConfigList {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleArtifactRegistryRepositoryDockerConfigListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewDataGoogleArtifactRegistryRepositoryDockerConfigList(terraformResource c
 	j := jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryDockerConfigList",
+		"@cdktn/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryDockerConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewDataGoogleArtifactRegistryRepositoryDockerConfigList(terraformResource c
 	return &j
 }
 
-func NewDataGoogleArtifactRegistryRepositoryDockerConfigList_Override(d DataGoogleArtifactRegistryRepositoryDockerConfigList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataGoogleArtifactRegistryRepositoryDockerConfigList_Override(d DataGoogleArtifactRegistryRepositoryDockerConfigList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryDockerConfigList",
+		"@cdktn/provider-google-beta.dataGoogleArtifactRegistryRepository.DataGoogleArtifactRegistryRepositoryDockerConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList)SetWraps
 	)
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -205,8 +208,8 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList) Get(ind
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryRepositoryDockerConfigList) Resolve
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

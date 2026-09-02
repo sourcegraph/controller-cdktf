@@ -40,11 +40,11 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEmrClusterStepHadoopJarStepOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEmrClusterStepHadoopJarStepOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

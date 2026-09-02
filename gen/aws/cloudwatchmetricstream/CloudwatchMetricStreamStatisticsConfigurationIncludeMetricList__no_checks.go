@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricLis
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricLis
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricLis
 	return nil
 }
 
-func validateNewCloudwatchMetricStreamStatisticsConfigurationIncludeMetricListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudwatchMetricStreamStatisticsConfigurationIncludeMetricListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

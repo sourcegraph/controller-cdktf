@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigA",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigA",
 		reflect.TypeOf((*TunnelConfigA)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -49,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putConfig", GoMethod: "PutConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -62,27 +64,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelId", GoGetter: "TunnelId"},
 			_jsii_.MemberProperty{JsiiProperty: "tunnelIdInput", GoGetter: "TunnelIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_TunnelConfigA{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigAConfig",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigAConfig",
 		reflect.TypeOf((*TunnelConfigAConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfig",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfig",
 		reflect.TypeOf((*TunnelConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRule",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRule",
 		reflect.TypeOf((*TunnelConfigConfigIngressRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleList",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleList",
 		reflect.TypeOf((*TunnelConfigConfigIngressRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -99,12 +102,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TunnelConfigConfigIngressRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOutputReference",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigIngressRuleOutputReference",
 		reflect.TypeOf((*TunnelConfigConfigIngressRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,20 +142,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TunnelConfigConfigIngressRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequest",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequest",
 		reflect.TypeOf((*TunnelConfigConfigOriginRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRules",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRules",
 		reflect.TypeOf((*TunnelConfigConfigOriginRequestIpRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesList",
 		reflect.TypeOf((*TunnelConfigConfigOriginRequestIpRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -169,12 +172,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TunnelConfigConfigOriginRequestIpRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesOutputReference",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestIpRulesOutputReference",
 		reflect.TypeOf((*TunnelConfigConfigOriginRequestIpRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allow", GoGetter: "Allow"},
@@ -210,12 +213,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TunnelConfigConfigOriginRequestIpRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestOutputReference",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigOriginRequestOutputReference",
 		reflect.TypeOf((*TunnelConfigConfigOriginRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bastionMode", GoGetter: "BastionMode"},
@@ -291,12 +294,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TunnelConfigConfigOriginRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigOutputReference",
 		reflect.TypeOf((*TunnelConfigConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -334,16 +337,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TunnelConfigConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRouting",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRouting",
 		reflect.TypeOf((*TunnelConfigConfigWarpRouting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
+		"@cdktn/provider-cloudflare.tunnelConfig.TunnelConfigConfigWarpRoutingOutputReference",
 		reflect.TypeOf((*TunnelConfigConfigWarpRoutingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -373,7 +376,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TunnelConfigConfigWarpRoutingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

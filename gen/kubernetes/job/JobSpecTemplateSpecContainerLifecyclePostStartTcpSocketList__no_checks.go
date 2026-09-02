@@ -12,7 +12,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketList) 
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketList) 
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerLifecyclePostStartTcpSocketList) 
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecContainerLifecyclePostStartTcpSocketListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobSpecTemplateSpecContainerLifecyclePostStartTcpSocketListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

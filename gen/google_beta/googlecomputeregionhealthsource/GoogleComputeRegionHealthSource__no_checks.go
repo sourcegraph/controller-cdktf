@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeRegionHealthSource) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionHealthSource) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionHealthSource) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeRegionHealthSource) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleComputeRegionHealthSource) validatePutTimeoutsParameters(value *GoogleComputeRegionHealthSourceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionHealthSource) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleComputeRegionHealthSource) validateSetHealthAggregation
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionHealthSource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeRegionHealthSource) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileSpannerProfileOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileSpannerProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileSpannerProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileSpannerProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileSpannerProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileSpannerProfileOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileSpannerProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileSpannerProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamConnectionProfileSpannerProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatastreamConnectionProfileSpannerProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

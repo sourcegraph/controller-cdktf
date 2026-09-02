@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/rediscluster/internal"
 )
 
 type RedisClusterStateInfoUpdateInfoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type RedisClusterStateInfoUpdateInfoOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type RedisClusterStateInfoUpdateInfoOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type RedisClusterStateInfoUpdateInfoOutputReference interface {
 
 // The jsii proxy struct for RedisClusterStateInfoUpdateInfoOutputReference
 type jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) ComplexObjectIndex() interface{} {
@@ -158,8 +158,8 @@ func (j *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) TerraformReso
 }
 
 
-func NewRedisClusterStateInfoUpdateInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RedisClusterStateInfoUpdateInfoOutputReference {
+func NewRedisClusterStateInfoUpdateInfoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) RedisClusterStateInfoUpdateInfoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRedisClusterStateInfoUpdateInfoOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewRedisClusterStateInfoUpdateInfoOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.redisCluster.RedisClusterStateInfoUpdateInfoOutputReference",
+		"@cdktn/provider-google.redisCluster.RedisClusterStateInfoUpdateInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewRedisClusterStateInfoUpdateInfoOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewRedisClusterStateInfoUpdateInfoOutputReference_Override(r RedisClusterStateInfoUpdateInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewRedisClusterStateInfoUpdateInfoOutputReference_Override(r RedisClusterStateInfoUpdateInfoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.redisCluster.RedisClusterStateInfoUpdateInfoOutputReference",
+		"@cdktn/provider-google.redisCluster.RedisClusterStateInfoUpdateInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -408,8 +408,8 @@ func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) GetStringMapA
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -421,24 +421,24 @@ func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) Interpolation
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (r *jsiiProxy_RedisClusterStateInfoUpdateInfoOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

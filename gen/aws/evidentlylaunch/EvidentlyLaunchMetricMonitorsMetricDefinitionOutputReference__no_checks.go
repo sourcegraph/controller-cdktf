@@ -40,11 +40,11 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsMetricDefinitionOutputReference)
 	return nil
 }
 
-func validateNewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEvidentlyLaunchMetricMonitorsMetricDefinitionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

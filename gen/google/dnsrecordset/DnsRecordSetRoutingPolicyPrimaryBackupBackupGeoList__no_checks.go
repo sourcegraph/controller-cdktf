@@ -12,7 +12,7 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList) validate
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyPrimaryBackupBackupGeoList) validate
 	return nil
 }
 
-func validateNewDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDnsRecordSetRoutingPolicyPrimaryBackupBackupGeoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

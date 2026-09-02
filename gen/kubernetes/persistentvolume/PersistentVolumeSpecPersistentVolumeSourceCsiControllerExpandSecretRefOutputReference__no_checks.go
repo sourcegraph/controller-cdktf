@@ -40,11 +40,11 @@ func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiControllerExpand
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiControllerExpandSecretRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiControllerExpandSecretRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiControllerExpandSecretRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiControllerExpandSecretRefOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiControllerExpand
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiControllerExpandSecretRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PersistentVolumeSpecPersistentVolumeSourceCsiControllerExpandSecretRefOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPersistentVolumeSpecPersistentVolumeSourceCsiControllerExpandSecretRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPersistentVolumeSpecPersistentVolumeSourceCsiControllerExpandSecretRefOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

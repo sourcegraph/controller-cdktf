@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/networksecurityclienttlspolicy/internal"
 )
 
 type NetworkSecurityClientTlsPolicyClientCertificateOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CertificateProviderInstance() NetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstanceOutputReference
 	CertificateProviderInstanceInput() *NetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstance
 	// the index of the complex object in a list.
@@ -38,15 +38,15 @@ type NetworkSecurityClientTlsPolicyClientCertificateOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type NetworkSecurityClientTlsPolicyClientCertificateOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCertificateProviderInstance(value *NetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstance)
 	PutGrpcEndpoint(value *NetworkSecurityClientTlsPolicyClientCertificateGrpcEndpoint)
 	ResetCertificateProviderInstance()
 	ResetGrpcEndpoint()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type NetworkSecurityClientTlsPolicyClientCertificateOutputReference interface {
 
 // The jsii proxy struct for NetworkSecurityClientTlsPolicyClientCertificateOutputReference
 type jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) CertificateProviderInstance() NetworkSecurityClientTlsPolicyClientCertificateCertificateProviderInstanceOutputReference {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReferenc
 }
 
 
-func NewNetworkSecurityClientTlsPolicyClientCertificateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkSecurityClientTlsPolicyClientCertificateOutputReference {
+func NewNetworkSecurityClientTlsPolicyClientCertificateOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NetworkSecurityClientTlsPolicyClientCertificateOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkSecurityClientTlsPolicyClientCertificateOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewNetworkSecurityClientTlsPolicyClientCertificateOutputReference(terraform
 	j := jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkSecurityClientTlsPolicy.NetworkSecurityClientTlsPolicyClientCertificateOutputReference",
+		"@cdktn/provider-google.networkSecurityClientTlsPolicy.NetworkSecurityClientTlsPolicyClientCertificateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewNetworkSecurityClientTlsPolicyClientCertificateOutputReference(terraform
 	return &j
 }
 
-func NewNetworkSecurityClientTlsPolicyClientCertificateOutputReference_Override(n NetworkSecurityClientTlsPolicyClientCertificateOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNetworkSecurityClientTlsPolicyClientCertificateOutputReference_Override(n NetworkSecurityClientTlsPolicyClientCertificateOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkSecurityClientTlsPolicy.NetworkSecurityClientTlsPolicyClientCertificateOutputReference",
+		"@cdktn/provider-google.networkSecurityClientTlsPolicy.NetworkSecurityClientTlsPolicyClientCertificateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReferenc
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -434,8 +434,8 @@ func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReferenc
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -447,16 +447,16 @@ func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReferenc
 	return returns
 }
 
-func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReferenc
 	)
 }
 
-func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (n *jsiiProxy_NetworkSecurityClientTlsPolicyClientCertificateOutputReferenc
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

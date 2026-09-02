@@ -56,6 +56,10 @@ func (d *jsiiProxy_DxPrivateVirtualInterface) validateInterpolationForAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DxPrivateVirtualInterface) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DxPrivateVirtualInterface) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DxPrivateVirtualInterface) validateOverrideLogicalIdParameter
 }
 
 func (d *jsiiProxy_DxPrivateVirtualInterface) validatePutTimeoutsParameters(value *DxPrivateVirtualInterfaceTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DxPrivateVirtualInterface) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_DxPrivateVirtualInterface) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DxPrivateVirtualInterface) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DxPrivateVirtualInterface) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

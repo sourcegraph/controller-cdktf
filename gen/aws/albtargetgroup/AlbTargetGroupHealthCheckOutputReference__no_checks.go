@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -104,7 +104,7 @@ func (j *jsiiProxy_AlbTargetGroupHealthCheckOutputReference) validateSetUnhealth
 	return nil
 }
 
-func validateNewAlbTargetGroupHealthCheckOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlbTargetGroupHealthCheckOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

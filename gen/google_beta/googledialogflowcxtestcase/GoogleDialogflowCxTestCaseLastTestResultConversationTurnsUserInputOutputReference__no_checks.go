@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUser
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUser
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

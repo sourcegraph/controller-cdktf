@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterAuthorizationOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerClusterAuthorizationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleEdgecontainerClusterAuthorizationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleEdgecontainerClusterAuthorizationOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleEdgecontainerClusterAuthorizationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleEdgecontainerClusterAuthorizationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleEdgecontainerClusterAuthorizationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerClusterAuthorizationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleEdgecontainerClusterAuthorizationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleEdgecontainerClusterAuthorizationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleEdgecontainerClusterAuthorizationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsConnectBotAssociation) validatePutLexBotParameters(val
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsConnectBotAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsConnectBotAssociation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataAwsConnectBotAssociation) validateSetInstanceIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectBotAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsConnectBotAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

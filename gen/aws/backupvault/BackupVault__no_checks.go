@@ -56,6 +56,10 @@ func (b *jsiiProxy_BackupVault) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (b *jsiiProxy_BackupVault) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupVault) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (b *jsiiProxy_BackupVault) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (b *jsiiProxy_BackupVault) validatePutTimeoutsParameters(value *BackupVaultTimeouts) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupVault) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_BackupVault) validateSetKmsKeyArnParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_BackupVault) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BackupVault) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

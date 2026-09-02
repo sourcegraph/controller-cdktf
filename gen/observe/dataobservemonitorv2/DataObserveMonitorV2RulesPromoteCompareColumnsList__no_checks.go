@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesPromoteCompareColumnsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesPromoteCompareColumnsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesPromoteCompareColumnsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesPromoteCompareColumnsList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesPromoteCompareColumnsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesPromoteCompareColumnsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesPromoteCompareColumnsList) validateS
 	return nil
 }
 
-func validateNewDataObserveMonitorV2RulesPromoteCompareColumnsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataObserveMonitorV2RulesPromoteCompareColumnsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

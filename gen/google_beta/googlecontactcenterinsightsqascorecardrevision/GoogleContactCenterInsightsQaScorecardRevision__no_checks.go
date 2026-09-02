@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleContactCenterInsightsQaScorecardRevision) validateInter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleContactCenterInsightsQaScorecardRevision) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleContactCenterInsightsQaScorecardRevision) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleContactCenterInsightsQaScorecardRevision) validateOverr
 }
 
 func (g *jsiiProxy_GoogleContactCenterInsightsQaScorecardRevision) validatePutTimeoutsParameters(value *GoogleContactCenterInsightsQaScorecardRevisionTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleContactCenterInsightsQaScorecardRevision) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsQaScorecardRevision) validateSetId
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsQaScorecardRevision) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsQaScorecardRevision) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

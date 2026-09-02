@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataOktaUsers) validatePutSearchParameters(value interface{})
 	return nil
 }
 
+func (d *jsiiProxy_DataOktaUsers) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataOktaUsers_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -100,7 +104,7 @@ func (j *jsiiProxy_DataOktaUsers) validateSetIncludeRolesParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaUsers) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataOktaUsers) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

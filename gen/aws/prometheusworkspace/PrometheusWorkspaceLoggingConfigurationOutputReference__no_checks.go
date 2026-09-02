@@ -40,11 +40,11 @@ func (p *jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference) valid
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PrometheusWorkspaceLoggingConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPrometheusWorkspaceLoggingConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPrometheusWorkspaceLoggingConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

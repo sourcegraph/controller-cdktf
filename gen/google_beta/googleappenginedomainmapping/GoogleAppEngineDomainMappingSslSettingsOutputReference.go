@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleappenginedomainmapping/internal"
 )
 
 type GoogleAppEngineDomainMappingSslSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CertificateId() *string
 	SetCertificateId(val *string)
 	CertificateIdInput() *string
@@ -41,15 +41,15 @@ type GoogleAppEngineDomainMappingSslSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,13 +65,13 @@ type GoogleAppEngineDomainMappingSslSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCertificateId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleAppEngineDomainMappingSslSettingsOutputReference interface {
 
 // The jsii proxy struct for GoogleAppEngineDomainMappingSslSettingsOutputReference
 type jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) CertificateId() *string {
@@ -194,8 +194,8 @@ func (j *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -205,7 +205,7 @@ func (j *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) Terra
 }
 
 
-func NewGoogleAppEngineDomainMappingSslSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleAppEngineDomainMappingSslSettingsOutputReference {
+func NewGoogleAppEngineDomainMappingSslSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleAppEngineDomainMappingSslSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleAppEngineDomainMappingSslSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -214,7 +214,7 @@ func NewGoogleAppEngineDomainMappingSslSettingsOutputReference(terraformResource
 	j := jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingSslSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingSslSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -222,11 +222,11 @@ func NewGoogleAppEngineDomainMappingSslSettingsOutputReference(terraformResource
 	return &j
 }
 
-func NewGoogleAppEngineDomainMappingSslSettingsOutputReference_Override(g GoogleAppEngineDomainMappingSslSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleAppEngineDomainMappingSslSettingsOutputReference_Override(g GoogleAppEngineDomainMappingSslSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingSslSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleAppEngineDomainMapping.GoogleAppEngineDomainMappingSslSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -298,7 +298,7 @@ func (j *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -338,11 +338,11 @@ func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) GetAn
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -466,8 +466,8 @@ func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) GetSt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -479,16 +479,16 @@ func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) Inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -503,8 +503,8 @@ func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -512,7 +512,7 @@ func (g *jsiiProxy_GoogleAppEngineDomainMappingSslSettingsOutputReference) Resol
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

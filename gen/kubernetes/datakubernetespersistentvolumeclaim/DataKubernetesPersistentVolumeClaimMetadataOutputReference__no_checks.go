@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataKubernetesPersistentVolumeClaimMetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataKubernetesPersistentVolumeClaimMetadataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

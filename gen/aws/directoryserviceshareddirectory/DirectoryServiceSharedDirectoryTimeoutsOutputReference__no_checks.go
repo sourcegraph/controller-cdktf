@@ -40,11 +40,11 @@ func (d *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectoryServiceSharedDirectoryTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDirectoryServiceSharedDirectoryTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDirectoryServiceSharedDirectoryTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

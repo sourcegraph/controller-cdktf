@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeed",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeed",
 		reflect.TypeOf((*GoogleChronicleFeed)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -69,6 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readOnly", GoGetter: "ReadOnly"},
 			_jsii_.MemberProperty{JsiiProperty: "referenceId", GoGetter: "ReferenceId"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDetails", GoMethod: "ResetDetails"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
@@ -92,27 +94,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeed{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedConfig",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedConfig",
 		reflect.TypeOf((*GoogleChronicleFeedConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetails",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetails",
 		reflect.TypeOf((*GoogleChronicleFeedDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,20 +142,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3Settings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3Settings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3SettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3SettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3SettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3SettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3SettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3SettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -196,12 +199,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -238,24 +241,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2Settings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2Settings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3V2Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuth",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuth",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuthOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuthOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -286,16 +289,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAccessKeySecretAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuth",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuth",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuthOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuthOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsIamRoleArn", GoGetter: "AwsIamRoleArn"},
@@ -328,12 +331,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationAwsIamRoleAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeySecretAuth", GoGetter: "AccessKeySecretAuth"},
@@ -368,12 +371,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonS3V2SettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonS3V2SettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonS3V2SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -412,24 +415,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonS3V2SettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuth",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuth",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuthOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuthOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -462,12 +465,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationAdditionalS3AccessKeySecretAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalS3AccessKeySecretAuth", GoGetter: "AdditionalS3AccessKeySecretAuth"},
@@ -502,16 +505,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuth",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuth",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuthOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuthOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -544,12 +547,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsAuthenticationSqsAccessKeySecretAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountNumber", GoGetter: "AccountNumber"},
@@ -592,24 +595,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2Settings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2Settings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsV2Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuth",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuth",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuthOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuthOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsIamRoleArn", GoGetter: "AwsIamRoleArn"},
@@ -642,12 +645,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationAwsIamRoleAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsIamRoleAuth", GoGetter: "AwsIamRoleAuth"},
@@ -680,16 +683,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuth",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuth",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuthOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuthOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKeyId", GoGetter: "AccessKeyId"},
@@ -722,12 +725,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsAuthenticationSqsV2AccessKeySecretAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAmazonSqsV2SettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAmazonSqsV2SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -768,20 +771,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAmazonSqsV2SettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAnomaliSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAnomaliSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAnomaliSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAnomaliSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAnomaliSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAnomaliSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAnomaliSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAnomaliSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAnomaliSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -814,12 +817,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAnomaliSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAnomaliSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAnomaliSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAnomaliSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -850,20 +853,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAnomaliSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2HostsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2HostsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2HostsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -896,12 +899,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAwsEc2HostsSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2HostsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2HostsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2HostsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -932,20 +935,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAwsEc2HostsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2InstancesSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2InstancesSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2InstancesSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2InstancesSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2InstancesSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2InstancesSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2InstancesSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2InstancesSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2InstancesSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -978,12 +981,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAwsEc2InstancesSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2InstancesSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2InstancesSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2InstancesSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -1014,20 +1017,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAwsEc2InstancesSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2VpcsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2VpcsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2VpcsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2VpcsSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2VpcsSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2VpcsSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2VpcsSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2VpcsSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2VpcsSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1060,12 +1063,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAwsEc2VpcsSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2VpcsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsEc2VpcsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsEc2VpcsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -1096,20 +1099,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAwsEc2VpcsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsIamSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsIamSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsIamSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsIamSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsIamSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsIamSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsIamSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsIamSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsIamSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1142,12 +1145,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAwsIamSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsIamSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAwsIamSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAwsIamSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiType", GoGetter: "ApiType"},
@@ -1181,20 +1184,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAwsIamSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdAuditSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdAuditSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdAuditSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdAuditSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdAuditSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdAuditSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdAuditSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdAuditSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdAuditSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -1227,12 +1230,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureAdAuditSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdAuditSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdAuditSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdAuditSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authEndpoint", GoGetter: "AuthEndpoint"},
@@ -1272,20 +1275,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureAdAuditSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdContextSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdContextSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdContextSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdContextSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdContextSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdContextSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdContextSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdContextSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdContextSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -1318,12 +1321,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureAdContextSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdContextSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdContextSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdContextSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authEndpoint", GoGetter: "AuthEndpoint"},
@@ -1369,20 +1372,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureAdContextSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -1415,12 +1418,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureAdSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureAdSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureAdSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authEndpoint", GoGetter: "AuthEndpoint"},
@@ -1460,20 +1463,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureAdSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureBlobStoreSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureBlobStoreSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureBlobStoreSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1506,12 +1509,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureBlobStoreSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -1551,24 +1554,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2Settings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2Settings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureBlobStoreV2Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederation",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederation",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -1601,12 +1604,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationAzureV2WorkloadIdentityFederationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessKey", GoGetter: "AccessKey"},
@@ -1640,12 +1643,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -1684,16 +1687,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureEventHubSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureEventHubSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureEventHubSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureEventHubSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureEventHubSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureEventHubSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "azureSasToken", GoGetter: "AzureSasToken"},
@@ -1736,20 +1739,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureEventHubSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureMdmIntuneSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureMdmIntuneSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureMdmIntuneSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -1782,12 +1785,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureMdmIntuneSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureMdmIntuneSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsAzureMdmIntuneSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsAzureMdmIntuneSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authEndpoint", GoGetter: "AuthEndpoint"},
@@ -1827,20 +1830,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsAzureMdmIntuneSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCloudPassageSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCloudPassageSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCloudPassageSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCloudPassageSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCloudPassageSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCloudPassageSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCloudPassageSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCloudPassageSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCloudPassageSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1873,12 +1876,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsCloudPassageSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCloudPassageSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCloudPassageSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCloudPassageSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -1912,24 +1915,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsCloudPassageSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCortexXdrSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCortexXdrSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1946,12 +1949,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1984,12 +1987,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2020,12 +2023,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -2062,20 +2065,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsCortexXdrSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeAlertsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeAlertsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCrowdstrikeAlertsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -2111,12 +2114,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -2151,20 +2154,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeDetectsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeDetectsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCrowdstrikeDetectsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -2200,12 +2203,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeDetectsSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeDetectsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsCrowdstrikeDetectsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsCrowdstrikeDetectsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -2242,24 +2245,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeDetectsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDummyLogTypeSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -2276,12 +2279,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2314,12 +2317,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2350,12 +2353,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDummyLogTypeSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDummyLogTypeSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiEndpoint", GoGetter: "ApiEndpoint"},
@@ -2389,20 +2392,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDuoAuthSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDuoAuthSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDuoAuthSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2435,12 +2438,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -2474,20 +2477,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoUserContextSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoUserContextSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDuoUserContextSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoUserContextSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoUserContextSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDuoUserContextSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoUserContextSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoUserContextSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDuoUserContextSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2520,12 +2523,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsDuoUserContextSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoUserContextSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoUserContextSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsDuoUserContextSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -2559,20 +2562,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsDuoUserContextSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsFoxItStixSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsFoxItStixSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsFoxItStixSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2605,12 +2608,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -2651,16 +2654,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettingsSsl",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettingsSsl",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsFoxItStixSettingsSsl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettingsSslOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsFoxItStixSettingsSslOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsFoxItStixSettingsSslOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2693,16 +2696,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsFoxItStixSettingsSslOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGcsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGcsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGcsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGcsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGcsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGcsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketUri", GoGetter: "BucketUri"},
@@ -2739,16 +2742,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsGcsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGcsV2Settings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGcsV2Settings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGcsV2Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGcsV2SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGcsV2SettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGcsV2SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketUri", GoGetter: "BucketUri"},
@@ -2784,24 +2787,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsGcsV2SettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaims",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaims",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaimsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaimsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -2837,12 +2840,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationClaimsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claims", GoGetter: "Claims"},
@@ -2880,16 +2883,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2919,12 +2922,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsAuthenticationRsCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -2955,24 +2958,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDeviceUsersSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaims",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaims",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaimsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaimsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -3008,12 +3011,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationClaimsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claims", GoGetter: "Claims"},
@@ -3051,16 +3054,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3090,12 +3093,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsAuthenticationRsCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiVersion", GoGetter: "ApiVersion"},
@@ -3129,16 +3132,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudIdentityDevicesSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketUri", GoGetter: "BucketUri"},
@@ -3176,16 +3179,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsHttpSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsHttpSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3221,16 +3224,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsHttpSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3260,16 +3263,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsHttpsPushAmazonKinesisFirehoseSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3299,16 +3302,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsHttpsPushGoogleCloudPubsubSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushWebhookSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushWebhookSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsHttpsPushWebhookSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushWebhookSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsHttpsPushWebhookSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsHttpsPushWebhookSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3338,24 +3341,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsHttpsPushWebhookSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsImpervaWafSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsImpervaWafSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3372,12 +3375,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3410,12 +3413,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3446,12 +3449,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsImpervaWafSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsImpervaWafSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsImpervaWafSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -3482,24 +3485,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsImpervaWafSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMandiantIocSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMandiantIocSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3516,12 +3519,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3554,12 +3557,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3590,12 +3593,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -3629,20 +3632,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMandiantIocSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftGraphAlertSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftGraphAlertSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMicrosoftGraphAlertSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -3675,12 +3678,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authEndpoint", GoGetter: "AuthEndpoint"},
@@ -3720,20 +3723,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -3766,12 +3769,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authEndpoint", GoGetter: "AuthEndpoint"},
@@ -3814,24 +3817,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMimecastMailSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMimecastMailSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -3848,12 +3851,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3886,12 +3889,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -3922,12 +3925,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMimecastMailSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -3961,20 +3964,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailV2Settings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailV2Settings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMimecastMailV2Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -4007,12 +4010,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailV2SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsMimecastMailV2SettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsMimecastMailV2SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authCredentials", GoGetter: "AuthCredentials"},
@@ -4043,24 +4046,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsMimecastMailV2SettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -4077,12 +4080,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4115,12 +4118,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4151,12 +4154,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -4196,24 +4199,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2Settings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2Settings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertV2Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -4230,12 +4233,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4268,12 +4271,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4304,12 +4307,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertV2SettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsNetskopeAlertV2SettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsNetskopeAlertV2SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -4349,20 +4352,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertV2SettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOffice365Settings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOffice365Settings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOffice365Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOffice365SettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOffice365SettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOffice365SettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOffice365SettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOffice365SettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOffice365SettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -4395,12 +4398,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsOffice365SettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOffice365SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOffice365SettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOffice365SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authEndpoint", GoGetter: "AuthEndpoint"},
@@ -4443,24 +4446,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsOffice365SettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -4477,12 +4480,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4515,12 +4518,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsOktaSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4551,12 +4554,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsOktaSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -4590,24 +4593,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsOktaSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaUserContextSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaUserContextSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -4624,12 +4627,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4662,12 +4665,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -4698,12 +4701,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -4740,12 +4743,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "amazonKinesisFirehoseSettings", GoGetter: "AmazonKinesisFirehoseSettings"},
@@ -5084,24 +5087,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPanIocSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPanIocSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5118,12 +5121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5156,12 +5159,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsPanIocSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPanIocSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5192,12 +5195,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsPanIocSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanIocSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPanIocSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -5234,20 +5237,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsPanIocSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanPrismaCloudSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanPrismaCloudSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPanPrismaCloudSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanPrismaCloudSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanPrismaCloudSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPanPrismaCloudSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanPrismaCloudSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanPrismaCloudSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPanPrismaCloudSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5280,12 +5283,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsPanPrismaCloudSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -5319,20 +5322,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsPanPrismaCloudSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointMailSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointMailSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsProofpointMailSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointMailSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointMailSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsProofpointMailSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointMailSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointMailSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsProofpointMailSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5365,12 +5368,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsProofpointMailSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointMailSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointMailSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsProofpointMailSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -5401,24 +5404,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsProofpointMailSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsProofpointOnDemandSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5435,12 +5438,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5473,12 +5476,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5509,12 +5512,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -5548,16 +5551,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsProofpointOnDemandSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPubsubSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPubsubSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPubsubSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPubsubSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsPubsubSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsPubsubSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5587,20 +5590,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsPubsubSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsQualysScanSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsQualysScanSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5633,12 +5636,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsQualysScanSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiType", GoGetter: "ApiType"},
@@ -5675,20 +5678,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysVmSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysVmSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsQualysVmSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysVmSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysVmSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsQualysVmSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysVmSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysVmSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsQualysVmSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5721,12 +5724,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsQualysVmSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysVmSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysVmSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsQualysVmSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -5760,24 +5763,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsQualysVmSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRapid7InsightSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRapid7InsightSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5794,12 +5797,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5832,12 +5835,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5868,12 +5871,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsRapid7InsightSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRapid7InsightSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRapid7InsightSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -5910,24 +5913,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsRapid7InsightSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRecordedFutureIocSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -5944,12 +5947,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -5982,12 +5985,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6018,12 +6021,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsRecordedFutureIocSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRecordedFutureIocSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRecordedFutureIocSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -6054,20 +6057,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsRecordedFutureIocSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRhIsacIocSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRhIsacIocSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRhIsacIocSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRhIsacIocSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRhIsacIocSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRhIsacIocSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRhIsacIocSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRhIsacIocSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRhIsacIocSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -6103,12 +6106,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsRhIsacIocSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRhIsacIocSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsRhIsacIocSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsRhIsacIocSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -6139,24 +6142,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsRhIsacIocSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSalesforceSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaims",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaims",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -6192,12 +6195,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsClaimsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claims", GoGetter: "Claims"},
@@ -6235,16 +6238,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6274,16 +6277,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthJwtCredentialsRsCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuth",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuth",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -6325,12 +6328,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOauthPasswordGrantAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSalesforceSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSalesforceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6368,24 +6371,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSalesforceSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSentineloneAlertSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -6402,12 +6405,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6440,12 +6443,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6476,12 +6479,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -6521,20 +6524,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSentineloneAlertSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsServiceNowCmdbSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsServiceNowCmdbSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsServiceNowCmdbSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsServiceNowCmdbSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsServiceNowCmdbSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsServiceNowCmdbSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsServiceNowCmdbSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsServiceNowCmdbSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsServiceNowCmdbSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6567,12 +6570,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsServiceNowCmdbSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -6609,20 +6612,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsServiceNowCmdbSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSftpSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSftpSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSftpSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSftpSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSftpSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSftpSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSftpSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSftpSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSftpSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6661,12 +6664,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSftpSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSftpSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSftpSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -6706,20 +6709,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSftpSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSymantecEventExportSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSymantecEventExportSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSymantecEventExportSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSymantecEventExportSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSymantecEventExportSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSymantecEventExportSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSymantecEventExportSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSymantecEventExportSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSymantecEventExportSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -6758,12 +6761,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSymantecEventExportSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSymantecEventExportSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsSymantecEventExportSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsSymantecEventExportSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -6794,24 +6797,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsSymantecEventExportSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThinkstCanarySettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThinkstCanarySettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValues",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValues",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesList",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesList",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -6828,12 +6831,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6866,12 +6869,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationHeaderKeyValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6902,12 +6905,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsThinkstCanarySettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThinkstCanarySettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThinkstCanarySettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -6941,20 +6944,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsThinkstCanarySettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThreatConnectIocSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -6987,12 +6990,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThreatConnectIocSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -7029,20 +7032,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocV3Settings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocV3Settings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThreatConnectIocV3Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocV3SettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocV3SettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThreatConnectIocV3SettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocV3SettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocV3SettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThreatConnectIocV3SettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7075,12 +7078,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocV3SettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocV3SettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsThreatConnectIocV3SettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsThreatConnectIocV3SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -7126,24 +7129,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsThreatConnectIocV3SettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxAlertsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMsso",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMsso",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMsso)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiEndpoint", GoGetter: "ApiEndpoint"},
@@ -7179,12 +7182,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationMssoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7219,16 +7222,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIam",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIam",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIam)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIamOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIamOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIamOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -7264,12 +7267,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationTrellixIamOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxAlertsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxAlertsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -7303,24 +7306,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMsso",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMsso",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMsso)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMssoOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMssoOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMssoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiEndpoint", GoGetter: "ApiEndpoint"},
@@ -7353,12 +7356,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationMssoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7393,16 +7396,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIam",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIam",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIam)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIamOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIamOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIamOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -7435,12 +7438,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsAuthenticationTrellixIamOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -7473,24 +7476,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxBulkAcqsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxHostsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMsso",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMsso",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMsso)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMssoOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMssoOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMssoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "apiEndpoint", GoGetter: "ApiEndpoint"},
@@ -7523,12 +7526,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationMssoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7563,16 +7566,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIam",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIam",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIam)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIamOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIamOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIamOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -7605,12 +7608,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxHostsSettingsAuthenticationTrellixIamOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsTrellixHxHostsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsTrellixHxHostsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -7643,16 +7646,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsTrellixHxHostsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWebhookSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWebhookSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWebhookSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWebhookSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWebhookSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWebhookSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7679,20 +7682,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWebhookSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkdaySettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkdaySettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -7737,12 +7740,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkdaySettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -7779,24 +7782,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceActivitySettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaims",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaims",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaimsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaimsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -7832,12 +7835,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationClaimsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claims", GoGetter: "Claims"},
@@ -7875,16 +7878,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -7914,12 +7917,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceActivitySettingsAuthenticationRsCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceActivitySettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceActivitySettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applications", GoGetter: "Applications"},
@@ -7956,24 +7959,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceActivitySettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceAlertsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaims",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaims",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaimsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaimsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -8009,12 +8012,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationClaimsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claims", GoGetter: "Claims"},
@@ -8052,16 +8055,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8091,12 +8094,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceAlertsSettingsAuthenticationRsCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceAlertsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceAlertsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -8130,24 +8133,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceAlertsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceChromeOsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaims",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaims",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaimsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaimsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -8183,12 +8186,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationClaimsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claims", GoGetter: "Claims"},
@@ -8226,16 +8229,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8265,12 +8268,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsAuthenticationRsCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -8304,24 +8307,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceChromeOsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceGroupsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaims",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaims",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaimsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaimsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -8357,12 +8360,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationClaimsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claims", GoGetter: "Claims"},
@@ -8400,16 +8403,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8439,12 +8442,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceGroupsSettingsAuthenticationRsCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceGroupsSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceGroupsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -8478,24 +8481,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceGroupsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceMobileSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaims",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaims",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaimsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaimsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -8531,12 +8534,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationClaimsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claims", GoGetter: "Claims"},
@@ -8574,16 +8577,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8613,12 +8616,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceMobileSettingsAuthenticationRsCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceMobileSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceMobileSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -8652,24 +8655,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceMobileSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspacePrivilegesSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaims",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaims",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaimsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaimsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -8705,12 +8708,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationClaimsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claims", GoGetter: "Claims"},
@@ -8748,16 +8751,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8787,12 +8790,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsAuthenticationRsCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -8826,24 +8829,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspacePrivilegesSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettings",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettings",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceUsersSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthentication",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthentication",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaims",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaims",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaimsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaimsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audience", GoGetter: "Audience"},
@@ -8879,12 +8882,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationClaimsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "claims", GoGetter: "Claims"},
@@ -8922,16 +8925,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentials",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentials",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentials)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentialsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentialsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentialsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -8961,12 +8964,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceUsersSettingsAuthenticationRsCredentialsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkspaceUsersSettingsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedDetailsWorkspaceUsersSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authentication", GoGetter: "Authentication"},
@@ -9003,16 +9006,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedDetailsWorkspaceUsersSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedFailureDetails",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedFailureDetails",
 		reflect.TypeOf((*GoogleChronicleFeedFailureDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedFailureDetailsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedFailureDetailsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedFailureDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9043,16 +9046,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedFailureDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedTimeouts",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedTimeouts",
 		reflect.TypeOf((*GoogleChronicleFeedTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleChronicleFeedTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -9088,7 +9091,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleChronicleFeedTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,7 +40,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOut
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOut
 	return nil
 }
 
-func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOut
 	return nil
 }
 
-func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_NotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOut
 	return nil
 }
 
-func validateNewNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNotebooksRuntimeVirtualMachineVirtualMachineConfigDataDiskOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

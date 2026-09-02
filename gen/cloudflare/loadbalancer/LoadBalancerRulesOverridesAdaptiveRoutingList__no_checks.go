@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) validateGetPar
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesAdaptiveRoutingList) validateSetWra
 	return nil
 }
 
-func validateNewLoadBalancerRulesOverridesAdaptiveRoutingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoadBalancerRulesOverridesAdaptiveRoutingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

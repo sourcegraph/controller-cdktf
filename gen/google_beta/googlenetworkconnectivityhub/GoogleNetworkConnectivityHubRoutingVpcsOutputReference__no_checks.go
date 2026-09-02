@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityHubRoutingVpcsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkConnectivityHubRoutingVpcsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkConnectivityHubRoutingVpcsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

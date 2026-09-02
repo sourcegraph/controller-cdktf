@@ -56,6 +56,10 @@ func (m *jsiiProxy_ManagedKafkaAcl) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (m *jsiiProxy_ManagedKafkaAcl) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_ManagedKafkaAcl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (m *jsiiProxy_ManagedKafkaAcl) validatePutAclEntriesParameters(value interf
 }
 
 func (m *jsiiProxy_ManagedKafkaAcl) validatePutTimeoutsParameters(value *ManagedKafkaAclTimeouts) error {
+	return nil
+}
+
+func (m *jsiiProxy_ManagedKafkaAcl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_ManagedKafkaAcl) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaAcl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ManagedKafkaAcl) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

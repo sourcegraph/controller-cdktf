@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHosts
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHosts
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigContainerdConfigRegistryHostsHosts
 	return nil
 }
 
-func validateNewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewContainerNodePoolNodeConfigContainerdConfigRegistryHostsHostsHeaderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -5,7 +5,7 @@ package cloudhsmv2cluster
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateGetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewCloudhsmV2ClusterClusterCertificatesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudhsmV2ClusterClusterCertificatesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

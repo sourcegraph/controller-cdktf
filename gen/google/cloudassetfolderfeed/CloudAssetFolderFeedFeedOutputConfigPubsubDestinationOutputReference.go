@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudassetfolderfeed/internal"
 )
 
 type CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Topic() *string
 	SetTopic(val *string)
 	TopicInput() *string
@@ -45,7 +45,7 @@ type CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference interf
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference interf
 
 // The jsii proxy struct for CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference
 type jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference) ComplexObjectIndex() interface{} {
@@ -139,8 +139,8 @@ func (j *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputRe
 }
 
 
-func NewCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference {
+func NewCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference(ter
 	j := jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference(ter
 	return &j
 }
 
-func NewCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference_Override(c CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference_Override(c CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference",
+		"@cdktn/provider-google.cloudAssetFolderFeed.CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputRe
 	)
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -420,8 +420,8 @@ func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -433,24 +433,24 @@ func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (c *jsiiProxy_CloudAssetFolderFeedFeedOutputConfigPubsubDestinationOutputRe
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsPrometheusWorkspace) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsPrometheusWorkspace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsPrometheusWorkspace_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsPrometheusWorkspace) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsPrometheusWorkspace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsPrometheusWorkspace) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

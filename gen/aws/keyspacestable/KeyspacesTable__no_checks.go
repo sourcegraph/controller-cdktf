@@ -56,6 +56,10 @@ func (k *jsiiProxy_KeyspacesTable) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (k *jsiiProxy_KeyspacesTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KeyspacesTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -100,6 +104,10 @@ func (k *jsiiProxy_KeyspacesTable) validatePutTtlParameters(value *KeyspacesTabl
 	return nil
 }
 
+func (k *jsiiProxy_KeyspacesTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateKeyspacesTable_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -136,7 +144,7 @@ func (j *jsiiProxy_KeyspacesTable) validateSetKeyspaceNameParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTable) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KeyspacesTable) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

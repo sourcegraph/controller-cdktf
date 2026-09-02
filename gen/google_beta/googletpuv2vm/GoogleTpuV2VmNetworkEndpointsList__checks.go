@@ -5,7 +5,7 @@ package googletpuv2vm
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleTpuV2VmNetworkEndpointsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkEndpointsList) validateGetParameters(inde
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmNetworkEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleTpuV2VmNetworkEndpointsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkEndpointsList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkEndpointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkEndpointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkEndpointsList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewGoogleTpuV2VmNetworkEndpointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleTpuV2VmNetworkEndpointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

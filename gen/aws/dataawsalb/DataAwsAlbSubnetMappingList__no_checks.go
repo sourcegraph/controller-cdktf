@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsAlbSubnetMappingList) validateGetParameters(index *flo
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbSubnetMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAlbSubnetMappingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsAlbSubnetMappingList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAlbSubnetMappingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsAlbSubnetMappingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsAlbSubnetMappingList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewDataAwsAlbSubnetMappingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsAlbSubnetMappingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

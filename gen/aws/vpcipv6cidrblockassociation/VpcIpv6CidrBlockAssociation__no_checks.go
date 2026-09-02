@@ -56,6 +56,10 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateInterpolationForAttribut
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateOverrideLogicalIdParamet
 }
 
 func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validatePutTimeoutsParameters(value *VpcIpv6CidrBlockAssociationTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpv6CidrBlockAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetIpv6NetmaskLengthPara
 	return nil
 }
 
-func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VpcIpv6CidrBlockAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

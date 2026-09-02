@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePubsubSubscriptionDeadLetterPolicyOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionDeadLetterPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionDeadLetterPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionDeadLetterPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionDeadLetterPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GooglePubsubSubscriptionDeadLetterPolicyOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionDeadLetterPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionDeadLetterPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePubsubSubscriptionDeadLetterPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePubsubSubscriptionDeadLetterPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

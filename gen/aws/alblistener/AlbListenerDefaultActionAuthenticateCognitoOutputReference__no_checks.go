@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) v
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_AlbListenerDefaultActionAuthenticateCognitoOutputReference) v
 	return nil
 }
 
-func validateNewAlbListenerDefaultActionAuthenticateCognitoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlbListenerDefaultActionAuthenticateCognitoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

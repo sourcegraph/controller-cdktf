@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigFilterExcludedClo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigFilterExcludedClo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleStorageControlFolderIntelligenceConfigFilterExcludedCloudStorageLocationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

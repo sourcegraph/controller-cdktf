@@ -12,7 +12,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) validateGetParameters(ind
 	return nil
 }
 
-func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewOrgPolicyPolicyDryRunSpecRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOrgPolicyPolicyDryRunSpecRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

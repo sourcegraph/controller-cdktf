@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeSslPolicy) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeSslPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeSslPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeSslPolicy) validateOverrideLogicalIdParameters(n
 }
 
 func (g *jsiiProxy_GoogleComputeSslPolicy) validatePutTimeoutsParameters(value *GoogleComputeSslPolicyTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeSslPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleComputeSslPolicy) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSslPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeSslPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DbInstanceAutomatedBackupsReplicationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDbInstanceAutomatedBackupsReplicationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDbInstanceAutomatedBackupsReplicationTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

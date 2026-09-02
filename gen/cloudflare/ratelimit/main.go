@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimit",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimit",
 		reflect.TypeOf((*RateLimit)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "match", GoGetter: "Match"},
 			_jsii_.MemberProperty{JsiiProperty: "matchInput", GoGetter: "MatchInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -61,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCorrelate", GoMethod: "PutCorrelate"},
 			_jsii_.MemberMethod{JsiiMethod: "putMatch", GoMethod: "PutMatch"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBypassUrlPatterns", GoMethod: "ResetBypassUrlPatterns"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCorrelate", GoMethod: "ResetCorrelate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -79,21 +81,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_RateLimit{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitAction",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitAction",
 		reflect.TypeOf((*RateLimitAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitActionOutputReference",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitActionOutputReference",
 		reflect.TypeOf((*RateLimitActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,16 +132,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RateLimitActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitActionResponse",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitActionResponse",
 		reflect.TypeOf((*RateLimitActionResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitActionResponseOutputReference",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitActionResponseOutputReference",
 		reflect.TypeOf((*RateLimitActionResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -169,20 +172,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RateLimitActionResponseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitConfig",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitConfig",
 		reflect.TypeOf((*RateLimitConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitCorrelate",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitCorrelate",
 		reflect.TypeOf((*RateLimitCorrelate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitCorrelateOutputReference",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitCorrelateOutputReference",
 		reflect.TypeOf((*RateLimitCorrelateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "by", GoGetter: "By"},
@@ -212,16 +215,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RateLimitCorrelateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatch",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitMatch",
 		reflect.TypeOf((*RateLimitMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchOutputReference",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitMatchOutputReference",
 		reflect.TypeOf((*RateLimitMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -256,16 +259,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RateLimitMatchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchRequest",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitMatchRequest",
 		reflect.TypeOf((*RateLimitMatchRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchRequestOutputReference",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitMatchRequestOutputReference",
 		reflect.TypeOf((*RateLimitMatchRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -301,16 +304,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RateLimitMatchRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchResponse",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitMatchResponse",
 		reflect.TypeOf((*RateLimitMatchResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.rateLimit.RateLimitMatchResponseOutputReference",
+		"@cdktn/provider-cloudflare.rateLimit.RateLimitMatchResponseOutputReference",
 		reflect.TypeOf((*RateLimitMatchResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -346,7 +349,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_RateLimitMatchResponseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

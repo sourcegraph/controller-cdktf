@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleoracledatabaseexascaledbstoragevault/internal"
 )
 
 type GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalFlashCachePercent() *float64
 	SetAdditionalFlashCachePercent(val *float64)
 	AdditionalFlashCachePercentInput() *float64
@@ -44,9 +44,9 @@ type GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeZone() GoogleOracleDatabaseExascaleDbStorageVaultPropertiesTimeZoneOutputReference
 	TimeZoneInput() *GoogleOracleDatabaseExascaleDbStorageVaultPropertiesTimeZone
 	VmClusterCount() *float64
@@ -56,7 +56,7 @@ type GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference interfa
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,16 +72,16 @@ type GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutExascaleDbStorageDetails(value *GoogleOracleDatabaseExascaleDbStorageVaultPropertiesExascaleDbStorageDetails)
 	PutTimeZone(value *GoogleOracleDatabaseExascaleDbStorageVaultPropertiesTimeZone)
 	ResetAdditionalFlashCachePercent()
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,7 +91,7 @@ type GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference interfa
 
 // The jsii proxy struct for GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference
 type jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) AdditionalFlashCachePercent() *float64 {
@@ -244,8 +244,8 @@ func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -295,7 +295,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputRef
 }
 
 
-func NewGoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference {
+func NewGoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -304,7 +304,7 @@ func NewGoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference(terr
 	j := jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOracleDatabaseExascaleDbStorageVault.GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference",
+		"@cdktn/provider-google-beta.googleOracleDatabaseExascaleDbStorageVault.GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -312,11 +312,11 @@ func NewGoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference(terr
 	return &j
 }
 
-func NewGoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference_Override(g GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference_Override(g GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleOracleDatabaseExascaleDbStorageVault.GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference",
+		"@cdktn/provider-google-beta.googleOracleDatabaseExascaleDbStorageVault.GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -377,7 +377,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -417,11 +417,11 @@ func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -545,8 +545,8 @@ func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -558,16 +558,16 @@ func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -612,8 +612,8 @@ func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputRef
 	)
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -621,7 +621,7 @@ func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultPropertiesOutputRef
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

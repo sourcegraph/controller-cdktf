@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDialogflowGeneratorSummarizationContextSummarizationSec
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowGeneratorSummarizationContextSummarizationSectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowGeneratorSummarizationContextSummarizationSectionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDialogflowGeneratorSummarizationContextSummarizationSec
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowGeneratorSummarizationContextSummarizationSectionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowGeneratorSummarizationContextSummarizationSectionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDialogflowGeneratorSummarizationContextSummarizationSec
 	return nil
 }
 
-func validateNewGoogleDialogflowGeneratorSummarizationContextSummarizationSectionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowGeneratorSummarizationContextSummarizationSectionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

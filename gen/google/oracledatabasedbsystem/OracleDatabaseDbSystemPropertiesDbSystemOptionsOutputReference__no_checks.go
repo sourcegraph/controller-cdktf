@@ -40,11 +40,11 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReferenc
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOracleDatabaseDbSystemPropertiesDbSystemOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

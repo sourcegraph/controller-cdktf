@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataKubernetesConfigMap) validatePutMetadataParameters(value 
 	return nil
 }
 
+func (d *jsiiProxy_DataKubernetesConfigMap) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataKubernetesConfigMap_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataKubernetesConfigMap) validateSetImmutableParameters(val i
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesConfigMap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataKubernetesConfigMap) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

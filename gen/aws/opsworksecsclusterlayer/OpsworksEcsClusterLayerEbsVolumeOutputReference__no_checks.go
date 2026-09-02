@@ -40,11 +40,11 @@ func (o *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateGetS
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeOutputReference) validateSetT
 	return nil
 }
 
-func validateNewOpsworksEcsClusterLayerEbsVolumeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOpsworksEcsClusterLayerEbsVolumeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

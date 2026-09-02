@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterInclusionLabels
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterInclusionLabels
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleOsConfigOsPolicyAssignmentInstanceFilterInclusionLabels
 	return nil
 }
 
-func validateNewGoogleOsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleOsConfigOsPolicyAssignmentInstanceFilterInclusionLabelsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultR
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultR
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSagemakerDomainDefaultUserSettingsRSessionAppSettingsDefaultResourceSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

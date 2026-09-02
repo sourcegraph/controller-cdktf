@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleComputeInterconnectLocation) validateOverrideLogica
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleComputeInterconnectLocation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleComputeInterconnectLocation_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleComputeInterconnectLocation) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInterconnectLocation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleComputeInterconnectLocation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

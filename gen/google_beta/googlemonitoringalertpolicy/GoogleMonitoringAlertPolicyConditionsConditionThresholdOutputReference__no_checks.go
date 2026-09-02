@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -108,7 +108,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdOutput
 	return nil
 }
 
-func validateNewGoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMonitoringAlertPolicyConditionsConditionThresholdOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

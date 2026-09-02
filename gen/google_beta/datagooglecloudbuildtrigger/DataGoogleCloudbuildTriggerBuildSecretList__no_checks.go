@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildSecretList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildSecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudbuildTriggerBuildSecretList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildSecretList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildSecretList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildSecretList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleCloudbuildTriggerBuildSecretList) validateSetWrapsS
 	return nil
 }
 
-func validateNewDataGoogleCloudbuildTriggerBuildSecretListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleCloudbuildTriggerBuildSecretListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

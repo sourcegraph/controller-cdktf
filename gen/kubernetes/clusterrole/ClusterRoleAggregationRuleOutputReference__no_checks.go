@@ -40,7 +40,7 @@ func (c *jsiiProxy_ClusterRoleAggregationRuleOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleAggregationRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterRoleAggregationRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ClusterRoleAggregationRuleOutputReference) validatePutCluster
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleAggregationRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterRoleAggregationRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ClusterRoleAggregationRuleOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleAggregationRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClusterRoleAggregationRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewClusterRoleAggregationRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewClusterRoleAggregationRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

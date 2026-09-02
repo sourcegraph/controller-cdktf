@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/securityhubinsight/internal"
 )
 
 type SecurityhubInsightFiltersNetworkSourceDomainOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Comparison() *string
 	SetComparison(val *string)
 	ComparisonInput() *string
@@ -37,9 +37,9 @@ type SecurityhubInsightFiltersNetworkSourceDomainOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -48,7 +48,7 @@ type SecurityhubInsightFiltersNetworkSourceDomainOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type SecurityhubInsightFiltersNetworkSourceDomainOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type SecurityhubInsightFiltersNetworkSourceDomainOutputReference interface {
 
 // The jsii proxy struct for SecurityhubInsightFiltersNetworkSourceDomainOutputReference
 type jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) Comparison() *string {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) 
 }
 
 
-func NewSecurityhubInsightFiltersNetworkSourceDomainOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourceDomainOutputReference {
+func NewSecurityhubInsightFiltersNetworkSourceDomainOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersNetworkSourceDomainOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSecurityhubInsightFiltersNetworkSourceDomainOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersNetworkSourceDomainOutputReference(terraformRes
 	j := jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference",
+		"@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewSecurityhubInsightFiltersNetworkSourceDomainOutputReference(terraformRes
 	return &j
 }
 
-func NewSecurityhubInsightFiltersNetworkSourceDomainOutputReference_Override(s SecurityhubInsightFiltersNetworkSourceDomainOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSecurityhubInsightFiltersNetworkSourceDomainOutputReference_Override(s SecurityhubInsightFiltersNetworkSourceDomainOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference",
+		"@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersNetworkSourceDomainOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -454,8 +454,8 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -467,24 +467,24 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersNetworkSourceDomainOutputReference) 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

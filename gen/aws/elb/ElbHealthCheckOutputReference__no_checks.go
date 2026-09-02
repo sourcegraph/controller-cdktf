@@ -40,11 +40,11 @@ func (e *jsiiProxy_ElbHealthCheckOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (e *jsiiProxy_ElbHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElbHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElbHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElbHealthCheckOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ElbHealthCheckOutputReference) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_ElbHealthCheckOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ElbHealthCheckOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_ElbHealthCheckOutputReference) validateSetUnhealthyThresholdP
 	return nil
 }
 
-func validateNewElbHealthCheckOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewElbHealthCheckOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

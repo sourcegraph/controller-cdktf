@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirebaseDataConnectServiceTimeoutsOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseDataConnectServiceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseDataConnectServiceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseDataConnectServiceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseDataConnectServiceTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleFirebaseDataConnectServiceTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseDataConnectServiceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseDataConnectServiceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleFirebaseDataConnectServiceTimeoutsOutputReference) vali
 	return nil
 }
 
-func validateNewGoogleFirebaseDataConnectServiceTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleFirebaseDataConnectServiceTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

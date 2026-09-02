@@ -40,7 +40,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validatePutApplication
 	return nil
 }
 
-func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubCurationEndpointOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ApihubCurationEndpointOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_ApihubCurationEndpointOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApihubCurationEndpointOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApihubCurationEndpointOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApihubCurationEndpointOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

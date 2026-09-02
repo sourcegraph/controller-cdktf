@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/csidriverv1/internal"
 )
 
 type CsiDriverV1MetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -48,16 +48,16 @@ type CsiDriverV1MetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type CsiDriverV1MetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetGenerateName()
 	ResetLabels()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type CsiDriverV1MetadataOutputReference interface {
 
 // The jsii proxy struct for CsiDriverV1MetadataOutputReference
 type jsiiProxy_CsiDriverV1MetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CsiDriverV1MetadataOutputReference) Annotations() *map[string]*string {
@@ -255,8 +255,8 @@ func (j *jsiiProxy_CsiDriverV1MetadataOutputReference) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_CsiDriverV1MetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CsiDriverV1MetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -276,7 +276,7 @@ func (j *jsiiProxy_CsiDriverV1MetadataOutputReference) Uid() *string {
 }
 
 
-func NewCsiDriverV1MetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CsiDriverV1MetadataOutputReference {
+func NewCsiDriverV1MetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CsiDriverV1MetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCsiDriverV1MetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -285,7 +285,7 @@ func NewCsiDriverV1MetadataOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_CsiDriverV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.csiDriverV1.CsiDriverV1MetadataOutputReference",
+		"@cdktn/provider-kubernetes.csiDriverV1.CsiDriverV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -293,11 +293,11 @@ func NewCsiDriverV1MetadataOutputReference(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewCsiDriverV1MetadataOutputReference_Override(c CsiDriverV1MetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCsiDriverV1MetadataOutputReference_Override(c CsiDriverV1MetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.csiDriverV1.CsiDriverV1MetadataOutputReference",
+		"@cdktn/provider-kubernetes.csiDriverV1.CsiDriverV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -391,7 +391,7 @@ func (j *jsiiProxy_CsiDriverV1MetadataOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_CsiDriverV1MetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CsiDriverV1MetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,11 +431,11 @@ func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -559,8 +559,8 @@ func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) GetStringMapAttribute(ter
 	return returns
 }
 
-func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -572,16 +572,16 @@ func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -620,8 +620,8 @@ func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) ResetName() {
 	)
 }
 
-func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -629,7 +629,7 @@ func (c *jsiiProxy_CsiDriverV1MetadataOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

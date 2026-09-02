@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfig",
+		"@cdktn/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfig",
 		reflect.TypeOf((*GoogleKmsProjectKajPolicyConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -38,6 +38,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -50,6 +51,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDefaultKeyAccessJustificationPolicy", GoMethod: "PutDefaultKeyAccessJustificationPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultKeyAccessJustificationPolicy", GoMethod: "ResetDefaultKeyAccessJustificationPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -66,23 +68,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleKmsProjectKajPolicyConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfigConfig",
+		"@cdktn/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfigConfig",
 		reflect.TypeOf((*GoogleKmsProjectKajPolicyConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicy",
+		"@cdktn/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicy",
 		reflect.TypeOf((*GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReference",
 		reflect.TypeOf((*GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedAccessReasons", GoGetter: "AllowedAccessReasons"},
@@ -112,16 +115,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleKmsProjectKajPolicyConfigDefaultKeyAccessJustificationPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfigTimeouts",
+		"@cdktn/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfigTimeouts",
 		reflect.TypeOf((*GoogleKmsProjectKajPolicyConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfigTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleKmsProjectKajPolicyConfig.GoogleKmsProjectKajPolicyConfigTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleKmsProjectKajPolicyConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,7 +160,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleKmsProjectKajPolicyConfigTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

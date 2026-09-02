@@ -56,6 +56,10 @@ func (w *jsiiProxy_WaitingRoom) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (w *jsiiProxy_WaitingRoom) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WaitingRoom) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (w *jsiiProxy_WaitingRoom) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (w *jsiiProxy_WaitingRoom) validatePutTimeoutsParameters(value *WaitingRoomTimeouts) error {
+	return nil
+}
+
+func (w *jsiiProxy_WaitingRoom) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_WaitingRoom) validateSetJsonResponseEnabledParameters(val int
 	return nil
 }
 
-func (j *jsiiProxy_WaitingRoom) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_WaitingRoom) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

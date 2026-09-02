@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigList) validateGetParameters(index *flo
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertRouteChannelConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteChannelConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewAlertRouteChannelConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlertRouteChannelConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

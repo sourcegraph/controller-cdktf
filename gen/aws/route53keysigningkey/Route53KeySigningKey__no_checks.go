@@ -56,6 +56,10 @@ func (r *jsiiProxy_Route53KeySigningKey) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (r *jsiiProxy_Route53KeySigningKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_Route53KeySigningKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (r *jsiiProxy_Route53KeySigningKey) validateMoveToIdParameters(id *string) 
 }
 
 func (r *jsiiProxy_Route53KeySigningKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_Route53KeySigningKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_Route53KeySigningKey) validateSetKeyManagementServiceArnParam
 	return nil
 }
 
-func (j *jsiiProxy_Route53KeySigningKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Route53KeySigningKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

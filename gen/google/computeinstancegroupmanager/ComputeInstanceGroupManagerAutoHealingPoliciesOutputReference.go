@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinstancegroupmanager/internal"
 )
 
 type ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference interface {
 
 // The jsii proxy struct for ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 type jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 }
 
 
-func NewComputeInstanceGroupManagerAutoHealingPoliciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference {
+func NewComputeInstanceGroupManagerAutoHealingPoliciesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeInstanceGroupManagerAutoHealingPoliciesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewComputeInstanceGroupManagerAutoHealingPoliciesOutputReference(terraformR
 	j := jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference",
+		"@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewComputeInstanceGroupManagerAutoHealingPoliciesOutputReference(terraformR
 	return &j
 }
 
-func NewComputeInstanceGroupManagerAutoHealingPoliciesOutputReference_Override(c ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeInstanceGroupManagerAutoHealingPoliciesOutputReference_Override(c ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference",
+		"@cdktn/provider-google.computeInstanceGroupManager.ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -454,8 +454,8 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -467,24 +467,24 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerAutoHealingPoliciesOutputReference
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

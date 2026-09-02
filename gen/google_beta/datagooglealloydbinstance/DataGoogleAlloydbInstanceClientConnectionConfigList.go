@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglealloydbinstance/internal"
 )
 
 type DataGoogleAlloydbInstanceClientConnectionConfigList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type DataGoogleAlloydbInstanceClientConnectionConfigList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataGoogleAlloydbInstanceClientConnectionConfigOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type DataGoogleAlloydbInstanceClientConnectionConfigList interface {
 
 // The jsii proxy struct for DataGoogleAlloydbInstanceClientConnectionConfigList
 type jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList) WrapsSet
 }
 
 
-func NewDataGoogleAlloydbInstanceClientConnectionConfigList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAlloydbInstanceClientConnectionConfigList {
+func NewDataGoogleAlloydbInstanceClientConnectionConfigList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleAlloydbInstanceClientConnectionConfigList {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleAlloydbInstanceClientConnectionConfigListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewDataGoogleAlloydbInstanceClientConnectionConfigList(terraformResource cd
 	j := jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleAlloydbInstance.DataGoogleAlloydbInstanceClientConnectionConfigList",
+		"@cdktn/provider-google-beta.dataGoogleAlloydbInstance.DataGoogleAlloydbInstanceClientConnectionConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewDataGoogleAlloydbInstanceClientConnectionConfigList(terraformResource cd
 	return &j
 }
 
-func NewDataGoogleAlloydbInstanceClientConnectionConfigList_Override(d DataGoogleAlloydbInstanceClientConnectionConfigList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataGoogleAlloydbInstanceClientConnectionConfigList_Override(d DataGoogleAlloydbInstanceClientConnectionConfigList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleAlloydbInstance.DataGoogleAlloydbInstanceClientConnectionConfigList",
+		"@cdktn/provider-google-beta.dataGoogleAlloydbInstance.DataGoogleAlloydbInstanceClientConnectionConfigList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList)SetWrapsS
 	)
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -205,8 +208,8 @@ func (d *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList) Get(inde
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (d *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigList) Resolve(
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

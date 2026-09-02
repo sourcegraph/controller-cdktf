@@ -40,11 +40,11 @@ func (i *jsiiProxy_IotThingGroupMetadataOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (i *jsiiProxy_IotThingGroupMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotThingGroupMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotThingGroupMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotThingGroupMetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_IotThingGroupMetadataOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_IotThingGroupMetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotThingGroupMetadataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIotThingGroupMetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewIotThingGroupMetadataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

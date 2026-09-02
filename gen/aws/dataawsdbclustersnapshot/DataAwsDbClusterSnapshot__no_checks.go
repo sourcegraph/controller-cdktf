@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsDbClusterSnapshot) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsDbClusterSnapshot) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsDbClusterSnapshot_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -92,7 +96,7 @@ func (j *jsiiProxy_DataAwsDbClusterSnapshot) validateSetIncludeSharedParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDbClusterSnapshot) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsDbClusterSnapshot) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

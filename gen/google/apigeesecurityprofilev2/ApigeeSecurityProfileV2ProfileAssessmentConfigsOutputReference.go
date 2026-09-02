@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/apigeesecurityprofilev2/internal"
 )
 
 type ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Assessment() *string
 	SetAssessment(val *string)
 	AssessmentInput() *string
@@ -37,9 +37,9 @@ type ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Weight() *string
 	SetWeight(val *string)
 	WeightInput() *string
@@ -48,7 +48,7 @@ type ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference interface {
 
 // The jsii proxy struct for ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference
 type jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference) Assessment() *string {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReferenc
 }
 
 
-func NewApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference {
+func NewApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference(terraform
 	j := jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference",
+		"@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference(terraform
 	return &j
 }
 
-func NewApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference_Override(a ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference_Override(a ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference",
+		"@cdktn/provider-google.apigeeSecurityProfileV2.ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReferenc
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -454,8 +454,8 @@ func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReferenc
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -467,24 +467,24 @@ func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReferenc
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (a *jsiiProxy_ApigeeSecurityProfileV2ProfileAssessmentConfigsOutputReferenc
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

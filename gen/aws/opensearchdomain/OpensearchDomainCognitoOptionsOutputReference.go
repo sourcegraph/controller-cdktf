@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/opensearchdomain/internal"
 )
 
 type OpensearchDomainCognitoOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type OpensearchDomainCognitoOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UserPoolId() *string
 	SetUserPoolId(val *string)
 	UserPoolIdInput() *string
@@ -54,7 +54,7 @@ type OpensearchDomainCognitoOptionsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,13 +70,13 @@ type OpensearchDomainCognitoOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type OpensearchDomainCognitoOptionsOutputReference interface {
 
 // The jsii proxy struct for OpensearchDomainCognitoOptionsOutputReference
 type jsiiProxy_OpensearchDomainCognitoOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -209,8 +209,8 @@ func (j *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -240,7 +240,7 @@ func (j *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) UserPoolIdInpu
 }
 
 
-func NewOpensearchDomainCognitoOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpensearchDomainCognitoOptionsOutputReference {
+func NewOpensearchDomainCognitoOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) OpensearchDomainCognitoOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOpensearchDomainCognitoOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -249,7 +249,7 @@ func NewOpensearchDomainCognitoOptionsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_OpensearchDomainCognitoOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainCognitoOptionsOutputReference",
+		"@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -257,11 +257,11 @@ func NewOpensearchDomainCognitoOptionsOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewOpensearchDomainCognitoOptionsOutputReference_Override(o OpensearchDomainCognitoOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOpensearchDomainCognitoOptionsOutputReference_Override(o OpensearchDomainCognitoOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opensearchDomain.OpensearchDomainCognitoOptionsOutputReference",
+		"@cdktn/provider-aws.opensearchDomain.OpensearchDomainCognitoOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -344,7 +344,7 @@ func (j *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -395,11 +395,11 @@ func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -523,8 +523,8 @@ func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) GetStringMapAt
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -536,16 +536,16 @@ func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) InterpolationA
 	return returns
 }
 
-func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -560,8 +560,8 @@ func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) ResetEnabled()
 	)
 }
 
-func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -569,7 +569,7 @@ func (o *jsiiProxy_OpensearchDomainCognitoOptionsOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

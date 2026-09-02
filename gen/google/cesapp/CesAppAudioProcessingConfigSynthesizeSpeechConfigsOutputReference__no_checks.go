@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputRefer
 	return nil
 }
 
-func validateNewCesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

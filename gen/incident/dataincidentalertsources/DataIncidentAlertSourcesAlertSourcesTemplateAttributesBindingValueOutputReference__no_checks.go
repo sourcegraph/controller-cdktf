@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataIncidentAlertSourcesAlertSourcesTemplateAttributesBinding
 	return nil
 }
 
-func (d *jsiiProxy_DataIncidentAlertSourcesAlertSourcesTemplateAttributesBindingValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIncidentAlertSourcesAlertSourcesTemplateAttributesBindingValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIncidentAlertSourcesAlertSourcesTemplateAttributesBindingValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIncidentAlertSourcesAlertSourcesTemplateAttributesBindingValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataIncidentAlertSourcesAlertSourcesTemplateAttributesBinding
 	return nil
 }
 
-func (j *jsiiProxy_DataIncidentAlertSourcesAlertSourcesTemplateAttributesBindingValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataIncidentAlertSourcesAlertSourcesTemplateAttributesBindingValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataIncidentAlertSourcesAlertSourcesTemplateAttributesBindingValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataIncidentAlertSourcesAlertSourcesTemplateAttributesBindingValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

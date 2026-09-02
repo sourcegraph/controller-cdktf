@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleGkeHubScopeStateList) validateGetParameters(index *floa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubScopeStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeHubScopeStateList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleGkeHubScopeStateList) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubScopeStateList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeHubScopeStateList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleGkeHubScopeStateList) validateSetWrapsSetParameters(val
 	return nil
 }
 
-func validateNewGoogleGkeHubScopeStateListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleGkeHubScopeStateListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

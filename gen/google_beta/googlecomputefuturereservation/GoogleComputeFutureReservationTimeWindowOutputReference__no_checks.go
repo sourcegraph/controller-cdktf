@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationTimeWindowOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFutureReservationTimeWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeFutureReservationTimeWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationTimeWindowOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFutureReservationTimeWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeFutureReservationTimeWindowOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleComputeFutureReservationTimeWindowOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationTimeWindowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationTimeWindowOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeFutureReservationTimeWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeFutureReservationTimeWindowOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

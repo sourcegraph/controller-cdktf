@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfig
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfig
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleContainerClusterIpAllocationPolicyNetworkTierConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AmazonKinesisFirehoseSettings() GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference
 	AmazonKinesisFirehoseSettingsInput() *GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettings
 	AmazonS3Settings() GoogleChronicleFeedDetailsAmazonS3SettingsOutputReference
@@ -167,9 +167,9 @@ type GoogleChronicleFeedDetailsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ThinkstCanarySettings() GoogleChronicleFeedDetailsThinkstCanarySettingsOutputReference
 	ThinkstCanarySettingsInput() *GoogleChronicleFeedDetailsThinkstCanarySettings
 	ThreatConnectIocSettings() GoogleChronicleFeedDetailsThreatConnectIocSettingsOutputReference
@@ -205,7 +205,7 @@ type GoogleChronicleFeedDetailsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -221,9 +221,9 @@ type GoogleChronicleFeedDetailsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAmazonKinesisFirehoseSettings(value *GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettings)
 	PutAmazonS3Settings(value *GoogleChronicleFeedDetailsAmazonS3Settings)
 	PutAmazonS3V2Settings(value *GoogleChronicleFeedDetailsAmazonS3V2Settings)
@@ -379,7 +379,7 @@ type GoogleChronicleFeedDetailsOutputReference interface {
 	ResetWorkspaceUsersSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -389,7 +389,7 @@ type GoogleChronicleFeedDetailsOutputReference interface {
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) AmazonKinesisFirehoseSettings() GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference {
@@ -1742,8 +1742,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -2053,7 +2053,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) WorkspaceUsersSett
 }
 
 
-func NewGoogleChronicleFeedDetailsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsOutputReference {
+func NewGoogleChronicleFeedDetailsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -2062,7 +2062,7 @@ func NewGoogleChronicleFeedDetailsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_GoogleChronicleFeedDetailsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -2070,11 +2070,11 @@ func NewGoogleChronicleFeedDetailsOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsOutputReference_Override(g GoogleChronicleFeedDetailsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsOutputReference_Override(g GoogleChronicleFeedDetailsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -2168,7 +2168,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -2208,11 +2208,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -2336,8 +2336,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -2349,16 +2349,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -3814,8 +3814,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) ResetWorkspaceUser
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -3823,7 +3823,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

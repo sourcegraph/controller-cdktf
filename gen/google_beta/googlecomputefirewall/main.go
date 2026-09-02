@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewall",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewall",
 		reflect.TypeOf((*GoogleComputeFirewall)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logConfig", GoGetter: "LogConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "logConfigInput", GoGetter: "LogConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -76,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putParams", GoMethod: "PutParams"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllow", GoMethod: "ResetAllow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeny", GoMethod: "ResetDeny"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -117,19 +119,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeFirewall{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallAllow",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallAllow",
 		reflect.TypeOf((*GoogleComputeFirewallAllow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallAllowList",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallAllowList",
 		reflect.TypeOf((*GoogleComputeFirewallAllowList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -146,12 +149,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeFirewallAllowList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallAllowOutputReference",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallAllowOutputReference",
 		reflect.TypeOf((*GoogleComputeFirewallAllowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,20 +186,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeFirewallAllowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallConfig",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallConfig",
 		reflect.TypeOf((*GoogleComputeFirewallConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallDeny",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallDeny",
 		reflect.TypeOf((*GoogleComputeFirewallDeny)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallDenyList",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallDenyList",
 		reflect.TypeOf((*GoogleComputeFirewallDenyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -213,12 +216,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeFirewallDenyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallDenyOutputReference",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallDenyOutputReference",
 		reflect.TypeOf((*GoogleComputeFirewallDenyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -250,16 +253,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeFirewallDenyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfig",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfig",
 		reflect.TypeOf((*GoogleComputeFirewallLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfigOutputReference",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallLogConfigOutputReference",
 		reflect.TypeOf((*GoogleComputeFirewallLogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -288,16 +291,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeFirewallLogConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallParams",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallParams",
 		reflect.TypeOf((*GoogleComputeFirewallParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallParamsOutputReference",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallParamsOutputReference",
 		reflect.TypeOf((*GoogleComputeFirewallParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -327,16 +330,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeFirewallParamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallTimeouts",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallTimeouts",
 		reflect.TypeOf((*GoogleComputeFirewallTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleComputeFirewall.GoogleComputeFirewallTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleComputeFirewallTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -372,7 +375,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleComputeFirewallTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

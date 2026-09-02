@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/daemonsetv1/internal"
 )
 
 type DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Command() *[]*string
 	SetCommand(val *[]*string)
 	CommandInput() *[]*string
@@ -37,15 +37,15 @@ type DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCommand()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference
 
 // The jsii proxy struct for DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference
 type jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) Command() *[]*string {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecO
 	return returns
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecO
 }
 
 
-func NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference {
+func NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputRefere
 	j := jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference",
+		"@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputRefere
 	return &j
 }
 
-func NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference_Override(d DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference_Override(d DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference",
+		"@cdktn/provider-kubernetes.daemonSetV1.DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecO
 	)
 }
 
-func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecO
 	return returns
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -421,8 +421,8 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecO
 	return returns
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -434,16 +434,16 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecO
 	return returns
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecO
 	)
 }
 
-func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (d *jsiiProxy_DaemonSetV1SpecTemplateSpecInitContainerLifecyclePreStopExecO
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

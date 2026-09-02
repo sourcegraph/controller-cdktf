@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfilePersonaPro
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfilePersonaPro
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppDefaultChannelProfilePersonaPro
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotAppDefaultChannelProfilePersonaPropertyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

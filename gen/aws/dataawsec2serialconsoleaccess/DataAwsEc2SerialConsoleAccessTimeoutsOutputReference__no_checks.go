@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsEc2SerialConsoleAccessTimeoutsOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2SerialConsoleAccessTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEc2SerialConsoleAccessTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2SerialConsoleAccessTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2SerialConsoleAccessTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DataAwsEc2SerialConsoleAccessTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2SerialConsoleAccessTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEc2SerialConsoleAccessTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsEc2SerialConsoleAccessTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAwsEc2SerialConsoleAccessTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataCloudflareRulesetsRulesetsList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataCloudflareRulesetsRulesetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCloudflareRulesetsRulesetsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRulesetsRulesetsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataCloudflareRulesetsRulesetsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataCloudflareRulesetsRulesetsList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewDataCloudflareRulesetsRulesetsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataCloudflareRulesetsRulesetsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

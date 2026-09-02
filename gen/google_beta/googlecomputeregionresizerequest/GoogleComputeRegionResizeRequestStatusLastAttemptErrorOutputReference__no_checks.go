@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRegionResizeRequestStatusLastAttemptErrorOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionResizeRequestStatusLastAttemptErrorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRegionResizeRequestStatusLastAttemptErrorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionResizeRequestStatusLastAttemptErrorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionResizeRequestStatusLastAttemptErrorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleComputeRegionResizeRequestStatusLastAttemptErrorOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionResizeRequestStatusLastAttemptErrorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionResizeRequestStatusLastAttemptErrorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeRegionResizeRequestStatusLastAttemptErrorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeRegionResizeRequestStatusLastAttemptErrorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

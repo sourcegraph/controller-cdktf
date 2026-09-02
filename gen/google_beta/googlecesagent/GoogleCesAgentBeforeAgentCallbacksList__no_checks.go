@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesAgentBeforeAgentCallbacksList) validateGetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAgentBeforeAgentCallbacksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAgentBeforeAgentCallbacksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleCesAgentBeforeAgentCallbacksList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAgentBeforeAgentCallbacksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAgentBeforeAgentCallbacksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleCesAgentBeforeAgentCallbacksList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewGoogleCesAgentBeforeAgentCallbacksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesAgentBeforeAgentCallbacksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

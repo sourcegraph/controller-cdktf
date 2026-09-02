@@ -56,6 +56,10 @@ func (s *jsiiProxy_SccV2ProjectSccBigQueryExport) validateInterpolationForAttrib
 	return nil
 }
 
+func (s *jsiiProxy_SccV2ProjectSccBigQueryExport) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccV2ProjectSccBigQueryExport) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SccV2ProjectSccBigQueryExport) validateOverrideLogicalIdParam
 }
 
 func (s *jsiiProxy_SccV2ProjectSccBigQueryExport) validatePutTimeoutsParameters(value *SccV2ProjectSccBigQueryExportTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccV2ProjectSccBigQueryExport) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_SccV2ProjectSccBigQueryExport) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_SccV2ProjectSccBigQueryExport) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SccV2ProjectSccBigQueryExport) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

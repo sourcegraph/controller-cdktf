@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhases
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhases
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhases
 	return nil
 }
 
-func validateNewGoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

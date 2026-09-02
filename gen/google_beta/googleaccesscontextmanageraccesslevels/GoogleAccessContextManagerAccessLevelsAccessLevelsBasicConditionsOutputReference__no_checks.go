@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

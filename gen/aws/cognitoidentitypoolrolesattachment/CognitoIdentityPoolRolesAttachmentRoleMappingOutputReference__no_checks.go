@@ -40,7 +40,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingOutputReference)
 	return nil
 }
 
-func validateNewCognitoIdentityPoolRolesAttachmentRoleMappingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCognitoIdentityPoolRolesAttachmentRoleMappingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

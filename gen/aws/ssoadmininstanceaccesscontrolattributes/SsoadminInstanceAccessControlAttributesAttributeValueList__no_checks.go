@@ -12,7 +12,7 @@ func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueList) va
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueList) va
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SsoadminInstanceAccessControlAttributesAttributeValueList) va
 	return nil
 }
 
-func validateNewSsoadminInstanceAccessControlAttributesAttributeValueListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSsoadminInstanceAccessControlAttributesAttributeValueListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

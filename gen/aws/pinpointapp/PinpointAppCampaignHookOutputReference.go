@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/pinpointapp/internal"
 )
 
 type PinpointAppCampaignHookOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type PinpointAppCampaignHookOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WebUrl() *string
 	SetWebUrl(val *string)
 	WebUrlInput() *string
@@ -51,7 +51,7 @@ type PinpointAppCampaignHookOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type PinpointAppCampaignHookOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetLambdaFunctionName()
 	ResetMode()
 	ResetWebUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type PinpointAppCampaignHookOutputReference interface {
 
 // The jsii proxy struct for PinpointAppCampaignHookOutputReference
 type jsiiProxy_PinpointAppCampaignHookOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) TerraformAttribute() 
 	return returns
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference) WebUrlInput() *string
 }
 
 
-func NewPinpointAppCampaignHookOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PinpointAppCampaignHookOutputReference {
+func NewPinpointAppCampaignHookOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PinpointAppCampaignHookOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPinpointAppCampaignHookOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewPinpointAppCampaignHookOutputReference(terraformResource cdktf.IInterpol
 	j := jsiiProxy_PinpointAppCampaignHookOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference",
+		"@cdktn/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewPinpointAppCampaignHookOutputReference(terraformResource cdktf.IInterpol
 	return &j
 }
 
-func NewPinpointAppCampaignHookOutputReference_Override(p PinpointAppCampaignHookOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPinpointAppCampaignHookOutputReference_Override(p PinpointAppCampaignHookOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference",
+		"@cdktn/provider-aws.pinpointApp.PinpointAppCampaignHookOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetTerraformAttribute(
 	)
 }
 
-func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PinpointAppCampaignHookOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetAnyMapAttribute(te
 	return returns
 }
 
-func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -491,8 +491,8 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) GetStringMapAttribute
 	return returns
 }
 
-func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -504,16 +504,16 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) InterpolationAsList()
 	return returns
 }
 
-func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) ResetWebUrl() {
 	)
 }
 
-func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (p *jsiiProxy_PinpointAppCampaignHookOutputReference) Resolve(_context cdkt
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

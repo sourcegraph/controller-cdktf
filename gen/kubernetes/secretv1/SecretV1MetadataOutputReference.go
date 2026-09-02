@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/secretv1/internal"
 )
 
 type SecretV1MetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -51,16 +51,16 @@ type SecretV1MetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type SecretV1MetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetGenerateName()
 	ResetLabels()
@@ -86,7 +86,7 @@ type SecretV1MetadataOutputReference interface {
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type SecretV1MetadataOutputReference interface {
 
 // The jsii proxy struct for SecretV1MetadataOutputReference
 type jsiiProxy_SecretV1MetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SecretV1MetadataOutputReference) Annotations() *map[string]*string {
@@ -279,8 +279,8 @@ func (j *jsiiProxy_SecretV1MetadataOutputReference) TerraformAttribute() *string
 	return returns
 }
 
-func (j *jsiiProxy_SecretV1MetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SecretV1MetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -300,7 +300,7 @@ func (j *jsiiProxy_SecretV1MetadataOutputReference) Uid() *string {
 }
 
 
-func NewSecretV1MetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SecretV1MetadataOutputReference {
+func NewSecretV1MetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SecretV1MetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSecretV1MetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -309,7 +309,7 @@ func NewSecretV1MetadataOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_SecretV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference",
+		"@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -317,11 +317,11 @@ func NewSecretV1MetadataOutputReference(terraformResource cdktf.IInterpolatingPa
 	return &j
 }
 
-func NewSecretV1MetadataOutputReference_Override(s SecretV1MetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSecretV1MetadataOutputReference_Override(s SecretV1MetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.secretV1.SecretV1MetadataOutputReference",
+		"@cdktn/provider-kubernetes.secretV1.SecretV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -426,7 +426,7 @@ func (j *jsiiProxy_SecretV1MetadataOutputReference)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_SecretV1MetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecretV1MetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,11 +466,11 @@ func (s *jsiiProxy_SecretV1MetadataOutputReference) GetAnyMapAttribute(terraform
 	return returns
 }
 
-func (s *jsiiProxy_SecretV1MetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecretV1MetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -594,8 +594,8 @@ func (s *jsiiProxy_SecretV1MetadataOutputReference) GetStringMapAttribute(terraf
 	return returns
 }
 
-func (s *jsiiProxy_SecretV1MetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SecretV1MetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -607,16 +607,16 @@ func (s *jsiiProxy_SecretV1MetadataOutputReference) InterpolationAsList() cdktf.
 	return returns
 }
 
-func (s *jsiiProxy_SecretV1MetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SecretV1MetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -663,8 +663,8 @@ func (s *jsiiProxy_SecretV1MetadataOutputReference) ResetNamespace() {
 	)
 }
 
-func (s *jsiiProxy_SecretV1MetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SecretV1MetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -672,7 +672,7 @@ func (s *jsiiProxy_SecretV1MetadataOutputReference) Resolve(_context cdktf.IReso
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

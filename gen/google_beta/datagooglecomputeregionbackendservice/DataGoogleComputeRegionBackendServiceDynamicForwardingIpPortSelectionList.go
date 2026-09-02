@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputeregionbackendservice/internal"
 )
 
 type DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList i
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList i
 
 // The jsii proxy struct for DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList
 type jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortS
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortS
 }
 
 
-func NewDataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList {
+func NewDataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewDataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionLis
 	j := jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList",
+		"@cdktn/provider-google-beta.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewDataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionLis
 	return &j
 }
 
-func NewDataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList_Override(d DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList_Override(d DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList",
+		"@cdktn/provider-google-beta.dataGoogleComputeRegionBackendService.DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortS
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortS
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -205,8 +208,8 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortS
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortSelectionList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceDynamicForwardingIpPortS
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

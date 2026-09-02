@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesList) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesList) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleCloudfunctionsFunctionSecretEnvironmentVariablesList) v
 	return nil
 }
 
-func validateNewGoogleCloudfunctionsFunctionSecretEnvironmentVariablesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCloudfunctionsFunctionSecretEnvironmentVariablesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

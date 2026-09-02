@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNet
 	return nil
 }
 
-func validateNewDataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleVmwareengineClusterDatastoreMountConfigDatastoreNetworkListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

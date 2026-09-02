@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedF
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedF
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedF
 	return nil
 }
 
-func validateNewGoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeRegionSecurityPolicyRuleNetworkMatchUserDefinedFieldsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

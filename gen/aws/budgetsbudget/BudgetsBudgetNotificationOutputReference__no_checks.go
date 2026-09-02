@@ -40,11 +40,11 @@ func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) validateGetStringMa
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetsBudgetNotificationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_BudgetsBudgetNotificationOutputReference) validateSetThreshol
 	return nil
 }
 
-func validateNewBudgetsBudgetNotificationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewBudgetsBudgetNotificationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

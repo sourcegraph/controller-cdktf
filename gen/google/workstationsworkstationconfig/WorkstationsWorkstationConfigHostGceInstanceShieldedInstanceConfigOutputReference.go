@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/workstationsworkstationconfig/internal"
 )
 
 type WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputRef
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputRef
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnableIntegrityMonitoring()
 	ResetEnableSecureBoot()
 	ResetEnableVtpm()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputRef
 
 // The jsii proxy struct for WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference
 type jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 	return returns
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 }
 
 
-func NewWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference {
+func NewWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutput
 	j := jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference",
+		"@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutput
 	return &j
 }
 
-func NewWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference_Override(w WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewWorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference_Override(w WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference",
+		"@cdktn/provider-google.workstationsWorkstationConfig.WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 	)
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -491,8 +491,8 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -504,16 +504,16 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 	return returns
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 	)
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceShieldedInstanceC
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

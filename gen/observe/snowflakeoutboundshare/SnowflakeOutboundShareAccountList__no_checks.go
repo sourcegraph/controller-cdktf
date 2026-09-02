@@ -12,7 +12,7 @@ func (s *jsiiProxy_SnowflakeOutboundShareAccountList) validateGetParameters(inde
 	return nil
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShareAccountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SnowflakeOutboundShareAccountList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SnowflakeOutboundShareAccountList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShareAccountList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SnowflakeOutboundShareAccountList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SnowflakeOutboundShareAccountList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewSnowflakeOutboundShareAccountListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSnowflakeOutboundShareAccountListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

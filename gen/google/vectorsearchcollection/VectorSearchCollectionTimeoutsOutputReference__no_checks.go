@@ -40,11 +40,11 @@ func (v *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_VectorSearchCollectionTimeoutsOutputReference) validateSetUpd
 	return nil
 }
 
-func validateNewVectorSearchCollectionTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVectorSearchCollectionTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

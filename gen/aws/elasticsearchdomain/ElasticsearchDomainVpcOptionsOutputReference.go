@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/elasticsearchdomain/internal"
 )
 
 type ElasticsearchDomainVpcOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AvailabilityZones() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -41,16 +41,16 @@ type ElasticsearchDomainVpcOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VpcId() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,14 +66,14 @@ type ElasticsearchDomainVpcOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetSecurityGroupIds()
 	ResetSubnetIds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type ElasticsearchDomainVpcOptionsOutputReference interface {
 
 // The jsii proxy struct for ElasticsearchDomainVpcOptionsOutputReference
 type jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) AvailabilityZones() *[]*string {
@@ -196,8 +196,8 @@ func (j *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) VpcId() *string
 }
 
 
-func NewElasticsearchDomainVpcOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElasticsearchDomainVpcOptionsOutputReference {
+func NewElasticsearchDomainVpcOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ElasticsearchDomainVpcOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewElasticsearchDomainVpcOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewElasticsearchDomainVpcOptionsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainVpcOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainVpcOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewElasticsearchDomainVpcOptionsOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewElasticsearchDomainVpcOptionsOutputReference_Override(e ElasticsearchDomainVpcOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewElasticsearchDomainVpcOptionsOutputReference_Override(e ElasticsearchDomainVpcOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainVpcOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainVpcOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,11 +350,11 @@ func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -478,8 +478,8 @@ func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -491,16 +491,16 @@ func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) InterpolationAs
 	return returns
 }
 
-func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -523,8 +523,8 @@ func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) ResetSubnetIds(
 	)
 }
 
-func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -532,7 +532,7 @@ func (e *jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

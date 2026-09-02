@@ -40,7 +40,7 @@ func (s *jsiiProxy_ScheduleRotationsOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ScheduleRotationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_ScheduleRotationsOutputReference) validatePutVersionsParamete
 	return nil
 }
 
-func (s *jsiiProxy_ScheduleRotationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ScheduleRotationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ScheduleRotationsOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_ScheduleRotationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ScheduleRotationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewScheduleRotationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewScheduleRotationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

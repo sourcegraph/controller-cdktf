@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputePacketMirroring) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputePacketMirroring) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputePacketMirroring) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleComputePacketMirroring) validatePutNetworkParameters(va
 }
 
 func (g *jsiiProxy_GoogleComputePacketMirroring) validatePutTimeoutsParameters(value *GoogleComputePacketMirroringTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputePacketMirroring) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleComputePacketMirroring) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePacketMirroring) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputePacketMirroring) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

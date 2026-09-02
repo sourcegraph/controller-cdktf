@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleApihubCuration.GoogleApihubCuration",
+		"@cdktn/provider-google-beta.googleApihubCuration.GoogleApihubCuration",
 		reflect.TypeOf((*GoogleApihubCuration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEndpoint", GoMethod: "PutEndpoint"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -81,27 +83,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleApihubCuration{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleApihubCuration.GoogleApihubCurationConfig",
+		"@cdktn/provider-google-beta.googleApihubCuration.GoogleApihubCurationConfig",
 		reflect.TypeOf((*GoogleApihubCurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleApihubCuration.GoogleApihubCurationEndpoint",
+		"@cdktn/provider-google-beta.googleApihubCuration.GoogleApihubCurationEndpoint",
 		reflect.TypeOf((*GoogleApihubCurationEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleApihubCuration.GoogleApihubCurationEndpointApplicationIntegrationEndpointDetails",
+		"@cdktn/provider-google-beta.googleApihubCuration.GoogleApihubCurationEndpointApplicationIntegrationEndpointDetails",
 		reflect.TypeOf((*GoogleApihubCurationEndpointApplicationIntegrationEndpointDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleApihubCuration.GoogleApihubCurationEndpointApplicationIntegrationEndpointDetailsOutputReference",
+		"@cdktn/provider-google-beta.googleApihubCuration.GoogleApihubCurationEndpointApplicationIntegrationEndpointDetailsOutputReference",
 		reflect.TypeOf((*GoogleApihubCurationEndpointApplicationIntegrationEndpointDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -132,12 +135,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleApihubCurationEndpointApplicationIntegrationEndpointDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleApihubCuration.GoogleApihubCurationEndpointOutputReference",
+		"@cdktn/provider-google-beta.googleApihubCuration.GoogleApihubCurationEndpointOutputReference",
 		reflect.TypeOf((*GoogleApihubCurationEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationIntegrationEndpointDetails", GoGetter: "ApplicationIntegrationEndpointDetails"},
@@ -167,16 +170,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleApihubCurationEndpointOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleApihubCuration.GoogleApihubCurationPluginInstanceActions",
+		"@cdktn/provider-google-beta.googleApihubCuration.GoogleApihubCurationPluginInstanceActions",
 		reflect.TypeOf((*GoogleApihubCurationPluginInstanceActions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleApihubCuration.GoogleApihubCurationPluginInstanceActionsList",
+		"@cdktn/provider-google-beta.googleApihubCuration.GoogleApihubCurationPluginInstanceActionsList",
 		reflect.TypeOf((*GoogleApihubCurationPluginInstanceActionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -192,12 +195,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleApihubCurationPluginInstanceActionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleApihubCuration.GoogleApihubCurationPluginInstanceActionsOutputReference",
+		"@cdktn/provider-google-beta.googleApihubCuration.GoogleApihubCurationPluginInstanceActionsOutputReference",
 		reflect.TypeOf((*GoogleApihubCurationPluginInstanceActionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionId", GoGetter: "ActionId"},
@@ -226,16 +229,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleApihubCurationPluginInstanceActionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleApihubCuration.GoogleApihubCurationTimeouts",
+		"@cdktn/provider-google-beta.googleApihubCuration.GoogleApihubCurationTimeouts",
 		reflect.TypeOf((*GoogleApihubCurationTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleApihubCuration.GoogleApihubCurationTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleApihubCuration.GoogleApihubCurationTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleApihubCurationTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -271,7 +274,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleApihubCurationTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

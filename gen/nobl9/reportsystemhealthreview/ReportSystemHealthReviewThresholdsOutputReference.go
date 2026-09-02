@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/reportsystemhealthreview/internal"
 )
 
 type ReportSystemHealthReviewThresholdsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type ReportSystemHealthReviewThresholdsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type ReportSystemHealthReviewThresholdsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetShowNoData()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type ReportSystemHealthReviewThresholdsOutputReference interface {
 
 // The jsii proxy struct for ReportSystemHealthReviewThresholdsOutputReference
 type jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) ComplexObjectIndex() interface{} {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) TerraformR
 }
 
 
-func NewReportSystemHealthReviewThresholdsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReportSystemHealthReviewThresholdsOutputReference {
+func NewReportSystemHealthReviewThresholdsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ReportSystemHealthReviewThresholdsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewReportSystemHealthReviewThresholdsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewReportSystemHealthReviewThresholdsOutputReference(terraformResource cdkt
 	j := jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewThresholdsOutputReference",
+		"@cdktn/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewThresholdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewReportSystemHealthReviewThresholdsOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewReportSystemHealthReviewThresholdsOutputReference_Override(r ReportSystemHealthReviewThresholdsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewReportSystemHealthReviewThresholdsOutputReference_Override(r ReportSystemHealthReviewThresholdsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewThresholdsOutputReference",
+		"@cdktn/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewThresholdsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) GetAnyMapA
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -489,8 +489,8 @@ func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) GetStringM
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -502,16 +502,16 @@ func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) Interpolat
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) ResetShowN
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

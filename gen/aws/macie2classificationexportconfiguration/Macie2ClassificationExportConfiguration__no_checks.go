@@ -56,6 +56,10 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateInterpolatio
 	return nil
 }
 
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateOverrideLogi
 }
 
 func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validatePutS3DestinationParameters(value *Macie2ClassificationExportConfigurationS3Destination) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2ClassificationExportConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Macie2ClassificationExportConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

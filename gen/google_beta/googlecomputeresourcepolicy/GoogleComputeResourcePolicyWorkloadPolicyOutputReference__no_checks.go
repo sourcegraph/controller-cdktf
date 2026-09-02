@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleComputeResourcePolicyWorkloadPolicyOutputReference) val
 	return nil
 }
 
-func validateNewGoogleComputeResourcePolicyWorkloadPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeResourcePolicyWorkloadPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputR
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardQueryInputRelativeTimeOutputR
 	return nil
 }
 
-func validateNewChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewChronicleDashboardChartDashboardQueryInputRelativeTimeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

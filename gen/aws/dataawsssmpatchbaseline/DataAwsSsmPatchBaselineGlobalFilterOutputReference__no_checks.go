@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsSsmPatchBaselineGlobalFilterOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmPatchBaselineGlobalFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsSsmPatchBaselineGlobalFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSsmPatchBaselineGlobalFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSsmPatchBaselineGlobalFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsSsmPatchBaselineGlobalFilterOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsmPatchBaselineGlobalFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsSsmPatchBaselineGlobalFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsSsmPatchBaselineGlobalFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsSsmPatchBaselineGlobalFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

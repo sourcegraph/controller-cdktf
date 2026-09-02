@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.backupReportPlan.BackupReportPlan",
+		"@cdktn/provider-aws.backupReportPlan.BackupReportPlan",
 		reflect.TypeOf((*BackupReportPlan)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -53,6 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putReportDeliveryChannel", GoMethod: "PutReportDeliveryChannel"},
 			_jsii_.MemberMethod{JsiiMethod: "putReportSetting", GoMethod: "PutReportSetting"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "reportDeliveryChannel", GoGetter: "ReportDeliveryChannel"},
 			_jsii_.MemberProperty{JsiiProperty: "reportDeliveryChannelInput", GoGetter: "ReportDeliveryChannelInput"},
 			_jsii_.MemberProperty{JsiiProperty: "reportSetting", GoGetter: "ReportSetting"},
@@ -75,23 +77,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_BackupReportPlan{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.backupReportPlan.BackupReportPlanConfig",
+		"@cdktn/provider-aws.backupReportPlan.BackupReportPlanConfig",
 		reflect.TypeOf((*BackupReportPlanConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannel",
+		"@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannel",
 		reflect.TypeOf((*BackupReportPlanReportDeliveryChannel)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannelOutputReference",
+		"@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportDeliveryChannelOutputReference",
 		reflect.TypeOf((*BackupReportPlanReportDeliveryChannelOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,16 +129,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.backupReportPlan.BackupReportPlanReportSetting",
+		"@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSetting",
 		reflect.TypeOf((*BackupReportPlanReportSetting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
+		"@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
 		reflect.TypeOf((*BackupReportPlanReportSettingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -170,7 +173,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BackupReportPlanReportSettingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

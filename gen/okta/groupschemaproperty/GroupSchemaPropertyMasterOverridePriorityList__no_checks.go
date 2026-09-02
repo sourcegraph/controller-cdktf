@@ -12,7 +12,7 @@ func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateGetPar
 	return nil
 }
 
-func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GroupSchemaPropertyMasterOverridePriorityList) validateSetWra
 	return nil
 }
 
-func validateNewGroupSchemaPropertyMasterOverridePriorityListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGroupSchemaPropertyMasterOverridePriorityListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

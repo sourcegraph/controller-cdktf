@@ -40,7 +40,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2ActionsActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2ActionsActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (m *jsiiProxy_MonitorV2ActionsActionOutputReference) validatePutWebhookPara
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2ActionsActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2ActionsActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2ActionsActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_MonitorV2ActionsActionOutputReference) validateSetTypeParamet
 	return nil
 }
 
-func validateNewMonitorV2ActionsActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitorV2ActionsActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (e *jsiiProxy_ElastictranscoderPreset) validateInterpolationForAttributePar
 	return nil
 }
 
+func (e *jsiiProxy_ElastictranscoderPreset) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastictranscoderPreset) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (e *jsiiProxy_ElastictranscoderPreset) validatePutVideoParameters(value *El
 }
 
 func (e *jsiiProxy_ElastictranscoderPreset) validatePutVideoWatermarksParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastictranscoderPreset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_ElastictranscoderPreset) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPreset) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ElastictranscoderPreset) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

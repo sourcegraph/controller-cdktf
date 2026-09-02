@@ -40,11 +40,11 @@ func (w *jsiiProxy_WafregionalRulePredicateOutputReference) validateGetStringMap
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalRulePredicateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafregionalRulePredicateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalRulePredicateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalRulePredicateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_WafregionalRulePredicateOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalRulePredicateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WafregionalRulePredicateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_WafregionalRulePredicateOutputReference) validateSetTypeParam
 	return nil
 }
 
-func validateNewWafregionalRulePredicateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWafregionalRulePredicateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

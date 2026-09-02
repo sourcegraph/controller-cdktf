@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesAsPathsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesAsPathsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesAsPathsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesAsPathsList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesAsPathsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesAsPathsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeRouterStatusBestRoutesAsPathsList) validateS
 	return nil
 }
 
-func validateNewDataGoogleComputeRouterStatusBestRoutesAsPathsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeRouterStatusBestRoutesAsPathsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (f *jsiiProxy_FilestoreInstanceInitialReplicationReplicasList) validateGetP
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstanceInitialReplicationReplicasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FilestoreInstanceInitialReplicationReplicasList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_FilestoreInstanceInitialReplicationReplicasList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstanceInitialReplicationReplicasList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FilestoreInstanceInitialReplicationReplicasList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_FilestoreInstanceInitialReplicationReplicasList) validateSetW
 	return nil
 }
 
-func validateNewFilestoreInstanceInitialReplicationReplicasListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFilestoreInstanceInitialReplicationReplicasListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

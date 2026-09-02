@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSetting
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSetting
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSetting
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsMicrosoftSecurityCenterAlertSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

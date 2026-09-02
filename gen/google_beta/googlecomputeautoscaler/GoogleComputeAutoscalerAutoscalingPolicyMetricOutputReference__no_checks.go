@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyMetricOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyMetricOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyMetricOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyMetricOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyMetricOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyMetricOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyMetricOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyMetricOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GoogleComputeAutoscalerAutoscalingPolicyMetricOutputReference
 	return nil
 }
 
-func validateNewGoogleComputeAutoscalerAutoscalingPolicyMetricOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeAutoscalerAutoscalingPolicyMetricOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Authentication() GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationOutputReference
 	AuthenticationInput() *GoogleChronicleFeedDetailsOktaUserContextSettingsAuthentication
 	// the index of the complex object in a list.
@@ -42,15 +42,15 @@ type GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,16 +66,16 @@ type GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthentication(value *GoogleChronicleFeedDetailsOktaUserContextSettingsAuthentication)
 	ResetAuthentication()
 	ResetHostname()
 	ResetManagerIdReferenceField()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference interface 
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) Authentication() GoogleChronicleFeedDetailsOktaUserContextSettingsAuthenticationOutputReference {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputRefere
 }
 
 
-func NewGoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference {
+func NewGoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsOktaUserContextSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference(terrafo
 	j := jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference(terrafo
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference_Override(g GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference_Override(g GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,11 +352,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -480,8 +480,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -493,16 +493,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputRefere
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputRefere
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

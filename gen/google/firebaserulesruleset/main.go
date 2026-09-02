@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRuleset",
 		reflect.TypeOf((*FirebaserulesRuleset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -37,6 +37,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
@@ -51,6 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSource", GoMethod: "PutSource"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -68,23 +70,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_FirebaserulesRuleset{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetConfig",
 		reflect.TypeOf((*FirebaserulesRulesetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadata",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadata",
 		reflect.TypeOf((*FirebaserulesRulesetMetadata)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataList",
 		reflect.TypeOf((*FirebaserulesRulesetMetadataList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -100,12 +103,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FirebaserulesRulesetMetadataList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetMetadataOutputReference",
 		reflect.TypeOf((*FirebaserulesRulesetMetadataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -133,20 +136,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FirebaserulesRulesetMetadataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSource",
 		reflect.TypeOf((*FirebaserulesRulesetSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFiles",
 		reflect.TypeOf((*FirebaserulesRulesetSourceFiles)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesList",
 		reflect.TypeOf((*FirebaserulesRulesetSourceFilesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -163,12 +166,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FirebaserulesRulesetSourceFilesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceFilesOutputReference",
 		reflect.TypeOf((*FirebaserulesRulesetSourceFilesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -202,12 +205,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FirebaserulesRulesetSourceFilesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetSourceOutputReference",
 		reflect.TypeOf((*FirebaserulesRulesetSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -240,16 +243,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FirebaserulesRulesetSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeouts",
 		reflect.TypeOf((*FirebaserulesRulesetTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference",
+		"@cdktn/provider-google.firebaserulesRuleset.FirebaserulesRulesetTimeoutsOutputReference",
 		reflect.TypeOf((*FirebaserulesRulesetTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -282,7 +285,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_FirebaserulesRulesetTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

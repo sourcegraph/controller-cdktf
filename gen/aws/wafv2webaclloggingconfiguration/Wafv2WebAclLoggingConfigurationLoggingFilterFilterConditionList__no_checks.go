@@ -12,7 +12,7 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLi
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLi
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationLoggingFilterFilterConditionLi
 	return nil
 }
 
-func validateNewWafv2WebAclLoggingConfigurationLoggingFilterFilterConditionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWafv2WebAclLoggingConfigurationLoggingFilterFilterConditionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

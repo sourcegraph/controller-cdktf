@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsLi
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsLi
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsLi
 	return nil
 }
 
-func validateNewDataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsImagebuilderInfrastructureConfigurationLoggingS3LogsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

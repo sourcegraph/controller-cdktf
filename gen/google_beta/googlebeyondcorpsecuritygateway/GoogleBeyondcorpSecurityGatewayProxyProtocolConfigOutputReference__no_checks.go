@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBeyondcorpSecurityGatewayProxyProtocolConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

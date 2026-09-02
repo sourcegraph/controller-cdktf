@@ -12,7 +12,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionCertFingerpri
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionCertFingerprintList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionCertFingerprintList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionCertFingerpri
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionCertFingerprintList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionCertFingerprintList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateCertificateDescriptionCertFingerpri
 	return nil
 }
 
-func validateNewGooglePrivatecaCertificateCertificateDescriptionCertFingerprintListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGooglePrivatecaCertificateCertificateDescriptionCertFingerprintListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

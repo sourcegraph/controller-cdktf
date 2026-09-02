@@ -12,7 +12,7 @@ func (s *jsiiProxy_StorageBucketObjectContextsCustomList) validateGetParameters(
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketObjectContextsCustomList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBucketObjectContextsCustomList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_StorageBucketObjectContextsCustomList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObjectContextsCustomList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageBucketObjectContextsCustomList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_StorageBucketObjectContextsCustomList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewStorageBucketObjectContextsCustomListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStorageBucketObjectContextsCustomListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

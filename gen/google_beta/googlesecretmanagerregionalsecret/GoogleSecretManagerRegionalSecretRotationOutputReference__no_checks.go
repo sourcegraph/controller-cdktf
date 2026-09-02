@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSecretManagerRegionalSecretRotationOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerRegionalSecretRotationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecretRotationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerRegionalSecretRotationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecretRotationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretRotationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerRegionalSecretRotationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecretRotationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSecretManagerRegionalSecretRotationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSecretManagerRegionalSecretRotationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

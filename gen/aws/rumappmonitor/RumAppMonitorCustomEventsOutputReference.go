@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/rumappmonitor/internal"
 )
 
 type RumAppMonitorCustomEventsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type RumAppMonitorCustomEventsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type RumAppMonitorCustomEventsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetStatus()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type RumAppMonitorCustomEventsOutputReference interface {
 
 // The jsii proxy struct for RumAppMonitorCustomEventsOutputReference
 type jsiiProxy_RumAppMonitorCustomEventsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RumAppMonitorCustomEventsOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_RumAppMonitorCustomEventsOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_RumAppMonitorCustomEventsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RumAppMonitorCustomEventsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_RumAppMonitorCustomEventsOutputReference) TerraformResource()
 }
 
 
-func NewRumAppMonitorCustomEventsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RumAppMonitorCustomEventsOutputReference {
+func NewRumAppMonitorCustomEventsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RumAppMonitorCustomEventsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRumAppMonitorCustomEventsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewRumAppMonitorCustomEventsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_RumAppMonitorCustomEventsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorCustomEventsOutputReference",
+		"@cdktn/provider-aws.rumAppMonitor.RumAppMonitorCustomEventsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewRumAppMonitorCustomEventsOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewRumAppMonitorCustomEventsOutputReference_Override(r RumAppMonitorCustomEventsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRumAppMonitorCustomEventsOutputReference_Override(r RumAppMonitorCustomEventsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.rumAppMonitor.RumAppMonitorCustomEventsOutputReference",
+		"@cdktn/provider-aws.rumAppMonitor.RumAppMonitorCustomEventsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_RumAppMonitorCustomEventsOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_RumAppMonitorCustomEventsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RumAppMonitorCustomEventsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -421,8 +421,8 @@ func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -434,16 +434,16 @@ func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) InterpolationAsList
 	return returns
 }
 
-func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) ResetStatus() {
 	)
 }
 
-func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (r *jsiiProxy_RumAppMonitorCustomEventsOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

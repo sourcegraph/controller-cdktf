@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudsecuritycompliancecloudcontrol/internal"
 )
 
 type CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BoolValue() interface{}
 	SetBoolValue(val interface{})
 	BoolValueInput() interface{}
@@ -45,15 +45,15 @@ type CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParam
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,9 +69,9 @@ type CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParam
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutStringListValue(value *CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueStringListValue)
 	ResetBoolValue()
 	ResetNumberValue()
@@ -79,7 +79,7 @@ type CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParam
 	ResetStringValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParam
 
 // The jsii proxy struct for CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference
 type jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference) BoolValue() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueO
 	return returns
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueO
 }
 
 
-func NewCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference {
+func NewCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValuePa
 	j := jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference",
+		"@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValuePa
 	return &j
 }
 
-func NewCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference_Override(c CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference_Override(c CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference",
+		"@cdktn/provider-google.cloudSecurityComplianceCloudControl.CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueO
 	)
 }
 
-func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -387,11 +387,11 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueO
 	return returns
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -515,8 +515,8 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueO
 	return returns
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -528,16 +528,16 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueO
 	return returns
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueO
 	)
 }
 
-func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueOneofValueParameterValueOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (c *jsiiProxy_CloudSecurityComplianceCloudControlParameterSpecDefaultValueO
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

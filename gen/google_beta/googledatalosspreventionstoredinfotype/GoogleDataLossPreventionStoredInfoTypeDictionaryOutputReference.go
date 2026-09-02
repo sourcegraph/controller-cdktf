@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatalosspreventionstoredinfotype/internal"
 )
 
 type GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CloudStoragePath() GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference
 	CloudStoragePathInput() *GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath
 	// the index of the complex object in a list.
@@ -36,9 +36,9 @@ type GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WordList() GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStructOutputReference
 	WordListInput() *GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct
 	// Experimental.
@@ -46,7 +46,7 @@ type GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCloudStoragePath(value *GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePath)
 	PutWordList(value *GoogleDataLossPreventionStoredInfoTypeDictionaryWordListStruct)
 	ResetCloudStoragePath()
 	ResetWordList()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference interface {
 
 // The jsii proxy struct for GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference
 type jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) CloudStoragePath() GoogleDataLossPreventionStoredInfoTypeDictionaryCloudStoragePathOutputReference {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 }
 
 
-func NewGoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference {
+func NewGoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference(terrafor
 	j := jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference",
+		"@cdktn/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference(terrafor
 	return &j
 }
 
-func NewGoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference_Override(g GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference_Override(g GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference",
+		"@cdktn/provider-google-beta.googleDataLossPreventionStoredInfoType.GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,8 +434,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -447,16 +447,16 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	)
 }
 
-func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleDataLossPreventionStoredInfoTypeDictionaryOutputReferen
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

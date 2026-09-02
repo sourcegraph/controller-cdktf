@@ -40,11 +40,11 @@ func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputRef
 	return nil
 }
 
-func validateNewDirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDirectLogicMonitorHistoricalDataRetrievalMaxDurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotToolsClientFunctionResponseOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotToolsClientFunctionResponseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotToolsClientFunctionResponseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotToolsClientFunctionResponseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotToolsClientFunctionResponseOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotToolsClientFunctionResponseOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotToolsClientFunctionResponseOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotToolsClientFunctionResponseOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotToolsClientFunctionResponseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotToolsClientFunctionResponseOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

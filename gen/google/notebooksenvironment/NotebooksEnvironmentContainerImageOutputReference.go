@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/notebooksenvironment/internal"
 )
 
 type NotebooksEnvironmentContainerImageOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type NotebooksEnvironmentContainerImageOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type NotebooksEnvironmentContainerImageOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetTag()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type NotebooksEnvironmentContainerImageOutputReference interface {
 
 // The jsii proxy struct for NotebooksEnvironmentContainerImageOutputReference
 type jsiiProxy_NotebooksEnvironmentContainerImageOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) TerraformR
 }
 
 
-func NewNotebooksEnvironmentContainerImageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NotebooksEnvironmentContainerImageOutputReference {
+func NewNotebooksEnvironmentContainerImageOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NotebooksEnvironmentContainerImageOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNotebooksEnvironmentContainerImageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewNotebooksEnvironmentContainerImageOutputReference(terraformResource cdkt
 	j := jsiiProxy_NotebooksEnvironmentContainerImageOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImageOutputReference",
+		"@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewNotebooksEnvironmentContainerImageOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewNotebooksEnvironmentContainerImageOutputReference_Override(n NotebooksEnvironmentContainerImageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNotebooksEnvironmentContainerImageOutputReference_Override(n NotebooksEnvironmentContainerImageOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImageOutputReference",
+		"@cdktn/provider-google.notebooksEnvironment.NotebooksEnvironmentContainerImageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) GetAnyMapA
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -455,8 +455,8 @@ func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) GetStringM
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -468,16 +468,16 @@ func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) Interpolat
 	return returns
 }
 
-func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) ResetTag()
 	)
 }
 
-func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (n *jsiiProxy_NotebooksEnvironmentContainerImageOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

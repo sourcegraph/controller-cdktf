@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsOrganizationsOrganizationAccountsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsOrganizationsOrganizationAccountsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsOrganizationsOrganizationAccountsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

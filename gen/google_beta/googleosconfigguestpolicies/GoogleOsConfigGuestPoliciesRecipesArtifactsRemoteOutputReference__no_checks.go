@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputRefere
 	return nil
 }
 
-func validateNewGoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOsConfigGuestPoliciesRecipesArtifactsRemoteOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

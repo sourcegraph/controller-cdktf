@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/spannerinstanceconfig/internal"
 )
 
 type SpannerInstanceConfigReplicasOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type SpannerInstanceConfigReplicasOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -51,7 +51,7 @@ type SpannerInstanceConfigReplicasOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type SpannerInstanceConfigReplicasOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDefaultLeaderLocation()
 	ResetLocation()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type SpannerInstanceConfigReplicasOutputReference interface {
 
 // The jsii proxy struct for SpannerInstanceConfigReplicasOutputReference
 type jsiiProxy_SpannerInstanceConfigReplicasOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) TypeInput() *st
 }
 
 
-func NewSpannerInstanceConfigReplicasOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SpannerInstanceConfigReplicasOutputReference {
+func NewSpannerInstanceConfigReplicasOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SpannerInstanceConfigReplicasOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSpannerInstanceConfigReplicasOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -228,7 +228,7 @@ func NewSpannerInstanceConfigReplicasOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_SpannerInstanceConfigReplicasOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasOutputReference",
+		"@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewSpannerInstanceConfigReplicasOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewSpannerInstanceConfigReplicasOutputReference_Override(s SpannerInstanceConfigReplicasOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSpannerInstanceConfigReplicasOutputReference_Override(s SpannerInstanceConfigReplicasOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasOutputReference",
+		"@cdktn/provider-google.spannerInstanceConfig.SpannerInstanceConfigReplicasOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -491,8 +491,8 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -504,16 +504,16 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) InterpolationAs
 	return returns
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) ResetType() {
 	)
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

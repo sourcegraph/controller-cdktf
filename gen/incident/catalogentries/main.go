@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntries",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntries",
 		reflect.TypeOf((*CatalogEntries)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "managedAttributes", GoGetter: "ManagedAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "managedAttributesInput", GoGetter: "ManagedAttributesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -49,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putEntries", GoMethod: "PutEntries"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetManagedAttributes", GoMethod: "ResetManagedAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -60,27 +62,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CatalogEntries{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntriesConfig",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntriesConfig",
 		reflect.TypeOf((*CatalogEntriesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntries",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntriesEntries",
 		reflect.TypeOf((*CatalogEntriesEntries)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesAttributeValues",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntriesEntriesAttributeValues",
 		reflect.TypeOf((*CatalogEntriesEntriesAttributeValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesAttributeValuesMap",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntriesEntriesAttributeValuesMap",
 		reflect.TypeOf((*CatalogEntriesEntriesAttributeValuesMap)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -96,12 +99,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CatalogEntriesEntriesAttributeValuesMap{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexMap)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesAttributeValuesOutputReference",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntriesEntriesAttributeValuesOutputReference",
 		reflect.TypeOf((*CatalogEntriesEntriesAttributeValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arrayValue", GoGetter: "ArrayValue"},
@@ -134,12 +137,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CatalogEntriesEntriesAttributeValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesMap",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntriesEntriesMap",
 		reflect.TypeOf((*CatalogEntriesEntriesMap)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "computeFqn", GoMethod: "ComputeFqn"},
@@ -155,12 +158,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CatalogEntriesEntriesMap{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexMap)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexMap)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.catalogEntries.CatalogEntriesEntriesOutputReference",
+		"@cdktn/provider-incident.catalogEntries.CatalogEntriesEntriesOutputReference",
 		reflect.TypeOf((*CatalogEntriesEntriesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aliases", GoGetter: "Aliases"},
@@ -199,7 +202,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CatalogEntriesEntriesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

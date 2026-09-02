@@ -56,6 +56,10 @@ func (w *jsiiProxy_WorkerRoute) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (w *jsiiProxy_WorkerRoute) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_WorkerRoute) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (w *jsiiProxy_WorkerRoute) validateMoveToIdParameters(id *string) error {
 }
 
 func (w *jsiiProxy_WorkerRoute) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (w *jsiiProxy_WorkerRoute) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_WorkerRoute) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_WorkerRoute) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_WorkerRoute) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/servicecatalogtagoptionresourceassociation/internal"
 )
 
 type ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference interface
 
 // The jsii proxy struct for ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference
 type jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputRefer
 }
 
 
-func NewServicecatalogTagOptionResourceAssociationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference {
+func NewServicecatalogTagOptionResourceAssociationTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServicecatalogTagOptionResourceAssociationTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewServicecatalogTagOptionResourceAssociationTimeoutsOutputReference(terraf
 	j := jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference",
+		"@cdktn/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewServicecatalogTagOptionResourceAssociationTimeoutsOutputReference(terraf
 	return &j
 }
 
-func NewServicecatalogTagOptionResourceAssociationTimeoutsOutputReference_Override(s ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewServicecatalogTagOptionResourceAssociationTimeoutsOutputReference_Override(s ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference",
+		"@cdktn/provider-aws.servicecatalogTagOptionResourceAssociation.ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputRefer
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -491,8 +491,8 @@ func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputRefer
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -504,16 +504,16 @@ func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputRefer
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputRefer
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (s *jsiiProxy_ServicecatalogTagOptionResourceAssociationTimeoutsOutputRefer
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

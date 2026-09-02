@@ -40,11 +40,11 @@ func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgum
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgum
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Wafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWafv2WebAclLoggingConfigurationRedactedFieldsSingleQueryArgumentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

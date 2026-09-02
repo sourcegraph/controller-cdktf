@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteRelatedUrlOutputReference) validat
 	return nil
 }
 
-func validateNewGoogleContainerAnalysisNoteRelatedUrlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleContainerAnalysisNoteRelatedUrlOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

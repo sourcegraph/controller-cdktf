@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cesappversion/internal"
 )
 
 type CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Args() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -37,9 +37,9 @@ type CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tool() *string
 	ToolsetTool() CesAppVersionSnapshotExamplesMessagesChunksToolCallToolsetToolList
 	// Experimental.
@@ -47,7 +47,7 @@ type CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference interfac
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference interfac
 
 // The jsii proxy struct for CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference
 type jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference) Args() *string {
@@ -171,8 +171,8 @@ func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -202,7 +202,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputRefe
 }
 
 
-func NewCesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference {
+func NewCesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -211,7 +211,7 @@ func NewCesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference(terra
 	j := jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference",
+		"@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -219,11 +219,11 @@ func NewCesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference(terra
 	return &j
 }
 
-func NewCesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference_Override(c CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference_Override(c CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference",
+		"@cdktn/provider-google.cesAppVersion.CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -273,7 +273,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputRefe
 	)
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,11 +313,11 @@ func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputRefe
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -441,8 +441,8 @@ func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputRefe
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -454,24 +454,24 @@ func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputRefe
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -479,7 +479,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksToolCallOutputRefe
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

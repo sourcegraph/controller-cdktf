@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions
 	return nil
 }
 
-func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions
 	return nil
 }
 
-func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptions
 	return nil
 }
 
-func validateNewApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

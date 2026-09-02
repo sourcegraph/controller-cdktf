@@ -40,7 +40,7 @@ func (p *jsiiProxy_PodV1SpecContainerEnvFromOutputReference) validateGetStringMa
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerEnvFromOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecContainerEnvFromOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (p *jsiiProxy_PodV1SpecContainerEnvFromOutputReference) validatePutSecretRe
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerEnvFromOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecContainerEnvFromOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_PodV1SpecContainerEnvFromOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerEnvFromOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodV1SpecContainerEnvFromOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPodV1SpecContainerEnvFromOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPodV1SpecContainerEnvFromOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

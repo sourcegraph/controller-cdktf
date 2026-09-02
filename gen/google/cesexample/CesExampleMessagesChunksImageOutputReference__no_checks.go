@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesExampleMessagesChunksImageOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksImageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesExampleMessagesChunksImageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksImageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesExampleMessagesChunksImageOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CesExampleMessagesChunksImageOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksImageOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesExampleMessagesChunksImageOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesExampleMessagesChunksImageOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesExampleMessagesChunksImageOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

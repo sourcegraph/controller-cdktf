@@ -40,7 +40,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputR
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputR
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputR
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudfrontMonitoringSubscriptionMonitoringSubscriptionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

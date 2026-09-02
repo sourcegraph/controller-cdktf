@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -123,9 +123,9 @@ func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -212,7 +212,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupBlueGreenDeploymentConfigOutputRefer
 	return nil
 }
 
-func validateNewCodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodedeployDeploymentGroupBlueGreenDeploymentConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

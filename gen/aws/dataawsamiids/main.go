@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIds",
+		"@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIds",
 		reflect.TypeOf((*DataAwsAmiIds)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExecutableUsers", GoMethod: "ResetExecutableUsers"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -67,23 +68,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsAmiIds{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig",
+		"@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsConfig",
 		reflect.TypeOf((*DataAwsAmiIdsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilter",
+		"@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilter",
 		reflect.TypeOf((*DataAwsAmiIdsFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterList",
+		"@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterList",
 		reflect.TypeOf((*DataAwsAmiIdsFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -100,12 +102,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsAmiIdsFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterOutputReference",
+		"@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsFilterOutputReference",
 		reflect.TypeOf((*DataAwsAmiIdsFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -136,16 +138,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsAmiIdsFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeouts",
+		"@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeouts",
 		reflect.TypeOf((*DataAwsAmiIdsTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeoutsOutputReference",
+		"@cdktn/provider-aws.dataAwsAmiIds.DataAwsAmiIdsTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsAmiIdsTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -175,7 +177,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsAmiIdsTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

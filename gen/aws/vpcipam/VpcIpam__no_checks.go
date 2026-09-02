@@ -56,6 +56,10 @@ func (v *jsiiProxy_VpcIpam) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpam) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpam) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (v *jsiiProxy_VpcIpam) validatePutOperatingRegionsParameters(value interfac
 }
 
 func (v *jsiiProxy_VpcIpam) validatePutTimeoutsParameters(value *VpcIpamTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpam) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_VpcIpam) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_VpcIpam) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VpcIpam) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

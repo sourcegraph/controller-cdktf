@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowCxToolConnectorSpecActionsEntityOperationOutp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolConnectorSpecActionsEntityOperationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolConnectorSpecActionsEntityOperationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolConnectorSpecActionsEntityOperationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolConnectorSpecActionsEntityOperationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDialogflowCxToolConnectorSpecActionsEntityOperationOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolConnectorSpecActionsEntityOperationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolConnectorSpecActionsEntityOperationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDialogflowCxToolConnectorSpecActionsEntityOperationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowCxToolConnectorSpecActionsEntityOperationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

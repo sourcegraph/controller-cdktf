@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleDiscoveryEngineUserStore.GoogleDiscoveryEngineUserStore",
+		"@cdktn/provider-google-beta.googleDiscoveryEngineUserStore.GoogleDiscoveryEngineUserStore",
 		reflect.TypeOf((*GoogleDiscoveryEngineUserStore)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -56,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultLicenseConfig", GoMethod: "ResetDefaultLicenseConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableExpiredLicenseAutoUpdate", GoMethod: "ResetEnableExpiredLicenseAutoUpdate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableLicenseAutoRegister", GoMethod: "ResetEnableLicenseAutoRegister"},
@@ -77,23 +79,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userStoreId", GoGetter: "UserStoreId"},
 			_jsii_.MemberProperty{JsiiProperty: "userStoreIdInput", GoGetter: "UserStoreIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleDiscoveryEngineUserStore{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleDiscoveryEngineUserStore.GoogleDiscoveryEngineUserStoreConfig",
+		"@cdktn/provider-google-beta.googleDiscoveryEngineUserStore.GoogleDiscoveryEngineUserStoreConfig",
 		reflect.TypeOf((*GoogleDiscoveryEngineUserStoreConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleDiscoveryEngineUserStore.GoogleDiscoveryEngineUserStoreTimeouts",
+		"@cdktn/provider-google-beta.googleDiscoveryEngineUserStore.GoogleDiscoveryEngineUserStoreTimeouts",
 		reflect.TypeOf((*GoogleDiscoveryEngineUserStoreTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleDiscoveryEngineUserStore.GoogleDiscoveryEngineUserStoreTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleDiscoveryEngineUserStore.GoogleDiscoveryEngineUserStoreTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleDiscoveryEngineUserStoreTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -129,7 +132,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleDiscoveryEngineUserStoreTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

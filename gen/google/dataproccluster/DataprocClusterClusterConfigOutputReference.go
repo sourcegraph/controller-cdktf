@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataproccluster/internal"
 )
 
 type DataprocClusterClusterConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AutoscalingConfig() DataprocClusterClusterConfigAutoscalingConfigOutputReference
 	AutoscalingConfigInput() *DataprocClusterClusterConfigAutoscalingConfig
 	AuxiliaryNodeGroups() DataprocClusterClusterConfigAuxiliaryNodeGroupsList
@@ -76,9 +76,9 @@ type DataprocClusterClusterConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WorkerConfig() DataprocClusterClusterConfigWorkerConfigOutputReference
 	WorkerConfigInput() *DataprocClusterClusterConfigWorkerConfig
 	// Experimental.
@@ -86,7 +86,7 @@ type DataprocClusterClusterConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -102,9 +102,9 @@ type DataprocClusterClusterConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAutoscalingConfig(value *DataprocClusterClusterConfigAutoscalingConfig)
 	PutAuxiliaryNodeGroups(value interface{})
 	PutDataprocMetricConfig(value *DataprocClusterClusterConfigDataprocMetricConfig)
@@ -140,7 +140,7 @@ type DataprocClusterClusterConfigOutputReference interface {
 	ResetWorkerConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -150,7 +150,7 @@ type DataprocClusterClusterConfigOutputReference interface {
 
 // The jsii proxy struct for DataprocClusterClusterConfigOutputReference
 type jsiiProxy_DataprocClusterClusterConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) AutoscalingConfig() DataprocClusterClusterConfigAutoscalingConfigOutputReference {
@@ -583,8 +583,8 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -614,7 +614,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) WorkerConfigInpu
 }
 
 
-func NewDataprocClusterClusterConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocClusterClusterConfigOutputReference {
+func NewDataprocClusterClusterConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataprocClusterClusterConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataprocClusterClusterConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -623,7 +623,7 @@ func NewDataprocClusterClusterConfigOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataprocClusterClusterConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference",
+		"@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -631,11 +631,11 @@ func NewDataprocClusterClusterConfigOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewDataprocClusterClusterConfigOutputReference_Override(d DataprocClusterClusterConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataprocClusterClusterConfigOutputReference_Override(d DataprocClusterClusterConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference",
+		"@cdktn/provider-google.dataprocCluster.DataprocClusterClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -740,7 +740,7 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -780,11 +780,11 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -908,8 +908,8 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -921,16 +921,16 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) InterpolationAsL
 	return returns
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1243,8 +1243,8 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) ResetWorkerConfi
 	)
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1252,7 +1252,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

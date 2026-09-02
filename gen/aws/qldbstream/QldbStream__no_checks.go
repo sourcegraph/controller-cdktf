@@ -56,6 +56,10 @@ func (q *jsiiProxy_QldbStream) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (q *jsiiProxy_QldbStream) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (q *jsiiProxy_QldbStream) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (q *jsiiProxy_QldbStream) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (q *jsiiProxy_QldbStream) validatePutKinesisConfigurationParameters(value *QldbStreamKinesisConfiguration) error {
+	return nil
+}
+
+func (q *jsiiProxy_QldbStream) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_QldbStream) validateSetLedgerNameParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_QldbStream) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_QldbStream) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

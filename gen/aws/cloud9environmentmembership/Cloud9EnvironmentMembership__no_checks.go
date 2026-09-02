@@ -56,6 +56,10 @@ func (c *jsiiProxy_Cloud9EnvironmentMembership) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_Cloud9EnvironmentMembership) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloud9EnvironmentMembership) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_Cloud9EnvironmentMembership) validateMoveToIdParameters(id *s
 }
 
 func (c *jsiiProxy_Cloud9EnvironmentMembership) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloud9EnvironmentMembership) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_Cloud9EnvironmentMembership) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_Cloud9EnvironmentMembership) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Cloud9EnvironmentMembership) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

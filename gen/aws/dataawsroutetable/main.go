@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTable",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTable",
 		reflect.TypeOf((*DataAwsRouteTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGatewayId", GoMethod: "ResetGatewayId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -74,19 +75,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcIdInput", GoGetter: "VpcIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsRouteTable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableAssociations",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableAssociations",
 		reflect.TypeOf((*DataAwsRouteTableAssociations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableAssociationsList",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableAssociationsList",
 		reflect.TypeOf((*DataAwsRouteTableAssociationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -102,12 +104,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsRouteTableAssociationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableAssociationsOutputReference",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableAssociationsOutputReference",
 		reflect.TypeOf((*DataAwsRouteTableAssociationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,20 +141,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsRouteTableAssociationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableConfig",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableConfig",
 		reflect.TypeOf((*DataAwsRouteTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableFilter",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableFilter",
 		reflect.TypeOf((*DataAwsRouteTableFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableFilterList",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableFilterList",
 		reflect.TypeOf((*DataAwsRouteTableFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -169,12 +171,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsRouteTableFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableFilterOutputReference",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableFilterOutputReference",
 		reflect.TypeOf((*DataAwsRouteTableFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -205,16 +207,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsRouteTableFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableRoutes",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableRoutes",
 		reflect.TypeOf((*DataAwsRouteTableRoutes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableRoutesList",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableRoutesList",
 		reflect.TypeOf((*DataAwsRouteTableRoutesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -230,12 +232,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsRouteTableRoutesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableRoutesOutputReference",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableRoutesOutputReference",
 		reflect.TypeOf((*DataAwsRouteTableRoutesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "carrierGatewayId", GoGetter: "CarrierGatewayId"},
@@ -276,16 +278,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsRouteTableRoutesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableTimeouts",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableTimeouts",
 		reflect.TypeOf((*DataAwsRouteTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsRouteTable.DataAwsRouteTableTimeoutsOutputReference",
+		"@cdktn/provider-aws.dataAwsRouteTable.DataAwsRouteTableTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsRouteTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -315,7 +317,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsRouteTableTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

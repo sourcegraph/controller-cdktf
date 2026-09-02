@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingLis
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingLis
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsResourcegroupstaggingapiResourcesResourceTagMappingListStructOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

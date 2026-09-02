@@ -40,11 +40,11 @@ func (p *jsiiProxy_PollerHttpTemplateOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (p *jsiiProxy_PollerHttpTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PollerHttpTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PollerHttpTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PollerHttpTemplateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_PollerHttpTemplateOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpTemplateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerHttpTemplateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_PollerHttpTemplateOutputReference) validateSetUsernameParamet
 	return nil
 }
 
-func validateNewPollerHttpTemplateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPollerHttpTemplateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

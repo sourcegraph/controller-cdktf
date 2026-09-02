@@ -56,6 +56,10 @@ func (a *jsiiProxy_AutoscalingGroupTagA) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingGroupTagA) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingGroupTagA) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AutoscalingGroupTagA) validateOverrideLogicalIdParameters(new
 }
 
 func (a *jsiiProxy_AutoscalingGroupTagA) validatePutTagParameters(value *AutoscalingGroupTagTag) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingGroupTagA) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_AutoscalingGroupTagA) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupTagA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AutoscalingGroupTagA) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference) 
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecImagePullSecretsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDeploymentV1SpecTemplateSpecImagePullSecretsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDeploymentV1SpecTemplateSpecImagePullSecretsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

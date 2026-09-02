@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/manifest/internal"
 )
 
 type ManifestFieldManagerOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ManifestFieldManagerOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type ManifestFieldManagerOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetForceConflicts()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ManifestFieldManagerOutputReference interface {
 
 // The jsii proxy struct for ManifestFieldManagerOutputReference
 type jsiiProxy_ManifestFieldManagerOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ManifestFieldManagerOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ManifestFieldManagerOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_ManifestFieldManagerOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ManifestFieldManagerOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ManifestFieldManagerOutputReference) TerraformResource() cdkt
 }
 
 
-func NewManifestFieldManagerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ManifestFieldManagerOutputReference {
+func NewManifestFieldManagerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ManifestFieldManagerOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewManifestFieldManagerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewManifestFieldManagerOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_ManifestFieldManagerOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.manifest.ManifestFieldManagerOutputReference",
+		"@cdktn/provider-kubernetes.manifest.ManifestFieldManagerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewManifestFieldManagerOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewManifestFieldManagerOutputReference_Override(m ManifestFieldManagerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewManifestFieldManagerOutputReference_Override(m ManifestFieldManagerOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.manifest.ManifestFieldManagerOutputReference",
+		"@cdktn/provider-kubernetes.manifest.ManifestFieldManagerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ManifestFieldManagerOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_ManifestFieldManagerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ManifestFieldManagerOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (m *jsiiProxy_ManifestFieldManagerOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (m *jsiiProxy_ManifestFieldManagerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ManifestFieldManagerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -456,8 +456,8 @@ func (m *jsiiProxy_ManifestFieldManagerOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (m *jsiiProxy_ManifestFieldManagerOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ManifestFieldManagerOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -469,16 +469,16 @@ func (m *jsiiProxy_ManifestFieldManagerOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (m *jsiiProxy_ManifestFieldManagerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_ManifestFieldManagerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (m *jsiiProxy_ManifestFieldManagerOutputReference) ResetName() {
 	)
 }
 
-func (m *jsiiProxy_ManifestFieldManagerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_ManifestFieldManagerOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (m *jsiiProxy_ManifestFieldManagerOutputReference) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

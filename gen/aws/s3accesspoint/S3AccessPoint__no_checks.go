@@ -56,6 +56,10 @@ func (s *jsiiProxy_S3AccessPoint) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_S3AccessPoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3AccessPoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_S3AccessPoint) validatePutPublicAccessBlockConfigurationParam
 }
 
 func (s *jsiiProxy_S3AccessPoint) validatePutVpcConfigurationParameters(value *S3AccessPointVpcConfiguration) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3AccessPoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_S3AccessPoint) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3AccessPoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_S3AccessPoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

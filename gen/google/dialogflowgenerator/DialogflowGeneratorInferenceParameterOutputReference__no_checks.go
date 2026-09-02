@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_DialogflowGeneratorInferenceParameterOutputReference) validat
 	return nil
 }
 
-func validateNewDialogflowGeneratorInferenceParameterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowGeneratorInferenceParameterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

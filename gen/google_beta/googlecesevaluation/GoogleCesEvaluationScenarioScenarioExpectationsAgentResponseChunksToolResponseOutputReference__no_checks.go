@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseC
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksToolResponseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksToolResponseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseC
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksToolResponseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksToolResponseOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksToolResponseOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksToolResponseOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleCesEvaluationScenarioScenarioExpectationsAgentResponseC
 	return nil
 }
 
-func validateNewGoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksToolResponseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesEvaluationScenarioScenarioExpectationsAgentResponseChunksToolResponseOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDeveloperConnectConnectionHttpConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDeveloperConnectConnectionHttpConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

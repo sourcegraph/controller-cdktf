@@ -56,6 +56,10 @@ func (e *jsiiProxy_EcrpublicRepository) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (e *jsiiProxy_EcrpublicRepository) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrpublicRepository) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_EcrpublicRepository) validatePutCatalogDataParameters(value *
 }
 
 func (e *jsiiProxy_EcrpublicRepository) validatePutTimeoutsParameters(value *EcrpublicRepositoryTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcrpublicRepository) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_EcrpublicRepository) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_EcrpublicRepository) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EcrpublicRepository) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

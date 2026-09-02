@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeFutureReservationAutoCreatedReservationsDuration
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFutureReservationAutoCreatedReservationsDurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeFutureReservationAutoCreatedReservationsDurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFutureReservationAutoCreatedReservationsDurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeFutureReservationAutoCreatedReservationsDurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeFutureReservationAutoCreatedReservationsDuration
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationAutoCreatedReservationsDurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationAutoCreatedReservationsDurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeFutureReservationAutoCreatedReservationsDurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeFutureReservationAutoCreatedReservationsDurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

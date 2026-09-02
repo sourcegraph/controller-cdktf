@@ -40,7 +40,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateGetStri
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validatePutRdbC
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedisClusterPersistenceConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRedisClusterPersistenceConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRedisClusterPersistenceConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigtableMaterializedView) validateInterpolationForAttributePa
 	return nil
 }
 
+func (b *jsiiProxy_BigtableMaterializedView) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableMaterializedView) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (b *jsiiProxy_BigtableMaterializedView) validateOverrideLogicalIdParameters
 }
 
 func (b *jsiiProxy_BigtableMaterializedView) validatePutTimeoutsParameters(value *BigtableMaterializedViewTimeouts) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableMaterializedView) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_BigtableMaterializedView) validateSetInstanceParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_BigtableMaterializedView) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BigtableMaterializedView) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

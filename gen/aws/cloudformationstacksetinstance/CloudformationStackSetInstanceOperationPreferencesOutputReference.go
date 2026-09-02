@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/cloudformationstacksetinstance/internal"
 )
 
 type CloudformationStackSetInstanceOperationPreferencesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,15 +52,15 @@ type CloudformationStackSetInstanceOperationPreferencesOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type CloudformationStackSetInstanceOperationPreferencesOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFailureToleranceCount()
 	ResetFailureTolerancePercentage()
 	ResetMaxConcurrentCount()
@@ -87,7 +87,7 @@ type CloudformationStackSetInstanceOperationPreferencesOutputReference interface
 	ResetRegionOrder()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type CloudformationStackSetInstanceOperationPreferencesOutputReference interface
 
 // The jsii proxy struct for CloudformationStackSetInstanceOperationPreferencesOutputReference
 type jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) ComplexObjectIndex() interface{} {
@@ -280,8 +280,8 @@ func (j *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputRefer
 }
 
 
-func NewCloudformationStackSetInstanceOperationPreferencesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudformationStackSetInstanceOperationPreferencesOutputReference {
+func NewCloudformationStackSetInstanceOperationPreferencesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CloudformationStackSetInstanceOperationPreferencesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudformationStackSetInstanceOperationPreferencesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewCloudformationStackSetInstanceOperationPreferencesOutputReference(terraf
 	j := jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstanceOperationPreferencesOutputReference",
+		"@cdktn/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstanceOperationPreferencesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewCloudformationStackSetInstanceOperationPreferencesOutputReference(terraf
 	return &j
 }
 
-func NewCloudformationStackSetInstanceOperationPreferencesOutputReference_Override(c CloudformationStackSetInstanceOperationPreferencesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudformationStackSetInstanceOperationPreferencesOutputReference_Override(c CloudformationStackSetInstanceOperationPreferencesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstanceOperationPreferencesOutputReference",
+		"@cdktn/provider-aws.cloudformationStackSetInstance.CloudformationStackSetInstanceOperationPreferencesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -428,7 +428,7 @@ func (j *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputRefer
 	)
 }
 
-func (j *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,11 +468,11 @@ func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -596,8 +596,8 @@ func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -609,16 +609,16 @@ func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputRefer
 	)
 }
 
-func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (c *jsiiProxy_CloudformationStackSetInstanceOperationPreferencesOutputRefer
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

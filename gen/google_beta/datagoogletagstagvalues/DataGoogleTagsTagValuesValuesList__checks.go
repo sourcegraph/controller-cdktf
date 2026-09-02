@@ -5,7 +5,7 @@ package datagoogletagstagvalues
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (d *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_DataGoogleTagsTagValuesValuesList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewDataGoogleTagsTagValuesValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleTagsTagValuesValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

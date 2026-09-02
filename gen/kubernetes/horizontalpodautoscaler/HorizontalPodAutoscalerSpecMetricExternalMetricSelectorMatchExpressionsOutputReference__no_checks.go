@@ -40,11 +40,11 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorMatchE
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorMatchExpressionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorMatchExpressionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorMatchE
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorMatchExpressionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorMatchExpressionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricExternalMetricSelectorMatchE
 	return nil
 }
 
-func validateNewHorizontalPodAutoscalerSpecMetricExternalMetricSelectorMatchExpressionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewHorizontalPodAutoscalerSpecMetricExternalMetricSelectorMatchExpressionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

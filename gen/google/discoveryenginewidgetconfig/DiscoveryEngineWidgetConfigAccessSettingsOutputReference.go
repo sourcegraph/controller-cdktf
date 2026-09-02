@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/discoveryenginewidgetconfig/internal"
 )
 
 type DiscoveryEngineWidgetConfigAccessSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowlistedDomains() *[]*string
 	SetAllowlistedDomains(val *[]*string)
 	AllowlistedDomainsInput() *[]*string
@@ -46,9 +46,9 @@ type DiscoveryEngineWidgetConfigAccessSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WorkforceIdentityPoolProvider() *string
 	SetWorkforceIdentityPoolProvider(val *string)
 	WorkforceIdentityPoolProviderInput() *string
@@ -57,7 +57,7 @@ type DiscoveryEngineWidgetConfigAccessSettingsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type DiscoveryEngineWidgetConfigAccessSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowlistedDomains()
 	ResetAllowPublicAccess()
 	ResetEnableWebApp()
@@ -83,7 +83,7 @@ type DiscoveryEngineWidgetConfigAccessSettingsOutputReference interface {
 	ResetWorkforceIdentityPoolProvider()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type DiscoveryEngineWidgetConfigAccessSettingsOutputReference interface {
 
 // The jsii proxy struct for DiscoveryEngineWidgetConfigAccessSettingsOutputReference
 type jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) AllowlistedDomains() *[]*string {
@@ -236,8 +236,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) Wor
 }
 
 
-func NewDiscoveryEngineWidgetConfigAccessSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigAccessSettingsOutputReference {
+func NewDiscoveryEngineWidgetConfigAccessSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigAccessSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDiscoveryEngineWidgetConfigAccessSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewDiscoveryEngineWidgetConfigAccessSettingsOutputReference(terraformResour
 	j := jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettingsOutputReference",
+		"@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewDiscoveryEngineWidgetConfigAccessSettingsOutputReference(terraformResour
 	return &j
 }
 
-func NewDiscoveryEngineWidgetConfigAccessSettingsOutputReference_Override(d DiscoveryEngineWidgetConfigAccessSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDiscoveryEngineWidgetConfigAccessSettingsOutputReference_Override(d DiscoveryEngineWidgetConfigAccessSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettingsOutputReference",
+		"@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigAccessSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -561,8 +561,8 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -574,16 +574,16 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) Res
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigAccessSettingsOutputReference) Res
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

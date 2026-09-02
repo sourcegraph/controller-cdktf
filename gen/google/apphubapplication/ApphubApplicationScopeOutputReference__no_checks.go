@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApphubApplicationScopeOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_ApphubApplicationScopeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApphubApplicationScopeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApphubApplicationScopeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApphubApplicationScopeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_ApphubApplicationScopeOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_ApphubApplicationScopeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApphubApplicationScopeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ApphubApplicationScopeOutputReference) validateSetTypeParamet
 	return nil
 }
 
-func validateNewApphubApplicationScopeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApphubApplicationScopeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

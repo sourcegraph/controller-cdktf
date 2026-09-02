@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleIapWebIamBinding) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIapWebIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIapWebIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleIapWebIamBinding) validateOverrideLogicalIdParameters(n
 }
 
 func (g *jsiiProxy_GoogleIapWebIamBinding) validatePutConditionParameters(value *GoogleIapWebIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIapWebIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleIapWebIamBinding) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapWebIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleIapWebIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

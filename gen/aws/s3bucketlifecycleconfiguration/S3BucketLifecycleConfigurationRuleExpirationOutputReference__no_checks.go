@@ -40,11 +40,11 @@ func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketLifecycleConfigurationRuleExpirationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewS3BucketLifecycleConfigurationRuleExpirationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketLifecycleConfigurationRuleExpirationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/logginglogviewiammember/internal"
 )
 
 type LoggingLogViewIamMemberConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type LoggingLogViewIamMemberConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type LoggingLogViewIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type LoggingLogViewIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type LoggingLogViewIamMemberConditionOutputReference interface {
 
 // The jsii proxy struct for LoggingLogViewIamMemberConditionOutputReference
 type jsiiProxy_LoggingLogViewIamMemberConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) TitleInput()
 }
 
 
-func NewLoggingLogViewIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoggingLogViewIamMemberConditionOutputReference {
+func NewLoggingLogViewIamMemberConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LoggingLogViewIamMemberConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLoggingLogViewIamMemberConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewLoggingLogViewIamMemberConditionOutputReference(terraformResource cdktf.
 	j := jsiiProxy_LoggingLogViewIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConditionOutputReference",
+		"@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewLoggingLogViewIamMemberConditionOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewLoggingLogViewIamMemberConditionOutputReference_Override(l LoggingLogViewIamMemberConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLoggingLogViewIamMemberConditionOutputReference_Override(l LoggingLogViewIamMemberConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConditionOutputReference",
+		"@cdktn/provider-google.loggingLogViewIamMember.LoggingLogViewIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -489,8 +489,8 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) GetStringMap
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -502,16 +502,16 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) Interpolatio
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) ResetDescrip
 	)
 }
 
-func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (l *jsiiProxy_LoggingLogViewIamMemberConditionOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

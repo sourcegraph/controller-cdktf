@@ -12,7 +12,7 @@ func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsList) validateGetParame
 	return nil
 }
 
-func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HealthcareFhirStoreNotificationConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_HealthcareFhirStoreNotificationConfigsList) validateSetWrapsS
 	return nil
 }
 
-func validateNewHealthcareFhirStoreNotificationConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewHealthcareFhirStoreNotificationConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentia
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentia
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsMimecastMailV2SettingsAuthCredentialsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

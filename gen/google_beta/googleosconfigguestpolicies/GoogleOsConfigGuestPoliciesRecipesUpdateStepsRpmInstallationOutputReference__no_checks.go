@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOsConfigGuestPoliciesRecipesUpdateStepsRpmInstallationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

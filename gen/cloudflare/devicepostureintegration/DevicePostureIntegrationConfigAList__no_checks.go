@@ -12,7 +12,7 @@ func (d *jsiiProxy_DevicePostureIntegrationConfigAList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DevicePostureIntegrationConfigAList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevicePostureIntegrationConfigAList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureIntegrationConfigAList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DevicePostureIntegrationConfigAList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DevicePostureIntegrationConfigAList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewDevicePostureIntegrationConfigAListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDevicePostureIntegrationConfigAListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

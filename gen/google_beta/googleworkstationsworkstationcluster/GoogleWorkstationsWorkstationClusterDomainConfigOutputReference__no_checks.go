@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationClusterDomainConfigOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationClusterDomainConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationClusterDomainConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationClusterDomainConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationClusterDomainConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationClusterDomainConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationClusterDomainConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationClusterDomainConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleWorkstationsWorkstationClusterDomainConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleWorkstationsWorkstationClusterDomainConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (a *jsiiProxy_AlbTargetGroup) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AlbTargetGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlbTargetGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (a *jsiiProxy_AlbTargetGroup) validatePutStickinessParameters(value *AlbTar
 }
 
 func (a *jsiiProxy_AlbTargetGroup) validatePutTargetFailoverParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlbTargetGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_AlbTargetGroup) validateSetLambdaMultiValueHeadersEnabledPara
 	return nil
 }
 
-func (j *jsiiProxy_AlbTargetGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AlbTargetGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

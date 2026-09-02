@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datapipelinepipeline/internal"
 )
 
 type DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,9 +42,9 @@ type DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOu
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TransformNameMapping() *map[string]*string
 	SetTransformNameMapping(val *map[string]*string)
 	TransformNameMappingInput() *map[string]*string
@@ -56,7 +56,7 @@ type DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOu
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOu
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEnvironment(value *DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersEnvironment)
 	ResetEnvironment()
 	ResetParameters()
@@ -82,7 +82,7 @@ type DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOu
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOu
 
 // The jsii proxy struct for DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference
 type jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference) ComplexObjectIndex() interface{} {
@@ -215,8 +215,8 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaun
 	return returns
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaun
 }
 
 
-func NewDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference {
+func NewDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -275,7 +275,7 @@ func NewDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParameter
 	j := jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference",
+		"@cdktn/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParameter
 	return &j
 }
 
-func NewDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference_Override(d DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference_Override(d DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference",
+		"@cdktn/provider-google.dataPipelinePipeline.DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -359,7 +359,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaun
 	)
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,11 +421,11 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaun
 	return returns
 }
 
-func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -549,8 +549,8 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaun
 	return returns
 }
 
-func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -562,16 +562,16 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaun
 	return returns
 }
 
-func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -621,8 +621,8 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaun
 	)
 }
 
-func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaunchParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -630,7 +630,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowLaunchTemplateRequestLaun
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

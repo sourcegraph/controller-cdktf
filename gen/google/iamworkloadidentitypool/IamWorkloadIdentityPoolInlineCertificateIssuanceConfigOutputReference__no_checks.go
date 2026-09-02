@@ -40,11 +40,11 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	return nil
 }
 
-func validateNewIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

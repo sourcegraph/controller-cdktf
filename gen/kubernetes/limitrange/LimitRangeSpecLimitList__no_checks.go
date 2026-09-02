@@ -12,7 +12,7 @@ func (l *jsiiProxy_LimitRangeSpecLimitList) validateGetParameters(index *float64
 	return nil
 }
 
-func (l *jsiiProxy_LimitRangeSpecLimitList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LimitRangeSpecLimitList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LimitRangeSpecLimitList) validateSetTerraformAttributeParamet
 	return nil
 }
 
-func (j *jsiiProxy_LimitRangeSpecLimitList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LimitRangeSpecLimitList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LimitRangeSpecLimitList) validateSetWrapsSetParameters(val *b
 	return nil
 }
 
-func validateNewLimitRangeSpecLimitListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLimitRangeSpecLimitListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

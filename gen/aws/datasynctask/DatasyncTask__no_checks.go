@@ -56,6 +56,10 @@ func (d *jsiiProxy_DatasyncTask) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncTask) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncTask) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (d *jsiiProxy_DatasyncTask) validatePutScheduleParameters(value *DatasyncTa
 }
 
 func (d *jsiiProxy_DatasyncTask) validatePutTimeoutsParameters(value *DatasyncTaskTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncTask) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_DatasyncTask) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncTask) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DatasyncTask) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

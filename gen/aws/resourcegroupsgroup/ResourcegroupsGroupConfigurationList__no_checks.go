@@ -12,7 +12,7 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationList) validateGetParameters(i
 	return nil
 }
 
-func (r *jsiiProxy_ResourcegroupsGroupConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourcegroupsGroupConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ResourcegroupsGroupConfigurationList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_ResourcegroupsGroupConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ResourcegroupsGroupConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ResourcegroupsGroupConfigurationList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewResourcegroupsGroupConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewResourcegroupsGroupConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

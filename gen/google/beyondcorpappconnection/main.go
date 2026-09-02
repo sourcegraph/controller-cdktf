@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection",
+		"@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnection",
 		reflect.TypeOf((*BeyondcorpAppConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConnectors", GoMethod: "ResetConnectors"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGateway", GoMethod: "ResetGateway"},
@@ -88,19 +90,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_BeyondcorpAppConnection{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpoint",
+		"@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpoint",
 		reflect.TypeOf((*BeyondcorpAppConnectionApplicationEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpointOutputReference",
+		"@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionApplicationEndpointOutputReference",
 		reflect.TypeOf((*BeyondcorpAppConnectionApplicationEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -131,20 +134,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BeyondcorpAppConnectionApplicationEndpointOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig",
+		"@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionConfig",
 		reflect.TypeOf((*BeyondcorpAppConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGateway",
+		"@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGateway",
 		reflect.TypeOf((*BeyondcorpAppConnectionGateway)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGatewayOutputReference",
+		"@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionGatewayOutputReference",
 		reflect.TypeOf((*BeyondcorpAppConnectionGatewayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appGateway", GoGetter: "AppGateway"},
@@ -178,16 +181,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BeyondcorpAppConnectionGatewayOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts",
+		"@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeouts",
 		reflect.TypeOf((*BeyondcorpAppConnectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeoutsOutputReference",
+		"@cdktn/provider-google.beyondcorpAppConnection.BeyondcorpAppConnectionTimeoutsOutputReference",
 		reflect.TypeOf((*BeyondcorpAppConnectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -223,7 +226,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BeyondcorpAppConnectionTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

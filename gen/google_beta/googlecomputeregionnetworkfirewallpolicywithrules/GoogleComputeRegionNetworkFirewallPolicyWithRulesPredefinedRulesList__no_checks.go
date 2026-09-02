@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRu
 	return nil
 }
 
-func validateNewGoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeRegionNetworkFirewallPolicyWithRulesPredefinedRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

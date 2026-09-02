@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (g *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList
 
 func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleNetworkServicesHttpRouteRulesMatchesQueryParameters:
 		val := val.(*[]*GoogleNetworkServicesHttpRouteRulesMatchesQueryParameters)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*GoogleNetworkServicesHttpRouteRulesMatchesQueryParameters; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*GoogleNetworkServicesHttpRouteRulesMatchesQueryParameters; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_GoogleNetworkServicesHttpRouteRulesMatchesQueryParametersList
 	return nil
 }
 
-func validateNewGoogleNetworkServicesHttpRouteRulesMatchesQueryParametersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkServicesHttpRouteRulesMatchesQueryParametersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -40,11 +40,11 @@ func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIapSettingsApplicationSettingsAccessDeniedPageSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

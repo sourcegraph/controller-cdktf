@@ -40,7 +40,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference
 	return nil
 }
 
-func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TransferWorkflowOnExceptionStepsTagStepDetailsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTransferWorkflowOnExceptionStepsTagStepDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTransferWorkflowOnExceptionStepsTagStepDetailsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

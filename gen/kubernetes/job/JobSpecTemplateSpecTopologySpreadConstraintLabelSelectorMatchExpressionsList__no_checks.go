@@ -12,7 +12,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatch
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatch
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatch
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobSpecTemplateSpecTopologySpreadConstraintLabelSelectorMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

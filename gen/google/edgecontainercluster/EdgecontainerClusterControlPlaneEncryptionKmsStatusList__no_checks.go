@@ -12,7 +12,7 @@ func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusList) vali
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusList) vali
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_EdgecontainerClusterControlPlaneEncryptionKmsStatusList) vali
 	return nil
 }
 
-func validateNewEdgecontainerClusterControlPlaneEncryptionKmsStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEdgecontainerClusterControlPlaneEncryptionKmsStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

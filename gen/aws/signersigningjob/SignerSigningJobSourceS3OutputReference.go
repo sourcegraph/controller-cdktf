@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/signersigningjob/internal"
 )
 
 type SignerSigningJobSourceS3OutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
@@ -40,9 +40,9 @@ type SignerSigningJobSourceS3OutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -51,7 +51,7 @@ type SignerSigningJobSourceS3OutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type SignerSigningJobSourceS3OutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type SignerSigningJobSourceS3OutputReference interface {
 
 // The jsii proxy struct for SignerSigningJobSourceS3OutputReference
 type jsiiProxy_SignerSigningJobSourceS3OutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SignerSigningJobSourceS3OutputReference) Bucket() *string {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_SignerSigningJobSourceS3OutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_SignerSigningJobSourceS3OutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SignerSigningJobSourceS3OutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_SignerSigningJobSourceS3OutputReference) VersionInput() *stri
 }
 
 
-func NewSignerSigningJobSourceS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SignerSigningJobSourceS3OutputReference {
+func NewSignerSigningJobSourceS3OutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SignerSigningJobSourceS3OutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSignerSigningJobSourceS3OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewSignerSigningJobSourceS3OutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_SignerSigningJobSourceS3OutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSourceS3OutputReference",
+		"@cdktn/provider-aws.signerSigningJob.SignerSigningJobSourceS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewSignerSigningJobSourceS3OutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewSignerSigningJobSourceS3OutputReference_Override(s SignerSigningJobSourceS3OutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSignerSigningJobSourceS3OutputReference_Override(s SignerSigningJobSourceS3OutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.signerSigningJob.SignerSigningJobSourceS3OutputReference",
+		"@cdktn/provider-aws.signerSigningJob.SignerSigningJobSourceS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_SignerSigningJobSourceS3OutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_SignerSigningJobSourceS3OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SignerSigningJobSourceS3OutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -488,8 +488,8 @@ func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -501,24 +501,24 @@ func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) InterpolationAsList(
 	return returns
 }
 
-func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (s *jsiiProxy_SignerSigningJobSourceS3OutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

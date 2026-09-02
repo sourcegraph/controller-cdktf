@@ -40,11 +40,11 @@ func (d *jsiiProxy_DefaultServiceAccountV1SecretOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DefaultServiceAccountV1SecretOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DefaultServiceAccountV1SecretOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DefaultServiceAccountV1SecretOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DefaultServiceAccountV1SecretOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DefaultServiceAccountV1SecretOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_DefaultServiceAccountV1SecretOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DefaultServiceAccountV1SecretOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDefaultServiceAccountV1SecretOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDefaultServiceAccountV1SecretOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

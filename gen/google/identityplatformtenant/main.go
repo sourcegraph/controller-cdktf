@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenant",
+		"@cdktn/provider-google.identityPlatformTenant.IdentityPlatformTenant",
 		reflect.TypeOf((*IdentityPlatformTenant)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -59,6 +60,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putClient", GoMethod: "PutClient"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowPasswordSignup", GoMethod: "ResetAllowPasswordSignup"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClient", GoMethod: "ResetClient"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisableAuth", GoMethod: "ResetDisableAuth"},
@@ -78,19 +80,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentityPlatformTenant{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantClient",
+		"@cdktn/provider-google.identityPlatformTenant.IdentityPlatformTenantClient",
 		reflect.TypeOf((*IdentityPlatformTenantClient)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantClientOutputReference",
+		"@cdktn/provider-google.identityPlatformTenant.IdentityPlatformTenantClientOutputReference",
 		reflect.TypeOf((*IdentityPlatformTenantClientOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,16 +124,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentityPlatformTenantClientOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantClientPermissions",
+		"@cdktn/provider-google.identityPlatformTenant.IdentityPlatformTenantClientPermissions",
 		reflect.TypeOf((*IdentityPlatformTenantClientPermissions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantClientPermissionsOutputReference",
+		"@cdktn/provider-google.identityPlatformTenant.IdentityPlatformTenantClientPermissionsOutputReference",
 		reflect.TypeOf((*IdentityPlatformTenantClientPermissionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -163,20 +166,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentityPlatformTenantClientPermissionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantConfig",
+		"@cdktn/provider-google.identityPlatformTenant.IdentityPlatformTenantConfig",
 		reflect.TypeOf((*IdentityPlatformTenantConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeouts",
+		"@cdktn/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeouts",
 		reflect.TypeOf((*IdentityPlatformTenantTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeoutsOutputReference",
+		"@cdktn/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeoutsOutputReference",
 		reflect.TypeOf((*IdentityPlatformTenantTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,7 +215,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

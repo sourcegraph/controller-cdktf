@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageBatchOperationsJobDeleteObjectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleStorageBatchOperationsJobDeleteObjectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleStorageBatchOperationsJobDeleteObjectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetappbackupvault/internal"
 )
 
 type GoogleNetappBackupVaultBackupRetentionPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BackupMinimumEnforcedRetentionDays() *float64
 	SetBackupMinimumEnforcedRetentionDays(val *float64)
 	BackupMinimumEnforcedRetentionDaysInput() *float64
@@ -46,9 +46,9 @@ type GoogleNetappBackupVaultBackupRetentionPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WeeklyBackupImmutable() interface{}
 	SetWeeklyBackupImmutable(val interface{})
 	WeeklyBackupImmutableInput() interface{}
@@ -57,7 +57,7 @@ type GoogleNetappBackupVaultBackupRetentionPolicyOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type GoogleNetappBackupVaultBackupRetentionPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDailyBackupImmutable()
 	ResetManualBackupImmutable()
 	ResetMonthlyBackupImmutable()
 	ResetWeeklyBackupImmutable()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type GoogleNetappBackupVaultBackupRetentionPolicyOutputReference interface {
 
 // The jsii proxy struct for GoogleNetappBackupVaultBackupRetentionPolicyOutputReference
 type jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) BackupMinimumEnforcedRetentionDays() *float64 {
@@ -235,8 +235,8 @@ func (j *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) 
 }
 
 
-func NewGoogleNetappBackupVaultBackupRetentionPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleNetappBackupVaultBackupRetentionPolicyOutputReference {
+func NewGoogleNetappBackupVaultBackupRetentionPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleNetappBackupVaultBackupRetentionPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleNetappBackupVaultBackupRetentionPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -275,7 +275,7 @@ func NewGoogleNetappBackupVaultBackupRetentionPolicyOutputReference(terraformRes
 	j := jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleNetappBackupVault.GoogleNetappBackupVaultBackupRetentionPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleNetappBackupVault.GoogleNetappBackupVaultBackupRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewGoogleNetappBackupVaultBackupRetentionPolicyOutputReference(terraformRes
 	return &j
 }
 
-func NewGoogleNetappBackupVaultBackupRetentionPolicyOutputReference_Override(g GoogleNetappBackupVaultBackupRetentionPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleNetappBackupVaultBackupRetentionPolicyOutputReference_Override(g GoogleNetappBackupVaultBackupRetentionPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleNetappBackupVault.GoogleNetappBackupVaultBackupRetentionPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleNetappBackupVault.GoogleNetappBackupVaultBackupRetentionPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -381,7 +381,7 @@ func (j *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -432,11 +432,11 @@ func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -560,8 +560,8 @@ func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -573,16 +573,16 @@ func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -621,8 +621,8 @@ func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) 
 	)
 }
 
-func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -630,7 +630,7 @@ func (g *jsiiProxy_GoogleNetappBackupVaultBackupRetentionPolicyOutputReference) 
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

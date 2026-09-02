@@ -56,6 +56,10 @@ func (a *jsiiProxy_AlbListenerRule) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (a *jsiiProxy_AlbListenerRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlbListenerRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (a *jsiiProxy_AlbListenerRule) validatePutActionParameters(value interface{
 }
 
 func (a *jsiiProxy_AlbListenerRule) validatePutConditionParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlbListenerRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_AlbListenerRule) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AlbListenerRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

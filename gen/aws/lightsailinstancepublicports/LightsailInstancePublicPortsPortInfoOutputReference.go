@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/lightsailinstancepublicports/internal"
 )
 
 type LightsailInstancePublicPortsPortInfoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CidrListAliases() *[]*string
 	SetCidrListAliases(val *[]*string)
 	CidrListAliasesInput() *[]*string
@@ -49,9 +49,9 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ToPort() *float64
 	SetToPort(val *float64)
 	ToPortInput() *float64
@@ -60,7 +60,7 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,15 +76,15 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCidrListAliases()
 	ResetCidrs()
 	ResetIpv6Cidrs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,7 +94,7 @@ type LightsailInstancePublicPortsPortInfoOutputReference interface {
 
 // The jsii proxy struct for LightsailInstancePublicPortsPortInfoOutputReference
 type jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) CidrListAliases() *[]*string {
@@ -257,8 +257,8 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -288,7 +288,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ToPortIn
 }
 
 
-func NewLightsailInstancePublicPortsPortInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LightsailInstancePublicPortsPortInfoOutputReference {
+func NewLightsailInstancePublicPortsPortInfoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LightsailInstancePublicPortsPortInfoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLightsailInstancePublicPortsPortInfoOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -297,7 +297,7 @@ func NewLightsailInstancePublicPortsPortInfoOutputReference(terraformResource cd
 	j := jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
+		"@cdktn/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -305,11 +305,11 @@ func NewLightsailInstancePublicPortsPortInfoOutputReference(terraformResource cd
 	return &j
 }
 
-func NewLightsailInstancePublicPortsPortInfoOutputReference_Override(l LightsailInstancePublicPortsPortInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLightsailInstancePublicPortsPortInfoOutputReference_Override(l LightsailInstancePublicPortsPortInfoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
+		"@cdktn/provider-aws.lightsailInstancePublicPorts.LightsailInstancePublicPortsPortInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
@@ -414,7 +414,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,11 +465,11 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetAnyMa
 	return returns
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -593,8 +593,8 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) GetStrin
 	return returns
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -606,16 +606,16 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Interpol
 	return returns
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -646,8 +646,8 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) ResetIpv
 	)
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -655,7 +655,7 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) Resolve(
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

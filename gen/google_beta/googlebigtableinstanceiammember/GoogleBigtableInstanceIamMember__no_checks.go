@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleBigtableInstanceIamMember) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleBigtableInstanceIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleBigtableInstanceIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleBigtableInstanceIamMember) validateOverrideLogicalIdPar
 }
 
 func (g *jsiiProxy_GoogleBigtableInstanceIamMember) validatePutConditionParameters(value *GoogleBigtableInstanceIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleBigtableInstanceIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceIamMember) validateSetInstanceParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleBigtableInstanceIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

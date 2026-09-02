@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/pubsubsubscription/internal"
 )
 
 type PubsubSubscriptionMessageTransformsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AiInference() PubsubSubscriptionMessageTransformsAiInferenceOutputReference
 	AiInferenceInput() *PubsubSubscriptionMessageTransformsAiInference
 	// the index of the complex object in a list.
@@ -41,15 +41,15 @@ type PubsubSubscriptionMessageTransformsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,9 +65,9 @@ type PubsubSubscriptionMessageTransformsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAiInference(value *PubsubSubscriptionMessageTransformsAiInference)
 	PutJavascriptUdf(value *PubsubSubscriptionMessageTransformsJavascriptUdf)
 	ResetAiInference()
@@ -75,7 +75,7 @@ type PubsubSubscriptionMessageTransformsOutputReference interface {
 	ResetJavascriptUdf()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type PubsubSubscriptionMessageTransformsOutputReference interface {
 
 // The jsii proxy struct for PubsubSubscriptionMessageTransformsOutputReference
 type jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) AiInference() PubsubSubscriptionMessageTransformsAiInferenceOutputReference {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) Terraform
 }
 
 
-func NewPubsubSubscriptionMessageTransformsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PubsubSubscriptionMessageTransformsOutputReference {
+func NewPubsubSubscriptionMessageTransformsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) PubsubSubscriptionMessageTransformsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPubsubSubscriptionMessageTransformsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -228,7 +228,7 @@ func NewPubsubSubscriptionMessageTransformsOutputReference(terraformResource cdk
 	j := jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewPubsubSubscriptionMessageTransformsOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewPubsubSubscriptionMessageTransformsOutputReference_Override(p PubsubSubscriptionMessageTransformsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewPubsubSubscriptionMessageTransformsOutputReference_Override(p PubsubSubscriptionMessageTransformsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference",
+		"@cdktn/provider-google.pubsubSubscription.PubsubSubscriptionMessageTransformsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		p,
 	)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,11 +341,11 @@ func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) GetAnyMap
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -469,8 +469,8 @@ func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) GetString
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -482,16 +482,16 @@ func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) Interpola
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) ResetJava
 	)
 }
 
-func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (p *jsiiProxy_PubsubSubscriptionMessageTransformsOutputReference) Resolve(_
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

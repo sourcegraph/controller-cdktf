@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/agent/internal"
 )
 
 type AgentAppdynamicsConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type AgentAppdynamicsConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -45,7 +45,7 @@ type AgentAppdynamicsConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type AgentAppdynamicsConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type AgentAppdynamicsConfigOutputReference interface {
 
 // The jsii proxy struct for AgentAppdynamicsConfigOutputReference
 type jsiiProxy_AgentAppdynamicsConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AgentAppdynamicsConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -139,8 +139,8 @@ func (j *jsiiProxy_AgentAppdynamicsConfigOutputReference) TerraformAttribute() *
 	return returns
 }
 
-func (j *jsiiProxy_AgentAppdynamicsConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AgentAppdynamicsConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_AgentAppdynamicsConfigOutputReference) UrlInput() *string {
 }
 
 
-func NewAgentAppdynamicsConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AgentAppdynamicsConfigOutputReference {
+func NewAgentAppdynamicsConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AgentAppdynamicsConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAgentAppdynamicsConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewAgentAppdynamicsConfigOutputReference(terraformResource cdktf.IInterpola
 	j := jsiiProxy_AgentAppdynamicsConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.agent.AgentAppdynamicsConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentAppdynamicsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewAgentAppdynamicsConfigOutputReference(terraformResource cdktf.IInterpola
 	return &j
 }
 
-func NewAgentAppdynamicsConfigOutputReference_Override(a AgentAppdynamicsConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAgentAppdynamicsConfigOutputReference_Override(a AgentAppdynamicsConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.agent.AgentAppdynamicsConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentAppdynamicsConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_AgentAppdynamicsConfigOutputReference)SetTerraformAttribute(v
 	)
 }
 
-func (j *jsiiProxy_AgentAppdynamicsConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AgentAppdynamicsConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) GetAnyMapAttribute(ter
 	return returns
 }
 
-func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -420,8 +420,8 @@ func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) GetStringMapAttribute(
 	return returns
 }
 
-func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -433,24 +433,24 @@ func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) InterpolationAsList() 
 	return returns
 }
 
-func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (a *jsiiProxy_AgentAppdynamicsConfigOutputReference) Resolve(_context cdktf
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

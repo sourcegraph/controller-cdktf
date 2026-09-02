@@ -40,11 +40,11 @@ func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputR
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputR
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_FirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputR
 	return nil
 }
 
-func validateNewFirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFirebaseRemoteConfigRemoteConfigParametersDefaultValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

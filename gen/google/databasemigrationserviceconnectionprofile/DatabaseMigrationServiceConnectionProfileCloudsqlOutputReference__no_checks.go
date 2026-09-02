@@ -40,7 +40,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileCloudsqlOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDatabaseMigrationServiceConnectionProfileCloudsqlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatabaseMigrationServiceConnectionProfileCloudsqlOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

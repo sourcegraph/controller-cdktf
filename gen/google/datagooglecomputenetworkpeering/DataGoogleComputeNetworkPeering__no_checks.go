@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataGoogleComputeNetworkPeering) validatePutTimeoutsParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleComputeNetworkPeering) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleComputeNetworkPeering_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleComputeNetworkPeering) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkPeering) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleComputeNetworkPeering) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

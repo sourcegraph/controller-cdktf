@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validatePutCusto
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -116,11 +116,11 @@ func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeBackendServiceBackendOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeBackendServiceBackendOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputeBackendServiceBackendOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

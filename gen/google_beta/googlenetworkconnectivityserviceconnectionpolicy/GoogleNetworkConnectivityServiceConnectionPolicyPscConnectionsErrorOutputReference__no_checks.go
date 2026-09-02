@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnection
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnection
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsErrorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

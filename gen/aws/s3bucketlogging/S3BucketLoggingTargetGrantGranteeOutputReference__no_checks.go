@@ -40,11 +40,11 @@ func (s *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_S3BucketLoggingTargetGrantGranteeOutputReference) validateSet
 	return nil
 }
 
-func validateNewS3BucketLoggingTargetGrantGranteeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketLoggingTargetGrantGranteeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

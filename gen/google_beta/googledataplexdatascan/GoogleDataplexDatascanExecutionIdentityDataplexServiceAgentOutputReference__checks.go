@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -179,7 +179,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -187,7 +187,7 @@ func (j *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOu
 	return nil
 }
 
-func validateNewGoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

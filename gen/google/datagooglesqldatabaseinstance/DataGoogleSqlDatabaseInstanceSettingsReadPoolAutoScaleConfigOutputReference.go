@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglesqldatabaseinstance/internal"
 )
 
 type DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,8 +25,8 @@ type DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DisableScaleIn() cdktf.IResolvable
-	Enabled() cdktf.IResolvable
+	DisableScaleIn() cdktn.IResolvable
+	Enabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfig
@@ -41,15 +41,15 @@ type DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference
 
 // The jsii proxy struct for DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference
 type jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -113,8 +113,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigO
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) DisableScaleIn() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) DisableScaleIn() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disableScaleIn",
@@ -123,8 +123,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigO
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) Enabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) Enabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enabled",
@@ -213,8 +213,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigO
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -224,7 +224,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigO
 }
 
 
-func NewDataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference {
+func NewDataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -233,7 +233,7 @@ func NewDataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefere
 	j := jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference",
+		"@cdktn/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -241,11 +241,11 @@ func NewDataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputRefere
 	return &j
 }
 
-func NewDataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference_Override(d DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference_Override(d DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference",
+		"@cdktn/provider-google.dataGoogleSqlDatabaseInstance.DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigO
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,11 +335,11 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigO
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -463,8 +463,8 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigO
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -476,24 +476,24 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigO
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigO
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

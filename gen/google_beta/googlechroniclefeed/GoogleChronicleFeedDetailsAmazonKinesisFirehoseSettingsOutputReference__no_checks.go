@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsAmazonKinesisFirehoseSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlevertexaiendpoint/internal"
 )
 
 type GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AcceleratorCount() *float64
 	AcceleratorType() *string
 	// the index of the complex object in a list.
@@ -37,15 +37,15 @@ type GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputRefe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputRefe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputRefe
 
 // The jsii proxy struct for GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference
 type jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference) AcceleratorCount() *float64 {
@@ -169,8 +169,8 @@ func (j *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachine
 	return returns
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -180,7 +180,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachine
 }
 
 
-func NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference {
+func NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -189,7 +189,7 @@ func NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputR
 	j := jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference",
+		"@cdktn/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -197,11 +197,11 @@ func NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputR
 	return &j
 }
 
-func NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference_Override(g GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference_Override(g GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference",
+		"@cdktn/provider-google-beta.googleVertexAiEndpoint.GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -251,7 +251,7 @@ func (j *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachine
 	)
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,11 +291,11 @@ func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachine
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -419,8 +419,8 @@ func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachine
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -432,24 +432,24 @@ func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachine
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachineSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -457,7 +457,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointDeployedModelsDedicatedResourcesMachine
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

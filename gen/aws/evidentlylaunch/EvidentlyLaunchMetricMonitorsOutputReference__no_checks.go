@@ -40,7 +40,7 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateGetStri
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validatePutMetr
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EvidentlyLaunchMetricMonitorsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEvidentlyLaunchMetricMonitorsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEvidentlyLaunchMetricMonitorsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/monitoringalertpolicy/internal"
 )
 
 type MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AlertRule() *string
 	SetAlertRule(val *string)
 	AlertRuleInput() *string
@@ -55,15 +55,15 @@ type MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAlertRule()
 	ResetDisableMetricValidation()
 	ResetDuration()
@@ -90,7 +90,7 @@ type MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRefere
 	ResetRuleGroup()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -100,7 +100,7 @@ type MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRefere
 
 // The jsii proxy struct for MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference
 type jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) AlertRule() *string {
@@ -303,8 +303,8 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return returns
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -314,7 +314,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 }
 
 
-func NewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference {
+func NewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -323,7 +323,7 @@ func NewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRef
 	j := jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference",
+		"@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -331,11 +331,11 @@ func NewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputRef
 	return &j
 }
 
-func NewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference_Override(m MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference_Override(m MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference",
+		"@cdktn/provider-google.monitoringAlertPolicy.MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -462,7 +462,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -502,11 +502,11 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -630,8 +630,8 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -643,16 +643,16 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	return returns
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -707,8 +707,8 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	)
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLanguageOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -716,7 +716,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionPrometheusQueryLangua
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

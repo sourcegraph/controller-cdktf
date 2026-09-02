@@ -56,6 +56,10 @@ func (s *jsiiProxy_SagemakerCodeRepository) validateInterpolationForAttributePar
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerCodeRepository) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerCodeRepository) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SagemakerCodeRepository) validateOverrideLogicalIdParameters(
 }
 
 func (s *jsiiProxy_SagemakerCodeRepository) validatePutGitConfigParameters(value *SagemakerCodeRepositoryGitConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerCodeRepository) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SagemakerCodeRepository) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerCodeRepository) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SagemakerCodeRepository) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

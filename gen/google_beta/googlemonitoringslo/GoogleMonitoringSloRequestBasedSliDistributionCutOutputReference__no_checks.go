@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliDistributionCutOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliDistributionCutOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliDistributionCutOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliDistributionCutOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMonitoringSloRequestBasedSliDistributionCutOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMonitoringSloRequestBasedSliDistributionCutOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

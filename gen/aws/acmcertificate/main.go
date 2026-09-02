@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificate",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificate",
 		reflect.TypeOf((*AcmCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -50,6 +50,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyAlgorithm", GoGetter: "KeyAlgorithm"},
 			_jsii_.MemberProperty{JsiiProperty: "keyAlgorithmInput", GoGetter: "KeyAlgorithmInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -67,6 +68,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOptions", GoMethod: "PutOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putValidationOption", GoMethod: "PutValidationOption"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "renewalEligibility", GoGetter: "RenewalEligibility"},
 			_jsii_.MemberProperty{JsiiProperty: "renewalSummary", GoGetter: "RenewalSummary"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateAuthorityArn", GoMethod: "ResetCertificateAuthorityArn"},
@@ -106,23 +108,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validationMethodInput", GoGetter: "ValidationMethodInput"},
 			_jsii_.MemberProperty{JsiiProperty: "validationOption", GoGetter: "ValidationOption"},
 			_jsii_.MemberProperty{JsiiProperty: "validationOptionInput", GoGetter: "ValidationOptionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AcmCertificate{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateConfig",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateConfig",
 		reflect.TypeOf((*AcmCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateDomainValidationOptions",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateDomainValidationOptions",
 		reflect.TypeOf((*AcmCertificateDomainValidationOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateDomainValidationOptionsList",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateDomainValidationOptionsList",
 		reflect.TypeOf((*AcmCertificateDomainValidationOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -138,12 +141,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AcmCertificateDomainValidationOptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateDomainValidationOptionsOutputReference",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateDomainValidationOptionsOutputReference",
 		reflect.TypeOf((*AcmCertificateDomainValidationOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -174,16 +177,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AcmCertificateDomainValidationOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateOptions",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateOptions",
 		reflect.TypeOf((*AcmCertificateOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateOptionsOutputReference",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateOptionsOutputReference",
 		reflect.TypeOf((*AcmCertificateOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateTransparencyLoggingPreference", GoGetter: "CertificateTransparencyLoggingPreference"},
@@ -213,16 +216,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AcmCertificateOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummary",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateRenewalSummary",
 		reflect.TypeOf((*AcmCertificateRenewalSummary)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummaryList",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateRenewalSummaryList",
 		reflect.TypeOf((*AcmCertificateRenewalSummaryList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -238,12 +241,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AcmCertificateRenewalSummaryList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateRenewalSummaryOutputReference",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateRenewalSummaryOutputReference",
 		reflect.TypeOf((*AcmCertificateRenewalSummaryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -273,16 +276,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AcmCertificateRenewalSummaryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOption",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateValidationOption",
 		reflect.TypeOf((*AcmCertificateValidationOption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionList",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateValidationOptionList",
 		reflect.TypeOf((*AcmCertificateValidationOptionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -299,12 +302,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AcmCertificateValidationOptionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.acmCertificate.AcmCertificateValidationOptionOutputReference",
+		"@cdktn/provider-aws.acmCertificate.AcmCertificateValidationOptionOutputReference",
 		reflect.TypeOf((*AcmCertificateValidationOptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -335,7 +338,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AcmCertificateValidationOptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

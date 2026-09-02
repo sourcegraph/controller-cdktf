@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleContainerAttachedClusterErrorsList) validateGetParamete
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAttachedClusterErrorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAttachedClusterErrorsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleContainerAttachedClusterErrorsList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAttachedClusterErrorsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAttachedClusterErrorsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleContainerAttachedClusterErrorsList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewGoogleContainerAttachedClusterErrorsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleContainerAttachedClusterErrorsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

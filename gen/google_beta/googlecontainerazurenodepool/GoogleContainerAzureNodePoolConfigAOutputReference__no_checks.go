@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_GoogleContainerAzureNodePoolConfigAOutputReference) validateS
 	return nil
 }
 
-func validateNewGoogleContainerAzureNodePoolConfigAOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerAzureNodePoolConfigAOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

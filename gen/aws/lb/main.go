@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lb.Lb",
+		"@cdktn/provider-aws.lb.Lb",
 		reflect.TypeOf((*Lb)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogs", GoGetter: "AccessLogs"},
@@ -63,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancerType", GoGetter: "LoadBalancerType"},
 			_jsii_.MemberProperty{JsiiProperty: "loadBalancerTypeInput", GoGetter: "LoadBalancerTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -80,6 +81,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSubnetMapping", GoMethod: "PutSubnetMapping"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessLogs", GoMethod: "ResetAccessLogs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomerOwnedIpv4Pool", GoMethod: "ResetCustomerOwnedIpv4Pool"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDesyncMitigationMode", GoMethod: "ResetDesyncMitigationMode"},
@@ -125,20 +127,21 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Lb{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lb.LbAccessLogs",
+		"@cdktn/provider-aws.lb.LbAccessLogs",
 		reflect.TypeOf((*LbAccessLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lb.LbAccessLogsOutputReference",
+		"@cdktn/provider-aws.lb.LbAccessLogsOutputReference",
 		reflect.TypeOf((*LbAccessLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -173,20 +176,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LbAccessLogsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lb.LbConfig",
+		"@cdktn/provider-aws.lb.LbConfig",
 		reflect.TypeOf((*LbConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lb.LbSubnetMapping",
+		"@cdktn/provider-aws.lb.LbSubnetMapping",
 		reflect.TypeOf((*LbSubnetMapping)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lb.LbSubnetMappingList",
+		"@cdktn/provider-aws.lb.LbSubnetMappingList",
 		reflect.TypeOf((*LbSubnetMappingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -203,12 +206,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LbSubnetMappingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lb.LbSubnetMappingOutputReference",
+		"@cdktn/provider-aws.lb.LbSubnetMappingOutputReference",
 		reflect.TypeOf((*LbSubnetMappingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allocationId", GoGetter: "AllocationId"},
@@ -247,16 +250,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LbSubnetMappingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lb.LbTimeouts",
+		"@cdktn/provider-aws.lb.LbTimeouts",
 		reflect.TypeOf((*LbTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lb.LbTimeoutsOutputReference",
+		"@cdktn/provider-aws.lb.LbTimeoutsOutputReference",
 		reflect.TypeOf((*LbTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -292,7 +295,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LbTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

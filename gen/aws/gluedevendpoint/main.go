@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpoint",
+		"@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpoint",
 		reflect.TypeOf((*GlueDevEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -67,6 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "publicKeys", GoGetter: "PublicKeys"},
 			_jsii_.MemberProperty{JsiiProperty: "publicKeysInput", GoGetter: "PublicKeysInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetArguments", GoMethod: "ResetArguments"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExtraJarsS3Path", GoMethod: "ResetExtraJarsS3Path"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExtraPythonLibsS3Path", GoMethod: "ResetExtraPythonLibsS3Path"},
@@ -106,6 +108,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcId", GoGetter: "VpcId"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workerType", GoGetter: "WorkerType"},
 			_jsii_.MemberProperty{JsiiProperty: "workerTypeInput", GoGetter: "WorkerTypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "yarnEndpointAddress", GoGetter: "YarnEndpointAddress"},
@@ -113,12 +116,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GlueDevEndpoint{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.glueDevEndpoint.GlueDevEndpointConfig",
+		"@cdktn/provider-aws.glueDevEndpoint.GlueDevEndpointConfig",
 		reflect.TypeOf((*GlueDevEndpointConfig)(nil)).Elem(),
 	)
 }

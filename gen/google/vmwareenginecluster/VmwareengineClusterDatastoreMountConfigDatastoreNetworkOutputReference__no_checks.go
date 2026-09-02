@@ -40,11 +40,11 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigDatastoreNetworkOutput
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigDatastoreNetworkOutput
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVmwareengineClusterDatastoreMountConfigDatastoreNetworkOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

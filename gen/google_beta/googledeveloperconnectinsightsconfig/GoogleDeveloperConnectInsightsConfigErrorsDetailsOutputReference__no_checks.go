@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfigErrorsDetailsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfigErrorsDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfigErrorsDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfigErrorsDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDeveloperConnectInsightsConfigErrorsDetailsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleDeveloperConnectInsightsConfigErrorsDetailsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectInsightsConfigErrorsDetailsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDeveloperConnectInsightsConfigErrorsDetailsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDeveloperConnectInsightsConfigErrorsDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDeveloperConnectInsightsConfigErrorsDetailsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

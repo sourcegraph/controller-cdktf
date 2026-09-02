@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpoint",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpoint",
 		reflect.TypeOf((*DmsEndpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -57,6 +57,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArn", GoGetter: "KmsKeyArn"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArnInput", GoGetter: "KmsKeyArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mongodbSettings", GoGetter: "MongodbSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "mongodbSettingsInput", GoGetter: "MongodbSettingsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -83,6 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redisSettingsInput", GoGetter: "RedisSettingsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "redshiftSettings", GoGetter: "RedshiftSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "redshiftSettingsInput", GoGetter: "RedshiftSettingsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificateArn", GoMethod: "ResetCertificateArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDatabaseName", GoMethod: "ResetDatabaseName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetElasticsearchSettings", GoMethod: "ResetElasticsearchSettings"},
@@ -136,23 +138,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpoint{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointConfig",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointConfig",
 		reflect.TypeOf((*DmsEndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettings",
 		reflect.TypeOf((*DmsEndpointElasticsearchSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettingsOutputReference",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointElasticsearchSettingsOutputReference",
 		reflect.TypeOf((*DmsEndpointElasticsearchSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -189,16 +192,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpointElasticsearchSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettings",
 		reflect.TypeOf((*DmsEndpointKafkaSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKafkaSettingsOutputReference",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointKafkaSettingsOutputReference",
 		reflect.TypeOf((*DmsEndpointKafkaSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "broker", GoGetter: "Broker"},
@@ -278,16 +281,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpointKafkaSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettings",
 		reflect.TypeOf((*DmsEndpointKinesisSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointKinesisSettingsOutputReference",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointKinesisSettingsOutputReference",
 		reflect.TypeOf((*DmsEndpointKinesisSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -341,16 +344,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpointKinesisSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettings",
 		reflect.TypeOf((*DmsEndpointMongodbSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointMongodbSettingsOutputReference",
 		reflect.TypeOf((*DmsEndpointMongodbSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authMechanism", GoGetter: "AuthMechanism"},
@@ -395,16 +398,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpointMongodbSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedisSettings",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettings",
 		reflect.TypeOf((*DmsEndpointRedisSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedisSettingsOutputReference",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedisSettingsOutputReference",
 		reflect.TypeOf((*DmsEndpointRedisSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authPassword", GoGetter: "AuthPassword"},
@@ -449,16 +452,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpointRedisSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettings",
 		reflect.TypeOf((*DmsEndpointRedshiftSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettingsOutputReference",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointRedshiftSettingsOutputReference",
 		reflect.TypeOf((*DmsEndpointRedshiftSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketFolder", GoGetter: "BucketFolder"},
@@ -500,16 +503,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpointRedshiftSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3Settings",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointS3Settings",
 		reflect.TypeOf((*DmsEndpointS3Settings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointS3SettingsOutputReference",
 		reflect.TypeOf((*DmsEndpointS3SettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addColumnName", GoGetter: "AddColumnName"},
@@ -650,16 +653,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpointS3SettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointTimeouts",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointTimeouts",
 		reflect.TypeOf((*DmsEndpointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dmsEndpoint.DmsEndpointTimeoutsOutputReference",
+		"@cdktn/provider-aws.dmsEndpoint.DmsEndpointTimeoutsOutputReference",
 		reflect.TypeOf((*DmsEndpointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -692,7 +695,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsEndpointTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

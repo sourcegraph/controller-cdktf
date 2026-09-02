@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsList) validateGet
 	return nil
 }
 
-func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeImageShieldedInstanceInitialStateDbxsList) validateSet
 	return nil
 }
 
-func validateNewComputeImageShieldedInstanceInitialStateDbxsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeImageShieldedInstanceInitialStateDbxsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

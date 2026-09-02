@@ -12,7 +12,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusList) validateGetP
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterValidationCheckStatusList) validateSetW
 	return nil
 }
 
-func validateNewGkeonpremVmwareClusterValidationCheckStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGkeonpremVmwareClusterValidationCheckStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

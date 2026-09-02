@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleintegrationsauthconfig/internal"
 )
 
 type GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -44,15 +44,15 @@ type GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,15 +68,15 @@ type GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetJwtHeader()
 	ResetJwtPayload()
 	ResetSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference interface
 
 // The jsii proxy struct for GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference
 type jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference) ComplexObjectIndex() interface{} {
@@ -219,8 +219,8 @@ func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -230,7 +230,7 @@ func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputRefer
 }
 
 
-func NewGoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference {
+func NewGoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -239,7 +239,7 @@ func NewGoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference(terraf
 	j := jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIntegrationsAuthConfig.GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference",
+		"@cdktn/provider-google-beta.googleIntegrationsAuthConfig.GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -247,11 +247,11 @@ func NewGoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference(terraf
 	return &j
 }
 
-func NewGoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference_Override(g GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference_Override(g GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIntegrationsAuthConfig.GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference",
+		"@cdktn/provider-google-beta.googleIntegrationsAuthConfig.GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -334,7 +334,7 @@ func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -374,11 +374,11 @@ func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -502,8 +502,8 @@ func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -515,16 +515,16 @@ func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -555,8 +555,8 @@ func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputRefer
 	)
 }
 
-func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -564,7 +564,7 @@ func (g *jsiiProxy_GoogleIntegrationsAuthConfigDecryptedCredentialJwtOutputRefer
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

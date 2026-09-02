@@ -40,11 +40,11 @@ func (s *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_SccV2ProjectNotificationConfigTimeoutsOutputReference) valida
 	return nil
 }
 
-func validateNewSccV2ProjectNotificationConfigTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSccV2ProjectNotificationConfigTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

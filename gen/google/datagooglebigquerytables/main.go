@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTables",
+		"@cdktn/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTables",
 		reflect.TypeOf((*DataGoogleBigqueryTables)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -53,23 +54,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleBigqueryTables{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesConfig",
+		"@cdktn/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesConfig",
 		reflect.TypeOf((*DataGoogleBigqueryTablesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesTables",
+		"@cdktn/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesTables",
 		reflect.TypeOf((*DataGoogleBigqueryTablesTables)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesTablesList",
+		"@cdktn/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesTablesList",
 		reflect.TypeOf((*DataGoogleBigqueryTablesTablesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -85,12 +87,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleBigqueryTablesTablesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesTablesOutputReference",
+		"@cdktn/provider-google.dataGoogleBigqueryTables.DataGoogleBigqueryTablesTablesOutputReference",
 		reflect.TypeOf((*DataGoogleBigqueryTablesTablesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,7 +121,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleBigqueryTablesTablesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

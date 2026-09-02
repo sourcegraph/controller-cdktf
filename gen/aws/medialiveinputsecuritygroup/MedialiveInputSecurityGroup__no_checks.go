@@ -56,6 +56,10 @@ func (m *jsiiProxy_MedialiveInputSecurityGroup) validateInterpolationForAttribut
 	return nil
 }
 
+func (m *jsiiProxy_MedialiveInputSecurityGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MedialiveInputSecurityGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (m *jsiiProxy_MedialiveInputSecurityGroup) validatePutTimeoutsParameters(va
 }
 
 func (m *jsiiProxy_MedialiveInputSecurityGroup) validatePutWhitelistRulesParameters(value interface{}) error {
+	return nil
+}
+
+func (m *jsiiProxy_MedialiveInputSecurityGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_MedialiveInputSecurityGroup) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_MedialiveInputSecurityGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MedialiveInputSecurityGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

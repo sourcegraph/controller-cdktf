@@ -40,11 +40,11 @@ func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateGetStri
 	return nil
 }
 
-func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_AccessOrganizationLoginDesignOutputReference) validateSetText
 	return nil
 }
 
-func validateNewAccessOrganizationLoginDesignOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAccessOrganizationLoginDesignOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

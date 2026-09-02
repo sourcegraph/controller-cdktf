@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataCloudflareZoneDnssec) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareZoneDnssec) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareZoneDnssec_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataCloudflareZoneDnssec) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareZoneDnssec) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataCloudflareZoneDnssec) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsVpcPeeringConnections) validatePutTimeoutsParameters(v
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsVpcPeeringConnections) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsVpcPeeringConnections_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnections) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnections) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsVpcPeeringConnections) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutput
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutput
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_AccessContextManagerGcpUserAccessBindingSessionSettingsOutput
 	return nil
 }
 
-func validateNewAccessContextManagerGcpUserAccessBindingSessionSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAccessContextManagerGcpUserAccessBindingSessionSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

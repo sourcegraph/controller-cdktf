@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigMasterGlobalAccessC
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigMasterGlobalAccessC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterPrivateClusterConfigMasterGlobalAccessConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

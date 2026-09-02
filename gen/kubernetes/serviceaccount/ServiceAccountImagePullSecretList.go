@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/serviceaccount/internal"
 )
 
 type ServiceAccountImagePullSecretList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type ServiceAccountImagePullSecretList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ServiceAccountImagePullSecretOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type ServiceAccountImagePullSecretList interface {
 
 // The jsii proxy struct for ServiceAccountImagePullSecretList
 type jsiiProxy_ServiceAccountImagePullSecretList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ServiceAccountImagePullSecretList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_ServiceAccountImagePullSecretList) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ServiceAccountImagePullSecretList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServiceAccountImagePullSecretList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_ServiceAccountImagePullSecretList) WrapsSet() *bool {
 }
 
 
-func NewServiceAccountImagePullSecretList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceAccountImagePullSecretList {
+func NewServiceAccountImagePullSecretList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ServiceAccountImagePullSecretList {
 	_init_.Initialize()
 
 	if err := validateNewServiceAccountImagePullSecretListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewServiceAccountImagePullSecretList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_ServiceAccountImagePullSecretList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccountImagePullSecretList",
+		"@cdktn/provider-kubernetes.serviceAccount.ServiceAccountImagePullSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewServiceAccountImagePullSecretList(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewServiceAccountImagePullSecretList_Override(s ServiceAccountImagePullSecretList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewServiceAccountImagePullSecretList_Override(s ServiceAccountImagePullSecretList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.serviceAccount.ServiceAccountImagePullSecretList",
+		"@cdktn/provider-kubernetes.serviceAccount.ServiceAccountImagePullSecretList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		s,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_ServiceAccountImagePullSecretList)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_ServiceAccountImagePullSecretList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServiceAccountImagePullSecretList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_ServiceAccountImagePullSecretList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (s *jsiiProxy_ServiceAccountImagePullSecretList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (s *jsiiProxy_ServiceAccountImagePullSecretList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := s.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		s,
@@ -228,8 +231,8 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretList) Get(index *float64) Servic
 	return returns
 }
 
-func (s *jsiiProxy_ServiceAccountImagePullSecretList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_ServiceAccountImagePullSecretList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (s *jsiiProxy_ServiceAccountImagePullSecretList) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

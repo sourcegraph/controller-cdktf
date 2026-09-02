@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersList) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersList) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeGlobalForwardingRuleMetadataFiltersList) validat
 	return nil
 }
 
-func validateNewGoogleComputeGlobalForwardingRuleMetadataFiltersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeGlobalForwardingRuleMetadataFiltersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

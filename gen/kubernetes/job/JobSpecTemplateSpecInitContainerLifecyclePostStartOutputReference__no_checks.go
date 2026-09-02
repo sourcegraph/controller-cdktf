@@ -40,7 +40,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecInitContainerLifecyclePostStartOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecInitContainerLifecyclePostStartOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewJobSpecTemplateSpecInitContainerLifecyclePostStartOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

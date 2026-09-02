@@ -40,11 +40,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersSqlServerOutputReference) valid
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersSqlServerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersSqlServerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersSqlServerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersSqlServerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_QuicksightDataSourceParametersSqlServerOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersSqlServerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersSqlServerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewQuicksightDataSourceParametersSqlServerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQuicksightDataSourceParametersSqlServerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

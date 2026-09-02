@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationVisua
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationVisua
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationVisua
 	return nil
 }
 
-func validateNewGoogleChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleChronicleDashboardChartDashboardChartVisualizationVisualMapsPiecesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

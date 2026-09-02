@@ -12,7 +12,7 @@ func (b *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateGetParamete
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BigqueryBiReservationPreferredTablesList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewBigqueryBiReservationPreferredTablesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBigqueryBiReservationPreferredTablesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (e *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateGetString
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsTaskSetServiceRegistriesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEcsTaskSetServiceRegistriesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEcsTaskSetServiceRegistriesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

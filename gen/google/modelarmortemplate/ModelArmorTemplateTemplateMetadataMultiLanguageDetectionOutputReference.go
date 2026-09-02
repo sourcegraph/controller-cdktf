@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/modelarmortemplate/internal"
 )
 
 type ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference int
 
 // The jsii proxy struct for ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference
 type jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutpu
 	return returns
 }
 
-func (j *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutpu
 }
 
 
-func NewModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference {
+func NewModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference(
 	j := jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.modelArmorTemplate.ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference",
+		"@cdktn/provider-google.modelArmorTemplate.ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference(
 	return &j
 }
 
-func NewModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference_Override(m ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference_Override(m ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.modelArmorTemplate.ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference",
+		"@cdktn/provider-google.modelArmorTemplate.ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutpu
 	)
 }
 
-func (j *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutpu
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -420,8 +420,8 @@ func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutpu
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -433,24 +433,24 @@ func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutpu
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (m *jsiiProxy_ModelArmorTemplateTemplateMetadataMultiLanguageDetectionOutpu
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

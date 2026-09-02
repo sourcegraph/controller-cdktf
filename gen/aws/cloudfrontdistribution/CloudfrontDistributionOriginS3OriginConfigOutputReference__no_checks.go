@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudfrontDistributionOriginS3OriginConfigOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginS3OriginConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginS3OriginConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginS3OriginConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionOriginS3OriginConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CloudfrontDistributionOriginS3OriginConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginS3OriginConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfrontDistributionOriginS3OriginConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudfrontDistributionOriginS3OriginConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudfrontDistributionOriginS3OriginConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

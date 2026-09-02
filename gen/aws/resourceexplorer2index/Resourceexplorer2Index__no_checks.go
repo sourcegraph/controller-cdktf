@@ -56,6 +56,10 @@ func (r *jsiiProxy_Resourceexplorer2Index) validateInterpolationForAttributePara
 	return nil
 }
 
+func (r *jsiiProxy_Resourceexplorer2Index) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_Resourceexplorer2Index) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (r *jsiiProxy_Resourceexplorer2Index) validateOverrideLogicalIdParameters(n
 }
 
 func (r *jsiiProxy_Resourceexplorer2Index) validatePutTimeoutsParameters(value *Resourceexplorer2IndexTimeouts) error {
+	return nil
+}
+
+func (r *jsiiProxy_Resourceexplorer2Index) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_Resourceexplorer2Index) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_Resourceexplorer2Index) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Resourceexplorer2Index) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

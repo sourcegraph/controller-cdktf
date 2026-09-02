@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.addressMap.AddressMap",
+		"@cdktn/provider-cloudflare.addressMap.AddressMap",
 		reflect.TypeOf((*AddressMap)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ips", GoGetter: "Ips"},
 			_jsii_.MemberProperty{JsiiProperty: "ipsInput", GoGetter: "IpsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "memberships", GoGetter: "Memberships"},
 			_jsii_.MemberProperty{JsiiProperty: "membershipsInput", GoGetter: "MembershipsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putIps", GoMethod: "PutIps"},
 			_jsii_.MemberMethod{JsiiMethod: "putMemberships", GoMethod: "PutMemberships"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultSni", GoMethod: "ResetDefaultSni"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -75,23 +77,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AddressMap{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.addressMap.AddressMapConfig",
+		"@cdktn/provider-cloudflare.addressMap.AddressMapConfig",
 		reflect.TypeOf((*AddressMapConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.addressMap.AddressMapIps",
+		"@cdktn/provider-cloudflare.addressMap.AddressMapIps",
 		reflect.TypeOf((*AddressMapIps)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.addressMap.AddressMapIpsList",
+		"@cdktn/provider-cloudflare.addressMap.AddressMapIpsList",
 		reflect.TypeOf((*AddressMapIpsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -108,12 +111,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AddressMapIpsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.addressMap.AddressMapIpsOutputReference",
+		"@cdktn/provider-cloudflare.addressMap.AddressMapIpsOutputReference",
 		reflect.TypeOf((*AddressMapIpsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,16 +145,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AddressMapIpsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.addressMap.AddressMapMemberships",
+		"@cdktn/provider-cloudflare.addressMap.AddressMapMemberships",
 		reflect.TypeOf((*AddressMapMemberships)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.addressMap.AddressMapMembershipsList",
+		"@cdktn/provider-cloudflare.addressMap.AddressMapMembershipsList",
 		reflect.TypeOf((*AddressMapMembershipsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -168,12 +171,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AddressMapMembershipsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.addressMap.AddressMapMembershipsOutputReference",
+		"@cdktn/provider-cloudflare.addressMap.AddressMapMembershipsOutputReference",
 		reflect.TypeOf((*AddressMapMembershipsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "canDelete", GoGetter: "CanDelete"},
@@ -205,7 +208,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AddressMapMembershipsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

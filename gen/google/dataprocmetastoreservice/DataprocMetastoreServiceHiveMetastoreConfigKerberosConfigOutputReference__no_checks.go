@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocMetastoreServiceHiveMetastoreConfigKerberosConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

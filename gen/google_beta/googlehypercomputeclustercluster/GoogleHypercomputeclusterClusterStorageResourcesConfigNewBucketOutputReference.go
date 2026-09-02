@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehypercomputeclustercluster/internal"
 )
 
 type GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Autoclass() GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference
 	AutoclassInput() *GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclass
 	Bucket() *string
@@ -44,15 +44,15 @@ type GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,9 +68,9 @@ type GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAutoclass(value *GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclass)
 	PutHierarchicalNamespace(value *GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketHierarchicalNamespace)
 	ResetAutoclass()
@@ -78,7 +78,7 @@ type GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputRefere
 	ResetStorageClass()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputRefere
 
 // The jsii proxy struct for GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference
 type jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference) Autoclass() GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference {
@@ -231,8 +231,8 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBuck
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBuck
 }
 
 
-func NewGoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference {
+func NewGoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewGoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputRef
 	j := jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleHypercomputeclusterCluster.GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference",
+		"@cdktn/provider-google-beta.googleHypercomputeclusterCluster.GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewGoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputRef
 	return &j
 }
 
-func NewGoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference_Override(g GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference_Override(g GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleHypercomputeclusterCluster.GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference",
+		"@cdktn/provider-google-beta.googleHypercomputeclusterCluster.GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -335,7 +335,7 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBuck
 	)
 }
 
-func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -375,11 +375,11 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBuck
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -503,8 +503,8 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBuck
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -516,16 +516,16 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBuck
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBuck
 	)
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBucketOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewBuck
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

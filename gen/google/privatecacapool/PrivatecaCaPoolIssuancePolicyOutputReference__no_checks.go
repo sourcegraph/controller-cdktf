@@ -40,7 +40,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateGetStri
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validatePutIden
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PrivatecaCaPoolIssuancePolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPrivatecaCaPoolIssuancePolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPrivatecaCaPoolIssuancePolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

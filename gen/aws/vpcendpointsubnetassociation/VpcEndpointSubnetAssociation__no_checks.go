@@ -56,6 +56,10 @@ func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateInterpolationForAttribu
 	return nil
 }
 
+func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateOverrideLogicalIdParame
 }
 
 func (v *jsiiProxy_VpcEndpointSubnetAssociation) validatePutTimeoutsParameters(value *VpcEndpointSubnetAssociationTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcEndpointSubnetAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VpcEndpointSubnetAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/job/internal"
 )
 
 type JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,15 +48,15 @@ type JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutHttpHeader(value interface{})
 	ResetHost()
 	ResetHttpHeader()
@@ -83,7 +83,7 @@ type JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference interface 
 	ResetScheme()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference interface 
 
 // The jsii proxy struct for JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference
 type jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference) ComplexObjectIndex() interface{} {
@@ -256,8 +256,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputRefere
 }
 
 
-func NewJobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference {
+func NewJobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewJobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference(terrafo
 	j := jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference",
+		"@cdktn/provider-kubernetes.job.JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewJobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference(terrafo
 	return &j
 }
 
-func NewJobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference_Override(j JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference_Override(j JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference",
+		"@cdktn/provider-kubernetes.job.JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputRefere
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -422,11 +422,11 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -550,8 +550,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -563,16 +563,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputRefere
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecContainerReadinessProbeHttpGetOutputRefere
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

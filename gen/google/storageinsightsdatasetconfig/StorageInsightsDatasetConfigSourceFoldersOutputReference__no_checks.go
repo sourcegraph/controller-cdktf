@@ -40,11 +40,11 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigSourceFoldersOutputReference) val
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigSourceFoldersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfigSourceFoldersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigSourceFoldersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfigSourceFoldersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_StorageInsightsDatasetConfigSourceFoldersOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfigSourceFoldersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfigSourceFoldersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStorageInsightsDatasetConfigSourceFoldersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStorageInsightsDatasetConfigSourceFoldersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

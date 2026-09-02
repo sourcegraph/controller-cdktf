@@ -40,11 +40,11 @@ func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateG
 	return nil
 }
 
-func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TransferAccessHomeDirectoryMappingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTransferAccessHomeDirectoryMappingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewTransferAccessHomeDirectoryMappingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

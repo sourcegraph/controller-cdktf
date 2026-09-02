@@ -40,11 +40,11 @@ func (s *jsiiProxy_ServiceDirectoryNamespaceIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDirectoryNamespaceIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceDirectoryNamespaceIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDirectoryNamespaceIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceDirectoryNamespaceIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ServiceDirectoryNamespaceIamMemberConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDirectoryNamespaceIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ServiceDirectoryNamespaceIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ServiceDirectoryNamespaceIamMemberConditionOutputReference) v
 	return nil
 }
 
-func validateNewServiceDirectoryNamespaceIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewServiceDirectoryNamespaceIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateGetSt
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validatePutMa
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpensearchDomainAutoTuneOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOpensearchDomainAutoTuneOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpensearchDomainAutoTuneOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

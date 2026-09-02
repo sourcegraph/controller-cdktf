@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputRefer
 	return nil
 }
 
-func validateNewGoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBillingBudgetBudgetFilterCustomPeriodEndDateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionIamPolicy) validateOverrideLogica
 	return nil
 }
 
+func (d *jsiiProxy_DataGooglePubsubSubscriptionIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGooglePubsubSubscriptionIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionIamPolicy) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGooglePubsubSubscriptionIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

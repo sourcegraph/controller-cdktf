@@ -40,11 +40,11 @@ func (c *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConfigConfigRuleSourceCustomPolicyDetailsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewConfigConfigRuleSourceCustomPolicyDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewConfigConfigRuleSourceCustomPolicyDetailsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

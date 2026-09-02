@@ -40,11 +40,11 @@ func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpec
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpec
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEmrClusterMasterInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

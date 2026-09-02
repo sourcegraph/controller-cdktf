@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpoin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpoin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeRegionBackendServiceHaPolicyLeaderNetworkEndpointOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

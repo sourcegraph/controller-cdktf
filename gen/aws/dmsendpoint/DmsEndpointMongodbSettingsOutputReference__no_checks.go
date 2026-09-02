@@ -40,11 +40,11 @@ func (d *jsiiProxy_DmsEndpointMongodbSettingsOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DmsEndpointMongodbSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsEndpointMongodbSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DmsEndpointMongodbSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsEndpointMongodbSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_DmsEndpointMongodbSettingsOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointMongodbSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DmsEndpointMongodbSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDmsEndpointMongodbSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDmsEndpointMongodbSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

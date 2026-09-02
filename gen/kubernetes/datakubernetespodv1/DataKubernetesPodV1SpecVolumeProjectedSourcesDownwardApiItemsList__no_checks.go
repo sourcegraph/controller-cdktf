@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItems
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItems
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItems
 	return nil
 }
 
-func validateNewDataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesPodV1SpecVolumeProjectedSourcesDownwardApiItemsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

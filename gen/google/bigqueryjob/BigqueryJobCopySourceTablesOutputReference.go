@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigqueryjob/internal"
 )
 
 type BigqueryJobCopySourceTablesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type BigqueryJobCopySourceTablesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type BigqueryJobCopySourceTablesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDatasetId()
 	ResetProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type BigqueryJobCopySourceTablesOutputReference interface {
 
 // The jsii proxy struct for BigqueryJobCopySourceTablesOutputReference
 type jsiiProxy_BigqueryJobCopySourceTablesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) ComplexObjectIndex() interface{} {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) TerraformResource
 }
 
 
-func NewBigqueryJobCopySourceTablesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BigqueryJobCopySourceTablesOutputReference {
+func NewBigqueryJobCopySourceTablesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) BigqueryJobCopySourceTablesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBigqueryJobCopySourceTablesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -227,7 +227,7 @@ func NewBigqueryJobCopySourceTablesOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_BigqueryJobCopySourceTablesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopySourceTablesOutputReference",
+		"@cdktn/provider-google.bigqueryJob.BigqueryJobCopySourceTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewBigqueryJobCopySourceTablesOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewBigqueryJobCopySourceTablesOutputReference_Override(b BigqueryJobCopySourceTablesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewBigqueryJobCopySourceTablesOutputReference_Override(b BigqueryJobCopySourceTablesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryJob.BigqueryJobCopySourceTablesOutputReference",
+		"@cdktn/provider-google.bigqueryJob.BigqueryJobCopySourceTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		b,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryJobCopySourceTablesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -490,8 +490,8 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -503,16 +503,16 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) ResetProjectId() 
 	)
 }
 
-func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

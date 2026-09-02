@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMemorystoreInstancePersistenceConfigRdbConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

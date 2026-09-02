@@ -56,6 +56,10 @@ func (d *jsiiProxy_DatasyncLocationS3) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationS3) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationS3) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DatasyncLocationS3) validateOverrideLogicalIdParameters(newLo
 }
 
 func (d *jsiiProxy_DatasyncLocationS3) validatePutS3ConfigParameters(value *DatasyncLocationS3S3Config) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationS3) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_DatasyncLocationS3) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationS3) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DatasyncLocationS3) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

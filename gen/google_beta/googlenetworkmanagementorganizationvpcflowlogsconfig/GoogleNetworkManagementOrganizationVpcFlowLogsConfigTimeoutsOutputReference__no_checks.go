@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkManagementOrganizationVpcFlowLogsConfigTimeoutsO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkManagementOrganizationVpcFlowLogsConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkManagementOrganizationVpcFlowLogsConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkManagementOrganizationVpcFlowLogsConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkManagementOrganizationVpcFlowLogsConfigTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleNetworkManagementOrganizationVpcFlowLogsConfigTimeoutsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementOrganizationVpcFlowLogsConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkManagementOrganizationVpcFlowLogsConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleNetworkManagementOrganizationVpcFlowLogsConfigTimeoutsO
 	return nil
 }
 
-func validateNewGoogleNetworkManagementOrganizationVpcFlowLogsConfigTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkManagementOrganizationVpcFlowLogsConfigTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

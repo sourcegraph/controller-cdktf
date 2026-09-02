@@ -40,11 +40,11 @@ func (p *jsiiProxy_PinpointAppLimitsOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAppLimitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PinpointAppLimitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PinpointAppLimitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PinpointAppLimitsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PinpointAppLimitsOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_PinpointAppLimitsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PinpointAppLimitsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_PinpointAppLimitsOutputReference) validateSetTotalParameters(
 	return nil
 }
 
-func validateNewPinpointAppLimitsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPinpointAppLimitsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

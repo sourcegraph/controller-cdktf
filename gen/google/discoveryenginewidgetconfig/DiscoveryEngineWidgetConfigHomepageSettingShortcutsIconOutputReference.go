@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/discoveryenginewidgetconfig/internal"
 )
 
 type DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -45,7 +45,7 @@ type DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference inte
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference inte
 
 // The jsii proxy struct for DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference
 type jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) ComplexObjectIndex() interface{} {
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutput
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutput
 }
 
 
-func NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference {
+func NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference(t
 	j := jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference",
+		"@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference(t
 	return &j
 }
 
-func NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference_Override(d DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference_Override(d DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference",
+		"@cdktn/provider-google.discoveryEngineWidgetConfig.DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutput
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutput
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -421,8 +421,8 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutput
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -434,16 +434,16 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutput
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutput
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutput
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

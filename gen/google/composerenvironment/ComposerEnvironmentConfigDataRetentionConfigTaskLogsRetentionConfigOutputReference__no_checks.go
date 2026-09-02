@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetention
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetention
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

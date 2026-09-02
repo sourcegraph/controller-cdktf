@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validatePutSensitiveLabe
 }
 
 func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validatePutTimeoutsParameters(value *GoogleMonitoringNotificationChannelTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringNotificationChannel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleMonitoringNotificationChannel) validateSetLabelsParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringNotificationChannel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleMonitoringNotificationChannel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

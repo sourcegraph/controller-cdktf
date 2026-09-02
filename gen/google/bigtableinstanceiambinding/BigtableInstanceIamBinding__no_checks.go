@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigtableInstanceIamBinding) validateInterpolationForAttribute
 	return nil
 }
 
+func (b *jsiiProxy_BigtableInstanceIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableInstanceIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (b *jsiiProxy_BigtableInstanceIamBinding) validateOverrideLogicalIdParamete
 }
 
 func (b *jsiiProxy_BigtableInstanceIamBinding) validatePutConditionParameters(value *BigtableInstanceIamBindingCondition) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableInstanceIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_BigtableInstanceIamBinding) validateSetInstanceParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_BigtableInstanceIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BigtableInstanceIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

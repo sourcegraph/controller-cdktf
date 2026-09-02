@@ -12,7 +12,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecSecurityContextSysctlList) validat
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecSecurityContextSysctlList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecSecurityContextSysctlList) validat
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecSecurityContextSysctlList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecSecurityContextSysctlList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecSecurityContextSysctlList) validat
 	return nil
 }
 
-func validateNewStatefulSetSpecTemplateSpecSecurityContextSysctlListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStatefulSetSpecTemplateSpecSecurityContextSysctlListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

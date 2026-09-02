@@ -40,11 +40,11 @@ func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) valida
 	return nil
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_FolderOrganizationPolicyListPolicyDenyOutputReference) valida
 	return nil
 }
 
-func validateNewFolderOrganizationPolicyListPolicyDenyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFolderOrganizationPolicyListPolicyDenyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

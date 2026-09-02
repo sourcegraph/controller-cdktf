@@ -40,11 +40,11 @@ func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToM
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToM
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_WafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToM
 	return nil
 }
 
-func validateNewWafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWafregionalSqlInjectionMatchSetSqlInjectionMatchTupleFieldToMatchOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

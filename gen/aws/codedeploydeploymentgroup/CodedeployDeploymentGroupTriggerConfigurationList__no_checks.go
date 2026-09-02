@@ -12,7 +12,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupTriggerConfigurationList) validateSe
 	return nil
 }
 
-func validateNewCodedeployDeploymentGroupTriggerConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCodedeployDeploymentGroupTriggerConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoadBalancerRandomSteeringList) validateGetParameters(index *
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRandomSteeringList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerRandomSteeringList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoadBalancerRandomSteeringList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRandomSteeringList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoadBalancerRandomSteeringList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoadBalancerRandomSteeringList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewLoadBalancerRandomSteeringListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoadBalancerRandomSteeringListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

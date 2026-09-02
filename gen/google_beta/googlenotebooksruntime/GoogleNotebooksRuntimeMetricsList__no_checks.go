@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNotebooksRuntimeMetricsList) validateGetParameters(inde
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNotebooksRuntimeMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNotebooksRuntimeMetricsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeMetricsList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNotebooksRuntimeMetricsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNotebooksRuntimeMetricsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleNotebooksRuntimeMetricsList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewGoogleNotebooksRuntimeMetricsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNotebooksRuntimeMetricsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

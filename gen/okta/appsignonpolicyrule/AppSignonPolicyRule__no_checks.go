@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppSignonPolicyRule) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (a *jsiiProxy_AppSignonPolicyRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSignonPolicyRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AppSignonPolicyRule) validateOverrideLogicalIdParameters(newL
 }
 
 func (a *jsiiProxy_AppSignonPolicyRule) validatePutPlatformIncludeParameters(value interface{}) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSignonPolicyRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_AppSignonPolicyRule) validateSetInactivityPeriodParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_AppSignonPolicyRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppSignonPolicyRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/composerenvironment/internal"
 )
 
 type ComposerEnvironmentConfigEncryptionConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type ComposerEnvironmentConfigEncryptionConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type ComposerEnvironmentConfigEncryptionConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type ComposerEnvironmentConfigEncryptionConfigOutputReference interface {
 
 // The jsii proxy struct for ComposerEnvironmentConfigEncryptionConfigOutputReference
 type jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) Ter
 }
 
 
-func NewComposerEnvironmentConfigEncryptionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComposerEnvironmentConfigEncryptionConfigOutputReference {
+func NewComposerEnvironmentConfigEncryptionConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComposerEnvironmentConfigEncryptionConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComposerEnvironmentConfigEncryptionConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewComposerEnvironmentConfigEncryptionConfigOutputReference(terraformResour
 	j := jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigEncryptionConfigOutputReference",
+		"@cdktn/provider-google.composerEnvironment.ComposerEnvironmentConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewComposerEnvironmentConfigEncryptionConfigOutputReference(terraformResour
 	return &j
 }
 
-func NewComposerEnvironmentConfigEncryptionConfigOutputReference_Override(c ComposerEnvironmentConfigEncryptionConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComposerEnvironmentConfigEncryptionConfigOutputReference_Override(c ComposerEnvironmentConfigEncryptionConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.composerEnvironment.ComposerEnvironmentConfigEncryptionConfigOutputReference",
+		"@cdktn/provider-google.composerEnvironment.ComposerEnvironmentConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) Get
 	return returns
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -420,8 +420,8 @@ func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) Get
 	return returns
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -433,24 +433,24 @@ func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) Int
 	return returns
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigEncryptionConfigOutputReference) Res
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

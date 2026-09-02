@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validatePutAddressParameter
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*EndpointsV1SubsetAddress:
 		value := value.(*[]*EndpointsV1SubsetAddress)
@@ -114,7 +114,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validatePutAddressParameter
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EndpointsV1SubsetAddress; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*EndpointsV1SubsetAddress; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validatePutNotReadyAddressP
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*EndpointsV1SubsetNotReadyAddress:
 		value := value.(*[]*EndpointsV1SubsetNotReadyAddress)
@@ -145,7 +145,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validatePutNotReadyAddressP
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EndpointsV1SubsetNotReadyAddress; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*EndpointsV1SubsetNotReadyAddress; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -157,7 +157,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validatePutPortParameters(v
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*EndpointsV1SubsetPort:
 		value := value.(*[]*EndpointsV1SubsetPort)
@@ -176,16 +176,16 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validatePutPortParameters(v
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EndpointsV1SubsetPort; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*EndpointsV1SubsetPort; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -258,7 +258,7 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference) validateSetComplexObjectIsF
 
 func (j *jsiiProxy_EndpointsV1SubsetOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *EndpointsV1Subset:
 		val := val.(*EndpointsV1Subset)
@@ -273,7 +273,7 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference) validateSetInternalValuePar
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EndpointsV1Subset; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *EndpointsV1Subset; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -288,7 +288,7 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -296,7 +296,7 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference) validateSetTerraformResourc
 	return nil
 }
 
-func validateNewEndpointsV1SubsetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEndpointsV1SubsetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

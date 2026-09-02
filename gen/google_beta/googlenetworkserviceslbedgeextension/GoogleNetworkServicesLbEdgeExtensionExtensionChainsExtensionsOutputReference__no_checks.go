@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsExtensions
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsExtensions
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkServicesLbEdgeExtensionExtensionChainsExtensionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

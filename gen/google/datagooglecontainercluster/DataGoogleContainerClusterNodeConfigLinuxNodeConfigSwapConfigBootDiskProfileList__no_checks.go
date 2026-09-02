@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfig
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfig
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfig
 	return nil
 }
 
-func validateNewDataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleContainerClusterNodeConfigLinuxNodeConfigSwapConfigBootDiskProfileListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

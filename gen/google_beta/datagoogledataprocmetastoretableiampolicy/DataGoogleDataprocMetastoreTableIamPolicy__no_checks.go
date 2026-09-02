@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) validateOverrideLo
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleDataprocMetastoreTableIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreTableIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

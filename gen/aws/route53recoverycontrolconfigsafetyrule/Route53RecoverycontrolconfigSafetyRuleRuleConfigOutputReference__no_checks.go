@@ -40,11 +40,11 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReferen
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigSafetyRuleRuleConfigOutputReferen
 	return nil
 }
 
-func validateNewRoute53RecoverycontrolconfigSafetyRuleRuleConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRoute53RecoverycontrolconfigSafetyRuleRuleConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapphubservice/internal"
 )
 
 type GoogleApphubServiceAttributesEnvironmentOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type GoogleApphubServiceAttributesEnvironmentOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -45,7 +45,7 @@ type GoogleApphubServiceAttributesEnvironmentOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type GoogleApphubServiceAttributesEnvironmentOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type GoogleApphubServiceAttributesEnvironmentOutputReference interface {
 
 // The jsii proxy struct for GoogleApphubServiceAttributesEnvironmentOutputReference
 type jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) ComplexObjectIndex() interface{} {
@@ -139,8 +139,8 @@ func (j *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) Type
 }
 
 
-func NewGoogleApphubServiceAttributesEnvironmentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleApphubServiceAttributesEnvironmentOutputReference {
+func NewGoogleApphubServiceAttributesEnvironmentOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleApphubServiceAttributesEnvironmentOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleApphubServiceAttributesEnvironmentOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewGoogleApphubServiceAttributesEnvironmentOutputReference(terraformResourc
 	j := jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleApphubService.GoogleApphubServiceAttributesEnvironmentOutputReference",
+		"@cdktn/provider-google-beta.googleApphubService.GoogleApphubServiceAttributesEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewGoogleApphubServiceAttributesEnvironmentOutputReference(terraformResourc
 	return &j
 }
 
-func NewGoogleApphubServiceAttributesEnvironmentOutputReference_Override(g GoogleApphubServiceAttributesEnvironmentOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleApphubServiceAttributesEnvironmentOutputReference_Override(g GoogleApphubServiceAttributesEnvironmentOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleApphubService.GoogleApphubServiceAttributesEnvironmentOutputReference",
+		"@cdktn/provider-google-beta.googleApphubService.GoogleApphubServiceAttributesEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) GetA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -420,8 +420,8 @@ func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) GetS
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -433,24 +433,24 @@ func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) Inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (g *jsiiProxy_GoogleApphubServiceAttributesEnvironmentOutputReference) Reso
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

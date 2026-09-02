@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecVolumePhotonPersistentDiskList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecVolumePhotonPersistentDiskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecVolumePhotonPersistentDiskList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecVolumePhotonPersistentDiskList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecVolumePhotonPersistentDiskList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodV1SpecVolumePhotonPersistentDiskList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecVolumePhotonPersistentDiskList) valida
 	return nil
 }
 
-func validateNewDataKubernetesPodV1SpecVolumePhotonPersistentDiskListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesPodV1SpecVolumePhotonPersistentDiskListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOut
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOut
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudwatchMetricStreamStatisticsConfigurationIncludeMetricOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

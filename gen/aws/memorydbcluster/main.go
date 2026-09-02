@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbCluster",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbCluster",
 		reflect.TypeOf((*MemorydbCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aclName", GoGetter: "AclName"},
@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindow", GoGetter: "MaintenanceWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowInput", GoGetter: "MaintenanceWindowInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -78,6 +79,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoMinorVersionUpgrade", GoMethod: "ResetAutoMinorVersionUpgrade"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataTiering", GoMethod: "ResetDataTiering"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -136,19 +138,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MemorydbCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpoint",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterClusterEndpoint",
 		reflect.TypeOf((*MemorydbClusterClusterEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointList",
 		reflect.TypeOf((*MemorydbClusterClusterEndpointList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -164,12 +167,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MemorydbClusterClusterEndpointList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointOutputReference",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterClusterEndpointOutputReference",
 		reflect.TypeOf((*MemorydbClusterClusterEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -198,20 +201,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MemorydbClusterClusterEndpointOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterConfig",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterConfig",
 		reflect.TypeOf((*MemorydbClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShards",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterShards",
 		reflect.TypeOf((*MemorydbClusterShards)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsList",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterShardsList",
 		reflect.TypeOf((*MemorydbClusterShardsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -227,20 +230,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MemorydbClusterShardsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodes",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterShardsNodes",
 		reflect.TypeOf((*MemorydbClusterShardsNodes)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpoint",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpoint",
 		reflect.TypeOf((*MemorydbClusterShardsNodesEndpoint)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointList",
 		reflect.TypeOf((*MemorydbClusterShardsNodesEndpointList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -256,12 +259,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MemorydbClusterShardsNodesEndpointList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointOutputReference",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterShardsNodesEndpointOutputReference",
 		reflect.TypeOf((*MemorydbClusterShardsNodesEndpointOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -290,12 +293,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MemorydbClusterShardsNodesEndpointOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterShardsNodesList",
 		reflect.TypeOf((*MemorydbClusterShardsNodesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -311,12 +314,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MemorydbClusterShardsNodesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsNodesOutputReference",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterShardsNodesOutputReference",
 		reflect.TypeOf((*MemorydbClusterShardsNodesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZone", GoGetter: "AvailabilityZone"},
@@ -347,12 +350,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MemorydbClusterShardsNodesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterShardsOutputReference",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterShardsOutputReference",
 		reflect.TypeOf((*MemorydbClusterShardsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -383,16 +386,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MemorydbClusterShardsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeouts",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterTimeouts",
 		reflect.TypeOf((*MemorydbClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.memorydbCluster.MemorydbClusterTimeoutsOutputReference",
+		"@cdktn/provider-aws.memorydbCluster.MemorydbClusterTimeoutsOutputReference",
 		reflect.TypeOf((*MemorydbClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -428,7 +431,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MemorydbClusterTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

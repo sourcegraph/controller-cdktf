@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/autoscalinggroup/internal"
 )
 
 type AutoscalingGroupLaunchTemplateOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type AutoscalingGroupLaunchTemplateOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -51,7 +51,7 @@ type AutoscalingGroupLaunchTemplateOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type AutoscalingGroupLaunchTemplateOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetId()
 	ResetName()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type AutoscalingGroupLaunchTemplateOutputReference interface {
 
 // The jsii proxy struct for AutoscalingGroupLaunchTemplateOutputReference
 type jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) VersionInput()
 }
 
 
-func NewAutoscalingGroupLaunchTemplateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AutoscalingGroupLaunchTemplateOutputReference {
+func NewAutoscalingGroupLaunchTemplateOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AutoscalingGroupLaunchTemplateOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAutoscalingGroupLaunchTemplateOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewAutoscalingGroupLaunchTemplateOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupLaunchTemplateOutputReference",
+		"@cdktn/provider-aws.autoscalingGroup.AutoscalingGroupLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewAutoscalingGroupLaunchTemplateOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewAutoscalingGroupLaunchTemplateOutputReference_Override(a AutoscalingGroupLaunchTemplateOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAutoscalingGroupLaunchTemplateOutputReference_Override(a AutoscalingGroupLaunchTemplateOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.autoscalingGroup.AutoscalingGroupLaunchTemplateOutputReference",
+		"@cdktn/provider-aws.autoscalingGroup.AutoscalingGroupLaunchTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -491,8 +491,8 @@ func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) GetStringMapAt
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -504,16 +504,16 @@ func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) InterpolationA
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) ResetVersion()
 	)
 }
 
-func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (a *jsiiProxy_AutoscalingGroupLaunchTemplateOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

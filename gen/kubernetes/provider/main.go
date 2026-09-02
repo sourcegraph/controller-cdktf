@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-kubernetes.provider.KubernetesProvider",
+		"@cdktn/provider-kubernetes.provider.KubernetesProvider",
 		reflect.TypeOf((*KubernetesProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -54,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "proxyUrl", GoGetter: "ProxyUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "proxyUrlInput", GoGetter: "ProxyUrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAlias", GoMethod: "ResetAlias"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientCertificate", GoMethod: "ResetClientCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientKey", GoMethod: "ResetClientKey"},
@@ -87,23 +88,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "username", GoGetter: "Username"},
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_KubernetesProvider{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformProvider)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.provider.KubernetesProviderConfig",
+		"@cdktn/provider-kubernetes.provider.KubernetesProviderConfig",
 		reflect.TypeOf((*KubernetesProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.provider.KubernetesProviderExec",
+		"@cdktn/provider-kubernetes.provider.KubernetesProviderExec",
 		reflect.TypeOf((*KubernetesProviderExec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-kubernetes.provider.KubernetesProviderExperiments",
+		"@cdktn/provider-kubernetes.provider.KubernetesProviderExperiments",
 		reflect.TypeOf((*KubernetesProviderExperiments)(nil)).Elem(),
 	)
 }

@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (d *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -165,7 +165,7 @@ func (j *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateSetC
 
 func (j *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *DataplexEntryTypeRequiredAspects:
 		val := val.(*DataplexEntryTypeRequiredAspects)
@@ -180,7 +180,7 @@ func (j *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateSetI
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DataplexEntryTypeRequiredAspects; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DataplexEntryTypeRequiredAspects; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -211,7 +211,7 @@ func (j *jsiiProxy_DataplexEntryTypeRequiredAspectsOutputReference) validateSetT
 	return nil
 }
 
-func validateNewDataplexEntryTypeRequiredAspectsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataplexEntryTypeRequiredAspectsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfa",
+		"@cdktn/provider-okta.policyRuleMfa.PolicyRuleMfa",
 		reflect.TypeOf((*PolicyRuleMfa)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -64,6 +65,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAppExclude", GoMethod: "PutAppExclude"},
 			_jsii_.MemberMethod{JsiiMethod: "putAppInclude", GoMethod: "PutAppInclude"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppExclude", GoMethod: "ResetAppExclude"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppInclude", GoMethod: "ResetAppInclude"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnroll", GoMethod: "ResetEnroll"},
@@ -89,19 +91,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "usersExcluded", GoGetter: "UsersExcluded"},
 			_jsii_.MemberProperty{JsiiProperty: "usersExcludedInput", GoGetter: "UsersExcludedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleMfa{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExclude",
+		"@cdktn/provider-okta.policyRuleMfa.PolicyRuleMfaAppExclude",
 		reflect.TypeOf((*PolicyRuleMfaAppExclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExcludeList",
+		"@cdktn/provider-okta.policyRuleMfa.PolicyRuleMfaAppExcludeList",
 		reflect.TypeOf((*PolicyRuleMfaAppExcludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -118,12 +121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleMfaAppExcludeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppExcludeOutputReference",
+		"@cdktn/provider-okta.policyRuleMfa.PolicyRuleMfaAppExcludeOutputReference",
 		reflect.TypeOf((*PolicyRuleMfaAppExcludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,16 +161,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleMfaAppExcludeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppInclude",
+		"@cdktn/provider-okta.policyRuleMfa.PolicyRuleMfaAppInclude",
 		reflect.TypeOf((*PolicyRuleMfaAppInclude)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppIncludeList",
+		"@cdktn/provider-okta.policyRuleMfa.PolicyRuleMfaAppIncludeList",
 		reflect.TypeOf((*PolicyRuleMfaAppIncludeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -184,12 +187,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleMfaAppIncludeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaAppIncludeOutputReference",
+		"@cdktn/provider-okta.policyRuleMfa.PolicyRuleMfaAppIncludeOutputReference",
 		reflect.TypeOf((*PolicyRuleMfaAppIncludeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -224,12 +227,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PolicyRuleMfaAppIncludeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.policyRuleMfa.PolicyRuleMfaConfig",
+		"@cdktn/provider-okta.policyRuleMfa.PolicyRuleMfaConfig",
 		reflect.TypeOf((*PolicyRuleMfaConfig)(nil)).Elem(),
 	)
 }

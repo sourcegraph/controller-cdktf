@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/podsecuritypolicy/internal"
 )
 
 type PodSecurityPolicySpecHostPortsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type PodSecurityPolicySpecHostPortsList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) PodSecurityPolicySpecHostPortsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type PodSecurityPolicySpecHostPortsList interface {
 
 // The jsii proxy struct for PodSecurityPolicySpecHostPortsList
 type jsiiProxy_PodSecurityPolicySpecHostPortsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_PodSecurityPolicySpecHostPortsList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_PodSecurityPolicySpecHostPortsList) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecHostPortsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PodSecurityPolicySpecHostPortsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecHostPortsList) WrapsSet() *bool {
 }
 
 
-func NewPodSecurityPolicySpecHostPortsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSecurityPolicySpecHostPortsList {
+func NewPodSecurityPolicySpecHostPortsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PodSecurityPolicySpecHostPortsList {
 	_init_.Initialize()
 
 	if err := validateNewPodSecurityPolicySpecHostPortsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewPodSecurityPolicySpecHostPortsList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_PodSecurityPolicySpecHostPortsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsList",
+		"@cdktn/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewPodSecurityPolicySpecHostPortsList(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewPodSecurityPolicySpecHostPortsList_Override(p PodSecurityPolicySpecHostPortsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewPodSecurityPolicySpecHostPortsList_Override(p PodSecurityPolicySpecHostPortsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsList",
+		"@cdktn/provider-kubernetes.podSecurityPolicy.PodSecurityPolicySpecHostPortsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecHostPortsList)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecHostPortsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodSecurityPolicySpecHostPortsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_PodSecurityPolicySpecHostPortsList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecHostPortsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (p *jsiiProxy_PodSecurityPolicySpecHostPortsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := p.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		p,
@@ -228,8 +231,8 @@ func (p *jsiiProxy_PodSecurityPolicySpecHostPortsList) Get(index *float64) PodSe
 	return returns
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecHostPortsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodSecurityPolicySpecHostPortsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecHostPortsList) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

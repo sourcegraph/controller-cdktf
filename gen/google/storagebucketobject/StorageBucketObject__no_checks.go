@@ -56,6 +56,10 @@ func (s *jsiiProxy_StorageBucketObject) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_StorageBucketObject) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageBucketObject) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (s *jsiiProxy_StorageBucketObject) validatePutRetentionParameters(value *St
 }
 
 func (s *jsiiProxy_StorageBucketObject) validatePutTimeoutsParameters(value *StorageBucketObjectTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageBucketObject) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -164,7 +172,7 @@ func (j *jsiiProxy_StorageBucketObject) validateSetKmsKeyNameParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketObject) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_StorageBucketObject) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

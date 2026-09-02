@@ -40,7 +40,7 @@ func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validatePutEncrypti
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_CodepipelineArtifactStoreOutputReference) validateSetTypePara
 	return nil
 }
 
-func validateNewCodepipelineArtifactStoreOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCodepipelineArtifactStoreOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DataAwsVpcPeeringConnectionsFilterOutputReference) validateSe
 	return nil
 }
 
-func validateNewDataAwsVpcPeeringConnectionsFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsVpcPeeringConnectionsFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

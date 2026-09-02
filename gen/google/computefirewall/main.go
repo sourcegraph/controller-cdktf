@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewall",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewall",
 		reflect.TypeOf((*ComputeFirewall)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logConfig", GoGetter: "LogConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "logConfigInput", GoGetter: "LogConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -76,6 +77,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putParams", GoMethod: "PutParams"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllow", GoMethod: "ResetAllow"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeny", GoMethod: "ResetDeny"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -117,19 +119,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeFirewall{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallAllow",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallAllow",
 		reflect.TypeOf((*ComputeFirewallAllow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallAllowList",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallAllowList",
 		reflect.TypeOf((*ComputeFirewallAllowList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -146,12 +149,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeFirewallAllowList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallAllowOutputReference",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallAllowOutputReference",
 		reflect.TypeOf((*ComputeFirewallAllowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,20 +186,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeFirewallAllowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallConfig",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallConfig",
 		reflect.TypeOf((*ComputeFirewallConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallDeny",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallDeny",
 		reflect.TypeOf((*ComputeFirewallDeny)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallDenyList",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallDenyList",
 		reflect.TypeOf((*ComputeFirewallDenyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -213,12 +216,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeFirewallDenyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallDenyOutputReference",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallDenyOutputReference",
 		reflect.TypeOf((*ComputeFirewallDenyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -250,16 +253,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeFirewallDenyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallLogConfig",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallLogConfig",
 		reflect.TypeOf((*ComputeFirewallLogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallLogConfigOutputReference",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallLogConfigOutputReference",
 		reflect.TypeOf((*ComputeFirewallLogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -288,16 +291,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeFirewallLogConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallParams",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallParams",
 		reflect.TypeOf((*ComputeFirewallParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallParamsOutputReference",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallParamsOutputReference",
 		reflect.TypeOf((*ComputeFirewallParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -327,16 +330,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeFirewallParamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallTimeouts",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallTimeouts",
 		reflect.TypeOf((*ComputeFirewallTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeFirewall.ComputeFirewallTimeoutsOutputReference",
+		"@cdktn/provider-google.computeFirewall.ComputeFirewallTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeFirewallTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -372,7 +375,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeFirewallTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,11 +40,11 @@ func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) valida
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_ElastictranscoderPipelineNotificationsOutputReference) valida
 	return nil
 }
 
-func validateNewElastictranscoderPipelineNotificationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewElastictranscoderPipelineNotificationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

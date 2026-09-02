@@ -40,11 +40,11 @@ func (a *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateGetStr
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference) validateSetThr
 	return nil
 }
 
-func validateNewApigatewayv2StageRouteSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewApigatewayv2StageRouteSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

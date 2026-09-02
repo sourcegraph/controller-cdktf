@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validatePutTimeoutsParameters(value *GoogleComputeNetworkPeeringRoutesConfigTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetImportSub
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeNetworkPeeringRoutesConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

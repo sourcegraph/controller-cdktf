@@ -12,7 +12,7 @@ func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterList) val
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterList) val
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupOnPremisesInstanceTagFilterList) val
 	return nil
 }
 
-func validateNewCodedeployDeploymentGroupOnPremisesInstanceTagFilterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCodedeployDeploymentGroupOnPremisesInstanceTagFilterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

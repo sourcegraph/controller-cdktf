@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecGrpcRouteMatchOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppmeshGatewayRouteSpecGrpcRouteMatchOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppmeshGatewayRouteSpecGrpcRouteMatchOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

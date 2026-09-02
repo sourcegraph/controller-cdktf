@@ -40,11 +40,11 @@ func (o *jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference) v
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpensearchOutboundConnectionLocalDomainInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOpensearchOutboundConnectionLocalDomainInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpensearchOutboundConnectionLocalDomainInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

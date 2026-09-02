@@ -12,7 +12,7 @@ func (m *jsiiProxy_MonitoringMetricDescriptorLabelsList) validateGetParameters(i
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringMetricDescriptorLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringMetricDescriptorLabelsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorLabelsList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptorLabelsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitoringMetricDescriptorLabelsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptorLabelsList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewMonitoringMetricDescriptorLabelsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMonitoringMetricDescriptorLabelsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

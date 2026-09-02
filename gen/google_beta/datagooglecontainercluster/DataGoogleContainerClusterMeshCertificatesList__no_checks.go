@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterMeshCertificatesList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterMeshCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleContainerClusterMeshCertificatesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterMeshCertificatesList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterMeshCertificatesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleContainerClusterMeshCertificatesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterMeshCertificatesList) validateSetWr
 	return nil
 }
 
-func validateNewDataGoogleContainerClusterMeshCertificatesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleContainerClusterMeshCertificatesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

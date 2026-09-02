@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkConnectivitySpokeTimeoutsOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpokeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivitySpokeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkConnectivitySpokeTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivitySpokeTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkConnectivitySpokeTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivitySpokeTimeoutsOutputReference) valida
 	return nil
 }
 
-func validateNewGoogleNetworkConnectivitySpokeTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkConnectivitySpokeTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

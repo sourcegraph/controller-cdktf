@@ -40,11 +40,11 @@ func (c *jsiiProxy_CustomFieldFilterByOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (c *jsiiProxy_CustomFieldFilterByOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomFieldFilterByOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomFieldFilterByOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomFieldFilterByOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CustomFieldFilterByOutputReference) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_CustomFieldFilterByOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CustomFieldFilterByOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCustomFieldFilterByOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCustomFieldFilterByOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

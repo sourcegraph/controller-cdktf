@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyBannedPhrasesList
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyBannedPhrasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyBannedPhrasesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyBannedPhrasesList
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyBannedPhrasesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyBannedPhrasesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineAssistantCustomerPolicyBannedPhrasesList
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineAssistantCustomerPolicyBannedPhrasesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDiscoveryEngineAssistantCustomerPolicyBannedPhrasesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

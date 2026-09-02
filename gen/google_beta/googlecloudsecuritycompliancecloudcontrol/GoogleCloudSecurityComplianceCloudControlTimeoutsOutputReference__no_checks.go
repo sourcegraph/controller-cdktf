@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlTimeoutsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudSecurityComplianceCloudControlTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleCloudSecurityComplianceCloudControlTimeoutsOutputRefere
 	return nil
 }
 
-func validateNewGoogleCloudSecurityComplianceCloudControlTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudSecurityComplianceCloudControlTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

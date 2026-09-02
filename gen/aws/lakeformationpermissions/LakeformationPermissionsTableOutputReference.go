@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/lakeformationpermissions/internal"
 )
 
 type LakeformationPermissionsTableOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CatalogId() *string
 	SetCatalogId(val *string)
 	CatalogIdInput() *string
@@ -43,9 +43,9 @@ type LakeformationPermissionsTableOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Wildcard() interface{}
 	SetWildcard(val interface{})
 	WildcardInput() interface{}
@@ -54,7 +54,7 @@ type LakeformationPermissionsTableOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type LakeformationPermissionsTableOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCatalogId()
 	ResetName()
 	ResetWildcard()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type LakeformationPermissionsTableOutputReference interface {
 
 // The jsii proxy struct for LakeformationPermissionsTableOutputReference
 type jsiiProxy_LakeformationPermissionsTableOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LakeformationPermissionsTableOutputReference) CatalogId() *string {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_LakeformationPermissionsTableOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_LakeformationPermissionsTableOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LakeformationPermissionsTableOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_LakeformationPermissionsTableOutputReference) WildcardInput()
 }
 
 
-func NewLakeformationPermissionsTableOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LakeformationPermissionsTableOutputReference {
+func NewLakeformationPermissionsTableOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LakeformationPermissionsTableOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLakeformationPermissionsTableOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewLakeformationPermissionsTableOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_LakeformationPermissionsTableOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissionsTableOutputReference",
+		"@cdktn/provider-aws.lakeformationPermissions.LakeformationPermissionsTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewLakeformationPermissionsTableOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewLakeformationPermissionsTableOutputReference_Override(l LakeformationPermissionsTableOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLakeformationPermissionsTableOutputReference_Override(l LakeformationPermissionsTableOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lakeformationPermissions.LakeformationPermissionsTableOutputReference",
+		"@cdktn/provider-aws.lakeformationPermissions.LakeformationPermissionsTableOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_LakeformationPermissionsTableOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_LakeformationPermissionsTableOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LakeformationPermissionsTableOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -525,8 +525,8 @@ func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -538,16 +538,16 @@ func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) InterpolationAs
 	return returns
 }
 
-func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) ResetWildcard()
 	)
 }
 
-func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (l *jsiiProxy_LakeformationPermissionsTableOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

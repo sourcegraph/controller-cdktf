@@ -40,11 +40,11 @@ func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateGetStrin
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KmsKeyRingImportJobPublicKeyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKmsKeyRingImportJobPublicKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewKmsKeyRingImportJobPublicKeyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

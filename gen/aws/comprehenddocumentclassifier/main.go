@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifier",
 		reflect.TypeOf((*ComprehendDocumentClassifier)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -43,6 +43,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "languageCode", GoGetter: "LanguageCode"},
 			_jsii_.MemberProperty{JsiiProperty: "languageCodeInput", GoGetter: "LanguageCodeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "mode", GoGetter: "Mode"},
 			_jsii_.MemberProperty{JsiiProperty: "modeInput", GoGetter: "ModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "modelKmsKeyId", GoGetter: "ModelKmsKeyId"},
@@ -63,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVpcConfig", GoMethod: "PutVpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMode", GoMethod: "ResetMode"},
 			_jsii_.MemberMethod{JsiiMethod: "resetModelKmsKeyId", GoMethod: "ResetModelKmsKeyId"},
@@ -98,27 +100,28 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "volumeKmsKeyIdInput", GoGetter: "VolumeKmsKeyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComprehendDocumentClassifier{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierConfig",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierConfig",
 		reflect.TypeOf((*ComprehendDocumentClassifierConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfig",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfig",
 		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifests",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifests",
 		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigAugmentedManifests)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList",
 		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -135,12 +138,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference",
 		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "annotationDataS3Uri", GoGetter: "AnnotationDataS3Uri"},
@@ -183,12 +186,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComprehendDocumentClassifierInputDataConfigAugmentedManifestsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigOutputReference",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierInputDataConfigOutputReference",
 		reflect.TypeOf((*ComprehendDocumentClassifierInputDataConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "augmentedManifests", GoGetter: "AugmentedManifests"},
@@ -231,16 +234,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComprehendDocumentClassifierInputDataConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfig",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfig",
 		reflect.TypeOf((*ComprehendDocumentClassifierOutputDataConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfigOutputReference",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierOutputDataConfigOutputReference",
 		reflect.TypeOf((*ComprehendDocumentClassifierOutputDataConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -273,16 +276,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComprehendDocumentClassifierOutputDataConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeouts",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeouts",
 		reflect.TypeOf((*ComprehendDocumentClassifierTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeoutsOutputReference",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierTimeoutsOutputReference",
 		reflect.TypeOf((*ComprehendDocumentClassifierTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -318,16 +321,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfig",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfig",
 		reflect.TypeOf((*ComprehendDocumentClassifierVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfigOutputReference",
+		"@cdktn/provider-aws.comprehendDocumentClassifier.ComprehendDocumentClassifierVpcConfigOutputReference",
 		reflect.TypeOf((*ComprehendDocumentClassifierVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -358,7 +361,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComprehendDocumentClassifierVpcConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

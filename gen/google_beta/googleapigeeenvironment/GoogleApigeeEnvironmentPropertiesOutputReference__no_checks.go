@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentPropertiesOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeEnvironmentPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApigeeEnvironmentPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleApigeeEnvironmentPropertiesOutputReference) validatePut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeEnvironmentPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApigeeEnvironmentPropertiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleApigeeEnvironmentPropertiesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeEnvironmentPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApigeeEnvironmentPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleApigeeEnvironmentPropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApigeeEnvironmentPropertiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

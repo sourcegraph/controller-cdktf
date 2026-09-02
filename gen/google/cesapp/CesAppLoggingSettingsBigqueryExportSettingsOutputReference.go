@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cesapp/internal"
 )
 
 type CesAppLoggingSettingsBigqueryExportSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type CesAppLoggingSettingsBigqueryExportSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type CesAppLoggingSettingsBigqueryExportSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDataset()
 	ResetEnabled()
 	ResetProject()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type CesAppLoggingSettingsBigqueryExportSettingsOutputReference interface {
 
 // The jsii proxy struct for CesAppLoggingSettingsBigqueryExportSettingsOutputReference
 type jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) T
 }
 
 
-func NewCesAppLoggingSettingsBigqueryExportSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CesAppLoggingSettingsBigqueryExportSettingsOutputReference {
+func NewCesAppLoggingSettingsBigqueryExportSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CesAppLoggingSettingsBigqueryExportSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesAppLoggingSettingsBigqueryExportSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewCesAppLoggingSettingsBigqueryExportSettingsOutputReference(terraformReso
 	j := jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettingsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewCesAppLoggingSettingsBigqueryExportSettingsOutputReference(terraformReso
 	return &j
 }
 
-func NewCesAppLoggingSettingsBigqueryExportSettingsOutputReference_Override(c CesAppLoggingSettingsBigqueryExportSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCesAppLoggingSettingsBigqueryExportSettingsOutputReference_Override(c CesAppLoggingSettingsBigqueryExportSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettingsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -491,8 +491,8 @@ func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -504,16 +504,16 @@ func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) I
 	return returns
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (c *jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference) R
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

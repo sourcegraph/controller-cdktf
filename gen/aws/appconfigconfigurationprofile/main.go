@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
+		"@cdktn/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfile",
 		reflect.TypeOf((*AppconfigConfigurationProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "locationUri", GoGetter: "LocationUri"},
 			_jsii_.MemberProperty{JsiiProperty: "locationUriInput", GoGetter: "LocationUriInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putValidator", GoMethod: "PutValidator"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -82,23 +84,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "validator", GoGetter: "Validator"},
 			_jsii_.MemberProperty{JsiiProperty: "validatorInput", GoGetter: "ValidatorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AppconfigConfigurationProfile{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileConfig",
+		"@cdktn/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileConfig",
 		reflect.TypeOf((*AppconfigConfigurationProfileConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidator",
+		"@cdktn/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidator",
 		reflect.TypeOf((*AppconfigConfigurationProfileValidator)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorList",
+		"@cdktn/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorList",
 		reflect.TypeOf((*AppconfigConfigurationProfileValidatorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -115,12 +118,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppconfigConfigurationProfileValidatorList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorOutputReference",
+		"@cdktn/provider-aws.appconfigConfigurationProfile.AppconfigConfigurationProfileValidatorOutputReference",
 		reflect.TypeOf((*AppconfigConfigurationProfileValidatorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -152,7 +155,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppconfigConfigurationProfileValidatorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

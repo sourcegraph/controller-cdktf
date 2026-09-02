@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/podv1/internal"
 )
 
 type PodV1SpecInitContainerStartupProbeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,9 +52,9 @@ type PodV1SpecInitContainerStartupProbeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeoutSeconds() *float64
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
@@ -63,7 +63,7 @@ type PodV1SpecInitContainerStartupProbeOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type PodV1SpecInitContainerStartupProbeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutExec(value *PodV1SpecInitContainerStartupProbeExec)
 	PutHttpGet(value *PodV1SpecInitContainerStartupProbeHttpGet)
 	PutTcpSocket(value interface{})
@@ -95,7 +95,7 @@ type PodV1SpecInitContainerStartupProbeOutputReference interface {
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type PodV1SpecInitContainerStartupProbeOutputReference interface {
 
 // The jsii proxy struct for PodV1SpecInitContainerStartupProbeOutputReference
 type jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) ComplexObjectIndex() interface{} {
@@ -308,8 +308,8 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -339,7 +339,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) TimeoutSec
 }
 
 
-func NewPodV1SpecInitContainerStartupProbeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PodV1SpecInitContainerStartupProbeOutputReference {
+func NewPodV1SpecInitContainerStartupProbeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PodV1SpecInitContainerStartupProbeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPodV1SpecInitContainerStartupProbeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -348,7 +348,7 @@ func NewPodV1SpecInitContainerStartupProbeOutputReference(terraformResource cdkt
 	j := jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeOutputReference",
+		"@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -356,11 +356,11 @@ func NewPodV1SpecInitContainerStartupProbeOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewPodV1SpecInitContainerStartupProbeOutputReference_Override(p PodV1SpecInitContainerStartupProbeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPodV1SpecInitContainerStartupProbeOutputReference_Override(p PodV1SpecInitContainerStartupProbeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeOutputReference",
+		"@cdktn/provider-kubernetes.podV1.PodV1SpecInitContainerStartupProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -454,7 +454,7 @@ func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -505,11 +505,11 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetAnyMapA
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -633,8 +633,8 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) GetStringM
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -646,16 +646,16 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) Interpolat
 	return returns
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -759,8 +759,8 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) ResetTimeo
 	)
 }
 
-func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -768,7 +768,7 @@ func (p *jsiiProxy_PodV1SpecInitContainerStartupProbeOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

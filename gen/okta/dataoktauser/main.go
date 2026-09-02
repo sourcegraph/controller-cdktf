@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaUser.DataOktaUser",
+		"@cdktn/provider-okta.dataOktaUser.DataOktaUser",
 		reflect.TypeOf((*DataOktaUser)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -68,6 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putSearch", GoMethod: "PutSearch"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCompoundSearchOperator", GoMethod: "ResetCompoundSearchOperator"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDelayReadSeconds", GoMethod: "ResetDelayReadSeconds"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -101,24 +102,25 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userId", GoGetter: "UserId"},
 			_jsii_.MemberProperty{JsiiProperty: "userIdInput", GoGetter: "UserIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userType", GoGetter: "UserType"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zipCode", GoGetter: "ZipCode"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaUser{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaUser.DataOktaUserConfig",
+		"@cdktn/provider-okta.dataOktaUser.DataOktaUserConfig",
 		reflect.TypeOf((*DataOktaUserConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaUser.DataOktaUserSearch",
+		"@cdktn/provider-okta.dataOktaUser.DataOktaUserSearch",
 		reflect.TypeOf((*DataOktaUserSearch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaUser.DataOktaUserSearchList",
+		"@cdktn/provider-okta.dataOktaUser.DataOktaUserSearchList",
 		reflect.TypeOf((*DataOktaUserSearchList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -135,12 +137,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaUserSearchList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaUser.DataOktaUserSearchOutputReference",
+		"@cdktn/provider-okta.dataOktaUser.DataOktaUserSearchOutputReference",
 		reflect.TypeOf((*DataOktaUserSearchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "comparison", GoGetter: "Comparison"},
@@ -179,7 +181,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaUserSearchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

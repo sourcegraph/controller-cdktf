@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFolderIamAuditConfigAuditLogConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFolderIamAuditConfigAuditLogConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleFolderIamAuditConfigAuditLogConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

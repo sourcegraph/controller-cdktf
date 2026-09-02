@@ -12,7 +12,7 @@ func (z *jsiiProxy_ZoneLockdownConfigurationsList) validateGetParameters(index *
 	return nil
 }
 
-func (z *jsiiProxy_ZoneLockdownConfigurationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZoneLockdownConfigurationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ZoneLockdownConfigurationsList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_ZoneLockdownConfigurationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZoneLockdownConfigurationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ZoneLockdownConfigurationsList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewZoneLockdownConfigurationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewZoneLockdownConfigurationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

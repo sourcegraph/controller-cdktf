@@ -1,9 +1,9 @@
 module github.com/sourcegraph/controller-cdktf/gen/time
 
-go 1.18
+go 1.25
 
 require (
-	github.com/aws/constructs-go/constructs/v10 v10.1.167
-	github.com/aws/jsii-runtime-go v1.95.0
-	github.com/hashicorp/terraform-cdk-go/cdktf v0.20.7
+	github.com/aws/constructs-go/constructs/v10 v10.6.0
+	github.com/aws/jsii-runtime-go v1.128.0
+	github.com/open-constructs/cdk-terrain-go/cdktn v0.24.0
 )

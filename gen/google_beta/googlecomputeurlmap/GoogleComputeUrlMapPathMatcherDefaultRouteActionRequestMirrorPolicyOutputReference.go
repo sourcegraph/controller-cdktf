@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeurlmap/internal"
 )
 
 type GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BackendService() *string
 	SetBackendService(val *string)
 	BackendServiceInput() *string
@@ -40,15 +40,15 @@ type GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputRe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputRe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMirrorPercent()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputRe
 
 // The jsii proxy struct for GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference
 type jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) BackendService() *string {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirror
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirror
 }
 
 
-func NewGoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference {
+func NewGoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewGoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutpu
 	j := jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewGoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutpu
 	return &j
 }
 
-func NewGoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference_Override(g GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference_Override(g GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirror
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirror
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -455,8 +455,8 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirror
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -468,16 +468,16 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirror
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirror
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirrorPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherDefaultRouteActionRequestMirror
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

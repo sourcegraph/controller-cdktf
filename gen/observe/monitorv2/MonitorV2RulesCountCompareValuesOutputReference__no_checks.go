@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitorV2RulesCountCompareValuesOutputReference) validateGetS
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesCountCompareValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2RulesCountCompareValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesCountCompareValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2RulesCountCompareValuesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_MonitorV2RulesCountCompareValuesOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesCountCompareValuesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2RulesCountCompareValuesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_MonitorV2RulesCountCompareValuesOutputReference) validateSetV
 	return nil
 }
 
-func validateNewMonitorV2RulesCountCompareValuesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMonitorV2RulesCountCompareValuesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

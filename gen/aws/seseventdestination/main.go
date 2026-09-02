@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sesEventDestination.SesEventDestination",
+		"@cdktn/provider-aws.sesEventDestination.SesEventDestination",
 		reflect.TypeOf((*SesEventDestination)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kinesisDestination", GoGetter: "KinesisDestination"},
 			_jsii_.MemberProperty{JsiiProperty: "kinesisDestinationInput", GoGetter: "KinesisDestinationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "matchingTypes", GoGetter: "MatchingTypes"},
 			_jsii_.MemberProperty{JsiiProperty: "matchingTypesInput", GoGetter: "MatchingTypesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putKinesisDestination", GoMethod: "PutKinesisDestination"},
 			_jsii_.MemberMethod{JsiiMethod: "putSnsDestination", GoMethod: "PutSnsDestination"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudwatchDestination", GoMethod: "ResetCloudwatchDestination"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnabled", GoMethod: "ResetEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -77,19 +79,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SesEventDestination{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestination",
+		"@cdktn/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestination",
 		reflect.TypeOf((*SesEventDestinationCloudwatchDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestinationList",
+		"@cdktn/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestinationList",
 		reflect.TypeOf((*SesEventDestinationCloudwatchDestinationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -106,12 +109,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SesEventDestinationCloudwatchDestinationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestinationOutputReference",
+		"@cdktn/provider-aws.sesEventDestination.SesEventDestinationCloudwatchDestinationOutputReference",
 		reflect.TypeOf((*SesEventDestinationCloudwatchDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -144,20 +147,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SesEventDestinationCloudwatchDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationConfig",
+		"@cdktn/provider-aws.sesEventDestination.SesEventDestinationConfig",
 		reflect.TypeOf((*SesEventDestinationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationKinesisDestination",
+		"@cdktn/provider-aws.sesEventDestination.SesEventDestinationKinesisDestination",
 		reflect.TypeOf((*SesEventDestinationKinesisDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationKinesisDestinationOutputReference",
+		"@cdktn/provider-aws.sesEventDestination.SesEventDestinationKinesisDestinationOutputReference",
 		reflect.TypeOf((*SesEventDestinationKinesisDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,16 +191,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SesEventDestinationKinesisDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationSnsDestination",
+		"@cdktn/provider-aws.sesEventDestination.SesEventDestinationSnsDestination",
 		reflect.TypeOf((*SesEventDestinationSnsDestination)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sesEventDestination.SesEventDestinationSnsDestinationOutputReference",
+		"@cdktn/provider-aws.sesEventDestination.SesEventDestinationSnsDestinationOutputReference",
 		reflect.TypeOf((*SesEventDestinationSnsDestinationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -226,7 +229,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SesEventDestinationSnsDestinationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

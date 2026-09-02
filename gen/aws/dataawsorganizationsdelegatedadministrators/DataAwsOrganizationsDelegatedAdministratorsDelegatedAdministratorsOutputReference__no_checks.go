@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministr
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsOrganizationsDelegatedAdministratorsDelegatedAdministratorsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

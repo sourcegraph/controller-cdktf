@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleChronicleDataAccessScopeDeniedDataAccessLabelsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

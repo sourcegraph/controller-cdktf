@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkServicesTcpRouteRulesActionDestinationsOutputReference
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRouteRulesActionDestinationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesTcpRouteRulesActionDestinationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesTcpRouteRulesActionDestinationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesTcpRouteRulesActionDestinationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_NetworkServicesTcpRouteRulesActionDestinationsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesTcpRouteRulesActionDestinationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesTcpRouteRulesActionDestinationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_NetworkServicesTcpRouteRulesActionDestinationsOutputReference
 	return nil
 }
 
-func validateNewNetworkServicesTcpRouteRulesActionDestinationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewNetworkServicesTcpRouteRulesActionDestinationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

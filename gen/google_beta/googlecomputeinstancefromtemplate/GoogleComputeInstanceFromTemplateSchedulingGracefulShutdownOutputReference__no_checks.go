@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingGracefulShutdownOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingGracefulShutdownOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingGracefulShutdownOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingGracefulShutdownOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingGracefulShutdownOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingGracefulShutdownOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingGracefulShutdownOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingGracefulShutdownOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingGracefulShutdownOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeInstanceFromTemplateSchedulingGracefulShutdownOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeInstanceFromTemplateSchedulingGracefulShutdownOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

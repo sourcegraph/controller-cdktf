@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (d *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validatePutLin
 	return nil
 }
 
-func (d *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataLineageConfigIngestionRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataLineageConfigIngestionRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataLineageConfigIngestionRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -5,18 +5,18 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/tls/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/tls/provider/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/tls/4.0.4/docs tls}.
 type TlsProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -33,7 +33,7 @@ type TlsProvider interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -43,6 +43,19 @@ type TlsProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAlias()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -59,11 +72,20 @@ type TlsProvider interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for TlsProvider
 type jsiiProxy_TlsProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_TlsProvider) Alias() *string {
@@ -86,8 +108,8 @@ func (j *jsiiProxy_TlsProvider) AliasInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_TlsProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_TlsProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -176,8 +198,8 @@ func (j *jsiiProxy_TlsProvider) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_TlsProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_TlsProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -217,7 +239,7 @@ func NewTlsProvider(scope constructs.Construct, id *string, config *TlsProviderC
 	j := jsiiProxy_TlsProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -230,7 +252,7 @@ func NewTlsProvider_Override(t TlsProvider, scope constructs.Construct, id *stri
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		[]interface{}{scope, id, config},
 		t,
 	)
@@ -255,17 +277,17 @@ func (j *jsiiProxy_TlsProvider)SetProxy(val *TlsProviderProxy) {
 	)
 }
 
-// Generates CDKTF code for importing a TlsProvider resource upon running "cdktf plan <stack-name>".
-func TlsProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a TlsProvider resource upon running "cdktn plan <stack-name>".
+func TlsProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateTlsProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -300,7 +322,7 @@ func TlsProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -319,7 +341,7 @@ func TlsProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -338,7 +360,7 @@ func TlsProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -351,7 +373,7 @@ func TlsProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-tls.provider.TlsProvider",
+		"@cdktn/provider-tls.provider.TlsProvider",
 		"tfResourceType",
 		&returns,
 	)
@@ -377,6 +399,17 @@ func (t *jsiiProxy_TlsProvider) OverrideLogicalId(newLogicalId *string) {
 		t,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (t *jsiiProxy_TlsProvider) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := t.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		t,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -476,6 +509,24 @@ func (t *jsiiProxy_TlsProvider) ToTerraform() interface{} {
 		t,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (t *jsiiProxy_TlsProvider) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		t,
+		"with",
+		args,
 		&returns,
 	)
 

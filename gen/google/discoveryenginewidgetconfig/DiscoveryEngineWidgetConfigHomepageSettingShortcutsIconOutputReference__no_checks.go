@@ -40,11 +40,11 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutput
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutput
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutput
 	return nil
 }
 
-func validateNewDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDiscoveryEngineWidgetConfigHomepageSettingShortcutsIconOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

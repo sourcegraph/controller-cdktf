@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigList) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigList) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigList) validat
 	return nil
 }
 
-func validateNewDataAwsConnectInstanceStorageConfigStorageConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsConnectInstanceStorageConfigStorageConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

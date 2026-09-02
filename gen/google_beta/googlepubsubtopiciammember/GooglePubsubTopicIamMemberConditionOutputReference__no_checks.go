@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GooglePubsubTopicIamMemberConditionOutputReference) validateS
 	return nil
 }
 
-func validateNewGooglePubsubTopicIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePubsubTopicIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

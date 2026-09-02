@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQuery",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQuery",
 		reflect.TypeOf((*LoggingSavedQuery)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingQuery", GoGetter: "LoggingQuery"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingQueryInput", GoGetter: "LoggingQueryInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -62,6 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putOpsAnalyticsQuery", GoMethod: "PutOpsAnalyticsQuery"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoggingQuery", GoMethod: "ResetLoggingQuery"},
@@ -82,23 +84,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "visibility", GoGetter: "Visibility"},
 			_jsii_.MemberProperty{JsiiProperty: "visibilityInput", GoGetter: "VisibilityInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LoggingSavedQuery{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryConfig",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryConfig",
 		reflect.TypeOf((*LoggingSavedQueryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuery",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuery",
 		reflect.TypeOf((*LoggingSavedQueryLoggingQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQueryOutputReference",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQueryOutputReference",
 		reflect.TypeOf((*LoggingSavedQueryLoggingQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -137,16 +140,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFields",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFields",
 		reflect.TypeOf((*LoggingSavedQueryLoggingQuerySummaryFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFieldsList",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFieldsList",
 		reflect.TypeOf((*LoggingSavedQueryLoggingQuerySummaryFieldsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -163,12 +166,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference",
 		reflect.TypeOf((*LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -198,16 +201,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQuery",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQuery",
 		reflect.TypeOf((*LoggingSavedQueryOpsAnalyticsQuery)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQueryOutputReference",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryOpsAnalyticsQueryOutputReference",
 		reflect.TypeOf((*LoggingSavedQueryOpsAnalyticsQueryOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -236,16 +239,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoggingSavedQueryOpsAnalyticsQueryOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryTimeouts",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeouts",
 		reflect.TypeOf((*LoggingSavedQueryTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.loggingSavedQuery.LoggingSavedQueryTimeoutsOutputReference",
+		"@cdktn/provider-google.loggingSavedQuery.LoggingSavedQueryTimeoutsOutputReference",
 		reflect.TypeOf((*LoggingSavedQueryTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -281,7 +284,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LoggingSavedQueryTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

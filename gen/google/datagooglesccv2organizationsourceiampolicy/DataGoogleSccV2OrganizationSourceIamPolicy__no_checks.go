@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleSccV2OrganizationSourceIamPolicy) validateOverrideL
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleSccV2OrganizationSourceIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleSccV2OrganizationSourceIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleSccV2OrganizationSourceIamPolicy) validateSetIdPara
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSccV2OrganizationSourceIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleSccV2OrganizationSourceIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

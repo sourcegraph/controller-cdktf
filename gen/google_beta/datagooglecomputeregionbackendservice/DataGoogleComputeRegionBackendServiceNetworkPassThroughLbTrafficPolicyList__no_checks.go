@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceNetworkPassThroughLbTraf
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceNetworkPassThroughLbTraf
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceNetworkPassThroughLbTraf
 	return nil
 }
 
-func validateNewDataGoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

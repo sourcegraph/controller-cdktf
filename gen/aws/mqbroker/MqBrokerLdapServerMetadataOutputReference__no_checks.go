@@ -40,11 +40,11 @@ func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateGetStringM
 	return nil
 }
 
-func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -112,7 +112,7 @@ func (j *jsiiProxy_MqBrokerLdapServerMetadataOutputReference) validateSetUserSea
 	return nil
 }
 
-func validateNewMqBrokerLdapServerMetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMqBrokerLdapServerMetadataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

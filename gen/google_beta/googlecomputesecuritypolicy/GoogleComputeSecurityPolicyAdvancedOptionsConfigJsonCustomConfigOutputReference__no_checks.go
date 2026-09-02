@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomCon
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeSecurityPolicyAdvancedOptionsConfigJsonCustomConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

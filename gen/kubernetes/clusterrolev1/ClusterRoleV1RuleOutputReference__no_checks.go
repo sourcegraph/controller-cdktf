@@ -40,11 +40,11 @@ func (c *jsiiProxy_ClusterRoleV1RuleOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleV1RuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterRoleV1RuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleV1RuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterRoleV1RuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ClusterRoleV1RuleOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleV1RuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClusterRoleV1RuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_ClusterRoleV1RuleOutputReference) validateSetVerbsParameters(
 	return nil
 }
 
-func validateNewClusterRoleV1RuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewClusterRoleV1RuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsNetworkmanagerLinks) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsNetworkmanagerLinks) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsNetworkmanagerLinks_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsNetworkmanagerLinks) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsNetworkmanagerLinks) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsNetworkmanagerLinks) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

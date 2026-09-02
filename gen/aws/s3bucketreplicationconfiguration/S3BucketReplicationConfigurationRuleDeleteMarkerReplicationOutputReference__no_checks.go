@@ -40,11 +40,11 @@ func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOu
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOu
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewS3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewS3BucketReplicationConfigurationRuleDeleteMarkerReplicationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

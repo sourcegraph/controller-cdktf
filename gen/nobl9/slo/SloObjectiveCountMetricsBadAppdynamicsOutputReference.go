@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/slo/internal"
 )
 
 type SloObjectiveCountMetricsBadAppdynamicsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApplicationName() *string
 	SetApplicationName(val *string)
 	ApplicationNameInput() *string
@@ -40,15 +40,15 @@ type SloObjectiveCountMetricsBadAppdynamicsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type SloObjectiveCountMetricsBadAppdynamicsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type SloObjectiveCountMetricsBadAppdynamicsOutputReference interface {
 
 // The jsii proxy struct for SloObjectiveCountMetricsBadAppdynamicsOutputReference
 type jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) ApplicationName() *string {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) Terraf
 }
 
 
-func NewSloObjectiveCountMetricsBadAppdynamicsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsBadAppdynamicsOutputReference {
+func NewSloObjectiveCountMetricsBadAppdynamicsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsBadAppdynamicsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSloObjectiveCountMetricsBadAppdynamicsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewSloObjectiveCountMetricsBadAppdynamicsOutputReference(terraformResource 
 	j := jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAppdynamicsOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCountMetricsBadAppdynamicsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewSloObjectiveCountMetricsBadAppdynamicsOutputReference(terraformResource 
 	return &j
 }
 
-func NewSloObjectiveCountMetricsBadAppdynamicsOutputReference_Override(s SloObjectiveCountMetricsBadAppdynamicsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSloObjectiveCountMetricsBadAppdynamicsOutputReference_Override(s SloObjectiveCountMetricsBadAppdynamicsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsBadAppdynamicsOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCountMetricsBadAppdynamicsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) GetAny
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -454,8 +454,8 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) GetStr
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -467,24 +467,24 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) Interp
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadAppdynamicsOutputReference) Resolv
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

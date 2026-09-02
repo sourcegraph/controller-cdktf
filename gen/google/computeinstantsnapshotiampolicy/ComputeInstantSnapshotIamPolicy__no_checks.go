@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeInstantSnapshotIamPolicy) validateInterpolationForAttr
 	return nil
 }
 
+func (c *jsiiProxy_ComputeInstantSnapshotIamPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeInstantSnapshotIamPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_ComputeInstantSnapshotIamPolicy) validateMoveToIdParameters(i
 }
 
 func (c *jsiiProxy_ComputeInstantSnapshotIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeInstantSnapshotIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_ComputeInstantSnapshotIamPolicy) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstantSnapshotIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeInstantSnapshotIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

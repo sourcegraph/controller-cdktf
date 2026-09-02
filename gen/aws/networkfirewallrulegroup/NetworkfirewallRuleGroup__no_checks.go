@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkfirewallRuleGroup) validateInterpolationForAttributePa
 	return nil
 }
 
+func (n *jsiiProxy_NetworkfirewallRuleGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkfirewallRuleGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (n *jsiiProxy_NetworkfirewallRuleGroup) validatePutEncryptionConfigurationP
 }
 
 func (n *jsiiProxy_NetworkfirewallRuleGroup) validatePutRuleGroupParameters(value *NetworkfirewallRuleGroupRuleGroup) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkfirewallRuleGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkfirewallRuleGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

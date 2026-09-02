@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/env/internal"
 )
 
 type EnvEnvValueFromSecretKeyRefOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type EnvEnvValueFromSecretKeyRefOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type EnvEnvValueFromSecretKeyRefOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKey()
 	ResetName()
 	ResetOptional()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type EnvEnvValueFromSecretKeyRefOutputReference interface {
 
 // The jsii proxy struct for EnvEnvValueFromSecretKeyRefOutputReference
 type jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) TerraformResource
 }
 
 
-func NewEnvEnvValueFromSecretKeyRefOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EnvEnvValueFromSecretKeyRefOutputReference {
+func NewEnvEnvValueFromSecretKeyRefOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EnvEnvValueFromSecretKeyRefOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEnvEnvValueFromSecretKeyRefOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewEnvEnvValueFromSecretKeyRefOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.env.EnvEnvValueFromSecretKeyRefOutputReference",
+		"@cdktn/provider-kubernetes.env.EnvEnvValueFromSecretKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewEnvEnvValueFromSecretKeyRefOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewEnvEnvValueFromSecretKeyRefOutputReference_Override(e EnvEnvValueFromSecretKeyRefOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEnvEnvValueFromSecretKeyRefOutputReference_Override(e EnvEnvValueFromSecretKeyRefOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.env.EnvEnvValueFromSecretKeyRefOutputReference",
+		"@cdktn/provider-kubernetes.env.EnvEnvValueFromSecretKeyRefOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -491,8 +491,8 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -504,16 +504,16 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) ResetOptional() {
 	)
 }
 
-func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (e *jsiiProxy_EnvEnvValueFromSecretKeyRefOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

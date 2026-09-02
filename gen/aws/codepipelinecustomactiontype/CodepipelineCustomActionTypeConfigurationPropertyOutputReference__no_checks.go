@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_CodepipelineCustomActionTypeConfigurationPropertyOutputRefere
 	return nil
 }
 
-func validateNewCodepipelineCustomActionTypeConfigurationPropertyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCodepipelineCustomActionTypeConfigurationPropertyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

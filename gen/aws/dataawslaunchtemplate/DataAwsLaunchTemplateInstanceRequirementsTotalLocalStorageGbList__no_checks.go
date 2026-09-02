@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbL
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbL
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbL
 	return nil
 }
 
-func validateNewDataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsLaunchTemplateInstanceRequirementsTotalLocalStorageGbListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

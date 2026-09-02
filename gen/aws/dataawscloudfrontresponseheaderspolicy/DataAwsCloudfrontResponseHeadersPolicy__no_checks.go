@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) validateOverrideLogic
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsCloudfrontResponseHeadersPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsCloudfrontResponseHeadersPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

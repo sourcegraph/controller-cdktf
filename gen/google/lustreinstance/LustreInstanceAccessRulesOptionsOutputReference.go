@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/lustreinstance/internal"
 )
 
 type LustreInstanceAccessRulesOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccessRules() LustreInstanceAccessRulesOptionsAccessRulesList
 	AccessRulesInput() interface{}
 	// the index of the complex object in a list.
@@ -45,15 +45,15 @@ type LustreInstanceAccessRulesOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,16 +69,16 @@ type LustreInstanceAccessRulesOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAccessRules(value interface{})
 	ResetAccessRules()
 	ResetDefaultSquashGid()
 	ResetDefaultSquashUid()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type LustreInstanceAccessRulesOptionsOutputReference interface {
 
 // The jsii proxy struct for LustreInstanceAccessRulesOptionsOutputReference
 type jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) AccessRules() LustreInstanceAccessRulesOptionsAccessRulesList {
@@ -231,8 +231,8 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) TerraformRes
 }
 
 
-func NewLustreInstanceAccessRulesOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LustreInstanceAccessRulesOptionsOutputReference {
+func NewLustreInstanceAccessRulesOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LustreInstanceAccessRulesOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLustreInstanceAccessRulesOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewLustreInstanceAccessRulesOptionsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewLustreInstanceAccessRulesOptionsOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewLustreInstanceAccessRulesOptionsOutputReference_Override(l LustreInstanceAccessRulesOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLustreInstanceAccessRulesOptionsOutputReference_Override(l LustreInstanceAccessRulesOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsOutputReference",
+		"@cdktn/provider-google.lustreInstance.LustreInstanceAccessRulesOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -386,11 +386,11 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -514,8 +514,8 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) GetStringMap
 	return returns
 }
 
-func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -527,16 +527,16 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) Interpolatio
 	return returns
 }
 
-func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) ResetDefault
 	)
 }
 
-func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (l *jsiiProxy_LustreInstanceAccessRulesOptionsOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

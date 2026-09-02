@@ -40,11 +40,11 @@ func (m *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateGetString
 	return nil
 }
 
-func (m *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MlEngineModelDefaultVersionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMlEngineModelDefaultVersionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMlEngineModelDefaultVersionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

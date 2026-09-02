@@ -12,7 +12,7 @@ func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringList) validateG
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_S3BucketIntelligentTieringConfigurationTieringList) validateS
 	return nil
 }
 
-func validateNewS3BucketIntelligentTieringConfigurationTieringListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewS3BucketIntelligentTieringConfigurationTieringListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

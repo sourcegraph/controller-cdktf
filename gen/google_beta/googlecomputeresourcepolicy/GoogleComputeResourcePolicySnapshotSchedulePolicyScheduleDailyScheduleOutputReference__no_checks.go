@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDail
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDail
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

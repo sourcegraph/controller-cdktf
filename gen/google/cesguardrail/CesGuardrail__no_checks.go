@@ -56,6 +56,10 @@ func (c *jsiiProxy_CesGuardrail) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (c *jsiiProxy_CesGuardrail) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CesGuardrail) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (c *jsiiProxy_CesGuardrail) validatePutModelSafetyParameters(value *CesGuar
 }
 
 func (c *jsiiProxy_CesGuardrail) validatePutTimeoutsParameters(value *CesGuardrailTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesGuardrail) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_CesGuardrail) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrail) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CesGuardrail) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

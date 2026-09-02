@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTarge
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTarge
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTarge
 	return nil
 }
 
-func validateNewGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleSqlDatabaseInstanceSettingsReadPoolAutoScaleConfigTargetMetricsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

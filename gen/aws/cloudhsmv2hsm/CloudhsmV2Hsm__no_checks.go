@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudhsmV2Hsm) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_CloudhsmV2Hsm) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudhsmV2Hsm) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CloudhsmV2Hsm) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (c *jsiiProxy_CloudhsmV2Hsm) validatePutTimeoutsParameters(value *CloudhsmV2HsmTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudhsmV2Hsm) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_CloudhsmV2Hsm) validateSetIpAddressParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_CloudhsmV2Hsm) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudhsmV2Hsm) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

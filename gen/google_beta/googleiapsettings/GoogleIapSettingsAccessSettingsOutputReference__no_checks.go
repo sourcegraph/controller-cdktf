@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (g *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validatePutWo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIapSettingsAccessSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleIapSettingsAccessSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIapSettingsAccessSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

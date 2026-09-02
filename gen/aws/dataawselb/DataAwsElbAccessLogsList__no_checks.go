@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsElbAccessLogsList) validateGetParameters(index *float6
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElbAccessLogsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElbAccessLogsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsElbAccessLogsList) validateSetTerraformAttributeParame
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElbAccessLogsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsElbAccessLogsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsElbAccessLogsList) validateSetWrapsSetParameters(val *
 	return nil
 }
 
-func validateNewDataAwsElbAccessLogsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsElbAccessLogsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

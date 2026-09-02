@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/route53record/internal"
 )
 
 type Route53RecordLatencyRoutingPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type Route53RecordLatencyRoutingPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type Route53RecordLatencyRoutingPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type Route53RecordLatencyRoutingPolicyOutputReference interface {
 
 // The jsii proxy struct for Route53RecordLatencyRoutingPolicyOutputReference
 type jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) TerraformRe
 }
 
 
-func NewRoute53RecordLatencyRoutingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Route53RecordLatencyRoutingPolicyOutputReference {
+func NewRoute53RecordLatencyRoutingPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Route53RecordLatencyRoutingPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRoute53RecordLatencyRoutingPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewRoute53RecordLatencyRoutingPolicyOutputReference(terraformResource cdktf
 	j := jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
+		"@cdktn/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewRoute53RecordLatencyRoutingPolicyOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewRoute53RecordLatencyRoutingPolicyOutputReference_Override(r Route53RecordLatencyRoutingPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRoute53RecordLatencyRoutingPolicyOutputReference_Override(r Route53RecordLatencyRoutingPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
+		"@cdktn/provider-aws.route53Record.Route53RecordLatencyRoutingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -420,8 +420,8 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) GetStringMa
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -433,24 +433,24 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) Interpolati
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (r *jsiiProxy_Route53RecordLatencyRoutingPolicyOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DbParameterGroupParameterList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DbParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbParameterGroupParameterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DbParameterGroupParameterList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_DbParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DbParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DbParameterGroupParameterList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewDbParameterGroupParameterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDbParameterGroupParameterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

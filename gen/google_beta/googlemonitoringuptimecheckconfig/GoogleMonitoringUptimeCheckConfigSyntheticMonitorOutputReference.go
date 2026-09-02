@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlemonitoringuptimecheckconfig/internal"
 )
 
 type GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CloudFunctionV2() GoogleMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2OutputReference
 	CloudFunctionV2Input() *GoogleMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2
 	// the index of the complex object in a list.
@@ -36,15 +36,15 @@ type GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,13 +60,13 @@ type GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCloudFunctionV2(value *GoogleMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference interface 
 
 // The jsii proxy struct for GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference
 type jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference) CloudFunctionV2() GoogleMonitoringUptimeCheckConfigSyntheticMonitorCloudFunctionV2OutputReference {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputRefere
 }
 
 
-func NewGoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference {
+func NewGoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewGoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference(terrafo
 	j := jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference",
+		"@cdktn/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewGoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference(terrafo
 	return &j
 }
 
-func NewGoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference_Override(g GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference_Override(g GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference",
+		"@cdktn/provider-google-beta.googleMonitoringUptimeCheckConfig.GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputRefere
 	)
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,11 +281,11 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -409,8 +409,8 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -422,16 +422,16 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -449,8 +449,8 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputRefere
 	)
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigSyntheticMonitorOutputRefere
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference)
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleComputePacketMirroringMirroredResourcesInstances:
 		value := value.(*[]*GoogleComputePacketMirroringMirroredResourcesInstances)
@@ -114,7 +114,7 @@ func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference)
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputePacketMirroringMirroredResourcesInstances; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleComputePacketMirroringMirroredResourcesInstances; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference)
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleComputePacketMirroringMirroredResourcesSubnetworks:
 		value := value.(*[]*GoogleComputePacketMirroringMirroredResourcesSubnetworks)
@@ -145,16 +145,16 @@ func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference)
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputePacketMirroringMirroredResourcesSubnetworks; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleComputePacketMirroringMirroredResourcesSubnetworks; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -249,7 +249,7 @@ func (j *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -257,7 +257,7 @@ func (j *jsiiProxy_GoogleComputePacketMirroringMirroredResourcesOutputReference)
 	return nil
 }
 
-func validateNewGoogleComputePacketMirroringMirroredResourcesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputePacketMirroringMirroredResourcesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

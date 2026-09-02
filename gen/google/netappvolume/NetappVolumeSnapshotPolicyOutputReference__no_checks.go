@@ -40,7 +40,7 @@ func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateGetStringM
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validatePutWeeklyS
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetappVolumeSnapshotPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetappVolumeSnapshotPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetappVolumeSnapshotPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

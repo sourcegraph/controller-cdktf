@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataGoogleArtifactRegistryFile) validatePutTimeoutsParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleArtifactRegistryFile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleArtifactRegistryFile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataGoogleArtifactRegistryFile) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleArtifactRegistryFile) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleArtifactRegistryFile) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

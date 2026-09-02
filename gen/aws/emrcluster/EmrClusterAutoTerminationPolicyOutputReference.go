@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/emrcluster/internal"
 )
 
 type EmrClusterAutoTerminationPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type EmrClusterAutoTerminationPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type EmrClusterAutoTerminationPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetIdleTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type EmrClusterAutoTerminationPolicyOutputReference interface {
 
 // The jsii proxy struct for EmrClusterAutoTerminationPolicyOutputReference
 type jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) TerraformReso
 }
 
 
-func NewEmrClusterAutoTerminationPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EmrClusterAutoTerminationPolicyOutputReference {
+func NewEmrClusterAutoTerminationPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EmrClusterAutoTerminationPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEmrClusterAutoTerminationPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewEmrClusterAutoTerminationPolicyOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.emrCluster.EmrClusterAutoTerminationPolicyOutputReference",
+		"@cdktn/provider-aws.emrCluster.EmrClusterAutoTerminationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewEmrClusterAutoTerminationPolicyOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewEmrClusterAutoTerminationPolicyOutputReference_Override(e EmrClusterAutoTerminationPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEmrClusterAutoTerminationPolicyOutputReference_Override(e EmrClusterAutoTerminationPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.emrCluster.EmrClusterAutoTerminationPolicyOutputReference",
+		"@cdktn/provider-aws.emrCluster.EmrClusterAutoTerminationPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -421,8 +421,8 @@ func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) GetStringMapA
 	return returns
 }
 
-func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -434,16 +434,16 @@ func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) Interpolation
 	return returns
 }
 
-func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) ResetIdleTime
 	)
 }
 
-func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (e *jsiiProxy_EmrClusterAutoTerminationPolicyOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParametersConditionalVa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParametersConditionalVa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleFirebaseRemoteConfigRemoteConfigParametersConditionalVa
 	return nil
 }
 
-func validateNewGoogleFirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleFirebaseRemoteConfigRemoteConfigParametersConditionalValuesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

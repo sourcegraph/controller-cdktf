@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApphubWorkloadWorkloadReferenceList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_ApphubWorkloadWorkloadReferenceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApphubWorkloadWorkloadReferenceList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ApphubWorkloadWorkloadReferenceList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_ApphubWorkloadWorkloadReferenceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApphubWorkloadWorkloadReferenceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ApphubWorkloadWorkloadReferenceList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewApphubWorkloadWorkloadReferenceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApphubWorkloadWorkloadReferenceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

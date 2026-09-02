@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleartifactregistryrepository/internal"
 )
 
 type GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,9 +49,9 @@ type GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VersionNamePrefixes() *[]*string
 	SetVersionNamePrefixes(val *[]*string)
 	VersionNamePrefixesInput() *[]*string
@@ -60,7 +60,7 @@ type GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference int
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetNewerThan()
 	ResetOlderThan()
 	ResetPackageNamePrefixes()
@@ -87,7 +87,7 @@ type GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference int
 	ResetVersionNamePrefixes()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference int
 
 // The jsii proxy struct for GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference
 type jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -260,8 +260,8 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutpu
 }
 
 
-func NewGoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference {
+func NewGoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewGoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference(
 	j := jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference",
+		"@cdktn/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewGoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference(
 	return &j
 }
 
-func NewGoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference_Override(g GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference_Override(g GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference",
+		"@cdktn/provider-google-beta.googleArtifactRegistryRepository.GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -417,7 +417,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,11 +468,11 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -596,8 +596,8 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -609,16 +609,16 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutpu
 	)
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (g *jsiiProxy_GoogleArtifactRegistryRepositoryCleanupPoliciesConditionOutpu
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vmwareenginedatastore/internal"
 )
 
 type VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFilestoreInstance()
 	ResetNetappVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference interface
 
 // The jsii proxy struct for VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference
 type jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputRefer
 }
 
 
-func NewVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference {
+func NewVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference(terraf
 	j := jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference",
+		"@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference(terraf
 	return &j
 }
 
-func NewVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference_Override(v VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference_Override(v VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference",
+		"@cdktn/provider-google.vmwareengineDatastore.VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputRefer
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -456,8 +456,8 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputRefer
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -469,16 +469,16 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputRefer
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputRefer
 	)
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputRefer
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

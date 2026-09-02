@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudwatchLogMetricFilterMetricTransformationOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchLogMetricFilterMetricTransformationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchLogMetricFilterMetricTransformationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchLogMetricFilterMetricTransformationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchLogMetricFilterMetricTransformationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CloudwatchLogMetricFilterMetricTransformationOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchLogMetricFilterMetricTransformationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudwatchLogMetricFilterMetricTransformationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_CloudwatchLogMetricFilterMetricTransformationOutputReference)
 	return nil
 }
 
-func validateNewCloudwatchLogMetricFilterMetricTransformationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudwatchLogMetricFilterMetricTransformationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

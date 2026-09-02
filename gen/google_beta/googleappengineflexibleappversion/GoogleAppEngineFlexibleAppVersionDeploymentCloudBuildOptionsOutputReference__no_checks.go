@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleAppEngineFlexibleAppVersionDeploymentCloudBuildOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

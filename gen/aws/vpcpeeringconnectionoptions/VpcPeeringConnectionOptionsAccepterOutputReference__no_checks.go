@@ -40,11 +40,11 @@ func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateG
 	return nil
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VpcPeeringConnectionOptionsAccepterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVpcPeeringConnectionOptionsAccepterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVpcPeeringConnectionOptionsAccepterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

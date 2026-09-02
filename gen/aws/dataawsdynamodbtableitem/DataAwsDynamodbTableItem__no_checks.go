@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsDynamodbTableItem) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsDynamodbTableItem) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsDynamodbTableItem_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataAwsDynamodbTableItem) validateSetKeyParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDynamodbTableItem) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsDynamodbTableItem) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

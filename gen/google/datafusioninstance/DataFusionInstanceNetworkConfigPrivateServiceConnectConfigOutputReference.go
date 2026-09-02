@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datafusioninstance/internal"
 )
 
 type DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,9 +38,9 @@ type DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UnreachableCidrBlock() *string
 	SetUnreachableCidrBlock(val *string)
 	UnreachableCidrBlockInput() *string
@@ -49,7 +49,7 @@ type DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference i
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,14 +65,14 @@ type DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetNetworkAttachment()
 	ResetUnreachableCidrBlock()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference i
 
 // The jsii proxy struct for DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference
 type jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOut
 	return returns
 }
 
-func (j *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -206,7 +206,7 @@ func (j *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOut
 }
 
 
-func NewDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference {
+func NewDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -215,7 +215,7 @@ func NewDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReferenc
 	j := jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference",
+		"@cdktn/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -223,11 +223,11 @@ func NewDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReferenc
 	return &j
 }
 
-func NewDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference_Override(d DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference_Override(d DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference",
+		"@cdktn/provider-google.dataFusionInstance.DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOut
 	)
 }
 
-func (j *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -339,11 +339,11 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOut
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -467,8 +467,8 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOut
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -480,16 +480,16 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOut
 	return returns
 }
 
-func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -512,8 +512,8 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOut
 	)
 }
 
-func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -521,7 +521,7 @@ func (d *jsiiProxy_DataFusionInstanceNetworkConfigPrivateServiceConnectConfigOut
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

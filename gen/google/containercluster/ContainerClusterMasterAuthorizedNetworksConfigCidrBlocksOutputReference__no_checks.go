@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewContainerClusterMasterAuthorizedNetworksConfigCidrBlocksOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionIamMemberConditionOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnectionIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleKmsEkmConnectionIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnectionIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleKmsEkmConnectionIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionIamMemberConditionOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleKmsEkmConnectionIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionIamMemberConditionOutputReference) vali
 	return nil
 }
 
-func validateNewGoogleKmsEkmConnectionIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleKmsEkmConnectionIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

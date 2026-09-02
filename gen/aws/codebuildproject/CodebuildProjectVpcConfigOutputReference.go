@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/codebuildproject/internal"
 )
 
 type CodebuildProjectVpcConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type CodebuildProjectVpcConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
@@ -51,7 +51,7 @@ type CodebuildProjectVpcConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type CodebuildProjectVpcConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type CodebuildProjectVpcConfigOutputReference interface {
 
 // The jsii proxy struct for CodebuildProjectVpcConfigOutputReference
 type jsiiProxy_CodebuildProjectVpcConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CodebuildProjectVpcConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_CodebuildProjectVpcConfigOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_CodebuildProjectVpcConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CodebuildProjectVpcConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_CodebuildProjectVpcConfigOutputReference) VpcIdInput() *strin
 }
 
 
-func NewCodebuildProjectVpcConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CodebuildProjectVpcConfigOutputReference {
+func NewCodebuildProjectVpcConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CodebuildProjectVpcConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCodebuildProjectVpcConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewCodebuildProjectVpcConfigOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_CodebuildProjectVpcConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.codebuildProject.CodebuildProjectVpcConfigOutputReference",
+		"@cdktn/provider-aws.codebuildProject.CodebuildProjectVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewCodebuildProjectVpcConfigOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewCodebuildProjectVpcConfigOutputReference_Override(c CodebuildProjectVpcConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCodebuildProjectVpcConfigOutputReference_Override(c CodebuildProjectVpcConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.codebuildProject.CodebuildProjectVpcConfigOutputReference",
+		"@cdktn/provider-aws.codebuildProject.CodebuildProjectVpcConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_CodebuildProjectVpcConfigOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_CodebuildProjectVpcConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CodebuildProjectVpcConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -488,8 +488,8 @@ func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -501,24 +501,24 @@ func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) InterpolationAsList
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (c *jsiiProxy_CodebuildProjectVpcConfigOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

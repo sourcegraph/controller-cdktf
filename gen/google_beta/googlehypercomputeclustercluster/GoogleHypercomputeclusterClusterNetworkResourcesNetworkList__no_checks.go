@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterNetworkResourcesNetworkList) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterNetworkResourcesNetworkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterNetworkResourcesNetworkList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterNetworkResourcesNetworkList) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHypercomputeclusterClusterNetworkResourcesNetworkList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHypercomputeclusterClusterNetworkResourcesNetworkList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterNetworkResourcesNetworkList) 
 	return nil
 }
 
-func validateNewGoogleHypercomputeclusterClusterNetworkResourcesNetworkListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleHypercomputeclusterClusterNetworkResourcesNetworkListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

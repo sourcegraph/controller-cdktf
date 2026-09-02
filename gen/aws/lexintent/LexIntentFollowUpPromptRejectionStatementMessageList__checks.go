@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validat
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (l *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validat
 
 func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*LexIntentFollowUpPromptRejectionStatementMessage:
 		val := val.(*[]*LexIntentFollowUpPromptRejectionStatementMessage)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validat
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*LexIntentFollowUpPromptRejectionStatementMessage; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*LexIntentFollowUpPromptRejectionStatementMessage; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validat
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_LexIntentFollowUpPromptRejectionStatementMessageList) validat
 	return nil
 }
 
-func validateNewLexIntentFollowUpPromptRejectionStatementMessageListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLexIntentFollowUpPromptRejectionStatementMessageListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

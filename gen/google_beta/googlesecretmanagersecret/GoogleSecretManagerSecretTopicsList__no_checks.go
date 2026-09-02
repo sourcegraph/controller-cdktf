@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretTopicsList) validateGetParameters(in
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerSecretTopicsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSecretManagerSecretTopicsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretTopicsList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretTopicsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretTopicsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretTopicsList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewGoogleSecretManagerSecretTopicsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleSecretManagerSecretTopicsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

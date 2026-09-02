@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate",
+		"@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificate",
 		reflect.TypeOf((*ComputeManagedSslCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -43,6 +43,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "managed", GoGetter: "Managed"},
 			_jsii_.MemberProperty{JsiiProperty: "managedInput", GoGetter: "ManagedInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -57,6 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putManaged", GoMethod: "PutManaged"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetManaged", GoMethod: "ResetManaged"},
@@ -80,23 +82,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeManagedSslCertificate{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateConfig",
+		"@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateConfig",
 		reflect.TypeOf((*ComputeManagedSslCertificateConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateManaged",
+		"@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateManaged",
 		reflect.TypeOf((*ComputeManagedSslCertificateManaged)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateManagedOutputReference",
+		"@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateManagedOutputReference",
 		reflect.TypeOf((*ComputeManagedSslCertificateManagedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -125,16 +128,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeManagedSslCertificateManagedOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeouts",
+		"@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeouts",
 		reflect.TypeOf((*ComputeManagedSslCertificateTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeoutsOutputReference",
+		"@cdktn/provider-google.computeManagedSslCertificate.ComputeManagedSslCertificateTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeManagedSslCertificateTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -167,7 +170,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeManagedSslCertificateTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

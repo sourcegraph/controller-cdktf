@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNam
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNam
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeRegionBackendServiceTlsSettingsSubjectAltNamesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

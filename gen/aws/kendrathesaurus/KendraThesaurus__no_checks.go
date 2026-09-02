@@ -56,6 +56,10 @@ func (k *jsiiProxy_KendraThesaurus) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (k *jsiiProxy_KendraThesaurus) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraThesaurus) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (k *jsiiProxy_KendraThesaurus) validatePutSourceS3PathParameters(value *Ken
 }
 
 func (k *jsiiProxy_KendraThesaurus) validatePutTimeoutsParameters(value *KendraThesaurusTimeouts) error {
+	return nil
+}
+
+func (k *jsiiProxy_KendraThesaurus) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_KendraThesaurus) validateSetIndexIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_KendraThesaurus) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KendraThesaurus) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

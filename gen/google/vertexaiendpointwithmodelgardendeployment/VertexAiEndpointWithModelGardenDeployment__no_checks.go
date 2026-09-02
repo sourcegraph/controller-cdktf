@@ -56,6 +56,10 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateInterpolat
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validatePutModelCo
 }
 
 func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validatePutTimeoutsParameters(value *VertexAiEndpointWithModelGardenDeploymentTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VertexAiEndpointWithModelGardenDeployment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

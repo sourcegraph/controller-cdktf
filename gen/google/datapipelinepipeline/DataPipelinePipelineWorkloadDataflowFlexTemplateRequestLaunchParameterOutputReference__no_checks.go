@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunch
 	return nil
 }
 
-func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunch
 	return nil
 }
 
-func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunch
 	return nil
 }
 
-func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_DataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunch
 	return nil
 }
 
-func validateNewDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataPipelinePipelineWorkloadDataflowFlexTemplateRequestLaunchParameterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

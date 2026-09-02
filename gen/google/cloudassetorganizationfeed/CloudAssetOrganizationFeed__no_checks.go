@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudAssetOrganizationFeed) validateInterpolationForAttribute
 	return nil
 }
 
+func (c *jsiiProxy_CloudAssetOrganizationFeed) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudAssetOrganizationFeed) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_CloudAssetOrganizationFeed) validatePutFeedOutputConfigParame
 }
 
 func (c *jsiiProxy_CloudAssetOrganizationFeed) validatePutTimeoutsParameters(value *CloudAssetOrganizationFeedTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudAssetOrganizationFeed) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudAssetOrganizationFeed) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

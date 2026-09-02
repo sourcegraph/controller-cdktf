@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -101,9 +101,9 @@ func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validatePutPutItemPara
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (i *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -176,7 +176,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateSetComplexObje
 
 func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *IotTopicRuleDynamodbv2:
 		val := val.(*IotTopicRuleDynamodbv2)
@@ -191,7 +191,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateSetInternalVal
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *IotTopicRuleDynamodbv2; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *IotTopicRuleDynamodbv2; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -214,7 +214,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -222,7 +222,7 @@ func (j *jsiiProxy_IotTopicRuleDynamodbv2OutputReference) validateSetTerraformRe
 	return nil
 }
 
-func validateNewIotTopicRuleDynamodbv2OutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewIotTopicRuleDynamodbv2OutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

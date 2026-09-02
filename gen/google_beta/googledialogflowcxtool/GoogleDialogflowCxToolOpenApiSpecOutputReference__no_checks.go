@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) validatePut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) validateSet
 	return nil
 }
 
-func validateNewGoogleDialogflowCxToolOpenApiSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowCxToolOpenApiSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (l *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) va
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LexIntentSlotValueElicitationPromptMessageOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLexIntentSlotValueElicitationPromptMessageOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLexIntentSlotValueElicitationPromptMessageOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

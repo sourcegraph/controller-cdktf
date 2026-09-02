@@ -40,11 +40,11 @@ func (r *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) va
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RdsClusterServerlessv2ScalingConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRdsClusterServerlessv2ScalingConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRdsClusterServerlessv2ScalingConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validatePutTimeoutsParamete
 }
 
 func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validatePutVpcProjectParameters(value *GoogleEdgecontainerVpnConnectionVpcProject) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgecontainerVpnConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) validateSetLabelsParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleEdgecontainerVpnConnection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

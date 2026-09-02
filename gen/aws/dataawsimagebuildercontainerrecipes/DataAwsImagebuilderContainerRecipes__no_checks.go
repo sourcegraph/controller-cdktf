@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) validatePutFilterParamet
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsImagebuilderContainerRecipes) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsImagebuilderContainerRecipes_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsImagebuilderContainerRecipes) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

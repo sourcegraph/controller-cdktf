@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolOutputReference) validatePut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolVersionToolOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_GoogleDialogflowCxToolVersionToolOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolVersionToolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolVersionToolOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDialogflowCxToolVersionToolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowCxToolVersionToolOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

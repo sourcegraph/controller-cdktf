@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsS3AccountPublicAccessBlock) validateOverrideLogicalIdP
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsS3AccountPublicAccessBlock) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsS3AccountPublicAccessBlock_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsS3AccountPublicAccessBlock) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsS3AccountPublicAccessBlock) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsS3AccountPublicAccessBlock) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

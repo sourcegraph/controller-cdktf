@@ -56,6 +56,10 @@ func (d *jsiiProxy_DocdbCluster) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DocdbCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DocdbCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DocdbCluster) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (d *jsiiProxy_DocdbCluster) validatePutTimeoutsParameters(value *DocdbClusterTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DocdbCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -164,7 +172,7 @@ func (j *jsiiProxy_DocdbCluster) validateSetKmsKeyIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DocdbCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DocdbCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

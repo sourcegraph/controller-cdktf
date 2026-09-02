@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsRdsEngineVersionFilterList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRdsEngineVersionFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRdsEngineVersionFilterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersionFilterList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsEngineVersionFilterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsRdsEngineVersionFilterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataAwsRdsEngineVersionFilterList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewDataAwsRdsEngineVersionFilterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsRdsEngineVersionFilterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

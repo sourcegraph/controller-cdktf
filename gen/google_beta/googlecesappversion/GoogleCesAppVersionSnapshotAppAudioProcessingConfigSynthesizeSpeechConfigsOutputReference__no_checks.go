@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigSynthesize
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigSynthesize
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

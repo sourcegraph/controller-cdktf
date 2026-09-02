@@ -40,11 +40,11 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputRef
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputRef
 	return nil
 }
 
-func validateNewSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSqlDatabaseInstanceSettingsConnectionPoolConfigFlagsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

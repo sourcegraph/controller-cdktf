@@ -56,6 +56,10 @@ func (s *jsiiProxy_SecurityNotificationEmails) validateInterpolationForAttribute
 	return nil
 }
 
+func (s *jsiiProxy_SecurityNotificationEmails) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityNotificationEmails) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SecurityNotificationEmails) validateMoveToIdParameters(id *st
 }
 
 func (s *jsiiProxy_SecurityNotificationEmails) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityNotificationEmails) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_SecurityNotificationEmails) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_SecurityNotificationEmails) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SecurityNotificationEmails) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

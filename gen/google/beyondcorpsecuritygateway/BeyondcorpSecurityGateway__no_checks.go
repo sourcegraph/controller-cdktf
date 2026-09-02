@@ -56,6 +56,10 @@ func (b *jsiiProxy_BeyondcorpSecurityGateway) validateInterpolationForAttributeP
 	return nil
 }
 
+func (b *jsiiProxy_BeyondcorpSecurityGateway) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BeyondcorpSecurityGateway) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (b *jsiiProxy_BeyondcorpSecurityGateway) validatePutTimeoutsParameters(valu
 	return nil
 }
 
+func (b *jsiiProxy_BeyondcorpSecurityGateway) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateBeyondcorpSecurityGateway_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -124,7 +132,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGateway) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGateway) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BeyondcorpSecurityGateway) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

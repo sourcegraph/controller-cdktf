@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleCloudIdentityPoliciesPoliciesPolicyQueryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

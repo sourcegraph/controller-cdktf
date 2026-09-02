@@ -40,11 +40,11 @@ func (s *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SnowflakeOutboundShareAccountOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSnowflakeOutboundShareAccountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSnowflakeOutboundShareAccountOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

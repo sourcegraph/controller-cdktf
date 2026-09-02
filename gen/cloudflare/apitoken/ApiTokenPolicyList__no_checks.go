@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApiTokenPolicyList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (a *jsiiProxy_ApiTokenPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiTokenPolicyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ApiTokenPolicyList) validateSetTerraformAttributeParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ApiTokenPolicyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApiTokenPolicyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ApiTokenPolicyList) validateSetWrapsSetParameters(val *bool) 
 	return nil
 }
 
-func validateNewApiTokenPolicyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApiTokenPolicyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (u *jsiiProxy_UserPasswordHashOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (u *jsiiProxy_UserPasswordHashOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (u *jsiiProxy_UserPasswordHashOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (u *jsiiProxy_UserPasswordHashOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (u *jsiiProxy_UserPasswordHashOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_UserPasswordHashOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_UserPasswordHashOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_UserPasswordHashOutputReference) validateSetWorkFactorParamet
 	return nil
 }
 
-func validateNewUserPasswordHashOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewUserPasswordHashOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

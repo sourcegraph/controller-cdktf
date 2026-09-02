@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlefirestoreindex/internal"
 )
 
 type GoogleFirestoreIndexFieldsVectorConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type GoogleFirestoreIndexFieldsVectorConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type GoogleFirestoreIndexFieldsVectorConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutFlat(value *GoogleFirestoreIndexFieldsVectorConfigFlat)
 	ResetDimension()
 	ResetFlat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleFirestoreIndexFieldsVectorConfigOutputReference interface {
 
 // The jsii proxy struct for GoogleFirestoreIndexFieldsVectorConfigOutputReference
 type jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) Terraf
 }
 
 
-func NewGoogleFirestoreIndexFieldsVectorConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleFirestoreIndexFieldsVectorConfigOutputReference {
+func NewGoogleFirestoreIndexFieldsVectorConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleFirestoreIndexFieldsVectorConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleFirestoreIndexFieldsVectorConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleFirestoreIndexFieldsVectorConfigOutputReference(terraformResource 
 	j := jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigOutputReference",
+		"@cdktn/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleFirestoreIndexFieldsVectorConfigOutputReference(terraformResource 
 	return &j
 }
 
-func NewGoogleFirestoreIndexFieldsVectorConfigOutputReference_Override(g GoogleFirestoreIndexFieldsVectorConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleFirestoreIndexFieldsVectorConfigOutputReference_Override(g GoogleFirestoreIndexFieldsVectorConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigOutputReference",
+		"@cdktn/provider-google-beta.googleFirestoreIndex.GoogleFirestoreIndexFieldsVectorConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) GetAny
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -445,8 +445,8 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) GetStr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -458,16 +458,16 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) Interp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) ResetF
 	)
 }
 
-func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleFirestoreIndexFieldsVectorConfigOutputReference) Resolv
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

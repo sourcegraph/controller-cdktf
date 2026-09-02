@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -124,7 +124,7 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -132,7 +132,7 @@ func (j *jsiiProxy_GoogleComputeInstanceNetworkInterfaceOutputReference) validat
 	return nil
 }
 
-func validateNewGoogleComputeInstanceNetworkInterfaceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeInstanceNetworkInterfaceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

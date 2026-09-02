@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeVpnGateway) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeVpnGateway) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeVpnGateway) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleComputeVpnGateway) validatePutParamsParameters(value *G
 }
 
 func (g *jsiiProxy_GoogleComputeVpnGateway) validatePutTimeoutsParameters(value *GoogleComputeVpnGatewayTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeVpnGateway) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleComputeVpnGateway) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeVpnGateway) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeVpnGateway) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

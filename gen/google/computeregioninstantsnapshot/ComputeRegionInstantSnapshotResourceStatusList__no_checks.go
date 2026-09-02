@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotResourceStatusList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionInstantSnapshotResourceStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionInstantSnapshotResourceStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotResourceStatusList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotResourceStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotResourceStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotResourceStatusList) validateSetWr
 	return nil
 }
 
-func validateNewComputeRegionInstantSnapshotResourceStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRegionInstantSnapshotResourceStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

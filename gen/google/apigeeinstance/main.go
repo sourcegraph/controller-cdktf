@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apigeeInstance.ApigeeInstance",
+		"@cdktn/provider-google.apigeeInstance.ApigeeInstance",
 		reflect.TypeOf((*ApigeeInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLoggingConfig", GoGetter: "AccessLoggingConfig"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -68,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAccessLoggingConfig", GoMethod: "PutAccessLoggingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessLoggingConfig", GoMethod: "ResetAccessLoggingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConsumerAcceptList", GoMethod: "ResetConsumerAcceptList"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -90,19 +92,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ApigeeInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apigeeInstance.ApigeeInstanceAccessLoggingConfig",
+		"@cdktn/provider-google.apigeeInstance.ApigeeInstanceAccessLoggingConfig",
 		reflect.TypeOf((*ApigeeInstanceAccessLoggingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apigeeInstance.ApigeeInstanceAccessLoggingConfigOutputReference",
+		"@cdktn/provider-google.apigeeInstance.ApigeeInstanceAccessLoggingConfigOutputReference",
 		reflect.TypeOf((*ApigeeInstanceAccessLoggingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -134,20 +137,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApigeeInstanceAccessLoggingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apigeeInstance.ApigeeInstanceConfig",
+		"@cdktn/provider-google.apigeeInstance.ApigeeInstanceConfig",
 		reflect.TypeOf((*ApigeeInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.apigeeInstance.ApigeeInstanceTimeouts",
+		"@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeouts",
 		reflect.TypeOf((*ApigeeInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.apigeeInstance.ApigeeInstanceTimeoutsOutputReference",
+		"@cdktn/provider-google.apigeeInstance.ApigeeInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*ApigeeInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,7 +186,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApigeeInstanceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

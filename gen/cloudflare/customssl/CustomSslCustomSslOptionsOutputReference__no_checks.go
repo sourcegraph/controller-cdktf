@@ -40,11 +40,11 @@ func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomSslCustomSslOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_CustomSslCustomSslOptionsOutputReference) validateSetTypePara
 	return nil
 }
 
-func validateNewCustomSslCustomSslOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCustomSslCustomSslOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

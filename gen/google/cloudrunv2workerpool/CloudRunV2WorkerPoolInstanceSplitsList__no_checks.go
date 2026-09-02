@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitsList) validateGetParameters
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitsList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolInstanceSplitsList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewCloudRunV2WorkerPoolInstanceSplitsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudRunV2WorkerPoolInstanceSplitsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

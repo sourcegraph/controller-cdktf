@@ -40,7 +40,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateGetStr
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validatePutSdp
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ModelArmorTemplateFilterConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewModelArmorTemplateFilterConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewModelArmorTemplateFilterConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

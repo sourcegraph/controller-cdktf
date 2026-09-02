@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) validateOverrideL
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleServiceNetworkingPeeredDnsDomain_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) validateSetIdPara
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleServiceNetworkingPeeredDnsDomain) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

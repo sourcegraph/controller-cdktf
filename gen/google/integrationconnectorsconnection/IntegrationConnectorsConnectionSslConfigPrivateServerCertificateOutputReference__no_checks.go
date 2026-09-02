@@ -40,11 +40,11 @@ func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertific
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertific
 	return nil
 }
 
-func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIntegrationConnectorsConnectionSslConfigPrivateServerCertificateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateGe
 	return nil
 }
 
-func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_FmsPolicySecurityServicePolicyDataOutputReference) validateSe
 	return nil
 }
 
-func validateNewFmsPolicySecurityServicePolicyDataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFmsPolicySecurityServicePolicyDataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

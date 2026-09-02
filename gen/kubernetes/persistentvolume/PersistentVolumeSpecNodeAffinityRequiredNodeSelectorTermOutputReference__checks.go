@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutpu
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressions:
 		value := value.(*[]*PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressions)
@@ -114,7 +114,7 @@ func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressions; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchExpressions; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutpu
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchFields:
 		value := value.(*[]*PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchFields)
@@ -145,16 +145,16 @@ func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchFields; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermMatchFields; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -227,7 +227,7 @@ func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutpu
 
 func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTerm:
 		val := val.(*PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTerm)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutpu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTerm; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTerm; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -257,7 +257,7 @@ func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutpu
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -265,7 +265,7 @@ func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutpu
 	return nil
 }
 
-func validateNewPersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

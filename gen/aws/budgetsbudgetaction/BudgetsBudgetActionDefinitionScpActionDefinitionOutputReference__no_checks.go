@@ -40,11 +40,11 @@ func (b *jsiiProxy_BudgetsBudgetActionDefinitionScpActionDefinitionOutputReferen
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_BudgetsBudgetActionDefinitionScpActionDefinitionOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BudgetsBudgetActionDefinitionScpActionDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBudgetsBudgetActionDefinitionScpActionDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBudgetsBudgetActionDefinitionScpActionDefinitionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudTasksQueueHttpTargetUriOverridePathOverrideOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudTasksQueueHttpTargetUriOverridePathOverrideOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudTasksQueueHttpTargetUriOverridePathOverrideOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

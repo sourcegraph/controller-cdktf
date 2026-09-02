@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDataLineageConfigIngestionOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLineageConfigIngestionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataLineageConfigIngestionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDataLineageConfigIngestionOutputReference) validatePutR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataLineageConfigIngestionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataLineageConfigIngestionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDataLineageConfigIngestionOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataLineageConfigIngestionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataLineageConfigIngestionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataLineageConfigIngestionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataLineageConfigIngestionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

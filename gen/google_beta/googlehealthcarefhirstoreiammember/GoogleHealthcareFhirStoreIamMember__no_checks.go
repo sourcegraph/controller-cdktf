@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validatePutConditionParameters(value *GoogleHealthcareFhirStoreIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

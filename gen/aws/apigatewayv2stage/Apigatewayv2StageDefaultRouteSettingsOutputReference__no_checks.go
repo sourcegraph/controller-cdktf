@@ -40,11 +40,11 @@ func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference) validat
 	return nil
 }
 
-func validateNewApigatewayv2StageDefaultRouteSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApigatewayv2StageDefaultRouteSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

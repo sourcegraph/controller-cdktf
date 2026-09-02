@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVpcAccessConnectorSubnetOutputReference) validateGetStr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVpcAccessConnectorSubnetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVpcAccessConnectorSubnetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVpcAccessConnectorSubnetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVpcAccessConnectorSubnetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleVpcAccessConnectorSubnetOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVpcAccessConnectorSubnetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVpcAccessConnectorSubnetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleVpcAccessConnectorSubnetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVpcAccessConnectorSubnetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

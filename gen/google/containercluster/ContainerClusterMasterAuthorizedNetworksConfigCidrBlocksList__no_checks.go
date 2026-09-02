@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList)
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList)
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContainerClusterMasterAuthorizedNetworksConfigCidrBlocksList)
 	return nil
 }
 
-func validateNewContainerClusterMasterAuthorizedNetworksConfigCidrBlocksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerClusterMasterAuthorizedNetworksConfigCidrBlocksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

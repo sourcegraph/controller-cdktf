@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineTargetSiteFailureReasonOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineTargetSiteFailureReasonOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDiscoveryEngineTargetSiteFailureReasonOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

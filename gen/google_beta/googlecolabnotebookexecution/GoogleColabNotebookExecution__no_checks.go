@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleColabNotebookExecution) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleColabNotebookExecution) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleColabNotebookExecution) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleColabNotebookExecution) validatePutGcsNotebookSourcePar
 }
 
 func (g *jsiiProxy_GoogleColabNotebookExecution) validatePutTimeoutsParameters(value *GoogleColabNotebookExecutionTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleColabNotebookExecution) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -136,7 +144,7 @@ func (j *jsiiProxy_GoogleColabNotebookExecution) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabNotebookExecution) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleColabNotebookExecution) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

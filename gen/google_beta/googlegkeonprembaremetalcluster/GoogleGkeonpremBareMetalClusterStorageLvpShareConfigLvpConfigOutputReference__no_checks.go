@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfig
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGkeonpremBareMetalClusterStorageLvpShareConfigLvpConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

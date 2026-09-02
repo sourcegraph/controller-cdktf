@@ -40,11 +40,11 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesLabelsOutputRefer
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesLabelsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesLabelsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesLabelsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesLabelsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesLabelsOutputRefer
 	return nil
 }
 
-func validateNewBackupDrRestoreWorkloadDiskRestorePropertiesLabelsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewBackupDrRestoreWorkloadDiskRestorePropertiesLabelsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

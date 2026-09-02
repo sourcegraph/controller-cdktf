@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleStorageNotification) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageNotification) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageNotification) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (g *jsiiProxy_GoogleStorageNotification) validateMoveToIdParameters(id *str
 }
 
 func (g *jsiiProxy_GoogleStorageNotification) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageNotification) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleStorageNotification) validateSetEventTypesParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageNotification) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleStorageNotification) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

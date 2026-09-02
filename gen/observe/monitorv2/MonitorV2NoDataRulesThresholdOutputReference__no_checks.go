@@ -40,7 +40,7 @@ func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateGetStri
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validatePutComp
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_MonitorV2NoDataRulesThresholdOutputReference) validateSetValu
 	return nil
 }
 
-func validateNewMonitorV2NoDataRulesThresholdOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitorV2NoDataRulesThresholdOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

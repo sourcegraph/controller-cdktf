@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation
 	return nil
 }
 
-func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudfrontDistributionDefaultCacheBehaviorFunctionAssociation
 	return nil
 }
 
-func validateNewCloudfrontDistributionDefaultCacheBehaviorFunctionAssociationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudfrontDistributionDefaultCacheBehaviorFunctionAssociationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkServicesWasmPluginUsedByList) validateGetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesWasmPluginUsedByList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesWasmPluginUsedByList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleNetworkServicesWasmPluginUsedByList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesWasmPluginUsedByList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesWasmPluginUsedByList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleNetworkServicesWasmPluginUsedByList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewGoogleNetworkServicesWasmPluginUsedByListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkServicesWasmPluginUsedByListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

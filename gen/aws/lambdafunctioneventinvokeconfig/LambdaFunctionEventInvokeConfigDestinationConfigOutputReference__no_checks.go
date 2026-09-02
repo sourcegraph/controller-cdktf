@@ -40,7 +40,7 @@ func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReferen
 	return nil
 }
 
-func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReferen
 	return nil
 }
 
-func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LambdaFunctionEventInvokeConfigDestinationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLambdaFunctionEventInvokeConfigDestinationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLambdaFunctionEventInvokeConfigDestinationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

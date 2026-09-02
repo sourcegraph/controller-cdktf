@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationSecurityHealthAnalyticsCustomM
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleSccManagementOrganizationSecurityHealthAnalyticsCustomM
 }
 
 func (g *jsiiProxy_GoogleSccManagementOrganizationSecurityHealthAnalyticsCustomModule) validatePutTimeoutsParameters(value *GoogleSccManagementOrganizationSecurityHealthAnalyticsCustomModuleTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleSccManagementOrganizationSecurityHealthAnalyticsCustomM
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSccManagementOrganizationSecurityHealthAnalyticsCustomModule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

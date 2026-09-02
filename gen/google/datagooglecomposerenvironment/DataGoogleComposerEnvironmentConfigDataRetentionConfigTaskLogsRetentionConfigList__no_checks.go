@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLog
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLog
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLog
 	return nil
 }
 
-func validateNewDataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComposerEnvironmentConfigDataRetentionConfigTaskLogsRetentionConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

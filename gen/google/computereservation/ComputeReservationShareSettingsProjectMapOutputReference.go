@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computereservation/internal"
 )
 
 type ComputeReservationShareSettingsProjectMapOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ComputeReservationShareSettingsProjectMapOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type ComputeReservationShareSettingsProjectMapOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetProjectId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ComputeReservationShareSettingsProjectMapOutputReference interface {
 
 // The jsii proxy struct for ComputeReservationShareSettingsProjectMapOutputReference
 type jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) Ter
 }
 
 
-func NewComputeReservationShareSettingsProjectMapOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeReservationShareSettingsProjectMapOutputReference {
+func NewComputeReservationShareSettingsProjectMapOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeReservationShareSettingsProjectMapOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeReservationShareSettingsProjectMapOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewComputeReservationShareSettingsProjectMapOutputReference(terraformResour
 	j := jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapOutputReference",
+		"@cdktn/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewComputeReservationShareSettingsProjectMapOutputReference(terraformResour
 	return &j
 }
 
-func NewComputeReservationShareSettingsProjectMapOutputReference_Override(c ComputeReservationShareSettingsProjectMapOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputeReservationShareSettingsProjectMapOutputReference_Override(c ComputeReservationShareSettingsProjectMapOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapOutputReference",
+		"@cdktn/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) Get
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -455,8 +455,8 @@ func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) Get
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -468,16 +468,16 @@ func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) Int
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapOutputReference) Res
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

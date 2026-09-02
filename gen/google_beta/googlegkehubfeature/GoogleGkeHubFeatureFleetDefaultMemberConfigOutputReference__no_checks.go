@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeHubFeatureFleetDefaultMemberConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleGkeHubFeatureFleetDefaultMemberConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGkeHubFeatureFleetDefaultMemberConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

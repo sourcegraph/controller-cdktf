@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIamWorkforcePoolProviderOidcClientSecretValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataObserveDatasetCorrelationTagList) validateGetParameters(i
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveDatasetCorrelationTagList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveDatasetCorrelationTagList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataObserveDatasetCorrelationTagList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveDatasetCorrelationTagList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveDatasetCorrelationTagList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataObserveDatasetCorrelationTagList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewDataObserveDatasetCorrelationTagListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataObserveDatasetCorrelationTagListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

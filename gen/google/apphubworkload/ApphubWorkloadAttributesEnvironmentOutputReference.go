@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/apphubworkload/internal"
 )
 
 type ApphubWorkloadAttributesEnvironmentOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type ApphubWorkloadAttributesEnvironmentOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -45,7 +45,7 @@ type ApphubWorkloadAttributesEnvironmentOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type ApphubWorkloadAttributesEnvironmentOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type ApphubWorkloadAttributesEnvironmentOutputReference interface {
 
 // The jsii proxy struct for ApphubWorkloadAttributesEnvironmentOutputReference
 type jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) ComplexObjectIndex() interface{} {
@@ -139,8 +139,8 @@ func (j *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) TypeInput
 }
 
 
-func NewApphubWorkloadAttributesEnvironmentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApphubWorkloadAttributesEnvironmentOutputReference {
+func NewApphubWorkloadAttributesEnvironmentOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ApphubWorkloadAttributesEnvironmentOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApphubWorkloadAttributesEnvironmentOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewApphubWorkloadAttributesEnvironmentOutputReference(terraformResource cdk
 	j := jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesEnvironmentOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewApphubWorkloadAttributesEnvironmentOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewApphubWorkloadAttributesEnvironmentOutputReference_Override(a ApphubWorkloadAttributesEnvironmentOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewApphubWorkloadAttributesEnvironmentOutputReference_Override(a ApphubWorkloadAttributesEnvironmentOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apphubWorkload.ApphubWorkloadAttributesEnvironmentOutputReference",
+		"@cdktn/provider-google.apphubWorkload.ApphubWorkloadAttributesEnvironmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) GetAnyMap
 	return returns
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -420,8 +420,8 @@ func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) GetString
 	return returns
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -433,24 +433,24 @@ func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) Interpola
 	return returns
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (a *jsiiProxy_ApphubWorkloadAttributesEnvironmentOutputReference) Resolve(_
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

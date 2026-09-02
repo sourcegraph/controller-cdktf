@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBigtableTableAutomatedBackupPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigtableTableAutomatedBackupPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

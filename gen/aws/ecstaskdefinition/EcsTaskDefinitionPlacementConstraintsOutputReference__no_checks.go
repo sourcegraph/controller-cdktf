@@ -40,11 +40,11 @@ func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validat
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_EcsTaskDefinitionPlacementConstraintsOutputReference) validat
 	return nil
 }
 
-func validateNewEcsTaskDefinitionPlacementConstraintsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEcsTaskDefinitionPlacementConstraintsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

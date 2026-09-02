@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/elasticacheglobalreplicationgroup/internal"
 )
 
 type ElasticacheGlobalReplicationGroupTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type ElasticacheGlobalReplicationGroupTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type ElasticacheGlobalReplicationGroupTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type ElasticacheGlobalReplicationGroupTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ElasticacheGlobalReplicationGroupTimeoutsOutputReference interface {
 
 // The jsii proxy struct for ElasticacheGlobalReplicationGroupTimeoutsOutputReference
 type jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) Upd
 }
 
 
-func NewElasticacheGlobalReplicationGroupTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ElasticacheGlobalReplicationGroupTimeoutsOutputReference {
+func NewElasticacheGlobalReplicationGroupTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ElasticacheGlobalReplicationGroupTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewElasticacheGlobalReplicationGroupTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewElasticacheGlobalReplicationGroupTimeoutsOutputReference(terraformResour
 	j := jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupTimeoutsOutputReference",
+		"@cdktn/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewElasticacheGlobalReplicationGroupTimeoutsOutputReference(terraformResour
 	return &j
 }
 
-func NewElasticacheGlobalReplicationGroupTimeoutsOutputReference_Override(e ElasticacheGlobalReplicationGroupTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewElasticacheGlobalReplicationGroupTimeoutsOutputReference_Override(e ElasticacheGlobalReplicationGroupTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupTimeoutsOutputReference",
+		"@cdktn/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) Get
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -491,8 +491,8 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) Get
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -504,16 +504,16 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) Int
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) Res
 	)
 }
 
-func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroupTimeoutsOutputReference) Res
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

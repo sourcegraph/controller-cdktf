@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityHintOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerAnalysisNoteAttestationAuthorityHintOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerAnalysisNoteAttestationAuthorityHintOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleRedisClusterManagedBackupSourceList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleRedisClusterManagedBackupSourceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleRedisClusterManagedBackupSourceList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleRedisClusterManagedBackupSourceList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleRedisClusterManagedBackupSourceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleRedisClusterManagedBackupSourceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleRedisClusterManagedBackupSourceList) validateSetWra
 	return nil
 }
 
-func validateNewDataGoogleRedisClusterManagedBackupSourceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleRedisClusterManagedBackupSourceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

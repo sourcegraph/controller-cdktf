@@ -12,7 +12,7 @@ func (l *jsiiProxy_LexIntentConclusionStatementMessageList) validateGetParameter
 	return nil
 }
 
-func (l *jsiiProxy_LexIntentConclusionStatementMessageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LexIntentConclusionStatementMessageList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LexIntentConclusionStatementMessageList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_LexIntentConclusionStatementMessageList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LexIntentConclusionStatementMessageList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LexIntentConclusionStatementMessageList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewLexIntentConclusionStatementMessageListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLexIntentConclusionStatementMessageListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

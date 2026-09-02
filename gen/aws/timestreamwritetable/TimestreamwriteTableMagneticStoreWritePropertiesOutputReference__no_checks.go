@@ -40,7 +40,7 @@ func (t *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesOutputReferen
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (t *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesOutputReferen
 	return nil
 }
 
-func (t *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TimestreamwriteTableMagneticStoreWritePropertiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTimestreamwriteTableMagneticStoreWritePropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTimestreamwriteTableMagneticStoreWritePropertiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

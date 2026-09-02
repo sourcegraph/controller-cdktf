@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleComputeWireGroupEndpointsInterconnectsOutputReference) 
 	return nil
 }
 
-func validateNewGoogleComputeWireGroupEndpointsInterconnectsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeWireGroupEndpointsInterconnectsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

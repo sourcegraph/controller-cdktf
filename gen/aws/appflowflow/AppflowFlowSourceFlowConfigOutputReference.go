@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/appflowflow/internal"
 )
 
 type AppflowFlowSourceFlowConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApiVersion() *string
 	SetApiVersion(val *string)
 	ApiVersionInput() *string
@@ -47,15 +47,15 @@ type AppflowFlowSourceFlowConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,9 +71,9 @@ type AppflowFlowSourceFlowConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutIncrementalPullConfig(value *AppflowFlowSourceFlowConfigIncrementalPullConfig)
 	PutSourceConnectorProperties(value *AppflowFlowSourceFlowConfigSourceConnectorProperties)
 	ResetApiVersion()
@@ -81,7 +81,7 @@ type AppflowFlowSourceFlowConfigOutputReference interface {
 	ResetIncrementalPullConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,7 +91,7 @@ type AppflowFlowSourceFlowConfigOutputReference interface {
 
 // The jsii proxy struct for AppflowFlowSourceFlowConfigOutputReference
 type jsiiProxy_AppflowFlowSourceFlowConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) ApiVersion() *string {
@@ -254,8 +254,8 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -265,7 +265,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) TerraformResource
 }
 
 
-func NewAppflowFlowSourceFlowConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigOutputReference {
+func NewAppflowFlowSourceFlowConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppflowFlowSourceFlowConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppflowFlowSourceFlowConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -274,7 +274,7 @@ func NewAppflowFlowSourceFlowConfigOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_AppflowFlowSourceFlowConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigOutputReference",
+		"@cdktn/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -282,11 +282,11 @@ func NewAppflowFlowSourceFlowConfigOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewAppflowFlowSourceFlowConfigOutputReference_Override(a AppflowFlowSourceFlowConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppflowFlowSourceFlowConfigOutputReference_Override(a AppflowFlowSourceFlowConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigOutputReference",
+		"@cdktn/provider-aws.appflowFlow.AppflowFlowSourceFlowConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -369,7 +369,7 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,11 +409,11 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -537,8 +537,8 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -550,16 +550,16 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -612,8 +612,8 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) ResetIncrementalP
 	)
 }
 
-func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -621,7 +621,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

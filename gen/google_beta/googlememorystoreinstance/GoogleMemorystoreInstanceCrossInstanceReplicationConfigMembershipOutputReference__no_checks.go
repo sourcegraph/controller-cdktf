@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigMember
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigMember
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleMemorystoreInstanceCrossInstanceReplicationConfigMembershipOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

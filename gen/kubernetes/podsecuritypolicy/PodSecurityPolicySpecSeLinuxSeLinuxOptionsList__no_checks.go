@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsList) validateGetPa
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecSeLinuxSeLinuxOptionsList) validateSetWr
 	return nil
 }
 
-func validateNewPodSecurityPolicySpecSeLinuxSeLinuxOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSecurityPolicySpecSeLinuxSeLinuxOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

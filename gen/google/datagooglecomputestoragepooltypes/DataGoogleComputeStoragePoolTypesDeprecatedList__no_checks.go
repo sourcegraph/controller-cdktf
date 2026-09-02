@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeStoragePoolTypesDeprecatedList) validateSetW
 	return nil
 }
 
-func validateNewDataGoogleComputeStoragePoolTypesDeprecatedListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeStoragePoolTypesDeprecatedListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

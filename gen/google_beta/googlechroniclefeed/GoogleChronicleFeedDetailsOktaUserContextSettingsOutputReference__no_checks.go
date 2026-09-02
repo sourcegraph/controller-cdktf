@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsOktaUserContextSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsOktaUserContextSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsOktaUserContextSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

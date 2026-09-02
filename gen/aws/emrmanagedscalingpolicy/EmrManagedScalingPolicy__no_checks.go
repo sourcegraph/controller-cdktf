@@ -56,6 +56,10 @@ func (e *jsiiProxy_EmrManagedScalingPolicy) validateInterpolationForAttributePar
 	return nil
 }
 
+func (e *jsiiProxy_EmrManagedScalingPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EmrManagedScalingPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (e *jsiiProxy_EmrManagedScalingPolicy) validateOverrideLogicalIdParameters(
 }
 
 func (e *jsiiProxy_EmrManagedScalingPolicy) validatePutComputeLimitsParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EmrManagedScalingPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EmrManagedScalingPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

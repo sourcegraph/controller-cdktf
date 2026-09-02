@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraintsDetailsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsServicecatalogPortfolioConstraintsDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsServicecatalogPortfolioConstraintsDetailsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

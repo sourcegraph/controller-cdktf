@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataprocJob) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (d *jsiiProxy_DataprocJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (d *jsiiProxy_DataprocJob) validatePutTimeoutsParameters(value *DataprocJob
 	return nil
 }
 
+func (d *jsiiProxy_DataprocJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataprocJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -152,7 +160,7 @@ func (j *jsiiProxy_DataprocJob) validateSetLabelsParameters(val *map[string]*str
 	return nil
 }
 
-func (j *jsiiProxy_DataprocJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataprocJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

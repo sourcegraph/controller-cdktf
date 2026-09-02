@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference i
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	User() *string
 	SetUser(val *string)
 	UserInput() *string
@@ -48,7 +48,7 @@ type GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference i
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference i
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetSecret()
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference i
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference) ComplexObjectIndex() interface{} {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOut
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOut
 }
 
 
-func NewGoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference {
+func NewGoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReferenc
 	j := jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReferenc
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference_Override(g GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference_Override(g GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOut
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,8 +456,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -469,16 +469,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOut
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOut
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsAuthenticationOut
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

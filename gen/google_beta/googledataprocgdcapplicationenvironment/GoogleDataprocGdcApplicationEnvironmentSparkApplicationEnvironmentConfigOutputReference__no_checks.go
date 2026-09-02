@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataprocGdcApplicationEnvironmentSparkApplicationEnviro
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironmentSparkApplicationEnviro
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataprocGdcApplicationEnvironmentSparkApplicationEnvironmentConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

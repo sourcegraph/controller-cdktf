@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsSecurityGroupsFilterList) validateGetParameters(index 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsSecurityGroupsFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsSecurityGroupsFilterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataAwsSecurityGroupsFilterList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSecurityGroupsFilterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsSecurityGroupsFilterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataAwsSecurityGroupsFilterList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewDataAwsSecurityGroupsFilterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsSecurityGroupsFilterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolume",
+		"@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolume",
 		reflect.TypeOf((*DataAwsEbsVolume)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetFilter", GoMethod: "ResetFilter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetMostRecent", GoMethod: "ResetMostRecent"},
@@ -73,23 +74,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeId", GoGetter: "VolumeId"},
 			_jsii_.MemberProperty{JsiiProperty: "volumeType", GoGetter: "VolumeType"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsEbsVolume{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeConfig",
+		"@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeConfig",
 		reflect.TypeOf((*DataAwsEbsVolumeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilter",
+		"@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilter",
 		reflect.TypeOf((*DataAwsEbsVolumeFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilterList",
+		"@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilterList",
 		reflect.TypeOf((*DataAwsEbsVolumeFilterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -106,12 +108,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsEbsVolumeFilterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilterOutputReference",
+		"@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeFilterOutputReference",
 		reflect.TypeOf((*DataAwsEbsVolumeFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -142,16 +144,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsEbsVolumeFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeouts",
+		"@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeouts",
 		reflect.TypeOf((*DataAwsEbsVolumeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeoutsOutputReference",
+		"@cdktn/provider-aws.dataAwsEbsVolume.DataAwsEbsVolumeTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsEbsVolumeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -181,7 +183,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsEbsVolumeTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

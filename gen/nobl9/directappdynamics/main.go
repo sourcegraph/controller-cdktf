@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamics",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamics",
 		reflect.TypeOf((*DirectAppdynamics)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountName", GoGetter: "AccountName"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logCollectionEnabled", GoGetter: "LogCollectionEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "logCollectionEnabledInput", GoGetter: "LogCollectionEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -67,6 +68,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "queryDelay", GoGetter: "QueryDelay"},
 			_jsii_.MemberProperty{JsiiProperty: "queryDelayInput", GoGetter: "QueryDelayInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannel", GoGetter: "ReleaseChannel"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannelInput", GoGetter: "ReleaseChannelInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientSecret", GoMethod: "ResetClientSecret"},
@@ -93,27 +95,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAppdynamics{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamicsConfig",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamicsConfig",
 		reflect.TypeOf((*DirectAppdynamicsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrieval",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrieval",
 		reflect.TypeOf((*DirectAppdynamicsHistoricalDataRetrieval)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalDefaultDuration",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalDefaultDuration",
 		reflect.TypeOf((*DirectAppdynamicsHistoricalDataRetrievalDefaultDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalDefaultDurationList",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalDefaultDurationList",
 		reflect.TypeOf((*DirectAppdynamicsHistoricalDataRetrievalDefaultDurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -130,12 +133,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalDefaultDurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalDefaultDurationOutputReference",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalDefaultDurationOutputReference",
 		reflect.TypeOf((*DirectAppdynamicsHistoricalDataRetrievalDefaultDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -166,16 +169,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalDefaultDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalMaxDuration",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalMaxDuration",
 		reflect.TypeOf((*DirectAppdynamicsHistoricalDataRetrievalMaxDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalMaxDurationList",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalMaxDurationList",
 		reflect.TypeOf((*DirectAppdynamicsHistoricalDataRetrievalMaxDurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -192,12 +195,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalMaxDurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalMaxDurationOutputReference",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalMaxDurationOutputReference",
 		reflect.TypeOf((*DirectAppdynamicsHistoricalDataRetrievalMaxDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -228,12 +231,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalMaxDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalOutputReference",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamicsHistoricalDataRetrievalOutputReference",
 		reflect.TypeOf((*DirectAppdynamicsHistoricalDataRetrievalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -266,16 +269,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAppdynamicsHistoricalDataRetrievalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamicsQueryDelay",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamicsQueryDelay",
 		reflect.TypeOf((*DirectAppdynamicsQueryDelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.directAppdynamics.DirectAppdynamicsQueryDelayOutputReference",
+		"@cdktn/provider-nobl9.directAppdynamics.DirectAppdynamicsQueryDelayOutputReference",
 		reflect.TypeOf((*DirectAppdynamicsQueryDelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -306,7 +309,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DirectAppdynamicsQueryDelayOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

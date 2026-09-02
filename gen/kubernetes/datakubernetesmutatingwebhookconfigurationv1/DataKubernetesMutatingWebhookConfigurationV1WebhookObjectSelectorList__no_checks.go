@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSele
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSele
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesMutatingWebhookConfigurationV1WebhookObjectSele
 	return nil
 }
 
-func validateNewDataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesMutatingWebhookConfigurationV1WebhookObjectSelectorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

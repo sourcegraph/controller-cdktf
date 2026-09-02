@@ -8,7 +8,7 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataObserveMonitor) validateAddOverrideParameters(path *string, value interface{}) error {
@@ -116,7 +116,7 @@ func (d *jsiiProxy_DataObserveMonitor) validatePutNotificationSpecParameters(val
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveMonitorNotificationSpec:
 		value := value.(*[]*DataObserveMonitorNotificationSpec)
@@ -135,7 +135,7 @@ func (d *jsiiProxy_DataObserveMonitor) validatePutNotificationSpecParameters(val
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveMonitorNotificationSpec; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveMonitorNotificationSpec; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -147,7 +147,7 @@ func (d *jsiiProxy_DataObserveMonitor) validatePutRuleParameters(value interface
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveMonitorRule:
 		value := value.(*[]*DataObserveMonitorRule)
@@ -166,7 +166,7 @@ func (d *jsiiProxy_DataObserveMonitor) validatePutRuleParameters(value interface
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveMonitorRule; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveMonitorRule; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -178,7 +178,7 @@ func (d *jsiiProxy_DataObserveMonitor) validatePutStageParameters(value interfac
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataObserveMonitorStage:
 		value := value.(*[]*DataObserveMonitorStage)
@@ -197,8 +197,16 @@ func (d *jsiiProxy_DataObserveMonitor) validatePutStageParameters(value interfac
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DataObserveMonitorStage; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DataObserveMonitorStage; received %#v (a %T)", value, value)
 		}
+	}
+
+	return nil
+}
+
+func (d *jsiiProxy_DataObserveMonitor) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	if feature == "" {
+		return fmt.Errorf("parameter feature is required, but nil was provided")
 	}
 
 	return nil
@@ -290,11 +298,11 @@ func (j *jsiiProxy_DataObserveMonitor) validateSetCountParameters(val interface{
 		// ok
 	case uint64:
 		// ok
-	case cdktf.TerraformCount:
+	case cdktn.TerraformCount:
 		// ok
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktf.TerraformCount; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: *float64, cdktn.TerraformCount; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -309,7 +317,7 @@ func (j *jsiiProxy_DataObserveMonitor) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitor) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataObserveMonitor) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	if err := _jsii_.ValidateStruct(val, func() string { return "parameter val" }); err != nil {
 		return err
 	}

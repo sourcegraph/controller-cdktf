@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validatePutA
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DiscoveryEngineControlConditionsActiveTimeRange:
 		value := value.(*[]*DiscoveryEngineControlConditionsActiveTimeRange)
@@ -114,7 +114,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validatePutA
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DiscoveryEngineControlConditionsActiveTimeRange; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DiscoveryEngineControlConditionsActiveTimeRange; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validatePutQ
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DiscoveryEngineControlConditionsQueryTerms:
 		value := value.(*[]*DiscoveryEngineControlConditionsQueryTerms)
@@ -145,16 +145,16 @@ func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validatePutQ
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DiscoveryEngineControlConditionsQueryTerms; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DiscoveryEngineControlConditionsQueryTerms; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -227,7 +227,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetC
 
 func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *DiscoveryEngineControlConditions:
 		val := val.(*DiscoveryEngineControlConditions)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetI
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DiscoveryEngineControlConditions; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DiscoveryEngineControlConditions; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -265,7 +265,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -273,7 +273,7 @@ func (j *jsiiProxy_DiscoveryEngineControlConditionsOutputReference) validateSetT
 	return nil
 }
 
-func validateNewDiscoveryEngineControlConditionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDiscoveryEngineControlConditionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validatePutConditionParameters(value *GoogleHealthcareDicomStoreIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleHealthcareDicomStoreIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

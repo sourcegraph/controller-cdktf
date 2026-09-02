@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeFirewallDenyList) validateGetParameters(index *float64
 	return nil
 }
 
-func (c *jsiiProxy_ComputeFirewallDenyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeFirewallDenyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeFirewallDenyList) validateSetTerraformAttributeParamet
 	return nil
 }
 
-func (j *jsiiProxy_ComputeFirewallDenyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeFirewallDenyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeFirewallDenyList) validateSetWrapsSetParameters(val *b
 	return nil
 }
 
-func validateNewComputeFirewallDenyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeFirewallDenyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/backupdrrestoreworkload/internal"
 )
 
 type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdvancedMachineFeatures() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAdvancedMachineFeaturesOutputReference
 	AdvancedMachineFeaturesInput() *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAdvancedMachineFeatures
 	AllocationAffinity() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinityOutputReference
@@ -96,15 +96,15 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -120,9 +120,9 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAdvancedMachineFeatures(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAdvancedMachineFeatures)
 	PutAllocationAffinity(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAllocationAffinity)
 	PutConfidentialInstanceConfig(value *BackupDrRestoreWorkloadComputeInstanceRestorePropertiesConfidentialInstanceConfig)
@@ -166,7 +166,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 	ResetTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -176,7 +176,7 @@ type BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference inte
 
 // The jsii proxy struct for BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference
 type jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) AdvancedMachineFeatures() BackupDrRestoreWorkloadComputeInstanceRestorePropertiesAdvancedMachineFeaturesOutputReference {
@@ -759,8 +759,8 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -770,7 +770,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 }
 
 
-func NewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference {
+func NewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -779,7 +779,7 @@ func NewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference(t
 	j := jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference",
+		"@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -787,11 +787,11 @@ func NewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference(t
 	return &j
 }
 
-func NewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference_Override(b BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference_Override(b BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference",
+		"@cdktn/provider-google.backupDrRestoreWorkload.BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -951,7 +951,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -991,11 +991,11 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -1119,8 +1119,8 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -1132,16 +1132,16 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	return returns
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1524,8 +1524,8 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	)
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1533,7 +1533,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadComputeInstanceRestorePropertiesOutput
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

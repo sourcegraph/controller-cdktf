@@ -40,11 +40,11 @@ func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validate
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsEbsOutputReference) validate
 	return nil
 }
 
-func validateNewLaunchTemplateBlockDeviceMappingsEbsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLaunchTemplateBlockDeviceMappingsEbsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpression
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpression
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpression
 	return nil
 }
 
-func validateNewStatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStatefulSetSpecVolumeClaimTemplateSpecSelectorMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validatePutPortParameters(v
 	return nil
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EndpointsV1SubsetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_EndpointsV1SubsetOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EndpointsV1SubsetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEndpointsV1SubsetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEndpointsV1SubsetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

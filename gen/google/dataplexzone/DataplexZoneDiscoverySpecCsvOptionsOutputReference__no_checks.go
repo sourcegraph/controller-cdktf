@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataplexZoneDiscoverySpecCsvOptionsOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataplexZoneDiscoverySpecCsvOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexZoneDiscoverySpecCsvOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexZoneDiscoverySpecCsvOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexZoneDiscoverySpecCsvOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_DataplexZoneDiscoverySpecCsvOptionsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataplexZoneDiscoverySpecCsvOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexZoneDiscoverySpecCsvOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataplexZoneDiscoverySpecCsvOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataplexZoneDiscoverySpecCsvOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

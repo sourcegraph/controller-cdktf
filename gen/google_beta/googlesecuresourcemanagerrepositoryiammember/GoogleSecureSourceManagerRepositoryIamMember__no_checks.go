@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSecureSourceManagerRepositoryIamMember) validateInterpo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecureSourceManagerRepositoryIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecureSourceManagerRepositoryIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleSecureSourceManagerRepositoryIamMember) validateOverrid
 }
 
 func (g *jsiiProxy_GoogleSecureSourceManagerRepositoryIamMember) validatePutConditionParameters(value *GoogleSecureSourceManagerRepositoryIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecureSourceManagerRepositoryIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryIamMember) validateSetIdPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerRepositoryIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

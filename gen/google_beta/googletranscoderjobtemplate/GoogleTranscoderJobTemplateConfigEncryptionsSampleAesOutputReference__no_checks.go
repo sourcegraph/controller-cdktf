@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleTranscoderJobTemplateConfigEncryptionsSampleAesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

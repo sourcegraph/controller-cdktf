@@ -40,11 +40,11 @@ func (i *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateGetS
 	return nil
 }
 
-func (i *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_IamFoldersPolicyBindingConditionOutputReference) validateSetT
 	return nil
 }
 
-func validateNewIamFoldersPolicyBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIamFoldersPolicyBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeInterconnectGroupConfiguredTopologyCapabilityOut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectGroupConfiguredTopologyCapabilityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInterconnectGroupConfiguredTopologyCapabilityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectGroupConfiguredTopologyCapabilityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInterconnectGroupConfiguredTopologyCapabilityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleComputeInterconnectGroupConfiguredTopologyCapabilityOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectGroupConfiguredTopologyCapabilityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInterconnectGroupConfiguredTopologyCapabilityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeInterconnectGroupConfiguredTopologyCapabilityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeInterconnectGroupConfiguredTopologyCapabilityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

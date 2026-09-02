@@ -56,6 +56,10 @@ func (s *jsiiProxy_SagemakerFeatureGroup) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerFeatureGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerFeatureGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (s *jsiiProxy_SagemakerFeatureGroup) validatePutOfflineStoreConfigParameter
 }
 
 func (s *jsiiProxy_SagemakerFeatureGroup) validatePutOnlineStoreConfigParameters(value *SagemakerFeatureGroupOnlineStoreConfig) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerFeatureGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_SagemakerFeatureGroup) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerFeatureGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SagemakerFeatureGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

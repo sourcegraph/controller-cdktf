@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/connectroutingprofile/internal"
 )
 
 type ConnectRoutingProfileMediaConcurrenciesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Channel() *string
 	SetChannel(val *string)
 	ChannelInput() *string
@@ -40,15 +40,15 @@ type ConnectRoutingProfileMediaConcurrenciesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type ConnectRoutingProfileMediaConcurrenciesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ConnectRoutingProfileMediaConcurrenciesOutputReference interface {
 
 // The jsii proxy struct for ConnectRoutingProfileMediaConcurrenciesOutputReference
 type jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Channel() *string {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Terra
 }
 
 
-func NewConnectRoutingProfileMediaConcurrenciesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ConnectRoutingProfileMediaConcurrenciesOutputReference {
+func NewConnectRoutingProfileMediaConcurrenciesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ConnectRoutingProfileMediaConcurrenciesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewConnectRoutingProfileMediaConcurrenciesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewConnectRoutingProfileMediaConcurrenciesOutputReference(terraformResource
 	j := jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrenciesOutputReference",
+		"@cdktn/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrenciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewConnectRoutingProfileMediaConcurrenciesOutputReference(terraformResource
 	return &j
 }
 
-func NewConnectRoutingProfileMediaConcurrenciesOutputReference_Override(c ConnectRoutingProfileMediaConcurrenciesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewConnectRoutingProfileMediaConcurrenciesOutputReference_Override(c ConnectRoutingProfileMediaConcurrenciesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrenciesOutputReference",
+		"@cdktn/provider-aws.connectRoutingProfile.ConnectRoutingProfileMediaConcurrenciesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetAn
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -454,8 +454,8 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) GetSt
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -467,24 +467,24 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Inter
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (c *jsiiProxy_ConnectRoutingProfileMediaConcurrenciesOutputReference) Resol
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureResourceStateList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewDataGoogleGkeHubFeatureResourceStateListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleGkeHubFeatureResourceStateListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

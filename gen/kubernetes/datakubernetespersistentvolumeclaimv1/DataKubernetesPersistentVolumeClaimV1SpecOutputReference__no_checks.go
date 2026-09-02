@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) val
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimV1SpecOutputReference) val
 	return nil
 }
 
-func validateNewDataKubernetesPersistentVolumeClaimV1SpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataKubernetesPersistentVolumeClaimV1SpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

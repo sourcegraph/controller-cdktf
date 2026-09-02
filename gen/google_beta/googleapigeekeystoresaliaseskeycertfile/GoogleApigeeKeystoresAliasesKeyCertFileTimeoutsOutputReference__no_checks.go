@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReferenc
 	return nil
 }
 
-func validateNewGoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApigeeKeystoresAliasesKeyCertFileTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

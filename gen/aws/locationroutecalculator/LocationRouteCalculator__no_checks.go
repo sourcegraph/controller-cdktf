@@ -56,6 +56,10 @@ func (l *jsiiProxy_LocationRouteCalculator) validateInterpolationForAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LocationRouteCalculator) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationRouteCalculator) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (l *jsiiProxy_LocationRouteCalculator) validateOverrideLogicalIdParameters(
 }
 
 func (l *jsiiProxy_LocationRouteCalculator) validatePutTimeoutsParameters(value *LocationRouteCalculatorTimeouts) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocationRouteCalculator) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_LocationRouteCalculator) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_LocationRouteCalculator) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LocationRouteCalculator) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

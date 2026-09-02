@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoggingOrganizationSinkExclusionsList) validateGetParameters(
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationSinkExclusionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingOrganizationSinkExclusionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSinkExclusionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingOrganizationSinkExclusionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoggingOrganizationSinkExclusionsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewLoggingOrganizationSinkExclusionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoggingOrganizationSinkExclusionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

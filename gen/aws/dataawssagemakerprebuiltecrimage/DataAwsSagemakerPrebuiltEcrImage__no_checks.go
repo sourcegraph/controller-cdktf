@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsSagemakerPrebuiltEcrImage_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) validateSetImageTagParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsSagemakerPrebuiltEcrImage) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

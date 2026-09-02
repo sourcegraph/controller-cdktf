@@ -56,6 +56,10 @@ func (g *jsiiProxy_GeminiLoggingSetting) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GeminiLoggingSetting) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GeminiLoggingSetting) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GeminiLoggingSetting) validateOverrideLogicalIdParameters(new
 }
 
 func (g *jsiiProxy_GeminiLoggingSetting) validatePutTimeoutsParameters(value *GeminiLoggingSettingTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GeminiLoggingSetting) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GeminiLoggingSetting) validateSetLabelsParameters(val *map[st
 	return nil
 }
 
-func (j *jsiiProxy_GeminiLoggingSetting) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GeminiLoggingSetting) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

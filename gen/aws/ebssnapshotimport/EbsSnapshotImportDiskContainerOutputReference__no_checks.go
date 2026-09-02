@@ -40,7 +40,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateGetStr
 	return nil
 }
 
-func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validatePutUse
 	return nil
 }
 
-func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_EbsSnapshotImportDiskContainerOutputReference) validateSetUrl
 	return nil
 }
 
-func validateNewEbsSnapshotImportDiskContainerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEbsSnapshotImportDiskContainerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

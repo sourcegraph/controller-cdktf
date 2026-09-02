@@ -40,11 +40,11 @@ func (s *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SagemakerWorkforceCognitoConfigOutputReference) validateSetUs
 	return nil
 }
 
-func validateNewSagemakerWorkforceCognitoConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSagemakerWorkforceCognitoConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

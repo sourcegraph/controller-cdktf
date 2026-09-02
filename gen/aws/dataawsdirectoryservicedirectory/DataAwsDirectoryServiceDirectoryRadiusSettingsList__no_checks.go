@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryRadiusSettingsList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryRadiusSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsDirectoryServiceDirectoryRadiusSettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsDirectoryServiceDirectoryRadiusSettingsList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsDirectoryServiceDirectoryRadiusSettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsDirectoryServiceDirectoryRadiusSettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsDirectoryServiceDirectoryRadiusSettingsList) validateS
 	return nil
 }
 
-func validateNewDataAwsDirectoryServiceDirectoryRadiusSettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsDirectoryServiceDirectoryRadiusSettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCusto
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCusto
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsKernelGatewayAppSettingsCusto
 	return nil
 }
 
-func validateNewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSagemakerUserProfileUserSettingsKernelGatewayAppSettingsCustomImageListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

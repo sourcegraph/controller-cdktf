@@ -40,11 +40,11 @@ func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EdgecontainerClusterSystemAddonsConfigIngressOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEdgecontainerClusterSystemAddonsConfigIngressOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEdgecontainerClusterSystemAddonsConfigIngressOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

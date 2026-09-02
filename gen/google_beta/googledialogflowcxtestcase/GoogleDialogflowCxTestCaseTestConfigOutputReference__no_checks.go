@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestConfigOutputReference) validate
 	return nil
 }
 
-func validateNewGoogleDialogflowCxTestCaseTestConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowCxTestCaseTestConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

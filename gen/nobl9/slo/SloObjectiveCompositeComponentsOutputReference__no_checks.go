@@ -40,7 +40,7 @@ func (s *jsiiProxy_SloObjectiveCompositeComponentsOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCompositeComponentsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloObjectiveCompositeComponentsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_SloObjectiveCompositeComponentsOutputReference) validatePutOb
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCompositeComponentsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCompositeComponentsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SloObjectiveCompositeComponentsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCompositeComponentsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCompositeComponentsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSloObjectiveCompositeComponentsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSloObjectiveCompositeComponentsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

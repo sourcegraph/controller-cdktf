@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList
 	return nil
 }
 
-func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList
 	return nil
 }
 
-func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersList
 	return nil
 }
 
-func validateNewGoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleModelArmorTemplateFilterConfigRaiSettingsRaiFiltersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

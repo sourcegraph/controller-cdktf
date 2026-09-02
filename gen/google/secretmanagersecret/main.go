@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecret",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecret",
 		reflect.TypeOf((*SecretManagerSecret)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -62,6 +63,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putTopics", GoMethod: "PutTopics"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "replication", GoGetter: "Replication"},
 			_jsii_.MemberProperty{JsiiProperty: "replicationInput", GoGetter: "ReplicationInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
@@ -104,31 +106,32 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionAliasesInput", GoGetter: "VersionAliasesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "versionDestroyTtl", GoGetter: "VersionDestroyTtl"},
 			_jsii_.MemberProperty{JsiiProperty: "versionDestroyTtlInput", GoGetter: "VersionDestroyTtlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecret{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretConfig",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretConfig",
 		reflect.TypeOf((*SecretManagerSecretConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplication",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplication",
 		reflect.TypeOf((*SecretManagerSecretReplication)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationAuto",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAuto",
 		reflect.TypeOf((*SecretManagerSecretReplicationAuto)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoCustomerManagedEncryption",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoCustomerManagedEncryption",
 		reflect.TypeOf((*SecretManagerSecretReplicationAutoCustomerManagedEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference",
 		reflect.TypeOf((*SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,12 +160,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecretReplicationAutoCustomerManagedEncryptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoOutputReference",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationAutoOutputReference",
 		reflect.TypeOf((*SecretManagerSecretReplicationAutoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,12 +196,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecretReplicationAutoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationOutputReference",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationOutputReference",
 		reflect.TypeOf((*SecretManagerSecretReplicationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auto", GoGetter: "Auto"},
@@ -233,16 +236,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecretReplicationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManaged",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManaged",
 		reflect.TypeOf((*SecretManagerSecretReplicationUserManaged)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedOutputReference",
 		reflect.TypeOf((*SecretManagerSecretReplicationUserManagedOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -272,20 +275,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecretReplicationUserManagedOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicas",
 		reflect.TypeOf((*SecretManagerSecretReplicationUserManagedReplicas)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption",
 		reflect.TypeOf((*SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference",
 		reflect.TypeOf((*SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -314,12 +317,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasCustomerManagedEncryptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasList",
 		reflect.TypeOf((*SecretManagerSecretReplicationUserManagedReplicasList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -336,12 +339,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretReplicationUserManagedReplicasOutputReference",
 		reflect.TypeOf((*SecretManagerSecretReplicationUserManagedReplicasOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -374,16 +377,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecretReplicationUserManagedReplicasOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretRotation",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotation",
 		reflect.TypeOf((*SecretManagerSecretRotation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretRotationOutputReference",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretRotationOutputReference",
 		reflect.TypeOf((*SecretManagerSecretRotationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -416,16 +419,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecretRotationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretTimeouts",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeouts",
 		reflect.TypeOf((*SecretManagerSecretTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTimeoutsOutputReference",
 		reflect.TypeOf((*SecretManagerSecretTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -461,16 +464,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecretTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretTopics",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopics",
 		reflect.TypeOf((*SecretManagerSecretTopics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretTopicsList",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsList",
 		reflect.TypeOf((*SecretManagerSecretTopicsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -487,12 +490,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecretTopicsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference",
+		"@cdktn/provider-google.secretManagerSecret.SecretManagerSecretTopicsOutputReference",
 		reflect.TypeOf((*SecretManagerSecretTopicsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -521,7 +524,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SecretManagerSecretTopicsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

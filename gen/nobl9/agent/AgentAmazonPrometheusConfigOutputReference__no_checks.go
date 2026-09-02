@@ -40,11 +40,11 @@ func (a *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_AgentAmazonPrometheusConfigOutputReference) validateSetUrlPar
 	return nil
 }
 
-func validateNewAgentAmazonPrometheusConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAgentAmazonPrometheusConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

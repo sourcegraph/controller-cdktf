@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dataawsalbtargetgroup/internal"
 )
 
 type DataAwsAlbTargetGroupStickinessList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type DataAwsAlbTargetGroupStickinessList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataAwsAlbTargetGroupStickinessOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type DataAwsAlbTargetGroupStickinessList interface {
 
 // The jsii proxy struct for DataAwsAlbTargetGroupStickinessList
 type jsiiProxy_DataAwsAlbTargetGroupStickinessList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataAwsAlbTargetGroupStickinessList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_DataAwsAlbTargetGroupStickinessList) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsAlbTargetGroupStickinessList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataAwsAlbTargetGroupStickinessList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_DataAwsAlbTargetGroupStickinessList) WrapsSet() *bool {
 }
 
 
-func NewDataAwsAlbTargetGroupStickinessList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbTargetGroupStickinessList {
+func NewDataAwsAlbTargetGroupStickinessList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataAwsAlbTargetGroupStickinessList {
 	_init_.Initialize()
 
 	if err := validateNewDataAwsAlbTargetGroupStickinessListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewDataAwsAlbTargetGroupStickinessList(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_DataAwsAlbTargetGroupStickinessList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList",
+		"@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewDataAwsAlbTargetGroupStickinessList(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewDataAwsAlbTargetGroupStickinessList_Override(d DataAwsAlbTargetGroupStickinessList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataAwsAlbTargetGroupStickinessList_Override(d DataAwsAlbTargetGroupStickinessList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList",
+		"@cdktn/provider-aws.dataAwsAlbTargetGroup.DataAwsAlbTargetGroupStickinessList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_DataAwsAlbTargetGroupStickinessList)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_DataAwsAlbTargetGroupStickinessList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsAlbTargetGroupStickinessList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_DataAwsAlbTargetGroupStickinessList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -205,8 +208,8 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessList) Get(index *float64) Data
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (d *jsiiProxy_DataAwsAlbTargetGroupStickinessList) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/pubsublitereservation/internal"
 )
 
 type PubsubLiteReservationTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type PubsubLiteReservationTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type PubsubLiteReservationTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type PubsubLiteReservationTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type PubsubLiteReservationTimeoutsOutputReference interface {
 
 // The jsii proxy struct for PubsubLiteReservationTimeoutsOutputReference
 type jsiiProxy_PubsubLiteReservationTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) UpdateInput() *
 }
 
 
-func NewPubsubLiteReservationTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubLiteReservationTimeoutsOutputReference {
+func NewPubsubLiteReservationTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PubsubLiteReservationTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPubsubLiteReservationTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewPubsubLiteReservationTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_PubsubLiteReservationTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference",
+		"@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewPubsubLiteReservationTimeoutsOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewPubsubLiteReservationTimeoutsOutputReference_Override(p PubsubLiteReservationTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPubsubLiteReservationTimeoutsOutputReference_Override(p PubsubLiteReservationTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference",
+		"@cdktn/provider-google.pubsubLiteReservation.PubsubLiteReservationTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -491,8 +491,8 @@ func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -504,16 +504,16 @@ func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) InterpolationAs
 	return returns
 }
 
-func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (p *jsiiProxy_PubsubLiteReservationTimeoutsOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

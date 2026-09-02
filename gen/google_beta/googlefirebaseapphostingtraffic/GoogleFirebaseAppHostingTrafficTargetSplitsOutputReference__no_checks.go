@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficTargetSplitsOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficTargetSplitsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficTargetSplitsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficTargetSplitsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseAppHostingTrafficTargetSplitsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficTargetSplitsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficTargetSplitsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseAppHostingTrafficTargetSplitsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFirebaseAppHostingTrafficTargetSplitsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleFirebaseAppHostingTrafficTargetSplitsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

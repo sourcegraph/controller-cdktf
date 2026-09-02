@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTrigger",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTrigger",
 		reflect.TypeOf((*CloudbuildTrigger)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -91,6 +92,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTriggerTemplate", GoMethod: "PutTriggerTemplate"},
 			_jsii_.MemberMethod{JsiiMethod: "putWebhookConfig", GoMethod: "PutWebhookConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "repositoryEventConfig", GoGetter: "RepositoryEventConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "repositoryEventConfigInput", GoGetter: "RepositoryEventConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetApprovalConfig", GoMethod: "ResetApprovalConfig"},
@@ -144,19 +146,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggerTemplateInput", GoGetter: "TriggerTemplateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookConfig", GoGetter: "WebhookConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookConfigInput", GoGetter: "WebhookConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTrigger{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfig",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfig",
 		reflect.TypeOf((*CloudbuildTriggerApprovalConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerApprovalConfigOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerApprovalConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "approvalRequired", GoGetter: "ApprovalRequired"},
@@ -186,16 +189,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerApprovalConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfig",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfig",
 		reflect.TypeOf((*CloudbuildTriggerBitbucketServerTriggerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBitbucketServerTriggerConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bitbucketServerConfigResource", GoGetter: "BitbucketServerConfigResource"},
@@ -236,16 +239,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequest",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequest",
 		reflect.TypeOf((*CloudbuildTriggerBitbucketServerTriggerConfigPullRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -280,16 +283,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPush",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPush",
 		reflect.TypeOf((*CloudbuildTriggerBitbucketServerTriggerConfigPush)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -325,24 +328,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPushOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuild",
 		reflect.TypeOf((*CloudbuildTriggerBuild)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifacts",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifacts)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifacts",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsMavenArtifacts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsList",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsMavenArtifactsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -359,12 +362,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifactId", GoGetter: "ArtifactId"},
@@ -406,16 +409,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildArtifactsMavenArtifactsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackages",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsNpmPackages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesList",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsNpmPackagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -432,12 +435,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -470,16 +473,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildArtifactsNpmPackagesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjects",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjects",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsObjects)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsObjectsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -513,16 +516,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTiming",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTiming",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsObjectsTiming)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingList",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsObjectsTimingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -538,12 +541,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsTimingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -572,12 +575,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildArtifactsObjectsTimingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -623,16 +626,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildArtifactsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackages",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsPythonPackages)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesList",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsPythonPackagesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -649,12 +652,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildArtifactsPythonPackagesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -687,16 +690,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildArtifactsPythonPackagesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecrets",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecrets",
 		reflect.TypeOf((*CloudbuildTriggerBuildAvailableSecrets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildAvailableSecretsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -726,16 +729,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildAvailableSecretsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManager",
 		reflect.TypeOf((*CloudbuildTriggerBuildAvailableSecretsSecretManager)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerList",
 		reflect.TypeOf((*CloudbuildTriggerBuildAvailableSecretsSecretManagerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -752,12 +755,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -788,16 +791,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildAvailableSecretsSecretManagerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptions",
 		reflect.TypeOf((*CloudbuildTriggerBuildOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -861,16 +864,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumes",
 		reflect.TypeOf((*CloudbuildTriggerBuildOptionsVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesList",
 		reflect.TypeOf((*CloudbuildTriggerBuildOptionsVolumesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -887,12 +890,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildOptionsVolumesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOptionsVolumesOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildOptionsVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -925,12 +928,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildOptionsVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "artifacts", GoGetter: "Artifacts"},
@@ -998,16 +1001,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecret",
 		reflect.TypeOf((*CloudbuildTriggerBuildSecret)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretList",
 		reflect.TypeOf((*CloudbuildTriggerBuildSecretList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1024,12 +1027,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildSecretList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSecretOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildSecretOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1061,16 +1064,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildSecretOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSource",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSource",
 		reflect.TypeOf((*CloudbuildTriggerBuildSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1105,16 +1108,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSource",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSource",
 		reflect.TypeOf((*CloudbuildTriggerBuildSourceRepoSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceRepoSourceOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildSourceRepoSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchName", GoGetter: "BranchName"},
@@ -1164,16 +1167,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildSourceRepoSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceStorageSource",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceStorageSource",
 		reflect.TypeOf((*CloudbuildTriggerBuildSourceStorageSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceStorageSourceOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildSourceStorageSourceOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildSourceStorageSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucket", GoGetter: "Bucket"},
@@ -1207,16 +1210,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildSourceStorageSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStep",
 		reflect.TypeOf((*CloudbuildTriggerBuildStep)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepList",
 		reflect.TypeOf((*CloudbuildTriggerBuildStepList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1233,12 +1236,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildStepList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildStepOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowExitCodes", GoGetter: "AllowExitCodes"},
@@ -1307,16 +1310,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildStepOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumes",
 		reflect.TypeOf((*CloudbuildTriggerBuildStepVolumes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesList",
 		reflect.TypeOf((*CloudbuildTriggerBuildStepVolumesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1333,12 +1336,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildStepVolumesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBuildStepVolumesOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerBuildStepVolumesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1369,20 +1372,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerBuildStepVolumesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerConfig",
 		reflect.TypeOf((*CloudbuildTriggerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfig",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfig",
 		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1420,16 +1423,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerDeveloperConnectEventConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPullRequest",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPullRequest",
 		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfigPullRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -1465,16 +1468,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerDeveloperConnectEventConfigPullRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPush",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPush",
 		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfigPush)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPushOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerDeveloperConnectEventConfigPushOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerDeveloperConnectEventConfigPushOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -1510,16 +1513,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerDeveloperConnectEventConfigPushOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSource",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSource",
 		reflect.TypeOf((*CloudbuildTriggerGitFileSource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGitFileSourceOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerGitFileSourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bitbucketServerConfig", GoGetter: "BitbucketServerConfig"},
@@ -1565,16 +1568,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGithub",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithub",
 		reflect.TypeOf((*CloudbuildTriggerGithub)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerGithubOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1618,16 +1621,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerGithubOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequest",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequest",
 		reflect.TypeOf((*CloudbuildTriggerGithubPullRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPullRequestOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerGithubPullRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -1662,16 +1665,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerGithubPullRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPush",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPush",
 		reflect.TypeOf((*CloudbuildTriggerGithubPush)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerGithubPushOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerGithubPushOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -1707,16 +1710,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerGithubPushOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerPubsubConfig",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerPubsubConfig",
 		reflect.TypeOf((*CloudbuildTriggerPubsubConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerPubsubConfigOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerPubsubConfigOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerPubsubConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1750,16 +1753,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerPubsubConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfig",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfig",
 		reflect.TypeOf((*CloudbuildTriggerRepositoryEventConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerRepositoryEventConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1797,16 +1800,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerRepositoryEventConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequest",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequest",
 		reflect.TypeOf((*CloudbuildTriggerRepositoryEventConfigPullRequest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -1842,16 +1845,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerRepositoryEventConfigPullRequestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPush",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPush",
 		reflect.TypeOf((*CloudbuildTriggerRepositoryEventConfigPush)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerRepositoryEventConfigPushOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerRepositoryEventConfigPushOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branch", GoGetter: "Branch"},
@@ -1887,16 +1890,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerRepositoryEventConfigPushOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuild",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuild",
 		reflect.TypeOf((*CloudbuildTriggerSourceToBuild)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerSourceToBuildOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerSourceToBuildOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bitbucketServerConfig", GoGetter: "BitbucketServerConfig"},
@@ -1939,16 +1942,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerSourceToBuildOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeouts",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeouts",
 		reflect.TypeOf((*CloudbuildTriggerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTimeoutsOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1984,16 +1987,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplate",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplate",
 		reflect.TypeOf((*CloudbuildTriggerTriggerTemplate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerTriggerTemplateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchName", GoGetter: "BranchName"},
@@ -2041,16 +2044,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfig",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfig",
 		reflect.TypeOf((*CloudbuildTriggerWebhookConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerWebhookConfigOutputReference",
 		reflect.TypeOf((*CloudbuildTriggerWebhookConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2080,7 +2083,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudbuildTriggerWebhookConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

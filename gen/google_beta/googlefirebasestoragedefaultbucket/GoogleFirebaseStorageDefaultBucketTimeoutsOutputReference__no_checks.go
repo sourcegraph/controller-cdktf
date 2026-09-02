@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketTimeoutsOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleFirebaseStorageDefaultBucketTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageDefaultBucketTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseStorageDefaultBucketTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFirebaseStorageDefaultBucketTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleFirebaseStorageDefaultBucketTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

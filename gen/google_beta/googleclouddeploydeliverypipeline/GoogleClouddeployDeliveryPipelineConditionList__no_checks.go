@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineConditionList) validateGetPa
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineConditionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleClouddeployDeliveryPipelineConditionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineConditionList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineConditionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineConditionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleClouddeployDeliveryPipelineConditionList) validateSetWr
 	return nil
 }
 
-func validateNewGoogleClouddeployDeliveryPipelineConditionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleClouddeployDeliveryPipelineConditionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleSqlUserSqlServerUserDetailsList) validateGetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlUserSqlServerUserDetailsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSqlUserSqlServerUserDetailsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleSqlUserSqlServerUserDetailsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewGoogleSqlUserSqlServerUserDetailsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleSqlUserSqlServerUserDetailsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

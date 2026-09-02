@@ -56,6 +56,10 @@ func (g *jsiiProxy_GeminiRepositoryGroupIamMember) validateInterpolationForAttri
 	return nil
 }
 
+func (g *jsiiProxy_GeminiRepositoryGroupIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GeminiRepositoryGroupIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GeminiRepositoryGroupIamMember) validateOverrideLogicalIdPara
 }
 
 func (g *jsiiProxy_GeminiRepositoryGroupIamMember) validatePutConditionParameters(value *GeminiRepositoryGroupIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GeminiRepositoryGroupIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GeminiRepositoryGroupIamMember) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GeminiRepositoryGroupIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GeminiRepositoryGroupIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

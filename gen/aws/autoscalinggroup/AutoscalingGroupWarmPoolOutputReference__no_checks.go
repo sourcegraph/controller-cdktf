@@ -40,7 +40,7 @@ func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validatePutInstanceR
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AutoscalingGroupWarmPoolOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAutoscalingGroupWarmPoolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAutoscalingGroupWarmPoolOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

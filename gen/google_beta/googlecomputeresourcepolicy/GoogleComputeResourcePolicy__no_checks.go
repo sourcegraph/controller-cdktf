@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeResourcePolicy) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeResourcePolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeResourcePolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (g *jsiiProxy_GoogleComputeResourcePolicy) validatePutWorkloadPolicyParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeResourcePolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleComputeResourcePolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleComputeResourcePolicy) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeResourcePolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeResourcePolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-time.offset.Offset",
+		"@cdktn/provider-time.offset.Offset",
 		reflect.TypeOf((*Offset)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "minute", GoGetter: "Minute"},
 			_jsii_.MemberProperty{JsiiProperty: "month", GoGetter: "Month"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -61,6 +62,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBaseRfc3339", GoMethod: "ResetBaseRfc3339"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOffsetDays", GoMethod: "ResetOffsetDays"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOffsetHours", GoMethod: "ResetOffsetHours"},
@@ -84,16 +86,17 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "triggers", GoGetter: "Triggers"},
 			_jsii_.MemberProperty{JsiiProperty: "triggersInput", GoGetter: "TriggersInput"},
 			_jsii_.MemberProperty{JsiiProperty: "unix", GoGetter: "Unix"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "year", GoGetter: "Year"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Offset{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-time.offset.OffsetConfig",
+		"@cdktn/provider-time.offset.OffsetConfig",
 		reflect.TypeOf((*OffsetConfig)(nil)).Elem(),
 	)
 }

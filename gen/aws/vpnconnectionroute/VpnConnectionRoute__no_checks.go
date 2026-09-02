@@ -56,6 +56,10 @@ func (v *jsiiProxy_VpnConnectionRoute) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (v *jsiiProxy_VpnConnectionRoute) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpnConnectionRoute) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (v *jsiiProxy_VpnConnectionRoute) validateMoveToIdParameters(id *string) er
 }
 
 func (v *jsiiProxy_VpnConnectionRoute) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpnConnectionRoute) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_VpnConnectionRoute) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_VpnConnectionRoute) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VpnConnectionRoute) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsConnectQuickConnect) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsConnectQuickConnect) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsConnectQuickConnect_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsConnectQuickConnect) validateSetInstanceIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectQuickConnect) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsConnectQuickConnect) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

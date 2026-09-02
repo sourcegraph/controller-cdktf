@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudwatchEventTargetRunCommandTargetsOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetRunCommandTargetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchEventTargetRunCommandTargetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetRunCommandTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventTargetRunCommandTargetsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CloudwatchEventTargetRunCommandTargetsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetRunCommandTargetsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudwatchEventTargetRunCommandTargetsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CloudwatchEventTargetRunCommandTargetsOutputReference) valida
 	return nil
 }
 
-func validateNewCloudwatchEventTargetRunCommandTargetsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudwatchEventTargetRunCommandTargetsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

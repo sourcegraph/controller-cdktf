@@ -56,6 +56,10 @@ func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateInt
 	return nil
 }
 
+func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateMov
 }
 
 func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AuditmanagerOrganizationAdminAccountRegistration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

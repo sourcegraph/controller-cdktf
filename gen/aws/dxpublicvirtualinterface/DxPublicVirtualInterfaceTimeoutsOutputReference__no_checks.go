@@ -40,11 +40,11 @@ func (d *jsiiProxy_DxPublicVirtualInterfaceTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (d *jsiiProxy_DxPublicVirtualInterfaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DxPublicVirtualInterfaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DxPublicVirtualInterfaceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DxPublicVirtualInterfaceTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DxPublicVirtualInterfaceTimeoutsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DxPublicVirtualInterfaceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DxPublicVirtualInterfaceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDxPublicVirtualInterfaceTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDxPublicVirtualInterfaceTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

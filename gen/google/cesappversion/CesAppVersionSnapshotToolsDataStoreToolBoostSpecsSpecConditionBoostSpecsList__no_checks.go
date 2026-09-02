@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditio
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditio
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditio
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesAppVersionSnapshotToolsDataStoreToolBoostSpecsSpecConditionBoostSpecsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (s *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_SesReceiptRuleSnsActionOutputReference) validateSetTopicArnPa
 	return nil
 }
 
-func validateNewSesReceiptRuleSnsActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSesReceiptRuleSnsActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

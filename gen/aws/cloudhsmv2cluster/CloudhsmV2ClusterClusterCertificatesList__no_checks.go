@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateGetParamete
 	return nil
 }
 
-func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CloudhsmV2ClusterClusterCertificatesList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewCloudhsmV2ClusterClusterCertificatesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudhsmV2ClusterClusterCertificatesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

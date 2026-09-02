@@ -56,6 +56,10 @@ func (s *jsiiProxy_SecurityGroupRule) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_SecurityGroupRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecurityGroupRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SecurityGroupRule) validateOverrideLogicalIdParameters(newLog
 }
 
 func (s *jsiiProxy_SecurityGroupRule) validatePutTimeoutsParameters(value *SecurityGroupRuleTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecurityGroupRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_SecurityGroupRule) validateSetIpv6CidrBlocksParameters(val *[
 	return nil
 }
 
-func (j *jsiiProxy_SecurityGroupRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SecurityGroupRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

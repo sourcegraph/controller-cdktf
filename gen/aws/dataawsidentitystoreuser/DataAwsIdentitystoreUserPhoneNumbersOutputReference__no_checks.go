@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsIdentitystoreUserPhoneNumbersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsIdentitystoreUserPhoneNumbersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsIdentitystoreUserPhoneNumbersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

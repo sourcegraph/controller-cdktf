@@ -12,7 +12,7 @@ func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManage
 	return nil
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManage
 	return nil
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingGroupIndexingConfigurationManage
 	return nil
 }
 
-func validateNewIotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIotIndexingConfigurationThingGroupIndexingConfigurationManagedFieldListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

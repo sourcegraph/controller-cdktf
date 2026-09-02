@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryTableSchemaForeignTypeInfoOutputReference) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableSchemaForeignTypeInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableSchemaForeignTypeInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableSchemaForeignTypeInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableSchemaForeignTypeInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_BigqueryTableSchemaForeignTypeInfoOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableSchemaForeignTypeInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryTableSchemaForeignTypeInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_BigqueryTableSchemaForeignTypeInfoOutputReference) validateSe
 	return nil
 }
 
-func validateNewBigqueryTableSchemaForeignTypeInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryTableSchemaForeignTypeInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

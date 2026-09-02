@@ -40,11 +40,11 @@ func (m *jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputRefe
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMskconnectConnectorCapacityAutoscalingScaleInPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

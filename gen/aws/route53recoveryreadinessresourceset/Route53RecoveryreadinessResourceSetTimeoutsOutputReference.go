@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/route53recoveryreadinessresourceset/internal"
 )
 
 type Route53RecoveryreadinessResourceSetTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type Route53RecoveryreadinessResourceSetTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type Route53RecoveryreadinessResourceSetTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDelete()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type Route53RecoveryreadinessResourceSetTimeoutsOutputReference interface {
 
 // The jsii proxy struct for Route53RecoveryreadinessResourceSetTimeoutsOutputReference
 type jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) T
 }
 
 
-func NewRoute53RecoveryreadinessResourceSetTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Route53RecoveryreadinessResourceSetTimeoutsOutputReference {
+func NewRoute53RecoveryreadinessResourceSetTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Route53RecoveryreadinessResourceSetTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRoute53RecoveryreadinessResourceSetTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewRoute53RecoveryreadinessResourceSetTimeoutsOutputReference(terraformReso
 	j := jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeoutsOutputReference",
+		"@cdktn/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewRoute53RecoveryreadinessResourceSetTimeoutsOutputReference(terraformReso
 	return &j
 }
 
-func NewRoute53RecoveryreadinessResourceSetTimeoutsOutputReference_Override(r Route53RecoveryreadinessResourceSetTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRoute53RecoveryreadinessResourceSetTimeoutsOutputReference_Override(r Route53RecoveryreadinessResourceSetTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeoutsOutputReference",
+		"@cdktn/provider-aws.route53RecoveryreadinessResourceSet.Route53RecoveryreadinessResourceSetTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) G
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -421,8 +421,8 @@ func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) G
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -434,16 +434,16 @@ func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) I
 	return returns
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) R
 	)
 }
 
-func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (r *jsiiProxy_Route53RecoveryreadinessResourceSetTimeoutsOutputReference) R
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

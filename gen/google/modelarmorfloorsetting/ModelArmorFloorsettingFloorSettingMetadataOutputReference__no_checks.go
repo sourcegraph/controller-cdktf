@@ -40,7 +40,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (m *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataOutputReference) va
 	return nil
 }
 
-func (m *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ModelArmorFloorsettingFloorSettingMetadataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewModelArmorFloorsettingFloorSettingMetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewModelArmorFloorsettingFloorSettingMetadataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

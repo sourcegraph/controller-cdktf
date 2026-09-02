@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/appengineservicesplittraffic/internal"
 )
 
 type AppEngineServiceSplitTrafficTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type AppEngineServiceSplitTrafficTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type AppEngineServiceSplitTrafficTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type AppEngineServiceSplitTrafficTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type AppEngineServiceSplitTrafficTimeoutsOutputReference interface {
 
 // The jsii proxy struct for AppEngineServiceSplitTrafficTimeoutsOutputReference
 type jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) UpdateIn
 }
 
 
-func NewAppEngineServiceSplitTrafficTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppEngineServiceSplitTrafficTimeoutsOutputReference {
+func NewAppEngineServiceSplitTrafficTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppEngineServiceSplitTrafficTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppEngineServiceSplitTrafficTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewAppEngineServiceSplitTrafficTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficTimeoutsOutputReference",
+		"@cdktn/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewAppEngineServiceSplitTrafficTimeoutsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewAppEngineServiceSplitTrafficTimeoutsOutputReference_Override(a AppEngineServiceSplitTrafficTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppEngineServiceSplitTrafficTimeoutsOutputReference_Override(a AppEngineServiceSplitTrafficTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficTimeoutsOutputReference",
+		"@cdktn/provider-google.appEngineServiceSplitTraffic.AppEngineServiceSplitTrafficTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) GetAnyMa
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -491,8 +491,8 @@ func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) GetStrin
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -504,16 +504,16 @@ func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) Interpol
 	return returns
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) ResetUpd
 	)
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (a *jsiiProxy_AppEngineServiceSplitTrafficTimeoutsOutputReference) Resolve(
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

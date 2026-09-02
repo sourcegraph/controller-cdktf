@@ -40,11 +40,11 @@ func (d *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateGetStringMap
 	return nil
 }
 
-func (d *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DevicefarmDevicePoolRuleOutputReference) validateSetValuePara
 	return nil
 }
 
-func validateNewDevicefarmDevicePoolRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDevicefarmDevicePoolRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

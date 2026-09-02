@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) validateP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesGuardrailLlmPromptSecurityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesGuardrailLlmPromptSecurityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

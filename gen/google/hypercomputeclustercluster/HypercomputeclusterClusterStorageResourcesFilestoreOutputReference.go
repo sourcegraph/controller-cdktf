@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/hypercomputeclustercluster/internal"
 )
 
 type HypercomputeclusterClusterStorageResourcesFilestoreOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,15 +35,15 @@ type HypercomputeclusterClusterStorageResourcesFilestoreOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -59,12 +59,12 @@ type HypercomputeclusterClusterStorageResourcesFilestoreOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -74,7 +74,7 @@ type HypercomputeclusterClusterStorageResourcesFilestoreOutputReference interfac
 
 // The jsii proxy struct for HypercomputeclusterClusterStorageResourcesFilestoreOutputReference
 type jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) ComplexObjectIndex() interface{} {
@@ -147,8 +147,8 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -158,7 +158,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputRefe
 }
 
 
-func NewHypercomputeclusterClusterStorageResourcesFilestoreOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) HypercomputeclusterClusterStorageResourcesFilestoreOutputReference {
+func NewHypercomputeclusterClusterStorageResourcesFilestoreOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) HypercomputeclusterClusterStorageResourcesFilestoreOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewHypercomputeclusterClusterStorageResourcesFilestoreOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -167,7 +167,7 @@ func NewHypercomputeclusterClusterStorageResourcesFilestoreOutputReference(terra
 	j := jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesFilestoreOutputReference",
+		"@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesFilestoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -175,11 +175,11 @@ func NewHypercomputeclusterClusterStorageResourcesFilestoreOutputReference(terra
 	return &j
 }
 
-func NewHypercomputeclusterClusterStorageResourcesFilestoreOutputReference_Override(h HypercomputeclusterClusterStorageResourcesFilestoreOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewHypercomputeclusterClusterStorageResourcesFilestoreOutputReference_Override(h HypercomputeclusterClusterStorageResourcesFilestoreOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesFilestoreOutputReference",
+		"@cdktn/provider-google.hypercomputeclusterCluster.HypercomputeclusterClusterStorageResourcesFilestoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		h,
 	)
@@ -229,7 +229,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputRefe
 	)
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -269,11 +269,11 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputRefe
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := h.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -397,8 +397,8 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputRefe
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
@@ -410,24 +410,24 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputRefe
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := h.validateInterpolationForAttributeParameters(property); err != nil {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := h.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		h,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -435,7 +435,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesFilestoreOutputRefe
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

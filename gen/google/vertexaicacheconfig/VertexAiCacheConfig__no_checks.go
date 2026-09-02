@@ -56,6 +56,10 @@ func (v *jsiiProxy_VertexAiCacheConfig) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (v *jsiiProxy_VertexAiCacheConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VertexAiCacheConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (v *jsiiProxy_VertexAiCacheConfig) validateOverrideLogicalIdParameters(newL
 }
 
 func (v *jsiiProxy_VertexAiCacheConfig) validatePutTimeoutsParameters(value *VertexAiCacheConfigTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VertexAiCacheConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_VertexAiCacheConfig) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiCacheConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VertexAiCacheConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

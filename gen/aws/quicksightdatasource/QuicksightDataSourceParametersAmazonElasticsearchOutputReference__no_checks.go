@@ -40,11 +40,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputRefere
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersAmazonElasticsearchOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewQuicksightDataSourceParametersAmazonElasticsearchOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQuicksightDataSourceParametersAmazonElasticsearchOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

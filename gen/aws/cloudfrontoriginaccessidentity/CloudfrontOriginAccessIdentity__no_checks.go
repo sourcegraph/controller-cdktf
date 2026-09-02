@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudfrontOriginAccessIdentity) validateInterpolationForAttri
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontOriginAccessIdentity) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontOriginAccessIdentity) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_CloudfrontOriginAccessIdentity) validateMoveToIdParameters(id
 }
 
 func (c *jsiiProxy_CloudfrontOriginAccessIdentity) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontOriginAccessIdentity) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_CloudfrontOriginAccessIdentity) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontOriginAccessIdentity) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudfrontOriginAccessIdentity) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

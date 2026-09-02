@@ -56,6 +56,10 @@ func (e *jsiiProxy_EksFargateProfile) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (e *jsiiProxy_EksFargateProfile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EksFargateProfile) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_EksFargateProfile) validatePutSelectorParameters(value interf
 }
 
 func (e *jsiiProxy_EksFargateProfile) validatePutTimeoutsParameters(value *EksFargateProfileTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_EksFargateProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_EksFargateProfile) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_EksFargateProfile) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EksFargateProfile) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

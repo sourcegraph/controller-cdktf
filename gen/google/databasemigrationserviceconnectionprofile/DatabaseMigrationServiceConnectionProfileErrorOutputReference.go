@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/databasemigrationserviceconnectionprofile/internal"
 )
 
 type DatabaseMigrationServiceConnectionProfileErrorOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Code() *float64
 	// the index of the complex object in a list.
 	// Experimental.
@@ -26,7 +26,7 @@ type DatabaseMigrationServiceConnectionProfileErrorOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Details() cdktf.StringMapList
+	Details() cdktn.StringMapList
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DatabaseMigrationServiceConnectionProfileError
@@ -37,15 +37,15 @@ type DatabaseMigrationServiceConnectionProfileErrorOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type DatabaseMigrationServiceConnectionProfileErrorOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type DatabaseMigrationServiceConnectionProfileErrorOutputReference interface {
 
 // The jsii proxy struct for DatabaseMigrationServiceConnectionProfileErrorOutputReference
 type jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) Code() *float64 {
@@ -119,8 +119,8 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) Details() cdktf.StringMapList {
-	var returns cdktf.StringMapList
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) Details() cdktn.StringMapList {
+	var returns cdktn.StringMapList
 	_jsii_.Get(
 		j,
 		"details",
@@ -169,8 +169,8 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -180,7 +180,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference
 }
 
 
-func NewDatabaseMigrationServiceConnectionProfileErrorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseMigrationServiceConnectionProfileErrorOutputReference {
+func NewDatabaseMigrationServiceConnectionProfileErrorOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DatabaseMigrationServiceConnectionProfileErrorOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatabaseMigrationServiceConnectionProfileErrorOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -189,7 +189,7 @@ func NewDatabaseMigrationServiceConnectionProfileErrorOutputReference(terraformR
 	j := jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorOutputReference",
+		"@cdktn/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -197,11 +197,11 @@ func NewDatabaseMigrationServiceConnectionProfileErrorOutputReference(terraformR
 	return &j
 }
 
-func NewDatabaseMigrationServiceConnectionProfileErrorOutputReference_Override(d DatabaseMigrationServiceConnectionProfileErrorOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDatabaseMigrationServiceConnectionProfileErrorOutputReference_Override(d DatabaseMigrationServiceConnectionProfileErrorOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorOutputReference",
+		"@cdktn/provider-google.databaseMigrationServiceConnectionProfile.DatabaseMigrationServiceConnectionProfileErrorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -251,7 +251,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference
 	)
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -291,11 +291,11 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -419,8 +419,8 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -432,24 +432,24 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -457,7 +457,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorOutputReference
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

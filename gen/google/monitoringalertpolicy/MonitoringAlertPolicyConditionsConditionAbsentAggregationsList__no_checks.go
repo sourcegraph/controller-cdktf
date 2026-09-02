@@ -12,7 +12,7 @@ func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsLis
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsLis
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_MonitoringAlertPolicyConditionsConditionAbsentAggregationsLis
 	return nil
 }
 
-func validateNewMonitoringAlertPolicyConditionsConditionAbsentAggregationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMonitoringAlertPolicyConditionsConditionAbsentAggregationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

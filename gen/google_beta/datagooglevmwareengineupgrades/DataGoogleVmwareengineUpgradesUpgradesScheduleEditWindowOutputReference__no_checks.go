@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleVmwareengineUpgradesUpgradesScheduleEditWindowOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

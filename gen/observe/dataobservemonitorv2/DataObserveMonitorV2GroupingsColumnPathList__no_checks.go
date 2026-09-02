@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataObserveMonitorV2GroupingsColumnPathList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2GroupingsColumnPathList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveMonitorV2GroupingsColumnPathList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataObserveMonitorV2GroupingsColumnPathList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2GroupingsColumnPathList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2GroupingsColumnPathList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataObserveMonitorV2GroupingsColumnPathList) validateSetWraps
 	return nil
 }
 
-func validateNewDataObserveMonitorV2GroupingsColumnPathListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataObserveMonitorV2GroupingsColumnPathListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

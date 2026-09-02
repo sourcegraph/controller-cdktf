@@ -56,6 +56,10 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateInterpolationForAtt
 	return nil
 }
 
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateOverrideLogicalIdPa
 }
 
 func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validatePutTimeoutsParameters(value *ServiceNetworkingPeeredDnsDomainTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ServiceNetworkingPeeredDnsDomain) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

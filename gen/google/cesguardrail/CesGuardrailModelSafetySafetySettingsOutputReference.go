@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cesguardrail/internal"
 )
 
 type CesGuardrailModelSafetySafetySettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Category() *string
 	SetCategory(val *string)
 	CategoryInput() *string
@@ -37,9 +37,9 @@ type CesGuardrailModelSafetySafetySettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Threshold() *string
 	SetThreshold(val *string)
 	ThresholdInput() *string
@@ -48,7 +48,7 @@ type CesGuardrailModelSafetySafetySettingsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type CesGuardrailModelSafetySafetySettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type CesGuardrailModelSafetySafetySettingsOutputReference interface {
 
 // The jsii proxy struct for CesGuardrailModelSafetySafetySettingsOutputReference
 type jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) Category() *string {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) Thresho
 }
 
 
-func NewCesGuardrailModelSafetySafetySettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CesGuardrailModelSafetySafetySettingsOutputReference {
+func NewCesGuardrailModelSafetySafetySettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CesGuardrailModelSafetySafetySettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCesGuardrailModelSafetySafetySettingsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewCesGuardrailModelSafetySafetySettingsOutputReference(terraformResource c
 	j := jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesGuardrail.CesGuardrailModelSafetySafetySettingsOutputReference",
+		"@cdktn/provider-google.cesGuardrail.CesGuardrailModelSafetySafetySettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewCesGuardrailModelSafetySafetySettingsOutputReference(terraformResource c
 	return &j
 }
 
-func NewCesGuardrailModelSafetySafetySettingsOutputReference_Override(c CesGuardrailModelSafetySafetySettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCesGuardrailModelSafetySafetySettingsOutputReference_Override(c CesGuardrailModelSafetySafetySettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cesGuardrail.CesGuardrailModelSafetySafetySettingsOutputReference",
+		"@cdktn/provider-google.cesGuardrail.CesGuardrailModelSafetySafetySettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) GetAnyM
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -454,8 +454,8 @@ func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) GetStri
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -467,24 +467,24 @@ func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) Interpo
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (c *jsiiProxy_CesGuardrailModelSafetySafetySettingsOutputReference) Resolve
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

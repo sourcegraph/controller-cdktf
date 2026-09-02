@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
+		"@cdktn/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfile",
 		reflect.TypeOf((*DevicefarmNetworkProfile)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -59,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDownlinkBandwidthBits", GoMethod: "ResetDownlinkBandwidthBits"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDownlinkDelayMs", GoMethod: "ResetDownlinkDelayMs"},
@@ -96,15 +98,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "uplinkJitterMsInput", GoGetter: "UplinkJitterMsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "uplinkLossPercent", GoGetter: "UplinkLossPercent"},
 			_jsii_.MemberProperty{JsiiProperty: "uplinkLossPercentInput", GoGetter: "UplinkLossPercentInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DevicefarmNetworkProfile{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfileConfig",
+		"@cdktn/provider-aws.devicefarmNetworkProfile.DevicefarmNetworkProfileConfig",
 		reflect.TypeOf((*DevicefarmNetworkProfileConfig)(nil)).Elem(),
 	)
 }

@@ -40,11 +40,11 @@ func (s *jsiiProxy_SloObjectiveRawMetricQuerySumologicOutputReference) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQuerySumologicOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQuerySumologicOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQuerySumologicOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQuerySumologicOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQuerySumologicOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQuerySumologicOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQuerySumologicOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQuerySumologicOutputReference) validateS
 	return nil
 }
 
-func validateNewSloObjectiveRawMetricQuerySumologicOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveRawMetricQuerySumologicOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

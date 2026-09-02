@@ -56,6 +56,10 @@ func (f *jsiiProxy_FirebaserulesRuleset) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (f *jsiiProxy_FirebaserulesRuleset) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirebaserulesRuleset) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (f *jsiiProxy_FirebaserulesRuleset) validatePutSourceParameters(value *Fire
 }
 
 func (f *jsiiProxy_FirebaserulesRuleset) validatePutTimeoutsParameters(value *FirebaserulesRulesetTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirebaserulesRuleset) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_FirebaserulesRuleset) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_FirebaserulesRuleset) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FirebaserulesRuleset) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

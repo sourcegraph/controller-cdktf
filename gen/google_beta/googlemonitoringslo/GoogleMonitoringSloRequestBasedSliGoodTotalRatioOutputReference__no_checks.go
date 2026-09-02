@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReferen
 	return nil
 }
 
-func validateNewGoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMonitoringSloRequestBasedSliGoodTotalRatioOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

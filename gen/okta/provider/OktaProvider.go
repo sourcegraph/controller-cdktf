@@ -5,13 +5,13 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/okta/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/okta/provider/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/okta/okta/4.11.1/docs okta}.
 type OktaProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	AccessToken() *string
 	SetAccessToken(val *string)
 	AccessTokenInput() *string
@@ -28,7 +28,7 @@ type OktaProvider interface {
 	SetBaseUrl(val *string)
 	BaseUrlInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
@@ -81,7 +81,7 @@ type OktaProvider interface {
 	SetScopes(val *[]*string)
 	ScopesInput() *[]*string
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -91,6 +91,19 @@ type OktaProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAccessToken()
 	ResetAlias()
 	ResetApiToken()
@@ -123,11 +136,20 @@ type OktaProvider interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for OktaProvider
 type jsiiProxy_OktaProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_OktaProvider) AccessToken() *string {
@@ -230,8 +252,8 @@ func (j *jsiiProxy_OktaProvider) BaseUrlInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_OktaProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_OktaProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -560,8 +582,8 @@ func (j *jsiiProxy_OktaProvider) ScopesInput() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_OktaProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_OktaProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -601,7 +623,7 @@ func NewOktaProvider(scope constructs.Construct, id *string, config *OktaProvide
 	j := jsiiProxy_OktaProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.provider.OktaProvider",
+		"@cdktn/provider-okta.provider.OktaProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -614,7 +636,7 @@ func NewOktaProvider_Override(o OktaProvider, scope constructs.Construct, id *st
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.provider.OktaProvider",
+		"@cdktn/provider-okta.provider.OktaProvider",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -767,17 +789,17 @@ func (j *jsiiProxy_OktaProvider)SetScopes(val *[]*string) {
 	)
 }
 
-// Generates CDKTF code for importing a OktaProvider resource upon running "cdktf plan <stack-name>".
-func OktaProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a OktaProvider resource upon running "cdktn plan <stack-name>".
+func OktaProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateOktaProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-okta.provider.OktaProvider",
+		"@cdktn/provider-okta.provider.OktaProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -812,7 +834,7 @@ func OktaProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-okta.provider.OktaProvider",
+		"@cdktn/provider-okta.provider.OktaProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -831,7 +853,7 @@ func OktaProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-okta.provider.OktaProvider",
+		"@cdktn/provider-okta.provider.OktaProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -850,7 +872,7 @@ func OktaProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-okta.provider.OktaProvider",
+		"@cdktn/provider-okta.provider.OktaProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -863,7 +885,7 @@ func OktaProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-okta.provider.OktaProvider",
+		"@cdktn/provider-okta.provider.OktaProvider",
 		"tfResourceType",
 		&returns,
 	)
@@ -889,6 +911,17 @@ func (o *jsiiProxy_OktaProvider) OverrideLogicalId(newLogicalId *string) {
 		o,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (o *jsiiProxy_OktaProvider) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := o.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -1116,6 +1149,24 @@ func (o *jsiiProxy_OktaProvider) ToTerraform() interface{} {
 		o,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_OktaProvider) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		o,
+		"with",
+		args,
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (s *jsiiProxy_SsmResourceDataSync) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_SsmResourceDataSync) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmResourceDataSync) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SsmResourceDataSync) validateOverrideLogicalIdParameters(newL
 }
 
 func (s *jsiiProxy_SsmResourceDataSync) validatePutS3DestinationParameters(value *SsmResourceDataSyncS3Destination) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmResourceDataSync) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_SsmResourceDataSync) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_SsmResourceDataSync) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SsmResourceDataSync) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

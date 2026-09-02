@@ -12,7 +12,7 @@ func (g *jsiiProxy_GkeHubFeatureStateStateList) validateGetParameters(index *flo
 	return nil
 }
 
-func (g *jsiiProxy_GkeHubFeatureStateStateList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeHubFeatureStateStateList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GkeHubFeatureStateStateList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubFeatureStateStateList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeHubFeatureStateStateList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GkeHubFeatureStateStateList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewGkeHubFeatureStateStateListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGkeHubFeatureStateStateListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (e *jsiiProxy_EbsDefaultKmsKey) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EbsDefaultKmsKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EbsDefaultKmsKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_EbsDefaultKmsKey) validateMoveToIdParameters(id *string) erro
 }
 
 func (e *jsiiProxy_EbsDefaultKmsKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EbsDefaultKmsKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_EbsDefaultKmsKey) validateSetKeyArnParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_EbsDefaultKmsKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EbsDefaultKmsKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDataCatalogTagTemplateFieldsOutputReference) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataCatalogTagTemplateFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataCatalogTagTemplateFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDataCatalogTagTemplateFieldsOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataCatalogTagTemplateFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataCatalogTagTemplateFieldsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_GoogleDataCatalogTagTemplateFieldsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogTagTemplateFieldsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataCatalogTagTemplateFieldsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataCatalogTagTemplateFieldsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDataCatalogTagTemplateFieldsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

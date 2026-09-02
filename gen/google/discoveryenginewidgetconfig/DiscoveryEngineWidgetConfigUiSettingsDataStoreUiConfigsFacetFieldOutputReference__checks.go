@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetF
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -181,7 +181,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetF
 
 func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetField:
 		val := val.(*DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetField)
@@ -196,7 +196,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetF
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetField; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetField; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -211,7 +211,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetF
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -219,7 +219,7 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetF
 	return nil
 }
 
-func validateNewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDiscoveryEngineWidgetConfigUiSettingsDataStoreUiConfigsFacetFieldOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

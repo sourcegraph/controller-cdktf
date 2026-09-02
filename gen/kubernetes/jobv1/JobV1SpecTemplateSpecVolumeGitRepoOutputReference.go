@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/jobv1/internal"
 )
 
 type JobV1SpecTemplateSpecVolumeGitRepoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type JobV1SpecTemplateSpecVolumeGitRepoOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type JobV1SpecTemplateSpecVolumeGitRepoOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDirectory()
 	ResetRepository()
 	ResetRevision()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type JobV1SpecTemplateSpecVolumeGitRepoOutputReference interface {
 
 // The jsii proxy struct for JobV1SpecTemplateSpecVolumeGitRepoOutputReference
 type jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) TerraformR
 }
 
 
-func NewJobV1SpecTemplateSpecVolumeGitRepoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobV1SpecTemplateSpecVolumeGitRepoOutputReference {
+func NewJobV1SpecTemplateSpecVolumeGitRepoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobV1SpecTemplateSpecVolumeGitRepoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobV1SpecTemplateSpecVolumeGitRepoOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewJobV1SpecTemplateSpecVolumeGitRepoOutputReference(terraformResource cdkt
 	j := jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGitRepoOutputReference",
+		"@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewJobV1SpecTemplateSpecVolumeGitRepoOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewJobV1SpecTemplateSpecVolumeGitRepoOutputReference_Override(j JobV1SpecTemplateSpecVolumeGitRepoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobV1SpecTemplateSpecVolumeGitRepoOutputReference_Override(j JobV1SpecTemplateSpecVolumeGitRepoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGitRepoOutputReference",
+		"@cdktn/provider-kubernetes.jobV1.JobV1SpecTemplateSpecVolumeGitRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetAnyMapA
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -491,8 +491,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) GetStringM
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -504,16 +504,16 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) Interpolat
 	return returns
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) ResetRevis
 	)
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeGitRepoOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelec
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelec
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelec
 	return nil
 }
 
-func validateNewStatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStatefulSetSpecTemplateSpecTopologySpreadConstraintLabelSelectorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

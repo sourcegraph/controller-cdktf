@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsSsmPatchBaseline) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsSsmPatchBaseline) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsSsmPatchBaseline_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsSsmPatchBaseline) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsSsmPatchBaseline) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsSsmPatchBaseline) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/validatingwebhookconfigurationv1/internal"
 )
 
 type ValidatingWebhookConfigurationV1MetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -48,16 +48,16 @@ type ValidatingWebhookConfigurationV1MetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type ValidatingWebhookConfigurationV1MetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetGenerateName()
 	ResetLabels()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type ValidatingWebhookConfigurationV1MetadataOutputReference interface {
 
 // The jsii proxy struct for ValidatingWebhookConfigurationV1MetadataOutputReference
 type jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) Annotations() *map[string]*string {
@@ -255,8 +255,8 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -276,7 +276,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) Uid(
 }
 
 
-func NewValidatingWebhookConfigurationV1MetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ValidatingWebhookConfigurationV1MetadataOutputReference {
+func NewValidatingWebhookConfigurationV1MetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ValidatingWebhookConfigurationV1MetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewValidatingWebhookConfigurationV1MetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -285,7 +285,7 @@ func NewValidatingWebhookConfigurationV1MetadataOutputReference(terraformResourc
 	j := jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1MetadataOutputReference",
+		"@cdktn/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -293,11 +293,11 @@ func NewValidatingWebhookConfigurationV1MetadataOutputReference(terraformResourc
 	return &j
 }
 
-func NewValidatingWebhookConfigurationV1MetadataOutputReference_Override(v ValidatingWebhookConfigurationV1MetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewValidatingWebhookConfigurationV1MetadataOutputReference_Override(v ValidatingWebhookConfigurationV1MetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1MetadataOutputReference",
+		"@cdktn/provider-kubernetes.validatingWebhookConfigurationV1.ValidatingWebhookConfigurationV1MetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,11 +431,11 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) GetA
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -559,8 +559,8 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) GetS
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -572,16 +572,16 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) Inte
 	return returns
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -620,8 +620,8 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) Rese
 	)
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -629,7 +629,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1MetadataOutputReference) Reso
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

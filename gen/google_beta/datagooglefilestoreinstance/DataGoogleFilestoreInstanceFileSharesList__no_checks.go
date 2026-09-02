@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleFilestoreInstanceFileSharesList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleFilestoreInstanceFileSharesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleFilestoreInstanceFileSharesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceFileSharesList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFilestoreInstanceFileSharesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleFilestoreInstanceFileSharesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleFilestoreInstanceFileSharesList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewDataGoogleFilestoreInstanceFileSharesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleFilestoreInstanceFileSharesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

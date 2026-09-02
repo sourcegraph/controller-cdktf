@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecTableSpecList) validateSetWr
 	return nil
 }
 
-func validateNewDataCatalogEntryBigqueryTableSpecTableSpecListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataCatalogEntryBigqueryTableSpecTableSpecListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

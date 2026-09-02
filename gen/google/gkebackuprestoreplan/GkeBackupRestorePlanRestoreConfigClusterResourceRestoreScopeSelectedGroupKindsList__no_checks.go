@@ -12,7 +12,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeS
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeS
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeS
 	return nil
 }
 
-func validateNewGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeSelectedGroupKindsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/connectroutingprofile/internal"
 )
 
 type ConnectRoutingProfileQueueConfigsAssociatedList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type ConnectRoutingProfileQueueConfigsAssociatedList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ConnectRoutingProfileQueueConfigsAssociatedOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type ConnectRoutingProfileQueueConfigsAssociatedList interface {
 
 // The jsii proxy struct for ConnectRoutingProfileQueueConfigsAssociatedList
 type jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList) WrapsSet() *
 }
 
 
-func NewConnectRoutingProfileQueueConfigsAssociatedList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectRoutingProfileQueueConfigsAssociatedList {
+func NewConnectRoutingProfileQueueConfigsAssociatedList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ConnectRoutingProfileQueueConfigsAssociatedList {
 	_init_.Initialize()
 
 	if err := validateNewConnectRoutingProfileQueueConfigsAssociatedListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewConnectRoutingProfileQueueConfigsAssociatedList(terraformResource cdktf.
 	j := jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedList",
+		"@cdktn/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewConnectRoutingProfileQueueConfigsAssociatedList(terraformResource cdktf.
 	return &j
 }
 
-func NewConnectRoutingProfileQueueConfigsAssociatedList_Override(c ConnectRoutingProfileQueueConfigsAssociatedList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewConnectRoutingProfileQueueConfigsAssociatedList_Override(c ConnectRoutingProfileQueueConfigsAssociatedList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedList",
+		"@cdktn/provider-aws.connectRoutingProfile.ConnectRoutingProfileQueueConfigsAssociatedList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList)SetWrapsSet(v
 	)
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := c.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		c,
@@ -205,8 +208,8 @@ func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList) Get(index *f
 	return returns
 }
 
-func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (c *jsiiProxy_ConnectRoutingProfileQueueConfigsAssociatedList) Resolve(_con
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

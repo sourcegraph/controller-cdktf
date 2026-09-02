@@ -12,7 +12,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList) v
 	return nil
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList) v
 	return nil
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsSubnetRouteTableList) v
 	return nil
 }
 
-func validateNewEc2NetworkInsightsAnalysisExplanationsSubnetRouteTableListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEc2NetworkInsightsAnalysisExplanationsSubnetRouteTableListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

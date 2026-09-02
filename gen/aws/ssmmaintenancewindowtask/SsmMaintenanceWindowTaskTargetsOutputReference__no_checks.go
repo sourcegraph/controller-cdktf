@@ -40,11 +40,11 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) validateGetSt
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsOutputReference) validateSetVa
 	return nil
 }
 
-func validateNewSsmMaintenanceWindowTaskTargetsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSsmMaintenanceWindowTaskTargetsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

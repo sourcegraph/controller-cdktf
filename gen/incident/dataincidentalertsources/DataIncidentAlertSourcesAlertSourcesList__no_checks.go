@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataIncidentAlertSourcesAlertSourcesList) validateGetParamete
 	return nil
 }
 
-func (d *jsiiProxy_DataIncidentAlertSourcesAlertSourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIncidentAlertSourcesAlertSourcesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataIncidentAlertSourcesAlertSourcesList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DataIncidentAlertSourcesAlertSourcesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataIncidentAlertSourcesAlertSourcesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataIncidentAlertSourcesAlertSourcesList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewDataIncidentAlertSourcesAlertSourcesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataIncidentAlertSourcesAlertSourcesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

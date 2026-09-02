@@ -56,6 +56,10 @@ func (c *jsiiProxy_CesTool) validateInterpolationForAttributeParameters(terrafor
 	return nil
 }
 
+func (c *jsiiProxy_CesTool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CesTool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (c *jsiiProxy_CesTool) validatePutPythonFunctionParameters(value *CesToolPy
 }
 
 func (c *jsiiProxy_CesTool) validatePutTimeoutsParameters(value *CesToolTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesTool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_CesTool) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CesTool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CesTool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

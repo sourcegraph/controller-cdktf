@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleHealthcarePipelineJobTimeoutsOutputReference) validateS
 	return nil
 }
 
-func validateNewGoogleHealthcarePipelineJobTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleHealthcarePipelineJobTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

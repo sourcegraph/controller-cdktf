@@ -1,4 +1,4 @@
-// @cdktf/provider-gkeprivate
+// @cdktn/provider-gkeprivate
 package gkeprivate
 
 import (
@@ -9,7 +9,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-gkeprivate.Gkeprivate",
+		"@cdktn/provider-gkeprivate.Gkeprivate",
 		reflect.TypeOf((*Gkeprivate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addClusterFirewallRules", GoGetter: "AddClusterFirewallRules"},
@@ -188,6 +188,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regional", GoGetter: "Regional"},
 			_jsii_.MemberProperty{JsiiProperty: "regionOutput", GoGetter: "RegionOutput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "registryProjectIds", GoGetter: "RegistryProjectIds"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannel", GoGetter: "ReleaseChannel"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannelOutput", GoGetter: "ReleaseChannelOutput"},
@@ -225,6 +226,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
 			_jsii_.MemberProperty{JsiiProperty: "verticalPodAutoscalingEnabledOutput", GoGetter: "VerticalPodAutoscalingEnabledOutput"},
 			_jsii_.MemberProperty{JsiiProperty: "windowsNodePools", GoGetter: "WindowsNodePools"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadConfigAuditMode", GoGetter: "WorkloadConfigAuditMode"},
 			_jsii_.MemberProperty{JsiiProperty: "workloadVulnerabilityMode", GoGetter: "WorkloadVulnerabilityMode"},
 			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
@@ -232,12 +234,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Gkeprivate{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformModule)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformModule)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-gkeprivate.GkeprivateConfig",
+		"@cdktn/provider-gkeprivate.GkeprivateConfig",
 		reflect.TypeOf((*GkeprivateConfig)(nil)).Elem(),
 	)
 }

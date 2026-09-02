@@ -5,15 +5,15 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/dataobserveappversion/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/app_version observe_app_version}.
 type DataObserveAppVersion interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -25,9 +25,9 @@ type DataObserveAppVersion interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -39,22 +39,22 @@ type DataObserveAppVersion interface {
 	SetIncludePrerelease(val interface{})
 	IncludePrereleaseInput() interface{}
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	ModuleId() *string
 	SetModuleId(val *string)
 	ModuleIdInput() *string
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -68,7 +68,7 @@ type DataObserveAppVersion interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,10 +84,23 @@ type DataObserveAppVersion interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
 	ResetIncludePrerelease()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
@@ -105,15 +118,24 @@ type DataObserveAppVersion interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataObserveAppVersion
 type jsiiProxy_DataObserveAppVersion struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataObserveAppVersion) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataObserveAppVersion) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -152,8 +174,8 @@ func (j *jsiiProxy_DataObserveAppVersion) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveAppVersion) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataObserveAppVersion) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -222,8 +244,8 @@ func (j *jsiiProxy_DataObserveAppVersion) IncludePrereleaseInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveAppVersion) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataObserveAppVersion) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -262,8 +284,8 @@ func (j *jsiiProxy_DataObserveAppVersion) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveAppVersion) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataObserveAppVersion) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -282,8 +304,8 @@ func (j *jsiiProxy_DataObserveAppVersion) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveAppVersion) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataObserveAppVersion) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -353,7 +375,7 @@ func NewDataObserveAppVersion(scope constructs.Construct, id *string, config *Da
 	j := jsiiProxy_DataObserveAppVersion{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
+		"@cdktn/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -366,7 +388,7 @@ func NewDataObserveAppVersion_Override(d DataObserveAppVersion, scope constructs
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
+		"@cdktn/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -391,7 +413,7 @@ func (j *jsiiProxy_DataObserveAppVersion)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveAppVersion)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataObserveAppVersion)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -421,7 +443,7 @@ func (j *jsiiProxy_DataObserveAppVersion)SetIncludePrerelease(val interface{}) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveAppVersion)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataObserveAppVersion)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -443,7 +465,7 @@ func (j *jsiiProxy_DataObserveAppVersion)SetModuleId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveAppVersion)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataObserveAppVersion)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -462,17 +484,17 @@ func (j *jsiiProxy_DataObserveAppVersion)SetVersionConstraint(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataObserveAppVersion resource upon running "cdktf plan <stack-name>".
-func DataObserveAppVersion_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataObserveAppVersion resource upon running "cdktn plan <stack-name>".
+func DataObserveAppVersion_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataObserveAppVersion_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
+		"@cdktn/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -507,7 +529,7 @@ func DataObserveAppVersion_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
+		"@cdktn/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -526,7 +548,7 @@ func DataObserveAppVersion_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
+		"@cdktn/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -545,7 +567,7 @@ func DataObserveAppVersion_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
+		"@cdktn/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -558,7 +580,7 @@ func DataObserveAppVersion_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
+		"@cdktn/provider-observe.dataObserveAppVersion.DataObserveAppVersion",
 		"tfResourceType",
 		&returns,
 	)
@@ -592,11 +614,11 @@ func (d *jsiiProxy_DataObserveAppVersion) GetAnyMapAttribute(terraformAttribute 
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveAppVersion) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataObserveAppVersion) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -720,11 +742,11 @@ func (d *jsiiProxy_DataObserveAppVersion) GetStringMapAttribute(terraformAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveAppVersion) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataObserveAppVersion) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -744,6 +766,17 @@ func (d *jsiiProxy_DataObserveAppVersion) OverrideLogicalId(newLogicalId *string
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataObserveAppVersion) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -843,6 +876,24 @@ func (d *jsiiProxy_DataObserveAppVersion) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataObserveAppVersion) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

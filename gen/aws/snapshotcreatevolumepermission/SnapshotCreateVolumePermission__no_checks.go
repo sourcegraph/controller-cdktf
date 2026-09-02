@@ -56,6 +56,10 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) validateInterpolationForAttri
 	return nil
 }
 
+func (s *jsiiProxy_SnapshotCreateVolumePermission) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnapshotCreateVolumePermission) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SnapshotCreateVolumePermission) validateOverrideLogicalIdPara
 }
 
 func (s *jsiiProxy_SnapshotCreateVolumePermission) validatePutTimeoutsParameters(value *SnapshotCreateVolumePermissionTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SnapshotCreateVolumePermission) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SnapshotCreateVolumePermission) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

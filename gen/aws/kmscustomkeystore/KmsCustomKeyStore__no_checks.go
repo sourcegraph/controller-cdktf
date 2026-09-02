@@ -56,6 +56,10 @@ func (k *jsiiProxy_KmsCustomKeyStore) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (k *jsiiProxy_KmsCustomKeyStore) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsCustomKeyStore) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (k *jsiiProxy_KmsCustomKeyStore) validateOverrideLogicalIdParameters(newLog
 }
 
 func (k *jsiiProxy_KmsCustomKeyStore) validatePutTimeoutsParameters(value *KmsCustomKeyStoreTimeouts) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsCustomKeyStore) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_KmsCustomKeyStore) validateSetKeyStorePasswordParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_KmsCustomKeyStore) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KmsCustomKeyStore) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

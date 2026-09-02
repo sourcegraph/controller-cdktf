@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateOverrideLogicalIdParameters(
 }
 
 func (g *jsiiProxy_GoogleEdgenetworkSubnet) validatePutTimeoutsParameters(value *GoogleEdgenetworkSubnetTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEdgenetworkSubnet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleEdgenetworkSubnet) validateSetLabelsParameters(val *map
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEdgenetworkSubnet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleEdgenetworkSubnet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

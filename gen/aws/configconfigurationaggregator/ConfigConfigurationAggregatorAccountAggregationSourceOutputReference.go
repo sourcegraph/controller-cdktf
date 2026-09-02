@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/configconfigurationaggregator/internal"
 )
 
 type ConfigConfigurationAggregatorAccountAggregationSourceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccountIds() *[]*string
 	SetAccountIds(val *[]*string)
 	AccountIdsInput() *[]*string
@@ -43,15 +43,15 @@ type ConfigConfigurationAggregatorAccountAggregationSourceOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type ConfigConfigurationAggregatorAccountAggregationSourceOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllRegions()
 	ResetRegions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ConfigConfigurationAggregatorAccountAggregationSourceOutputReference interf
 
 // The jsii proxy struct for ConfigConfigurationAggregatorAccountAggregationSourceOutputReference
 type jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) AccountIds() *[]*string {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 }
 
 
-func NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConfigConfigurationAggregatorAccountAggregationSourceOutputReference {
+func NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ConfigConfigurationAggregatorAccountAggregationSourceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewConfigConfigurationAggregatorAccountAggregationSourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference(ter
 	j := jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
+		"@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference(ter
 	return &j
 }
 
-func NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference_Override(c ConfigConfigurationAggregatorAccountAggregationSourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewConfigConfigurationAggregatorAccountAggregationSourceOutputReference_Override(c ConfigConfigurationAggregatorAccountAggregationSourceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
+		"@cdktn/provider-aws.configConfigurationAggregator.ConfigConfigurationAggregatorAccountAggregationSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	)
 }
 
-func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -490,8 +490,8 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -503,16 +503,16 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	)
 }
 
-func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (c *jsiiProxy_ConfigConfigurationAggregatorAccountAggregationSourceOutputRe
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

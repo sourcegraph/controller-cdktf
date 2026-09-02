@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) validateOverrideLogicalIdParame
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsBatchSchedulingPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsBatchSchedulingPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsBatchSchedulingPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSche
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSche
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSche
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDatastreamStreamBackfillAllSqlServerExcludedObjectsSchemasTablesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

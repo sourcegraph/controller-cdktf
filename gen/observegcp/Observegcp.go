@@ -5,7 +5,7 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observegcp/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observegcp/internal"
 )
 
@@ -13,13 +13,13 @@ import (
 //
 // Docs at Terraform Registry: {@link https://registry.terraform.io/modules/observeinc/collection/google/1.0.2 observeinc/collection/google}
 type Observegcp interface {
-	cdktf.TerraformModule
+	cdktn.TerraformModule
 	BucketLifecycleAbortUploadDays() *float64
 	SetBucketLifecycleAbortUploadDays(val *float64)
 	BucketLifecycleDeleteDays() *float64
 	SetBucketLifecycleDeleteDays(val *float64)
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	CloudFunctionDebugLevel() *string
 	SetCloudFunctionDebugLevel(val *string)
 	// Experimental.
@@ -35,9 +35,9 @@ type Observegcp interface {
 	FolderIncludeChildren() *bool
 	SetFolderIncludeChildren(val *bool)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -117,10 +117,23 @@ type Observegcp interface {
 	// Experimental.
 	GetString(output *string) *string
 	// Experimental.
-	InterpolationForOutput(moduleOutput *string) cdktf.IResolvable
+	InterpolationForOutput(moduleOutput *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -134,11 +147,20 @@ type Observegcp interface {
 	ToString() *string
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Observegcp
 type jsiiProxy_Observegcp struct {
-	internal.Type__cdktfTerraformModule
+	internal.Type__cdktnTerraformModule
 }
 
 func (j *jsiiProxy_Observegcp) BucketLifecycleAbortUploadDays() *float64 {
@@ -161,8 +183,8 @@ func (j *jsiiProxy_Observegcp) BucketLifecycleDeleteDays() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_Observegcp) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Observegcp) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -231,8 +253,8 @@ func (j *jsiiProxy_Observegcp) FolderIncludeChildren() *bool {
 	return returns
 }
 
-func (j *jsiiProxy_Observegcp) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_Observegcp) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -631,7 +653,7 @@ func NewObservegcp(scope constructs.Construct, id *string, config *ObservegcpCon
 	j := jsiiProxy_Observegcp{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observegcp.Observegcp",
+		"@cdktn/provider-observegcp.Observegcp",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -643,7 +665,7 @@ func NewObservegcp_Override(o Observegcp, scope constructs.Construct, id *string
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observegcp.Observegcp",
+		"@cdktn/provider-observegcp.Observegcp",
 		[]interface{}{scope, id, config},
 		o,
 	)
@@ -705,7 +727,7 @@ func (j *jsiiProxy_Observegcp)SetFolderIncludeChildren(val *bool) {
 	)
 }
 
-func (j *jsiiProxy_Observegcp)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_Observegcp)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -953,7 +975,7 @@ func Observegcp_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observegcp.Observegcp",
+		"@cdktn/provider-observegcp.Observegcp",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -972,7 +994,7 @@ func Observegcp_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observegcp.Observegcp",
+		"@cdktn/provider-observegcp.Observegcp",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -1019,11 +1041,11 @@ func (o *jsiiProxy_Observegcp) GetString(output *string) *string {
 	return returns
 }
 
-func (o *jsiiProxy_Observegcp) InterpolationForOutput(moduleOutput *string) cdktf.IResolvable {
+func (o *jsiiProxy_Observegcp) InterpolationForOutput(moduleOutput *string) cdktn.IResolvable {
 	if err := o.validateInterpolationForOutputParameters(moduleOutput); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -1043,6 +1065,17 @@ func (o *jsiiProxy_Observegcp) OverrideLogicalId(newLogicalId *string) {
 		o,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (o *jsiiProxy_Observegcp) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := o.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		o,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -1126,6 +1159,24 @@ func (o *jsiiProxy_Observegcp) ToTerraform() interface{} {
 		o,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (o *jsiiProxy_Observegcp) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		o,
+		"with",
+		args,
 		&returns,
 	)
 

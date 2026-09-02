@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueCatalogTableTargetTableList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsGlueCatalogTableTargetTableList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueCatalogTableTargetTableList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsGlueCatalogTableTargetTableList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsGlueCatalogTableTargetTableList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewDataAwsGlueCatalogTableTargetTableListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsGlueCatalogTableTargetTableListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

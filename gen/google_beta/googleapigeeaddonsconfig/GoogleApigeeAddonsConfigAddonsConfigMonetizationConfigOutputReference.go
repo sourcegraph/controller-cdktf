@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeeaddonsconfig/internal"
 )
 
 type GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference inter
 
 // The jsii proxy struct for GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference
 type jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputR
 }
 
 
-func NewGoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference {
+func NewGoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewGoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference(te
 	j := jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference",
+		"@cdktn/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewGoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference(te
 	return &j
 }
 
-func NewGoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference_Override(g GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference_Override(g GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference",
+		"@cdktn/provider-google-beta.googleApigeeAddonsConfig.GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -421,8 +421,8 @@ func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,16 +434,16 @@ func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputR
 	)
 }
 
-func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (g *jsiiProxy_GoogleApigeeAddonsConfigAddonsConfigMonetizationConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

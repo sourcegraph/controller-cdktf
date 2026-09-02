@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleEventarcEnrollment) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleEventarcEnrollment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleEventarcEnrollment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleEventarcEnrollment) validateOverrideLogicalIdParameters
 }
 
 func (g *jsiiProxy_GoogleEventarcEnrollment) validatePutTimeoutsParameters(value *GoogleEventarcEnrollmentTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleEventarcEnrollment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetLabelsParameters(val *ma
 	return nil
 }
 
-func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleEventarcEnrollment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

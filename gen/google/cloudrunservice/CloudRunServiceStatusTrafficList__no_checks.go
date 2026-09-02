@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudRunServiceStatusTrafficList) validateGetParameters(index
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceStatusTrafficList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunServiceStatusTrafficList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CloudRunServiceStatusTrafficList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceStatusTrafficList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudRunServiceStatusTrafficList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CloudRunServiceStatusTrafficList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewCloudRunServiceStatusTrafficListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudRunServiceStatusTrafficListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

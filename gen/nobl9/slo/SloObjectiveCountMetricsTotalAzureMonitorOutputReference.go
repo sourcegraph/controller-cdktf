@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/slo/internal"
 )
 
 type SloObjectiveCountMetricsTotalAzureMonitorOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Aggregation() *string
 	SetAggregation(val *string)
 	AggregationInput() *string
@@ -54,9 +54,9 @@ type SloObjectiveCountMetricsTotalAzureMonitorOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Workspace() SloObjectiveCountMetricsTotalAzureMonitorWorkspaceList
 	WorkspaceInput() interface{}
 	// Experimental.
@@ -64,7 +64,7 @@ type SloObjectiveCountMetricsTotalAzureMonitorOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -80,9 +80,9 @@ type SloObjectiveCountMetricsTotalAzureMonitorOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDimensions(value interface{})
 	PutWorkspace(value interface{})
 	ResetAggregation()
@@ -94,7 +94,7 @@ type SloObjectiveCountMetricsTotalAzureMonitorOutputReference interface {
 	ResetWorkspace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -104,7 +104,7 @@ type SloObjectiveCountMetricsTotalAzureMonitorOutputReference interface {
 
 // The jsii proxy struct for SloObjectiveCountMetricsTotalAzureMonitorOutputReference
 type jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) Aggregation() *string {
@@ -307,8 +307,8 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -338,7 +338,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) Wor
 }
 
 
-func NewSloObjectiveCountMetricsTotalAzureMonitorOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsTotalAzureMonitorOutputReference {
+func NewSloObjectiveCountMetricsTotalAzureMonitorOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SloObjectiveCountMetricsTotalAzureMonitorOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSloObjectiveCountMetricsTotalAzureMonitorOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -347,7 +347,7 @@ func NewSloObjectiveCountMetricsTotalAzureMonitorOutputReference(terraformResour
 	j := jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -355,11 +355,11 @@ func NewSloObjectiveCountMetricsTotalAzureMonitorOutputReference(terraformResour
 	return &j
 }
 
-func NewSloObjectiveCountMetricsTotalAzureMonitorOutputReference_Override(s SloObjectiveCountMetricsTotalAzureMonitorOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSloObjectiveCountMetricsTotalAzureMonitorOutputReference_Override(s SloObjectiveCountMetricsTotalAzureMonitorOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorOutputReference",
+		"@cdktn/provider-nobl9.slo.SloObjectiveCountMetricsTotalAzureMonitorOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -475,7 +475,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -515,11 +515,11 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) Get
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -643,8 +643,8 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) Get
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -656,16 +656,16 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) Int
 	return returns
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -750,8 +750,8 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) Res
 	)
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -759,7 +759,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalAzureMonitorOutputReference) Res
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

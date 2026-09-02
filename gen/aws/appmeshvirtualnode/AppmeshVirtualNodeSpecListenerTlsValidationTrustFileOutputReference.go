@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/appmeshvirtualnode/internal"
 )
 
 type AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CertificateChain() *string
 	SetCertificateChain(val *string)
 	CertificateChainInput() *string
@@ -37,15 +37,15 @@ type AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference interfa
 
 // The jsii proxy struct for AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference
 type jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference) CertificateChain() *string {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputRef
 }
 
 
-func NewAppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference {
+func NewAppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewAppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference(terr
 	j := jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference",
+		"@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewAppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference(terr
 	return &j
 }
 
-func NewAppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference_Override(a AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference_Override(a AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference",
+		"@cdktn/provider-aws.appmeshVirtualNode.AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputRef
 	)
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputRef
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -420,8 +420,8 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputRef
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -433,24 +433,24 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputRef
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecListenerTlsValidationTrustFileOutputRef
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/reportsystemhealthreview/internal"
 )
 
 type ReportSystemHealthReviewColumnOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type ReportSystemHealthReviewColumnOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,13 +63,13 @@ type ReportSystemHealthReviewColumnOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutLabel(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type ReportSystemHealthReviewColumnOutputReference interface {
 
 // The jsii proxy struct for ReportSystemHealthReviewColumnOutputReference
 type jsiiProxy_ReportSystemHealthReviewColumnOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) TerraformResou
 }
 
 
-func NewReportSystemHealthReviewColumnOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ReportSystemHealthReviewColumnOutputReference {
+func NewReportSystemHealthReviewColumnOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ReportSystemHealthReviewColumnOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewReportSystemHealthReviewColumnOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewReportSystemHealthReviewColumnOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_ReportSystemHealthReviewColumnOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewColumnOutputReference",
+		"@cdktn/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewColumnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewReportSystemHealthReviewColumnOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewReportSystemHealthReviewColumnOutputReference_Override(r ReportSystemHealthReviewColumnOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewReportSystemHealthReviewColumnOutputReference_Override(r ReportSystemHealthReviewColumnOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewColumnOutputReference",
+		"@cdktn/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewColumnOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		r,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReportSystemHealthReviewColumnOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,11 +315,11 @@ func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -443,8 +443,8 @@ func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) GetStringMapAt
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -456,16 +456,16 @@ func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) InterpolationA
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -483,8 +483,8 @@ func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) PutLabel(value
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewColumnOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

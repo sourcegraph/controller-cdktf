@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) v
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -106,7 +106,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) v
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*HypercomputeclusterClusterOrchestratorSlurmNodeSets:
 		value := value.(*[]*HypercomputeclusterClusterOrchestratorSlurmNodeSets)
@@ -125,7 +125,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) v
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*HypercomputeclusterClusterOrchestratorSlurmNodeSets; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*HypercomputeclusterClusterOrchestratorSlurmNodeSets; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -137,7 +137,7 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) v
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*HypercomputeclusterClusterOrchestratorSlurmPartitions:
 		value := value.(*[]*HypercomputeclusterClusterOrchestratorSlurmPartitions)
@@ -156,16 +156,16 @@ func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) v
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*HypercomputeclusterClusterOrchestratorSlurmPartitions; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*HypercomputeclusterClusterOrchestratorSlurmPartitions; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (h *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -276,7 +276,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func (j *jsiiProxy_HypercomputeclusterClusterOrchestratorSlurmOutputReference) v
 	return nil
 }
 
-func validateNewHypercomputeclusterClusterOrchestratorSlurmOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewHypercomputeclusterClusterOrchestratorSlurmOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataTfeOutputs) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (d *jsiiProxy_DataTfeOutputs) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataTfeOutputs_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -72,7 +76,7 @@ func (j *jsiiProxy_DataTfeOutputs) validateSetCountParameters(val interface{}) e
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeOutputs) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataTfeOutputs) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

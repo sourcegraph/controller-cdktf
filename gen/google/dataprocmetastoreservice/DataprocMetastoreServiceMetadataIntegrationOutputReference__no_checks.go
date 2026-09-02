@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) v
 	return nil
 }
 
-func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocMetastoreServiceMetadataIntegrationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataprocMetastoreServiceMetadataIntegrationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocMetastoreServiceMetadataIntegrationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_CodebuildWebhook) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (c *jsiiProxy_CodebuildWebhook) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodebuildWebhook) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_CodebuildWebhook) validateOverrideLogicalIdParameters(newLogi
 }
 
 func (c *jsiiProxy_CodebuildWebhook) validatePutFilterGroupParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodebuildWebhook) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_CodebuildWebhook) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildWebhook) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CodebuildWebhook) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

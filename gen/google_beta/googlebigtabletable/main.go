@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTable",
+		"@cdktn/provider-google-beta.googleBigtableTable.GoogleBigtableTable",
 		reflect.TypeOf((*GoogleBigtableTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "instanceNameInput", GoGetter: "InstanceNameInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -61,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putColumnFamily", GoMethod: "PutColumnFamily"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomatedBackupPolicy", GoMethod: "ResetAutomatedBackupPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetChangeStreamRetention", GoMethod: "ResetChangeStreamRetention"},
 			_jsii_.MemberMethod{JsiiMethod: "resetColumnFamily", GoMethod: "ResetColumnFamily"},
@@ -86,19 +88,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleBigtableTable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableAutomatedBackupPolicy",
+		"@cdktn/provider-google-beta.googleBigtableTable.GoogleBigtableTableAutomatedBackupPolicy",
 		reflect.TypeOf((*GoogleBigtableTableAutomatedBackupPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableAutomatedBackupPolicyOutputReference",
+		"@cdktn/provider-google-beta.googleBigtableTable.GoogleBigtableTableAutomatedBackupPolicyOutputReference",
 		reflect.TypeOf((*GoogleBigtableTableAutomatedBackupPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -131,16 +134,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleBigtableTableAutomatedBackupPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamily",
+		"@cdktn/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamily",
 		reflect.TypeOf((*GoogleBigtableTableColumnFamily)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyList",
+		"@cdktn/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyList",
 		reflect.TypeOf((*GoogleBigtableTableColumnFamilyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -157,12 +160,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleBigtableTableColumnFamilyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyOutputReference",
+		"@cdktn/provider-google-beta.googleBigtableTable.GoogleBigtableTableColumnFamilyOutputReference",
 		reflect.TypeOf((*GoogleBigtableTableColumnFamilyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,20 +197,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleBigtableTableColumnFamilyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig",
+		"@cdktn/provider-google-beta.googleBigtableTable.GoogleBigtableTableConfig",
 		reflect.TypeOf((*GoogleBigtableTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeouts",
+		"@cdktn/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeouts",
 		reflect.TypeOf((*GoogleBigtableTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleBigtableTable.GoogleBigtableTableTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleBigtableTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -240,7 +243,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleBigtableTableTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkservicesmulticastgroupproduceractivation/internal"
 )
 
 type NetworkServicesMulticastGroupProducerActivationStateList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type NetworkServicesMulticastGroupProducerActivationStateList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) NetworkServicesMulticastGroupProducerActivationStateOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type NetworkServicesMulticastGroupProducerActivationStateList interface {
 
 // The jsii proxy struct for NetworkServicesMulticastGroupProducerActivationStateList
 type jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList) Ter
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList) Wra
 }
 
 
-func NewNetworkServicesMulticastGroupProducerActivationStateList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesMulticastGroupProducerActivationStateList {
+func NewNetworkServicesMulticastGroupProducerActivationStateList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) NetworkServicesMulticastGroupProducerActivationStateList {
 	_init_.Initialize()
 
 	if err := validateNewNetworkServicesMulticastGroupProducerActivationStateListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewNetworkServicesMulticastGroupProducerActivationStateList(terraformResour
 	j := jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationStateList",
+		"@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationStateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewNetworkServicesMulticastGroupProducerActivationStateList(terraformResour
 	return &j
 }
 
-func NewNetworkServicesMulticastGroupProducerActivationStateList_Override(n NetworkServicesMulticastGroupProducerActivationStateList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewNetworkServicesMulticastGroupProducerActivationStateList_Override(n NetworkServicesMulticastGroupProducerActivationStateList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationStateList",
+		"@cdktn/provider-google.networkServicesMulticastGroupProducerActivation.NetworkServicesMulticastGroupProducerActivationStateList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		n,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList)SetT
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList)SetW
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := n.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		n,
@@ -205,8 +208,8 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList) Get
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivationStateList) Res
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

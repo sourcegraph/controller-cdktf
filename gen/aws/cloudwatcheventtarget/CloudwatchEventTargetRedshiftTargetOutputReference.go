@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/cloudwatcheventtarget/internal"
 )
 
 type CloudwatchEventTargetRedshiftTargetOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,9 +49,9 @@ type CloudwatchEventTargetRedshiftTargetOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WithEvent() interface{}
 	SetWithEvent(val interface{})
 	WithEventInput() interface{}
@@ -60,7 +60,7 @@ type CloudwatchEventTargetRedshiftTargetOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type CloudwatchEventTargetRedshiftTargetOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDbUser()
 	ResetSecretsManagerArn()
 	ResetSql()
@@ -86,7 +86,7 @@ type CloudwatchEventTargetRedshiftTargetOutputReference interface {
 	ResetWithEvent()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type CloudwatchEventTargetRedshiftTargetOutputReference interface {
 
 // The jsii proxy struct for CloudwatchEventTargetRedshiftTargetOutputReference
 type jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) ComplexObjectIndex() interface{} {
@@ -259,8 +259,8 @@ func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) WithEvent
 }
 
 
-func NewCloudwatchEventTargetRedshiftTargetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetRedshiftTargetOutputReference {
+func NewCloudwatchEventTargetRedshiftTargetOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CloudwatchEventTargetRedshiftTargetOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudwatchEventTargetRedshiftTargetOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -299,7 +299,7 @@ func NewCloudwatchEventTargetRedshiftTargetOutputReference(terraformResource cdk
 	j := jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTargetOutputReference",
+		"@cdktn/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -307,11 +307,11 @@ func NewCloudwatchEventTargetRedshiftTargetOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewCloudwatchEventTargetRedshiftTargetOutputReference_Override(c CloudwatchEventTargetRedshiftTargetOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudwatchEventTargetRedshiftTargetOutputReference_Override(c CloudwatchEventTargetRedshiftTargetOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTargetOutputReference",
+		"@cdktn/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetRedshiftTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -416,7 +416,7 @@ func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,11 +467,11 @@ func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) GetAnyMap
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -595,8 +595,8 @@ func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) GetString
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -608,16 +608,16 @@ func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) Interpola
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -664,8 +664,8 @@ func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) ResetWith
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -673,7 +673,7 @@ func (c *jsiiProxy_CloudwatchEventTargetRedshiftTargetOutputReference) Resolve(_
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

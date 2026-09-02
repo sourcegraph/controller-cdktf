@@ -40,7 +40,7 @@ func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateGetStringM
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validatePutClientC
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFsxOpenzfsVolumeNfsExportsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFsxOpenzfsVolumeNfsExportsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

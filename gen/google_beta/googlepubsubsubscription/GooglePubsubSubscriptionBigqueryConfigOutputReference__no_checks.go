@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_GooglePubsubSubscriptionBigqueryConfigOutputReference) valida
 	return nil
 }
 
-func validateNewGooglePubsubSubscriptionBigqueryConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePubsubSubscriptionBigqueryConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

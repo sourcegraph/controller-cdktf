@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecesguardrail/internal"
 )
 
 type GoogleCesGuardrailLlmPromptSecurityOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type GoogleCesGuardrailLlmPromptSecurityOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type GoogleCesGuardrailLlmPromptSecurityOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomPolicy(value *GoogleCesGuardrailLlmPromptSecurityCustomPolicy)
 	PutDefaultSettings(value *GoogleCesGuardrailLlmPromptSecurityDefaultSettings)
 	ResetCustomPolicy()
 	ResetDefaultSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleCesGuardrailLlmPromptSecurityOutputReference interface {
 
 // The jsii proxy struct for GoogleCesGuardrailLlmPromptSecurityOutputReference
 type jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) Terraform
 }
 
 
-func NewGoogleCesGuardrailLlmPromptSecurityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCesGuardrailLlmPromptSecurityOutputReference {
+func NewGoogleCesGuardrailLlmPromptSecurityOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleCesGuardrailLlmPromptSecurityOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCesGuardrailLlmPromptSecurityOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleCesGuardrailLlmPromptSecurityOutputReference(terraformResource cdk
 	j := jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesGuardrail.GoogleCesGuardrailLlmPromptSecurityOutputReference",
+		"@cdktn/provider-google-beta.googleCesGuardrail.GoogleCesGuardrailLlmPromptSecurityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleCesGuardrailLlmPromptSecurityOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewGoogleCesGuardrailLlmPromptSecurityOutputReference_Override(g GoogleCesGuardrailLlmPromptSecurityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleCesGuardrailLlmPromptSecurityOutputReference_Override(g GoogleCesGuardrailLlmPromptSecurityOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesGuardrail.GoogleCesGuardrailLlmPromptSecurityOutputReference",
+		"@cdktn/provider-google-beta.googleCesGuardrail.GoogleCesGuardrailLlmPromptSecurityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) GetAnyMap
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,8 +434,8 @@ func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) GetString
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -447,16 +447,16 @@ func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) Interpola
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) ResetDefa
 	)
 }
 
-func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityOutputReference) Resolve(_
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

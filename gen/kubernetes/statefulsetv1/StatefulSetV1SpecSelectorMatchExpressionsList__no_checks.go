@@ -12,7 +12,7 @@ func (s *jsiiProxy_StatefulSetV1SpecSelectorMatchExpressionsList) validateGetPar
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetV1SpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetV1SpecSelectorMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_StatefulSetV1SpecSelectorMatchExpressionsList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetV1SpecSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetV1SpecSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_StatefulSetV1SpecSelectorMatchExpressionsList) validateSetWra
 	return nil
 }
 
-func validateNewStatefulSetV1SpecSelectorMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStatefulSetV1SpecSelectorMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

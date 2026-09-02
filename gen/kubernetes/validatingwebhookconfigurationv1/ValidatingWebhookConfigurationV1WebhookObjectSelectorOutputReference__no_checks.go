@@ -40,7 +40,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputRe
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputRe
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewValidatingWebhookConfigurationV1WebhookObjectSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/artifactregistryrule/internal"
 )
 
 type ArtifactRegistryRuleConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type ArtifactRegistryRuleConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -54,7 +54,7 @@ type ArtifactRegistryRuleConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type ArtifactRegistryRuleConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	ResetLocation()
 	ResetTitle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type ArtifactRegistryRuleConditionOutputReference interface {
 
 // The jsii proxy struct for ArtifactRegistryRuleConditionOutputReference
 type jsiiProxy_ArtifactRegistryRuleConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) TitleInput() *s
 }
 
 
-func NewArtifactRegistryRuleConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRuleConditionOutputReference {
+func NewArtifactRegistryRuleConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ArtifactRegistryRuleConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewArtifactRegistryRuleConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewArtifactRegistryRuleConditionOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ArtifactRegistryRuleConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.artifactRegistryRule.ArtifactRegistryRuleConditionOutputReference",
+		"@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewArtifactRegistryRuleConditionOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewArtifactRegistryRuleConditionOutputReference_Override(a ArtifactRegistryRuleConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewArtifactRegistryRuleConditionOutputReference_Override(a ArtifactRegistryRuleConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.artifactRegistryRule.ArtifactRegistryRuleConditionOutputReference",
+		"@cdktn/provider-google.artifactRegistryRule.ArtifactRegistryRuleConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_ArtifactRegistryRuleConditionOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ArtifactRegistryRuleConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ArtifactRegistryRuleConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -525,8 +525,8 @@ func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -538,16 +538,16 @@ func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) InterpolationAs
 	return returns
 }
 
-func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) ResetTitle() {
 	)
 }
 
-func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (a *jsiiProxy_ArtifactRegistryRuleConditionOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

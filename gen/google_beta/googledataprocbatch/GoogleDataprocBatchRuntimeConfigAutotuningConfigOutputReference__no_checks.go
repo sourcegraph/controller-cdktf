@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataprocBatchRuntimeConfigAutotuningConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

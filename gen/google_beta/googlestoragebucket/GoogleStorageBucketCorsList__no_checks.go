@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleStorageBucketCorsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketCorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageBucketCorsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleStorageBucketCorsList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketCorsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageBucketCorsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleStorageBucketCorsList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewGoogleStorageBucketCorsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleStorageBucketCorsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

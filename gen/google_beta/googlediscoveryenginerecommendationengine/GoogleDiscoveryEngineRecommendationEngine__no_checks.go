@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineRecommendationEngine) validateInterpolat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineRecommendationEngine) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineRecommendationEngine) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineRecommendationEngine) validatePutMediaRe
 }
 
 func (g *jsiiProxy_GoogleDiscoveryEngineRecommendationEngine) validatePutTimeoutsParameters(value *GoogleDiscoveryEngineRecommendationEngineTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineRecommendationEngine) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineRecommendationEngine) validateSetIndustr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineRecommendationEngine) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineRecommendationEngine) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (s *jsiiProxy_SnowflakeOutboundShare) validateInterpolationForAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SnowflakeOutboundShare) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnowflakeOutboundShare) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SnowflakeOutboundShare) validateOverrideLogicalIdParameters(n
 }
 
 func (s *jsiiProxy_SnowflakeOutboundShare) validatePutAccountParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SnowflakeOutboundShare) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SnowflakeOutboundShare) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_SnowflakeOutboundShare) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SnowflakeOutboundShare) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

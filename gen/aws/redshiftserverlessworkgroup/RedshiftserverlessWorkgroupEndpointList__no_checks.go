@@ -12,7 +12,7 @@ func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointList) validateGetParameter
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftserverlessWorkgroupEndpointList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_RedshiftserverlessWorkgroupEndpointList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewRedshiftserverlessWorkgroupEndpointListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRedshiftserverlessWorkgroupEndpointListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

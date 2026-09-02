@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputebackendservice/internal"
 )
 
 type GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Ttl() GoogleComputeBackendServiceStrongSessionAffinityCookieTtlOutputReference
 	TtlInput() *GoogleComputeBackendServiceStrongSessionAffinityCookieTtl
 	// Experimental.
@@ -50,7 +50,7 @@ type GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference inter
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,16 +66,16 @@ type GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTtl(value *GoogleComputeBackendServiceStrongSessionAffinityCookieTtl)
 	ResetName()
 	ResetPath()
 	ResetTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference inter
 
 // The jsii proxy struct for GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference
 type jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputR
 }
 
 
-func NewGoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference {
+func NewGoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeBackendServiceStrongSessionAffinityCookieOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference(te
 	j := jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference",
+		"@cdktn/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference(te
 	return &j
 }
 
-func NewGoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference_Override(g GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference_Override(g GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference",
+		"@cdktn/provider-google-beta.googleComputeBackendService.GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,11 +352,11 @@ func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -480,8 +480,8 @@ func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -493,16 +493,16 @@ func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputR
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleComputeBackendServiceStrongSessionAffinityCookieOutputR
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

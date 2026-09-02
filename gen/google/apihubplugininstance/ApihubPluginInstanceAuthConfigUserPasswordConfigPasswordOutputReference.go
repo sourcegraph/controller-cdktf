@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/apihubplugininstance/internal"
 )
 
 type ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference int
 
 // The jsii proxy struct for ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference
 type jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutpu
 	return returns
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutpu
 }
 
 
-func NewApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference {
+func NewApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference(
 	j := jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference",
+		"@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference(
 	return &j
 }
 
-func NewApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference_Override(a ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference_Override(a ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference",
+		"@cdktn/provider-google.apihubPluginInstance.ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutpu
 	)
 }
 
-func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutpu
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -420,8 +420,8 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutpu
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -433,24 +433,24 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutpu
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (a *jsiiProxy_ApihubPluginInstanceAuthConfigUserPasswordConfigPasswordOutpu
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

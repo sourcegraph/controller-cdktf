@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeperinstanceconfig/internal"
 )
 
 type ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Address() *string
 	SetAddress(val *string)
 	AddressInput() *string
@@ -37,15 +37,15 @@ type ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAddress()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference in
 
 // The jsii proxy struct for ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference
 type jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) Address() *string {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutp
 	return returns
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutp
 }
 
 
-func NewComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference {
+func NewComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference
 	j := jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference",
+		"@cdktn/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference
 	return &j
 }
 
-func NewComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference_Override(c ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference_Override(c ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference",
+		"@cdktn/provider-google.computePerInstanceConfig.ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutp
 	)
 }
 
-func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutp
 	return returns
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -421,8 +421,8 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutp
 	return returns
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -434,16 +434,16 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutp
 	return returns
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutp
 	)
 }
 
-func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (c *jsiiProxy_ComputePerInstanceConfigPreservedStateExternalIpIpAddressOutp
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

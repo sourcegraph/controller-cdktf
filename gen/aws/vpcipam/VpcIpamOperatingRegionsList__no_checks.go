@@ -12,7 +12,7 @@ func (v *jsiiProxy_VpcIpamOperatingRegionsList) validateGetParameters(index *flo
 	return nil
 }
 
-func (v *jsiiProxy_VpcIpamOperatingRegionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VpcIpamOperatingRegionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_VpcIpamOperatingRegionsList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_VpcIpamOperatingRegionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VpcIpamOperatingRegionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_VpcIpamOperatingRegionsList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewVpcIpamOperatingRegionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewVpcIpamOperatingRegionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

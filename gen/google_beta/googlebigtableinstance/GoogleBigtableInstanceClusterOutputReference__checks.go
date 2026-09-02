@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateGetStri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -101,9 +101,9 @@ func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validatePutAuto
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -184,7 +184,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetComp
 
 func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *GoogleBigtableInstanceCluster:
 		val := val.(*GoogleBigtableInstanceCluster)
@@ -199,7 +199,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetInte
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleBigtableInstanceCluster; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *GoogleBigtableInstanceCluster; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -246,7 +246,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func (j *jsiiProxy_GoogleBigtableInstanceClusterOutputReference) validateSetZone
 	return nil
 }
 
-func validateNewGoogleBigtableInstanceClusterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleBigtableInstanceClusterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (g *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMigrationCenterPreferenceSetVirtualMachinePreferencesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

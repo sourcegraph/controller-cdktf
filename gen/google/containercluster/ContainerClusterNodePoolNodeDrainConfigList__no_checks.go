@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeDrainConfigList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeDrainConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeDrainConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeDrainConfigList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeDrainConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeDrainConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeDrainConfigList) validateSetWraps
 	return nil
 }
 
-func validateNewContainerClusterNodePoolNodeDrainConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerClusterNodePoolNodeDrainConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

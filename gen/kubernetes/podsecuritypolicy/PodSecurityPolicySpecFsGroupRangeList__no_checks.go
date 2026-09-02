@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeList) validateGetParameters(
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicySpecFsGroupRangeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodSecurityPolicySpecFsGroupRangeList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewPodSecurityPolicySpecFsGroupRangeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSecurityPolicySpecFsGroupRangeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

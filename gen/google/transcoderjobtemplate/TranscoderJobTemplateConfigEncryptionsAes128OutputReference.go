@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/transcoderjobtemplate/internal"
 )
 
 type TranscoderJobTemplateConfigEncryptionsAes128OutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,15 +34,15 @@ type TranscoderJobTemplateConfigEncryptionsAes128OutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -58,12 +58,12 @@ type TranscoderJobTemplateConfigEncryptionsAes128OutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -73,7 +73,7 @@ type TranscoderJobTemplateConfigEncryptionsAes128OutputReference interface {
 
 // The jsii proxy struct for TranscoderJobTemplateConfigEncryptionsAes128OutputReference
 type jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) ComplexObjectIndex() interface{} {
@@ -136,8 +136,8 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -147,7 +147,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) 
 }
 
 
-func NewTranscoderJobTemplateConfigEncryptionsAes128OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) TranscoderJobTemplateConfigEncryptionsAes128OutputReference {
+func NewTranscoderJobTemplateConfigEncryptionsAes128OutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) TranscoderJobTemplateConfigEncryptionsAes128OutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTranscoderJobTemplateConfigEncryptionsAes128OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -156,7 +156,7 @@ func NewTranscoderJobTemplateConfigEncryptionsAes128OutputReference(terraformRes
 	j := jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsAes128OutputReference",
+		"@cdktn/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsAes128OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -164,11 +164,11 @@ func NewTranscoderJobTemplateConfigEncryptionsAes128OutputReference(terraformRes
 	return &j
 }
 
-func NewTranscoderJobTemplateConfigEncryptionsAes128OutputReference_Override(t TranscoderJobTemplateConfigEncryptionsAes128OutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewTranscoderJobTemplateConfigEncryptionsAes128OutputReference_Override(t TranscoderJobTemplateConfigEncryptionsAes128OutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsAes128OutputReference",
+		"@cdktn/provider-google.transcoderJobTemplate.TranscoderJobTemplateConfigEncryptionsAes128OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		t,
 	)
@@ -218,7 +218,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference)S
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -258,11 +258,11 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) 
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -386,8 +386,8 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) 
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -399,24 +399,24 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) 
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -424,7 +424,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigEncryptionsAes128OutputReference) 
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

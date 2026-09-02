@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCachePolicyNegativeCachi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCachePolicyNegativeCachi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapDefaultRouteActionCachePolicyNegativeCachi
 	return nil
 }
 
-func validateNewGoogleComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

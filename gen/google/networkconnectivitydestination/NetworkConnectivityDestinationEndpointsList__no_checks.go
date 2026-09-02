@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkConnectivityDestinationEndpointsList) validateGetParam
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityDestinationEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivityDestinationEndpointsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkConnectivityDestinationEndpointsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityDestinationEndpointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkConnectivityDestinationEndpointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkConnectivityDestinationEndpointsList) validateSetWraps
 	return nil
 }
 
-func validateNewNetworkConnectivityDestinationEndpointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkConnectivityDestinationEndpointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

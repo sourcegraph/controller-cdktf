@@ -12,7 +12,7 @@ func (s *jsiiProxy_SecurityposturePosturePolicySetsList) validateGetParameters(i
 	return nil
 }
 
-func (s *jsiiProxy_SecurityposturePosturePolicySetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityposturePosturePolicySetsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_SecurityposturePosturePolicySetsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SecurityposturePosturePolicySetsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SecurityposturePosturePolicySetsList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewSecurityposturePosturePolicySetsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSecurityposturePosturePolicySetsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

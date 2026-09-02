@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dbProxy.DbProxy",
+		"@cdktn/provider-aws.dbProxy.DbProxy",
 		reflect.TypeOf((*DbProxy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -58,6 +59,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAuth", GoMethod: "PutAuth"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requireTls", GoGetter: "RequireTls"},
 			_jsii_.MemberProperty{JsiiProperty: "requireTlsInput", GoGetter: "RequireTlsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDebugLogging", GoMethod: "ResetDebugLogging"},
@@ -90,19 +92,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIdsInput", GoGetter: "VpcSecurityGroupIdsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSubnetIds", GoGetter: "VpcSubnetIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSubnetIdsInput", GoGetter: "VpcSubnetIdsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DbProxy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dbProxy.DbProxyAuth",
+		"@cdktn/provider-aws.dbProxy.DbProxyAuth",
 		reflect.TypeOf((*DbProxyAuth)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dbProxy.DbProxyAuthList",
+		"@cdktn/provider-aws.dbProxy.DbProxyAuthList",
 		reflect.TypeOf((*DbProxyAuthList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -119,12 +122,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DbProxyAuthList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dbProxy.DbProxyAuthOutputReference",
+		"@cdktn/provider-aws.dbProxy.DbProxyAuthOutputReference",
 		reflect.TypeOf((*DbProxyAuthOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authScheme", GoGetter: "AuthScheme"},
@@ -166,20 +169,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DbProxyAuthOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dbProxy.DbProxyConfig",
+		"@cdktn/provider-aws.dbProxy.DbProxyConfig",
 		reflect.TypeOf((*DbProxyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dbProxy.DbProxyTimeouts",
+		"@cdktn/provider-aws.dbProxy.DbProxyTimeouts",
 		reflect.TypeOf((*DbProxyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dbProxy.DbProxyTimeoutsOutputReference",
+		"@cdktn/provider-aws.dbProxy.DbProxyTimeoutsOutputReference",
 		reflect.TypeOf((*DbProxyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -215,7 +218,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DbProxyTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

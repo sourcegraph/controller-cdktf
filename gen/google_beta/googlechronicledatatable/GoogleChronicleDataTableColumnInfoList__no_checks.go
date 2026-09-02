@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleChronicleDataTableColumnInfoList) validateGetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleDataTableColumnInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleDataTableColumnInfoList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleChronicleDataTableColumnInfoList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleDataTableColumnInfoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleDataTableColumnInfoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleChronicleDataTableColumnInfoList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewGoogleChronicleDataTableColumnInfoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleChronicleDataTableColumnInfoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

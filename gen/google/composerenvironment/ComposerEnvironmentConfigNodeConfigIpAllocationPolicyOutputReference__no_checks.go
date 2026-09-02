@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputRe
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputRe
 	return nil
 }
 
-func validateNewComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComposerEnvironmentConfigNodeConfigIpAllocationPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

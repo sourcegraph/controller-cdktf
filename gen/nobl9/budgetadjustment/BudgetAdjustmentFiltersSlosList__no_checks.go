@@ -12,7 +12,7 @@ func (b *jsiiProxy_BudgetAdjustmentFiltersSlosList) validateGetParameters(index 
 	return nil
 }
 
-func (b *jsiiProxy_BudgetAdjustmentFiltersSlosList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetAdjustmentFiltersSlosList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BudgetAdjustmentFiltersSlosList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_BudgetAdjustmentFiltersSlosList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BudgetAdjustmentFiltersSlosList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BudgetAdjustmentFiltersSlosList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewBudgetAdjustmentFiltersSlosListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBudgetAdjustmentFiltersSlosListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputR
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputR
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppmeshGatewayRouteSpecHttp2RouteActionRewriteHostnameOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

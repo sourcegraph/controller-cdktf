@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopic",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopic",
 		reflect.TypeOf((*PubsubTopic)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -43,6 +43,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "messageRetentionDuration", GoGetter: "MessageRetentionDuration"},
 			_jsii_.MemberProperty{JsiiProperty: "messageRetentionDurationInput", GoGetter: "MessageRetentionDurationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "messageStoragePolicy", GoGetter: "MessageStoragePolicy"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSchemaSettings", GoMethod: "PutSchemaSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIngestionDataSourceSettings", GoMethod: "ResetIngestionDataSourceSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetKmsKeyName", GoMethod: "ResetKmsKeyName"},
@@ -94,27 +96,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopic{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicConfig",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicConfig",
 		reflect.TypeOf((*PubsubTopicConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettings",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettings",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsKinesis",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsKinesis",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsAwsKinesis)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsRoleArn", GoGetter: "AwsRoleArn"},
@@ -149,16 +152,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsKinesisOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsMsk",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsMsk",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsAwsMsk)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsRoleArn", GoGetter: "AwsRoleArn"},
@@ -193,16 +196,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsAwsMskOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAzureEventHubs",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAzureEventHubs",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsAzureEventHubs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "clientId", GoGetter: "ClientId"},
@@ -250,20 +253,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorage",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorage",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsCloudStorage)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormat",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormat",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -290,12 +293,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStorageAvroFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "avroFormat", GoGetter: "AvroFormat"},
@@ -342,16 +345,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStorageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormat",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormat",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -378,16 +381,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStoragePubsubAvroFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormat)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -417,16 +420,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsCloudStorageTextFormatOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsConfluentCloud",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsConfluentCloud",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsConfluentCloud)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bootstrapServer", GoGetter: "BootstrapServer"},
@@ -464,12 +467,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsConfluentCloudOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsOutputReference",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "awsKinesis", GoGetter: "AwsKinesis"},
@@ -520,16 +523,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsPlatformLogsSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference",
 		reflect.TypeOf((*PubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -559,16 +562,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicIngestionDataSourceSettingsPlatformLogsSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageStoragePolicy",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageStoragePolicy",
 		reflect.TypeOf((*PubsubTopicMessageStoragePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageStoragePolicyOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageStoragePolicyOutputReference",
 		reflect.TypeOf((*PubsubTopicMessageStoragePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedPersistenceRegions", GoGetter: "AllowedPersistenceRegions"},
@@ -600,20 +603,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicMessageStoragePolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransforms",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransforms",
 		reflect.TypeOf((*PubsubTopicMessageTransforms)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInference",
 		reflect.TypeOf((*PubsubTopicMessageTransformsAiInference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceOutputReference",
 		reflect.TypeOf((*PubsubTopicMessageTransformsAiInferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -649,16 +652,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicMessageTransformsAiInferenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInference",
 		reflect.TypeOf((*PubsubTopicMessageTransformsAiInferenceUnstructuredInference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference",
 		reflect.TypeOf((*PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -688,16 +691,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdf",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdf",
 		reflect.TypeOf((*PubsubTopicMessageTransformsJavascriptUdf)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdfOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdfOutputReference",
 		reflect.TypeOf((*PubsubTopicMessageTransformsJavascriptUdfOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -728,12 +731,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsList",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsList",
 		reflect.TypeOf((*PubsubTopicMessageTransformsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -750,12 +753,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicMessageTransformsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsOutputReference",
 		reflect.TypeOf((*PubsubTopicMessageTransformsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aiInference", GoGetter: "AiInference"},
@@ -793,16 +796,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicMessageTransformsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicSchemaSettings",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicSchemaSettings",
 		reflect.TypeOf((*PubsubTopicSchemaSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicSchemaSettingsOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicSchemaSettingsOutputReference",
 		reflect.TypeOf((*PubsubTopicSchemaSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -834,16 +837,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicSchemaSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicTimeouts",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicTimeouts",
 		reflect.TypeOf((*PubsubTopicTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicTimeoutsOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicTimeoutsOutputReference",
 		reflect.TypeOf((*PubsubTopicTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -879,7 +882,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_PubsubTopicTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechronicledashboardchart/internal"
 )
 
 type GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AxisType() *string
 	SetAxisType(val *string)
 	AxisTypeInput() *string
@@ -46,15 +46,15 @@ type GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReferenc
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReferenc
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAxisType()
 	ResetDisplayName()
 	ResetMax()
 	ResetMin()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReferenc
 
 // The jsii proxy struct for GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference
 type jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference) AxisType() *string {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxes
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxes
 }
 
 
-func NewGoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference {
+func NewGoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputRefer
 	j := jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleDashboardChart.GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleDashboardChart.GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputRefer
 	return &j
 }
 
-func NewGoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference_Override(g GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference_Override(g GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleDashboardChart.GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleDashboardChart.GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxes
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -526,8 +526,8 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -539,16 +539,16 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxes
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxes
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleChronicleDashboardChartDashboardChartVisualizationXAxes
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.provider.GoogleBetaProvider",
+		"@cdktn/provider-google-beta.provider.GoogleBetaProvider",
 		reflect.TypeOf((*GoogleBetaProvider)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessApprovalCustomEndpoint", GoGetter: "AccessApprovalCustomEndpoint"},
@@ -346,6 +346,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redisCustomEndpointInput", GoGetter: "RedisCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requestReason", GoGetter: "RequestReason"},
 			_jsii_.MemberProperty{JsiiProperty: "requestReasonInput", GoGetter: "RequestReasonInput"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTimeout", GoGetter: "RequestTimeout"},
@@ -647,6 +648,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vmwareengineCustomEndpointInput", GoGetter: "VmwareengineCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcAccessCustomEndpoint", GoGetter: "VpcAccessCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcAccessCustomEndpointInput", GoGetter: "VpcAccessCustomEndpointInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workbenchCustomEndpoint", GoGetter: "WorkbenchCustomEndpoint"},
 			_jsii_.MemberProperty{JsiiProperty: "workbenchCustomEndpointInput", GoGetter: "WorkbenchCustomEndpointInput"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowsCustomEndpoint", GoGetter: "WorkflowsCustomEndpoint"},
@@ -660,20 +662,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleBetaProvider{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformProvider)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformProvider)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.provider.GoogleBetaProviderBatching",
+		"@cdktn/provider-google-beta.provider.GoogleBetaProviderBatching",
 		reflect.TypeOf((*GoogleBetaProviderBatching)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.provider.GoogleBetaProviderConfig",
+		"@cdktn/provider-google-beta.provider.GoogleBetaProviderConfig",
 		reflect.TypeOf((*GoogleBetaProviderConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.provider.GoogleBetaProviderExternalCredentials",
+		"@cdktn/provider-google-beta.provider.GoogleBetaProviderExternalCredentials",
 		reflect.TypeOf((*GoogleBetaProviderExternalCredentials)(nil)).Elem(),
 	)
 }

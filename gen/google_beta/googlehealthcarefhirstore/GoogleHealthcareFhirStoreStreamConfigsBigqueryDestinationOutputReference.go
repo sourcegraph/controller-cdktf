@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehealthcarefhirstore/internal"
 )
 
 type GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,13 +63,13 @@ type GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSchemaConfig(value *GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationSchemaConfig)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference in
 
 // The jsii proxy struct for GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference
 type jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutp
 }
 
 
-func NewGoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference {
+func NewGoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewGoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference
 	j := jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference",
+		"@cdktn/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewGoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference
 	return &j
 }
 
-func NewGoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference_Override(g GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference_Override(g GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference",
+		"@cdktn/provider-google-beta.googleHealthcareFhirStore.GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,11 +315,11 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -443,8 +443,8 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -456,16 +456,16 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -483,8 +483,8 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutp
 	)
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreStreamConfigsBigqueryDestinationOutp
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

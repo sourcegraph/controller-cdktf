@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dataawselasticsearchdomain/internal"
 )
 
 type DataAwsElasticsearchDomainEbsOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,7 +25,7 @@ type DataAwsElasticsearchDomainEbsOptionsOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	EbsEnabled() cdktf.IResolvable
+	EbsEnabled() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAwsElasticsearchDomainEbsOptions
@@ -36,9 +36,9 @@ type DataAwsElasticsearchDomainEbsOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Throughput() *float64
 	VolumeSize() *float64
 	VolumeType() *string
@@ -47,7 +47,7 @@ type DataAwsElasticsearchDomainEbsOptionsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type DataAwsElasticsearchDomainEbsOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type DataAwsElasticsearchDomainEbsOptionsOutputReference interface {
 
 // The jsii proxy struct for DataAwsElasticsearchDomainEbsOptionsOutputReference
 type jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -111,8 +111,8 @@ func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) EbsEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) EbsEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"ebsEnabled",
@@ -161,8 +161,8 @@ func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) VolumeTy
 }
 
 
-func NewDataAwsElasticsearchDomainEbsOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainEbsOptionsOutputReference {
+func NewDataAwsElasticsearchDomainEbsOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsElasticsearchDomainEbsOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataAwsElasticsearchDomainEbsOptionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -211,7 +211,7 @@ func NewDataAwsElasticsearchDomainEbsOptionsOutputReference(terraformResource cd
 	j := jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEbsOptionsOutputReference",
+		"@cdktn/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEbsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -219,11 +219,11 @@ func NewDataAwsElasticsearchDomainEbsOptionsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDataAwsElasticsearchDomainEbsOptionsOutputReference_Override(d DataAwsElasticsearchDomainEbsOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataAwsElasticsearchDomainEbsOptionsOutputReference_Override(d DataAwsElasticsearchDomainEbsOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEbsOptionsOutputReference",
+		"@cdktn/provider-aws.dataAwsElasticsearchDomain.DataAwsElasticsearchDomainEbsOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -273,7 +273,7 @@ func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,11 +313,11 @@ func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -441,8 +441,8 @@ func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -454,24 +454,24 @@ func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -479,7 +479,7 @@ func (d *jsiiProxy_DataAwsElasticsearchDomainEbsOptionsOutputReference) Resolve(
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

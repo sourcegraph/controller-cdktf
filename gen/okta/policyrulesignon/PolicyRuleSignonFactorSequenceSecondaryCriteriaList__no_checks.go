@@ -12,7 +12,7 @@ func (p *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList) validate
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList) validate
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PolicyRuleSignonFactorSequenceSecondaryCriteriaList) validate
 	return nil
 }
 
-func validateNewPolicyRuleSignonFactorSequenceSecondaryCriteriaListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPolicyRuleSignonFactorSequenceSecondaryCriteriaListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlueConnectionPhysicalConnectionRequirementsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGlueConnectionPhysicalConnectionRequirementsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGlueConnectionPhysicalConnectionRequirementsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

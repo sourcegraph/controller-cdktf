@@ -56,6 +56,10 @@ func (r *jsiiProxy_RedshiftUsageLimit) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftUsageLimit) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftUsageLimit) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (r *jsiiProxy_RedshiftUsageLimit) validateMoveToIdParameters(id *string) er
 }
 
 func (r *jsiiProxy_RedshiftUsageLimit) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftUsageLimit) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_RedshiftUsageLimit) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftUsageLimit) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RedshiftUsageLimit) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

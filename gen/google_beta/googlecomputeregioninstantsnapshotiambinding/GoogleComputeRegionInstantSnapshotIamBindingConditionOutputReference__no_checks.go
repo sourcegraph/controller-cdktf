@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRegionInstantSnapshotIamBindingConditionOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionInstantSnapshotIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRegionInstantSnapshotIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionInstantSnapshotIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionInstantSnapshotIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstantSnapshotIamBindingConditionOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstantSnapshotIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionInstantSnapshotIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstantSnapshotIamBindingConditionOutputRe
 	return nil
 }
 
-func validateNewGoogleComputeRegionInstantSnapshotIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeRegionInstantSnapshotIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

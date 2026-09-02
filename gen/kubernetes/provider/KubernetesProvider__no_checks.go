@@ -12,6 +12,10 @@ func (k *jsiiProxy_KubernetesProvider) validateOverrideLogicalIdParameters(newLo
 	return nil
 }
 
+func (k *jsiiProxy_KubernetesProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateKubernetesProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

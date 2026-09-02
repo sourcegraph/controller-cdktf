@@ -40,11 +40,11 @@ func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -112,7 +112,7 @@ func (j *jsiiProxy_BudgetsBudgetCostTypesOutputReference) validateSetUseBlendedP
 	return nil
 }
 
-func validateNewBudgetsBudgetCostTypesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBudgetsBudgetCostTypesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

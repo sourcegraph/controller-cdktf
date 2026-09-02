@@ -40,11 +40,11 @@ func (l *jsiiProxy_LoggingOrganizationBucketConfigCmekSettingsOutputReference) v
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationBucketConfigCmekSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingOrganizationBucketConfigCmekSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationBucketConfigCmekSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingOrganizationBucketConfigCmekSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_LoggingOrganizationBucketConfigCmekSettingsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationBucketConfigCmekSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingOrganizationBucketConfigCmekSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLoggingOrganizationBucketConfigCmekSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLoggingOrganizationBucketConfigCmekSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

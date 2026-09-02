@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowCxFlowKnowledgeConnectorSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

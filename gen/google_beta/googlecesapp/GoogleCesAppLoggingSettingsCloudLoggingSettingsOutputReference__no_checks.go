@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_ChimeVoiceConnector) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (c *jsiiProxy_ChimeVoiceConnector) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChimeVoiceConnector) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_ChimeVoiceConnector) validateMoveToIdParameters(id *string) e
 }
 
 func (c *jsiiProxy_ChimeVoiceConnector) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChimeVoiceConnector) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_ChimeVoiceConnector) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_ChimeVoiceConnector) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ChimeVoiceConnector) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

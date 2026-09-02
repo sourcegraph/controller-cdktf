@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/alloydbcluster/internal"
 )
 
 type AlloydbClusterRestoreBackupdrPitrSourceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type AlloydbClusterRestoreBackupdrPitrSourceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type AlloydbClusterRestoreBackupdrPitrSourceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type AlloydbClusterRestoreBackupdrPitrSourceOutputReference interface {
 
 // The jsii proxy struct for AlloydbClusterRestoreBackupdrPitrSourceOutputReference
 type jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) Terra
 }
 
 
-func NewAlloydbClusterRestoreBackupdrPitrSourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlloydbClusterRestoreBackupdrPitrSourceOutputReference {
+func NewAlloydbClusterRestoreBackupdrPitrSourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AlloydbClusterRestoreBackupdrPitrSourceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlloydbClusterRestoreBackupdrPitrSourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewAlloydbClusterRestoreBackupdrPitrSourceOutputReference(terraformResource
 	j := jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.alloydbCluster.AlloydbClusterRestoreBackupdrPitrSourceOutputReference",
+		"@cdktn/provider-google.alloydbCluster.AlloydbClusterRestoreBackupdrPitrSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewAlloydbClusterRestoreBackupdrPitrSourceOutputReference(terraformResource
 	return &j
 }
 
-func NewAlloydbClusterRestoreBackupdrPitrSourceOutputReference_Override(a AlloydbClusterRestoreBackupdrPitrSourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlloydbClusterRestoreBackupdrPitrSourceOutputReference_Override(a AlloydbClusterRestoreBackupdrPitrSourceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.alloydbCluster.AlloydbClusterRestoreBackupdrPitrSourceOutputReference",
+		"@cdktn/provider-google.alloydbCluster.AlloydbClusterRestoreBackupdrPitrSourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) GetAn
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -454,8 +454,8 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) GetSt
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -467,24 +467,24 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) Inter
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (a *jsiiProxy_AlloydbClusterRestoreBackupdrPitrSourceOutputReference) Resol
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

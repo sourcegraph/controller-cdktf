@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleKmsEkmConnectionTimeoutsOutputReference) validateGetStr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleKmsEkmConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsEkmConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleKmsEkmConnectionTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionTimeoutsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsEkmConnectionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleKmsEkmConnectionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleKmsEkmConnectionTimeoutsOutputReference) validateSetUpd
 	return nil
 }
 
-func validateNewGoogleKmsEkmConnectionTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleKmsEkmConnectionTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudbuildWorkerPoolWorkerConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudbuildWorkerPoolWorkerConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudbuildWorkerPoolWorkerConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

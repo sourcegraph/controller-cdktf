@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOu
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterNodePoolNodeConfigKubeletConfigEvictionSoftOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderList
 	return nil
 }
 
-func validateNewWafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWafv2RuleGroupRuleActionBlockCustomResponseResponseHeaderListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

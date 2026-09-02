@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathList) validateGetParameters
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraThesaurusSourceS3PathList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsKendraThesaurusSourceS3PathList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKendraThesaurusSourceS3PathList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsKendraThesaurusSourceS3PathList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsKendraThesaurusSourceS3PathList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewDataAwsKendraThesaurusSourceS3PathListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsKendraThesaurusSourceS3PathListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

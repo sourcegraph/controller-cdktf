@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Authentication() GoogleChronicleFeedDetailsDuoAuthSettingsAuthenticationOutputReference
 	AuthenticationInput() *GoogleChronicleFeedDetailsDuoAuthSettingsAuthentication
 	// the index of the complex object in a list.
@@ -39,15 +39,15 @@ type GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthentication(value *GoogleChronicleFeedDetailsDuoAuthSettingsAuthentication)
 	ResetAuthentication()
 	ResetHostname()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference interface {
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) Authentication() GoogleChronicleFeedDetailsDuoAuthSettingsAuthenticationOutputReference {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) Ter
 }
 
 
-func NewGoogleChronicleFeedDetailsDuoAuthSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference {
+func NewGoogleChronicleFeedDetailsDuoAuthSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsDuoAuthSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleChronicleFeedDetailsDuoAuthSettingsOutputReference(terraformResour
 	j := jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleChronicleFeedDetailsDuoAuthSettingsOutputReference(terraformResour
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsDuoAuthSettingsOutputReference_Override(g GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsDuoAuthSettingsOutputReference_Override(g GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) Get
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -445,8 +445,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) Get
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -458,16 +458,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) Int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) Res
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsDuoAuthSettingsOutputReference) Res
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

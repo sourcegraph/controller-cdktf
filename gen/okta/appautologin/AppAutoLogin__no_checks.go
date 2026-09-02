@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppAutoLogin) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (a *jsiiProxy_AppAutoLogin) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppAutoLogin) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AppAutoLogin) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (a *jsiiProxy_AppAutoLogin) validatePutTimeoutsParameters(value *AppAutoLoginTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppAutoLogin) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_AppAutoLogin) validateSetLabelParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppAutoLogin) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppAutoLogin) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

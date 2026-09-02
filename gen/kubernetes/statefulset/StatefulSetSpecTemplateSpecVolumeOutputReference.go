@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/statefulset/internal"
 )
 
 type StatefulSetSpecTemplateSpecVolumeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AwsElasticBlockStore() StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference
 	AwsElasticBlockStoreInput() *StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStore
 	AzureDisk() StatefulSetSpecTemplateSpecVolumeAzureDiskOutputReference
@@ -87,9 +87,9 @@ type StatefulSetSpecTemplateSpecVolumeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VsphereVolume() StatefulSetSpecTemplateSpecVolumeVsphereVolumeOutputReference
 	VsphereVolumeInput() *StatefulSetSpecTemplateSpecVolumeVsphereVolume
 	// Experimental.
@@ -97,7 +97,7 @@ type StatefulSetSpecTemplateSpecVolumeOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -113,9 +113,9 @@ type StatefulSetSpecTemplateSpecVolumeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAwsElasticBlockStore(value *StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStore)
 	PutAzureDisk(value *StatefulSetSpecTemplateSpecVolumeAzureDisk)
 	PutAzureFile(value *StatefulSetSpecTemplateSpecVolumeAzureFile)
@@ -171,7 +171,7 @@ type StatefulSetSpecTemplateSpecVolumeOutputReference interface {
 	ResetVsphereVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -181,7 +181,7 @@ type StatefulSetSpecTemplateSpecVolumeOutputReference interface {
 
 // The jsii proxy struct for StatefulSetSpecTemplateSpecVolumeOutputReference
 type jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) AwsElasticBlockStore() StatefulSetSpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference {
@@ -764,8 +764,8 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -795,7 +795,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) VsphereVolu
 }
 
 
-func NewStatefulSetSpecTemplateSpecVolumeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeOutputReference {
+func NewStatefulSetSpecTemplateSpecVolumeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) StatefulSetSpecTemplateSpecVolumeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStatefulSetSpecTemplateSpecVolumeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -804,7 +804,7 @@ func NewStatefulSetSpecTemplateSpecVolumeOutputReference(terraformResource cdktf
 	j := jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeOutputReference",
+		"@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -812,11 +812,11 @@ func NewStatefulSetSpecTemplateSpecVolumeOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewStatefulSetSpecTemplateSpecVolumeOutputReference_Override(s StatefulSetSpecTemplateSpecVolumeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewStatefulSetSpecTemplateSpecVolumeOutputReference_Override(s StatefulSetSpecTemplateSpecVolumeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeOutputReference",
+		"@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecVolumeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -877,7 +877,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -917,11 +917,11 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1045,8 +1045,8 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) GetStringMa
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1058,16 +1058,16 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) Interpolati
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1576,8 +1576,8 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) ResetVspher
 	)
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1585,7 +1585,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecVolumeOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

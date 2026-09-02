@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodSpecContainerEnvFromList) validateGetParameters(index *flo
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerEnvFromList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecContainerEnvFromList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodSpecContainerEnvFromList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerEnvFromList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecContainerEnvFromList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodSpecContainerEnvFromList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewPodSpecContainerEnvFromListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSpecContainerEnvFromListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

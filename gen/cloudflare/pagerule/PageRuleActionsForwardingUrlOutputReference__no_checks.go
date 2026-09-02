@@ -40,11 +40,11 @@ func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateGetStrin
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) validateSetUrlPa
 	return nil
 }
 
-func validateNewPageRuleActionsForwardingUrlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPageRuleActionsForwardingUrlOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

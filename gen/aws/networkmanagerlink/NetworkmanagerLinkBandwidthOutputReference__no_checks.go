@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateGetString
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_NetworkmanagerLinkBandwidthOutputReference) validateSetUpload
 	return nil
 }
 
-func validateNewNetworkmanagerLinkBandwidthOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkmanagerLinkBandwidthOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

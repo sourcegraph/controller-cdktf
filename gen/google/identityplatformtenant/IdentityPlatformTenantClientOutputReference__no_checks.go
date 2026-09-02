@@ -40,7 +40,7 @@ func (i *jsiiProxy_IdentityPlatformTenantClientOutputReference) validateGetStrin
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantClientOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformTenantClientOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (i *jsiiProxy_IdentityPlatformTenantClientOutputReference) validatePutPermi
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantClientOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformTenantClientOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_IdentityPlatformTenantClientOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantClientOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IdentityPlatformTenantClientOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIdentityPlatformTenantClientOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIdentityPlatformTenantClientOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

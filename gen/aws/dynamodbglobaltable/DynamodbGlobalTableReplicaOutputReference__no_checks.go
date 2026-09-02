@@ -40,11 +40,11 @@ func (d *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DynamodbGlobalTableReplicaOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDynamodbGlobalTableReplicaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDynamodbGlobalTableReplicaOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

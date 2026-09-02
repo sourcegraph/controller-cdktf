@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancePointInTimeRestoreContextList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstancePointInTimeRestoreContextList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstancePointInTimeRestoreContextList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancePointInTimeRestoreContextList) v
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancePointInTimeRestoreContextList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancePointInTimeRestoreContextList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancePointInTimeRestoreContextList) v
 	return nil
 }
 
-func validateNewDataGoogleSqlDatabaseInstancePointInTimeRestoreContextListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleSqlDatabaseInstancePointInTimeRestoreContextListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

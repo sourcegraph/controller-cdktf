@@ -40,11 +40,11 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReferenc
 	return nil
 }
 
-func validateNewJobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobV1SpecTemplateSpecVolumeAwsElasticBlockStoreOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

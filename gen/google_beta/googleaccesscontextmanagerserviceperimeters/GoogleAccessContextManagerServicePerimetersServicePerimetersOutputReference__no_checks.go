@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimetersServicePerimetersO
 	return nil
 }
 
-func validateNewGoogleAccessContextManagerServicePerimetersServicePerimetersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleAccessContextManagerServicePerimetersServicePerimetersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

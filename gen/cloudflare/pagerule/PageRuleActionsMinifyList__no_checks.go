@@ -12,7 +12,7 @@ func (p *jsiiProxy_PageRuleActionsMinifyList) validateGetParameters(index *float
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsMinifyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PageRuleActionsMinifyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PageRuleActionsMinifyList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsMinifyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PageRuleActionsMinifyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PageRuleActionsMinifyList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewPageRuleActionsMinifyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPageRuleActionsMinifyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

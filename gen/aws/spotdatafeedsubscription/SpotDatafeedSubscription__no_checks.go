@@ -56,6 +56,10 @@ func (s *jsiiProxy_SpotDatafeedSubscription) validateInterpolationForAttributePa
 	return nil
 }
 
+func (s *jsiiProxy_SpotDatafeedSubscription) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SpotDatafeedSubscription) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SpotDatafeedSubscription) validateMoveToIdParameters(id *stri
 }
 
 func (s *jsiiProxy_SpotDatafeedSubscription) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SpotDatafeedSubscription) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_SpotDatafeedSubscription) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_SpotDatafeedSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SpotDatafeedSubscription) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

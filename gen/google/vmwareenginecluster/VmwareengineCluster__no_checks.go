@@ -56,6 +56,10 @@ func (v *jsiiProxy_VmwareengineCluster) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (v *jsiiProxy_VmwareengineCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (v *jsiiProxy_VmwareengineCluster) validatePutTimeoutsParameters(value *Vmw
 	return nil
 }
 
+func (v *jsiiProxy_VmwareengineCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateVmwareengineCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -116,7 +124,7 @@ func (j *jsiiProxy_VmwareengineCluster) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VmwareengineCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

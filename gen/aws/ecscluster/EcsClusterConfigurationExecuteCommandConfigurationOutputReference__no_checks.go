@@ -40,7 +40,7 @@ func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputRefer
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputRefer
 	return nil
 }
 
-func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsClusterConfigurationExecuteCommandConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEcsClusterConfigurationExecuteCommandConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEcsClusterConfigurationExecuteCommandConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

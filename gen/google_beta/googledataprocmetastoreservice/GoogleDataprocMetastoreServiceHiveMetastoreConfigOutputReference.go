@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledataprocmetastoreservice/internal"
 )
 
 type GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuxiliaryVersions() GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList
 	AuxiliaryVersionsInput() interface{}
 	// the index of the complex object in a list.
@@ -44,9 +44,9 @@ type GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -55,7 +55,7 @@ type GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference interface 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,9 +71,9 @@ type GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuxiliaryVersions(value interface{})
 	PutKerberosConfig(value *GoogleDataprocMetastoreServiceHiveMetastoreConfigKerberosConfig)
 	ResetAuxiliaryVersions()
@@ -82,7 +82,7 @@ type GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference interface 
 	ResetKerberosConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference interface 
 
 // The jsii proxy struct for GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference
 type jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) AuxiliaryVersions() GoogleDataprocMetastoreServiceHiveMetastoreConfigAuxiliaryVersionsList {
@@ -235,8 +235,8 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputRefere
 }
 
 
-func NewGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference {
+func NewGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -275,7 +275,7 @@ func NewGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference(terrafo
 	j := jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference(terrafo
 	return &j
 }
 
-func NewGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference_Override(g GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference_Override(g GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference",
+		"@cdktn/provider-google-beta.googleDataprocMetastoreService.GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -359,7 +359,7 @@ func (j *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -410,11 +410,11 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -538,8 +538,8 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -551,16 +551,16 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -621,8 +621,8 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputRefere
 	)
 }
 
-func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -630,7 +630,7 @@ func (g *jsiiProxy_GoogleDataprocMetastoreServiceHiveMetastoreConfigOutputRefere
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

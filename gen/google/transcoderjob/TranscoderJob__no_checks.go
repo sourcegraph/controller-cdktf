@@ -56,6 +56,10 @@ func (t *jsiiProxy_TranscoderJob) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (t *jsiiProxy_TranscoderJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TranscoderJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (t *jsiiProxy_TranscoderJob) validatePutConfigParameters(value *TranscoderJ
 }
 
 func (t *jsiiProxy_TranscoderJob) validatePutTimeoutsParameters(value *TranscoderJobTimeouts) error {
+	return nil
+}
+
+func (t *jsiiProxy_TranscoderJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_TranscoderJob) validateSetLabelsParameters(val *map[string]*s
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TranscoderJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

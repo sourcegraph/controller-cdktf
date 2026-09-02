@@ -56,6 +56,10 @@ func (r *jsiiProxy_RedshiftserverlessNamespace) validateInterpolationForAttribut
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftserverlessNamespace) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftserverlessNamespace) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (r *jsiiProxy_RedshiftserverlessNamespace) validateMoveToIdParameters(id *s
 }
 
 func (r *jsiiProxy_RedshiftserverlessNamespace) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftserverlessNamespace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetKmsKeyIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RedshiftserverlessNamespace) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

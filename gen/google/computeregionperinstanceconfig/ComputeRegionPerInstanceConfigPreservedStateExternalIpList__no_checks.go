@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpList) v
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpList) v
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeRegionPerInstanceConfigPreservedStateExternalIpList) v
 	return nil
 }
 
-func validateNewComputeRegionPerInstanceConfigPreservedStateExternalIpListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRegionPerInstanceConfigPreservedStateExternalIpListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAdBreaksOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAdBreaksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAdBreaksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAdBreaksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAdBreaksOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAdBreaksOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAdBreaksOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigAdBreaksOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleTranscoderJobConfigAdBreaksOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleTranscoderJobConfigAdBreaksOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

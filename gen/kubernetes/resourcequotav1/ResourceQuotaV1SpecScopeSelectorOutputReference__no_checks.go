@@ -40,7 +40,7 @@ func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateGetS
 	return nil
 }
 
-func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validatePutM
 	return nil
 }
 
-func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ResourceQuotaV1SpecScopeSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewResourceQuotaV1SpecScopeSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewResourceQuotaV1SpecScopeSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

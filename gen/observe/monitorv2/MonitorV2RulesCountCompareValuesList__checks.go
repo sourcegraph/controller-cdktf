@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (m *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (m *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateGetParameters(i
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (m *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateResolveParamete
 
 func (j *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*MonitorV2RulesCountCompareValues:
 		val := val.(*[]*MonitorV2RulesCountCompareValues)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateSetInternalValu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*MonitorV2RulesCountCompareValues; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*MonitorV2RulesCountCompareValues; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_MonitorV2RulesCountCompareValuesList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewMonitorV2RulesCountCompareValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMonitorV2RulesCountCompareValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorLis
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorLis
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorLis
 	return nil
 }
 
-func validateNewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudtrailEventDataStoreAdvancedEventSelectorFieldSelectorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (l *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputRefer
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LaunchTemplateInstanceRequirementsAcceleratorCountOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLaunchTemplateInstanceRequirementsAcceleratorCountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLaunchTemplateInstanceRequirementsAcceleratorCountOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

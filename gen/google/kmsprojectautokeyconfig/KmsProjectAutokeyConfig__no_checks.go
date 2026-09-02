@@ -56,6 +56,10 @@ func (k *jsiiProxy_KmsProjectAutokeyConfig) validateInterpolationForAttributePar
 	return nil
 }
 
+func (k *jsiiProxy_KmsProjectAutokeyConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsProjectAutokeyConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (k *jsiiProxy_KmsProjectAutokeyConfig) validateOverrideLogicalIdParameters(
 }
 
 func (k *jsiiProxy_KmsProjectAutokeyConfig) validatePutTimeoutsParameters(value *KmsProjectAutokeyConfigTimeouts) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsProjectAutokeyConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_KmsProjectAutokeyConfig) validateSetKeyProjectResolutionModeP
 	return nil
 }
 
-func (j *jsiiProxy_KmsProjectAutokeyConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KmsProjectAutokeyConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

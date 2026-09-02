@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationHivePartition
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationHivePartition
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleBigqueryTableExternalDataConfigurationHivePartition
 	return nil
 }
 
-func validateNewDataGoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleBigqueryTableExternalDataConfigurationHivePartitioningOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

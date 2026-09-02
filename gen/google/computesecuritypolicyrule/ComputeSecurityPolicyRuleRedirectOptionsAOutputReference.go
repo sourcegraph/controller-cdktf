@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computesecuritypolicyrule/internal"
 )
 
 type ComputeSecurityPolicyRuleRedirectOptionsAOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type ComputeSecurityPolicyRuleRedirectOptionsAOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -48,7 +48,7 @@ type ComputeSecurityPolicyRuleRedirectOptionsAOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type ComputeSecurityPolicyRuleRedirectOptionsAOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetTarget()
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ComputeSecurityPolicyRuleRedirectOptionsAOutputReference interface {
 
 // The jsii proxy struct for ComputeSecurityPolicyRuleRedirectOptionsAOutputReference
 type jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) ComplexObjectIndex() interface{} {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) Typ
 }
 
 
-func NewComputeSecurityPolicyRuleRedirectOptionsAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeSecurityPolicyRuleRedirectOptionsAOutputReference {
+func NewComputeSecurityPolicyRuleRedirectOptionsAOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeSecurityPolicyRuleRedirectOptionsAOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeSecurityPolicyRuleRedirectOptionsAOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewComputeSecurityPolicyRuleRedirectOptionsAOutputReference(terraformResour
 	j := jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsAOutputReference",
+		"@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewComputeSecurityPolicyRuleRedirectOptionsAOutputReference(terraformResour
 	return &j
 }
 
-func NewComputeSecurityPolicyRuleRedirectOptionsAOutputReference_Override(c ComputeSecurityPolicyRuleRedirectOptionsAOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeSecurityPolicyRuleRedirectOptionsAOutputReference_Override(c ComputeSecurityPolicyRuleRedirectOptionsAOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsAOutputReference",
+		"@cdktn/provider-google.computeSecurityPolicyRule.ComputeSecurityPolicyRuleRedirectOptionsAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) Get
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -456,8 +456,8 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) Get
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -469,16 +469,16 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) Int
 	return returns
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) Res
 	)
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsAOutputReference) Res
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

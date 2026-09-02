@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle",
+		"@cdktn/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundle",
 		reflect.TypeOf((*DataAwsWorkspacesBundle)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "ownerInput", GoGetter: "OwnerInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBundleId", GoMethod: "ResetBundleId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
@@ -60,19 +61,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userStorage", GoGetter: "UserStorage"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsWorkspacesBundle{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeType",
+		"@cdktn/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeType",
 		reflect.TypeOf((*DataAwsWorkspacesBundleComputeType)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeList",
+		"@cdktn/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeList",
 		reflect.TypeOf((*DataAwsWorkspacesBundleComputeTypeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -88,12 +90,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsWorkspacesBundleComputeTypeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeOutputReference",
+		"@cdktn/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleComputeTypeOutputReference",
 		reflect.TypeOf((*DataAwsWorkspacesBundleComputeTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,20 +123,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsWorkspacesBundleComputeTypeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleConfig",
+		"@cdktn/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleConfig",
 		reflect.TypeOf((*DataAwsWorkspacesBundleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorage",
+		"@cdktn/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorage",
 		reflect.TypeOf((*DataAwsWorkspacesBundleRootStorage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageList",
+		"@cdktn/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageList",
 		reflect.TypeOf((*DataAwsWorkspacesBundleRootStorageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -150,12 +152,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsWorkspacesBundleRootStorageList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageOutputReference",
+		"@cdktn/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleRootStorageOutputReference",
 		reflect.TypeOf((*DataAwsWorkspacesBundleRootStorageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacity", GoGetter: "Capacity"},
@@ -183,16 +185,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsWorkspacesBundleRootStorageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorage",
+		"@cdktn/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorage",
 		reflect.TypeOf((*DataAwsWorkspacesBundleUserStorage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageList",
+		"@cdktn/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageList",
 		reflect.TypeOf((*DataAwsWorkspacesBundleUserStorageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -208,12 +210,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsWorkspacesBundleUserStorageList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageOutputReference",
+		"@cdktn/provider-aws.dataAwsWorkspacesBundle.DataAwsWorkspacesBundleUserStorageOutputReference",
 		reflect.TypeOf((*DataAwsWorkspacesBundleUserStorageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "capacity", GoGetter: "Capacity"},
@@ -241,7 +243,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsWorkspacesBundleUserStorageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

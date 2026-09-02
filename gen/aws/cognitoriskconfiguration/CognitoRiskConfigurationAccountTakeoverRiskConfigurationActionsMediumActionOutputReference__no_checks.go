@@ -40,11 +40,11 @@ func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActio
 	return nil
 }
 
-func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActio
 	return nil
 }
 
-func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCognitoRiskConfigurationAccountTakeoverRiskConfigurationActionsMediumActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

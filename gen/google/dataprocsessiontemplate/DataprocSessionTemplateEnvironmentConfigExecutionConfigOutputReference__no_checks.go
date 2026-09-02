@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutput
 	return nil
 }
 
-func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutput
 	return nil
 }
 
-func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_DataprocSessionTemplateEnvironmentConfigExecutionConfigOutput
 	return nil
 }
 
-func validateNewDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocSessionTemplateEnvironmentConfigExecutionConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (c *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpression
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpression
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ClusterRoleAggregationRuleClusterRoleSelectorsMatchExpression
 	return nil
 }
 
-func validateNewClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewClusterRoleAggregationRuleClusterRoleSelectorsMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

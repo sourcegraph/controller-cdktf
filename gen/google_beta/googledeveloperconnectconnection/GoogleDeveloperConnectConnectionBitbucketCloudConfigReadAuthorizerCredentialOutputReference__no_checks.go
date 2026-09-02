@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketCloudConfigReadAutho
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketCloudConfigReadAutho
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectConnectionBitbucketCloudConfigReadAutho
 	return nil
 }
 
-func validateNewGoogleDeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/lookerinstance/internal"
 )
 
 type LookerInstanceOauthConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
@@ -40,15 +40,15 @@ type LookerInstanceOauthConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type LookerInstanceOauthConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type LookerInstanceOauthConfigOutputReference interface {
 
 // The jsii proxy struct for LookerInstanceOauthConfigOutputReference
 type jsiiProxy_LookerInstanceOauthConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LookerInstanceOauthConfigOutputReference) ClientId() *string {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_LookerInstanceOauthConfigOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_LookerInstanceOauthConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LookerInstanceOauthConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_LookerInstanceOauthConfigOutputReference) TerraformResource()
 }
 
 
-func NewLookerInstanceOauthConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LookerInstanceOauthConfigOutputReference {
+func NewLookerInstanceOauthConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LookerInstanceOauthConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLookerInstanceOauthConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewLookerInstanceOauthConfigOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_LookerInstanceOauthConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceOauthConfigOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewLookerInstanceOauthConfigOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewLookerInstanceOauthConfigOutputReference_Override(l LookerInstanceOauthConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLookerInstanceOauthConfigOutputReference_Override(l LookerInstanceOauthConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.lookerInstance.LookerInstanceOauthConfigOutputReference",
+		"@cdktn/provider-google.lookerInstance.LookerInstanceOauthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_LookerInstanceOauthConfigOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_LookerInstanceOauthConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LookerInstanceOauthConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -454,8 +454,8 @@ func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -467,24 +467,24 @@ func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) InterpolationAsList
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (l *jsiiProxy_LookerInstanceOauthConfigOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

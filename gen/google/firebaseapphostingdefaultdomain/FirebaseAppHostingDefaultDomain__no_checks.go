@@ -56,6 +56,10 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomain) validateInterpolationForAttr
 	return nil
 }
 
+func (f *jsiiProxy_FirebaseAppHostingDefaultDomain) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirebaseAppHostingDefaultDomain) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (f *jsiiProxy_FirebaseAppHostingDefaultDomain) validateOverrideLogicalIdPar
 }
 
 func (f *jsiiProxy_FirebaseAppHostingDefaultDomain) validatePutTimeoutsParameters(value *FirebaseAppHostingDefaultDomainTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirebaseAppHostingDefaultDomain) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_FirebaseAppHostingDefaultDomain) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingDefaultDomain) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FirebaseAppHostingDefaultDomain) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

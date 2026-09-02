@@ -56,6 +56,10 @@ func (p *jsiiProxy_PubsubTopic) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (p *jsiiProxy_PubsubTopic) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubTopic) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (p *jsiiProxy_PubsubTopic) validatePutSchemaSettingsParameters(value *Pubsu
 }
 
 func (p *jsiiProxy_PubsubTopic) validatePutTimeoutsParameters(value *PubsubTopicTimeouts) error {
+	return nil
+}
+
+func (p *jsiiProxy_PubsubTopic) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_PubsubTopic) validateSetLabelsParameters(val *map[string]*str
 	return nil
 }
 
-func (j *jsiiProxy_PubsubTopic) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PubsubTopic) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

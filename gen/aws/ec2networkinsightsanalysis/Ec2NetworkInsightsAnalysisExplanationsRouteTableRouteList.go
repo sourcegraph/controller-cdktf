@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/ec2networkinsightsanalysis/internal"
 )
 
 type Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList interface {
 
 // The jsii proxy struct for Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList
 type jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList) Te
 	return returns
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList) Wr
 }
 
 
-func NewEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList {
+func NewEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList {
 	_init_.Initialize()
 
 	if err := validateNewEc2NetworkInsightsAnalysisExplanationsRouteTableRouteListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList(terraformResou
 	j := jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList",
+		"@cdktn/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList(terraformResou
 	return &j
 }
 
-func NewEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList_Override(e Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewEc2NetworkInsightsAnalysisExplanationsRouteTableRouteList_Override(e Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList",
+		"@cdktn/provider-aws.ec2NetworkInsightsAnalysis.Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList)Set
 	)
 }
 
-func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList)Set
 	)
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := e.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		e,
@@ -205,8 +208,8 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList) Ge
 	return returns
 }
 
-func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (e *jsiiProxy_Ec2NetworkInsightsAnalysisExplanationsRouteTableRouteList) Re
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

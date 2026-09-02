@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleSpannerBackupScheduleSpecCronSpecOutputReference) valid
 	return nil
 }
 
-func validateNewGoogleSpannerBackupScheduleSpecCronSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSpannerBackupScheduleSpecCronSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

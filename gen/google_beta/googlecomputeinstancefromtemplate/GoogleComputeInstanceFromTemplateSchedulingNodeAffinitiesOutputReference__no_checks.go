@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutp
 	return nil
 }
 
-func validateNewGoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeInstanceFromTemplateSchedulingNodeAffinitiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

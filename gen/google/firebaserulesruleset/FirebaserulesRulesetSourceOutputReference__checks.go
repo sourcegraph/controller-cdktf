@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateGetStringM
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validatePutFilesPa
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*FirebaserulesRulesetSourceFiles:
 		value := value.(*[]*FirebaserulesRulesetSourceFiles)
@@ -114,16 +114,16 @@ func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validatePutFilesPa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*FirebaserulesRulesetSourceFiles; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*FirebaserulesRulesetSourceFiles; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (f *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -218,7 +218,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (j *jsiiProxy_FirebaserulesRulesetSourceOutputReference) validateSetTerrafo
 	return nil
 }
 
-func validateNewFirebaserulesRulesetSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFirebaserulesRulesetSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

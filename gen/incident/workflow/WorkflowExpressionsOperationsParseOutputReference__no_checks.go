@@ -40,7 +40,7 @@ func (w *jsiiProxy_WorkflowExpressionsOperationsParseOutputReference) validateGe
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowExpressionsOperationsParseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkflowExpressionsOperationsParseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (w *jsiiProxy_WorkflowExpressionsOperationsParseOutputReference) validatePu
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowExpressionsOperationsParseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowExpressionsOperationsParseOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_WorkflowExpressionsOperationsParseOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOperationsParseOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkflowExpressionsOperationsParseOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkflowExpressionsOperationsParseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkflowExpressionsOperationsParseOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

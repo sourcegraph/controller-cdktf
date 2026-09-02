@@ -40,11 +40,11 @@ func (s *jsiiProxy_SloObjectiveRawMetricQuerySplunkObservabilityOutputReference)
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQuerySplunkObservabilityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQuerySplunkObservabilityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQuerySplunkObservabilityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQuerySplunkObservabilityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SloObjectiveRawMetricQuerySplunkObservabilityOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQuerySplunkObservabilityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQuerySplunkObservabilityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSloObjectiveRawMetricQuerySplunkObservabilityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveRawMetricQuerySplunkObservabilityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

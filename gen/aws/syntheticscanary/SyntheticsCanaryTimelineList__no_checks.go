@@ -12,7 +12,7 @@ func (s *jsiiProxy_SyntheticsCanaryTimelineList) validateGetParameters(index *fl
 	return nil
 }
 
-func (s *jsiiProxy_SyntheticsCanaryTimelineList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SyntheticsCanaryTimelineList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_SyntheticsCanaryTimelineList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_SyntheticsCanaryTimelineList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SyntheticsCanaryTimelineList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_SyntheticsCanaryTimelineList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewSyntheticsCanaryTimelineListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSyntheticsCanaryTimelineListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

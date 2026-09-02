@@ -40,7 +40,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorOutputReference) v
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (m *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorOutputReference) v
 	return nil
 }
 
-func (m *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitoringUptimeCheckConfigSyntheticMonitorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMonitoringUptimeCheckConfigSyntheticMonitorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitoringUptimeCheckConfigSyntheticMonitorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

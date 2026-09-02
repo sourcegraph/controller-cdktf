@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/datakubernetespod/internal"
 )
 
 type DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,16 +35,16 @@ type DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutput
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutput
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutput
 
 // The jsii proxy struct for DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference
 type jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) ComplexObjectIndex() interface{} {
@@ -148,8 +148,8 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHt
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHt
 }
 
 
-func NewDataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference {
+func NewDataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewDataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOut
 	j := jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
+		"@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewDataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOut
 	return &j
 }
 
-func NewDataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference_Override(d DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference_Override(d DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
+		"@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHt
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHt
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -408,8 +408,8 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHt
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -421,24 +421,24 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHt
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHttpHeaderOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecInitContainerLifecyclePostStartHttpGetHt
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

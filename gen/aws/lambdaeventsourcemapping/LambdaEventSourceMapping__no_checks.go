@@ -56,6 +56,10 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validateInterpolationForAttributePa
 	return nil
 }
 
+func (l *jsiiProxy_LambdaEventSourceMapping) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaEventSourceMapping) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSelfManagedKafkaEventSou
 }
 
 func (l *jsiiProxy_LambdaEventSourceMapping) validatePutSourceAccessConfigurationParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaEventSourceMapping) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_LambdaEventSourceMapping) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_LambdaEventSourceMapping) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LambdaEventSourceMapping) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

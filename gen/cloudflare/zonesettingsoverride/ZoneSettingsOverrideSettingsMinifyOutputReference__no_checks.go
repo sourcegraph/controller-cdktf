@@ -40,11 +40,11 @@ func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) validateGe
 	return nil
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZoneSettingsOverrideSettingsMinifyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewZoneSettingsOverrideSettingsMinifyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewZoneSettingsOverrideSettingsMinifyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

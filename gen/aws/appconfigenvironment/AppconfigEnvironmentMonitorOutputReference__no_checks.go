@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppconfigEnvironmentMonitorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppconfigEnvironmentMonitorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAppconfigEnvironmentMonitorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

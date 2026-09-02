@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.glueClassifier.GlueClassifier",
+		"@cdktn/provider-aws.glueClassifier.GlueClassifier",
 		reflect.TypeOf((*GlueClassifier)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "jsonClassifier", GoGetter: "JsonClassifier"},
 			_jsii_.MemberProperty{JsiiProperty: "jsonClassifierInput", GoGetter: "JsonClassifierInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -56,6 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putJsonClassifier", GoMethod: "PutJsonClassifier"},
 			_jsii_.MemberMethod{JsiiMethod: "putXmlClassifier", GoMethod: "PutXmlClassifier"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCsvClassifier", GoMethod: "ResetCsvClassifier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGrokClassifier", GoMethod: "ResetGrokClassifier"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -71,25 +73,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "xmlClassifier", GoGetter: "XmlClassifier"},
 			_jsii_.MemberProperty{JsiiProperty: "xmlClassifierInput", GoGetter: "XmlClassifierInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GlueClassifier{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.glueClassifier.GlueClassifierConfig",
+		"@cdktn/provider-aws.glueClassifier.GlueClassifierConfig",
 		reflect.TypeOf((*GlueClassifierConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifier",
+		"@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifier",
 		reflect.TypeOf((*GlueClassifierCsvClassifier)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference",
+		"@cdktn/provider-aws.glueClassifier.GlueClassifierCsvClassifierOutputReference",
 		reflect.TypeOf((*GlueClassifierCsvClassifierOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowSingleColumn", GoGetter: "AllowSingleColumn"},
@@ -140,16 +143,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GlueClassifierCsvClassifierOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifier",
+		"@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifier",
 		reflect.TypeOf((*GlueClassifierGrokClassifier)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference",
+		"@cdktn/provider-aws.glueClassifier.GlueClassifierGrokClassifierOutputReference",
 		reflect.TypeOf((*GlueClassifierGrokClassifierOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classification", GoGetter: "Classification"},
@@ -183,16 +186,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GlueClassifierGrokClassifierOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifier",
+		"@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifier",
 		reflect.TypeOf((*GlueClassifierJsonClassifier)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference",
+		"@cdktn/provider-aws.glueClassifier.GlueClassifierJsonClassifierOutputReference",
 		reflect.TypeOf((*GlueClassifierJsonClassifierOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,16 +224,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GlueClassifierJsonClassifierOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifier",
+		"@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifier",
 		reflect.TypeOf((*GlueClassifierXmlClassifier)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference",
+		"@cdktn/provider-aws.glueClassifier.GlueClassifierXmlClassifierOutputReference",
 		reflect.TypeOf((*GlueClassifierXmlClassifierOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "classification", GoGetter: "Classification"},
@@ -261,7 +264,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GlueClassifierXmlClassifierOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

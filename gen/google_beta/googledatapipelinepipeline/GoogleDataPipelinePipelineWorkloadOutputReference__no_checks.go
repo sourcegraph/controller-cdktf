@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadOutputReference) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataPipelinePipelineWorkloadOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataPipelinePipelineWorkloadOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataPipelinePipelineWorkloadOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataPipelinePipelineWorkloadOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

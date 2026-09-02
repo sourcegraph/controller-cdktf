@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleBigqueryJobStatusErrorResultList) validateGetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobStatusErrorResultList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryJobStatusErrorResultList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleBigqueryJobStatusErrorResultList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobStatusErrorResultList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryJobStatusErrorResultList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleBigqueryJobStatusErrorResultList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewGoogleBigqueryJobStatusErrorResultListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleBigqueryJobStatusErrorResultListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

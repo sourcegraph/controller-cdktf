@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkconnectivityhubiammember/internal"
 )
 
 type NetworkConnectivityHubIamMemberConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type NetworkConnectivityHubIamMemberConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type NetworkConnectivityHubIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type NetworkConnectivityHubIamMemberConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type NetworkConnectivityHubIamMemberConditionOutputReference interface {
 
 // The jsii proxy struct for NetworkConnectivityHubIamMemberConditionOutputReference
 type jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) Titl
 }
 
 
-func NewNetworkConnectivityHubIamMemberConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkConnectivityHubIamMemberConditionOutputReference {
+func NewNetworkConnectivityHubIamMemberConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NetworkConnectivityHubIamMemberConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkConnectivityHubIamMemberConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewNetworkConnectivityHubIamMemberConditionOutputReference(terraformResourc
 	j := jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConditionOutputReference",
+		"@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewNetworkConnectivityHubIamMemberConditionOutputReference(terraformResourc
 	return &j
 }
 
-func NewNetworkConnectivityHubIamMemberConditionOutputReference_Override(n NetworkConnectivityHubIamMemberConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNetworkConnectivityHubIamMemberConditionOutputReference_Override(n NetworkConnectivityHubIamMemberConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConditionOutputReference",
+		"@cdktn/provider-google.networkConnectivityHubIamMember.NetworkConnectivityHubIamMemberConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) GetA
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -489,8 +489,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) GetS
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -502,16 +502,16 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) Inte
 	return returns
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) Rese
 	)
 }
 
-func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (n *jsiiProxy_NetworkConnectivityHubIamMemberConditionOutputReference) Reso
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

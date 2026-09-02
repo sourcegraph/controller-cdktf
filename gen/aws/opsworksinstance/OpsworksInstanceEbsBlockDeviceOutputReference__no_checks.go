@@ -40,11 +40,11 @@ func (o *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateGetStr
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_OpsworksInstanceEbsBlockDeviceOutputReference) validateSetVol
 	return nil
 }
 
-func validateNewOpsworksInstanceEbsBlockDeviceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewOpsworksInstanceEbsBlockDeviceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

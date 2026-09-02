@@ -40,11 +40,11 @@ func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference)
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_LoggingBillingAccountBucketConfigIndexConfigsOutputReference)
 	return nil
 }
 
-func validateNewLoggingBillingAccountBucketConfigIndexConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoggingBillingAccountBucketConfigIndexConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

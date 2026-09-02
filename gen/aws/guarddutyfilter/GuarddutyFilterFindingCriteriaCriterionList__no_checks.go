@@ -12,7 +12,7 @@ func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GuarddutyFilterFindingCriteriaCriterionList) validateSetWraps
 	return nil
 }
 
-func validateNewGuarddutyFilterFindingCriteriaCriterionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGuarddutyFilterFindingCriteriaCriterionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnection",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnection",
 		reflect.TypeOf((*DeveloperConnectConnection)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -69,6 +69,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -90,6 +91,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "reconciling", GoGetter: "Reconciling"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBitbucketCloudConfig", GoMethod: "ResetBitbucketCloudConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBitbucketDataCenterConfig", GoMethod: "ResetBitbucketDataCenterConfig"},
@@ -120,23 +122,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnection{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketCloudConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredential",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredential",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -166,12 +169,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigAuthorizerCredentialOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketCloudConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizerCredential", GoGetter: "AuthorizerCredential"},
@@ -208,16 +211,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredential",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredential",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -247,20 +250,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionBitbucketCloudConfigReadAuthorizerCredentialOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketDataCenterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredential",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredential",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -290,12 +293,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionBitbucketDataCenterConfigAuthorizerCredentialOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketDataCenterConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizerCredential", GoGetter: "AuthorizerCredential"},
@@ -340,16 +343,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionBitbucketDataCenterConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredential",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredential",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -379,16 +382,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionBitbucketDataCenterConfigReadAuthorizerCredentialOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -417,20 +420,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionBitbucketDataCenterConfigServiceDirectoryConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionCryptoKeyConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionCryptoKeyConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionCryptoKeyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionCryptoKeyConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionCryptoKeyConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionCryptoKeyConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -459,20 +462,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionCryptoKeyConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionGithubConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredential",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredential",
 		reflect.TypeOf((*DeveloperConnectConnectionGithubConfigAuthorizerCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -502,12 +505,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGithubConfigAuthorizerCredentialOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionGithubConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appInstallationId", GoGetter: "AppInstallationId"},
@@ -544,16 +547,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionGithubEnterpriseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionGithubEnterpriseConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "appId", GoGetter: "AppId"},
@@ -604,16 +607,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGithubEnterpriseConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -642,20 +645,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGithubEnterpriseConfigServiceDirectoryConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigAuthorizerCredential",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigAuthorizerCredential",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabConfigAuthorizerCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -685,12 +688,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGitlabConfigAuthorizerCredentialOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizerCredential", GoGetter: "AuthorizerCredential"},
@@ -725,16 +728,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGitlabConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigReadAuthorizerCredential",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigReadAuthorizerCredential",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabConfigReadAuthorizerCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -764,20 +767,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGitlabConfigReadAuthorizerCredentialOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabEnterpriseConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -807,12 +810,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigAuthorizerCredentialOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authorizerCredential", GoGetter: "AuthorizerCredential"},
@@ -857,16 +860,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -896,16 +899,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigReadAuthorizerCredentialOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -934,20 +937,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionGitlabEnterpriseConfigServiceDirectoryConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionHttpConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthentication",
 		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigBasicAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -979,16 +982,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionHttpConfigBasicAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthentication",
 		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigBearerTokenAuthentication)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1018,12 +1021,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuthentication", GoGetter: "BasicAuthentication"},
@@ -1067,16 +1070,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionHttpConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfig",
 		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigServiceDirectoryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1105,16 +1108,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionHttpConfigServiceDirectoryConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionInstallationState",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionInstallationState",
 		reflect.TypeOf((*DeveloperConnectConnectionInstallationState)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionInstallationStateList",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionInstallationStateList",
 		reflect.TypeOf((*DeveloperConnectConnectionInstallationStateList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1130,12 +1133,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionInstallationStateList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionInstallationStateOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionInstallationStateOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionInstallationStateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionUri", GoGetter: "ActionUri"},
@@ -1165,16 +1168,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionInstallationStateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeouts",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeouts",
 		reflect.TypeOf((*DeveloperConnectConnectionTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeoutsOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionTimeoutsOutputReference",
 		reflect.TypeOf((*DeveloperConnectConnectionTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1210,7 +1213,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DeveloperConnectConnectionTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

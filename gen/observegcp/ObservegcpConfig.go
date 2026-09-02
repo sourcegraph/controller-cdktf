@@ -1,14 +1,14 @@
 package observegcp
 
 import (
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 type ObservegcpConfig struct {
 	// Experimental.
-	DependsOn *[]cdktf.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
+	DependsOn *[]cdktn.ITerraformDependable `field:"optional" json:"dependsOn" yaml:"dependsOn"`
 	// Experimental.
-	ForEach cdktf.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
+	ForEach cdktn.ITerraformIterator `field:"optional" json:"forEach" yaml:"forEach"`
 	// Experimental.
 	Providers *[]interface{} `field:"optional" json:"providers" yaml:"providers"`
 	// Experimental.
@@ -42,7 +42,7 @@ type ObservegcpConfig struct {
 	// Memory (in MB), available to the function.
 	//
 	// Default value is 512. Possible values include 128, 256, 512, 1024, etc.
-	// 4096.
+	// 4,096.
 	FunctionAvailableMemoryMb *float64 `field:"optional" json:"functionAvailableMemoryMb" yaml:"functionAvailableMemoryMb"`
 	// GCS bucket containing the Cloud Function source code observeinc.
 	FunctionBucket *string `field:"optional" json:"functionBucket" yaml:"functionBucket"`

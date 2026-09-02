@@ -40,11 +40,11 @@ func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DatabaseMigrationServicePrivateConnectionTimeoutsOutputRefere
 	return nil
 }
 
-func validateNewDatabaseMigrationServicePrivateConnectionTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatabaseMigrationServicePrivateConnectionTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

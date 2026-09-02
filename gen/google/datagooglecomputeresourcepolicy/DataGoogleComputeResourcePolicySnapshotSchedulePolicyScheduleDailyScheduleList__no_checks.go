@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicySchedule
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicySchedule
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicySnapshotSchedulePolicySchedule
 	return nil
 }
 
-func validateNewDataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeResourcePolicySnapshotSchedulePolicyScheduleDailyScheduleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

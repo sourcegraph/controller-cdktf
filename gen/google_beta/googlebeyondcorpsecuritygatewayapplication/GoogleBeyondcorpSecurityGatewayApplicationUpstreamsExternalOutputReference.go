@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebeyondcorpsecuritygatewayapplication/internal"
 )
 
 type GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,13 +60,13 @@ type GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEndpoints(value interface{})
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference 
 
 // The jsii proxy struct for GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference
 type jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 }
 
 
-func NewGoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference {
+func NewGoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewGoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReferen
 	j := jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleBeyondcorpSecurityGatewayApplication.GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference",
+		"@cdktn/provider-google-beta.googleBeyondcorpSecurityGatewayApplication.GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewGoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReferen
 	return &j
 }
 
-func NewGoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference_Override(g GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference_Override(g GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleBeyondcorpSecurityGatewayApplication.GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference",
+		"@cdktn/provider-google-beta.googleBeyondcorpSecurityGatewayApplication.GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 	)
 }
 
-func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,11 +281,11 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -409,8 +409,8 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -422,16 +422,16 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -449,8 +449,8 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 	)
 }
 
-func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (g *jsiiProxy_GoogleBeyondcorpSecurityGatewayApplicationUpstreamsExternalOu
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

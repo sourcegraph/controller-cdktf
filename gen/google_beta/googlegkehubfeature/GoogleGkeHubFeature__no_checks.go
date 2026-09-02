@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGkeHubFeature) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubFeature) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubFeature) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleGkeHubFeature) validatePutSpecParameters(value *GoogleG
 }
 
 func (g *jsiiProxy_GoogleGkeHubFeature) validatePutTimeoutsParameters(value *GoogleGkeHubFeatureTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeHubFeature) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleGkeHubFeature) validateSetLabelsParameters(val *map[str
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFeature) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleGkeHubFeature) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

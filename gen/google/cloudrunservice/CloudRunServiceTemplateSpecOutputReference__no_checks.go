@@ -40,7 +40,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validatePutVolume
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_CloudRunServiceTemplateSpecOutputReference) validateSetTimeou
 	return nil
 }
 
-func validateNewCloudRunServiceTemplateSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudRunServiceTemplateSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

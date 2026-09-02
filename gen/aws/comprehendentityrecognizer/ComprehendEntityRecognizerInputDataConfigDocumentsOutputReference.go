@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/comprehendentityrecognizer/internal"
 )
 
 type ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TestS3Uri() *string
 	SetTestS3Uri(val *string)
 	TestS3UriInput() *string
@@ -51,7 +51,7 @@ type ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference interface
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetInputFormat()
 	ResetTestS3Uri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference interface
 
 // The jsii proxy struct for ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference
 type jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputRefer
 }
 
 
-func NewComprehendEntityRecognizerInputDataConfigDocumentsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference {
+func NewComprehendEntityRecognizerInputDataConfigDocumentsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComprehendEntityRecognizerInputDataConfigDocumentsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewComprehendEntityRecognizerInputDataConfigDocumentsOutputReference(terraf
 	j := jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference",
+		"@cdktn/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewComprehendEntityRecognizerInputDataConfigDocumentsOutputReference(terraf
 	return &j
 }
 
-func NewComprehendEntityRecognizerInputDataConfigDocumentsOutputReference_Override(c ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComprehendEntityRecognizerInputDataConfigDocumentsOutputReference_Override(c ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference",
+		"@cdktn/provider-aws.comprehendEntityRecognizer.ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -311,7 +311,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -490,8 +490,8 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -503,16 +503,16 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputRefer
 	)
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigDocumentsOutputRefer
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

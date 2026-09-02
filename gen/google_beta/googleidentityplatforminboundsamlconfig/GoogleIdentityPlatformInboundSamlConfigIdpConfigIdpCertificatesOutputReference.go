@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatforminboundsamlconfig/internal"
 )
 
 type GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	X509Certificate() *string
 	SetX509Certificate(val *string)
 	X509CertificateInput() *string
@@ -45,7 +45,7 @@ type GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputRefere
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetX509Certificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputRefere
 
 // The jsii proxy struct for GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference
 type jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference) ComplexObjectIndex() interface{} {
@@ -140,8 +140,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificat
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificat
 }
 
 
-func NewGoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference {
+func NewGoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -180,7 +180,7 @@ func NewGoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputRef
 	j := jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference",
+		"@cdktn/provider-google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewGoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputRef
 	return &j
 }
 
-func NewGoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference_Override(g GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference_Override(g GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference",
+		"@cdktn/provider-google-beta.googleIdentityPlatformInboundSamlConfig.GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificat
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificat
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -421,8 +421,8 @@ func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificat
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,16 +434,16 @@ func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificat
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificat
 	)
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificatesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigIdpConfigIdpCertificat
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

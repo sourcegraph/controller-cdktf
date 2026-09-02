@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleMemcacheInstance) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMemcacheInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMemcacheInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (g *jsiiProxy_GoogleMemcacheInstance) validatePutNodeConfigParameters(value
 }
 
 func (g *jsiiProxy_GoogleMemcacheInstance) validatePutTimeoutsParameters(value *GoogleMemcacheInstanceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMemcacheInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GoogleMemcacheInstance) validateSetLabelsParameters(val *map[
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemcacheInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleMemcacheInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

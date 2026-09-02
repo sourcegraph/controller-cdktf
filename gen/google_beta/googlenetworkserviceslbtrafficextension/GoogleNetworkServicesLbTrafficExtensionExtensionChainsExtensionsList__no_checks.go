@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensi
 	return nil
 }
 
-func validateNewGoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkServicesLbTrafficExtensionExtensionChainsExtensionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

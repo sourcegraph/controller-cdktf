@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.monitorV2Action.MonitorV2Action",
+		"@cdktn/provider-observe.monitorV2Action.MonitorV2Action",
 		reflect.TypeOf((*MonitorV2Action)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -53,6 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEmail", GoMethod: "PutEmail"},
 			_jsii_.MemberMethod{JsiiMethod: "putWebhook", GoMethod: "PutWebhook"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmail", GoMethod: "ResetEmail"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -71,25 +73,26 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "webhook", GoGetter: "Webhook"},
 			_jsii_.MemberProperty{JsiiProperty: "webhookInput", GoGetter: "WebhookInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorV2Action{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionConfig",
+		"@cdktn/provider-observe.monitorV2Action.MonitorV2ActionConfig",
 		reflect.TypeOf((*MonitorV2ActionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionEmail",
+		"@cdktn/provider-observe.monitorV2Action.MonitorV2ActionEmail",
 		reflect.TypeOf((*MonitorV2ActionEmail)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionEmailOutputReference",
+		"@cdktn/provider-observe.monitorV2Action.MonitorV2ActionEmailOutputReference",
 		reflect.TypeOf((*MonitorV2ActionEmailOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addresses", GoGetter: "Addresses"},
@@ -130,20 +133,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorV2ActionEmailOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhook",
+		"@cdktn/provider-observe.monitorV2Action.MonitorV2ActionWebhook",
 		reflect.TypeOf((*MonitorV2ActionWebhook)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhookHeaders",
+		"@cdktn/provider-observe.monitorV2Action.MonitorV2ActionWebhookHeaders",
 		reflect.TypeOf((*MonitorV2ActionWebhookHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhookHeadersList",
+		"@cdktn/provider-observe.monitorV2Action.MonitorV2ActionWebhookHeadersList",
 		reflect.TypeOf((*MonitorV2ActionWebhookHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -160,12 +163,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorV2ActionWebhookHeadersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhookHeadersOutputReference",
+		"@cdktn/provider-observe.monitorV2Action.MonitorV2ActionWebhookHeadersOutputReference",
 		reflect.TypeOf((*MonitorV2ActionWebhookHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -196,12 +199,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorV2ActionWebhookHeadersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.monitorV2Action.MonitorV2ActionWebhookOutputReference",
+		"@cdktn/provider-observe.monitorV2Action.MonitorV2ActionWebhookOutputReference",
 		reflect.TypeOf((*MonitorV2ActionWebhookOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "body", GoGetter: "Body"},
@@ -241,7 +244,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_MonitorV2ActionWebhookOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

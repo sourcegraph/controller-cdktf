@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/developerconnectinsightsconfig/internal"
 )
 
 type DeveloperConnectInsightsConfigArtifactConfigsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,9 +38,9 @@ type DeveloperConnectInsightsConfigArtifactConfigsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uri() *string
 	SetUri(val *string)
 	UriInput() *string
@@ -49,7 +49,7 @@ type DeveloperConnectInsightsConfigArtifactConfigsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,9 +65,9 @@ type DeveloperConnectInsightsConfigArtifactConfigsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutGoogleArtifactAnalysis(value *DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactAnalysis)
 	PutGoogleArtifactRegistry(value *DeveloperConnectInsightsConfigArtifactConfigsGoogleArtifactRegistry)
 	ResetGoogleArtifactAnalysis()
@@ -75,7 +75,7 @@ type DeveloperConnectInsightsConfigArtifactConfigsOutputReference interface {
 	ResetUri()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type DeveloperConnectInsightsConfigArtifactConfigsOutputReference interface {
 
 // The jsii proxy struct for DeveloperConnectInsightsConfigArtifactConfigsOutputReference
 type jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 }
 
 
-func NewDeveloperConnectInsightsConfigArtifactConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigArtifactConfigsOutputReference {
+func NewDeveloperConnectInsightsConfigArtifactConfigsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DeveloperConnectInsightsConfigArtifactConfigsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeveloperConnectInsightsConfigArtifactConfigsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -228,7 +228,7 @@ func NewDeveloperConnectInsightsConfigArtifactConfigsOutputReference(terraformRe
 	j := jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsOutputReference",
+		"@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewDeveloperConnectInsightsConfigArtifactConfigsOutputReference(terraformRe
 	return &j
 }
 
-func NewDeveloperConnectInsightsConfigArtifactConfigsOutputReference_Override(d DeveloperConnectInsightsConfigArtifactConfigsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDeveloperConnectInsightsConfigArtifactConfigsOutputReference_Override(d DeveloperConnectInsightsConfigArtifactConfigsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsOutputReference",
+		"@cdktn/provider-google.developerConnectInsightsConfig.DeveloperConnectInsightsConfigArtifactConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -290,7 +290,7 @@ func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,11 +341,11 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -469,8 +469,8 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -482,16 +482,16 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	)
 }
 
-func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (d *jsiiProxy_DeveloperConnectInsightsConfigArtifactConfigsOutputReference)
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

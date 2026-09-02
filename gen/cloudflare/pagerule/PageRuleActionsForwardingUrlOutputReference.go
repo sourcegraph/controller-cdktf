@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/pagerule/internal"
 )
 
 type PageRuleActionsForwardingUrlOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type PageRuleActionsForwardingUrlOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Url() *string
 	SetUrl(val *string)
 	UrlInput() *string
@@ -48,7 +48,7 @@ type PageRuleActionsForwardingUrlOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type PageRuleActionsForwardingUrlOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type PageRuleActionsForwardingUrlOutputReference interface {
 
 // The jsii proxy struct for PageRuleActionsForwardingUrlOutputReference
 type jsiiProxy_PageRuleActionsForwardingUrlOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) UrlInput() *stri
 }
 
 
-func NewPageRuleActionsForwardingUrlOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PageRuleActionsForwardingUrlOutputReference {
+func NewPageRuleActionsForwardingUrlOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PageRuleActionsForwardingUrlOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPageRuleActionsForwardingUrlOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewPageRuleActionsForwardingUrlOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_PageRuleActionsForwardingUrlOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewPageRuleActionsForwardingUrlOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewPageRuleActionsForwardingUrlOutputReference_Override(p PageRuleActionsForwardingUrlOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPageRuleActionsForwardingUrlOutputReference_Override(p PageRuleActionsForwardingUrlOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference",
+		"@cdktn/provider-cloudflare.pageRule.PageRuleActionsForwardingUrlOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PageRuleActionsForwardingUrlOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -454,8 +454,8 @@ func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -467,24 +467,24 @@ func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) InterpolationAsL
 	return returns
 }
 
-func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (p *jsiiProxy_PageRuleActionsForwardingUrlOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

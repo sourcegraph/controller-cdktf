@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketcorsconfiguration/internal"
 )
 
 type S3BucketCorsConfigurationCorsRuleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllowedHeaders() *[]*string
 	SetAllowedHeaders(val *[]*string)
 	AllowedHeadersInput() *[]*string
@@ -52,15 +52,15 @@ type S3BucketCorsConfigurationCorsRuleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,16 +76,16 @@ type S3BucketCorsConfigurationCorsRuleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllowedHeaders()
 	ResetExposeHeaders()
 	ResetId()
 	ResetMaxAgeSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -95,7 +95,7 @@ type S3BucketCorsConfigurationCorsRuleOutputReference interface {
 
 // The jsii proxy struct for S3BucketCorsConfigurationCorsRuleOutputReference
 type jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) AllowedHeaders() *[]*string {
@@ -278,8 +278,8 @@ func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -289,7 +289,7 @@ func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) TerraformRe
 }
 
 
-func NewS3BucketCorsConfigurationCorsRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketCorsConfigurationCorsRuleOutputReference {
+func NewS3BucketCorsConfigurationCorsRuleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketCorsConfigurationCorsRuleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewS3BucketCorsConfigurationCorsRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -298,7 +298,7 @@ func NewS3BucketCorsConfigurationCorsRuleOutputReference(terraformResource cdktf
 	j := jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRuleOutputReference",
+		"@cdktn/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -306,11 +306,11 @@ func NewS3BucketCorsConfigurationCorsRuleOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewS3BucketCorsConfigurationCorsRuleOutputReference_Override(s S3BucketCorsConfigurationCorsRuleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewS3BucketCorsConfigurationCorsRuleOutputReference_Override(s S3BucketCorsConfigurationCorsRuleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRuleOutputReference",
+		"@cdktn/provider-aws.s3BucketCorsConfiguration.S3BucketCorsConfigurationCorsRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -426,7 +426,7 @@ func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,11 +466,11 @@ func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -594,8 +594,8 @@ func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) GetStringMa
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -607,16 +607,16 @@ func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) Interpolati
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -655,8 +655,8 @@ func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) ResetMaxAge
 	)
 }
 
-func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -664,7 +664,7 @@ func (s *jsiiProxy_S3BucketCorsConfigurationCorsRuleOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

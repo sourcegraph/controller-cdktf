@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsAwsV4Authentic
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsAwsV4Authentic
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeBackendServiceSecuritySettingsAwsV4AuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

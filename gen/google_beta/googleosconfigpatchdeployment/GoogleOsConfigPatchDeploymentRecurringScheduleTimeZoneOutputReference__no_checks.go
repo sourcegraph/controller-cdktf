@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputR
 	return nil
 }
 
-func validateNewGoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOsConfigPatchDeploymentRecurringScheduleTimeZoneOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

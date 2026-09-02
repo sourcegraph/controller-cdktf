@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyOutputReference) validateGetStr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeExportPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetappVolumeExportPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleNetappVolumeExportPolicyOutputReference) validatePutRul
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeExportPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetappVolumeExportPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleNetappVolumeExportPolicyOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeExportPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetappVolumeExportPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetappVolumeExportPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetappVolumeExportPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

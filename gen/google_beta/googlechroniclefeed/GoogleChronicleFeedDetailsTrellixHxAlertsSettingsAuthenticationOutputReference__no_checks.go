@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticati
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticati
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticati
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsTrellixHxAlertsSettingsAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

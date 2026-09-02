@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/priorityclass/internal"
 )
 
 type PriorityClassMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -48,16 +48,16 @@ type PriorityClassMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type PriorityClassMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetGenerateName()
 	ResetLabels()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type PriorityClassMetadataOutputReference interface {
 
 // The jsii proxy struct for PriorityClassMetadataOutputReference
 type jsiiProxy_PriorityClassMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PriorityClassMetadataOutputReference) Annotations() *map[string]*string {
@@ -255,8 +255,8 @@ func (j *jsiiProxy_PriorityClassMetadataOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_PriorityClassMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PriorityClassMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -276,7 +276,7 @@ func (j *jsiiProxy_PriorityClassMetadataOutputReference) Uid() *string {
 }
 
 
-func NewPriorityClassMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PriorityClassMetadataOutputReference {
+func NewPriorityClassMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PriorityClassMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPriorityClassMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -285,7 +285,7 @@ func NewPriorityClassMetadataOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_PriorityClassMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.priorityClass.PriorityClassMetadataOutputReference",
+		"@cdktn/provider-kubernetes.priorityClass.PriorityClassMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -293,11 +293,11 @@ func NewPriorityClassMetadataOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewPriorityClassMetadataOutputReference_Override(p PriorityClassMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPriorityClassMetadataOutputReference_Override(p PriorityClassMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.priorityClass.PriorityClassMetadataOutputReference",
+		"@cdktn/provider-kubernetes.priorityClass.PriorityClassMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -391,7 +391,7 @@ func (j *jsiiProxy_PriorityClassMetadataOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_PriorityClassMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PriorityClassMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,11 +431,11 @@ func (p *jsiiProxy_PriorityClassMetadataOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (p *jsiiProxy_PriorityClassMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PriorityClassMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -559,8 +559,8 @@ func (p *jsiiProxy_PriorityClassMetadataOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (p *jsiiProxy_PriorityClassMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PriorityClassMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -572,16 +572,16 @@ func (p *jsiiProxy_PriorityClassMetadataOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (p *jsiiProxy_PriorityClassMetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PriorityClassMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -620,8 +620,8 @@ func (p *jsiiProxy_PriorityClassMetadataOutputReference) ResetName() {
 	)
 }
 
-func (p *jsiiProxy_PriorityClassMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PriorityClassMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -629,7 +629,7 @@ func (p *jsiiProxy_PriorityClassMetadataOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

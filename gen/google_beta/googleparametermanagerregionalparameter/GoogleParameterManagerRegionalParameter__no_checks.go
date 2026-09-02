@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validatePutTimeoutsParameters(value *GoogleParameterManagerRegionalParameterTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleParameterManagerRegionalParameter) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetLabelsPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleParameterManagerRegionalParameter) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

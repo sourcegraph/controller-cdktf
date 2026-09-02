@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/directsplunkobservability/internal"
 )
 
 type DirectSplunkObservabilityQueryDelayOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type DirectSplunkObservabilityQueryDelayOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Unit() *string
 	SetUnit(val *string)
 	UnitInput() *string
@@ -48,7 +48,7 @@ type DirectSplunkObservabilityQueryDelayOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DirectSplunkObservabilityQueryDelayOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type DirectSplunkObservabilityQueryDelayOutputReference interface {
 
 // The jsii proxy struct for DirectSplunkObservabilityQueryDelayOutputReference
 type jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) ComplexObjectIndex() interface{} {
@@ -142,8 +142,8 @@ func (j *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) ValueInpu
 }
 
 
-func NewDirectSplunkObservabilityQueryDelayOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DirectSplunkObservabilityQueryDelayOutputReference {
+func NewDirectSplunkObservabilityQueryDelayOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DirectSplunkObservabilityQueryDelayOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDirectSplunkObservabilityQueryDelayOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewDirectSplunkObservabilityQueryDelayOutputReference(terraformResource cdk
 	j := jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.directSplunkObservability.DirectSplunkObservabilityQueryDelayOutputReference",
+		"@cdktn/provider-nobl9.directSplunkObservability.DirectSplunkObservabilityQueryDelayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewDirectSplunkObservabilityQueryDelayOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewDirectSplunkObservabilityQueryDelayOutputReference_Override(d DirectSplunkObservabilityQueryDelayOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDirectSplunkObservabilityQueryDelayOutputReference_Override(d DirectSplunkObservabilityQueryDelayOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.directSplunkObservability.DirectSplunkObservabilityQueryDelayOutputReference",
+		"@cdktn/provider-nobl9.directSplunkObservability.DirectSplunkObservabilityQueryDelayOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) GetAnyMap
 	return returns
 }
 
-func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -454,8 +454,8 @@ func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) GetString
 	return returns
 }
 
-func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -467,24 +467,24 @@ func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (d *jsiiProxy_DirectSplunkObservabilityQueryDelayOutputReference) Resolve(_
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

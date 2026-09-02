@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -108,7 +108,7 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -116,7 +116,7 @@ func (j *jsiiProxy_GoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReferenc
 	return nil
 }
 
-func validateNewGoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeNetworkFirewallPolicyWithRulesRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

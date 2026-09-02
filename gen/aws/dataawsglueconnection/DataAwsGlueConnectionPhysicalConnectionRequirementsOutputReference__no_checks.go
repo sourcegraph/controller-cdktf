@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsGlueConnectionPhysicalConnectionRequirementsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsGlueConnectionPhysicalConnectionRequirementsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsGlueConnectionPhysicalConnectionRequirementsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

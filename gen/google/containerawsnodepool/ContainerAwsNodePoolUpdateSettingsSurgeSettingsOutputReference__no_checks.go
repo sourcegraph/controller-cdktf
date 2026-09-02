@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerAwsNodePoolUpdateSettingsSurgeSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

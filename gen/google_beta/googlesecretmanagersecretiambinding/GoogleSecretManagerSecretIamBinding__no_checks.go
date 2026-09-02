@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validatePutConditionParameters(value *GoogleSecretManagerSecretIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlebigqueryjob/internal"
 )
 
 type GoogleBigqueryJobQueryConnectionPropertiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type GoogleBigqueryJobQueryConnectionPropertiesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -48,7 +48,7 @@ type GoogleBigqueryJobQueryConnectionPropertiesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type GoogleBigqueryJobQueryConnectionPropertiesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type GoogleBigqueryJobQueryConnectionPropertiesOutputReference interface {
 
 // The jsii proxy struct for GoogleBigqueryJobQueryConnectionPropertiesOutputReference
 type jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) Va
 }
 
 
-func NewGoogleBigqueryJobQueryConnectionPropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleBigqueryJobQueryConnectionPropertiesOutputReference {
+func NewGoogleBigqueryJobQueryConnectionPropertiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleBigqueryJobQueryConnectionPropertiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleBigqueryJobQueryConnectionPropertiesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewGoogleBigqueryJobQueryConnectionPropertiesOutputReference(terraformResou
 	j := jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobQueryConnectionPropertiesOutputReference",
+		"@cdktn/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobQueryConnectionPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewGoogleBigqueryJobQueryConnectionPropertiesOutputReference(terraformResou
 	return &j
 }
 
-func NewGoogleBigqueryJobQueryConnectionPropertiesOutputReference_Override(g GoogleBigqueryJobQueryConnectionPropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleBigqueryJobQueryConnectionPropertiesOutputReference_Override(g GoogleBigqueryJobQueryConnectionPropertiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobQueryConnectionPropertiesOutputReference",
+		"@cdktn/provider-google-beta.googleBigqueryJob.GoogleBigqueryJobQueryConnectionPropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -454,8 +454,8 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -467,24 +467,24 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) In
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryConnectionPropertiesOutputReference) Re
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

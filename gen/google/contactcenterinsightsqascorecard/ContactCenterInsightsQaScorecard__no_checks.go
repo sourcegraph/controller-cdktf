@@ -56,6 +56,10 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecard) validateInterpolationForAtt
 	return nil
 }
 
+func (c *jsiiProxy_ContactCenterInsightsQaScorecard) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ContactCenterInsightsQaScorecard) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ContactCenterInsightsQaScorecard) validateOverrideLogicalIdPa
 }
 
 func (c *jsiiProxy_ContactCenterInsightsQaScorecard) validatePutTimeoutsParameters(value *ContactCenterInsightsQaScorecardTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ContactCenterInsightsQaScorecard) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_ContactCenterInsightsQaScorecard) validateSetIsDefaultParamet
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsQaScorecard) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ContactCenterInsightsQaScorecard) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

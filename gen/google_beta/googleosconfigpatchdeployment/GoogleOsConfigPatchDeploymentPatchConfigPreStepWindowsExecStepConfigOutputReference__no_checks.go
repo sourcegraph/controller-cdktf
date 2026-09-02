@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecSte
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecSte
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecSte
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOsConfigPatchDeploymentPatchConfigPreStepWindowsExecStepConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

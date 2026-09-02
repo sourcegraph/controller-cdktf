@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleHypercomputeclusterClusterComputeResourcesConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleHypercomputeclusterClusterComputeResourcesConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

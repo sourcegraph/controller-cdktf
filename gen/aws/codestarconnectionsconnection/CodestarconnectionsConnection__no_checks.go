@@ -56,6 +56,10 @@ func (c *jsiiProxy_CodestarconnectionsConnection) validateInterpolationForAttrib
 	return nil
 }
 
+func (c *jsiiProxy_CodestarconnectionsConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodestarconnectionsConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_CodestarconnectionsConnection) validateMoveToIdParameters(id 
 }
 
 func (c *jsiiProxy_CodestarconnectionsConnection) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodestarconnectionsConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_CodestarconnectionsConnection) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_CodestarconnectionsConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CodestarconnectionsConnection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

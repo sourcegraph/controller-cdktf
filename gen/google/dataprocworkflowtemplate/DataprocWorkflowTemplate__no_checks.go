@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) validateInterpolationForAttributePa
 	return nil
 }
 
+func (d *jsiiProxy_DataprocWorkflowTemplate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataprocWorkflowTemplate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutPlacementParameters(valu
 }
 
 func (d *jsiiProxy_DataprocWorkflowTemplate) validatePutTimeoutsParameters(value *DataprocWorkflowTemplateTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataprocWorkflowTemplate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetLabelsParameters(val *ma
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataprocWorkflowTemplate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

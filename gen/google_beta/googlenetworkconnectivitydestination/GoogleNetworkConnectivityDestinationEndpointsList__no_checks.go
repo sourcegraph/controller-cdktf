@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityDestinationEndpointsList) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityDestinationEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityDestinationEndpointsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityDestinationEndpointsList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityDestinationEndpointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityDestinationEndpointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityDestinationEndpointsList) validateSe
 	return nil
 }
 
-func validateNewGoogleNetworkConnectivityDestinationEndpointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkConnectivityDestinationEndpointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnector",
 		reflect.TypeOf((*DiscoveryEngineDataConnector)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionConfig", GoGetter: "ActionConfig"},
@@ -73,6 +73,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -95,6 +96,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "realtimeState", GoGetter: "RealtimeState"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshInterval", GoGetter: "RefreshInterval"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshIntervalInput", GoGetter: "RefreshIntervalInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActionConfig", GoMethod: "ResetActionConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoRunDisabled", GoMethod: "ResetAutoRunDisabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBapConfig", GoMethod: "ResetBapConfig"},
@@ -131,19 +133,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnector{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfig",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfig",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorActionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfigOutputReference",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorActionConfigOutputReference",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorActionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actionParams", GoGetter: "ActionParams"},
@@ -177,16 +180,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnectorActionConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorBapConfig",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorBapConfig",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorBapConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorBapConfigOutputReference",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorBapConfigOutputReference",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorBapConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -219,24 +222,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnectorBapConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorConfig",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigs",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigs",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinations",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinations",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigsDestinations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinationsList",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinationsList",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigsDestinationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -253,12 +256,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsDestinationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -291,12 +294,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsDestinationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsList",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsList",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -313,12 +316,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsOutputReference",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorDestinationConfigsOutputReference",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorDestinationConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -355,16 +358,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntities",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntities",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorEntities)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntitiesList",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntitiesList",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorEntitiesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -381,12 +384,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnectorEntitiesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntitiesOutputReference",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorEntitiesOutputReference",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorEntitiesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -423,16 +426,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnectorEntitiesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrors",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrors",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorErrors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrorsList",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrorsList",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorErrorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -448,12 +451,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnectorErrorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrorsOutputReference",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorErrorsOutputReference",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorErrorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -482,16 +485,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnectorErrorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeouts",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeoutsOutputReference",
+		"@cdktn/provider-google.discoveryEngineDataConnector.DiscoveryEngineDataConnectorTimeoutsOutputReference",
 		reflect.TypeOf((*DiscoveryEngineDataConnectorTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -527,7 +530,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DiscoveryEngineDataConnectorTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

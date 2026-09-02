@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksImageList) validat
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksImageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksImageList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksImageList) validat
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksImageList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksImageList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotExamplesMessagesChunksImageList) validat
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotExamplesMessagesChunksImageListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesAppVersionSnapshotExamplesMessagesChunksImageListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

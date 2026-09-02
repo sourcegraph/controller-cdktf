@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiBrandingLogoOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiBrandingLogoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiBrandingLogoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiBrandingLogoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiBrandingLogoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiBrandingLogoOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiBrandingLogoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiBrandingLogoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfigUiBrandingLogoOutputReferenc
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineWidgetConfigUiBrandingLogoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDiscoveryEngineWidgetConfigUiBrandingLogoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

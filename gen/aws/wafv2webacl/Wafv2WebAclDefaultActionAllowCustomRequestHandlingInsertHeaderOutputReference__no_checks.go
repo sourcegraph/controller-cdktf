@@ -40,11 +40,11 @@ func (w *jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeade
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeade
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_Wafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeade
 	return nil
 }
 
-func validateNewWafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWafv2WebAclDefaultActionAllowCustomRequestHandlingInsertHeaderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

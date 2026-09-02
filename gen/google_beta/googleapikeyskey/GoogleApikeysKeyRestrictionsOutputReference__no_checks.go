@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (g *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validatePutServe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApikeysKeyRestrictionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleApikeysKeyRestrictionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApikeysKeyRestrictionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

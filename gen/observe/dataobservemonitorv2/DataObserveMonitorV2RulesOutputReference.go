@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/dataobservemonitorv2/internal"
 )
 
 type DataObserveMonitorV2RulesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,9 +39,9 @@ type DataObserveMonitorV2RulesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Threshold() DataObserveMonitorV2RulesThresholdList
 	ThresholdInput() interface{}
 	// Experimental.
@@ -49,7 +49,7 @@ type DataObserveMonitorV2RulesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,9 +65,9 @@ type DataObserveMonitorV2RulesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCount(value interface{})
 	PutPromote(value interface{})
 	PutThreshold(value interface{})
@@ -76,7 +76,7 @@ type DataObserveMonitorV2RulesOutputReference interface {
 	ResetThreshold()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type DataObserveMonitorV2RulesOutputReference interface {
 
 // The jsii proxy struct for DataObserveMonitorV2RulesOutputReference
 type jsiiProxy_DataObserveMonitorV2RulesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference) ComplexObjectIndex() interface{} {
@@ -199,8 +199,8 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -230,7 +230,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference) ThresholdInput() in
 }
 
 
-func NewDataObserveMonitorV2RulesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveMonitorV2RulesOutputReference {
+func NewDataObserveMonitorV2RulesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveMonitorV2RulesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataObserveMonitorV2RulesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -239,7 +239,7 @@ func NewDataObserveMonitorV2RulesOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_DataObserveMonitorV2RulesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -247,11 +247,11 @@ func NewDataObserveMonitorV2RulesOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewDataObserveMonitorV2RulesOutputReference_Override(d DataObserveMonitorV2RulesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataObserveMonitorV2RulesOutputReference_Override(d DataObserveMonitorV2RulesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataObserveMonitorV2RulesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,11 +341,11 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -469,8 +469,8 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -482,16 +482,16 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) InterpolationAsList
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -555,8 +555,8 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) ResetThreshold() {
 	)
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -564,7 +564,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDet
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleNetworkManagementConnectivityTestRunReachabilityDetailsTracesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

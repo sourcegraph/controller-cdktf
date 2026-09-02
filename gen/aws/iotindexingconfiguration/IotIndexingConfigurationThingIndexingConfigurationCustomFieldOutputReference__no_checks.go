@@ -40,11 +40,11 @@ func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomField
 	return nil
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomField
 	return nil
 }
 
-func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_IotIndexingConfigurationThingIndexingConfigurationCustomField
 	return nil
 }
 
-func validateNewIotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewIotIndexingConfigurationThingIndexingConfigurationCustomFieldOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

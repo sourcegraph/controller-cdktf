@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/deployment/internal"
 )
 
 type DeploymentSpecTemplateSpecVolumeCephFsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -48,9 +48,9 @@ type DeploymentSpecTemplateSpecVolumeCephFsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	User() *string
 	SetUser(val *string)
 	UserInput() *string
@@ -59,7 +59,7 @@ type DeploymentSpecTemplateSpecVolumeCephFsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -75,9 +75,9 @@ type DeploymentSpecTemplateSpecVolumeCephFsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSecretRef(value *DeploymentSpecTemplateSpecVolumeCephFsSecretRef)
 	ResetPath()
 	ResetReadOnly()
@@ -86,7 +86,7 @@ type DeploymentSpecTemplateSpecVolumeCephFsOutputReference interface {
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type DeploymentSpecTemplateSpecVolumeCephFsOutputReference interface {
 
 // The jsii proxy struct for DeploymentSpecTemplateSpecVolumeCephFsOutputReference
 type jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) ComplexObjectIndex() interface{} {
@@ -259,8 +259,8 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) UserIn
 }
 
 
-func NewDeploymentSpecTemplateSpecVolumeCephFsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeCephFsOutputReference {
+func NewDeploymentSpecTemplateSpecVolumeCephFsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DeploymentSpecTemplateSpecVolumeCephFsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeploymentSpecTemplateSpecVolumeCephFsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -299,7 +299,7 @@ func NewDeploymentSpecTemplateSpecVolumeCephFsOutputReference(terraformResource 
 	j := jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCephFsOutputReference",
+		"@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCephFsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -307,11 +307,11 @@ func NewDeploymentSpecTemplateSpecVolumeCephFsOutputReference(terraformResource 
 	return &j
 }
 
-func NewDeploymentSpecTemplateSpecVolumeCephFsOutputReference_Override(d DeploymentSpecTemplateSpecVolumeCephFsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDeploymentSpecTemplateSpecVolumeCephFsOutputReference_Override(d DeploymentSpecTemplateSpecVolumeCephFsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCephFsOutputReference",
+		"@cdktn/provider-kubernetes.deployment.DeploymentSpecTemplateSpecVolumeCephFsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -405,7 +405,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -456,11 +456,11 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) GetAny
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -584,8 +584,8 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) GetStr
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -597,16 +597,16 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -664,8 +664,8 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) ResetU
 	)
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -673,7 +673,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) Resolv
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

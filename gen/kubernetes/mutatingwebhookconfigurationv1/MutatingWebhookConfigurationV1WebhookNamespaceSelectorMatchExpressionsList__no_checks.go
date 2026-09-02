@@ -12,7 +12,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchEx
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchEx
 	return nil
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchEx
 	return nil
 }
 
-func validateNewMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMutatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (a *jsiiProxy_AgentDynatraceConfigOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (a *jsiiProxy_AgentDynatraceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AgentDynatraceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AgentDynatraceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AgentDynatraceConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_AgentDynatraceConfigOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_AgentDynatraceConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AgentDynatraceConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_AgentDynatraceConfigOutputReference) validateSetUrlParameters
 	return nil
 }
 
-func validateNewAgentDynatraceConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAgentDynatraceConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

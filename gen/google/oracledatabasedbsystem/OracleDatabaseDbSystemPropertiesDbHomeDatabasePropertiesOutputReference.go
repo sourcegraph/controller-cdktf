@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/oracledatabasedbsystem/internal"
 )
 
 type OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,16 +66,16 @@ type OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDatabaseManagementConfig(value *OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDatabaseManagementConfig)
 	PutDbBackupConfig(value *OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesDbBackupConfig)
 	ResetDatabaseManagementConfig()
 	ResetDbBackupConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference int
 
 // The jsii proxy struct for OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference
 type jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference) ComplexObjectIndex() interface{} {
@@ -218,8 +218,8 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutpu
 	return returns
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -229,7 +229,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutpu
 }
 
 
-func NewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference {
+func NewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -238,7 +238,7 @@ func NewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference(
 	j := jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference",
+		"@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -246,11 +246,11 @@ func NewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference(
 	return &j
 }
 
-func NewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference_Override(o OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference_Override(o OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference",
+		"@cdktn/provider-google.oracleDatabaseDbSystem.OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -311,7 +311,7 @@ func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutpu
 	)
 }
 
-func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,11 +351,11 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutpu
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -479,8 +479,8 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutpu
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -492,16 +492,16 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutpu
 	return returns
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -546,8 +546,8 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutpu
 	)
 }
 
-func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -555,7 +555,7 @@ func (o *jsiiProxy_OracleDatabaseDbSystemPropertiesDbHomeDatabasePropertiesOutpu
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

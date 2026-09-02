@@ -40,11 +40,11 @@ func (i *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) va
 	return nil
 }
 
-func (i *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotProvisioningTemplatePreProvisioningHookOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIotProvisioningTemplatePreProvisioningHookOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIotProvisioningTemplatePreProvisioningHookOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

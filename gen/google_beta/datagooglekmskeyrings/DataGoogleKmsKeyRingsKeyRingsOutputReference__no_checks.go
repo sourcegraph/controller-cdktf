@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateGetStri
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleKmsKeyRingsKeyRingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleKmsKeyRingsKeyRingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleKmsKeyRingsKeyRingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

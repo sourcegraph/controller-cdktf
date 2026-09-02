@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList) validateGetPara
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList) validateResolve
 
 func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*HorizontalPodAutoscalerV2Beta2SpecMetric:
 		val := val.(*[]*HorizontalPodAutoscalerV2Beta2SpecMetric)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList) validateSetInte
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*HorizontalPodAutoscalerV2Beta2SpecMetric; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*HorizontalPodAutoscalerV2Beta2SpecMetric; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2Beta2SpecMetricList) validateSetWrap
 	return nil
 }
 
-func validateNewHorizontalPodAutoscalerV2Beta2SpecMetricListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewHorizontalPodAutoscalerV2Beta2SpecMetricListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

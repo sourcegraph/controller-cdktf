@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validatePutSelectorsParameters
 }
 
 func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validatePutTimeoutsParameters(value *GoogleClouddeployDeployPolicyTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleClouddeployDeployPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetLabelsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleClouddeployDeployPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

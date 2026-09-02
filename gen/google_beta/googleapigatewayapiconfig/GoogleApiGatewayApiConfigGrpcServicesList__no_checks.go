@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesList) validateGetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleApiGatewayApiConfigGrpcServicesList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewGoogleApiGatewayApiConfigGrpcServicesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleApiGatewayApiConfigGrpcServicesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

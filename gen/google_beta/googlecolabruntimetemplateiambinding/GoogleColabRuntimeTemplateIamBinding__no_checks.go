@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateIamBinding) validateInterpolationFo
 	return nil
 }
 
+func (g *jsiiProxy_GoogleColabRuntimeTemplateIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleColabRuntimeTemplateIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateIamBinding) validateOverrideLogical
 }
 
 func (g *jsiiProxy_GoogleColabRuntimeTemplateIamBinding) validatePutConditionParameters(value *GoogleColabRuntimeTemplateIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleColabRuntimeTemplateIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateIamBinding) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

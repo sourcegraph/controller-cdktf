@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataplextask/internal"
 )
 
 type DataplexTaskSparkInfrastructureSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Batch() DataplexTaskSparkInfrastructureSpecBatchOutputReference
 	BatchInput() *DataplexTaskSparkInfrastructureSpecBatch
 	// the index of the complex object in a list.
@@ -38,9 +38,9 @@ type DataplexTaskSparkInfrastructureSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VpcNetwork() DataplexTaskSparkInfrastructureSpecVpcNetworkOutputReference
 	VpcNetworkInput() *DataplexTaskSparkInfrastructureSpecVpcNetwork
 	// Experimental.
@@ -48,7 +48,7 @@ type DataplexTaskSparkInfrastructureSpecOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,9 +64,9 @@ type DataplexTaskSparkInfrastructureSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBatch(value *DataplexTaskSparkInfrastructureSpecBatch)
 	PutContainerImage(value *DataplexTaskSparkInfrastructureSpecContainerImage)
 	PutVpcNetwork(value *DataplexTaskSparkInfrastructureSpecVpcNetwork)
@@ -75,7 +75,7 @@ type DataplexTaskSparkInfrastructureSpecOutputReference interface {
 	ResetVpcNetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type DataplexTaskSparkInfrastructureSpecOutputReference interface {
 
 // The jsii proxy struct for DataplexTaskSparkInfrastructureSpecOutputReference
 type jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) Batch() DataplexTaskSparkInfrastructureSpecBatchOutputReference {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) VpcNetwor
 }
 
 
-func NewDataplexTaskSparkInfrastructureSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataplexTaskSparkInfrastructureSpecOutputReference {
+func NewDataplexTaskSparkInfrastructureSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataplexTaskSparkInfrastructureSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataplexTaskSparkInfrastructureSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewDataplexTaskSparkInfrastructureSpecOutputReference(terraformResource cdk
 	j := jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataplexTask.DataplexTaskSparkInfrastructureSpecOutputReference",
+		"@cdktn/provider-google.dataplexTask.DataplexTaskSparkInfrastructureSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewDataplexTaskSparkInfrastructureSpecOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewDataplexTaskSparkInfrastructureSpecOutputReference_Override(d DataplexTaskSparkInfrastructureSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataplexTaskSparkInfrastructureSpecOutputReference_Override(d DataplexTaskSparkInfrastructureSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataplexTask.DataplexTaskSparkInfrastructureSpecOutputReference",
+		"@cdktn/provider-google.dataplexTask.DataplexTaskSparkInfrastructureSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -290,7 +290,7 @@ func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,11 +330,11 @@ func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) GetAnyMap
 	return returns
 }
 
-func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -458,8 +458,8 @@ func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) GetString
 	return returns
 }
 
-func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -471,16 +471,16 @@ func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) Interpola
 	return returns
 }
 
-func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) ResetVpcN
 	)
 }
 
-func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (d *jsiiProxy_DataplexTaskSparkInfrastructureSpecOutputReference) Resolve(_
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

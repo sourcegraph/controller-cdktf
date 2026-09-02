@@ -12,7 +12,7 @@ func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsList) validateG
 	return nil
 }
 
-func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_FsxOpenzfsVolumeNfsExportsClientConfigurationsList) validateS
 	return nil
 }
 
-func validateNewFsxOpenzfsVolumeNfsExportsClientConfigurationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFsxOpenzfsVolumeNfsExportsClientConfigurationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

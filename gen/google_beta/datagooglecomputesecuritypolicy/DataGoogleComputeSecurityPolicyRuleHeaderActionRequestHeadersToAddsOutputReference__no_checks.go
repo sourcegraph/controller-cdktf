@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeaders
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeaders
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeSecurityPolicyRuleHeaderActionRequestHeadersToAddsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

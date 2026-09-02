@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleApihubPluginConfigTemplateAdditionalConfigTemplateEnumOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputRefe
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFirebaseAppHostingBackendManagedResourcesRunServiceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewFirebaseAppHostingBackendManagedResourcesRunServiceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

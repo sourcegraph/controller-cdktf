@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) vali
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubDataExchangeTimeoutsOutputReference) vali
 	return nil
 }
 
-func validateNewBigqueryAnalyticsHubDataExchangeTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryAnalyticsHubDataExchangeTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

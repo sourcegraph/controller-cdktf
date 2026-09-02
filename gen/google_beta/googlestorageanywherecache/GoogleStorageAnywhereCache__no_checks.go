@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleStorageAnywhereCache) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageAnywhereCache) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageAnywhereCache) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleStorageAnywhereCache) validateOverrideLogicalIdParamete
 }
 
 func (g *jsiiProxy_GoogleStorageAnywhereCache) validatePutTimeoutsParameters(value *GoogleStorageAnywhereCacheTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageAnywhereCache) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleStorageAnywhereCache) validateSetIngestOnWriteParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageAnywhereCache) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleStorageAnywhereCache) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

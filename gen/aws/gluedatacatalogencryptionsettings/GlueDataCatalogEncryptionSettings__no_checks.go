@@ -56,6 +56,10 @@ func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validatePutDataCatalogEncryptionSettingsParameters(value *GlueDataCatalogEncryptionSettingsDataCatalogEncryptionSettings) error {
+	return nil
+}
+
+func (g *jsiiProxy_GlueDataCatalogEncryptionSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GlueDataCatalogEncryptionSettings) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GlueDataCatalogEncryptionSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GlueDataCatalogEncryptionSettings) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

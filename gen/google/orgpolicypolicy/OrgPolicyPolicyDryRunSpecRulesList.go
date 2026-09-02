@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/orgpolicypolicy/internal"
 )
 
 type OrgPolicyPolicyDryRunSpecRulesList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type OrgPolicyPolicyDryRunSpecRulesList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) OrgPolicyPolicyDryRunSpecRulesOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type OrgPolicyPolicyDryRunSpecRulesList interface {
 
 // The jsii proxy struct for OrgPolicyPolicyDryRunSpecRulesList
 type jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) WrapsSet() *bool {
 }
 
 
-func NewOrgPolicyPolicyDryRunSpecRulesList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrgPolicyPolicyDryRunSpecRulesList {
+func NewOrgPolicyPolicyDryRunSpecRulesList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) OrgPolicyPolicyDryRunSpecRulesList {
 	_init_.Initialize()
 
 	if err := validateNewOrgPolicyPolicyDryRunSpecRulesListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewOrgPolicyPolicyDryRunSpecRulesList(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList",
+		"@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewOrgPolicyPolicyDryRunSpecRulesList(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewOrgPolicyPolicyDryRunSpecRulesList_Override(o OrgPolicyPolicyDryRunSpecRulesList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewOrgPolicyPolicyDryRunSpecRulesList_Override(o OrgPolicyPolicyDryRunSpecRulesList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList",
+		"@cdktn/provider-google.orgPolicyPolicy.OrgPolicyPolicyDryRunSpecRulesList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		o,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := o.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		o,
@@ -228,8 +231,8 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) Get(index *float64) OrgPo
 	return returns
 }
 
-func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (o *jsiiProxy_OrgPolicyPolicyDryRunSpecRulesList) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

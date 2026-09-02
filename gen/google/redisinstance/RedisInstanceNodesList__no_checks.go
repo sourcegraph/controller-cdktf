@@ -12,7 +12,7 @@ func (r *jsiiProxy_RedisInstanceNodesList) validateGetParameters(index *float64)
 	return nil
 }
 
-func (r *jsiiProxy_RedisInstanceNodesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisInstanceNodesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_RedisInstanceNodesList) validateSetTerraformAttributeParamete
 	return nil
 }
 
-func (j *jsiiProxy_RedisInstanceNodesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedisInstanceNodesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_RedisInstanceNodesList) validateSetWrapsSetParameters(val *bo
 	return nil
 }
 
-func validateNewRedisInstanceNodesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRedisInstanceNodesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

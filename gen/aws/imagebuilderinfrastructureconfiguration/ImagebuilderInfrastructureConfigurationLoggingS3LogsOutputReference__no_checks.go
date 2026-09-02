@@ -40,11 +40,11 @@ func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputRef
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewImagebuilderInfrastructureConfigurationLoggingS3LogsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

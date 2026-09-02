@@ -40,7 +40,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileAlloydbSettingsOutpu
 	return nil
 }
 
-func validateNewDatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatabaseMigrationServiceConnectionProfileAlloydbSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

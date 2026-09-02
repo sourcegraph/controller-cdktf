@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudrunv2job/internal"
 )
 
 type GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -49,9 +49,9 @@ type GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeoutSeconds() *float64
 	SetTimeoutSeconds(val *float64)
 	TimeoutSecondsInput() *float64
@@ -60,7 +60,7 @@ type GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference in
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutGrpc(value *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeGrpc)
 	PutHttpGet(value *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeHttpGet)
 	PutTcpSocket(value *GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeTcpSocket)
@@ -91,7 +91,7 @@ type GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference in
 	ResetTimeoutSeconds()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,7 +101,7 @@ type GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference in
 
 // The jsii proxy struct for GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference
 type jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference) ComplexObjectIndex() interface{} {
@@ -284,8 +284,8 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutp
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutp
 }
 
 
-func NewGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference {
+func NewGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -324,7 +324,7 @@ func NewGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference
 	j := jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference",
+		"@cdktn/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference
 	return &j
 }
 
-func NewGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference_Override(g GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference_Override(g GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference",
+		"@cdktn/provider-google-beta.googleCloudRunV2Job.GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -419,7 +419,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutp
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -470,11 +470,11 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -598,8 +598,8 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -611,16 +611,16 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -716,8 +716,8 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutp
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -725,7 +725,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateContainersStartupProbeOutp
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

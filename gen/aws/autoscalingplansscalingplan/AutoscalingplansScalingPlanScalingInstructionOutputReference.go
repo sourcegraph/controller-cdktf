@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/autoscalingplansscalingplan/internal"
 )
 
 type AutoscalingplansScalingPlanScalingInstructionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -73,15 +73,15 @@ type AutoscalingplansScalingPlanScalingInstructionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -97,9 +97,9 @@ type AutoscalingplansScalingPlanScalingInstructionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCustomizedLoadMetricSpecification(value *AutoscalingplansScalingPlanScalingInstructionCustomizedLoadMetricSpecification)
 	PutPredefinedLoadMetricSpecification(value *AutoscalingplansScalingPlanScalingInstructionPredefinedLoadMetricSpecification)
 	PutTargetTrackingConfiguration(value interface{})
@@ -113,7 +113,7 @@ type AutoscalingplansScalingPlanScalingInstructionOutputReference interface {
 	ResetScheduledActionBufferTime()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -123,7 +123,7 @@ type AutoscalingplansScalingPlanScalingInstructionOutputReference interface {
 
 // The jsii proxy struct for AutoscalingplansScalingPlanScalingInstructionOutputReference
 type jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) ComplexObjectIndex() interface{} {
@@ -466,8 +466,8 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -477,7 +477,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 }
 
 
-func NewAutoscalingplansScalingPlanScalingInstructionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AutoscalingplansScalingPlanScalingInstructionOutputReference {
+func NewAutoscalingplansScalingPlanScalingInstructionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AutoscalingplansScalingPlanScalingInstructionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAutoscalingplansScalingPlanScalingInstructionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -486,7 +486,7 @@ func NewAutoscalingplansScalingPlanScalingInstructionOutputReference(terraformRe
 	j := jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionOutputReference",
+		"@cdktn/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -494,11 +494,11 @@ func NewAutoscalingplansScalingPlanScalingInstructionOutputReference(terraformRe
 	return &j
 }
 
-func NewAutoscalingplansScalingPlanScalingInstructionOutputReference_Override(a AutoscalingplansScalingPlanScalingInstructionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAutoscalingplansScalingPlanScalingInstructionOutputReference_Override(a AutoscalingplansScalingPlanScalingInstructionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionOutputReference",
+		"@cdktn/provider-aws.autoscalingplansScalingPlan.AutoscalingplansScalingPlanScalingInstructionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -669,7 +669,7 @@ func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -709,11 +709,11 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -837,8 +837,8 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -850,16 +850,16 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	return returns
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -963,8 +963,8 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	)
 }
 
-func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -972,7 +972,7 @@ func (a *jsiiProxy_AutoscalingplansScalingPlanScalingInstructionOutputReference)
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

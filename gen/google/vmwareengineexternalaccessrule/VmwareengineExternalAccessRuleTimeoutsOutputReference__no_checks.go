@@ -40,11 +40,11 @@ func (v *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) valida
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_VmwareengineExternalAccessRuleTimeoutsOutputReference) valida
 	return nil
 }
 
-func validateNewVmwareengineExternalAccessRuleTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVmwareengineExternalAccessRuleTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

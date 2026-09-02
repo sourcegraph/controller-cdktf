@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/sagemakerspace/internal"
 )
 
 type SagemakerSpaceSpaceSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type SagemakerSpaceSpaceSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type SagemakerSpaceSpaceSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutJupyterServerAppSettings(value *SagemakerSpaceSpaceSettingsJupyterServerAppSettings)
 	PutKernelGatewayAppSettings(value *SagemakerSpaceSpaceSettingsKernelGatewayAppSettings)
 	ResetJupyterServerAppSettings()
 	ResetKernelGatewayAppSettings()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type SagemakerSpaceSpaceSettingsOutputReference interface {
 
 // The jsii proxy struct for SagemakerSpaceSpaceSettingsOutputReference
 type jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) TerraformResource
 }
 
 
-func NewSagemakerSpaceSpaceSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SagemakerSpaceSpaceSettingsOutputReference {
+func NewSagemakerSpaceSpaceSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SagemakerSpaceSpaceSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSagemakerSpaceSpaceSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewSagemakerSpaceSpaceSettingsOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsOutputReference",
+		"@cdktn/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewSagemakerSpaceSpaceSettingsOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewSagemakerSpaceSpaceSettingsOutputReference_Override(s SagemakerSpaceSpaceSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSagemakerSpaceSpaceSettingsOutputReference_Override(s SagemakerSpaceSpaceSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsOutputReference",
+		"@cdktn/provider-aws.sagemakerSpace.SagemakerSpaceSpaceSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -434,8 +434,8 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -447,16 +447,16 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) ResetKernelGatewa
 	)
 }
 
-func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (s *jsiiProxy_SagemakerSpaceSpaceSettingsOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

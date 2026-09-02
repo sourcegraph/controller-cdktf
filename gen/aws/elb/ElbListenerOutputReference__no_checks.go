@@ -40,11 +40,11 @@ func (e *jsiiProxy_ElbListenerOutputReference) validateGetStringMapAttributePara
 	return nil
 }
 
-func (e *jsiiProxy_ElbListenerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElbListenerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElbListenerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElbListenerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_ElbListenerOutputReference) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_ElbListenerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ElbListenerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewElbListenerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewElbListenerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

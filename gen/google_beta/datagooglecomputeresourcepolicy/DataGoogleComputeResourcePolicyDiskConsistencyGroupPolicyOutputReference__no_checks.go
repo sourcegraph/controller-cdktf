@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutp
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeResourcePolicyDiskConsistencyGroupPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containercluster/internal"
 )
 
 type ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPolicy()
 	ResetScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference inter
 
 // The jsii proxy struct for ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference
 type jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputR
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputR
 }
 
 
-func NewContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference {
+func NewContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference(te
 	j := jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference(te
 	return &j
 }
 
-func NewContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference_Override(c ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference_Override(c ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputR
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputR
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -456,8 +456,8 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputR
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -469,16 +469,16 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputR
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputR
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (c *jsiiProxy_ContainerClusterNodeConfigKubeletConfigTopologyManagerOutputR
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

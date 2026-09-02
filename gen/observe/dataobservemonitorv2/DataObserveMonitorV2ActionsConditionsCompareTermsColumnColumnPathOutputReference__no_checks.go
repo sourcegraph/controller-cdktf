@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnColumn
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnColumnPathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnColumnPathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnColumnPathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnColumnPathOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnColumn
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnColumnPathOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2ActionsConditionsCompareTermsColumnColumnPathOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataObserveMonitorV2ActionsConditionsCompareTermsColumnColumnPathOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataObserveMonitorV2ActionsConditionsCompareTermsColumnColumnPathOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

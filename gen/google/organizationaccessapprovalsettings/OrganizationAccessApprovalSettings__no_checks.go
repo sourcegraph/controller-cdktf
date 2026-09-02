@@ -56,6 +56,10 @@ func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateInterpolationForA
 	return nil
 }
 
+func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (o *jsiiProxy_OrganizationAccessApprovalSettings) validatePutEnrolledServic
 }
 
 func (o *jsiiProxy_OrganizationAccessApprovalSettings) validatePutTimeoutsParameters(value *OrganizationAccessApprovalSettingsTimeouts) error {
+	return nil
+}
+
+func (o *jsiiProxy_OrganizationAccessApprovalSettings) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_OrganizationAccessApprovalSettings) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_OrganizationAccessApprovalSettings) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OrganizationAccessApprovalSettings) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

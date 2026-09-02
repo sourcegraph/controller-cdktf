@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsIamGroupUsersList) validateGetParameters(index *float6
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIamGroupUsersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIamGroupUsersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsIamGroupUsersList) validateSetTerraformAttributeParame
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIamGroupUsersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsIamGroupUsersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsIamGroupUsersList) validateSetWrapsSetParameters(val *
 	return nil
 }
 
-func validateNewDataAwsIamGroupUsersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsIamGroupUsersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

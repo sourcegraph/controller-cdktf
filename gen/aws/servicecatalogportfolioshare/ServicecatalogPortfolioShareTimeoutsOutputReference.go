@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/servicecatalogportfolioshare/internal"
 )
 
 type ServicecatalogPortfolioShareTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type ServicecatalogPortfolioShareTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -54,7 +54,7 @@ type ServicecatalogPortfolioShareTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type ServicecatalogPortfolioShareTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetRead()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type ServicecatalogPortfolioShareTimeoutsOutputReference interface {
 
 // The jsii proxy struct for ServicecatalogPortfolioShareTimeoutsOutputReference
 type jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -212,8 +212,8 @@ func (j *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) UpdateIn
 }
 
 
-func NewServicecatalogPortfolioShareTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ServicecatalogPortfolioShareTimeoutsOutputReference {
+func NewServicecatalogPortfolioShareTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ServicecatalogPortfolioShareTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewServicecatalogPortfolioShareTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewServicecatalogPortfolioShareTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareTimeoutsOutputReference",
+		"@cdktn/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewServicecatalogPortfolioShareTimeoutsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewServicecatalogPortfolioShareTimeoutsOutputReference_Override(s ServicecatalogPortfolioShareTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewServicecatalogPortfolioShareTimeoutsOutputReference_Override(s ServicecatalogPortfolioShareTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareTimeoutsOutputReference",
+		"@cdktn/provider-aws.servicecatalogPortfolioShare.ServicecatalogPortfolioShareTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -347,7 +347,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) GetAnyMa
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -526,8 +526,8 @@ func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) GetStrin
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -539,16 +539,16 @@ func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) Interpol
 	return returns
 }
 
-func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) ResetUpd
 	)
 }
 
-func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (s *jsiiProxy_ServicecatalogPortfolioShareTimeoutsOutputReference) Resolve(
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

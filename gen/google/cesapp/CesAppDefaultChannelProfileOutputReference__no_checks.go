@@ -40,7 +40,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) validatePutWebWid
 	return nil
 }
 
-func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppDefaultChannelProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppDefaultChannelProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppDefaultChannelProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesAppDefaultChannelProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

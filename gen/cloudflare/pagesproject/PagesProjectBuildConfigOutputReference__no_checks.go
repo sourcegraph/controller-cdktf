@@ -40,11 +40,11 @@ func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectBuildConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_PagesProjectBuildConfigOutputReference) validateSetWebAnalyti
 	return nil
 }
 
-func validateNewPagesProjectBuildConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPagesProjectBuildConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

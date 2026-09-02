@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/cloudwatcheventtarget/internal"
 )
 
 type CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -48,7 +48,7 @@ type CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference interface 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetExpression()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference interface 
 
 // The jsii proxy struct for CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference
 type jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputRefere
 }
 
 
-func NewCloudwatchEventTargetEcsTargetPlacementConstraintOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference {
+func NewCloudwatchEventTargetEcsTargetPlacementConstraintOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudwatchEventTargetEcsTargetPlacementConstraintOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -203,7 +203,7 @@ func NewCloudwatchEventTargetEcsTargetPlacementConstraintOutputReference(terrafo
 	j := jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference",
+		"@cdktn/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewCloudwatchEventTargetEcsTargetPlacementConstraintOutputReference(terrafo
 	return &j
 }
 
-func NewCloudwatchEventTargetEcsTargetPlacementConstraintOutputReference_Override(c CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCloudwatchEventTargetEcsTargetPlacementConstraintOutputReference_Override(c CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference",
+		"@cdktn/provider-aws.cloudwatchEventTarget.CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputRefere
 	)
 }
 
-func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -455,8 +455,8 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -468,16 +468,16 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputRefere
 	)
 }
 
-func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (c *jsiiProxy_CloudwatchEventTargetEcsTargetPlacementConstraintOutputRefere
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

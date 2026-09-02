@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyO
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyO
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

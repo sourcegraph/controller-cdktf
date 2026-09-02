@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDnsResponsePolicyRuleLocalDataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDnsResponsePolicyRuleLocalDataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDnsResponsePolicyRuleLocalDataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

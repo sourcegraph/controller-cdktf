@@ -56,6 +56,10 @@ func (a *jsiiProxy_ApphubService) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (a *jsiiProxy_ApphubService) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApphubService) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (a *jsiiProxy_ApphubService) validatePutAttributesParameters(value *ApphubS
 }
 
 func (a *jsiiProxy_ApphubService) validatePutTimeoutsParameters(value *ApphubServiceTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApphubService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_ApphubService) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_ApphubService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ApphubService) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataprocJob) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataprocJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -116,6 +120,10 @@ func (g *jsiiProxy_GoogleDataprocJob) validatePutTimeoutsParameters(value *Googl
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataprocJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleDataprocJob_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -152,7 +160,7 @@ func (j *jsiiProxy_GoogleDataprocJob) validateSetLabelsParameters(val *map[strin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataprocJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

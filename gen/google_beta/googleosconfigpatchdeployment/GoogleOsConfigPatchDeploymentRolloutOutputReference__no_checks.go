@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOsConfigPatchDeploymentRolloutOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOsConfigPatchDeploymentRolloutOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOsConfigPatchDeploymentRolloutOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

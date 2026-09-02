@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

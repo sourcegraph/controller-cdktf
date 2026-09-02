@@ -12,7 +12,7 @@ func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsList) validateGetParameters(i
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2RulesCountCompareGroupsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_MonitorV2RulesCountCompareGroupsList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewMonitorV2RulesCountCompareGroupsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMonitorV2RulesCountCompareGroupsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsMqBrokerUserList) validateGetParameters(index *float64
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMqBrokerUserList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMqBrokerUserList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsMqBrokerUserList) validateSetTerraformAttributeParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsMqBrokerUserList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsMqBrokerUserList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsMqBrokerUserList) validateSetWrapsSetParameters(val *b
 	return nil
 }
 
-func validateNewDataAwsMqBrokerUserListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsMqBrokerUserListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

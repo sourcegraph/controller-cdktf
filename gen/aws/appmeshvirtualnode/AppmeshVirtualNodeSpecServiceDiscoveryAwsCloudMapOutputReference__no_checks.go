@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputRefere
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppmeshVirtualNodeSpecServiceDiscoveryAwsCloudMapOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

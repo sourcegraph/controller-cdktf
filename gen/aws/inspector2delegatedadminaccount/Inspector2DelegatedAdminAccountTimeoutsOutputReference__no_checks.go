@@ -40,11 +40,11 @@ func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) valid
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Inspector2DelegatedAdminAccountTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewInspector2DelegatedAdminAccountTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewInspector2DelegatedAdminAccountTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

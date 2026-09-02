@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataOktaOrgMetadata) validateOverrideLogicalIdParameters(newL
 	return nil
 }
 
+func (d *jsiiProxy_DataOktaOrgMetadata) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataOktaOrgMetadata_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -72,7 +76,7 @@ func (j *jsiiProxy_DataOktaOrgMetadata) validateSetCountParameters(val interface
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaOrgMetadata) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataOktaOrgMetadata) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

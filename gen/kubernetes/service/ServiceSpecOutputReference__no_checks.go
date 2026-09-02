@@ -40,7 +40,7 @@ func (s *jsiiProxy_ServiceSpecOutputReference) validateGetStringMapAttributePara
 	return nil
 }
 
-func (s *jsiiProxy_ServiceSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (s *jsiiProxy_ServiceSpecOutputReference) validatePutSessionAffinityConfigP
 	return nil
 }
 
-func (s *jsiiProxy_ServiceSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -136,7 +136,7 @@ func (j *jsiiProxy_ServiceSpecOutputReference) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_ServiceSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ServiceSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -144,7 +144,7 @@ func (j *jsiiProxy_ServiceSpecOutputReference) validateSetTypeParameters(val *st
 	return nil
 }
 
-func validateNewServiceSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewServiceSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (c *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CodebuildProjectFileSystemLocationsList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewCodebuildProjectFileSystemLocationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCodebuildProjectFileSystemLocationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoggingOrganizationBucketConfigIndexConfigsList) validateGetP
 	return nil
 }
 
-func (l *jsiiProxy_LoggingOrganizationBucketConfigIndexConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingOrganizationBucketConfigIndexConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoggingOrganizationBucketConfigIndexConfigsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationBucketConfigIndexConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingOrganizationBucketConfigIndexConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoggingOrganizationBucketConfigIndexConfigsList) validateSetW
 	return nil
 }
 
-func validateNewLoggingOrganizationBucketConfigIndexConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoggingOrganizationBucketConfigIndexConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

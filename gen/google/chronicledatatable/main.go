@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleDataTable.ChronicleDataTable",
+		"@cdktn/provider-google.chronicleDataTable.ChronicleDataTable",
 		reflect.TypeOf((*ChronicleDataTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putScopeInfo", GoMethod: "PutScopeInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetColumnInfo", GoMethod: "ResetColumnInfo"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionPolicy", GoMethod: "ResetDeletionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -94,19 +96,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateSource", GoGetter: "UpdateSource"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleDataTable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo",
+		"@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfo",
 		reflect.TypeOf((*ChronicleDataTableColumnInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList",
+		"@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoList",
 		reflect.TypeOf((*ChronicleDataTableColumnInfoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -123,12 +126,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleDataTableColumnInfoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference",
+		"@cdktn/provider-google.chronicleDataTable.ChronicleDataTableColumnInfoOutputReference",
 		reflect.TypeOf((*ChronicleDataTableColumnInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columnIndex", GoGetter: "ColumnIndex"},
@@ -171,20 +174,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleDataTableColumnInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleDataTable.ChronicleDataTableConfig",
+		"@cdktn/provider-google.chronicleDataTable.ChronicleDataTableConfig",
 		reflect.TypeOf((*ChronicleDataTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo",
+		"@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfo",
 		reflect.TypeOf((*ChronicleDataTableScopeInfo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference",
+		"@cdktn/provider-google.chronicleDataTable.ChronicleDataTableScopeInfoOutputReference",
 		reflect.TypeOf((*ChronicleDataTableScopeInfoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -213,16 +216,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleDataTableScopeInfoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleDataTable.ChronicleDataTableTimeouts",
+		"@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeouts",
 		reflect.TypeOf((*ChronicleDataTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference",
+		"@cdktn/provider-google.chronicleDataTable.ChronicleDataTableTimeoutsOutputReference",
 		reflect.TypeOf((*ChronicleDataTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -258,7 +261,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleDataTableTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

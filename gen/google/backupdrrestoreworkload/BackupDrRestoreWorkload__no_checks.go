@@ -56,6 +56,10 @@ func (b *jsiiProxy_BackupDrRestoreWorkload) validateInterpolationForAttributePar
 	return nil
 }
 
+func (b *jsiiProxy_BackupDrRestoreWorkload) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupDrRestoreWorkload) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (b *jsiiProxy_BackupDrRestoreWorkload) validatePutRegionDiskTargetEnvironme
 }
 
 func (b *jsiiProxy_BackupDrRestoreWorkload) validatePutTimeoutsParameters(value *BackupDrRestoreWorkloadTimeouts) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupDrRestoreWorkload) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkload) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkload) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BackupDrRestoreWorkload) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

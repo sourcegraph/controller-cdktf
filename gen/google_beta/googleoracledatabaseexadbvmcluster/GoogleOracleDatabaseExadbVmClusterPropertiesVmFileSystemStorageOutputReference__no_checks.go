@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStora
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStora
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOracleDatabaseExadbVmClusterPropertiesVmFileSystemStorageOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleclouddomainsregistration/internal"
 )
 
 type GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDsRecords(value interface{})
 	ResetDsRecords()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference interface
 
 // The jsii proxy struct for GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference
 type jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputRefer
 }
 
 
-func NewGoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference {
+func NewGoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewGoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference(terraf
 	j := jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference",
+		"@cdktn/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewGoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference(terraf
 	return &j
 }
 
-func NewGoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference_Override(g GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference_Override(g GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference",
+		"@cdktn/provider-google-beta.googleClouddomainsRegistration.GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -444,8 +444,8 @@ func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -457,16 +457,16 @@ func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputRefer
 	)
 }
 
-func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (g *jsiiProxy_GoogleClouddomainsRegistrationDnsSettingsCustomDnsOutputRefer
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/apiservice/internal"
 )
 
 type ApiServiceMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -48,16 +48,16 @@ type ApiServiceMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,16 +73,16 @@ type ApiServiceMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetGenerateName()
 	ResetLabels()
 	ResetName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type ApiServiceMetadataOutputReference interface {
 
 // The jsii proxy struct for ApiServiceMetadataOutputReference
 type jsiiProxy_ApiServiceMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApiServiceMetadataOutputReference) Annotations() *map[string]*string {
@@ -255,8 +255,8 @@ func (j *jsiiProxy_ApiServiceMetadataOutputReference) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_ApiServiceMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApiServiceMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -276,7 +276,7 @@ func (j *jsiiProxy_ApiServiceMetadataOutputReference) Uid() *string {
 }
 
 
-func NewApiServiceMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApiServiceMetadataOutputReference {
+func NewApiServiceMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ApiServiceMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApiServiceMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -285,7 +285,7 @@ func NewApiServiceMetadataOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_ApiServiceMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.apiService.ApiServiceMetadataOutputReference",
+		"@cdktn/provider-kubernetes.apiService.ApiServiceMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -293,11 +293,11 @@ func NewApiServiceMetadataOutputReference(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewApiServiceMetadataOutputReference_Override(a ApiServiceMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewApiServiceMetadataOutputReference_Override(a ApiServiceMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.apiService.ApiServiceMetadataOutputReference",
+		"@cdktn/provider-kubernetes.apiService.ApiServiceMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -391,7 +391,7 @@ func (j *jsiiProxy_ApiServiceMetadataOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_ApiServiceMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApiServiceMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,11 +431,11 @@ func (a *jsiiProxy_ApiServiceMetadataOutputReference) GetAnyMapAttribute(terrafo
 	return returns
 }
 
-func (a *jsiiProxy_ApiServiceMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApiServiceMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -559,8 +559,8 @@ func (a *jsiiProxy_ApiServiceMetadataOutputReference) GetStringMapAttribute(terr
 	return returns
 }
 
-func (a *jsiiProxy_ApiServiceMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApiServiceMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -572,16 +572,16 @@ func (a *jsiiProxy_ApiServiceMetadataOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (a *jsiiProxy_ApiServiceMetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApiServiceMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -620,8 +620,8 @@ func (a *jsiiProxy_ApiServiceMetadataOutputReference) ResetName() {
 	)
 }
 
-func (a *jsiiProxy_ApiServiceMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApiServiceMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -629,7 +629,7 @@ func (a *jsiiProxy_ApiServiceMetadataOutputReference) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

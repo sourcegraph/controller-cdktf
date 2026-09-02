@@ -40,11 +40,11 @@ func (o *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputRefer
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_OpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputRefer
 	return nil
 }
 
-func validateNewOpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpsworksCustomLayerLoadBasedAutoScalingDownscalingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDat
 	return nil
 }
 
-func validateNewGoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDatastreamStreamBackfillAllMysqlExcludedObjectsMysqlDatabasesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

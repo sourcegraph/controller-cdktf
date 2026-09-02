@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowCxAgentAdvancedSettingsLoggingSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

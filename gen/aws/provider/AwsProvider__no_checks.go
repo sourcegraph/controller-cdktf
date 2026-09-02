@@ -12,6 +12,10 @@ func (a *jsiiProxy_AwsProvider) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (a *jsiiProxy_AwsProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateAwsProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

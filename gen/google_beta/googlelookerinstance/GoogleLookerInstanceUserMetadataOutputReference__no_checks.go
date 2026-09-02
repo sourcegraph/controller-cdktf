@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleLookerInstanceUserMetadataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleLookerInstanceUserMetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleLookerInstanceUserMetadataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

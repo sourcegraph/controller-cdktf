@@ -40,11 +40,11 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMa
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMa
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMa
 	return nil
 }
 
-func validateNewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewImagebuilderContainerRecipeInstanceConfigurationBlockDeviceMappingEbsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

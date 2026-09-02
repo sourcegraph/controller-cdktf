@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleNativeDashboardChartsChartLayoutOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardChartsChartLayoutOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardChartsChartLayoutOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleNativeDashboardChartsChartLayoutOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleNativeDashboardChartsChartLayoutOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleChronicleNativeDashboardChartsChartLayoutOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleNativeDashboardChartsChartLayoutOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleNativeDashboardChartsChartLayoutOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleNativeDashboardChartsChartLayoutOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleNativeDashboardChartsChartLayoutOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

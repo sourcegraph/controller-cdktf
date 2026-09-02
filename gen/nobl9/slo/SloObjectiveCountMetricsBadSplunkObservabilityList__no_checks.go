@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsBadSplunkObservabilityList) validateG
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsBadSplunkObservabilityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsBadSplunkObservabilityList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadSplunkObservabilityList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsBadSplunkObservabilityList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsBadSplunkObservabilityList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsBadSplunkObservabilityList) validateS
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsBadSplunkObservabilityListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveCountMetricsBadSplunkObservabilityListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

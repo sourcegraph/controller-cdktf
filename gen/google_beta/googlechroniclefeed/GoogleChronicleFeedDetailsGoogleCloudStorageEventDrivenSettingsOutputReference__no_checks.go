@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettin
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettin
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsGoogleCloudStorageEventDrivenSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

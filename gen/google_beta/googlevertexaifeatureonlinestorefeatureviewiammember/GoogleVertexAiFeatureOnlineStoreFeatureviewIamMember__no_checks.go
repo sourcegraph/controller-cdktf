@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember) validat
 	return nil
 }
 
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember) validat
 }
 
 func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember) validatePutConditionParameters(value *GoogleVertexAiFeatureOnlineStoreFeatureviewIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleVertexAiFeatureOnlineStoreFeatureviewIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateInterpolation
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateMoveToIdParam
 }
 
 func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SagemakerServicecatalogPortfolioStatus) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOu
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOu
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOu
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

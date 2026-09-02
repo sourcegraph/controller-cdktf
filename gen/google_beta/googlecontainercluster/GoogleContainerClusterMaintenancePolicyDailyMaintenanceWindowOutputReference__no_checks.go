@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindow
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindow
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterMaintenancePolicyDailyMaintenanceWindowOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

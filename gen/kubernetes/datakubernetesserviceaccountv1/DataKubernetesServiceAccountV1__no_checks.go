@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataKubernetesServiceAccountV1) validatePutMetadataParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataKubernetesServiceAccountV1) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataKubernetesServiceAccountV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataKubernetesServiceAccountV1) validateSetIdParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesServiceAccountV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataKubernetesServiceAccountV1) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

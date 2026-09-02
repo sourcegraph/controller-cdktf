@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	return nil
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	return nil
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	return nil
 }
 
-func validateNewComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

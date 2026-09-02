@@ -40,7 +40,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validatePutVisibilityConfi
 	return nil
 }
 
-func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Wafv2RuleGroupRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWafv2RuleGroupRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWafv2RuleGroupRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

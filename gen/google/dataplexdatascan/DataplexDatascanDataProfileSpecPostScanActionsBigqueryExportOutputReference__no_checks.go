@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportO
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportO
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

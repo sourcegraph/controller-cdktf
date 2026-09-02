@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigquerytableiambinding/internal"
 )
 
 type BigqueryTableIamBindingConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type BigqueryTableIamBindingConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type BigqueryTableIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type BigqueryTableIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type BigqueryTableIamBindingConditionOutputReference interface {
 
 // The jsii proxy struct for BigqueryTableIamBindingConditionOutputReference
 type jsiiProxy_BigqueryTableIamBindingConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) TitleInput()
 }
 
 
-func NewBigqueryTableIamBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryTableIamBindingConditionOutputReference {
+func NewBigqueryTableIamBindingConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BigqueryTableIamBindingConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBigqueryTableIamBindingConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewBigqueryTableIamBindingConditionOutputReference(terraformResource cdktf.
 	j := jsiiProxy_BigqueryTableIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBindingConditionOutputReference",
+		"@cdktn/provider-google.bigqueryTableIamBinding.BigqueryTableIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewBigqueryTableIamBindingConditionOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewBigqueryTableIamBindingConditionOutputReference_Override(b BigqueryTableIamBindingConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBigqueryTableIamBindingConditionOutputReference_Override(b BigqueryTableIamBindingConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryTableIamBinding.BigqueryTableIamBindingConditionOutputReference",
+		"@cdktn/provider-google.bigqueryTableIamBinding.BigqueryTableIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_BigqueryTableIamBindingConditionOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableIamBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryTableIamBindingConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -489,8 +489,8 @@ func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) GetStringMap
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -502,16 +502,16 @@ func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) Interpolatio
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) ResetDescrip
 	)
 }
 
-func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (b *jsiiProxy_BigqueryTableIamBindingConditionOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

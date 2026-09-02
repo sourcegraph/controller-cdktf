@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleTargetSecureTagsList) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleTargetSecureTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyRuleTargetSecureTagsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleTargetSecureTagsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleTargetSecureTagsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleTargetSecureTagsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyRuleTargetSecureTagsList) validate
 	return nil
 }
 
-func validateNewGoogleComputeFirewallPolicyRuleTargetSecureTagsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeFirewallPolicyRuleTargetSecureTagsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

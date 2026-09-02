@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataObserveCloudInfo) validateOverrideLogicalIdParameters(new
 	return nil
 }
 
+func (d *jsiiProxy_DataObserveCloudInfo) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataObserveCloudInfo_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataObserveCloudInfo) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveCloudInfo) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataObserveCloudInfo) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

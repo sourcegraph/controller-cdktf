@@ -40,7 +40,7 @@ func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validatePu
 	return nil
 }
 
-func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SccProjectCustomModuleCustomConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSccProjectCustomModuleCustomConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSccProjectCustomModuleCustomConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

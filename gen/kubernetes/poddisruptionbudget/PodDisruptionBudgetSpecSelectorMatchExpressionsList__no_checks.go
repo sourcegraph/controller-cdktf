@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorMatchExpressionsList) validate
 	return nil
 }
 
-func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodDisruptionBudgetSpecSelectorMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodDisruptionBudgetSpecSelectorMatchExpressionsList) validate
 	return nil
 }
 
-func (j *jsiiProxy_PodDisruptionBudgetSpecSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodDisruptionBudgetSpecSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodDisruptionBudgetSpecSelectorMatchExpressionsList) validate
 	return nil
 }
 
-func validateNewPodDisruptionBudgetSpecSelectorMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodDisruptionBudgetSpecSelectorMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

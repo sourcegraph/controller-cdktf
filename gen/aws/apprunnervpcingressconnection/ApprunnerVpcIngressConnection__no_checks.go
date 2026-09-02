@@ -56,6 +56,10 @@ func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateInterpolationForAttrib
 	return nil
 }
 
+func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateOverrideLogicalIdParam
 }
 
 func (a *jsiiProxy_ApprunnerVpcIngressConnection) validatePutIngressVpcConfigurationParameters(value *ApprunnerVpcIngressConnectionIngressVpcConfiguration) error {
+	return nil
+}
+
+func (a *jsiiProxy_ApprunnerVpcIngressConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ApprunnerVpcIngressConnection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

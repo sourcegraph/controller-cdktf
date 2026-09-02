@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containercluster/internal"
 )
 
 type ContainerClusterFleetOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,7 +35,7 @@ type ContainerClusterFleetOutputReference interface {
 	MembershipType() *string
 	SetMembershipType(val *string)
 	MembershipTypeInput() *string
-	PreRegistered() cdktf.IResolvable
+	PreRegistered() cdktn.IResolvable
 	Project() *string
 	SetProject(val *string)
 	ProjectInput() *string
@@ -44,15 +44,15 @@ type ContainerClusterFleetOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,14 +68,14 @@ type ContainerClusterFleetOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMembershipType()
 	ResetProject()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ContainerClusterFleetOutputReference interface {
 
 // The jsii proxy struct for ContainerClusterFleetOutputReference
 type jsiiProxy_ContainerClusterFleetOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerClusterFleetOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ContainerClusterFleetOutputReference) MembershipTypeInput() *
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterFleetOutputReference) PreRegistered() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ContainerClusterFleetOutputReference) PreRegistered() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"preRegistered",
@@ -228,8 +228,8 @@ func (j *jsiiProxy_ContainerClusterFleetOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterFleetOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerClusterFleetOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -239,7 +239,7 @@ func (j *jsiiProxy_ContainerClusterFleetOutputReference) TerraformResource() cdk
 }
 
 
-func NewContainerClusterFleetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterFleetOutputReference {
+func NewContainerClusterFleetOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerClusterFleetOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerClusterFleetOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -248,7 +248,7 @@ func NewContainerClusterFleetOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_ContainerClusterFleetOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterFleetOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -256,11 +256,11 @@ func NewContainerClusterFleetOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewContainerClusterFleetOutputReference_Override(c ContainerClusterFleetOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerClusterFleetOutputReference_Override(c ContainerClusterFleetOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterFleetOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterFleetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -332,7 +332,7 @@ func (j *jsiiProxy_ContainerClusterFleetOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterFleetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterFleetOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -372,11 +372,11 @@ func (c *jsiiProxy_ContainerClusterFleetOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterFleetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerClusterFleetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -500,8 +500,8 @@ func (c *jsiiProxy_ContainerClusterFleetOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterFleetOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerClusterFleetOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -513,16 +513,16 @@ func (c *jsiiProxy_ContainerClusterFleetOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterFleetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerClusterFleetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -545,8 +545,8 @@ func (c *jsiiProxy_ContainerClusterFleetOutputReference) ResetProject() {
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterFleetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerClusterFleetOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -554,7 +554,7 @@ func (c *jsiiProxy_ContainerClusterFleetOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

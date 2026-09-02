@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApigeeDeveloperAppTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeDeveloperAppTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApigeeDeveloperAppTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeDeveloperAppTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApigeeDeveloperAppTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleApigeeDeveloperAppTimeoutsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeDeveloperAppTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApigeeDeveloperAppTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleApigeeDeveloperAppTimeoutsOutputReference) validateSetU
 	return nil
 }
 
-func validateNewGoogleApigeeDeveloperAppTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApigeeDeveloperAppTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

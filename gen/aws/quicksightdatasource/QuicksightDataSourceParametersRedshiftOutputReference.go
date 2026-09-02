@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/quicksightdatasource/internal"
 )
 
 type QuicksightDataSourceParametersRedshiftOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ClusterId() *string
 	SetClusterId(val *string)
 	ClusterIdInput() *string
@@ -46,15 +46,15 @@ type QuicksightDataSourceParametersRedshiftOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type QuicksightDataSourceParametersRedshiftOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetClusterId()
 	ResetHost()
 	ResetPort()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type QuicksightDataSourceParametersRedshiftOutputReference interface {
 
 // The jsii proxy struct for QuicksightDataSourceParametersRedshiftOutputReference
 type jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) ClusterId() *string {
@@ -231,8 +231,8 @@ func (j *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) Terraf
 }
 
 
-func NewQuicksightDataSourceParametersRedshiftOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersRedshiftOutputReference {
+func NewQuicksightDataSourceParametersRedshiftOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) QuicksightDataSourceParametersRedshiftOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewQuicksightDataSourceParametersRedshiftOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewQuicksightDataSourceParametersRedshiftOutputReference(terraformResource 
 	j := jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshiftOutputReference",
+		"@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshiftOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewQuicksightDataSourceParametersRedshiftOutputReference(terraformResource 
 	return &j
 }
 
-func NewQuicksightDataSourceParametersRedshiftOutputReference_Override(q QuicksightDataSourceParametersRedshiftOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewQuicksightDataSourceParametersRedshiftOutputReference_Override(q QuicksightDataSourceParametersRedshiftOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshiftOutputReference",
+		"@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourceParametersRedshiftOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		q,
 	)
@@ -357,7 +357,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) GetAny
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := q.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -525,8 +525,8 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) GetStr
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -538,16 +538,16 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) Interp
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := q.validateInterpolationForAttributeParameters(property); err != nil {
+func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) ResetP
 	)
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := q.validateResolveParameters(_context); err != nil {
+func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (q *jsiiProxy_QuicksightDataSourceParametersRedshiftOutputReference) Resolv
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

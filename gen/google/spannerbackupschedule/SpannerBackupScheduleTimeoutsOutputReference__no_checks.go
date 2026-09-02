@@ -40,11 +40,11 @@ func (s *jsiiProxy_SpannerBackupScheduleTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SpannerBackupScheduleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpannerBackupScheduleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpannerBackupScheduleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerBackupScheduleTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_SpannerBackupScheduleTimeoutsOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_SpannerBackupScheduleTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SpannerBackupScheduleTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_SpannerBackupScheduleTimeoutsOutputReference) validateSetUpda
 	return nil
 }
 
-func validateNewSpannerBackupScheduleTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSpannerBackupScheduleTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

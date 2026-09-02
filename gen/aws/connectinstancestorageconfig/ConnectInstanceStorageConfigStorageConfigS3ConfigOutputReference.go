@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/connectinstancestorageconfig/internal"
 )
 
 type ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BucketName() *string
 	SetBucketName(val *string)
 	BucketNameInput() *string
@@ -42,15 +42,15 @@ type ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,14 +66,14 @@ type ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEncryptionConfig(value *ConnectInstanceStorageConfigStorageConfigS3ConfigEncryptionConfig)
 	ResetEncryptionConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference interface 
 
 // The jsii proxy struct for ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference
 type jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) BucketName() *string {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefere
 }
 
 
-func NewConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference {
+func NewConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewConnectInstanceStorageConfigStorageConfigS3ConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference(terrafo
 	j := jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference",
+		"@cdktn/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference(terrafo
 	return &j
 }
 
-func NewConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference_Override(c ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference_Override(c ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference",
+		"@cdktn/provider-aws.connectInstanceStorageConfig.ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -350,11 +350,11 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -478,8 +478,8 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -491,16 +491,16 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefere
 	return returns
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefere
 	)
 }
 
-func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (c *jsiiProxy_ConnectInstanceStorageConfigStorageConfigS3ConfigOutputRefere
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

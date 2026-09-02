@@ -56,6 +56,10 @@ func (g *jsiiProxy_GluePartition) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (g *jsiiProxy_GluePartition) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GluePartition) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GluePartition) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (g *jsiiProxy_GluePartition) validatePutStorageDescriptorParameters(value *GluePartitionStorageDescriptor) error {
+	return nil
+}
+
+func (g *jsiiProxy_GluePartition) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GluePartition) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GluePartition) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GluePartition) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

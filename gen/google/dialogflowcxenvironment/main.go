@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment",
+		"@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironment",
 		reflect.TypeOf((*DialogflowCxEnvironment)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -53,6 +54,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVersionConfigs", GoMethod: "PutVersionConfigs"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -72,23 +74,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "versionConfigs", GoGetter: "VersionConfigs"},
 			_jsii_.MemberProperty{JsiiProperty: "versionConfigsInput", GoGetter: "VersionConfigsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxEnvironment{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentConfig",
+		"@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentConfig",
 		reflect.TypeOf((*DialogflowCxEnvironmentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeouts",
+		"@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeouts",
 		reflect.TypeOf((*DialogflowCxEnvironmentTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeoutsOutputReference",
+		"@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentTimeoutsOutputReference",
 		reflect.TypeOf((*DialogflowCxEnvironmentTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -124,16 +127,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxEnvironmentTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigs",
+		"@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigs",
 		reflect.TypeOf((*DialogflowCxEnvironmentVersionConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsList",
+		"@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsList",
 		reflect.TypeOf((*DialogflowCxEnvironmentVersionConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -150,12 +153,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxEnvironmentVersionConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsOutputReference",
+		"@cdktn/provider-google.dialogflowCxEnvironment.DialogflowCxEnvironmentVersionConfigsOutputReference",
 		reflect.TypeOf((*DialogflowCxEnvironmentVersionConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -184,7 +187,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DialogflowCxEnvironmentVersionConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

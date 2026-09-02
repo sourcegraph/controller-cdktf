@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPoli
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPoli
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPoli
 	return nil
 }
 
-func validateNewGoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeRegionBackendServiceCdnPolicyNegativeCachingPolicyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

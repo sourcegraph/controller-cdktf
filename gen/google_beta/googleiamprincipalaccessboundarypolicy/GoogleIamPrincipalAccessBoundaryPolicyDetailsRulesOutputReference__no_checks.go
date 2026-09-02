@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicyDetailsRulesOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicyDetailsRulesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIamPrincipalAccessBoundaryPolicyDetailsRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleIamPrincipalAccessBoundaryPolicyDetailsRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleIamPrincipalAccessBoundaryPolicyDetailsRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

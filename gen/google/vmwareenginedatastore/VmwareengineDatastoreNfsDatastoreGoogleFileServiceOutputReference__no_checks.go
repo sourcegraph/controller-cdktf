@@ -40,11 +40,11 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputRefer
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVmwareengineDatastoreNfsDatastoreGoogleFileServiceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

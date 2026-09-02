@@ -40,11 +40,11 @@ func (c *jsiiProxy_CsiDriverV1SpecOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (c *jsiiProxy_CsiDriverV1SpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CsiDriverV1SpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CsiDriverV1SpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CsiDriverV1SpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CsiDriverV1SpecOutputReference) validateSetVolumeLifecycleMod
 	return nil
 }
 
-func validateNewCsiDriverV1SpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCsiDriverV1SpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (s *jsiiProxy_SloIndicatorOutputReference) validateGetStringMapAttributePar
 	return nil
 }
 
-func (s *jsiiProxy_SloIndicatorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloIndicatorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SloIndicatorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloIndicatorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_SloIndicatorOutputReference) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_SloIndicatorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloIndicatorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSloIndicatorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSloIndicatorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

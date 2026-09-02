@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsEc2Host) validatePutTimeoutsParameters(value *DataAwsE
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsEc2Host) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsEc2Host_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataAwsEc2Host) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2Host) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsEc2Host) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

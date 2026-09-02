@@ -40,11 +40,11 @@ func (f *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) v
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FilestoreInstancePerformanceConfigFixedIopsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFilestoreInstancePerformanceConfigFixedIopsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFilestoreInstancePerformanceConfigFixedIopsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (c *jsiiProxy_ClouddeployTargetExecutionConfigsList) validateGetParameters(
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployTargetExecutionConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployTargetExecutionConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployTargetExecutionConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClouddeployTargetExecutionConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ClouddeployTargetExecutionConfigsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewClouddeployTargetExecutionConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewClouddeployTargetExecutionConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

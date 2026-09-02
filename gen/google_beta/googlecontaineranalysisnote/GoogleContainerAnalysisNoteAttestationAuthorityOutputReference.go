@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontaineranalysisnote/internal"
 )
 
 type GoogleContainerAnalysisNoteAttestationAuthorityOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type GoogleContainerAnalysisNoteAttestationAuthorityOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,13 +60,13 @@ type GoogleContainerAnalysisNoteAttestationAuthorityOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutHint(value *GoogleContainerAnalysisNoteAttestationAuthorityHint)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type GoogleContainerAnalysisNoteAttestationAuthorityOutputReference interface {
 
 // The jsii proxy struct for GoogleContainerAnalysisNoteAttestationAuthorityOutputReference
 type jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReferenc
 }
 
 
-func NewGoogleContainerAnalysisNoteAttestationAuthorityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerAnalysisNoteAttestationAuthorityOutputReference {
+func NewGoogleContainerAnalysisNoteAttestationAuthorityOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleContainerAnalysisNoteAttestationAuthorityOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleContainerAnalysisNoteAttestationAuthorityOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewGoogleContainerAnalysisNoteAttestationAuthorityOutputReference(terraform
 	j := jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthorityOutputReference",
+		"@cdktn/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewGoogleContainerAnalysisNoteAttestationAuthorityOutputReference(terraform
 	return &j
 }
 
-func NewGoogleContainerAnalysisNoteAttestationAuthorityOutputReference_Override(g GoogleContainerAnalysisNoteAttestationAuthorityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleContainerAnalysisNoteAttestationAuthorityOutputReference_Override(g GoogleContainerAnalysisNoteAttestationAuthorityOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthorityOutputReference",
+		"@cdktn/provider-google-beta.googleContainerAnalysisNote.GoogleContainerAnalysisNoteAttestationAuthorityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,11 +281,11 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -409,8 +409,8 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -422,16 +422,16 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReferenc
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -449,8 +449,8 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReferenc
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (g *jsiiProxy_GoogleContainerAnalysisNoteAttestationAuthorityOutputReferenc
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

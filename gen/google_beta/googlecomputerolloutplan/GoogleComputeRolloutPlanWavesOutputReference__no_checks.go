@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesOutputReference) validateGetStri
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesOutputReference) validatePutVali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleComputeRolloutPlanWavesOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRolloutPlanWavesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRolloutPlanWavesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeRolloutPlanWavesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeRolloutPlanWavesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

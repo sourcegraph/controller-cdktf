@@ -56,6 +56,10 @@ func (s *jsiiProxy_SccMuteConfig) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (s *jsiiProxy_SccMuteConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccMuteConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SccMuteConfig) validateOverrideLogicalIdParameters(newLogical
 }
 
 func (s *jsiiProxy_SccMuteConfig) validatePutTimeoutsParameters(value *SccMuteConfigTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccMuteConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_SccMuteConfig) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SccMuteConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SccMuteConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

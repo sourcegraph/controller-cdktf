@@ -40,7 +40,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) validateGetStringMa
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) validatePutLambdaCo
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncResolverSyncConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppsyncResolverSyncConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppsyncResolverSyncConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppsyncResolverSyncConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

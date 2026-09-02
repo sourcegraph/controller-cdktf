@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsAzureBlobStoreV2SettingsAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

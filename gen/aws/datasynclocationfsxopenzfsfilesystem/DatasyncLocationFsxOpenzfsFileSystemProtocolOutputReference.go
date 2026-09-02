@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/datasynclocationfsxopenzfsfilesystem/internal"
 )
 
 type DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,13 +60,13 @@ type DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutNfs(value *DatasyncLocationFsxOpenzfsFileSystemProtocolNfs)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference interface {
 
 // The jsii proxy struct for DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference
 type jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) 
 }
 
 
-func NewDatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference {
+func NewDatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatasyncLocationFsxOpenzfsFileSystemProtocolOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewDatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference(terraformRes
 	j := jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference",
+		"@cdktn/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewDatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference(terraformRes
 	return &j
 }
 
-func NewDatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference_Override(d DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference_Override(d DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference",
+		"@cdktn/provider-aws.datasyncLocationFsxOpenzfsFileSystem.DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,11 +281,11 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -409,8 +409,8 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -422,16 +422,16 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -449,8 +449,8 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) 
 	)
 }
 
-func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystemProtocolOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

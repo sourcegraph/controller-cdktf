@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vmwareenginecluster/internal"
 )
 
 type VmwareengineClusterDatastoreMountConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccessMode() *string
 	SetAccessMode(val *string)
 	AccessModeInput() *string
@@ -50,15 +50,15 @@ type VmwareengineClusterDatastoreMountConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -74,16 +74,16 @@ type VmwareengineClusterDatastoreMountConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDatastoreNetwork(value *VmwareengineClusterDatastoreMountConfigDatastoreNetwork)
 	ResetAccessMode()
 	ResetIgnoreColocation()
 	ResetNfsVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type VmwareengineClusterDatastoreMountConfigOutputReference interface {
 
 // The jsii proxy struct for VmwareengineClusterDatastoreMountConfigOutputReference
 type jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) AccessMode() *string {
@@ -276,8 +276,8 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -287,7 +287,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Terra
 }
 
 
-func NewVmwareengineClusterDatastoreMountConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) VmwareengineClusterDatastoreMountConfigOutputReference {
+func NewVmwareengineClusterDatastoreMountConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) VmwareengineClusterDatastoreMountConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVmwareengineClusterDatastoreMountConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -296,7 +296,7 @@ func NewVmwareengineClusterDatastoreMountConfigOutputReference(terraformResource
 	j := jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterDatastoreMountConfigOutputReference",
+		"@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterDatastoreMountConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -304,11 +304,11 @@ func NewVmwareengineClusterDatastoreMountConfigOutputReference(terraformResource
 	return &j
 }
 
-func NewVmwareengineClusterDatastoreMountConfigOutputReference_Override(v VmwareengineClusterDatastoreMountConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewVmwareengineClusterDatastoreMountConfigOutputReference_Override(v VmwareengineClusterDatastoreMountConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vmwareengineCluster.VmwareengineClusterDatastoreMountConfigOutputReference",
+		"@cdktn/provider-google.vmwareengineCluster.VmwareengineClusterDatastoreMountConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		v,
 	)
@@ -402,7 +402,7 @@ func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -442,11 +442,11 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetAn
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -570,8 +570,8 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) GetSt
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -583,16 +583,16 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Inter
 	return returns
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -634,8 +634,8 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Reset
 	)
 }
 
-func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -643,7 +643,7 @@ func (v *jsiiProxy_VmwareengineClusterDatastoreMountConfigOutputReference) Resol
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

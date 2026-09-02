@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationCon
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleDataformRepositoryGitRemoteSettingsSshAuthenticationCon
 	return nil
 }
 
-func validateNewGoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataformRepositoryGitRemoteSettingsSshAuthenticationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerNodePoolQueuedProvisioningOutputReference) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolQueuedProvisioningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolQueuedProvisioningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolQueuedProvisioningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolQueuedProvisioningOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ContainerNodePoolQueuedProvisioningOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolQueuedProvisioningOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerNodePoolQueuedProvisioningOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerNodePoolQueuedProvisioningOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerNodePoolQueuedProvisioningOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

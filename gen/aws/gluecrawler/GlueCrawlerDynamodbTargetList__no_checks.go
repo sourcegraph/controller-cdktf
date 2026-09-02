@@ -12,7 +12,7 @@ func (g *jsiiProxy_GlueCrawlerDynamodbTargetList) validateGetParameters(index *f
 	return nil
 }
 
-func (g *jsiiProxy_GlueCrawlerDynamodbTargetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCrawlerDynamodbTargetList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_GlueCrawlerDynamodbTargetList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlueCrawlerDynamodbTargetList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GlueCrawlerDynamodbTargetList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewGlueCrawlerDynamodbTargetListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGlueCrawlerDynamodbTargetListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

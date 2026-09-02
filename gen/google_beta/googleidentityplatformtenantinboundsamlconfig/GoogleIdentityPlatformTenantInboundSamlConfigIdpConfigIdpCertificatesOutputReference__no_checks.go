@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCert
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCert
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCert
 	return nil
 }
 
-func validateNewGoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityNodeAffinityList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityNodeAffinityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecAffinityNodeAffinityList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecAffinityNodeAffinityList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecAffinityNodeAffinityList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodV1SpecAffinityNodeAffinityList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecAffinityNodeAffinityList) validateSetW
 	return nil
 }
 
-func validateNewDataKubernetesPodV1SpecAffinityNodeAffinityListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesPodV1SpecAffinityNodeAffinityListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

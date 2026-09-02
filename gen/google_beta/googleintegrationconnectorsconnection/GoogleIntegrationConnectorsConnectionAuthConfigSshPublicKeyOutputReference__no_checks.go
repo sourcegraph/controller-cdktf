@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOu
 	return nil
 }
 
-func validateNewGoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIntegrationConnectorsConnectionAuthConfigSshPublicKeyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

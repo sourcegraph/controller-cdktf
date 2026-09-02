@@ -56,6 +56,10 @@ func (m *jsiiProxy_Macie2InvitationAccepter) validateInterpolationForAttributePa
 	return nil
 }
 
+func (m *jsiiProxy_Macie2InvitationAccepter) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_Macie2InvitationAccepter) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (m *jsiiProxy_Macie2InvitationAccepter) validateOverrideLogicalIdParameters
 }
 
 func (m *jsiiProxy_Macie2InvitationAccepter) validatePutTimeoutsParameters(value *Macie2InvitationAccepterTimeouts) error {
+	return nil
+}
+
+func (m *jsiiProxy_Macie2InvitationAccepter) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_Macie2InvitationAccepter) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_Macie2InvitationAccepter) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Macie2InvitationAccepter) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutpu
 	return nil
 }
 
-func validateNewDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

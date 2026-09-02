@@ -56,6 +56,10 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateMoveToIdParameters(id *
 }
 
 func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomHostnameFallbackOrigin) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CustomHostnameFallbackOrigin) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

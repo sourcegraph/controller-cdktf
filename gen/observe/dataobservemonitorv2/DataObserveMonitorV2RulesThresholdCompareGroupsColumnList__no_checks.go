@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsColumnList) va
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsColumnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsColumnList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsColumnList) va
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsColumnList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsColumnList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsColumnList) va
 	return nil
 }
 
-func validateNewDataObserveMonitorV2RulesThresholdCompareGroupsColumnListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataObserveMonitorV2RulesThresholdCompareGroupsColumnListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

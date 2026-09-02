@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkServicesGrpcRouteRulesMatchesMethodOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

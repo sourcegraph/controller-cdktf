@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleRule.ChronicleRule",
+		"@cdktn/provider-google.chronicleRule.ChronicleRule",
 		reflect.TypeOf((*ChronicleRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "referenceLists", GoGetter: "ReferenceLists"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeletionPolicy", GoMethod: "ResetDeletionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEtag", GoMethod: "ResetEtag"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -96,19 +98,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnostics",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleCompilationDiagnostics",
 		reflect.TypeOf((*ChronicleRuleCompilationDiagnostics)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsList",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsList",
 		reflect.TypeOf((*ChronicleRuleCompilationDiagnosticsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -124,12 +127,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleRuleCompilationDiagnosticsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsOutputReference",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsOutputReference",
 		reflect.TypeOf((*ChronicleRuleCompilationDiagnosticsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,16 +163,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleRuleCompilationDiagnosticsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsPosition",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsPosition",
 		reflect.TypeOf((*ChronicleRuleCompilationDiagnosticsPosition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsPositionList",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsPositionList",
 		reflect.TypeOf((*ChronicleRuleCompilationDiagnosticsPositionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -185,12 +188,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsPositionOutputReference",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleCompilationDiagnosticsPositionOutputReference",
 		reflect.TypeOf((*ChronicleRuleCompilationDiagnosticsPositionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -221,20 +224,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleRuleCompilationDiagnosticsPositionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleConfig",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleConfig",
 		reflect.TypeOf((*ChronicleRuleConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleSeverity",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleSeverity",
 		reflect.TypeOf((*ChronicleRuleSeverity)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleSeverityList",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleSeverityList",
 		reflect.TypeOf((*ChronicleRuleSeverityList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -250,12 +253,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleRuleSeverityList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleSeverityOutputReference",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleSeverityOutputReference",
 		reflect.TypeOf((*ChronicleRuleSeverityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -283,16 +286,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleRuleSeverityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleTimeouts",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleTimeouts",
 		reflect.TypeOf((*ChronicleRuleTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.chronicleRule.ChronicleRuleTimeoutsOutputReference",
+		"@cdktn/provider-google.chronicleRule.ChronicleRuleTimeoutsOutputReference",
 		reflect.TypeOf((*ChronicleRuleTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -328,7 +331,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ChronicleRuleTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

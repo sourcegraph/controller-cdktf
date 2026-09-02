@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/accessgroup/internal"
 )
 
 type AccessGroupExcludeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AnyValidServiceToken() interface{}
 	SetAnyValidServiceToken(val interface{})
 	AnyValidServiceTokenInput() interface{}
@@ -88,15 +88,15 @@ type AccessGroupExcludeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -112,9 +112,9 @@ type AccessGroupExcludeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAzure(value interface{})
 	PutExternalEvaluation(value *AccessGroupExcludeExternalEvaluation)
 	PutGithub(value interface{})
@@ -143,7 +143,7 @@ type AccessGroupExcludeOutputReference interface {
 	ResetServiceToken()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -153,7 +153,7 @@ type AccessGroupExcludeOutputReference interface {
 
 // The jsii proxy struct for AccessGroupExcludeOutputReference
 type jsiiProxy_AccessGroupExcludeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AccessGroupExcludeOutputReference) AnyValidServiceToken() interface{} {
@@ -616,8 +616,8 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AccessGroupExcludeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -627,7 +627,7 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference) TerraformResource() cdktf.
 }
 
 
-func NewAccessGroupExcludeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessGroupExcludeOutputReference {
+func NewAccessGroupExcludeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessGroupExcludeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAccessGroupExcludeOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -636,7 +636,7 @@ func NewAccessGroupExcludeOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_AccessGroupExcludeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -644,11 +644,11 @@ func NewAccessGroupExcludeOutputReference(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewAccessGroupExcludeOutputReference_Override(a AccessGroupExcludeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAccessGroupExcludeOutputReference_Override(a AccessGroupExcludeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference",
+		"@cdktn/provider-cloudflare.accessGroup.AccessGroupExcludeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -852,7 +852,7 @@ func (j *jsiiProxy_AccessGroupExcludeOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_AccessGroupExcludeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessGroupExcludeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -892,11 +892,11 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) GetAnyMapAttribute(terrafo
 	return returns
 }
 
-func (a *jsiiProxy_AccessGroupExcludeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccessGroupExcludeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1020,8 +1020,8 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) GetStringMapAttribute(terr
 	return returns
 }
 
-func (a *jsiiProxy_AccessGroupExcludeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AccessGroupExcludeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -1033,16 +1033,16 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (a *jsiiProxy_AccessGroupExcludeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AccessGroupExcludeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1275,8 +1275,8 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) ResetServiceToken() {
 	)
 }
 
-func (a *jsiiProxy_AccessGroupExcludeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AccessGroupExcludeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1284,7 +1284,7 @@ func (a *jsiiProxy_AccessGroupExcludeOutputReference) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

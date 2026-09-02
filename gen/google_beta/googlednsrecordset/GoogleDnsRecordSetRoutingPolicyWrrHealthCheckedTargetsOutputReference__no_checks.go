@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDnsRecordSetRoutingPolicyWrrHealthCheckedTargetsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStop
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStop
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeInstanceFromMachineImageSchedulingOnInstanceStopActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

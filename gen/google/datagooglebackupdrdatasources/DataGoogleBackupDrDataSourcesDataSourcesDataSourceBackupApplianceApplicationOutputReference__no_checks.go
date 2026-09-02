@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesDataSourceBackupAppli
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesDataSourceBackupApplianceApplicationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesDataSourceBackupApplianceApplicationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesDataSourceBackupApplianceApplicationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesDataSourceBackupApplianceApplicationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesDataSourceBackupAppli
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesDataSourceBackupApplianceApplicationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleBackupDrDataSourcesDataSourcesDataSourceBackupApplianceApplicationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleBackupDrDataSourcesDataSourcesDataSourceBackupApplianceApplicationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleBackupDrDataSourcesDataSourcesDataSourceBackupApplianceApplicationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

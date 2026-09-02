@@ -40,11 +40,11 @@ func (g *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GeminiRepositoryGroupRepositoriesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGeminiRepositoryGroupRepositoriesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGeminiRepositoryGroupRepositoriesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

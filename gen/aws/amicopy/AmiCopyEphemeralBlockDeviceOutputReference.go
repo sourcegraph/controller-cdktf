@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/amicopy/internal"
 )
 
 type AmiCopyEphemeralBlockDeviceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,16 +35,16 @@ type AmiCopyEphemeralBlockDeviceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VirtualName() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type AmiCopyEphemeralBlockDeviceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type AmiCopyEphemeralBlockDeviceOutputReference interface {
 
 // The jsii proxy struct for AmiCopyEphemeralBlockDeviceOutputReference
 type jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) ComplexObjectIndex() interface{} {
@@ -148,8 +148,8 @@ func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) VirtualName() *st
 }
 
 
-func NewAmiCopyEphemeralBlockDeviceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AmiCopyEphemeralBlockDeviceOutputReference {
+func NewAmiCopyEphemeralBlockDeviceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AmiCopyEphemeralBlockDeviceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAmiCopyEphemeralBlockDeviceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewAmiCopyEphemeralBlockDeviceOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference",
+		"@cdktn/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewAmiCopyEphemeralBlockDeviceOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewAmiCopyEphemeralBlockDeviceOutputReference_Override(a AmiCopyEphemeralBlockDeviceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAmiCopyEphemeralBlockDeviceOutputReference_Override(a AmiCopyEphemeralBlockDeviceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference",
+		"@cdktn/provider-aws.amiCopy.AmiCopyEphemeralBlockDeviceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -408,8 +408,8 @@ func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -421,24 +421,24 @@ func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (a *jsiiProxy_AmiCopyEphemeralBlockDeviceOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

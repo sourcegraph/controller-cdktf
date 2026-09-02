@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleRedisInstanceMaintenancePolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleRedisInstanceMaintenancePolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

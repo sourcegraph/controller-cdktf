@@ -56,6 +56,10 @@ func (b *jsiiProxy_BackupPlan) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (b *jsiiProxy_BackupPlan) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BackupPlan) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (b *jsiiProxy_BackupPlan) validatePutAdvancedBackupSettingParameters(value 
 }
 
 func (b *jsiiProxy_BackupPlan) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func (b *jsiiProxy_BackupPlan) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_BackupPlan) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlan) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BackupPlan) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

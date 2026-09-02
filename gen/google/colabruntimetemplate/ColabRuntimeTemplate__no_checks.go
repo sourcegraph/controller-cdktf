@@ -56,6 +56,10 @@ func (c *jsiiProxy_ColabRuntimeTemplate) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_ColabRuntimeTemplate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ColabRuntimeTemplate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (c *jsiiProxy_ColabRuntimeTemplate) validatePutTimeoutsParameters(value *Co
 	return nil
 }
 
+func (c *jsiiProxy_ColabRuntimeTemplate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateColabRuntimeTemplate_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -148,7 +156,7 @@ func (j *jsiiProxy_ColabRuntimeTemplate) validateSetLabelsParameters(val *map[st
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ColabRuntimeTemplate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

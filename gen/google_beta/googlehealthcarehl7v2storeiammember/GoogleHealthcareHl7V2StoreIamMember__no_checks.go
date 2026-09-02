@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamMember) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamMember) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamMember) validatePutConditionParameters(value *GoogleHealthcareHl7V2StoreIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleHealthcareHl7V2StoreIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamMember) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleHealthcareHl7V2StoreIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

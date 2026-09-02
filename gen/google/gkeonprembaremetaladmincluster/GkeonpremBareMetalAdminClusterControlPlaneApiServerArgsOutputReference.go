@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/gkeonprembaremetaladmincluster/internal"
 )
 
 type GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Argument() *string
 	SetArgument(val *string)
 	ArgumentInput() *string
@@ -37,9 +37,9 @@ type GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -48,7 +48,7 @@ type GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference inte
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference inte
 
 // The jsii proxy struct for GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference
 type jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) Argument() *string {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutput
 	return returns
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutput
 }
 
 
-func NewGkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference {
+func NewGkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewGkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference(t
 	j := jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.gkeonpremBareMetalAdminCluster.GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference",
+		"@cdktn/provider-google.gkeonpremBareMetalAdminCluster.GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewGkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference(t
 	return &j
 }
 
-func NewGkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference_Override(g GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference_Override(g GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.gkeonpremBareMetalAdminCluster.GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference",
+		"@cdktn/provider-google.gkeonpremBareMetalAdminCluster.GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutput
 	)
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutput
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -454,8 +454,8 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutput
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -467,24 +467,24 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutput
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (g *jsiiProxy_GkeonpremBareMetalAdminClusterControlPlaneApiServerArgsOutput
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

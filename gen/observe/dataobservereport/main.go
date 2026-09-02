@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReport",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReport",
 		reflect.TypeOf((*DataObserveReport)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -57,6 +57,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSchedule", GoMethod: "PutSchedule"},
 			_jsii_.MemberMethod{JsiiMethod: "putUpdatedBy", GoMethod: "PutUpdatedBy"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCreatedBy", GoMethod: "ResetCreatedBy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDashboard", GoMethod: "ResetDashboard"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEmailBccRecipients", GoMethod: "ResetEmailBccRecipients"},
@@ -78,23 +79,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updatedAt", GoGetter: "UpdatedAt"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedBy", GoGetter: "UpdatedBy"},
 			_jsii_.MemberProperty{JsiiProperty: "updatedByInput", GoGetter: "UpdatedByInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveReport{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportConfig",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportConfig",
 		reflect.TypeOf((*DataObserveReportConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportCreatedBy",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportCreatedBy",
 		reflect.TypeOf((*DataObserveReportCreatedBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportCreatedByList",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportCreatedByList",
 		reflect.TypeOf((*DataObserveReportCreatedByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -111,12 +113,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveReportCreatedByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportCreatedByOutputReference",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportCreatedByOutputReference",
 		reflect.TypeOf((*DataObserveReportCreatedByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -145,16 +147,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveReportCreatedByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportDashboard",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportDashboard",
 		reflect.TypeOf((*DataObserveReportDashboard)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportDashboardList",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportDashboardList",
 		reflect.TypeOf((*DataObserveReportDashboardList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -171,12 +173,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveReportDashboardList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportDashboardOutputReference",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportDashboardOutputReference",
 		reflect.TypeOf((*DataObserveReportDashboardOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -210,16 +212,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveReportDashboardOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportDashboardParameters",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportDashboardParameters",
 		reflect.TypeOf((*DataObserveReportDashboardParameters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportDashboardParametersList",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportDashboardParametersList",
 		reflect.TypeOf((*DataObserveReportDashboardParametersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -236,12 +238,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveReportDashboardParametersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportDashboardParametersOutputReference",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportDashboardParametersOutputReference",
 		reflect.TypeOf((*DataObserveReportDashboardParametersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -270,16 +272,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveReportDashboardParametersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportSchedule",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportSchedule",
 		reflect.TypeOf((*DataObserveReportSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportScheduleList",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportScheduleList",
 		reflect.TypeOf((*DataObserveReportScheduleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -296,12 +298,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveReportScheduleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportScheduleOutputReference",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportScheduleOutputReference",
 		reflect.TypeOf((*DataObserveReportScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -335,16 +337,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveReportScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportUpdatedBy",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportUpdatedBy",
 		reflect.TypeOf((*DataObserveReportUpdatedBy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportUpdatedByList",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportUpdatedByList",
 		reflect.TypeOf((*DataObserveReportUpdatedByList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -361,12 +363,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveReportUpdatedByList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveReport.DataObserveReportUpdatedByOutputReference",
+		"@cdktn/provider-observe.dataObserveReport.DataObserveReportUpdatedByOutputReference",
 		reflect.TypeOf((*DataObserveReportUpdatedByOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -395,7 +397,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveReportUpdatedByOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

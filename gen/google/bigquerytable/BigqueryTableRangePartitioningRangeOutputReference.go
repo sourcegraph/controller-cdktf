@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigquerytable/internal"
 )
 
 type BigqueryTableRangePartitioningRangeOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type BigqueryTableRangePartitioningRangeOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type BigqueryTableRangePartitioningRangeOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type BigqueryTableRangePartitioningRangeOutputReference interface {
 
 // The jsii proxy struct for BigqueryTableRangePartitioningRangeOutputReference
 type jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) ComplexObjectIndex() interface{} {
@@ -205,8 +205,8 @@ func (j *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) Terraform
 }
 
 
-func NewBigqueryTableRangePartitioningRangeOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryTableRangePartitioningRangeOutputReference {
+func NewBigqueryTableRangePartitioningRangeOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BigqueryTableRangePartitioningRangeOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBigqueryTableRangePartitioningRangeOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewBigqueryTableRangePartitioningRangeOutputReference(terraformResource cdk
 	j := jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryTable.BigqueryTableRangePartitioningRangeOutputReference",
+		"@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewBigqueryTableRangePartitioningRangeOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewBigqueryTableRangePartitioningRangeOutputReference_Override(b BigqueryTableRangePartitioningRangeOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBigqueryTableRangePartitioningRangeOutputReference_Override(b BigqueryTableRangePartitioningRangeOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryTable.BigqueryTableRangePartitioningRangeOutputReference",
+		"@cdktn/provider-google.bigqueryTable.BigqueryTableRangePartitioningRangeOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -320,7 +320,7 @@ func (j *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) GetAnyMap
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -488,8 +488,8 @@ func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) GetString
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -501,24 +501,24 @@ func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) Interpola
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (b *jsiiProxy_BigqueryTableRangePartitioningRangeOutputReference) Resolve(_
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

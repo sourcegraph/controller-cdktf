@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/opsworkscustomlayer/internal"
 )
 
 type OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BatchCount() *float64
 	SetBatchCount(val *float64)
 	BatchCountInput() *float64
@@ -64,9 +64,9 @@ type OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeZone() *string
 	SetTimeZone(val *string)
 	TimeZoneInput() *string
@@ -75,7 +75,7 @@ type OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference interfa
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -91,9 +91,9 @@ type OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBatchCount()
 	ResetBatchSize()
 	ResetBufferDuration()
@@ -105,7 +105,7 @@ type OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference interfa
 	ResetTimeZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -115,7 +115,7 @@ type OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference interfa
 
 // The jsii proxy struct for OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference
 type jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference) BatchCount() *float64 {
@@ -378,8 +378,8 @@ func (j *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -409,7 +409,7 @@ func (j *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputRef
 }
 
 
-func NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference {
+func NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -418,7 +418,7 @@ func NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference(terr
 	j := jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference",
+		"@cdktn/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -426,11 +426,11 @@ func NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference(terr
 	return &j
 }
 
-func NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference_Override(o OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewOpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference_Override(o OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference",
+		"@cdktn/provider-aws.opsworksCustomLayer.OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		o,
 	)
@@ -590,7 +590,7 @@ func (j *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputRef
 	)
 }
 
-func (j *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -641,11 +641,11 @@ func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputRef
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -769,8 +769,8 @@ func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputRef
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -782,16 +782,16 @@ func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputRef
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -870,8 +870,8 @@ func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputRef
 	)
 }
 
-func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -879,7 +879,7 @@ func (o *jsiiProxy_OpsworksCustomLayerCloudwatchConfigurationLogStreamsOutputRef
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespac
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespac
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespac
 	return nil
 }
 
-func validateNewGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGkeBackupRestorePlanRestoreConfigSelectedApplicationsNamespacedNamesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (l *jsiiProxy_LightsailStaticIp) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (l *jsiiProxy_LightsailStaticIp) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LightsailStaticIp) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (l *jsiiProxy_LightsailStaticIp) validateMoveToIdParameters(id *string) err
 }
 
 func (l *jsiiProxy_LightsailStaticIp) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LightsailStaticIp) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_LightsailStaticIp) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_LightsailStaticIp) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LightsailStaticIp) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

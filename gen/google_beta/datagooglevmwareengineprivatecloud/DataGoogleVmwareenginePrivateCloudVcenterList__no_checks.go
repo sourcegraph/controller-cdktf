@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudVcenterList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudVcenterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudVcenterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudVcenterList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudVcenterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudVcenterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudVcenterList) validateSetWra
 	return nil
 }
 
-func validateNewDataGoogleVmwareenginePrivateCloudVcenterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleVmwareenginePrivateCloudVcenterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

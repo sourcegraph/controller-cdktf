@@ -56,6 +56,10 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2ConfigurationSet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_Sesv2ConfigurationSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -92,6 +96,10 @@ func (s *jsiiProxy_Sesv2ConfigurationSet) validatePutTrackingOptionsParameters(v
 	return nil
 }
 
+func (s *jsiiProxy_Sesv2ConfigurationSet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateSesv2ConfigurationSet_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -124,7 +132,7 @@ func (j *jsiiProxy_Sesv2ConfigurationSet) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Sesv2ConfigurationSet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

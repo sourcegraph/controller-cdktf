@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateOverrideLogicalIdParame
 }
 
 func (c *jsiiProxy_ComputePublicDelegatedPrefix) validatePutTimeoutsParameters(value *ComputePublicDelegatedPrefixTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputePublicDelegatedPrefix) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetIsLiveMigrationParam
 	return nil
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputePublicDelegatedPrefix) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

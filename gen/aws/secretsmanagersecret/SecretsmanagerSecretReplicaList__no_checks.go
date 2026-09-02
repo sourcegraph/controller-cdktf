@@ -12,7 +12,7 @@ func (s *jsiiProxy_SecretsmanagerSecretReplicaList) validateGetParameters(index 
 	return nil
 }
 
-func (s *jsiiProxy_SecretsmanagerSecretReplicaList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecretsmanagerSecretReplicaList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SecretsmanagerSecretReplicaList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_SecretsmanagerSecretReplicaList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SecretsmanagerSecretReplicaList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SecretsmanagerSecretReplicaList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewSecretsmanagerSecretReplicaListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSecretsmanagerSecretReplicaListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

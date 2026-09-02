@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAgentRemoteDialogflowAgentOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CesAgentRemoteDialogflowAgentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAgentRemoteDialogflowAgentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAgentRemoteDialogflowAgentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAgentRemoteDialogflowAgentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_CesAgentRemoteDialogflowAgentOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_CesAgentRemoteDialogflowAgentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAgentRemoteDialogflowAgentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAgentRemoteDialogflowAgentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesAgentRemoteDialogflowAgentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

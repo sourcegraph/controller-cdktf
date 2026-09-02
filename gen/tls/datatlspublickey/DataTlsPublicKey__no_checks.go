@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataTlsPublicKey) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (d *jsiiProxy_DataTlsPublicKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataTlsPublicKey_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -72,7 +76,7 @@ func (j *jsiiProxy_DataTlsPublicKey) validateSetCountParameters(val interface{})
 	return nil
 }
 
-func (j *jsiiProxy_DataTlsPublicKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataTlsPublicKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

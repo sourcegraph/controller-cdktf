@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestore
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestore
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestore
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGkeBackupRestorePlanRestoreConfigClusterResourceRestoreScopeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

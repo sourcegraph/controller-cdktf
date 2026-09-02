@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsLis
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsLis
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsLis
 	return nil
 }
 
-func validateNewNetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkPolicySpecEgressToNamespaceSelectorMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -112,11 +112,11 @@ func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromTemplateBootDiskOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeInstanceFromTemplateBootDiskOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeInstanceFromTemplateBootDiskOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

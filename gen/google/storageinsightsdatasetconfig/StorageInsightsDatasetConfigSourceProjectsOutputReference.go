@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/storageinsightsdatasetconfig/internal"
 )
 
 type StorageInsightsDatasetConfigSourceProjectsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type StorageInsightsDatasetConfigSourceProjectsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type StorageInsightsDatasetConfigSourceProjectsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetProjectNumbers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type StorageInsightsDatasetConfigSourceProjectsOutputReference interface {
 
 // The jsii proxy struct for StorageInsightsDatasetConfigSourceProjectsOutputReference
 type jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) Te
 }
 
 
-func NewStorageInsightsDatasetConfigSourceProjectsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigSourceProjectsOutputReference {
+func NewStorageInsightsDatasetConfigSourceProjectsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) StorageInsightsDatasetConfigSourceProjectsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStorageInsightsDatasetConfigSourceProjectsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewStorageInsightsDatasetConfigSourceProjectsOutputReference(terraformResou
 	j := jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjectsOutputReference",
+		"@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewStorageInsightsDatasetConfigSourceProjectsOutputReference(terraformResou
 	return &j
 }
 
-func NewStorageInsightsDatasetConfigSourceProjectsOutputReference_Override(s StorageInsightsDatasetConfigSourceProjectsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewStorageInsightsDatasetConfigSourceProjectsOutputReference_Override(s StorageInsightsDatasetConfigSourceProjectsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjectsOutputReference",
+		"@cdktn/provider-google.storageInsightsDatasetConfig.StorageInsightsDatasetConfigSourceProjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) Ge
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -421,8 +421,8 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) Ge
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -434,16 +434,16 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) In
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) Re
 	)
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigSourceProjectsOutputReference) Re
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

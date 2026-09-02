@@ -40,11 +40,11 @@ func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatch
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatch
 	return nil
 }
 
-func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatch
 	return nil
 }
 
-func validateNewValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewValidatingWebhookConfigurationV1WebhookNamespaceSelectorMatchExpressionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

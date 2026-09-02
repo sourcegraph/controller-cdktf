@@ -56,6 +56,10 @@ func (d *jsiiProxy_DnsManagedZoneIamMember) validateInterpolationForAttributePar
 	return nil
 }
 
+func (d *jsiiProxy_DnsManagedZoneIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DnsManagedZoneIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DnsManagedZoneIamMember) validateOverrideLogicalIdParameters(
 }
 
 func (d *jsiiProxy_DnsManagedZoneIamMember) validatePutConditionParameters(value *DnsManagedZoneIamMemberCondition) error {
+	return nil
+}
+
+func (d *jsiiProxy_DnsManagedZoneIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_DnsManagedZoneIamMember) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZoneIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DnsManagedZoneIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

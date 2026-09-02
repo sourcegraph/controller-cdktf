@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.transferServer.TransferServer",
+		"@cdktn/provider-aws.transferServer.TransferServer",
 		reflect.TypeOf((*TransferServer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -61,6 +61,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingRole", GoGetter: "LoggingRole"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingRoleInput", GoGetter: "LoggingRoleInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -77,6 +78,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEndpointDetails", GoMethod: "PutEndpointDetails"},
 			_jsii_.MemberMethod{JsiiMethod: "putWorkflowDetails", GoMethod: "PutWorkflowDetails"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCertificate", GoMethod: "ResetCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDirectoryId", GoMethod: "ResetDirectoryId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDomain", GoMethod: "ResetDomain"},
@@ -115,25 +117,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "url", GoGetter: "Url"},
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowDetails", GoGetter: "WorkflowDetails"},
 			_jsii_.MemberProperty{JsiiProperty: "workflowDetailsInput", GoGetter: "WorkflowDetailsInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_TransferServer{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.transferServer.TransferServerConfig",
+		"@cdktn/provider-aws.transferServer.TransferServerConfig",
 		reflect.TypeOf((*TransferServerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.transferServer.TransferServerEndpointDetails",
+		"@cdktn/provider-aws.transferServer.TransferServerEndpointDetails",
 		reflect.TypeOf((*TransferServerEndpointDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.transferServer.TransferServerEndpointDetailsOutputReference",
+		"@cdktn/provider-aws.transferServer.TransferServerEndpointDetailsOutputReference",
 		reflect.TypeOf((*TransferServerEndpointDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addressAllocationIds", GoGetter: "AddressAllocationIds"},
@@ -175,20 +178,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TransferServerEndpointDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.transferServer.TransferServerWorkflowDetails",
+		"@cdktn/provider-aws.transferServer.TransferServerWorkflowDetails",
 		reflect.TypeOf((*TransferServerWorkflowDetails)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnUpload",
+		"@cdktn/provider-aws.transferServer.TransferServerWorkflowDetailsOnUpload",
 		reflect.TypeOf((*TransferServerWorkflowDetailsOnUpload)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOnUploadOutputReference",
+		"@cdktn/provider-aws.transferServer.TransferServerWorkflowDetailsOnUploadOutputReference",
 		reflect.TypeOf((*TransferServerWorkflowDetailsOnUploadOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -219,12 +222,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TransferServerWorkflowDetailsOnUploadOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.transferServer.TransferServerWorkflowDetailsOutputReference",
+		"@cdktn/provider-aws.transferServer.TransferServerWorkflowDetailsOutputReference",
 		reflect.TypeOf((*TransferServerWorkflowDetailsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -255,7 +258,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TransferServerWorkflowDetailsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsP
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsParamBindingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsParamBindingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsP
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsParamBindingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsParamBindingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsP
 	return nil
 }
 
-func validateNewWorkflowExpressionsOperationsFilterConditionGroupsConditionsParamBindingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkflowExpressionsOperationsFilterConditionGroupsConditionsParamBindingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/datakubernetespersistentvolumeclaim/internal"
 )
 
 type DataKubernetesPersistentVolumeClaimMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -51,16 +51,16 @@ type DataKubernetesPersistentVolumeClaimMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type DataKubernetesPersistentVolumeClaimMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetGenerateName()
 	ResetLabels()
@@ -86,7 +86,7 @@ type DataKubernetesPersistentVolumeClaimMetadataOutputReference interface {
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type DataKubernetesPersistentVolumeClaimMetadataOutputReference interface {
 
 // The jsii proxy struct for DataKubernetesPersistentVolumeClaimMetadataOutputReference
 type jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) Annotations() *map[string]*string {
@@ -279,8 +279,8 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -300,7 +300,7 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) U
 }
 
 
-func NewDataKubernetesPersistentVolumeClaimMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataKubernetesPersistentVolumeClaimMetadataOutputReference {
+func NewDataKubernetesPersistentVolumeClaimMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataKubernetesPersistentVolumeClaimMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataKubernetesPersistentVolumeClaimMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -309,7 +309,7 @@ func NewDataKubernetesPersistentVolumeClaimMetadataOutputReference(terraformReso
 	j := jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimMetadataOutputReference",
+		"@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -317,11 +317,11 @@ func NewDataKubernetesPersistentVolumeClaimMetadataOutputReference(terraformReso
 	return &j
 }
 
-func NewDataKubernetesPersistentVolumeClaimMetadataOutputReference_Override(d DataKubernetesPersistentVolumeClaimMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataKubernetesPersistentVolumeClaimMetadataOutputReference_Override(d DataKubernetesPersistentVolumeClaimMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimMetadataOutputReference",
+		"@cdktn/provider-kubernetes.dataKubernetesPersistentVolumeClaim.DataKubernetesPersistentVolumeClaimMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -426,7 +426,7 @@ func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,11 +466,11 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -594,8 +594,8 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -607,16 +607,16 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -663,8 +663,8 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) R
 	)
 }
 
-func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -672,7 +672,7 @@ func (d *jsiiProxy_DataKubernetesPersistentVolumeClaimMetadataOutputReference) R
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

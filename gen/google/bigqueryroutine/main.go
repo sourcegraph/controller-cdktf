@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutine",
+		"@cdktn/provider-google.bigqueryRoutine.BigqueryRoutine",
 		reflect.TypeOf((*BigqueryRoutine)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -54,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "languageInput", GoGetter: "LanguageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lastModifiedTime", GoGetter: "LastModifiedTime"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -68,6 +69,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSparkOptions", GoMethod: "PutSparkOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteFunctionOptions", GoGetter: "RemoteFunctionOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "remoteFunctionOptionsInput", GoGetter: "RemoteFunctionOptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetArguments", GoMethod: "ResetArguments"},
@@ -108,19 +110,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_BigqueryRoutine{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineArguments",
+		"@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArguments",
 		reflect.TypeOf((*BigqueryRoutineArguments)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsList",
+		"@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsList",
 		reflect.TypeOf((*BigqueryRoutineArgumentsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -137,12 +140,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigqueryRoutineArgumentsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference",
+		"@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineArgumentsOutputReference",
 		reflect.TypeOf((*BigqueryRoutineArgumentsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "argumentKind", GoGetter: "ArgumentKind"},
@@ -181,20 +184,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigqueryRoutineArgumentsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineConfig",
+		"@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineConfig",
 		reflect.TypeOf((*BigqueryRoutineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineRemoteFunctionOptions",
+		"@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineRemoteFunctionOptions",
 		reflect.TypeOf((*BigqueryRoutineRemoteFunctionOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineRemoteFunctionOptionsOutputReference",
+		"@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineRemoteFunctionOptionsOutputReference",
 		reflect.TypeOf((*BigqueryRoutineRemoteFunctionOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -233,16 +236,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigqueryRoutineRemoteFunctionOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineSparkOptions",
+		"@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineSparkOptions",
 		reflect.TypeOf((*BigqueryRoutineSparkOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineSparkOptionsOutputReference",
+		"@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineSparkOptionsOutputReference",
 		reflect.TypeOf((*BigqueryRoutineSparkOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "archiveUris", GoGetter: "ArchiveUris"},
@@ -299,16 +302,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigqueryRoutineSparkOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineTimeouts",
+		"@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineTimeouts",
 		reflect.TypeOf((*BigqueryRoutineTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.bigqueryRoutine.BigqueryRoutineTimeoutsOutputReference",
+		"@cdktn/provider-google.bigqueryRoutine.BigqueryRoutineTimeoutsOutputReference",
 		reflect.TypeOf((*BigqueryRoutineTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -344,7 +347,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BigqueryRoutineTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

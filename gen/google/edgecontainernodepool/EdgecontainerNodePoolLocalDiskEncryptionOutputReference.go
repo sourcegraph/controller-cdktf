@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/edgecontainernodepool/internal"
 )
 
 type EdgecontainerNodePoolLocalDiskEncryptionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,15 +39,15 @@ type EdgecontainerNodePoolLocalDiskEncryptionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,13 +63,13 @@ type EdgecontainerNodePoolLocalDiskEncryptionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKmsKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type EdgecontainerNodePoolLocalDiskEncryptionOutputReference interface {
 
 // The jsii proxy struct for EdgecontainerNodePoolLocalDiskEncryptionOutputReference
 type jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) Terr
 }
 
 
-func NewEdgecontainerNodePoolLocalDiskEncryptionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EdgecontainerNodePoolLocalDiskEncryptionOutputReference {
+func NewEdgecontainerNodePoolLocalDiskEncryptionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EdgecontainerNodePoolLocalDiskEncryptionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEdgecontainerNodePoolLocalDiskEncryptionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewEdgecontainerNodePoolLocalDiskEncryptionOutputReference(terraformResourc
 	j := jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePoolLocalDiskEncryptionOutputReference",
+		"@cdktn/provider-google.edgecontainerNodePool.EdgecontainerNodePoolLocalDiskEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewEdgecontainerNodePoolLocalDiskEncryptionOutputReference(terraformResourc
 	return &j
 }
 
-func NewEdgecontainerNodePoolLocalDiskEncryptionOutputReference_Override(e EdgecontainerNodePoolLocalDiskEncryptionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEdgecontainerNodePoolLocalDiskEncryptionOutputReference_Override(e EdgecontainerNodePoolLocalDiskEncryptionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.edgecontainerNodePool.EdgecontainerNodePoolLocalDiskEncryptionOutputReference",
+		"@cdktn/provider-google.edgecontainerNodePool.EdgecontainerNodePoolLocalDiskEncryptionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -315,11 +315,11 @@ func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) GetA
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -443,8 +443,8 @@ func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) GetS
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -456,16 +456,16 @@ func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) Inte
 	return returns
 }
 
-func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -480,8 +480,8 @@ func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) Rese
 	)
 }
 
-func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -489,7 +489,7 @@ func (e *jsiiProxy_EdgecontainerNodePoolLocalDiskEncryptionOutputReference) Reso
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

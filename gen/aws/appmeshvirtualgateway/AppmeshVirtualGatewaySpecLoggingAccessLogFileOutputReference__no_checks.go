@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppmeshVirtualGatewaySpecLoggingAccessLogFileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

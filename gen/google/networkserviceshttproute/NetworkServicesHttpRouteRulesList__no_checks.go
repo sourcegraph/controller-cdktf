@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesList) validateGetParameters(inde
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewNetworkServicesHttpRouteRulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkServicesHttpRouteRulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

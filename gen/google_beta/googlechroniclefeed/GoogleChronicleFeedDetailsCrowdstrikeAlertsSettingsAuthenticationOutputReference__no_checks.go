@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthentica
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthentica
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthentica
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsCrowdstrikeAlertsSettingsAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

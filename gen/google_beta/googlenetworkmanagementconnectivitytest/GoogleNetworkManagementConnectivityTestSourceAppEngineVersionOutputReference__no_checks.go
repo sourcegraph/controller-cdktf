@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersion
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersion
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleNetworkManagementConnectivityTestSourceAppEngineVersion
 	return nil
 }
 
-func validateNewGoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkManagementConnectivityTestSourceAppEngineVersionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

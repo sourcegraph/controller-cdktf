@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsEfsAccessPointRootDirectoryOutputReference) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEfsAccessPointRootDirectoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsEfsAccessPointRootDirectoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEfsAccessPointRootDirectoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEfsAccessPointRootDirectoryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsEfsAccessPointRootDirectoryOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEfsAccessPointRootDirectoryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEfsAccessPointRootDirectoryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsEfsAccessPointRootDirectoryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsEfsAccessPointRootDirectoryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validatePutWrrParam
 	return nil
 }
 
-func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDnsRecordSetRoutingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDnsRecordSetRoutingPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (s *jsiiProxy_SccProjectCustomModule) validateInterpolationForAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SccProjectCustomModule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SccProjectCustomModule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (s *jsiiProxy_SccProjectCustomModule) validatePutCustomConfigParameters(val
 }
 
 func (s *jsiiProxy_SccProjectCustomModule) validatePutTimeoutsParameters(value *SccProjectCustomModuleTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_SccProjectCustomModule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_SccProjectCustomModule) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_SccProjectCustomModule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SccProjectCustomModule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

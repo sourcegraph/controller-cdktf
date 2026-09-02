@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlenetworkservicesedgecacheorigin/internal"
 )
 
 type GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,9 +36,9 @@ type GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UrlRewrite() GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewriteOutputReference
 	UrlRewriteInput() *GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite
 	// Experimental.
@@ -46,7 +46,7 @@ type GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference int
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutHeaderAction(value *GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionHeaderAction)
 	PutUrlRewrite(value *GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionUrlRewrite)
 	ResetHeaderAction()
 	ResetUrlRewrite()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference int
 
 // The jsii proxy struct for GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference
 type jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) ComplexObjectIndex() interface{} {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutpu
 	return returns
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutpu
 }
 
 
-func NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference {
+func NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference(
 	j := jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference",
+		"@cdktn/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference(
 	return &j
 }
 
-func NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference_Override(g GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference_Override(g GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference",
+		"@cdktn/provider-google-beta.googleNetworkServicesEdgeCacheOrigin.GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutpu
 	)
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,8 +434,8 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -447,16 +447,16 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutpu
 	return returns
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutpu
 	)
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginOriginOverrideActionOutpu
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

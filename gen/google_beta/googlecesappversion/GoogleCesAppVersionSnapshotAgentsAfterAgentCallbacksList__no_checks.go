@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotAgentsAfterAgentCallbacksList) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAgentsAfterAgentCallbacksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAgentsAfterAgentCallbacksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAgentsAfterAgentCallbacksList) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotAgentsAfterAgentCallbacksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotAgentsAfterAgentCallbacksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAgentsAfterAgentCallbacksList) val
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotAgentsAfterAgentCallbacksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotAgentsAfterAgentCallbacksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

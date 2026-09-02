@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleVertexAiReasoningEngineIamPolicy) validateOverrideL
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleVertexAiReasoningEngineIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleVertexAiReasoningEngineIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleVertexAiReasoningEngineIamPolicy) validateSetIdPara
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVertexAiReasoningEngineIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleVertexAiReasoningEngineIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

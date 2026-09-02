@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/slo/internal"
 )
 
 type SloTimeWindowOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Calendar() SloTimeWindowCalendarList
 	CalendarInput() interface{}
 	// the index of the complex object in a list.
@@ -37,15 +37,15 @@ type SloTimeWindowOutputReference interface {
 	IsRolling() interface{}
 	SetIsRolling(val interface{})
 	IsRollingInput() interface{}
-	Period() cdktf.StringMap
+	Period() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Unit() *string
 	SetUnit(val *string)
 	UnitInput() *string
@@ -54,7 +54,7 @@ type SloTimeWindowOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type SloTimeWindowOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutCalendar(value interface{})
 	ResetCalendar()
 	ResetIsRolling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type SloTimeWindowOutputReference interface {
 
 // The jsii proxy struct for SloTimeWindowOutputReference
 type jsiiProxy_SloTimeWindowOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SloTimeWindowOutputReference) Calendar() SloTimeWindowCalendarList {
@@ -201,8 +201,8 @@ func (j *jsiiProxy_SloTimeWindowOutputReference) IsRollingInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference) Period() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_SloTimeWindowOutputReference) Period() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"period",
@@ -221,8 +221,8 @@ func (j *jsiiProxy_SloTimeWindowOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SloTimeWindowOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -252,7 +252,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference) UnitInput() *string {
 }
 
 
-func NewSloTimeWindowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SloTimeWindowOutputReference {
+func NewSloTimeWindowOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SloTimeWindowOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSloTimeWindowOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -261,7 +261,7 @@ func NewSloTimeWindowOutputReference(terraformResource cdktf.IInterpolatingParen
 	j := jsiiProxy_SloTimeWindowOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloTimeWindowOutputReference",
+		"@cdktn/provider-nobl9.slo.SloTimeWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -269,11 +269,11 @@ func NewSloTimeWindowOutputReference(terraformResource cdktf.IInterpolatingParen
 	return &j
 }
 
-func NewSloTimeWindowOutputReference_Override(s SloTimeWindowOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSloTimeWindowOutputReference_Override(s SloTimeWindowOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.slo.SloTimeWindowOutputReference",
+		"@cdktn/provider-nobl9.slo.SloTimeWindowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -345,7 +345,7 @@ func (j *jsiiProxy_SloTimeWindowOutputReference)SetTerraformAttribute(val *strin
 	)
 }
 
-func (j *jsiiProxy_SloTimeWindowOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SloTimeWindowOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -396,11 +396,11 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) GetAnyMapAttribute(terraformAtt
 	return returns
 }
 
-func (s *jsiiProxy_SloTimeWindowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SloTimeWindowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -524,8 +524,8 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) GetStringMapAttribute(terraform
 	return returns
 }
 
-func (s *jsiiProxy_SloTimeWindowOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SloTimeWindowOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -537,16 +537,16 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) InterpolationAsList() cdktf.IRe
 	return returns
 }
 
-func (s *jsiiProxy_SloTimeWindowOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SloTimeWindowOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -580,8 +580,8 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) ResetIsRolling() {
 	)
 }
 
-func (s *jsiiProxy_SloTimeWindowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SloTimeWindowOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -589,7 +589,7 @@ func (s *jsiiProxy_SloTimeWindowOutputReference) Resolve(_context cdktf.IResolve
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

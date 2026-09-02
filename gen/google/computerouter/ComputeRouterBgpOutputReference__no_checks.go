@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterBgpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRouterBgpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ComputeRouterBgpOutputReference) validatePutAdvertisedIpRange
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterBgpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterBgpOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_ComputeRouterBgpOutputReference) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterBgpOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRouterBgpOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeRouterBgpOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRouterBgpOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

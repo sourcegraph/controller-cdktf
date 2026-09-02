@@ -56,6 +56,10 @@ func (v *jsiiProxy_VmwareengineExternalAddress) validateInterpolationForAttribut
 	return nil
 }
 
+func (v *jsiiProxy_VmwareengineExternalAddress) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VmwareengineExternalAddress) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (v *jsiiProxy_VmwareengineExternalAddress) validateOverrideLogicalIdParamet
 }
 
 func (v *jsiiProxy_VmwareengineExternalAddress) validatePutTimeoutsParameters(value *VmwareengineExternalAddressTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VmwareengineExternalAddress) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_VmwareengineExternalAddress) validateSetInternalIpParameters(
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineExternalAddress) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VmwareengineExternalAddress) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

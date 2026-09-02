@@ -40,11 +40,11 @@ func (s *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateGetS
 	return nil
 }
 
-func (s *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ServiceStatusLoadBalancerIngressOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewServiceStatusLoadBalancerIngressOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewServiceStatusLoadBalancerIngressOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

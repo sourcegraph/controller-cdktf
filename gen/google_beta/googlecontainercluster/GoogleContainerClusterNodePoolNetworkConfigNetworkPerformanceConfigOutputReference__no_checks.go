@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigNetworkPerformance
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigNetworkPerformance
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolNetworkConfigNetworkPerformance
 	return nil
 }
 
-func validateNewGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterNodePoolNetworkConfigNetworkPerformanceConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

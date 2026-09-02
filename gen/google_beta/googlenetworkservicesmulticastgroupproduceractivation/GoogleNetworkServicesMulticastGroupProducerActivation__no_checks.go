@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivation) valida
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivation) valida
 }
 
 func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivation) validatePutTimeoutsParameters(value *GoogleNetworkServicesMulticastGroupProducerActivationTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivation) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetworkServicesMulticastGroupProducerActivation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetappActiveDirectory) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetappActiveDirectory) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleNetappActiveDirectory) validateOverrideLogicalIdParamet
 }
 
 func (g *jsiiProxy_GoogleNetappActiveDirectory) validatePutTimeoutsParameters(value *GoogleNetappActiveDirectoryTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetappActiveDirectory) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetLdapSigningParameters
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetappActiveDirectory) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

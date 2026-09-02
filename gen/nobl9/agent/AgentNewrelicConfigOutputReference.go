@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/agent/internal"
 )
 
 type AgentNewrelicConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AccountId() *string
 	SetAccountId(val *string)
 	AccountIdInput() *string
@@ -37,15 +37,15 @@ type AgentNewrelicConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type AgentNewrelicConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type AgentNewrelicConfigOutputReference interface {
 
 // The jsii proxy struct for AgentNewrelicConfigOutputReference
 type jsiiProxy_AgentNewrelicConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AgentNewrelicConfigOutputReference) AccountId() *string {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_AgentNewrelicConfigOutputReference) TerraformAttribute() *str
 	return returns
 }
 
-func (j *jsiiProxy_AgentNewrelicConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AgentNewrelicConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_AgentNewrelicConfigOutputReference) TerraformResource() cdktf
 }
 
 
-func NewAgentNewrelicConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AgentNewrelicConfigOutputReference {
+func NewAgentNewrelicConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AgentNewrelicConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAgentNewrelicConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewAgentNewrelicConfigOutputReference(terraformResource cdktf.IInterpolatin
 	j := jsiiProxy_AgentNewrelicConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.agent.AgentNewrelicConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentNewrelicConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewAgentNewrelicConfigOutputReference(terraformResource cdktf.IInterpolatin
 	return &j
 }
 
-func NewAgentNewrelicConfigOutputReference_Override(a AgentNewrelicConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAgentNewrelicConfigOutputReference_Override(a AgentNewrelicConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.agent.AgentNewrelicConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentNewrelicConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_AgentNewrelicConfigOutputReference)SetTerraformAttribute(val 
 	)
 }
 
-func (j *jsiiProxy_AgentNewrelicConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AgentNewrelicConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (a *jsiiProxy_AgentNewrelicConfigOutputReference) GetAnyMapAttribute(terraf
 	return returns
 }
 
-func (a *jsiiProxy_AgentNewrelicConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AgentNewrelicConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -420,8 +420,8 @@ func (a *jsiiProxy_AgentNewrelicConfigOutputReference) GetStringMapAttribute(ter
 	return returns
 }
 
-func (a *jsiiProxy_AgentNewrelicConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AgentNewrelicConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -433,24 +433,24 @@ func (a *jsiiProxy_AgentNewrelicConfigOutputReference) InterpolationAsList() cdk
 	return returns
 }
 
-func (a *jsiiProxy_AgentNewrelicConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AgentNewrelicConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AgentNewrelicConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AgentNewrelicConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (a *jsiiProxy_AgentNewrelicConfigOutputReference) Resolve(_context cdktf.IR
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

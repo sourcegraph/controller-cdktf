@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRegionSecurityPolicyRulesRateLimitOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

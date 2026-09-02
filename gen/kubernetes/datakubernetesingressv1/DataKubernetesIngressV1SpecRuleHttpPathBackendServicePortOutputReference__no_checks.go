@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutp
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutp
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataKubernetesIngressV1SpecRuleHttpPathBackendServicePortOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

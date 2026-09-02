@@ -40,7 +40,7 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutpu
 	return nil
 }
 
-func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutpu
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSsoadminPermissionsBoundaryAttachmentPermissionsBoundaryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

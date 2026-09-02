@@ -56,6 +56,10 @@ func (a *jsiiProxy_AdminRoleTargets) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (a *jsiiProxy_AdminRoleTargets) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AdminRoleTargets) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (a *jsiiProxy_AdminRoleTargets) validateMoveToIdParameters(id *string) erro
 }
 
 func (a *jsiiProxy_AdminRoleTargets) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AdminRoleTargets) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_AdminRoleTargets) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_AdminRoleTargets) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AdminRoleTargets) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

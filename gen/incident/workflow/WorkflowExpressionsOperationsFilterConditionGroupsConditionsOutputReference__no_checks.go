@@ -40,7 +40,7 @@ func (w *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsO
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (w *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsO
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsO
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkflowExpressionsOperationsFilterConditionGroupsConditionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkflowExpressionsOperationsFilterConditionGroupsConditionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWorkflowExpressionsOperationsFilterConditionGroupsConditionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

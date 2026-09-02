@@ -40,11 +40,11 @@ func (t *jsiiProxy_TeamOrganizationAccessOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (t *jsiiProxy_TeamOrganizationAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TeamOrganizationAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamOrganizationAccessOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -104,11 +104,11 @@ func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TeamOrganizationAccessOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTeamOrganizationAccessOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTeamOrganizationAccessOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

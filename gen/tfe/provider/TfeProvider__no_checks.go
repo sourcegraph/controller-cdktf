@@ -12,6 +12,10 @@ func (t *jsiiProxy_TfeProvider) validateOverrideLogicalIdParameters(newLogicalId
 	return nil
 }
 
+func (t *jsiiProxy_TfeProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateTfeProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

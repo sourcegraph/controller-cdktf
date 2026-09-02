@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecolabruntimetemplate/internal"
 )
 
 type GoogleColabRuntimeTemplateEncryptionSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type GoogleColabRuntimeTemplateEncryptionSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type GoogleColabRuntimeTemplateEncryptionSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKmsKeyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type GoogleColabRuntimeTemplateEncryptionSpecOutputReference interface {
 
 // The jsii proxy struct for GoogleColabRuntimeTemplateEncryptionSpecOutputReference
 type jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) Terr
 }
 
 
-func NewGoogleColabRuntimeTemplateEncryptionSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleColabRuntimeTemplateEncryptionSpecOutputReference {
+func NewGoogleColabRuntimeTemplateEncryptionSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleColabRuntimeTemplateEncryptionSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleColabRuntimeTemplateEncryptionSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewGoogleColabRuntimeTemplateEncryptionSpecOutputReference(terraformResourc
 	j := jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateEncryptionSpecOutputReference",
+		"@cdktn/provider-google-beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateEncryptionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewGoogleColabRuntimeTemplateEncryptionSpecOutputReference(terraformResourc
 	return &j
 }
 
-func NewGoogleColabRuntimeTemplateEncryptionSpecOutputReference_Override(g GoogleColabRuntimeTemplateEncryptionSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleColabRuntimeTemplateEncryptionSpecOutputReference_Override(g GoogleColabRuntimeTemplateEncryptionSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateEncryptionSpecOutputReference",
+		"@cdktn/provider-google-beta.googleColabRuntimeTemplate.GoogleColabRuntimeTemplateEncryptionSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) GetA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -421,8 +421,8 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) GetS
 	return returns
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,16 +434,16 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) Inte
 	return returns
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) Rese
 	)
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) Reso
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

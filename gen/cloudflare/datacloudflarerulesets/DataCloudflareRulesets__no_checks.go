@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataCloudflareRulesets) validatePutFilterParameters(value *Da
 	return nil
 }
 
+func (d *jsiiProxy_DataCloudflareRulesets) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataCloudflareRulesets_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataCloudflareRulesets) validateSetIncludeRulesParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataCloudflareRulesets) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataCloudflareRulesets) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

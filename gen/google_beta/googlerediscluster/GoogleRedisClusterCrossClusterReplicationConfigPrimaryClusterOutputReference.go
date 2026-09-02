@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlerediscluster/internal"
 )
 
 type GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Cluster() *string
 	SetCluster(val *string)
 	ClusterInput() *string
@@ -37,16 +37,16 @@ type GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReferenc
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,13 +62,13 @@ type GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReferenc
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCluster()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReferenc
 
 // The jsii proxy struct for GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference
 type jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) Cluster() *string {
@@ -161,8 +161,8 @@ func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster
 	return returns
 }
 
-func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -182,7 +182,7 @@ func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster
 }
 
 
-func NewGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference {
+func NewGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -191,7 +191,7 @@ func NewGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputRefer
 	j := jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleRedisCluster.GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference",
+		"@cdktn/provider-google-beta.googleRedisCluster.GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -199,11 +199,11 @@ func NewGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputRefer
 	return &j
 }
 
-func NewGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference_Override(g GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference_Override(g GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleRedisCluster.GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference",
+		"@cdktn/provider-google-beta.googleRedisCluster.GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster
 	)
 }
 
-func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,11 +304,11 @@ func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster
 	return returns
 }
 
-func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -432,8 +432,8 @@ func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster
 	return returns
 }
 
-func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -445,16 +445,16 @@ func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster
 	return returns
 }
 
-func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -469,8 +469,8 @@ func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster
 	)
 }
 
-func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryClusterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -478,7 +478,7 @@ func (g *jsiiProxy_GoogleRedisClusterCrossClusterReplicationConfigPrimaryCluster
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

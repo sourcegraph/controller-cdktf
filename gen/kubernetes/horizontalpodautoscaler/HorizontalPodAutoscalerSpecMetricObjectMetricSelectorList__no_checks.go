@@ -12,7 +12,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorList) va
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorList) va
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricObjectMetricSelectorList) va
 	return nil
 }
 
-func validateNewHorizontalPodAutoscalerSpecMetricObjectMetricSelectorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewHorizontalPodAutoscalerSpecMetricObjectMetricSelectorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

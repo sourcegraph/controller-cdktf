@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnection
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnection
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityServiceConnectionPolicyPscConnection
 	return nil
 }
 
-func validateNewGoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkConnectivityServiceConnectionPolicyPscConnectionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

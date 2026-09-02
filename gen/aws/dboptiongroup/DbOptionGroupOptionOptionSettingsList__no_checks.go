@@ -12,7 +12,7 @@ func (d *jsiiProxy_DbOptionGroupOptionOptionSettingsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DbOptionGroupOptionOptionSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbOptionGroupOptionOptionSettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOptionSettingsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DbOptionGroupOptionOptionSettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DbOptionGroupOptionOptionSettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DbOptionGroupOptionOptionSettingsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDbOptionGroupOptionOptionSettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDbOptionGroupOptionOptionSettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

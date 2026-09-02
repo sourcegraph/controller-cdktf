@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleKmsCryptoKeyKeyAccessJustificationsPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

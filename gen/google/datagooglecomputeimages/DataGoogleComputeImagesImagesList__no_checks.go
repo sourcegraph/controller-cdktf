@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeImagesImagesList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeImagesImagesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeImagesImagesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeImagesImagesList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeImagesImagesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeImagesImagesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeImagesImagesList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewDataGoogleComputeImagesImagesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeImagesImagesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

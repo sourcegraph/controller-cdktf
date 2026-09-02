@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectRedshift) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DirectRedshift) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectRedshift) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DirectRedshift) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (d *jsiiProxy_DirectRedshift) validatePutQueryDelayParameters(value *DirectRedshiftQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectRedshift) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DirectRedshift) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DirectRedshift) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectRedshift) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsRdsClusters) validatePutFilterParameters(value interfa
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsRdsClusters) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsRdsClusters_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsRdsClusters) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRdsClusters) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsRdsClusters) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

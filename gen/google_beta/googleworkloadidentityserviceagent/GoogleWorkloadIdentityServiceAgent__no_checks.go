@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleWorkloadIdentityServiceAgent) validateInterpolationForA
 	return nil
 }
 
+func (g *jsiiProxy_GoogleWorkloadIdentityServiceAgent) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleWorkloadIdentityServiceAgent) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleWorkloadIdentityServiceAgent) validateOverrideLogicalId
 }
 
 func (g *jsiiProxy_GoogleWorkloadIdentityServiceAgent) validatePutTimeoutsParameters(value *GoogleWorkloadIdentityServiceAgentTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleWorkloadIdentityServiceAgent) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleWorkloadIdentityServiceAgent) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkloadIdentityServiceAgent) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleWorkloadIdentityServiceAgent) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

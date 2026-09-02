@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppstreamFleet) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamFleet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamFleet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (a *jsiiProxy_AppstreamFleet) validatePutDomainJoinInfoParameters(value *Ap
 }
 
 func (a *jsiiProxy_AppstreamFleet) validatePutVpcConfigParameters(value *AppstreamFleetVpcConfig) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamFleet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_AppstreamFleet) validateSetInstanceTypeParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamFleet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppstreamFleet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

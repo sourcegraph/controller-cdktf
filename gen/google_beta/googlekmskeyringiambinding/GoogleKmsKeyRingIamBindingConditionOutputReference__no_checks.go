@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleKmsKeyRingIamBindingConditionOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsKeyRingIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleKmsKeyRingIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleKmsKeyRingIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleKmsKeyRingIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingIamBindingConditionOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleKmsKeyRingIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleKmsKeyRingIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleKmsKeyRingIamBindingConditionOutputReference) validateS
 	return nil
 }
 
-func validateNewGoogleKmsKeyRingIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleKmsKeyRingIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

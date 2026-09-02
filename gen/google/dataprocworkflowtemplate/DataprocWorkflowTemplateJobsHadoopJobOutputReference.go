@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dataprocworkflowtemplate/internal"
 )
 
 type DataprocWorkflowTemplateJobsHadoopJobOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ArchiveUris() *[]*string
 	SetArchiveUris(val *[]*string)
 	ArchiveUrisInput() *[]*string
@@ -57,15 +57,15 @@ type DataprocWorkflowTemplateJobsHadoopJobOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,9 +81,9 @@ type DataprocWorkflowTemplateJobsHadoopJobOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutLoggingConfig(value *DataprocWorkflowTemplateJobsHadoopJobLoggingConfig)
 	ResetArchiveUris()
 	ResetArgs()
@@ -95,7 +95,7 @@ type DataprocWorkflowTemplateJobsHadoopJobOutputReference interface {
 	ResetProperties()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type DataprocWorkflowTemplateJobsHadoopJobOutputReference interface {
 
 // The jsii proxy struct for DataprocWorkflowTemplateJobsHadoopJobOutputReference
 type jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) ArchiveUris() *[]*string {
@@ -328,8 +328,8 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) Terrafo
 }
 
 
-func NewDataprocWorkflowTemplateJobsHadoopJobOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataprocWorkflowTemplateJobsHadoopJobOutputReference {
+func NewDataprocWorkflowTemplateJobsHadoopJobOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataprocWorkflowTemplateJobsHadoopJobOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataprocWorkflowTemplateJobsHadoopJobOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -348,7 +348,7 @@ func NewDataprocWorkflowTemplateJobsHadoopJobOutputReference(terraformResource c
 	j := jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobOutputReference",
+		"@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -356,11 +356,11 @@ func NewDataprocWorkflowTemplateJobsHadoopJobOutputReference(terraformResource c
 	return &j
 }
 
-func NewDataprocWorkflowTemplateJobsHadoopJobOutputReference_Override(d DataprocWorkflowTemplateJobsHadoopJobOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataprocWorkflowTemplateJobsHadoopJobOutputReference_Override(d DataprocWorkflowTemplateJobsHadoopJobOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobOutputReference",
+		"@cdktn/provider-google.dataprocWorkflowTemplate.DataprocWorkflowTemplateJobsHadoopJobOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -487,7 +487,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -527,11 +527,11 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) GetAnyM
 	return returns
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -655,8 +655,8 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) GetStri
 	return returns
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -668,16 +668,16 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) Interpo
 	return returns
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -759,8 +759,8 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) ResetPr
 	)
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -768,7 +768,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplateJobsHadoopJobOutputReference) Resolve
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

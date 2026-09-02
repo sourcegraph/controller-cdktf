@@ -56,6 +56,10 @@ func (j *jsiiProxy_Job) validateInterpolationForAttributeParameters(terraformAtt
 	return nil
 }
 
+func (j *jsiiProxy_Job) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (j *jsiiProxy_Job) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (j *jsiiProxy_Job) validatePutSpecParameters(value *JobSpec) error {
 }
 
 func (j *jsiiProxy_Job) validatePutTimeoutsParameters(value *JobTimeouts) error {
+	return nil
+}
+
+func (j *jsiiProxy_Job) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_Job) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Job) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Job) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

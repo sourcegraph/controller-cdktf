@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodSpecInitContainerLifecyclePreStopTcpSocketList) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecInitContainerLifecyclePreStopTcpSocketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecInitContainerLifecyclePreStopTcpSocketList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopTcpSocketList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopTcpSocketList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopTcpSocketList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodSpecInitContainerLifecyclePreStopTcpSocketList) validateSe
 	return nil
 }
 
-func validateNewPodSpecInitContainerLifecyclePreStopTcpSocketListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSpecInitContainerLifecyclePreStopTcpSocketListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

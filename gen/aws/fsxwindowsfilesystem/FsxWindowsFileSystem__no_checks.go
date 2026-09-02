@@ -56,6 +56,10 @@ func (f *jsiiProxy_FsxWindowsFileSystem) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (f *jsiiProxy_FsxWindowsFileSystem) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxWindowsFileSystem) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (f *jsiiProxy_FsxWindowsFileSystem) validatePutSelfManagedActiveDirectoryPa
 }
 
 func (f *jsiiProxy_FsxWindowsFileSystem) validatePutTimeoutsParameters(value *FsxWindowsFileSystemTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxWindowsFileSystem) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_FsxWindowsFileSystem) validateSetKmsKeyIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_FsxWindowsFileSystem) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FsxWindowsFileSystem) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

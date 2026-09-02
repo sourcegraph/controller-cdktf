@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityDefaultSettingsOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityDefaultSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityDefaultSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityDefaultSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityDefaultSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityDefaultSettingsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityDefaultSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesGuardrailLlmPromptSecurityDefaultSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesGuardrailLlmPromptSecurityDefaultSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesGuardrailLlmPromptSecurityDefaultSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

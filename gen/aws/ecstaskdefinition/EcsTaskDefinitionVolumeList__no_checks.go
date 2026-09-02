@@ -12,7 +12,7 @@ func (e *jsiiProxy_EcsTaskDefinitionVolumeList) validateGetParameters(index *flo
 	return nil
 }
 
-func (e *jsiiProxy_EcsTaskDefinitionVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsTaskDefinitionVolumeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_EcsTaskDefinitionVolumeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsTaskDefinitionVolumeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EcsTaskDefinitionVolumeList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewEcsTaskDefinitionVolumeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEcsTaskDefinitionVolumeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dataawselasticbeanstalkapplication/internal"
 )
 
 type DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,7 +25,7 @@ type DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference interf
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	DeleteSourceFromS3() cdktf.IResolvable
+	DeleteSourceFromS3() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataAwsElasticBeanstalkApplicationAppversionLifecycle
@@ -38,15 +38,15 @@ type DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference interf
 
 // The jsii proxy struct for DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference
 type jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) ComplexObjectIndex() interface{} {
@@ -110,8 +110,8 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) DeleteSourceFromS3() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) DeleteSourceFromS3() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"deleteSourceFromS3",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -191,7 +191,7 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRe
 }
 
 
-func NewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference {
+func NewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -200,7 +200,7 @@ func NewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference(ter
 	j := jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference",
+		"@cdktn/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -208,11 +208,11 @@ func NewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference(ter
 	return &j
 }
 
-func NewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference_Override(d DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference_Override(d DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference",
+		"@cdktn/provider-aws.dataAwsElasticBeanstalkApplication.DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -262,7 +262,7 @@ func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRe
 	)
 }
 
-func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,11 +302,11 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -430,8 +430,8 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -443,24 +443,24 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRe
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -468,7 +468,7 @@ func (d *jsiiProxy_DataAwsElasticBeanstalkApplicationAppversionLifecycleOutputRe
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkerScriptSecretTextBindingList) validateGetParameters(inde
 	return nil
 }
 
-func (w *jsiiProxy_WorkerScriptSecretTextBindingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkerScriptSecretTextBindingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_WorkerScriptSecretTextBindingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkerScriptSecretTextBindingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewWorkerScriptSecretTextBindingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkerScriptSecretTextBindingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

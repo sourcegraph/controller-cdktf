@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/replicationcontroller/internal"
 )
 
 type ReplicationControllerSpecTemplateSpecImagePullSecretsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type ReplicationControllerSpecTemplateSpecImagePullSecretsList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ReplicationControllerSpecTemplateSpecImagePullSecretsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type ReplicationControllerSpecTemplateSpecImagePullSecretsList interface {
 
 // The jsii proxy struct for ReplicationControllerSpecTemplateSpecImagePullSecretsList
 type jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) Te
 	return returns
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) Wr
 }
 
 
-func NewReplicationControllerSpecTemplateSpecImagePullSecretsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecImagePullSecretsList {
+func NewReplicationControllerSpecTemplateSpecImagePullSecretsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ReplicationControllerSpecTemplateSpecImagePullSecretsList {
 	_init_.Initialize()
 
 	if err := validateNewReplicationControllerSpecTemplateSpecImagePullSecretsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewReplicationControllerSpecTemplateSpecImagePullSecretsList(terraformResou
 	j := jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsList",
+		"@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewReplicationControllerSpecTemplateSpecImagePullSecretsList(terraformResou
 	return &j
 }
 
-func NewReplicationControllerSpecTemplateSpecImagePullSecretsList_Override(r ReplicationControllerSpecTemplateSpecImagePullSecretsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewReplicationControllerSpecTemplateSpecImagePullSecretsList_Override(r ReplicationControllerSpecTemplateSpecImagePullSecretsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsList",
+		"@cdktn/provider-kubernetes.replicationController.ReplicationControllerSpecTemplateSpecImagePullSecretsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		r,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList)Set
 	)
 }
 
-func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList)Set
 	)
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := r.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		r,
@@ -228,8 +231,8 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) Ge
 	return returns
 }
 
-func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (r *jsiiProxy_ReplicationControllerSpecTemplateSpecImagePullSecretsList) Re
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

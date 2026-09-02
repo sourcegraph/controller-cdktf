@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesIngressV1SpecDefaultBackendList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesIngressV1SpecDefaultBackendList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesIngressV1SpecDefaultBackendList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesIngressV1SpecDefaultBackendList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesIngressV1SpecDefaultBackendList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesIngressV1SpecDefaultBackendList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesIngressV1SpecDefaultBackendList) validateSetWra
 	return nil
 }
 
-func validateNewDataKubernetesIngressV1SpecDefaultBackendListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesIngressV1SpecDefaultBackendListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

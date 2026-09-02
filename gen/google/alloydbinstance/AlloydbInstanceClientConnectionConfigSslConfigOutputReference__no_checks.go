@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigSslConfigOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigSslConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlloydbInstanceClientConnectionConfigSslConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlloydbInstanceClientConnectionConfigSslConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

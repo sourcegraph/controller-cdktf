@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/okta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/okta/previewsigninpage/internal"
 )
 
 type PreviewSigninPageWidgetCustomizationsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthenticatorPageCustomLinkLabel() *string
 	SetAuthenticatorPageCustomLinkLabel(val *string)
 	AuthenticatorPageCustomLinkLabelInput() *string
@@ -82,9 +82,9 @@ type PreviewSigninPageWidgetCustomizationsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UnlockAccountLabel() *string
 	SetUnlockAccountLabel(val *string)
 	UnlockAccountLabelInput() *string
@@ -105,7 +105,7 @@ type PreviewSigninPageWidgetCustomizationsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -121,9 +121,9 @@ type PreviewSigninPageWidgetCustomizationsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAuthenticatorPageCustomLinkLabel()
 	ResetAuthenticatorPageCustomLinkUrl()
 	ResetClassicRecoveryFlowEmailOrUsernameLabel()
@@ -146,7 +146,7 @@ type PreviewSigninPageWidgetCustomizationsOutputReference interface {
 	ResetUsernameLabel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -156,7 +156,7 @@ type PreviewSigninPageWidgetCustomizationsOutputReference interface {
 
 // The jsii proxy struct for PreviewSigninPageWidgetCustomizationsOutputReference
 type jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) AuthenticatorPageCustomLinkLabel() *string {
@@ -539,8 +539,8 @@ func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -650,7 +650,7 @@ func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) WidgetG
 }
 
 
-func NewPreviewSigninPageWidgetCustomizationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PreviewSigninPageWidgetCustomizationsOutputReference {
+func NewPreviewSigninPageWidgetCustomizationsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PreviewSigninPageWidgetCustomizationsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPreviewSigninPageWidgetCustomizationsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -659,7 +659,7 @@ func NewPreviewSigninPageWidgetCustomizationsOutputReference(terraformResource c
 	j := jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.previewSigninPage.PreviewSigninPageWidgetCustomizationsOutputReference",
+		"@cdktn/provider-okta.previewSigninPage.PreviewSigninPageWidgetCustomizationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -667,11 +667,11 @@ func NewPreviewSigninPageWidgetCustomizationsOutputReference(terraformResource c
 	return &j
 }
 
-func NewPreviewSigninPageWidgetCustomizationsOutputReference_Override(p PreviewSigninPageWidgetCustomizationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPreviewSigninPageWidgetCustomizationsOutputReference_Override(p PreviewSigninPageWidgetCustomizationsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.previewSigninPage.PreviewSigninPageWidgetCustomizationsOutputReference",
+		"@cdktn/provider-okta.previewSigninPage.PreviewSigninPageWidgetCustomizationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -897,7 +897,7 @@ func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -992,11 +992,11 @@ func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) GetAnyM
 	return returns
 }
 
-func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1120,8 +1120,8 @@ func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) GetStri
 	return returns
 }
 
-func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -1133,16 +1133,16 @@ func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) Interpo
 	return returns
 }
 
-func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1309,8 +1309,8 @@ func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) ResetUs
 	)
 }
 
-func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1318,7 +1318,7 @@ func (p *jsiiProxy_PreviewSigninPageWidgetCustomizationsOutputReference) Resolve
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

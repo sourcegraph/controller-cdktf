@@ -56,6 +56,10 @@ func (e *jsiiProxy_EvidentlySegment) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (e *jsiiProxy_EvidentlySegment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvidentlySegment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_EvidentlySegment) validateMoveToIdParameters(id *string) erro
 }
 
 func (e *jsiiProxy_EvidentlySegment) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EvidentlySegment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_EvidentlySegment) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlySegment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EvidentlySegment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

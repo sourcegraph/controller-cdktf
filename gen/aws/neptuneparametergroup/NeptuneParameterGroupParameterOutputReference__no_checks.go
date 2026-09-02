@@ -40,11 +40,11 @@ func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateGetStr
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_NeptuneParameterGroupParameterOutputReference) validateSetVal
 	return nil
 }
 
-func validateNewNeptuneParameterGroupParameterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewNeptuneParameterGroupParameterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (m *jsiiProxy_ManagedKafkaAclAclEntriesList) validateGetParameters(index *f
 	return nil
 }
 
-func (m *jsiiProxy_ManagedKafkaAclAclEntriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_ManagedKafkaAclAclEntriesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ManagedKafkaAclAclEntriesList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_ManagedKafkaAclAclEntriesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ManagedKafkaAclAclEntriesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ManagedKafkaAclAclEntriesList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewManagedKafkaAclAclEntriesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewManagedKafkaAclAclEntriesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

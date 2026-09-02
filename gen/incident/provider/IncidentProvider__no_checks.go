@@ -12,6 +12,10 @@ func (i *jsiiProxy_IncidentProvider) validateOverrideLogicalIdParameters(newLogi
 	return nil
 }
 
+func (i *jsiiProxy_IncidentProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateIncidentProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

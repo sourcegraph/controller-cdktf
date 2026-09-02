@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleworkstationsworkstationconfig/internal"
 )
 
 type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Accelerators() GoogleWorkstationsWorkstationConfigHostGceInstanceAcceleratorsList
 	AcceleratorsInput() interface{}
 	BoostConfigs() GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList
@@ -69,9 +69,9 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VmTags() *map[string]*string
 	SetVmTags(val *map[string]*string)
 	VmTagsInput() *map[string]*string
@@ -80,7 +80,7 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -96,9 +96,9 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAccelerators(value interface{})
 	PutBoostConfigs(value interface{})
 	PutConfidentialInstanceConfig(value *GoogleWorkstationsWorkstationConfigHostGceInstanceConfidentialInstanceConfig)
@@ -119,7 +119,7 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 	ResetVmTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -129,7 +129,7 @@ type GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference interface
 
 // The jsii proxy struct for GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference
 type jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) Accelerators() GoogleWorkstationsWorkstationConfigHostGceInstanceAcceleratorsList {
@@ -452,8 +452,8 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -483,7 +483,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 }
 
 
-func NewGoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference {
+func NewGoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleWorkstationsWorkstationConfigHostGceInstanceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -492,7 +492,7 @@ func NewGoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference(terraf
 	j := jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference",
+		"@cdktn/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -500,11 +500,11 @@ func NewGoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference(terraf
 	return &j
 }
 
-func NewGoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference_Override(g GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference_Override(g GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference",
+		"@cdktn/provider-google-beta.googleWorkstationsWorkstationConfig.GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -653,7 +653,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -704,11 +704,11 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -832,8 +832,8 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -845,16 +845,16 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1017,8 +1017,8 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	)
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1026,7 +1026,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceOutputRefer
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlechroniclefeed/internal"
 )
 
 type GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
@@ -46,9 +46,9 @@ type GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference inte
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenEndpoint() *string
 	SetTokenEndpoint(val *string)
 	TokenEndpointInput() *string
@@ -60,7 +60,7 @@ type GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference inte
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetClientId()
 	ResetClientSecret()
 	ResetRefreshToken()
@@ -87,7 +87,7 @@ type GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference inte
 	ResetUser()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference inte
 
 // The jsii proxy struct for GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference
 type jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference) ClientId() *string {
@@ -240,8 +240,8 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutput
 	return returns
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutput
 }
 
 
-func NewGoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference {
+func NewGoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewGoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference(t
 	j := jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewGoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference(t
 	return &j
 }
 
-func NewGoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference_Override(g GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference_Override(g GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference",
+		"@cdktn/provider-google-beta.googleChronicleFeed.GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -406,7 +406,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutput
 	)
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,11 +468,11 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -596,8 +596,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -609,16 +609,16 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutput
 	return returns
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutput
 	)
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsWorkdaySettingsAuthenticationOutput
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

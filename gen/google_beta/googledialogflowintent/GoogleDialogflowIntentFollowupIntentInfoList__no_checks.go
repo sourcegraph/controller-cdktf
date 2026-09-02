@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateGetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleDialogflowIntentFollowupIntentInfoList) validateSetWrap
 	return nil
 }
 
-func validateNewGoogleDialogflowIntentFollowupIntentInfoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowIntentFollowupIntentInfoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

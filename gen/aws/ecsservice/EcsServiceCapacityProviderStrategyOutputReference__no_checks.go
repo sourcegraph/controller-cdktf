@@ -40,11 +40,11 @@ func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_EcsServiceCapacityProviderStrategyOutputReference) validateSe
 	return nil
 }
 
-func validateNewEcsServiceCapacityProviderStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEcsServiceCapacityProviderStrategyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDes
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDes
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkfirewallLoggingConfigurationLoggingConfigurationLogDes
 	return nil
 }
 
-func validateNewNetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkfirewallLoggingConfigurationLoggingConfigurationLogDestinationConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

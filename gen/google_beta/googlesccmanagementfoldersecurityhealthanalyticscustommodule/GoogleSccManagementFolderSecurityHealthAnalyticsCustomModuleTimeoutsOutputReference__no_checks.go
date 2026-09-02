@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModuleT
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModuleT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleSccManagementFolderSecurityHealthAnalyticsCustomModuleT
 	return nil
 }
 
-func validateNewGoogleSccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSccManagementFolderSecurityHealthAnalyticsCustomModuleTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/persistentvolumev1/internal"
 )
 
 type PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputRefer
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VolumeId() *string
 	SetVolumeId(val *string)
 	VolumeIdInput() *string
@@ -54,7 +54,7 @@ type PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputRefer
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputRefer
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFsType()
 	ResetPartition()
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputRefer
 
 // The jsii proxy struct for PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference
 type jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockSt
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockSt
 }
 
 
-func NewPersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference {
+func NewPersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewPersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputRe
 	j := jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference",
+		"@cdktn/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewPersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputRe
 	return &j
 }
 
-func NewPersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference_Override(p PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference_Override(p PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference",
+		"@cdktn/provider-kubernetes.persistentVolumeV1.PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockSt
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockSt
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -525,8 +525,8 @@ func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockSt
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -538,16 +538,16 @@ func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockSt
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockSt
 	)
 }
 
-func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockStoreOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (p *jsiiProxy_PersistentVolumeV1SpecPersistentVolumeSourceAwsElasticBlockSt
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,7 +40,7 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validat
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validat
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BillingBudgetBudgetFilterCustomPeriodOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBillingBudgetBudgetFilterCustomPeriodOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBillingBudgetBudgetFilterCustomPeriodOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

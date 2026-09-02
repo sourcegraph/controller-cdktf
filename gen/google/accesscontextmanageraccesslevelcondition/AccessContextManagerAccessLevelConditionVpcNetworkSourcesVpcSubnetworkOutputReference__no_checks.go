@@ -40,11 +40,11 @@ func (a *jsiiProxy_AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcS
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcS
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcS
 	return nil
 }
 
-func validateNewAccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAccessContextManagerAccessLevelConditionVpcNetworkSourcesVpcSubnetworkOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamBinding) validateInterpolation
 	return nil
 }
 
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeRegionInstantSnapshotIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeRegionInstantSnapshotIamBinding) validateOverrideLogic
 }
 
 func (c *jsiiProxy_ComputeRegionInstantSnapshotIamBinding) validatePutConditionParameters(value *ComputeRegionInstantSnapshotIamBindingCondition) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeRegionInstantSnapshotIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_ComputeRegionInstantSnapshotIamBinding) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionInstantSnapshotIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeRegionInstantSnapshotIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

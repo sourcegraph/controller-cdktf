@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleIamTestablePermissionsPermissionsList) validateSetW
 	return nil
 }
 
-func validateNewDataGoogleIamTestablePermissionsPermissionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleIamTestablePermissionsPermissionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

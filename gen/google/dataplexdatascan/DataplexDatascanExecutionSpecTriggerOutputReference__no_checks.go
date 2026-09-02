@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataplexDatascanExecutionSpecTriggerOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanExecutionSpecTriggerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataplexDatascanExecutionSpecTriggerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (d *jsiiProxy_DataplexDatascanExecutionSpecTriggerOutputReference) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataplexDatascanExecutionSpecTriggerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataplexDatascanExecutionSpecTriggerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_DataplexDatascanExecutionSpecTriggerOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataplexDatascanExecutionSpecTriggerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataplexDatascanExecutionSpecTriggerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataplexDatascanExecutionSpecTriggerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataplexDatascanExecutionSpecTriggerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesToolOpenApiToolApiAuthenticationList) validateGetParameter
 	return nil
 }
 
-func (c *jsiiProxy_CesToolOpenApiToolApiAuthenticationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesToolOpenApiToolApiAuthenticationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CesToolOpenApiToolApiAuthenticationList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_CesToolOpenApiToolApiAuthenticationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesToolOpenApiToolApiAuthenticationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CesToolOpenApiToolApiAuthenticationList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewCesToolOpenApiToolApiAuthenticationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesToolOpenApiToolApiAuthenticationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

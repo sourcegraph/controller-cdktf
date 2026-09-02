@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodSpecVolumeProjectedSourcesList) validateGetParameters(inde
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeProjectedSourcesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecVolumeProjectedSourcesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeProjectedSourcesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecVolumeProjectedSourcesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodSpecVolumeProjectedSourcesList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewPodSpecVolumeProjectedSourcesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSpecVolumeProjectedSourcesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

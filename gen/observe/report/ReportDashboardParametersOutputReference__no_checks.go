@@ -40,11 +40,11 @@ func (r *jsiiProxy_ReportDashboardParametersOutputReference) validateGetStringMa
 	return nil
 }
 
-func (r *jsiiProxy_ReportDashboardParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReportDashboardParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ReportDashboardParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReportDashboardParametersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ReportDashboardParametersOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_ReportDashboardParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReportDashboardParametersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ReportDashboardParametersOutputReference) validateSetValuePar
 	return nil
 }
 
-func validateNewReportDashboardParametersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewReportDashboardParametersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateGetP
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WafregionalSizeConstraintSetSizeConstraintsList) validateSetW
 	return nil
 }
 
-func validateNewWafregionalSizeConstraintSetSizeConstraintsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWafregionalSizeConstraintSetSizeConstraintsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

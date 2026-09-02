@@ -12,7 +12,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTolerationList) validateGetParameters(inde
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTolerationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecTolerationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTolerationList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecTolerationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecTolerationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecTolerationList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecTolerationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobSpecTemplateSpecTolerationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

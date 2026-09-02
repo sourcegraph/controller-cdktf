@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/cloudfrontdistribution/internal"
 )
 
 type CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReferenc
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReferenc
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReferenc
 
 // The jsii proxy struct for CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference
 type jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation
 }
 
 
-func NewCloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference {
+func NewCloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewCloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputRefer
 	j := jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference",
+		"@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewCloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputRefer
 	return &j
 }
 
-func NewCloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference_Override(c CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewCloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference_Override(c CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference",
+		"@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -454,8 +454,8 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -467,24 +467,24 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (c *jsiiProxy_CloudfrontDistributionOrderedCacheBehaviorFunctionAssociation
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

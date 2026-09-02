@@ -40,7 +40,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueTriggerActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GlueTriggerActionsOutputReference) validatePutNotificationPro
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueTriggerActionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_GlueTriggerActionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlueTriggerActionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_GlueTriggerActionsOutputReference) validateSetTimeoutParamete
 	return nil
 }
 
-func validateNewGlueTriggerActionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGlueTriggerActionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

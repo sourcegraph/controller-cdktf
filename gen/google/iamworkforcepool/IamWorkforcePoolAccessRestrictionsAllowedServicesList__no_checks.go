@@ -12,7 +12,7 @@ func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) valida
 	return nil
 }
 
-func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) valida
 	return nil
 }
 
-func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_IamWorkforcePoolAccessRestrictionsAllowedServicesList) valida
 	return nil
 }
 
-func validateNewIamWorkforcePoolAccessRestrictionsAllowedServicesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewIamWorkforcePoolAccessRestrictionsAllowedServicesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOut
 	return nil
 }
 
-func validateNewGoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGkeHubFleetDefaultClusterConfigSecurityPostureConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

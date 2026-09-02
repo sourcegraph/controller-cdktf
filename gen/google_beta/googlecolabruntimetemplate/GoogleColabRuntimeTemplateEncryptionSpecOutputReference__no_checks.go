@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateEncryptionSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleColabRuntimeTemplateEncryptionSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleColabRuntimeTemplateEncryptionSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

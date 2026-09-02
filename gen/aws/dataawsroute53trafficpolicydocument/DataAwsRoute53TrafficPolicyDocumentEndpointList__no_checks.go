@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentEndpointList) validateSetW
 	return nil
 }
 
-func validateNewDataAwsRoute53TrafficPolicyDocumentEndpointListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsRoute53TrafficPolicyDocumentEndpointListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

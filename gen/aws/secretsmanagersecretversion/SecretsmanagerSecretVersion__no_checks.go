@@ -56,6 +56,10 @@ func (s *jsiiProxy_SecretsmanagerSecretVersion) validateInterpolationForAttribut
 	return nil
 }
 
+func (s *jsiiProxy_SecretsmanagerSecretVersion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SecretsmanagerSecretVersion) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SecretsmanagerSecretVersion) validateMoveToIdParameters(id *s
 }
 
 func (s *jsiiProxy_SecretsmanagerSecretVersion) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SecretsmanagerSecretVersion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SecretsmanagerSecretVersion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

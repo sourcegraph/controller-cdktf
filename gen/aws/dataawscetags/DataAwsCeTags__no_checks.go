@@ -64,6 +64,10 @@ func (d *jsiiProxy_DataAwsCeTags) validatePutTimePeriodParameters(value *DataAws
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsCeTags) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsCeTags_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataAwsCeTags) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeTags) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsCeTags) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

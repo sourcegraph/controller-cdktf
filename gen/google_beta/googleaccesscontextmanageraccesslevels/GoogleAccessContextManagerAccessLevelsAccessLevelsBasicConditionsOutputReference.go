@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleaccesscontextmanageraccesslevels/internal"
 )
 
 type GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -51,9 +51,9 @@ type GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputRefe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VpcNetworkSources() GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsVpcNetworkSourcesList
 	VpcNetworkSourcesInput() interface{}
 	// Experimental.
@@ -61,7 +61,7 @@ type GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputRefe
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -77,9 +77,9 @@ type GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputRefe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDevicePolicy(value *GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsDevicePolicy)
 	PutVpcNetworkSources(value interface{})
 	ResetDevicePolicy()
@@ -91,7 +91,7 @@ type GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputRefe
 	ResetVpcNetworkSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,7 +101,7 @@ type GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputRefe
 
 // The jsii proxy struct for GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference
 type jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) ComplexObjectIndex() interface{} {
@@ -284,8 +284,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 }
 
 
-func NewGoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference {
+func NewGoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -324,7 +324,7 @@ func NewGoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputR
 	j := jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevels.GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference",
+		"@cdktn/provider-google-beta.googleAccessContextManagerAccessLevels.GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewGoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputR
 	return &j
 }
 
-func NewGoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference_Override(g GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference_Override(g GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAccessContextManagerAccessLevels.GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference",
+		"@cdktn/provider-google-beta.googleAccessContextManagerAccessLevels.GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -441,7 +441,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -481,11 +481,11 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -609,8 +609,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -622,16 +622,16 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -716,8 +716,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicConditionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -725,7 +725,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerAccessLevelsAccessLevelsBasicCondit
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_CesDeployment) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (c *jsiiProxy_CesDeployment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CesDeployment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_CesDeployment) validatePutChannelProfileParameters(value *Ces
 }
 
 func (c *jsiiProxy_CesDeployment) validatePutTimeoutsParameters(value *CesDeploymentTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CesDeployment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_CesDeployment) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CesDeployment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CesDeployment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

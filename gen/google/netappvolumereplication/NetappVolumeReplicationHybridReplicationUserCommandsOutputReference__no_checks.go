@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetappVolumeReplicationHybridReplicationUserCommandsOutputRef
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeReplicationHybridReplicationUserCommandsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappVolumeReplicationHybridReplicationUserCommandsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappVolumeReplicationHybridReplicationUserCommandsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappVolumeReplicationHybridReplicationUserCommandsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_NetappVolumeReplicationHybridReplicationUserCommandsOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_NetappVolumeReplicationHybridReplicationUserCommandsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetappVolumeReplicationHybridReplicationUserCommandsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetappVolumeReplicationHybridReplicationUserCommandsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewNetappVolumeReplicationHybridReplicationUserCommandsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

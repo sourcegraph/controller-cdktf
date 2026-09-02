@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/ec2clientvpnendpoint/internal"
 )
 
 type Ec2ClientVpnEndpointConnectionLogOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CloudwatchLogGroup() *string
 	SetCloudwatchLogGroup(val *string)
 	CloudwatchLogGroupInput() *string
@@ -43,15 +43,15 @@ type Ec2ClientVpnEndpointConnectionLogOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type Ec2ClientVpnEndpointConnectionLogOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCloudwatchLogGroup()
 	ResetCloudwatchLogStream()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type Ec2ClientVpnEndpointConnectionLogOptionsOutputReference interface {
 
 // The jsii proxy struct for Ec2ClientVpnEndpointConnectionLogOptionsOutputReference
 type jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) CloudwatchLogGroup() *string {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) Terr
 }
 
 
-func NewEc2ClientVpnEndpointConnectionLogOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Ec2ClientVpnEndpointConnectionLogOptionsOutputReference {
+func NewEc2ClientVpnEndpointConnectionLogOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Ec2ClientVpnEndpointConnectionLogOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEc2ClientVpnEndpointConnectionLogOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewEc2ClientVpnEndpointConnectionLogOptionsOutputReference(terraformResourc
 	j := jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConnectionLogOptionsOutputReference",
+		"@cdktn/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConnectionLogOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewEc2ClientVpnEndpointConnectionLogOptionsOutputReference(terraformResourc
 	return &j
 }
 
-func NewEc2ClientVpnEndpointConnectionLogOptionsOutputReference_Override(e Ec2ClientVpnEndpointConnectionLogOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEc2ClientVpnEndpointConnectionLogOptionsOutputReference_Override(e Ec2ClientVpnEndpointConnectionLogOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConnectionLogOptionsOutputReference",
+		"@cdktn/provider-aws.ec2ClientVpnEndpoint.Ec2ClientVpnEndpointConnectionLogOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) GetA
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -490,8 +490,8 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) GetS
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -503,16 +503,16 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) Inte
 	return returns
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) Rese
 	)
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointConnectionLogOptionsOutputReference) Reso
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

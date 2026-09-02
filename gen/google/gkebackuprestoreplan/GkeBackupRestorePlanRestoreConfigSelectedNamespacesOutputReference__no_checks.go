@@ -40,11 +40,11 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGkeBackupRestorePlanRestoreConfigSelectedNamespacesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

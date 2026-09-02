@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutpu
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkmanagerTransitGatewayRouteTableAttachmentTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

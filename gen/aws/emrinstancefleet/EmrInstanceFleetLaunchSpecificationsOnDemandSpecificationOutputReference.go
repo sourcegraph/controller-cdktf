@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/emrinstancefleet/internal"
 )
 
 type EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllocationStrategy() *string
 	SetAllocationStrategy(val *string)
 	AllocationStrategyInput() *string
@@ -37,15 +37,15 @@ type EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference in
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference in
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference in
 
 // The jsii proxy struct for EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference
 type jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) AllocationStrategy() *string {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutp
 	return returns
 }
 
-func (j *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutp
 }
 
 
-func NewEmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference {
+func NewEmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -179,7 +179,7 @@ func NewEmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference
 	j := jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference",
+		"@cdktn/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewEmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference
 	return &j
 }
 
-func NewEmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference_Override(e EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewEmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference_Override(e EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference",
+		"@cdktn/provider-aws.emrInstanceFleet.EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutp
 	)
 }
 
-func (j *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutp
 	return returns
 }
 
-func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -420,8 +420,8 @@ func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutp
 	return returns
 }
 
-func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -433,24 +433,24 @@ func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutp
 	return returns
 }
 
-func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (e *jsiiProxy_EmrInstanceFleetLaunchSpecificationsOnDemandSpecificationOutp
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

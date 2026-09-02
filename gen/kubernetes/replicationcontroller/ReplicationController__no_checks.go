@@ -56,6 +56,10 @@ func (r *jsiiProxy_ReplicationController) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (r *jsiiProxy_ReplicationController) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_ReplicationController) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (r *jsiiProxy_ReplicationController) validatePutSpecParameters(value *Repli
 }
 
 func (r *jsiiProxy_ReplicationController) validatePutTimeoutsParameters(value *ReplicationControllerTimeouts) error {
+	return nil
+}
+
+func (r *jsiiProxy_ReplicationController) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_ReplicationController) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_ReplicationController) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ReplicationController) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

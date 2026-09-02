@@ -56,6 +56,10 @@ func (a *jsiiProxy_AlertSource) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (a *jsiiProxy_AlertSource) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertSource) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (a *jsiiProxy_AlertSource) validatePutJiraOptionsParameters(value *AlertSou
 }
 
 func (a *jsiiProxy_AlertSource) validatePutTemplateParameters(value *AlertSourceTemplate) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertSource) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_AlertSource) validateSetEmailAddressParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_AlertSource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AlertSource) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

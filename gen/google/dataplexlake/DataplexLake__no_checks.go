@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataplexLake) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (d *jsiiProxy_DataplexLake) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataplexLake) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DataplexLake) validatePutMetastoreParameters(value *DataplexL
 }
 
 func (d *jsiiProxy_DataplexLake) validatePutTimeoutsParameters(value *DataplexLakeTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataplexLake) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_DataplexLake) validateSetLabelsParameters(val *map[string]*st
 	return nil
 }
 
-func (j *jsiiProxy_DataplexLake) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataplexLake) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

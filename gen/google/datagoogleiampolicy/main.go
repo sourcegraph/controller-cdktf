@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicy",
 		reflect.TypeOf((*DataGoogleIamPolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -43,6 +43,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAuditConfig", GoMethod: "PutAuditConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putBinding", GoMethod: "PutBinding"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAuditConfig", GoMethod: "ResetAuditConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBinding", GoMethod: "ResetBinding"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -56,23 +57,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleIamPolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfig",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigs",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsList",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsList",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -89,12 +91,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleIamPolicyAuditConfigAuditLogConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -126,12 +128,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleIamPolicyAuditConfigAuditLogConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigList",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigList",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -148,12 +150,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleIamPolicyAuditConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigOutputReference",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyAuditConfigOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyAuditConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "auditLogConfigs", GoGetter: "AuditLogConfigs"},
@@ -185,20 +187,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleIamPolicyAuditConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBinding",
 		reflect.TypeOf((*DataGoogleIamPolicyBinding)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingCondition",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingCondition)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingConditionOutputReference",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingConditionOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingConditionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -232,12 +234,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleIamPolicyBindingConditionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingList",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingList",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -254,12 +256,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleIamPolicyBindingList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingOutputReference",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyBindingOutputReference",
 		reflect.TypeOf((*DataGoogleIamPolicyBindingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -294,12 +296,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleIamPolicyBindingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyConfig",
+		"@cdktn/provider-google.dataGoogleIamPolicy.DataGoogleIamPolicyConfig",
 		reflect.TypeOf((*DataGoogleIamPolicyConfig)(nil)).Elem(),
 	)
 }

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataformFolder) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DataformFolder) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DataformFolder) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DataformFolder) validateOverrideLogicalIdParameters(newLogica
 }
 
 func (d *jsiiProxy_DataformFolder) validatePutTimeoutsParameters(value *DataformFolderTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DataformFolder) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DataformFolder) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DataformFolder) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataformFolder) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

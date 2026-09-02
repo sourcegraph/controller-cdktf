@@ -40,7 +40,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validatePu
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionPushConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePubsubSubscriptionPushConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePubsubSubscriptionPushConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_CeAnomalySubscription) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CeAnomalySubscription) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CeAnomalySubscription) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_CeAnomalySubscription) validatePutSubscriberParameters(value 
 }
 
 func (c *jsiiProxy_CeAnomalySubscription) validatePutThresholdExpressionParameters(value *CeAnomalySubscriptionThresholdExpression) error {
+	return nil
+}
+
+func (c *jsiiProxy_CeAnomalySubscription) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_CeAnomalySubscription) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_CeAnomalySubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CeAnomalySubscription) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

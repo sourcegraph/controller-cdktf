@@ -40,7 +40,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingPar
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingPar
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingPar
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKinesisAnalyticsApplicationInputsSchemaRecordFormatMappingParametersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

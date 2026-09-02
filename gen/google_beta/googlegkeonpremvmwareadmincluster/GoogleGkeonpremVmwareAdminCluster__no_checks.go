@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -120,6 +124,10 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validatePutVcenterParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleGkeonpremVmwareAdminCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -168,7 +176,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validateSetImageTypeParame
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleGkeonpremVmwareAdminCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

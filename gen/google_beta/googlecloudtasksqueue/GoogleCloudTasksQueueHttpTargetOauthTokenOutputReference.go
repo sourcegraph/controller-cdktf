@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudtasksqueue/internal"
 )
 
 type GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetScope()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference interface {
 
 // The jsii proxy struct for GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference
 type jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) Ter
 }
 
 
-func NewGoogleCloudTasksQueueHttpTargetOauthTokenOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference {
+func NewGoogleCloudTasksQueueHttpTargetOauthTokenOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCloudTasksQueueHttpTargetOauthTokenOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewGoogleCloudTasksQueueHttpTargetOauthTokenOutputReference(terraformResour
 	j := jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference",
+		"@cdktn/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewGoogleCloudTasksQueueHttpTargetOauthTokenOutputReference(terraformResour
 	return &j
 }
 
-func NewGoogleCloudTasksQueueHttpTargetOauthTokenOutputReference_Override(g GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleCloudTasksQueueHttpTargetOauthTokenOutputReference_Override(g GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference",
+		"@cdktn/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) Get
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -455,8 +455,8 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) Get
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -468,16 +468,16 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) Int
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) Res
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOauthTokenOutputReference) Res
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

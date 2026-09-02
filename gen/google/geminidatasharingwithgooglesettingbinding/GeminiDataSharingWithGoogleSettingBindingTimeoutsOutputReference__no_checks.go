@@ -40,11 +40,11 @@ func (g *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GeminiDataSharingWithGoogleSettingBindingTimeoutsOutputRefere
 	return nil
 }
 
-func validateNewGeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGeminiDataSharingWithGoogleSettingBindingTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

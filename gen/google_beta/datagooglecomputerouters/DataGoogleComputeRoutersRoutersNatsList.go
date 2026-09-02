@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecomputerouters/internal"
 )
 
 type DataGoogleComputeRoutersRoutersNatsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type DataGoogleComputeRoutersRoutersNatsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataGoogleComputeRoutersRoutersNatsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type DataGoogleComputeRoutersRoutersNatsList interface {
 
 // The jsii proxy struct for DataGoogleComputeRoutersRoutersNatsList
 type jsiiProxy_DataGoogleComputeRoutersRoutersNatsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList) WrapsSet() *bool {
 }
 
 
-func NewDataGoogleComputeRoutersRoutersNatsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRoutersRoutersNatsList {
+func NewDataGoogleComputeRoutersRoutersNatsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleComputeRoutersRoutersNatsList {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleComputeRoutersRoutersNatsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewDataGoogleComputeRoutersRoutersNatsList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_DataGoogleComputeRoutersRoutersNatsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersNatsList",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersNatsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewDataGoogleComputeRoutersRoutersNatsList(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewDataGoogleComputeRoutersRoutersNatsList_Override(d DataGoogleComputeRoutersRoutersNatsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataGoogleComputeRoutersRoutersNatsList_Override(d DataGoogleComputeRoutersRoutersNatsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersNatsList",
+		"@cdktn/provider-google-beta.dataGoogleComputeRouters.DataGoogleComputeRoutersRoutersNatsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList)SetWrapsSet(val *bool
 	)
 }
 
-func (d *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -205,8 +208,8 @@ func (d *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList) Get(index *float64) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (d *jsiiProxy_DataGoogleComputeRoutersRoutersNatsList) Resolve(_context cdk
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

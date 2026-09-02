@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccount",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccount",
 		reflect.TypeOf((*TeamsAccount)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logging", GoGetter: "Logging"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingInput", GoGetter: "LoggingInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putPayloadLog", GoMethod: "PutPayloadLog"},
 			_jsii_.MemberMethod{JsiiMethod: "putProxy", GoMethod: "PutProxy"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetActivityLogEnabled", GoMethod: "ResetActivityLogEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAntivirus", GoMethod: "ResetAntivirus"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBlockPage", GoMethod: "ResetBlockPage"},
@@ -90,19 +92,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "urlBrowserIsolationEnabled", GoGetter: "UrlBrowserIsolationEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "urlBrowserIsolationEnabledInput", GoGetter: "UrlBrowserIsolationEnabledInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccount{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirus",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountAntivirus",
 		reflect.TypeOf((*TeamsAccountAntivirus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountAntivirusOutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountAntivirusOutputReference",
 		reflect.TypeOf((*TeamsAccountAntivirusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -135,16 +138,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountAntivirusOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPage",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountBlockPage",
 		reflect.TypeOf((*TeamsAccountBlockPage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountBlockPageOutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountBlockPageOutputReference",
 		reflect.TypeOf((*TeamsAccountBlockPageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backgroundColor", GoGetter: "BackgroundColor"},
@@ -195,20 +198,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountBlockPageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountConfig",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountConfig",
 		reflect.TypeOf((*TeamsAccountConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFips",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountFips",
 		reflect.TypeOf((*TeamsAccountFips)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountFipsOutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountFipsOutputReference",
 		reflect.TypeOf((*TeamsAccountFipsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,16 +241,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountFipsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLogging",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountLogging",
 		reflect.TypeOf((*TeamsAccountLogging)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingOutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountLoggingOutputReference",
 		reflect.TypeOf((*TeamsAccountLoggingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -279,20 +282,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountLoggingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleType",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleType",
 		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleType)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDns",
 		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeDns)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference",
 		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -323,16 +326,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeDnsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttp",
 		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeHttp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference",
 		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -363,16 +366,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeHttpOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4",
 		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeL4)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4OutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeL4OutputReference",
 		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeL4OutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -403,12 +406,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeL4OutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeOutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountLoggingSettingsByRuleTypeOutputReference",
 		reflect.TypeOf((*TeamsAccountLoggingSettingsByRuleTypeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -444,16 +447,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountLoggingSettingsByRuleTypeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountPayloadLog",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountPayloadLog",
 		reflect.TypeOf((*TeamsAccountPayloadLog)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountPayloadLogOutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountPayloadLogOutputReference",
 		reflect.TypeOf((*TeamsAccountPayloadLogOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -482,16 +485,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountPayloadLogOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxy",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountProxy",
 		reflect.TypeOf((*TeamsAccountProxy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.teamsAccount.TeamsAccountProxyOutputReference",
+		"@cdktn/provider-cloudflare.teamsAccount.TeamsAccountProxyOutputReference",
 		reflect.TypeOf((*TeamsAccountProxyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -522,7 +525,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_TeamsAccountProxyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolver",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolver",
 		reflect.TypeOf((*AppsyncResolver)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kind", GoGetter: "Kind"},
 			_jsii_.MemberProperty{JsiiProperty: "kindInput", GoGetter: "KindInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxBatchSize", GoGetter: "MaxBatchSize"},
 			_jsii_.MemberProperty{JsiiProperty: "maxBatchSizeInput", GoGetter: "MaxBatchSizeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -65,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRuntime", GoMethod: "PutRuntime"},
 			_jsii_.MemberMethod{JsiiMethod: "putSyncConfig", GoMethod: "PutSyncConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTemplate", GoGetter: "RequestTemplate"},
 			_jsii_.MemberProperty{JsiiProperty: "requestTemplateInput", GoGetter: "RequestTemplateInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCachingConfig", GoMethod: "ResetCachingConfig"},
@@ -96,19 +98,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsyncResolver{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfig",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverCachingConfig",
 		reflect.TypeOf((*AppsyncResolverCachingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverCachingConfigOutputReference",
 		reflect.TypeOf((*AppsyncResolverCachingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cachingKeys", GoGetter: "CachingKeys"},
@@ -141,20 +144,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsyncResolverCachingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverConfig",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverConfig",
 		reflect.TypeOf((*AppsyncResolverConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfig",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverPipelineConfig",
 		reflect.TypeOf((*AppsyncResolverPipelineConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverPipelineConfigOutputReference",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverPipelineConfigOutputReference",
 		reflect.TypeOf((*AppsyncResolverPipelineConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -184,16 +187,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsyncResolverPipelineConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntime",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverRuntime",
 		reflect.TypeOf((*AppsyncResolverRuntime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverRuntimeOutputReference",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverRuntimeOutputReference",
 		reflect.TypeOf((*AppsyncResolverRuntimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -224,20 +227,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsyncResolverRuntimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfig",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverSyncConfig",
 		reflect.TypeOf((*AppsyncResolverSyncConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfig",
 		reflect.TypeOf((*AppsyncResolverSyncConfigLambdaConflictHandlerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference",
 		reflect.TypeOf((*AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -267,12 +270,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsyncResolverSyncConfigLambdaConflictHandlerConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.appsyncResolver.AppsyncResolverSyncConfigOutputReference",
+		"@cdktn/provider-aws.appsyncResolver.AppsyncResolverSyncConfigOutputReference",
 		reflect.TypeOf((*AppsyncResolverSyncConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -309,7 +312,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AppsyncResolverSyncConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

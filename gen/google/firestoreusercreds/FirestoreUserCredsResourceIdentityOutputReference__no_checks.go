@@ -40,11 +40,11 @@ func (f *jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference) validateGe
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirestoreUserCredsResourceIdentityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFirestoreUserCredsResourceIdentityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewFirestoreUserCredsResourceIdentityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

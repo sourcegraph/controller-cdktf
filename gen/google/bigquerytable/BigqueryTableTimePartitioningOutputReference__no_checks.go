@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateGetStri
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_BigqueryTableTimePartitioningOutputReference) validateSetType
 	return nil
 }
 
-func validateNewBigqueryTableTimePartitioningOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryTableTimePartitioningOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

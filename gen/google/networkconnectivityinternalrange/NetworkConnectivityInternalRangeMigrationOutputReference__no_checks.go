@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference) val
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkConnectivityInternalRangeMigrationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetworkConnectivityInternalRangeMigrationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkConnectivityInternalRangeMigrationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

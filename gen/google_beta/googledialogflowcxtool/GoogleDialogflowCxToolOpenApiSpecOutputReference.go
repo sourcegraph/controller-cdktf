@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxtool/internal"
 )
 
 type GoogleDialogflowCxToolOpenApiSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Authentication() GoogleDialogflowCxToolOpenApiSpecAuthenticationOutputReference
 	AuthenticationInput() *GoogleDialogflowCxToolOpenApiSpecAuthentication
 	// the index of the complex object in a list.
@@ -38,9 +38,9 @@ type GoogleDialogflowCxToolOpenApiSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TextSchema() *string
 	SetTextSchema(val *string)
 	TextSchemaInput() *string
@@ -51,7 +51,7 @@ type GoogleDialogflowCxToolOpenApiSpecOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,9 +67,9 @@ type GoogleDialogflowCxToolOpenApiSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthentication(value *GoogleDialogflowCxToolOpenApiSpecAuthentication)
 	PutServiceDirectoryConfig(value *GoogleDialogflowCxToolOpenApiSpecServiceDirectoryConfig)
 	PutTlsConfig(value *GoogleDialogflowCxToolOpenApiSpecTlsConfig)
@@ -78,7 +78,7 @@ type GoogleDialogflowCxToolOpenApiSpecOutputReference interface {
 	ResetTlsConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type GoogleDialogflowCxToolOpenApiSpecOutputReference interface {
 
 // The jsii proxy struct for GoogleDialogflowCxToolOpenApiSpecOutputReference
 type jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) Authentication() GoogleDialogflowCxToolOpenApiSpecAuthenticationOutputReference {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) TlsConfigIn
 }
 
 
-func NewGoogleDialogflowCxToolOpenApiSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxToolOpenApiSpecOutputReference {
+func NewGoogleDialogflowCxToolOpenApiSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDialogflowCxToolOpenApiSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDialogflowCxToolOpenApiSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewGoogleDialogflowCxToolOpenApiSpecOutputReference(terraformResource cdktf
 	j := jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDialogflowCxTool.GoogleDialogflowCxToolOpenApiSpecOutputReference",
+		"@cdktn/provider-google-beta.googleDialogflowCxTool.GoogleDialogflowCxToolOpenApiSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewGoogleDialogflowCxToolOpenApiSpecOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewGoogleDialogflowCxToolOpenApiSpecOutputReference_Override(g GoogleDialogflowCxToolOpenApiSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDialogflowCxToolOpenApiSpecOutputReference_Override(g GoogleDialogflowCxToolOpenApiSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDialogflowCxTool.GoogleDialogflowCxToolOpenApiSpecOutputReference",
+		"@cdktn/provider-google-beta.googleDialogflowCxTool.GoogleDialogflowCxToolOpenApiSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -313,7 +313,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -364,11 +364,11 @@ func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -492,8 +492,8 @@ func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) GetStringMa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -505,16 +505,16 @@ func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) Interpolati
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) ResetTlsCon
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

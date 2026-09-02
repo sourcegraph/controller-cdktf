@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApigeeDeveloperAppCredentialsApiProductsList) validateGetPara
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeDeveloperAppCredentialsApiProductsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeDeveloperAppCredentialsApiProductsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ApigeeDeveloperAppCredentialsApiProductsList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeDeveloperAppCredentialsApiProductsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApigeeDeveloperAppCredentialsApiProductsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ApigeeDeveloperAppCredentialsApiProductsList) validateSetWrap
 	return nil
 }
 
-func validateNewApigeeDeveloperAppCredentialsApiProductsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApigeeDeveloperAppCredentialsApiProductsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

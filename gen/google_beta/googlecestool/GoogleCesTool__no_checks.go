@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCesTool) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCesTool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCesTool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleCesTool) validatePutPythonFunctionParameters(value *Goo
 }
 
 func (g *jsiiProxy_GoogleCesTool) validatePutTimeoutsParameters(value *GoogleCesToolTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesTool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleCesTool) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesTool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleCesTool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

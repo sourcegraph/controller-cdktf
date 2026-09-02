@@ -56,6 +56,10 @@ func (e *jsiiProxy_EcsCapacityProvider) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (e *jsiiProxy_EcsCapacityProvider) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcsCapacityProvider) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (e *jsiiProxy_EcsCapacityProvider) validateOverrideLogicalIdParameters(newL
 }
 
 func (e *jsiiProxy_EcsCapacityProvider) validatePutAutoScalingGroupProviderParameters(value *EcsCapacityProviderAutoScalingGroupProvider) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcsCapacityProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_EcsCapacityProvider) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_EcsCapacityProvider) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EcsCapacityProvider) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

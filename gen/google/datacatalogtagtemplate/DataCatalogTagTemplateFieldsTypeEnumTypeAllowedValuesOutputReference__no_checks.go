@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataCatalogTagTemplateFieldsTypeEnumTypeAllowedValuesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowSt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowSt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsMemorydbUserAuthenticationModeOutputReference) validat
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMemorydbUserAuthenticationModeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsMemorydbUserAuthenticationModeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsMemorydbUserAuthenticationModeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsMemorydbUserAuthenticationModeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsMemorydbUserAuthenticationModeOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsMemorydbUserAuthenticationModeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsMemorydbUserAuthenticationModeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsMemorydbUserAuthenticationModeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsMemorydbUserAuthenticationModeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

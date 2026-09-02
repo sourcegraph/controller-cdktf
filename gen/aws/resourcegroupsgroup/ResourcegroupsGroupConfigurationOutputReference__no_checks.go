@@ -40,7 +40,7 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateGetS
 	return nil
 }
 
-func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validatePutP
 	return nil
 }
 
-func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ResourcegroupsGroupConfigurationOutputReference) validateSetT
 	return nil
 }
 
-func validateNewResourcegroupsGroupConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewResourcegroupsGroupConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

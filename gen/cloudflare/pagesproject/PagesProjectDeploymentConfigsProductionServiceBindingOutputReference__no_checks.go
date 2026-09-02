@@ -40,11 +40,11 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingOutputRe
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionServiceBindingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPagesProjectDeploymentConfigsProductionServiceBindingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPagesProjectDeploymentConfigsProductionServiceBindingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

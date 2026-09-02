@@ -12,7 +12,7 @@ func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigCaCertsList) validateGetP
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigCaCertsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigCaCertsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigCaCertsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigCaCertsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigCaCertsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DialogflowCxToolOpenApiSpecTlsConfigCaCertsList) validateSetW
 	return nil
 }
 
-func validateNewDialogflowCxToolOpenApiSpecTlsConfigCaCertsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDialogflowCxToolOpenApiSpecTlsConfigCaCertsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

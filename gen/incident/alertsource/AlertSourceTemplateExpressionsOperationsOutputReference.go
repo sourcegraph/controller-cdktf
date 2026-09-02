@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/alertsource/internal"
 )
 
 type AlertSourceTemplateExpressionsOperationsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Branches() AlertSourceTemplateExpressionsOperationsBranchesOutputReference
 	BranchesInput() interface{}
 	// the index of the complex object in a list.
@@ -45,15 +45,15 @@ type AlertSourceTemplateExpressionsOperationsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,9 +69,9 @@ type AlertSourceTemplateExpressionsOperationsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutBranches(value *AlertSourceTemplateExpressionsOperationsBranches)
 	PutFilter(value *AlertSourceTemplateExpressionsOperationsFilter)
 	PutNavigate(value *AlertSourceTemplateExpressionsOperationsNavigate)
@@ -82,7 +82,7 @@ type AlertSourceTemplateExpressionsOperationsOutputReference interface {
 	ResetParse()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type AlertSourceTemplateExpressionsOperationsOutputReference interface {
 
 // The jsii proxy struct for AlertSourceTemplateExpressionsOperationsOutputReference
 type jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) Branches() AlertSourceTemplateExpressionsOperationsBranchesOutputReference {
@@ -255,8 +255,8 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) Terr
 }
 
 
-func NewAlertSourceTemplateExpressionsOperationsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertSourceTemplateExpressionsOperationsOutputReference {
+func NewAlertSourceTemplateExpressionsOperationsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertSourceTemplateExpressionsOperationsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlertSourceTemplateExpressionsOperationsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -275,7 +275,7 @@ func NewAlertSourceTemplateExpressionsOperationsOutputReference(terraformResourc
 	j := jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertSource.AlertSourceTemplateExpressionsOperationsOutputReference",
+		"@cdktn/provider-incident.alertSource.AlertSourceTemplateExpressionsOperationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewAlertSourceTemplateExpressionsOperationsOutputReference(terraformResourc
 	return &j
 }
 
-func NewAlertSourceTemplateExpressionsOperationsOutputReference_Override(a AlertSourceTemplateExpressionsOperationsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAlertSourceTemplateExpressionsOperationsOutputReference_Override(a AlertSourceTemplateExpressionsOperationsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertSource.AlertSourceTemplateExpressionsOperationsOutputReference",
+		"@cdktn/provider-incident.alertSource.AlertSourceTemplateExpressionsOperationsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -348,7 +348,7 @@ func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -388,11 +388,11 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) GetA
 	return returns
 }
 
-func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -516,8 +516,8 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) GetS
 	return returns
 }
 
-func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -529,16 +529,16 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) Inte
 	return returns
 }
 
-func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -621,8 +621,8 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) Rese
 	)
 }
 
-func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -630,7 +630,7 @@ func (a *jsiiProxy_AlertSourceTemplateExpressionsOperationsOutputReference) Reso
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

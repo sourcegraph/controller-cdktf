@@ -40,11 +40,11 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleParameterOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategorySplitChargeRuleParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CeCostCategorySplitChargeRuleParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategorySplitChargeRuleParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeCostCategorySplitChargeRuleParameterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleParameterOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleParameterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleParameterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleParameterOutputReference) valida
 	return nil
 }
 
-func validateNewCeCostCategorySplitChargeRuleParameterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCeCostCategorySplitChargeRuleParameterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

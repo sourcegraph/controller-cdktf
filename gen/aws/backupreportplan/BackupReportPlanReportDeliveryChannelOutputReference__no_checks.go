@@ -40,11 +40,11 @@ func (b *jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference) validat
 	return nil
 }
 
-func (b *jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupReportPlanReportDeliveryChannelOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBackupReportPlanReportDeliveryChannelOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBackupReportPlanReportDeliveryChannelOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (m *jsiiProxy_MonitorV2RulesOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (m *jsiiProxy_MonitorV2RulesOutputReference) validateGetStringMapAttributeP
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (m *jsiiProxy_MonitorV2RulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -123,9 +123,9 @@ func (m *jsiiProxy_MonitorV2RulesOutputReference) validatePutThresholdParameters
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_MonitorV2RulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -198,7 +198,7 @@ func (j *jsiiProxy_MonitorV2RulesOutputReference) validateSetComplexObjectIsFrom
 
 func (j *jsiiProxy_MonitorV2RulesOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *MonitorV2Rules:
 		val := val.(*MonitorV2Rules)
@@ -213,7 +213,7 @@ func (j *jsiiProxy_MonitorV2RulesOutputReference) validateSetInternalValueParame
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *MonitorV2Rules; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *MonitorV2Rules; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -236,7 +236,7 @@ func (j *jsiiProxy_MonitorV2RulesOutputReference) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2RulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -244,7 +244,7 @@ func (j *jsiiProxy_MonitorV2RulesOutputReference) validateSetTerraformResourcePa
 	return nil
 }
 
-func validateNewMonitorV2RulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMonitorV2RulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/datakubernetespod/internal"
 )
 
 type DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList interface {
 
 // The jsii proxy struct for DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList
 type jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList
 	return returns
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList
 }
 
 
-func NewDataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList {
+func NewDataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList {
 	_init_.Initialize()
 
 	if err := validateNewDataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewDataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList(terraformR
 	j := jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList",
+		"@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewDataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList(terraformR
 	return &j
 }
 
-func NewDataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList_Override(d DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList_Override(d DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList",
+		"@cdktn/provider-kubernetes.dataKubernetesPod.DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList
 	)
 }
 
-func (j *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList
 	)
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -205,8 +208,8 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList
 	return returns
 }
 
-func (d *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (d *jsiiProxy_DataKubernetesPodSpecVolumeProjectedSourcesConfigMapItemsList
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

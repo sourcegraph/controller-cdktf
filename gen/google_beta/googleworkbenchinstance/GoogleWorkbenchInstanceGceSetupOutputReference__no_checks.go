@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validatePutVm
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -124,11 +124,11 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleWorkbenchInstanceGceSetupOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleWorkbenchInstanceGceSetupOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

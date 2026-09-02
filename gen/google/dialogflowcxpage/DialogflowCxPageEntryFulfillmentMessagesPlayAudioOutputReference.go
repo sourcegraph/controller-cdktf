@@ -4,13 +4,13 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/dialogflowcxpage/internal"
 )
 
 type DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference interface {
-	cdktf.ComplexObject
-	AllowPlaybackInterruption() cdktf.IResolvable
+	cdktn.ComplexObject
+	AllowPlaybackInterruption() cdktn.IResolvable
 	AudioUri() *string
 	SetAudioUri(val *string)
 	AudioUriInput() *string
@@ -38,15 +38,15 @@ type DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,11 +77,11 @@ type DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference interface 
 
 // The jsii proxy struct for DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference
 type jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) AllowPlaybackInterruption() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) AllowPlaybackInterruption() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowPlaybackInterruption",
@@ -170,8 +170,8 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -181,7 +181,7 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputRefere
 }
 
 
-func NewDialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference {
+func NewDialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -190,7 +190,7 @@ func NewDialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference(terrafo
 	j := jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference",
+		"@cdktn/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -198,11 +198,11 @@ func NewDialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference(terrafo
 	return &j
 }
 
-func NewDialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference_Override(d DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference_Override(d DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference",
+		"@cdktn/provider-google.dialogflowCxPage.DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -263,7 +263,7 @@ func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,11 +303,11 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -431,8 +431,8 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -444,24 +444,24 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -469,7 +469,7 @@ func (d *jsiiProxy_DialogflowCxPageEntryFulfillmentMessagesPlayAudioOutputRefere
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

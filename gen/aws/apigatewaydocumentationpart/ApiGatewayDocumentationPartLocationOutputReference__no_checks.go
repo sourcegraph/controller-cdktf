@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_ApiGatewayDocumentationPartLocationOutputReference) validateS
 	return nil
 }
 
-func validateNewApiGatewayDocumentationPartLocationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApiGatewayDocumentationPartLocationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

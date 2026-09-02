@@ -12,7 +12,7 @@ func (d *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsDestinationsLis
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsDestinationsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsDestinationsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsDestinationsLis
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsDestinationsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsDestinationsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DiscoveryEngineDataConnectorDestinationConfigsDestinationsLis
 	return nil
 }
 
-func validateNewDiscoveryEngineDataConnectorDestinationConfigsDestinationsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDiscoveryEngineDataConnectorDestinationConfigsDestinationsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

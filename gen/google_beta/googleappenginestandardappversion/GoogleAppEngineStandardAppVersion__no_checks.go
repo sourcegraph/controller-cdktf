@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validatePutVpcAccessConnec
 	return nil
 }
 
+func (g *jsiiProxy_GoogleAppEngineStandardAppVersion) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleAppEngineStandardAppVersion_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -156,7 +164,7 @@ func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetInstanceClassPa
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleAppEngineStandardAppVersion) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

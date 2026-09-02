@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/alloydbcluster/internal"
 )
 
 type AlloydbClusterTrialMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,16 +37,16 @@ type AlloydbClusterTrialMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpgradeTime() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type AlloydbClusterTrialMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type AlloydbClusterTrialMetadataOutputReference interface {
 
 // The jsii proxy struct for AlloydbClusterTrialMetadataOutputReference
 type jsiiProxy_AlloydbClusterTrialMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) ComplexObjectIndex() interface{} {
@@ -170,8 +170,8 @@ func (j *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -191,7 +191,7 @@ func (j *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) UpgradeTime() *st
 }
 
 
-func NewAlloydbClusterTrialMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlloydbClusterTrialMetadataOutputReference {
+func NewAlloydbClusterTrialMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlloydbClusterTrialMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlloydbClusterTrialMetadataOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -200,7 +200,7 @@ func NewAlloydbClusterTrialMetadataOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_AlloydbClusterTrialMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.alloydbCluster.AlloydbClusterTrialMetadataOutputReference",
+		"@cdktn/provider-google.alloydbCluster.AlloydbClusterTrialMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -208,11 +208,11 @@ func NewAlloydbClusterTrialMetadataOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewAlloydbClusterTrialMetadataOutputReference_Override(a AlloydbClusterTrialMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAlloydbClusterTrialMetadataOutputReference_Override(a AlloydbClusterTrialMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.alloydbCluster.AlloydbClusterTrialMetadataOutputReference",
+		"@cdktn/provider-google.alloydbCluster.AlloydbClusterTrialMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -262,7 +262,7 @@ func (j *jsiiProxy_AlloydbClusterTrialMetadataOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterTrialMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlloydbClusterTrialMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,11 +302,11 @@ func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -430,8 +430,8 @@ func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -443,24 +443,24 @@ func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -468,7 +468,7 @@ func (a *jsiiProxy_AlloydbClusterTrialMetadataOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigConsentHeaderHandlingOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigConsentHeaderHandlingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigConsentHeaderHandlingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigConsentHeaderHandlingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigConsentHeaderHandlingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigConsentHeaderHandlingOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigConsentHeaderHandlingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHealthcareFhirStoreConsentConfigConsentHeaderHandlingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleHealthcareFhirStoreConsentConfigConsentHeaderHandlingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleHealthcareFhirStoreConsentConfigConsentHeaderHandlingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

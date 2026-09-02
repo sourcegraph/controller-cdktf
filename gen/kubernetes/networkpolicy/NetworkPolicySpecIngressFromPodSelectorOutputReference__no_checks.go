@@ -40,7 +40,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorOutputReference) valid
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorOutputReference) valid
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkPolicySpecIngressFromPodSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetworkPolicySpecIngressFromPodSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkPolicySpecIngressFromPodSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

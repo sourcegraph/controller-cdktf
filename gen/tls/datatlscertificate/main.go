@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificate",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificate",
 		reflect.TypeOf((*DataTlsCertificate)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -38,6 +38,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContent", GoMethod: "ResetContent"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetUrl", GoMethod: "ResetUrl"},
@@ -55,19 +56,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "urlInput", GoGetter: "UrlInput"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyChain", GoGetter: "VerifyChain"},
 			_jsii_.MemberProperty{JsiiProperty: "verifyChainInput", GoGetter: "VerifyChainInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTlsCertificate{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificates",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificates",
 		reflect.TypeOf((*DataTlsCertificateCertificates)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesList",
 		reflect.TypeOf((*DataTlsCertificateCertificatesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -83,12 +85,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTlsCertificateCertificatesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateCertificatesOutputReference",
 		reflect.TypeOf((*DataTlsCertificateCertificatesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certPem", GoGetter: "CertPem"},
@@ -126,12 +128,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataTlsCertificateCertificatesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.dataTlsCertificate.DataTlsCertificateConfig",
+		"@cdktn/provider-tls.dataTlsCertificate.DataTlsCertificateConfig",
 		reflect.TypeOf((*DataTlsCertificateConfig)(nil)).Elem(),
 	)
 }

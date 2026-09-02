@@ -40,7 +40,7 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validatePutTransitionPa
 	return nil
 }
 
-func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -100,11 +100,11 @@ func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3BucketLifecycleRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewS3BucketLifecycleRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewS3BucketLifecycleRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

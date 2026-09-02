@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstancePointInTimeRestoreContextOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstancePointInTimeRestoreContextOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSqlDatabaseInstancePointInTimeRestoreContextOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSqlDatabaseInstancePointInTimeRestoreContextOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

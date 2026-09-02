@@ -40,11 +40,11 @@ func (e *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EventarcTriggerDestinationCloudRunServiceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEventarcTriggerDestinationCloudRunServiceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEventarcTriggerDestinationCloudRunServiceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

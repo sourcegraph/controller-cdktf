@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglecontainercluster/internal"
 )
 
 type DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList inter
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList inter
 
 // The jsii proxy struct for DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList
 type jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePo
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePo
 }
 
 
-func NewDataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList {
+func NewDataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList(te
 	j := jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList",
+		"@cdktn/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewDataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList(te
 	return &j
 }
 
-func NewDataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList_Override(d DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewDataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList_Override(d DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList",
+		"@cdktn/provider-google-beta.dataGoogleContainerCluster.DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		d,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePo
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePo
 	)
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := d.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		d,
@@ -205,8 +208,8 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePo
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePolicyList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (d *jsiiProxy_DataGoogleContainerClusterNodePoolNodeConfigHostMaintenancePo
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

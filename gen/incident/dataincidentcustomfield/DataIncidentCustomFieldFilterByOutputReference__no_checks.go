@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataIncidentCustomFieldFilterByOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataIncidentCustomFieldFilterByOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataIncidentCustomFieldFilterByOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataIncidentCustomFieldFilterByOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataIncidentCustomFieldFilterByOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataIncidentCustomFieldFilterByOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldFilterByOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataIncidentCustomFieldFilterByOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataIncidentCustomFieldFilterByOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataIncidentCustomFieldFilterByOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

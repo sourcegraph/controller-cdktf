@@ -40,7 +40,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsBackupConfigurationOutputReference
 	return nil
 }
 
-func validateNewSqlDatabaseInstanceSettingsBackupConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSqlDatabaseInstanceSettingsBackupConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

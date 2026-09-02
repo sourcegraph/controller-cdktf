@@ -40,7 +40,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaOutputReference) validatePut
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSloObjectiveRawMetricQueryInstanaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveRawMetricQueryInstanaOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

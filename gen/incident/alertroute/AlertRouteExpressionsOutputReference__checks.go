@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -106,7 +106,7 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validatePutOperationsPa
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AlertRouteExpressionsOperations:
 		value := value.(*[]*AlertRouteExpressionsOperations)
@@ -125,16 +125,16 @@ func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validatePutOperationsPa
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AlertRouteExpressionsOperations; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AlertRouteExpressionsOperations; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AlertRouteExpressionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -207,7 +207,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetComplexObjec
 
 func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *AlertRouteExpressions:
 		val := val.(*AlertRouteExpressions)
@@ -222,7 +222,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetInternalValu
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AlertRouteExpressions; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *AlertRouteExpressions; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -261,7 +261,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -269,7 +269,7 @@ func (j *jsiiProxy_AlertRouteExpressionsOutputReference) validateSetTerraformRes
 	return nil
 }
 
-func validateNewAlertRouteExpressionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlertRouteExpressionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

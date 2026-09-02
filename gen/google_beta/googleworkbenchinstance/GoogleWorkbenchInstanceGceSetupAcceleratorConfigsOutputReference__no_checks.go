@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputRefere
 	return nil
 }
 
-func validateNewGoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleWorkbenchInstanceGceSetupAcceleratorConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

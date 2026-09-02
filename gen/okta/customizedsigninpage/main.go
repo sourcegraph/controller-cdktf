@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPage",
+		"@cdktn/provider-okta.customizedSigninPage.CustomizedSigninPage",
 		reflect.TypeOf((*CustomizedSigninPage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -51,6 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putContentSecurityPolicySetting", GoMethod: "PutContentSecurityPolicySetting"},
 			_jsii_.MemberMethod{JsiiMethod: "putWidgetCustomizations", GoMethod: "PutWidgetCustomizations"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContentSecurityPolicySetting", GoMethod: "ResetContentSecurityPolicySetting"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetWidgetCustomizations", GoMethod: "ResetWidgetCustomizations"},
@@ -67,23 +69,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "widgetCustomizationsInput", GoGetter: "WidgetCustomizationsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "widgetVersion", GoGetter: "WidgetVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "widgetVersionInput", GoGetter: "WidgetVersionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomizedSigninPage{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageConfig",
+		"@cdktn/provider-okta.customizedSigninPage.CustomizedSigninPageConfig",
 		reflect.TypeOf((*CustomizedSigninPageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageContentSecurityPolicySetting",
+		"@cdktn/provider-okta.customizedSigninPage.CustomizedSigninPageContentSecurityPolicySetting",
 		reflect.TypeOf((*CustomizedSigninPageContentSecurityPolicySetting)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageContentSecurityPolicySettingOutputReference",
+		"@cdktn/provider-okta.customizedSigninPage.CustomizedSigninPageContentSecurityPolicySettingOutputReference",
 		reflect.TypeOf((*CustomizedSigninPageContentSecurityPolicySettingOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,16 +122,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomizedSigninPageContentSecurityPolicySettingOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizations",
+		"@cdktn/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizations",
 		reflect.TypeOf((*CustomizedSigninPageWidgetCustomizations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizationsOutputReference",
+		"@cdktn/provider-okta.customizedSigninPage.CustomizedSigninPageWidgetCustomizationsOutputReference",
 		reflect.TypeOf((*CustomizedSigninPageWidgetCustomizationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticatorPageCustomLinkLabel", GoGetter: "AuthenticatorPageCustomLinkLabel"},
@@ -217,7 +220,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomizedSigninPageWidgetCustomizationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,11 +40,11 @@ func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateGetSt
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EvidentlyFeatureEvaluationRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEvidentlyFeatureEvaluationRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEvidentlyFeatureEvaluationRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataObserveReportScheduleList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveReportScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveReportScheduleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataObserveReportScheduleList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveReportScheduleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveReportScheduleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataObserveReportScheduleList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewDataObserveReportScheduleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataObserveReportScheduleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

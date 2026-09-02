@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateGetParameter
 	return nil
 }
 
-func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewLoggingLinkedDatasetBigqueryDatasetListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoggingLinkedDatasetBigqueryDatasetListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

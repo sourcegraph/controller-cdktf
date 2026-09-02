@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureC
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureC
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDiscoveryEngineSearchEngineKnowledgeGraphConfigFeatureConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

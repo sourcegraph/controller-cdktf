@@ -40,11 +40,11 @@ func (l *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) valida
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_LaunchTemplateElasticGpuSpecificationsOutputReference) valida
 	return nil
 }
 
-func validateNewLaunchTemplateElasticGpuSpecificationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLaunchTemplateElasticGpuSpecificationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

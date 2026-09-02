@@ -40,11 +40,11 @@ func (e *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) v
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_EdgecontainerClusterAuthorizationAdminUsersOutputReference) v
 	return nil
 }
 
-func validateNewEdgecontainerClusterAuthorizationAdminUsersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEdgecontainerClusterAuthorizationAdminUsersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

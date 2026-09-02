@@ -40,7 +40,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateGetS
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validatePutR
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IdentityPlatformConfigMonitoringOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIdentityPlatformConfigMonitoringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIdentityPlatformConfigMonitoringOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

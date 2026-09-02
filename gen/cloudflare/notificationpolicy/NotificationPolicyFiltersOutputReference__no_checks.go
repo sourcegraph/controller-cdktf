@@ -40,11 +40,11 @@ func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) validateGetStringMa
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NotificationPolicyFiltersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -132,7 +132,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -140,7 +140,7 @@ func (j *jsiiProxy_NotificationPolicyFiltersOutputReference) validateSetZonesPar
 	return nil
 }
 
-func validateNewNotificationPolicyFiltersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNotificationPolicyFiltersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

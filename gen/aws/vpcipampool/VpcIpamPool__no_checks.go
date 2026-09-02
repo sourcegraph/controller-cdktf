@@ -56,6 +56,10 @@ func (v *jsiiProxy_VpcIpamPool) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (v *jsiiProxy_VpcIpamPool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcIpamPool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (v *jsiiProxy_VpcIpamPool) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (v *jsiiProxy_VpcIpamPool) validatePutTimeoutsParameters(value *VpcIpamPoolTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcIpamPool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_VpcIpamPool) validateSetIpamScopeIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_VpcIpamPool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VpcIpamPool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

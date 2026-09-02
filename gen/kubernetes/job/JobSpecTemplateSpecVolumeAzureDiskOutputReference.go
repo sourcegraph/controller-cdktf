@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/job/internal"
 )
 
 type JobSpecTemplateSpecVolumeAzureDiskOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CachingMode() *string
 	SetCachingMode(val *string)
 	CachingModeInput() *string
@@ -52,15 +52,15 @@ type JobSpecTemplateSpecVolumeAzureDiskOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,15 +76,15 @@ type JobSpecTemplateSpecVolumeAzureDiskOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFsType()
 	ResetKind()
 	ResetReadOnly()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -94,7 +94,7 @@ type JobSpecTemplateSpecVolumeAzureDiskOutputReference interface {
 
 // The jsii proxy struct for JobSpecTemplateSpecVolumeAzureDiskOutputReference
 type jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) CachingMode() *string {
@@ -277,8 +277,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -288,7 +288,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) TerraformR
 }
 
 
-func NewJobSpecTemplateSpecVolumeAzureDiskOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecVolumeAzureDiskOutputReference {
+func NewJobSpecTemplateSpecVolumeAzureDiskOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) JobSpecTemplateSpecVolumeAzureDiskOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobSpecTemplateSpecVolumeAzureDiskOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -297,7 +297,7 @@ func NewJobSpecTemplateSpecVolumeAzureDiskOutputReference(terraformResource cdkt
 	j := jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeAzureDiskOutputReference",
+		"@cdktn/provider-kubernetes.job.JobSpecTemplateSpecVolumeAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -305,11 +305,11 @@ func NewJobSpecTemplateSpecVolumeAzureDiskOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewJobSpecTemplateSpecVolumeAzureDiskOutputReference_Override(j JobSpecTemplateSpecVolumeAzureDiskOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewJobSpecTemplateSpecVolumeAzureDiskOutputReference_Override(j JobSpecTemplateSpecVolumeAzureDiskOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeAzureDiskOutputReference",
+		"@cdktn/provider-kubernetes.job.JobSpecTemplateSpecVolumeAzureDiskOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		j,
 	)
@@ -425,7 +425,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -465,11 +465,11 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) GetAnyMapA
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -593,8 +593,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) GetStringM
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -606,16 +606,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) Interpolat
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -646,8 +646,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) ResetReadO
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -655,7 +655,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeAzureDiskOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

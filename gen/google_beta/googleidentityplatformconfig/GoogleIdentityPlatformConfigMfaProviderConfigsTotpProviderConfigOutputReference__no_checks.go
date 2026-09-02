@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderCon
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

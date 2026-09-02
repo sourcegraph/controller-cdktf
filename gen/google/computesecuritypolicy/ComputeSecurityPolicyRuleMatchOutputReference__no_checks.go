@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchOutputReference) validatePutExp
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleMatchOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleMatchOutputReference) validateSetVer
 	return nil
 }
 
-func validateNewComputeSecurityPolicyRuleMatchOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeSecurityPolicyRuleMatchOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDialogflowCxToolDataStoreSpecDataStoreConnectionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

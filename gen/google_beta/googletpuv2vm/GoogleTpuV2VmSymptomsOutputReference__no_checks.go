@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleTpuV2VmSymptomsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmSymptomsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleTpuV2VmSymptomsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmSymptomsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTpuV2VmSymptomsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleTpuV2VmSymptomsOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmSymptomsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTpuV2VmSymptomsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleTpuV2VmSymptomsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleTpuV2VmSymptomsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

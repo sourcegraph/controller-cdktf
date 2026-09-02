@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/workerscript/internal"
 )
 
 type WorkerScriptSecretTextBindingList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type WorkerScriptSecretTextBindingList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) WorkerScriptSecretTextBindingOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type WorkerScriptSecretTextBindingList interface {
 
 // The jsii proxy struct for WorkerScriptSecretTextBindingList
 type jsiiProxy_WorkerScriptSecretTextBindingList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_WorkerScriptSecretTextBindingList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScriptSecretTextBindingList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkerScriptSecretTextBindingList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList) WrapsSet() *bool {
 }
 
 
-func NewWorkerScriptSecretTextBindingList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptSecretTextBindingList {
+func NewWorkerScriptSecretTextBindingList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) WorkerScriptSecretTextBindingList {
 	_init_.Initialize()
 
 	if err := validateNewWorkerScriptSecretTextBindingListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewWorkerScriptSecretTextBindingList(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_WorkerScriptSecretTextBindingList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingList",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewWorkerScriptSecretTextBindingList(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewWorkerScriptSecretTextBindingList_Override(w WorkerScriptSecretTextBindingList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewWorkerScriptSecretTextBindingList_Override(w WorkerScriptSecretTextBindingList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingList",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptSecretTextBindingList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		w,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptSecretTextBindingList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkerScriptSecretTextBindingList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_WorkerScriptSecretTextBindingList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (w *jsiiProxy_WorkerScriptSecretTextBindingList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (w *jsiiProxy_WorkerScriptSecretTextBindingList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := w.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		w,
@@ -228,8 +231,8 @@ func (w *jsiiProxy_WorkerScriptSecretTextBindingList) Get(index *float64) Worker
 	return returns
 }
 
-func (w *jsiiProxy_WorkerScriptSecretTextBindingList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkerScriptSecretTextBindingList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (w *jsiiProxy_WorkerScriptSecretTextBindingList) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

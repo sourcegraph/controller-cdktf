@@ -40,11 +40,11 @@ func (m *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) val
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_MemorystoreInstanceZoneDistributionConfigOutputReference) val
 	return nil
 }
 
-func validateNewMemorystoreInstanceZoneDistributionConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMemorystoreInstanceZoneDistributionConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

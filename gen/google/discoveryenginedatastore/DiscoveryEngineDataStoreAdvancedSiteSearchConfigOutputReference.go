@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/discoveryenginedatastore/internal"
 )
 
 type DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDisableAutomaticRefresh()
 	ResetDisableInitialIndex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference interface {
 
 // The jsii proxy struct for DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference
 type jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 }
 
 
-func NewDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference {
+func NewDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference(terrafor
 	j := jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference",
+		"@cdktn/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference(terrafor
 	return &j
 }
 
-func NewDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference_Override(d DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference_Override(d DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference",
+		"@cdktn/provider-google.discoveryEngineDataStore.DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -456,8 +456,8 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -469,16 +469,16 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	)
 }
 
-func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (d *jsiiProxy_DiscoveryEngineDataStoreAdvancedSiteSearchConfigOutputReferen
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOut
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOut
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePubsubTopicIngestionDataSourceSettingsAzureEventHubsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

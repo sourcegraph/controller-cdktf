@@ -12,7 +12,7 @@ func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) valida
 	return nil
 }
 
-func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (z *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) valida
 	return nil
 }
 
-func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ZoneSettingsOverrideInitialSettingsSecurityHeaderList) valida
 	return nil
 }
 
-func validateNewZoneSettingsOverrideInitialSettingsSecurityHeaderListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewZoneSettingsOverrideInitialSettingsSecurityHeaderListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

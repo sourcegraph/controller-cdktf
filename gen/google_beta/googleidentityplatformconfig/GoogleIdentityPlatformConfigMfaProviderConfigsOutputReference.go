@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleidentityplatformconfig/internal"
 )
 
 type GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TotpProviderConfig() GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfigOutputReference
 	TotpProviderConfigInput() *GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfig
 	// Experimental.
@@ -47,7 +47,7 @@ type GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTotpProviderConfig(value *GoogleIdentityPlatformConfigMfaProviderConfigsTotpProviderConfig)
 	ResetState()
 	ResetTotpProviderConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference interface {
 
 // The jsii proxy struct for GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference
 type jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference) ComplexObjectIndex() interface{} {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference
 }
 
 
-func NewGoogleIdentityPlatformConfigMfaProviderConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference {
+func NewGoogleIdentityPlatformConfigMfaProviderConfigsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleIdentityPlatformConfigMfaProviderConfigsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleIdentityPlatformConfigMfaProviderConfigsOutputReference(terraformR
 	j := jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference",
+		"@cdktn/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleIdentityPlatformConfigMfaProviderConfigsOutputReference(terraformR
 	return &j
 }
 
-func NewGoogleIdentityPlatformConfigMfaProviderConfigsOutputReference_Override(g GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleIdentityPlatformConfigMfaProviderConfigsOutputReference_Override(g GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference",
+		"@cdktn/provider-google-beta.googleIdentityPlatformConfig.GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference
 	)
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -445,8 +445,8 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -458,16 +458,16 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference
 	)
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigMfaProviderConfigsOutputReference
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

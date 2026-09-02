@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleArtifactRegistryRuleConditionOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRuleConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleArtifactRegistryRuleConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleArtifactRegistryRuleConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleArtifactRegistryRuleConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRuleConditionOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleArtifactRegistryRuleConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleArtifactRegistryRuleConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleArtifactRegistryRuleConditionOutputReference) validateS
 	return nil
 }
 
-func validateNewGoogleArtifactRegistryRuleConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleArtifactRegistryRuleConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/appmeshroute/internal"
 )
 
 type AppmeshRouteSpecTcpRouteTimeoutOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type AppmeshRouteSpecTcpRouteTimeoutOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type AppmeshRouteSpecTcpRouteTimeoutOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutIdle(value *AppmeshRouteSpecTcpRouteTimeoutIdle)
 	ResetIdle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type AppmeshRouteSpecTcpRouteTimeoutOutputReference interface {
 
 // The jsii proxy struct for AppmeshRouteSpecTcpRouteTimeoutOutputReference
 type jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) TerraformReso
 }
 
 
-func NewAppmeshRouteSpecTcpRouteTimeoutOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecTcpRouteTimeoutOutputReference {
+func NewAppmeshRouteSpecTcpRouteTimeoutOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppmeshRouteSpecTcpRouteTimeoutOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppmeshRouteSpecTcpRouteTimeoutOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewAppmeshRouteSpecTcpRouteTimeoutOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutOutputReference",
+		"@cdktn/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewAppmeshRouteSpecTcpRouteTimeoutOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewAppmeshRouteSpecTcpRouteTimeoutOutputReference_Override(a AppmeshRouteSpecTcpRouteTimeoutOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppmeshRouteSpecTcpRouteTimeoutOutputReference_Override(a AppmeshRouteSpecTcpRouteTimeoutOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutOutputReference",
+		"@cdktn/provider-aws.appmeshRoute.AppmeshRouteSpecTcpRouteTimeoutOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -410,8 +410,8 @@ func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) GetStringMapA
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -423,16 +423,16 @@ func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) Interpolation
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) ResetIdle() {
 	)
 }
 
-func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (a *jsiiProxy_AppmeshRouteSpecTcpRouteTimeoutOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

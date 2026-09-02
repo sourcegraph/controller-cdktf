@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints:
 		value := value.(*[]*BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints)
@@ -114,16 +114,16 @@ func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*BeyondcorpSecurityGatewayApplicationUpstreamsExternalEndpoints; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (b *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -210,7 +210,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -218,7 +218,7 @@ func (j *jsiiProxy_BeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputRe
 	return nil
 }
 
-func validateNewBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBeyondcorpSecurityGatewayApplicationUpstreamsExternalOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -40,11 +40,11 @@ func (v *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomation
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomation
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewVertexAiIndexEndpointPrivateServiceConnectConfigPscAutomationConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

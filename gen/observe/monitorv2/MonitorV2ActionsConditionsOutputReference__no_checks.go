@@ -40,7 +40,7 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateGetStringM
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (m *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validatePutCompare
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2ActionsConditionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMonitorV2ActionsConditionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitorV2ActionsConditionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

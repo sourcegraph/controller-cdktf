@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataformRepositoryWorkspaceCompilationOverridesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataformRepositoryWorkspaceCompilationOverridesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataformRepositoryWorkspaceCompilationOverridesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

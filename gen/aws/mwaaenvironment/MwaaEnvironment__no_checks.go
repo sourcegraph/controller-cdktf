@@ -56,6 +56,10 @@ func (m *jsiiProxy_MwaaEnvironment) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (m *jsiiProxy_MwaaEnvironment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MwaaEnvironment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (m *jsiiProxy_MwaaEnvironment) validatePutNetworkConfigurationParameters(va
 }
 
 func (m *jsiiProxy_MwaaEnvironment) validatePutTimeoutsParameters(value *MwaaEnvironmentTimeouts) error {
+	return nil
+}
+
+func (m *jsiiProxy_MwaaEnvironment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -136,7 +144,7 @@ func (j *jsiiProxy_MwaaEnvironment) validateSetKmsKeyParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_MwaaEnvironment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MwaaEnvironment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

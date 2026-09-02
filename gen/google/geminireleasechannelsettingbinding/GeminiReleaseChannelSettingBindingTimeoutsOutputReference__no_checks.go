@@ -40,11 +40,11 @@ func (g *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GeminiReleaseChannelSettingBindingTimeoutsOutputReference) va
 	return nil
 }
 
-func validateNewGeminiReleaseChannelSettingBindingTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGeminiReleaseChannelSettingBindingTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

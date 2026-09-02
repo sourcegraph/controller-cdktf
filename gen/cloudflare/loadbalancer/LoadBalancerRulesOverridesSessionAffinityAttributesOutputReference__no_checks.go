@@ -40,11 +40,11 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesSessionAffinityAttributesOutputRefe
 	return nil
 }
 
-func validateNewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoadBalancerRulesOverridesSessionAffinityAttributesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

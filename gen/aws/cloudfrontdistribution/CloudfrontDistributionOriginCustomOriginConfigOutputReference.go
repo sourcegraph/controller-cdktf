@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/cloudfrontdistribution/internal"
 )
 
 type CloudfrontDistributionOriginCustomOriginConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -52,15 +52,15 @@ type CloudfrontDistributionOriginCustomOriginConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,14 +76,14 @@ type CloudfrontDistributionOriginCustomOriginConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetOriginKeepaliveTimeout()
 	ResetOriginReadTimeout()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type CloudfrontDistributionOriginCustomOriginConfigOutputReference interface {
 
 // The jsii proxy struct for CloudfrontDistributionOriginCustomOriginConfigOutputReference
 type jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -276,8 +276,8 @@ func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -287,7 +287,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 }
 
 
-func NewCloudfrontDistributionOriginCustomOriginConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionOriginCustomOriginConfigOutputReference {
+func NewCloudfrontDistributionOriginCustomOriginConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CloudfrontDistributionOriginCustomOriginConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudfrontDistributionOriginCustomOriginConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -296,7 +296,7 @@ func NewCloudfrontDistributionOriginCustomOriginConfigOutputReference(terraformR
 	j := jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomOriginConfigOutputReference",
+		"@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomOriginConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -304,11 +304,11 @@ func NewCloudfrontDistributionOriginCustomOriginConfigOutputReference(terraformR
 	return &j
 }
 
-func NewCloudfrontDistributionOriginCustomOriginConfigOutputReference_Override(c CloudfrontDistributionOriginCustomOriginConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudfrontDistributionOriginCustomOriginConfigOutputReference_Override(c CloudfrontDistributionOriginCustomOriginConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomOriginConfigOutputReference",
+		"@cdktn/provider-aws.cloudfrontDistribution.CloudfrontDistributionOriginCustomOriginConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -424,7 +424,7 @@ func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	)
 }
 
-func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -464,11 +464,11 @@ func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -592,8 +592,8 @@ func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -605,16 +605,16 @@ func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -637,8 +637,8 @@ func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	)
 }
 
-func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -646,7 +646,7 @@ func (c *jsiiProxy_CloudfrontDistributionOriginCustomOriginConfigOutputReference
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

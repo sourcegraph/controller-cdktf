@@ -40,11 +40,11 @@ func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuth
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuth
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVertexAiIndexEndpointDeployedIndexDeployedIndexAuthConfigAuthProviderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

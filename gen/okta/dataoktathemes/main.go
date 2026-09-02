@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemes",
+		"@cdktn/provider-okta.dataOktaThemes.DataOktaThemes",
 		reflect.TypeOf((*DataOktaThemes)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -38,6 +38,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -50,23 +51,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaThemes{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesConfig",
+		"@cdktn/provider-okta.dataOktaThemes.DataOktaThemesConfig",
 		reflect.TypeOf((*DataOktaThemesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemes",
+		"@cdktn/provider-okta.dataOktaThemes.DataOktaThemesThemes",
 		reflect.TypeOf((*DataOktaThemesThemes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesList",
+		"@cdktn/provider-okta.dataOktaThemes.DataOktaThemesThemesList",
 		reflect.TypeOf((*DataOktaThemesThemesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -82,12 +84,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaThemesThemesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaThemes.DataOktaThemesThemesOutputReference",
+		"@cdktn/provider-okta.dataOktaThemes.DataOktaThemesThemesOutputReference",
 		reflect.TypeOf((*DataOktaThemesThemesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backgroundImageUrl", GoGetter: "BackgroundImageUrl"},
@@ -127,7 +129,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaThemesThemesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

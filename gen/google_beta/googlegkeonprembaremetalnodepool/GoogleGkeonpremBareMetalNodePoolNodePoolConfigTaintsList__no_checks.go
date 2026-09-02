@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsList) val
 	return nil
 }
 
-func validateNewGoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleGkeonpremBareMetalNodePoolNodePoolConfigTaintsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

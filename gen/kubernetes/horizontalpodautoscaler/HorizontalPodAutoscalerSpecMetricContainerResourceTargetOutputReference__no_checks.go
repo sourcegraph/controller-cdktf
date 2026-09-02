@@ -40,11 +40,11 @@ func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricContainerResourceTargetOutpu
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricContainerResourceTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricContainerResourceTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricContainerResourceTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HorizontalPodAutoscalerSpecMetricContainerResourceTargetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricContainerResourceTargetOutpu
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricContainerResourceTargetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricContainerResourceTargetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerSpecMetricContainerResourceTargetOutpu
 	return nil
 }
 
-func validateNewHorizontalPodAutoscalerSpecMetricContainerResourceTargetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewHorizontalPodAutoscalerSpecMetricContainerResourceTargetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

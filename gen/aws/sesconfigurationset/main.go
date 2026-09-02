@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSet",
+		"@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSet",
 		reflect.TypeOf((*SesConfigurationSet)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lastFreshStart", GoGetter: "LastFreshStart"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -52,6 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDeliveryOptions", GoMethod: "PutDeliveryOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putTrackingOptions", GoMethod: "PutTrackingOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "reputationMetricsEnabled", GoGetter: "ReputationMetricsEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "reputationMetricsEnabledInput", GoGetter: "ReputationMetricsEnabledInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeliveryOptions", GoMethod: "ResetDeliveryOptions"},
@@ -73,23 +75,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "trackingOptions", GoGetter: "TrackingOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "trackingOptionsInput", GoGetter: "TrackingOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SesConfigurationSet{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetConfig",
+		"@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetConfig",
 		reflect.TypeOf((*SesConfigurationSetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptions",
+		"@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptions",
 		reflect.TypeOf((*SesConfigurationSetDeliveryOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptionsOutputReference",
+		"@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetDeliveryOptionsOutputReference",
 		reflect.TypeOf((*SesConfigurationSetDeliveryOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -119,16 +122,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SesConfigurationSetDeliveryOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptions",
+		"@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptions",
 		reflect.TypeOf((*SesConfigurationSetTrackingOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptionsOutputReference",
+		"@cdktn/provider-aws.sesConfigurationSet.SesConfigurationSetTrackingOptionsOutputReference",
 		reflect.TypeOf((*SesConfigurationSetTrackingOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,7 +161,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SesConfigurationSetTrackingOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

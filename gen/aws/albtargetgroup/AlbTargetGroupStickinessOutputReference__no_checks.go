@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlbTargetGroupStickinessOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_AlbTargetGroupStickinessOutputReference) validateSetTypeParam
 	return nil
 }
 
-func validateNewAlbTargetGroupStickinessOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlbTargetGroupStickinessOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputR
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputR
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAzureClusterAzureServicesAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerAzureClusterAzureServicesAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerAzureClusterAzureServicesAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

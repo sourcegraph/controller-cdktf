@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisFireho
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisFireho
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsConnectInstanceStorageConfigStorageConfigKinesisFireho
 	return nil
 }
 
-func validateNewDataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsConnectInstanceStorageConfigStorageConfigKinesisFirehoseConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (l *jsiiProxy_LocationMap) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (l *jsiiProxy_LocationMap) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LocationMap) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (l *jsiiProxy_LocationMap) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (l *jsiiProxy_LocationMap) validatePutConfigurationParameters(value *LocationMapConfiguration) error {
+	return nil
+}
+
+func (l *jsiiProxy_LocationMap) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_LocationMap) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LocationMap) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LocationMap) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

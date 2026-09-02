@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) validateInterpolationForAttribut
 	return nil
 }
 
+func (c *jsiiProxy_ComputeGlobalForwardingRule) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeGlobalForwardingRule) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_ComputeGlobalForwardingRule) validatePutServiceDirectoryRegis
 }
 
 func (c *jsiiProxy_ComputeGlobalForwardingRule) validatePutTimeoutsParameters(value *ComputeGlobalForwardingRuleTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeGlobalForwardingRule) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeGlobalForwardingRule) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

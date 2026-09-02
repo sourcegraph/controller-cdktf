@@ -12,7 +12,7 @@ func (v *jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsList) validateG
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_VertexAiEndpointDeployedModelsPrivateEndpointsList) validateS
 	return nil
 }
 
-func validateNewVertexAiEndpointDeployedModelsPrivateEndpointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewVertexAiEndpointDeployedModelsPrivateEndpointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

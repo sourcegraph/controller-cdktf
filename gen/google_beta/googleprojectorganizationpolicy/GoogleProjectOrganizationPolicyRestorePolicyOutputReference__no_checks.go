@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleProjectOrganizationPolicyRestorePolicyOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectOrganizationPolicyRestorePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleProjectOrganizationPolicyRestorePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectOrganizationPolicyRestorePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleProjectOrganizationPolicyRestorePolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleProjectOrganizationPolicyRestorePolicyOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectOrganizationPolicyRestorePolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleProjectOrganizationPolicyRestorePolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleProjectOrganizationPolicyRestorePolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleProjectOrganizationPolicyRestorePolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

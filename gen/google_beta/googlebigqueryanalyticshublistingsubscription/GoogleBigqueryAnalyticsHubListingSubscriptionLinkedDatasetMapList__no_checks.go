@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscriptionLinkedDatasetMap
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscriptionLinkedDatasetMapList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscriptionLinkedDatasetMapList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscriptionLinkedDatasetMap
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscriptionLinkedDatasetMapList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscriptionLinkedDatasetMapList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingSubscriptionLinkedDatasetMap
 	return nil
 }
 
-func validateNewGoogleBigqueryAnalyticsHubListingSubscriptionLinkedDatasetMapListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleBigqueryAnalyticsHubListingSubscriptionLinkedDatasetMapListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

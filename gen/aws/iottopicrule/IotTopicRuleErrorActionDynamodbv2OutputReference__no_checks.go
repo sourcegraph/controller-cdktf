@@ -40,7 +40,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validateGet
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (i *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validatePut
 	return nil
 }
 
-func (i *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IotTopicRuleErrorActionDynamodbv2OutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIotTopicRuleErrorActionDynamodbv2OutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIotTopicRuleErrorActionDynamodbv2OutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

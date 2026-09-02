@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ComputeSecurityPolicyRuleRedirectOptionsOutputReference) vali
 	return nil
 }
 
-func validateNewComputeSecurityPolicyRuleRedirectOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeSecurityPolicyRuleRedirectOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

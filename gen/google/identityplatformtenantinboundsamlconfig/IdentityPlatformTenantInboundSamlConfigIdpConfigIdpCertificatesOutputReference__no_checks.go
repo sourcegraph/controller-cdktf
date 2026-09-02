@@ -40,11 +40,11 @@ func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificat
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificat
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_IdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificat
 	return nil
 }
 
-func validateNewIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewIdentityPlatformTenantInboundSamlConfigIdpConfigIdpCertificatesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

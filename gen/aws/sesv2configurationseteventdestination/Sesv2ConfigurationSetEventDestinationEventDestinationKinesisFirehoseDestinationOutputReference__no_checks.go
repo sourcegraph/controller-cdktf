@@ -40,11 +40,11 @@ func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisF
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisF
 	return nil
 }
 
-func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Sesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSesv2ConfigurationSetEventDestinationEventDestinationKinesisFirehoseDestinationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

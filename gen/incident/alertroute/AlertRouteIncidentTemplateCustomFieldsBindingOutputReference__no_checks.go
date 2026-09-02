@@ -40,7 +40,7 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteIncidentTemplateCustomFieldsBindingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlertRouteIncidentTemplateCustomFieldsBindingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAlertRouteIncidentTemplateCustomFieldsBindingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

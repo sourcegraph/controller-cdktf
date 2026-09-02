@@ -56,6 +56,10 @@ func (s *jsiiProxy_S3Bucket) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (s *jsiiProxy_S3Bucket) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3Bucket) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (s *jsiiProxy_S3Bucket) validatePutWebsiteParameters(value *S3BucketWebsite
 	return nil
 }
 
+func (s *jsiiProxy_S3Bucket) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateS3Bucket_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -160,7 +168,7 @@ func (j *jsiiProxy_S3Bucket) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_S3Bucket) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_S3Bucket) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

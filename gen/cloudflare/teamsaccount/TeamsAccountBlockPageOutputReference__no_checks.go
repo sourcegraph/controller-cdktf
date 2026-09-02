@@ -40,11 +40,11 @@ func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamsAccountBlockPageOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TeamsAccountBlockPageOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTeamsAccountBlockPageOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTeamsAccountBlockPageOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

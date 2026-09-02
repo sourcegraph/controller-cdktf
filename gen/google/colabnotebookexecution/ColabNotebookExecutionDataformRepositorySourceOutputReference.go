@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/colabnotebookexecution/internal"
 )
 
 type ColabNotebookExecutionDataformRepositorySourceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CommitSha() *string
 	SetCommitSha(val *string)
 	CommitShaInput() *string
@@ -40,15 +40,15 @@ type ColabNotebookExecutionDataformRepositorySourceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type ColabNotebookExecutionDataformRepositorySourceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCommitSha()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ColabNotebookExecutionDataformRepositorySourceOutputReference interface {
 
 // The jsii proxy struct for ColabNotebookExecutionDataformRepositorySourceOutputReference
 type jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) CommitSha() *string {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference
 }
 
 
-func NewColabNotebookExecutionDataformRepositorySourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionDataformRepositorySourceOutputReference {
+func NewColabNotebookExecutionDataformRepositorySourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionDataformRepositorySourceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewColabNotebookExecutionDataformRepositorySourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewColabNotebookExecutionDataformRepositorySourceOutputReference(terraformR
 	j := jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.colabNotebookExecution.ColabNotebookExecutionDataformRepositorySourceOutputReference",
+		"@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionDataformRepositorySourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewColabNotebookExecutionDataformRepositorySourceOutputReference(terraformR
 	return &j
 }
 
-func NewColabNotebookExecutionDataformRepositorySourceOutputReference_Override(c ColabNotebookExecutionDataformRepositorySourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewColabNotebookExecutionDataformRepositorySourceOutputReference_Override(c ColabNotebookExecutionDataformRepositorySourceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.colabNotebookExecution.ColabNotebookExecutionDataformRepositorySourceOutputReference",
+		"@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionDataformRepositorySourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference
 	)
 }
 
-func (j *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -455,8 +455,8 @@ func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -468,16 +468,16 @@ func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference
 	)
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (c *jsiiProxy_ColabNotebookExecutionDataformRepositorySourceOutputReference
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

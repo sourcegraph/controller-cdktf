@@ -40,7 +40,7 @@ func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlueCatalogDatabaseCreateTableDefaultPermissionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGlueCatalogDatabaseCreateTableDefaultPermissionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGlueCatalogDatabaseCreateTableDefaultPermissionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

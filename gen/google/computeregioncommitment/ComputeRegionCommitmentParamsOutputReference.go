@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeregioncommitment/internal"
 )
 
 type ComputeRegionCommitmentParamsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type ComputeRegionCommitmentParamsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type ComputeRegionCommitmentParamsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetResourceManagerTags()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type ComputeRegionCommitmentParamsOutputReference interface {
 
 // The jsii proxy struct for ComputeRegionCommitmentParamsOutputReference
 type jsiiProxy_ComputeRegionCommitmentParamsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) TerraformResour
 }
 
 
-func NewComputeRegionCommitmentParamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeRegionCommitmentParamsOutputReference {
+func NewComputeRegionCommitmentParamsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeRegionCommitmentParamsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeRegionCommitmentParamsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewComputeRegionCommitmentParamsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_ComputeRegionCommitmentParamsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference",
+		"@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewComputeRegionCommitmentParamsOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewComputeRegionCommitmentParamsOutputReference_Override(c ComputeRegionCommitmentParamsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeRegionCommitmentParamsOutputReference_Override(c ComputeRegionCommitmentParamsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference",
+		"@cdktn/provider-google.computeRegionCommitment.ComputeRegionCommitmentParamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_ComputeRegionCommitmentParamsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_ComputeRegionCommitmentParamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeRegionCommitmentParamsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -421,8 +421,8 @@ func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -434,16 +434,16 @@ func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) InterpolationAs
 	return returns
 }
 
-func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) ResetResourceMa
 	)
 }
 
-func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (c *jsiiProxy_ComputeRegionCommitmentParamsOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

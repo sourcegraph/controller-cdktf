@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleTagsTagValue) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleTagsTagValue) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleTagsTagValue_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -72,7 +76,7 @@ func (j *jsiiProxy_DataGoogleTagsTagValue) validateSetCountParameters(val interf
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleTagsTagValue) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleTagsTagValue) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

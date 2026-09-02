@@ -56,6 +56,10 @@ func (s *jsiiProxy_S3BucketWebsiteConfiguration) validateInterpolationForAttribu
 	return nil
 }
 
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3BucketWebsiteConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (s *jsiiProxy_S3BucketWebsiteConfiguration) validatePutRedirectAllRequestsT
 }
 
 func (s *jsiiProxy_S3BucketWebsiteConfiguration) validatePutRoutingRuleParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3BucketWebsiteConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_S3BucketWebsiteConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

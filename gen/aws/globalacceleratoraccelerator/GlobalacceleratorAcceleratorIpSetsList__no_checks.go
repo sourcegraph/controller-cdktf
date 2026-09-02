@@ -12,7 +12,7 @@ func (g *jsiiProxy_GlobalacceleratorAcceleratorIpSetsList) validateGetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorAcceleratorIpSetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorAcceleratorIpSetsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorIpSetsList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorAcceleratorIpSetsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlobalacceleratorAcceleratorIpSetsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GlobalacceleratorAcceleratorIpSetsList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewGlobalacceleratorAcceleratorIpSetsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGlobalacceleratorAcceleratorIpSetsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

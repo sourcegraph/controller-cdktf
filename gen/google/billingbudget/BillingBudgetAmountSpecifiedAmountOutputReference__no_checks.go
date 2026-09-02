@@ -40,11 +40,11 @@ func (b *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateGe
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_BillingBudgetAmountSpecifiedAmountOutputReference) validateSe
 	return nil
 }
 
-func validateNewBillingBudgetAmountSpecifiedAmountOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBillingBudgetAmountSpecifiedAmountOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

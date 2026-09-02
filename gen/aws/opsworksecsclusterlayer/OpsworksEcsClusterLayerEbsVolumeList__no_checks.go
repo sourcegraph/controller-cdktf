@@ -12,7 +12,7 @@ func (o *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeList) validateGetParameters(i
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerEbsVolumeList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewOpsworksEcsClusterLayerEbsVolumeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOpsworksEcsClusterLayerEbsVolumeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

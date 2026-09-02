@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/okta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/okta/dataoktausers/internal"
 )
 
 type DataOktaUsersUsersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdminRoles() *[]*string
 	City() *string
 	// the index of the complex object in a list.
@@ -67,9 +67,9 @@ type DataOktaUsersUsersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Timezone() *string
 	Title() *string
 	UserType() *string
@@ -79,7 +79,7 @@ type DataOktaUsersUsersOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -95,12 +95,12 @@ type DataOktaUsersUsersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -110,7 +110,7 @@ type DataOktaUsersUsersOutputReference interface {
 
 // The jsii proxy struct for DataOktaUsersUsersOutputReference
 type jsiiProxy_DataOktaUsersUsersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataOktaUsersUsersOutputReference) AdminRoles() *[]*string {
@@ -503,8 +503,8 @@ func (j *jsiiProxy_DataOktaUsersUsersOutputReference) TerraformAttribute() *stri
 	return returns
 }
 
-func (j *jsiiProxy_DataOktaUsersUsersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataOktaUsersUsersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -554,7 +554,7 @@ func (j *jsiiProxy_DataOktaUsersUsersOutputReference) ZipCode() *string {
 }
 
 
-func NewDataOktaUsersUsersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOktaUsersUsersOutputReference {
+func NewDataOktaUsersUsersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataOktaUsersUsersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataOktaUsersUsersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -563,7 +563,7 @@ func NewDataOktaUsersUsersOutputReference(terraformResource cdktf.IInterpolating
 	j := jsiiProxy_DataOktaUsersUsersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersOutputReference",
+		"@cdktn/provider-okta.dataOktaUsers.DataOktaUsersUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -571,11 +571,11 @@ func NewDataOktaUsersUsersOutputReference(terraformResource cdktf.IInterpolating
 	return &j
 }
 
-func NewDataOktaUsersUsersOutputReference_Override(d DataOktaUsersUsersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataOktaUsersUsersOutputReference_Override(d DataOktaUsersUsersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.dataOktaUsers.DataOktaUsersUsersOutputReference",
+		"@cdktn/provider-okta.dataOktaUsers.DataOktaUsersUsersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -625,7 +625,7 @@ func (j *jsiiProxy_DataOktaUsersUsersOutputReference)SetTerraformAttribute(val *
 	)
 }
 
-func (j *jsiiProxy_DataOktaUsersUsersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataOktaUsersUsersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -665,11 +665,11 @@ func (d *jsiiProxy_DataOktaUsersUsersOutputReference) GetAnyMapAttribute(terrafo
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaUsersUsersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataOktaUsersUsersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -793,8 +793,8 @@ func (d *jsiiProxy_DataOktaUsersUsersOutputReference) GetStringMapAttribute(terr
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaUsersUsersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataOktaUsersUsersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -806,24 +806,24 @@ func (d *jsiiProxy_DataOktaUsersUsersOutputReference) InterpolationAsList() cdkt
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaUsersUsersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataOktaUsersUsersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataOktaUsersUsersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataOktaUsersUsersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -831,7 +831,7 @@ func (d *jsiiProxy_DataOktaUsersUsersOutputReference) Resolve(_context cdktf.IRe
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

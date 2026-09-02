@@ -40,11 +40,11 @@ func (s *jsiiProxy_SqlDatabaseInstancePointInTimeRestoreContextOutputReference) 
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_SqlDatabaseInstancePointInTimeRestoreContextOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SqlDatabaseInstancePointInTimeRestoreContextOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSqlDatabaseInstancePointInTimeRestoreContextOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSqlDatabaseInstancePointInTimeRestoreContextOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2Stage",
+		"@cdktn/provider-aws.apigatewayv2Stage.Apigatewayv2Stage",
 		reflect.TypeOf((*Apigatewayv2Stage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogSettings", GoGetter: "AccessLogSettings"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "invokeUrl", GoGetter: "InvokeUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putDefaultRouteSettings", GoMethod: "PutDefaultRouteSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putRouteSettings", GoMethod: "PutRouteSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessLogSettings", GoMethod: "ResetAccessLogSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoDeploy", GoMethod: "ResetAutoDeploy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientCertificateId", GoMethod: "ResetClientCertificateId"},
@@ -95,19 +97,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Apigatewayv2Stage{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageAccessLogSettings",
+		"@cdktn/provider-aws.apigatewayv2Stage.Apigatewayv2StageAccessLogSettings",
 		reflect.TypeOf((*Apigatewayv2StageAccessLogSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageAccessLogSettingsOutputReference",
+		"@cdktn/provider-aws.apigatewayv2Stage.Apigatewayv2StageAccessLogSettingsOutputReference",
 		reflect.TypeOf((*Apigatewayv2StageAccessLogSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -138,20 +141,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Apigatewayv2StageAccessLogSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageConfig",
+		"@cdktn/provider-aws.apigatewayv2Stage.Apigatewayv2StageConfig",
 		reflect.TypeOf((*Apigatewayv2StageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettings",
+		"@cdktn/provider-aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettings",
 		reflect.TypeOf((*Apigatewayv2StageDefaultRouteSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettingsOutputReference",
+		"@cdktn/provider-aws.apigatewayv2Stage.Apigatewayv2StageDefaultRouteSettingsOutputReference",
 		reflect.TypeOf((*Apigatewayv2StageDefaultRouteSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,16 +196,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Apigatewayv2StageDefaultRouteSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettings",
+		"@cdktn/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettings",
 		reflect.TypeOf((*Apigatewayv2StageRouteSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsList",
+		"@cdktn/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsList",
 		reflect.TypeOf((*Apigatewayv2StageRouteSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -219,12 +222,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Apigatewayv2StageRouteSettingsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsOutputReference",
+		"@cdktn/provider-aws.apigatewayv2Stage.Apigatewayv2StageRouteSettingsOutputReference",
 		reflect.TypeOf((*Apigatewayv2StageRouteSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -268,7 +271,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_Apigatewayv2StageRouteSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

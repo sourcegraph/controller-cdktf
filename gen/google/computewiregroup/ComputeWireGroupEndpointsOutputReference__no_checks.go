@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateGetStringMa
 	return nil
 }
 
-func (c *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validatePutIntercon
 	return nil
 }
 
-func (c *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeWireGroupEndpointsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeWireGroupEndpointsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputeWireGroupEndpointsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

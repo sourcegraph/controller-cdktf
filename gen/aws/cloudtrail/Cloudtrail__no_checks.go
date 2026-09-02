@@ -56,6 +56,10 @@ func (c *jsiiProxy_Cloudtrail) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (c *jsiiProxy_Cloudtrail) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_Cloudtrail) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_Cloudtrail) validatePutEventSelectorParameters(value interfac
 }
 
 func (c *jsiiProxy_Cloudtrail) validatePutInsightSelectorParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_Cloudtrail) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_Cloudtrail) validateSetKmsKeyIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_Cloudtrail) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Cloudtrail) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

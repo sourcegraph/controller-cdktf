@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGooglePrivatecaCaPoolIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGooglePrivatecaCaPoolIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

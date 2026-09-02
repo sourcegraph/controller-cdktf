@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_CloudbuildTriggerGitFileSourceOutputReference) validateSetUri
 	return nil
 }
 
-func validateNewCloudbuildTriggerGitFileSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudbuildTriggerGitFileSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

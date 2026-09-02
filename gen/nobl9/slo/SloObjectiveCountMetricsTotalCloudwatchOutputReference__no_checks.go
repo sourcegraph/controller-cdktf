@@ -40,7 +40,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchOutputReference) valid
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalCloudwatchOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsTotalCloudwatchOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveCountMetricsTotalCloudwatchOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

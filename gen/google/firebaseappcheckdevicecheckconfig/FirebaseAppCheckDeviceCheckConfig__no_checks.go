@@ -56,6 +56,10 @@ func (f *jsiiProxy_FirebaseAppCheckDeviceCheckConfig) validateInterpolationForAt
 	return nil
 }
 
+func (f *jsiiProxy_FirebaseAppCheckDeviceCheckConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirebaseAppCheckDeviceCheckConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (f *jsiiProxy_FirebaseAppCheckDeviceCheckConfig) validateOverrideLogicalIdP
 }
 
 func (f *jsiiProxy_FirebaseAppCheckDeviceCheckConfig) validatePutTimeoutsParameters(value *FirebaseAppCheckDeviceCheckConfigTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirebaseAppCheckDeviceCheckConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_FirebaseAppCheckDeviceCheckConfig) validateSetKeyIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckDeviceCheckConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FirebaseAppCheckDeviceCheckConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

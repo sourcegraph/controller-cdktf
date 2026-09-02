@@ -12,7 +12,7 @@ func (p *jsiiProxy_PreferredPathStepList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (p *jsiiProxy_PreferredPathStepList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PreferredPathStepList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PreferredPathStepList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_PreferredPathStepList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PreferredPathStepList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PreferredPathStepList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewPreferredPathStepListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPreferredPathStepListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

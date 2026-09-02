@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContactCenterInsightsAssessmentRuleSampleRuleOutputReference)
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_ContactCenterInsightsAssessmentRuleSampleRuleOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_ContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContactCenterInsightsAssessmentRuleSampleRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContactCenterInsightsAssessmentRuleSampleRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContactCenterInsightsAssessmentRuleSampleRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

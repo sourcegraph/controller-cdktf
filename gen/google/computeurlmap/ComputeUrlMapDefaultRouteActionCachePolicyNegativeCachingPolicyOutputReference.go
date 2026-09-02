@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeurlmap/internal"
 )
 
 type ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Code() *float64
 	SetCode(val *float64)
 	CodeInput() *float64
@@ -37,9 +37,9 @@ type ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Ttl() ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyTtlOutputReference
 	TtlInput() *ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyTtl
 	// Experimental.
@@ -47,7 +47,7 @@ type ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputRefere
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,15 +63,15 @@ type ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTtl(value *ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyTtl)
 	ResetCode()
 	ResetTtl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputRefere
 
 // The jsii proxy struct for ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference
 type jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) Code() *float64 {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	return returns
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 }
 
 
-func NewComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference {
+func NewComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputRef
 	j := jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference",
+		"@cdktn/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputRef
 	return &j
 }
 
-func NewComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference_Override(c ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference_Override(c ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference",
+		"@cdktn/provider-google.computeUrlMap.ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	)
 }
 
-func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -317,11 +317,11 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	return returns
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -445,8 +445,8 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	return returns
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -458,16 +458,16 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	return returns
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	)
 }
 
-func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (c *jsiiProxy_ComputeUrlMapDefaultRouteActionCachePolicyNegativeCachingPoli
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

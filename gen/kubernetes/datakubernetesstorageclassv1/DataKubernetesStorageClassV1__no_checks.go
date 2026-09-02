@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataKubernetesStorageClassV1) validatePutMetadataParameters(v
 	return nil
 }
 
+func (d *jsiiProxy_DataKubernetesStorageClassV1) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataKubernetesStorageClassV1_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -88,7 +92,7 @@ func (j *jsiiProxy_DataKubernetesStorageClassV1) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesStorageClassV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataKubernetesStorageClassV1) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/s3bucketnotification/internal"
 )
 
 type S3BucketNotificationTopicOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type S3BucketNotificationTopicOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TopicArn() *string
 	SetTopicArn(val *string)
 	TopicArnInput() *string
@@ -57,7 +57,7 @@ type S3BucketNotificationTopicOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,15 +73,15 @@ type S3BucketNotificationTopicOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFilterPrefix()
 	ResetFilterSuffix()
 	ResetId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,7 +91,7 @@ type S3BucketNotificationTopicOutputReference interface {
 
 // The jsii proxy struct for S3BucketNotificationTopicOutputReference
 type jsiiProxy_S3BucketNotificationTopicOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) ComplexObjectIndex() interface{} {
@@ -234,8 +234,8 @@ func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -265,7 +265,7 @@ func (j *jsiiProxy_S3BucketNotificationTopicOutputReference) TopicArnInput() *st
 }
 
 
-func NewS3BucketNotificationTopicOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketNotificationTopicOutputReference {
+func NewS3BucketNotificationTopicOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) S3BucketNotificationTopicOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewS3BucketNotificationTopicOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -274,7 +274,7 @@ func NewS3BucketNotificationTopicOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_S3BucketNotificationTopicOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationTopicOutputReference",
+		"@cdktn/provider-aws.s3BucketNotification.S3BucketNotificationTopicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -282,11 +282,11 @@ func NewS3BucketNotificationTopicOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewS3BucketNotificationTopicOutputReference_Override(s S3BucketNotificationTopicOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewS3BucketNotificationTopicOutputReference_Override(s S3BucketNotificationTopicOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.s3BucketNotification.S3BucketNotificationTopicOutputReference",
+		"@cdktn/provider-aws.s3BucketNotification.S3BucketNotificationTopicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -380,7 +380,7 @@ func (j *jsiiProxy_S3BucketNotificationTopicOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_S3BucketNotificationTopicOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_S3BucketNotificationTopicOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,11 +431,11 @@ func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -559,8 +559,8 @@ func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -572,16 +572,16 @@ func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) InterpolationAsList
 	return returns
 }
 
-func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -612,8 +612,8 @@ func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) ResetId() {
 	)
 }
 
-func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -621,7 +621,7 @@ func (s *jsiiProxy_S3BucketNotificationTopicOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

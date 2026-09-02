@@ -12,7 +12,7 @@ func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateGetPar
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EvidentlyLaunchScheduledSplitsConfigStepsList) validateSetWra
 	return nil
 }
 
-func validateNewEvidentlyLaunchScheduledSplitsConfigStepsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEvidentlyLaunchScheduledSplitsConfigStepsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

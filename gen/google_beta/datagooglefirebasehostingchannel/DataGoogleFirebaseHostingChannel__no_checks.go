@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleFirebaseHostingChannel) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleFirebaseHostingChannel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleFirebaseHostingChannel_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleFirebaseHostingChannel) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFirebaseHostingChannel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleFirebaseHostingChannel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

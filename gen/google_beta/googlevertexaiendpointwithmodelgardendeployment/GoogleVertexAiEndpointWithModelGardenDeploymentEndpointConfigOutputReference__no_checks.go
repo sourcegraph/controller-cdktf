@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentEndpointConfig
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentEndpointConfig
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentEndpointConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleVertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVertexAiEndpointWithModelGardenDeploymentEndpointConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

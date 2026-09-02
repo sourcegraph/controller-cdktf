@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateGetStringM
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validatePutAutotun
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_DataprocBatchRuntimeConfigOutputReference) validateSetVersion
 	return nil
 }
 
-func validateNewDataprocBatchRuntimeConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocBatchRuntimeConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

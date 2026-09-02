@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleKmsAutokeyConfig) validateOverrideLogicalIdParamete
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleKmsAutokeyConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleKmsAutokeyConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleKmsAutokeyConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

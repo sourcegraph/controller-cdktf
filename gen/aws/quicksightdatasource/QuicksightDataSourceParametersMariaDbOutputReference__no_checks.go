@@ -40,11 +40,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validat
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersMariaDbOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewQuicksightDataSourceParametersMariaDbOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQuicksightDataSourceParametersMariaDbOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

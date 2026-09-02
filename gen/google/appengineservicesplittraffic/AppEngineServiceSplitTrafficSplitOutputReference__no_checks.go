@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppEngineServiceSplitTrafficSplitOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppEngineServiceSplitTrafficSplitOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppEngineServiceSplitTrafficSplitOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

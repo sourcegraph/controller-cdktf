@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesApp",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesApp",
 		reflect.TypeOf((*GoogleCesApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingSettings", GoGetter: "LoggingSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingSettingsInput", GoGetter: "LoggingSettingsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "modelSettings", GoGetter: "ModelSettings"},
@@ -93,6 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeZoneSettings", GoMethod: "PutTimeZoneSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putVariableDeclarations", GoMethod: "PutVariableDeclarations"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAudioProcessingConfig", GoMethod: "ResetAudioProcessingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientCertificateSettings", GoMethod: "ResetClientCertificateSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataStoreSettings", GoMethod: "ResetDataStoreSettings"},
@@ -131,23 +133,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "variableDeclarations", GoGetter: "VariableDeclarations"},
 			_jsii_.MemberProperty{JsiiProperty: "variableDeclarationsInput", GoGetter: "VariableDeclarationsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesApp{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfig",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfig",
 		reflect.TypeOf((*GoogleCesAppAudioProcessingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigAmbientSoundConfig",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigAmbientSoundConfig",
 		reflect.TypeOf((*GoogleCesAppAudioProcessingConfigAmbientSoundConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigAmbientSoundConfigOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigAmbientSoundConfigOutputReference",
 		reflect.TypeOf((*GoogleCesAppAudioProcessingConfigAmbientSoundConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,16 +186,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppAudioProcessingConfigAmbientSoundConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigBargeInConfig",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigBargeInConfig",
 		reflect.TypeOf((*GoogleCesAppAudioProcessingConfigBargeInConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference",
 		reflect.TypeOf((*GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bargeInAwareness", GoGetter: "BargeInAwareness"},
@@ -222,12 +225,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppAudioProcessingConfigBargeInConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigOutputReference",
 		reflect.TypeOf((*GoogleCesAppAudioProcessingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ambientSoundConfig", GoGetter: "AmbientSoundConfig"},
@@ -269,16 +272,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppAudioProcessingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigSynthesizeSpeechConfigs",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigSynthesizeSpeechConfigs",
 		reflect.TypeOf((*GoogleCesAppAudioProcessingConfigSynthesizeSpeechConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigSynthesizeSpeechConfigsList",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigSynthesizeSpeechConfigsList",
 		reflect.TypeOf((*GoogleCesAppAudioProcessingConfigSynthesizeSpeechConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -295,12 +298,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppAudioProcessingConfigSynthesizeSpeechConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference",
 		reflect.TypeOf((*GoogleCesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -335,16 +338,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppClientCertificateSettings",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppClientCertificateSettings",
 		reflect.TypeOf((*GoogleCesAppClientCertificateSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppClientCertificateSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppClientCertificateSettingsOutputReference",
 		reflect.TypeOf((*GoogleCesAppClientCertificateSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -378,24 +381,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppClientCertificateSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppConfig",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppConfig",
 		reflect.TypeOf((*GoogleCesAppConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppDataStoreSettings",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppDataStoreSettings",
 		reflect.TypeOf((*GoogleCesAppDataStoreSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppDataStoreSettingsEngines",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppDataStoreSettingsEngines",
 		reflect.TypeOf((*GoogleCesAppDataStoreSettingsEngines)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppDataStoreSettingsEnginesList",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppDataStoreSettingsEnginesList",
 		reflect.TypeOf((*GoogleCesAppDataStoreSettingsEnginesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -411,12 +414,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppDataStoreSettingsEnginesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppDataStoreSettingsEnginesOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppDataStoreSettingsEnginesOutputReference",
 		reflect.TypeOf((*GoogleCesAppDataStoreSettingsEnginesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -445,12 +448,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppDataStoreSettingsEnginesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppDataStoreSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppDataStoreSettingsOutputReference",
 		reflect.TypeOf((*GoogleCesAppDataStoreSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -478,16 +481,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppDataStoreSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfile",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfile",
 		reflect.TypeOf((*GoogleCesAppDefaultChannelProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfileOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfileOutputReference",
 		reflect.TypeOf((*GoogleCesAppDefaultChannelProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelType", GoGetter: "ChannelType"},
@@ -534,16 +537,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppDefaultChannelProfileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfilePersonaProperty",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfilePersonaProperty",
 		reflect.TypeOf((*GoogleCesAppDefaultChannelProfilePersonaProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReference",
 		reflect.TypeOf((*GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -573,16 +576,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppDefaultChannelProfilePersonaPropertyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfileWebWidgetConfig",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfileWebWidgetConfig",
 		reflect.TypeOf((*GoogleCesAppDefaultChannelProfileWebWidgetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfileWebWidgetConfigOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppDefaultChannelProfileWebWidgetConfigOutputReference",
 		reflect.TypeOf((*GoogleCesAppDefaultChannelProfileWebWidgetConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -618,24 +621,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppDefaultChannelProfileWebWidgetConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholds",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholds",
 		reflect.TypeOf((*GoogleCesAppEvaluationMetricsThresholds)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds",
 		reflect.TypeOf((*GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds",
 		reflect.TypeOf((*GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference",
 		reflect.TypeOf((*GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -665,12 +668,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference",
 		reflect.TypeOf((*GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -705,16 +708,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds",
 		reflect.TypeOf((*GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference",
 		reflect.TypeOf((*GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -747,12 +750,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppEvaluationMetricsThresholdsOutputReference",
 		reflect.TypeOf((*GoogleCesAppEvaluationMetricsThresholdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -783,16 +786,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppEvaluationMetricsThresholdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLanguageSettings",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLanguageSettings",
 		reflect.TypeOf((*GoogleCesAppLanguageSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLanguageSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLanguageSettingsOutputReference",
 		reflect.TypeOf((*GoogleCesAppLanguageSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -831,20 +834,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppLanguageSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettings",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettings",
 		reflect.TypeOf((*GoogleCesAppLoggingSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsAudioRecordingConfig",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsAudioRecordingConfig",
 		reflect.TypeOf((*GoogleCesAppLoggingSettingsAudioRecordingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReference",
 		reflect.TypeOf((*GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -877,16 +880,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppLoggingSettingsAudioRecordingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsBigqueryExportSettings",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsBigqueryExportSettings",
 		reflect.TypeOf((*GoogleCesAppLoggingSettingsBigqueryExportSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReference",
 		reflect.TypeOf((*GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -922,16 +925,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppLoggingSettingsBigqueryExportSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsCloudLoggingSettings",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsCloudLoggingSettings",
 		reflect.TypeOf((*GoogleCesAppLoggingSettingsCloudLoggingSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReference",
 		reflect.TypeOf((*GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -961,16 +964,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppLoggingSettingsCloudLoggingSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsConversationLoggingSettings",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsConversationLoggingSettings",
 		reflect.TypeOf((*GoogleCesAppLoggingSettingsConversationLoggingSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsConversationLoggingSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsConversationLoggingSettingsOutputReference",
 		reflect.TypeOf((*GoogleCesAppLoggingSettingsConversationLoggingSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1000,12 +1003,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppLoggingSettingsConversationLoggingSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsOutputReference",
 		reflect.TypeOf((*GoogleCesAppLoggingSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioRecordingConfig", GoGetter: "AudioRecordingConfig"},
@@ -1052,16 +1055,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppLoggingSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsRedactionConfig",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsRedactionConfig",
 		reflect.TypeOf((*GoogleCesAppLoggingSettingsRedactionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsRedactionConfigOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppLoggingSettingsRedactionConfigOutputReference",
 		reflect.TypeOf((*GoogleCesAppLoggingSettingsRedactionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1097,16 +1100,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppLoggingSettingsRedactionConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppModelSettings",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppModelSettings",
 		reflect.TypeOf((*GoogleCesAppModelSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppModelSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppModelSettingsOutputReference",
 		reflect.TypeOf((*GoogleCesAppModelSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1139,16 +1142,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppModelSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppTimeZoneSettings",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppTimeZoneSettings",
 		reflect.TypeOf((*GoogleCesAppTimeZoneSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppTimeZoneSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppTimeZoneSettingsOutputReference",
 		reflect.TypeOf((*GoogleCesAppTimeZoneSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1178,16 +1181,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppTimeZoneSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppTimeouts",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppTimeouts",
 		reflect.TypeOf((*GoogleCesAppTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleCesAppTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1223,16 +1226,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarations",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarations",
 		reflect.TypeOf((*GoogleCesAppVariableDeclarations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsList",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsList",
 		reflect.TypeOf((*GoogleCesAppVariableDeclarationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1249,12 +1252,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppVariableDeclarationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsOutputReference",
 		reflect.TypeOf((*GoogleCesAppVariableDeclarationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1288,16 +1291,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppVariableDeclarationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsSchema",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsSchema",
 		reflect.TypeOf((*GoogleCesAppVariableDeclarationsSchema)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsSchemaOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsSchemaOutputReference",
 		reflect.TypeOf((*GoogleCesAppVariableDeclarationsSchemaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalProperties", GoGetter: "AdditionalProperties"},
@@ -1368,7 +1371,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

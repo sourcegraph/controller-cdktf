@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateGetStringM
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validatePutPubsubD
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -104,11 +104,11 @@ func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTranscoderJobConfigAOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleTranscoderJobConfigAOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleTranscoderJobConfigAOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (a *jsiiProxy_AuditmanagerFrameworkControlSetsControlsOutputReference) vali
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkControlSetsControlsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AuditmanagerFrameworkControlSetsControlsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AuditmanagerFrameworkControlSetsControlsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AuditmanagerFrameworkControlSetsControlsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_AuditmanagerFrameworkControlSetsControlsOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_AuditmanagerFrameworkControlSetsControlsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AuditmanagerFrameworkControlSetsControlsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAuditmanagerFrameworkControlSetsControlsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAuditmanagerFrameworkControlSetsControlsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

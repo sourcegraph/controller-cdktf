@@ -56,6 +56,10 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validateInterpolationForA
 	return nil
 }
 
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validatePutTimeoutsParame
 	return nil
 }
 
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlement) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validatePrivilegedAccessManagerEntitlement_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -128,7 +136,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlement) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlement) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlement) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

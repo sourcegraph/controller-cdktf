@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultTimeoutsOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultTimeoutsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseExascaleDbStorageVaultTimeoutsOutputRefer
 	return nil
 }
 
-func validateNewGoogleOracleDatabaseExascaleDbStorageVaultTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOracleDatabaseExascaleDbStorageVaultTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

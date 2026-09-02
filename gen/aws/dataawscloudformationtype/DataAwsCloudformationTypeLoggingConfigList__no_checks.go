@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCloudformationTypeLoggingConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsCloudformationTypeLoggingConfigList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCloudformationTypeLoggingConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsCloudformationTypeLoggingConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsCloudformationTypeLoggingConfigList) validateSetWrapsS
 	return nil
 }
 
-func validateNewDataAwsCloudformationTypeLoggingConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsCloudformationTypeLoggingConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

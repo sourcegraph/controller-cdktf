@@ -12,7 +12,7 @@ func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksList
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksList
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksList
 	return nil
 }
 
-func validateNewGkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGkeonpremVmwareClusterNetworkConfigStaticIpConfigIpBlocksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateInterpolationForAttr
 	return nil
 }
 
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validatePutSourceS3PathParam
 }
 
 func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validatePutTimeoutsParameters(value *KendraQuerySuggestionsBlockListTimeouts) error {
+	return nil
+}
+
+func (k *jsiiProxy_KendraQuerySuggestionsBlockList) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetIndexIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KendraQuerySuggestionsBlockList) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

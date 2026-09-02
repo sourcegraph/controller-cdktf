@@ -56,6 +56,10 @@ func (a *jsiiProxy_AssuredWorkloadsWorkload) validateInterpolationForAttributePa
 	return nil
 }
 
+func (a *jsiiProxy_AssuredWorkloadsWorkload) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AssuredWorkloadsWorkload) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (a *jsiiProxy_AssuredWorkloadsWorkload) validatePutTimeoutsParameters(value
 }
 
 func (a *jsiiProxy_AssuredWorkloadsWorkload) validatePutWorkloadOptionsParameters(value *AssuredWorkloadsWorkloadWorkloadOptions) error {
+	return nil
+}
+
+func (a *jsiiProxy_AssuredWorkloadsWorkload) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_AssuredWorkloadsWorkload) validateSetLabelsParameters(val *ma
 	return nil
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkload) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AssuredWorkloadsWorkload) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

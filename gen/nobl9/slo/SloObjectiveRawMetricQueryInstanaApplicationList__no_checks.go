@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationList) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryInstanaApplicationList) validateSet
 	return nil
 }
 
-func validateNewSloObjectiveRawMetricQueryInstanaApplicationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveRawMetricQueryInstanaApplicationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_ConfigOrganizationConformancePackInputParameterOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePackInputParameterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ConfigOrganizationConformancePackInputParameterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ConfigOrganizationConformancePackInputParameterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConfigOrganizationConformancePackInputParameterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ConfigOrganizationConformancePackInputParameterOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_ConfigOrganizationConformancePackInputParameterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConfigOrganizationConformancePackInputParameterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewConfigOrganizationConformancePackInputParameterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewConfigOrganizationConformancePackInputParameterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

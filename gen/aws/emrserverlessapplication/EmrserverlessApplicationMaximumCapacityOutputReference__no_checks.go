@@ -40,11 +40,11 @@ func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) valid
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEmrserverlessApplicationMaximumCapacityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEmrserverlessApplicationMaximumCapacityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

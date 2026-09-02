@@ -56,6 +56,10 @@ func (m *jsiiProxy_MemorydbAcl) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (m *jsiiProxy_MemorydbAcl) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorydbAcl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (m *jsiiProxy_MemorydbAcl) validateMoveToIdParameters(id *string) error {
 }
 
 func (m *jsiiProxy_MemorydbAcl) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbAcl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_MemorydbAcl) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbAcl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MemorydbAcl) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewApphubWorkloadWorkloadPropertiesFunctionalTypeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

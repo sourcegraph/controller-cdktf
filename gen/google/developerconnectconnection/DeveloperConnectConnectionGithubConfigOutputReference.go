@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/developerconnectconnection/internal"
 )
 
 type DeveloperConnectConnectionGithubConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AppInstallationId() *string
 	SetAppInstallationId(val *string)
 	AppInstallationIdInput() *string
@@ -43,15 +43,15 @@ type DeveloperConnectConnectionGithubConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type DeveloperConnectConnectionGithubConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAuthorizerCredential(value *DeveloperConnectConnectionGithubConfigAuthorizerCredential)
 	ResetAppInstallationId()
 	ResetAuthorizerCredential()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type DeveloperConnectConnectionGithubConfigOutputReference interface {
 
 // The jsii proxy struct for DeveloperConnectConnectionGithubConfigOutputReference
 type jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) AppInstallationId() *string {
@@ -218,8 +218,8 @@ func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -229,7 +229,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) Terraf
 }
 
 
-func NewDeveloperConnectConnectionGithubConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGithubConfigOutputReference {
+func NewDeveloperConnectConnectionGithubConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DeveloperConnectConnectionGithubConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeveloperConnectConnectionGithubConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -238,7 +238,7 @@ func NewDeveloperConnectConnectionGithubConfigOutputReference(terraformResource 
 	j := jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -246,11 +246,11 @@ func NewDeveloperConnectConnectionGithubConfigOutputReference(terraformResource 
 	return &j
 }
 
-func NewDeveloperConnectConnectionGithubConfigOutputReference_Override(d DeveloperConnectConnectionGithubConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDeveloperConnectConnectionGithubConfigOutputReference_Override(d DeveloperConnectConnectionGithubConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigOutputReference",
+		"@cdktn/provider-google.developerConnectConnection.DeveloperConnectConnectionGithubConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) GetAny
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -490,8 +490,8 @@ func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) GetStr
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -503,16 +503,16 @@ func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) Interp
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -546,8 +546,8 @@ func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) ResetA
 	)
 }
 
-func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -555,7 +555,7 @@ func (d *jsiiProxy_DeveloperConnectConnectionGithubConfigOutputReference) Resolv
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

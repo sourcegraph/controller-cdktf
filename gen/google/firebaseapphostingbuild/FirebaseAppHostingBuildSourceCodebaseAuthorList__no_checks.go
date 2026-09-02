@@ -12,7 +12,7 @@ func (f *jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorList) validateGetP
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_FirebaseAppHostingBuildSourceCodebaseAuthorList) validateSetW
 	return nil
 }
 
-func validateNewFirebaseAppHostingBuildSourceCodebaseAuthorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFirebaseAppHostingBuildSourceCodebaseAuthorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

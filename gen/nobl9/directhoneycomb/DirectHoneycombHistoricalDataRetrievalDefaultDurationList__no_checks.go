@@ -12,7 +12,7 @@ func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalDefaultDurationList) va
 	return nil
 }
 
-func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalDefaultDurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectHoneycombHistoricalDataRetrievalDefaultDurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalDefaultDurationList) va
 	return nil
 }
 
-func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalDefaultDurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalDefaultDurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DirectHoneycombHistoricalDataRetrievalDefaultDurationList) va
 	return nil
 }
 
-func validateNewDirectHoneycombHistoricalDataRetrievalDefaultDurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDirectHoneycombHistoricalDataRetrievalDefaultDurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

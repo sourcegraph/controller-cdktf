@@ -40,11 +40,11 @@ func (f *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateGetString
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirestoreDatabaseCmekConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewFirestoreDatabaseCmekConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFirestoreDatabaseCmekConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

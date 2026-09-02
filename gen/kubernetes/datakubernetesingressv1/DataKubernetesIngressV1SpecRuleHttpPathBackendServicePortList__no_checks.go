@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortList
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortList
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesIngressV1SpecRuleHttpPathBackendServicePortList
 	return nil
 }
 
-func validateNewDataKubernetesIngressV1SpecRuleHttpPathBackendServicePortListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesIngressV1SpecRuleHttpPathBackendServicePortListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

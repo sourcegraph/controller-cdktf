@@ -12,7 +12,7 @@ func (m *jsiiProxy_MonitorRuleGroupByGroupList) validateGetParameters(index *flo
 	return nil
 }
 
-func (m *jsiiProxy_MonitorRuleGroupByGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorRuleGroupByGroupList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_MonitorRuleGroupByGroupList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_MonitorRuleGroupByGroupList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorRuleGroupByGroupList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_MonitorRuleGroupByGroupList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewMonitorRuleGroupByGroupListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMonitorRuleGroupByGroupListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

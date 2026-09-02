@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainercluster/internal"
 )
 
 type GoogleContainerClusterMasterAuthOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ClientCertificate() *string
 	ClientCertificateConfig() GoogleContainerClusterMasterAuthClientCertificateConfigOutputReference
 	ClientCertificateConfigInput() *GoogleContainerClusterMasterAuthClientCertificateConfig
@@ -39,15 +39,15 @@ type GoogleContainerClusterMasterAuthOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,13 +63,13 @@ type GoogleContainerClusterMasterAuthOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutClientCertificateConfig(value *GoogleContainerClusterMasterAuthClientCertificateConfig)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type GoogleContainerClusterMasterAuthOutputReference interface {
 
 // The jsii proxy struct for GoogleContainerClusterMasterAuthOutputReference
 type jsiiProxy_GoogleContainerClusterMasterAuthOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) ClientCertificate() *string {
@@ -192,8 +192,8 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -203,7 +203,7 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) TerraformRes
 }
 
 
-func NewGoogleContainerClusterMasterAuthOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterMasterAuthOutputReference {
+func NewGoogleContainerClusterMasterAuthOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleContainerClusterMasterAuthOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleContainerClusterMasterAuthOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -212,7 +212,7 @@ func NewGoogleContainerClusterMasterAuthOutputReference(terraformResource cdktf.
 	j := jsiiProxy_GoogleContainerClusterMasterAuthOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthOutputReference",
+		"@cdktn/provider-google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -220,11 +220,11 @@ func NewGoogleContainerClusterMasterAuthOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewGoogleContainerClusterMasterAuthOutputReference_Override(g GoogleContainerClusterMasterAuthOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleContainerClusterMasterAuthOutputReference_Override(g GoogleContainerClusterMasterAuthOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthOutputReference",
+		"@cdktn/provider-google-beta.googleContainerCluster.GoogleContainerClusterMasterAuthOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -274,7 +274,7 @@ func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -314,11 +314,11 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -442,8 +442,8 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) GetStringMap
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -455,16 +455,16 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) Interpolatio
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -482,8 +482,8 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) PutClientCer
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -491,7 +491,7 @@ func (g *jsiiProxy_GoogleContainerClusterMasterAuthOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

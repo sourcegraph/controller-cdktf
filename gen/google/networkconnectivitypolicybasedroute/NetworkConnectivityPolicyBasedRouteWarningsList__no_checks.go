@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsList) validateGetP
 	return nil
 }
 
-func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_NetworkConnectivityPolicyBasedRouteWarningsList) validateSetW
 	return nil
 }
 
-func validateNewNetworkConnectivityPolicyBasedRouteWarningsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkConnectivityPolicyBasedRouteWarningsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

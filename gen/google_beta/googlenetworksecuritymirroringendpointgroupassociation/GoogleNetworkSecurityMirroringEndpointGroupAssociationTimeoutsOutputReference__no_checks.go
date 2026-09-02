@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociationTimeout
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociationTimeout
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityMirroringEndpointGroupAssociationTimeout
 	return nil
 }
 
-func validateNewGoogleNetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkSecurityMirroringEndpointGroupAssociationTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

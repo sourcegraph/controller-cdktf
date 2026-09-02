@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDataCollectionOptionsOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDataCollectionOptionsOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleOracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOracleDatabaseDbSystemPropertiesDataCollectionOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (o *jsiiProxy_OracleDatabaseExadbVmClusterTimeoutsOutputReference) validate
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OracleDatabaseExadbVmClusterTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (o *jsiiProxy_OracleDatabaseExadbVmClusterTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OracleDatabaseExadbVmClusterTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmClusterTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_OracleDatabaseExadbVmClusterTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OracleDatabaseExadbVmClusterTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_OracleDatabaseExadbVmClusterTimeoutsOutputReference) validate
 	return nil
 }
 
-func validateNewOracleDatabaseExadbVmClusterTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOracleDatabaseExadbVmClusterTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

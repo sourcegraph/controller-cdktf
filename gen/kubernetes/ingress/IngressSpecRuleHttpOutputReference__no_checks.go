@@ -40,7 +40,7 @@ func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validatePutPathParameters
 	return nil
 }
 
-func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IngressSpecRuleHttpOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_IngressSpecRuleHttpOutputReference) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_IngressSpecRuleHttpOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IngressSpecRuleHttpOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewIngressSpecRuleHttpOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIngressSpecRuleHttpOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicy",
 		reflect.TypeOf((*ComputeRouterRoutePolicy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -37,6 +37,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -53,6 +54,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -76,27 +78,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterRoutePolicy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyConfig",
 		reflect.TypeOf((*ComputeRouterRoutePolicyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTerms",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTerms",
 		reflect.TypeOf((*ComputeRouterRoutePolicyTerms)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsActions",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsActions",
 		reflect.TypeOf((*ComputeRouterRoutePolicyTermsActions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsActionsList",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsActionsList",
 		reflect.TypeOf((*ComputeRouterRoutePolicyTermsActionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -113,12 +116,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterRoutePolicyTermsActionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsActionsOutputReference",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsActionsOutputReference",
 		reflect.TypeOf((*ComputeRouterRoutePolicyTermsActionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -156,12 +159,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsList",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsList",
 		reflect.TypeOf((*ComputeRouterRoutePolicyTermsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -178,16 +181,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterRoutePolicyTermsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsMatch",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsMatch",
 		reflect.TypeOf((*ComputeRouterRoutePolicyTermsMatch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsMatchOutputReference",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsMatchOutputReference",
 		reflect.TypeOf((*ComputeRouterRoutePolicyTermsMatchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -225,12 +228,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterRoutePolicyTermsMatchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsOutputReference",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTermsOutputReference",
 		reflect.TypeOf((*ComputeRouterRoutePolicyTermsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "actions", GoGetter: "Actions"},
@@ -266,16 +269,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterRoutePolicyTermsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeouts",
 		reflect.TypeOf((*ComputeRouterRoutePolicyTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeoutsOutputReference",
+		"@cdktn/provider-google.computeRouterRoutePolicy.ComputeRouterRoutePolicyTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRouterRoutePolicyTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -311,7 +314,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterRoutePolicyTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

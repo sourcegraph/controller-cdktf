@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSiteVerificationWebResource) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSiteVerificationWebResource) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSiteVerificationWebResource) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleSiteVerificationWebResource) validatePutSiteParameters(
 }
 
 func (g *jsiiProxy_GoogleSiteVerificationWebResource) validatePutTimeoutsParameters(value *GoogleSiteVerificationWebResourceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSiteVerificationWebResource) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleSiteVerificationWebResource) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSiteVerificationWebResource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSiteVerificationWebResource) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

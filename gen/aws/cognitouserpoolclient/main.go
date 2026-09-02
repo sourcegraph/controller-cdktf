@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClient",
+		"@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClient",
 		reflect.TypeOf((*CognitoUserPoolClient)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenValidity", GoGetter: "AccessTokenValidity"},
@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logoutUrls", GoGetter: "LogoutUrls"},
 			_jsii_.MemberProperty{JsiiProperty: "logoutUrlsInput", GoGetter: "LogoutUrlsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -83,6 +84,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "readAttributesInput", GoGetter: "ReadAttributesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshTokenValidity", GoGetter: "RefreshTokenValidity"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshTokenValidityInput", GoGetter: "RefreshTokenValidityInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessTokenValidity", GoMethod: "ResetAccessTokenValidity"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedOauthFlows", GoMethod: "ResetAllowedOauthFlows"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedOauthFlowsUserPoolClient", GoMethod: "ResetAllowedOauthFlowsUserPoolClient"},
@@ -120,21 +122,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolId", GoGetter: "UserPoolId"},
 			_jsii_.MemberProperty{JsiiProperty: "userPoolIdInput", GoGetter: "UserPoolIdInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "writeAttributes", GoGetter: "WriteAttributes"},
 			_jsii_.MemberProperty{JsiiProperty: "writeAttributesInput", GoGetter: "WriteAttributesInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CognitoUserPoolClient{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfiguration",
+		"@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfiguration",
 		reflect.TypeOf((*CognitoUserPoolClientAnalyticsConfiguration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfigurationOutputReference",
+		"@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfigurationOutputReference",
 		reflect.TypeOf((*CognitoUserPoolClientAnalyticsConfigurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "applicationArn", GoGetter: "ApplicationArn"},
@@ -176,20 +179,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientConfig",
+		"@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientConfig",
 		reflect.TypeOf((*CognitoUserPoolClientConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnits",
+		"@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnits",
 		reflect.TypeOf((*CognitoUserPoolClientTokenValidityUnits)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnitsOutputReference",
+		"@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientTokenValidityUnitsOutputReference",
 		reflect.TypeOf((*CognitoUserPoolClientTokenValidityUnitsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
@@ -225,7 +228,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CognitoUserPoolClientTokenValidityUnitsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

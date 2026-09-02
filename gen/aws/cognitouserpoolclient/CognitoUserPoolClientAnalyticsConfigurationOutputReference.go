@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/cognitouserpoolclient/internal"
 )
 
 type CognitoUserPoolClientAnalyticsConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApplicationArn() *string
 	SetApplicationArn(val *string)
 	ApplicationArnInput() *string
@@ -46,9 +46,9 @@ type CognitoUserPoolClientAnalyticsConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UserDataShared() interface{}
 	SetUserDataShared(val interface{})
 	UserDataSharedInput() interface{}
@@ -57,7 +57,7 @@ type CognitoUserPoolClientAnalyticsConfigurationOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type CognitoUserPoolClientAnalyticsConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetApplicationArn()
 	ResetApplicationId()
 	ResetExternalId()
@@ -83,7 +83,7 @@ type CognitoUserPoolClientAnalyticsConfigurationOutputReference interface {
 	ResetUserDataShared()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type CognitoUserPoolClientAnalyticsConfigurationOutputReference interface {
 
 // The jsii proxy struct for CognitoUserPoolClientAnalyticsConfigurationOutputReference
 type jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) ApplicationArn() *string {
@@ -236,8 +236,8 @@ func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) U
 }
 
 
-func NewCognitoUserPoolClientAnalyticsConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CognitoUserPoolClientAnalyticsConfigurationOutputReference {
+func NewCognitoUserPoolClientAnalyticsConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CognitoUserPoolClientAnalyticsConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCognitoUserPoolClientAnalyticsConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewCognitoUserPoolClientAnalyticsConfigurationOutputReference(terraformReso
 	j := jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfigurationOutputReference",
+		"@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewCognitoUserPoolClientAnalyticsConfigurationOutputReference(terraformReso
 	return &j
 }
 
-func NewCognitoUserPoolClientAnalyticsConfigurationOutputReference_Override(c CognitoUserPoolClientAnalyticsConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCognitoUserPoolClientAnalyticsConfigurationOutputReference_Override(c CognitoUserPoolClientAnalyticsConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfigurationOutputReference",
+		"@cdktn/provider-aws.cognitoUserPoolClient.CognitoUserPoolClientAnalyticsConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -561,8 +561,8 @@ func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -574,16 +574,16 @@ func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) I
 	return returns
 }
 
-func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (c *jsiiProxy_CognitoUserPoolClientAnalyticsConfigurationOutputReference) R
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

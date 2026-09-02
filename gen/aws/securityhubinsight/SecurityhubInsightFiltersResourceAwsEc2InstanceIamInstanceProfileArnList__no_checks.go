@@ -12,7 +12,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstancePro
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstancePro
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsEc2InstanceIamInstancePro
 	return nil
 }
 
-func validateNewSecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSecurityhubInsightFiltersResourceAwsEc2InstanceIamInstanceProfileArnListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

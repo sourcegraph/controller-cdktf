@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenCon
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenCon
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenCon
 	return nil
 }
 
-func validateNewGoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowCxToolOpenApiSpecAuthenticationBearerTokenConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

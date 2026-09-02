@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataOktaDomainDnsRecordsList) validateGetParameters(index *fl
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaDomainDnsRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaDomainDnsRecordsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataOktaDomainDnsRecordsList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaDomainDnsRecordsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaDomainDnsRecordsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataOktaDomainDnsRecordsList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewDataOktaDomainDnsRecordsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataOktaDomainDnsRecordsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

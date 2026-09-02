@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRule",
+		"@cdktn/provider-okta.authServerPolicyRule.AuthServerPolicyRule",
 		reflect.TypeOf((*AuthServerPolicyRule)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessTokenLifetimeMinutes", GoGetter: "AccessTokenLifetimeMinutes"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "inlineHookIdInput", GoGetter: "InlineHookIdInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "refreshTokenLifetimeMinutesInput", GoGetter: "RefreshTokenLifetimeMinutesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshTokenWindowMinutes", GoGetter: "RefreshTokenWindowMinutes"},
 			_jsii_.MemberProperty{JsiiProperty: "refreshTokenWindowMinutesInput", GoGetter: "RefreshTokenWindowMinutesInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessTokenLifetimeMinutes", GoMethod: "ResetAccessTokenLifetimeMinutes"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroupBlacklist", GoMethod: "ResetGroupBlacklist"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGroupWhitelist", GoMethod: "ResetGroupWhitelist"},
@@ -99,15 +101,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "userBlacklistInput", GoGetter: "UserBlacklistInput"},
 			_jsii_.MemberProperty{JsiiProperty: "userWhitelist", GoGetter: "UserWhitelist"},
 			_jsii_.MemberProperty{JsiiProperty: "userWhitelistInput", GoGetter: "UserWhitelistInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AuthServerPolicyRule{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig",
+		"@cdktn/provider-okta.authServerPolicyRule.AuthServerPolicyRuleConfig",
 		reflect.TypeOf((*AuthServerPolicyRuleConfig)(nil)).Elem(),
 	)
 }

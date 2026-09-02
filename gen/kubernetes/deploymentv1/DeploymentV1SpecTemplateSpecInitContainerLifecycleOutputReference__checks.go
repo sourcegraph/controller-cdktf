@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputRefer
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputRefer
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DeploymentV1SpecTemplateSpecInitContainerLifecyclePostStart:
 		value := value.(*[]*DeploymentV1SpecTemplateSpecInitContainerLifecyclePostStart)
@@ -114,7 +114,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputRefer
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DeploymentV1SpecTemplateSpecInitContainerLifecyclePostStart; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DeploymentV1SpecTemplateSpecInitContainerLifecyclePostStart; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputRefer
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DeploymentV1SpecTemplateSpecInitContainerLifecyclePreStop:
 		value := value.(*[]*DeploymentV1SpecTemplateSpecInitContainerLifecyclePreStop)
@@ -145,16 +145,16 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputRefer
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*DeploymentV1SpecTemplateSpecInitContainerLifecyclePreStop; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*DeploymentV1SpecTemplateSpecInitContainerLifecyclePreStop; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -241,7 +241,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -249,7 +249,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecInitContainerLifecycleOutputRefer
 	return nil
 }
 
-func validateNewDeploymentV1SpecTemplateSpecInitContainerLifecycleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDeploymentV1SpecTemplateSpecInitContainerLifecycleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

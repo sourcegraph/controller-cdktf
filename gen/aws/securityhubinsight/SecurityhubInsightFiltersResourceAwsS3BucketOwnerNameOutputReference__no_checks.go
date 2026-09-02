@@ -40,11 +40,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputRe
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputRe
 	return nil
 }
 
-func validateNewSecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSecurityhubInsightFiltersResourceAwsS3BucketOwnerNameOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

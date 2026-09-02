@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (n *jsiiProxy_NetworkPolicyV1SpecOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (n *jsiiProxy_NetworkPolicyV1SpecOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (n *jsiiProxy_NetworkPolicyV1SpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecOutputReference) validatePutEgressParamete
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*NetworkPolicyV1SpecEgress:
 		value := value.(*[]*NetworkPolicyV1SpecEgress)
@@ -114,7 +114,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecOutputReference) validatePutEgressParamete
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NetworkPolicyV1SpecEgress; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*NetworkPolicyV1SpecEgress; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecOutputReference) validatePutIngressParamet
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*NetworkPolicyV1SpecIngress:
 		value := value.(*[]*NetworkPolicyV1SpecIngress)
@@ -145,7 +145,7 @@ func (n *jsiiProxy_NetworkPolicyV1SpecOutputReference) validatePutIngressParamet
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*NetworkPolicyV1SpecIngress; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*NetworkPolicyV1SpecIngress; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -163,9 +163,9 @@ func (n *jsiiProxy_NetworkPolicyV1SpecOutputReference) validatePutPodSelectorPar
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicyV1SpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (n *jsiiProxy_NetworkPolicyV1SpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -260,7 +260,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecOutputReference) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicyV1SpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkPolicyV1SpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -268,7 +268,7 @@ func (j *jsiiProxy_NetworkPolicyV1SpecOutputReference) validateSetTerraformResou
 	return nil
 }
 
-func validateNewNetworkPolicyV1SpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkPolicyV1SpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleBigqueryDatasetAccessList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleBigqueryDatasetAccessList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleBigqueryDatasetAccessList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleBigqueryDatasetAccessList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryDatasetAccessList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleBigqueryDatasetAccessList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleBigqueryDatasetAccessList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewDataGoogleBigqueryDatasetAccessListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleBigqueryDatasetAccessListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

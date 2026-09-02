@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/securityhubinsight/internal"
 )
 
 type SecurityhubInsightFiltersResourceContainerImageNameOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Comparison() *string
 	SetComparison(val *string)
 	ComparisonInput() *string
@@ -37,9 +37,9 @@ type SecurityhubInsightFiltersResourceContainerImageNameOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -48,7 +48,7 @@ type SecurityhubInsightFiltersResourceContainerImageNameOutputReference interfac
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type SecurityhubInsightFiltersResourceContainerImageNameOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type SecurityhubInsightFiltersResourceContainerImageNameOutputReference interfac
 
 // The jsii proxy struct for SecurityhubInsightFiltersResourceContainerImageNameOutputReference
 type jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) Comparison() *string {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputRefe
 }
 
 
-func NewSecurityhubInsightFiltersResourceContainerImageNameOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceContainerImageNameOutputReference {
+func NewSecurityhubInsightFiltersResourceContainerImageNameOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) SecurityhubInsightFiltersResourceContainerImageNameOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSecurityhubInsightFiltersResourceContainerImageNameOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewSecurityhubInsightFiltersResourceContainerImageNameOutputReference(terra
 	j := jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference",
+		"@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewSecurityhubInsightFiltersResourceContainerImageNameOutputReference(terra
 	return &j
 }
 
-func NewSecurityhubInsightFiltersResourceContainerImageNameOutputReference_Override(s SecurityhubInsightFiltersResourceContainerImageNameOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewSecurityhubInsightFiltersResourceContainerImageNameOutputReference_Override(s SecurityhubInsightFiltersResourceContainerImageNameOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference",
+		"@cdktn/provider-aws.securityhubInsight.SecurityhubInsightFiltersResourceContainerImageNameOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		s,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputRefe
 	)
 }
 
-func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputRefe
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -454,8 +454,8 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputRefe
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -467,24 +467,24 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputRefe
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (s *jsiiProxy_SecurityhubInsightFiltersResourceContainerImageNameOutputRefe
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

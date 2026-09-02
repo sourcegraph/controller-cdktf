@@ -40,11 +40,11 @@ func (k *jsiiProxy_KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationO
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationO
 	return nil
 }
 
-func (j *jsiiProxy_KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_KendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationO
 	return nil
 }
 
-func validateNewKendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKendraIndexUserTokenConfigurationsJsonTokenTypeConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

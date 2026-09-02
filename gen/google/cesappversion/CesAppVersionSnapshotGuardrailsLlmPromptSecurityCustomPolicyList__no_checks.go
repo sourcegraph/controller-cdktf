@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyL
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyL
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyL
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesAppVersionSnapshotGuardrailsLlmPromptSecurityCustomPolicyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

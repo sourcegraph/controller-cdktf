@@ -56,6 +56,10 @@ func (f *jsiiProxy_FsxBackup) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (f *jsiiProxy_FsxBackup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FsxBackup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (f *jsiiProxy_FsxBackup) validateOverrideLogicalIdParameters(newLogicalId *
 }
 
 func (f *jsiiProxy_FsxBackup) validatePutTimeoutsParameters(value *FsxBackupTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FsxBackup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_FsxBackup) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_FsxBackup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FsxBackup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containercluster/internal"
 )
 
 type ContainerClusterNotificationConfigPubsubOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,9 +39,9 @@ type ContainerClusterNotificationConfigPubsubOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Topic() *string
 	SetTopic(val *string)
 	TopicInput() *string
@@ -50,7 +50,7 @@ type ContainerClusterNotificationConfigPubsubOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,15 +66,15 @@ type ContainerClusterNotificationConfigPubsubOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutFilter(value *ContainerClusterNotificationConfigPubsubFilter)
 	ResetFilter()
 	ResetTopic()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ContainerClusterNotificationConfigPubsubOutputReference interface {
 
 // The jsii proxy struct for ContainerClusterNotificationConfigPubsubOutputReference
 type jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) Topi
 }
 
 
-func NewContainerClusterNotificationConfigPubsubOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterNotificationConfigPubsubOutputReference {
+func NewContainerClusterNotificationConfigPubsubOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerClusterNotificationConfigPubsubOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerClusterNotificationConfigPubsubOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewContainerClusterNotificationConfigPubsubOutputReference(terraformResourc
 	j := jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewContainerClusterNotificationConfigPubsubOutputReference(terraformResourc
 	return &j
 }
 
-func NewContainerClusterNotificationConfigPubsubOutputReference_Override(c ContainerClusterNotificationConfigPubsubOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerClusterNotificationConfigPubsubOutputReference_Override(c ContainerClusterNotificationConfigPubsubOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterNotificationConfigPubsubOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -300,7 +300,7 @@ func (j *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -351,11 +351,11 @@ func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) GetA
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -479,8 +479,8 @@ func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) GetS
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -492,16 +492,16 @@ func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) Inte
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) Rese
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (c *jsiiProxy_ContainerClusterNotificationConfigPubsubOutputReference) Reso
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

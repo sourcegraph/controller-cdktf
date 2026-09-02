@@ -40,7 +40,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutpu
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutpu
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutpu
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWorkstationsWorkstationConfigHostGceInstanceBoostConfigsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

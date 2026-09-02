@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateGetSt
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ContainerAnalysisNoteRelatedUrlOutputReference) validateSetUr
 	return nil
 }
 
-func validateNewContainerAnalysisNoteRelatedUrlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewContainerAnalysisNoteRelatedUrlOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

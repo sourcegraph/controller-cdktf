@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeHaVpnGatewayParamsOutputReference) validateGetSt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeHaVpnGatewayParamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeHaVpnGatewayParamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeHaVpnGatewayParamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeHaVpnGatewayParamsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleComputeHaVpnGatewayParamsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeHaVpnGatewayParamsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeHaVpnGatewayParamsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeHaVpnGatewayParamsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeHaVpnGatewayParamsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

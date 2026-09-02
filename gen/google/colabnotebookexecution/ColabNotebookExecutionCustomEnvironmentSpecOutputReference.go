@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/colabnotebookexecution/internal"
 )
 
 type ColabNotebookExecutionCustomEnvironmentSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ColabNotebookExecutionCustomEnvironmentSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,9 +64,9 @@ type ColabNotebookExecutionCustomEnvironmentSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutMachineSpec(value *ColabNotebookExecutionCustomEnvironmentSpecMachineSpec)
 	PutNetworkSpec(value *ColabNotebookExecutionCustomEnvironmentSpecNetworkSpec)
 	PutPersistentDiskSpec(value *ColabNotebookExecutionCustomEnvironmentSpecPersistentDiskSpec)
@@ -75,7 +75,7 @@ type ColabNotebookExecutionCustomEnvironmentSpecOutputReference interface {
 	ResetPersistentDiskSpec()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ColabNotebookExecutionCustomEnvironmentSpecOutputReference interface {
 
 // The jsii proxy struct for ColabNotebookExecutionCustomEnvironmentSpecOutputReference
 type jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) T
 }
 
 
-func NewColabNotebookExecutionCustomEnvironmentSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionCustomEnvironmentSpecOutputReference {
+func NewColabNotebookExecutionCustomEnvironmentSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ColabNotebookExecutionCustomEnvironmentSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewColabNotebookExecutionCustomEnvironmentSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewColabNotebookExecutionCustomEnvironmentSpecOutputReference(terraformReso
 	j := jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecOutputReference",
+		"@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewColabNotebookExecutionCustomEnvironmentSpecOutputReference(terraformReso
 	return &j
 }
 
-func NewColabNotebookExecutionCustomEnvironmentSpecOutputReference_Override(c ColabNotebookExecutionCustomEnvironmentSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewColabNotebookExecutionCustomEnvironmentSpecOutputReference_Override(c ColabNotebookExecutionCustomEnvironmentSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecOutputReference",
+		"@cdktn/provider-google.colabNotebookExecution.ColabNotebookExecutionCustomEnvironmentSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -290,7 +290,7 @@ func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,11 +330,11 @@ func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -458,8 +458,8 @@ func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -471,16 +471,16 @@ func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) I
 	return returns
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (c *jsiiProxy_ColabNotebookExecutionCustomEnvironmentSpecOutputReference) R
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReferenc
 	return nil
 }
 
-func validateNewGoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleServiceUsageConsumerQuotaOverrideTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

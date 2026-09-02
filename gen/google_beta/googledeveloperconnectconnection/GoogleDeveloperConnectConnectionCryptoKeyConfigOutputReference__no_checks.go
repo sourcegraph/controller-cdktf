@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDeveloperConnectConnectionCryptoKeyConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDeveloperConnectConnectionCryptoKeyConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDeveloperConnectConnectionCryptoKeyConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

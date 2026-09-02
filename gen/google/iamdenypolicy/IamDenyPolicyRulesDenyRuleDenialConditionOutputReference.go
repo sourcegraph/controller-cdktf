@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/iamdenypolicy/internal"
 )
 
 type IamDenyPolicyRulesDenyRuleDenialConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type IamDenyPolicyRulesDenyRuleDenialConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -54,7 +54,7 @@ type IamDenyPolicyRulesDenyRuleDenialConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type IamDenyPolicyRulesDenyRuleDenialConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	ResetLocation()
 	ResetTitle()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type IamDenyPolicyRulesDenyRuleDenialConditionOutputReference interface {
 
 // The jsii proxy struct for IamDenyPolicyRulesDenyRuleDenialConditionOutputReference
 type jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) Tit
 }
 
 
-func NewIamDenyPolicyRulesDenyRuleDenialConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IamDenyPolicyRulesDenyRuleDenialConditionOutputReference {
+func NewIamDenyPolicyRulesDenyRuleDenialConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IamDenyPolicyRulesDenyRuleDenialConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIamDenyPolicyRulesDenyRuleDenialConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewIamDenyPolicyRulesDenyRuleDenialConditionOutputReference(terraformResour
 	j := jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesDenyRuleDenialConditionOutputReference",
+		"@cdktn/provider-google.iamDenyPolicy.IamDenyPolicyRulesDenyRuleDenialConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewIamDenyPolicyRulesDenyRuleDenialConditionOutputReference(terraformResour
 	return &j
 }
 
-func NewIamDenyPolicyRulesDenyRuleDenialConditionOutputReference_Override(i IamDenyPolicyRulesDenyRuleDenialConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIamDenyPolicyRulesDenyRuleDenialConditionOutputReference_Override(i IamDenyPolicyRulesDenyRuleDenialConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iamDenyPolicy.IamDenyPolicyRulesDenyRuleDenialConditionOutputReference",
+		"@cdktn/provider-google.iamDenyPolicy.IamDenyPolicyRulesDenyRuleDenialConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) Get
 	return returns
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -525,8 +525,8 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) Get
 	return returns
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -538,16 +538,16 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) Int
 	return returns
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) Res
 	)
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) Res
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

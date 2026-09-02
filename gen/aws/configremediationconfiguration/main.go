@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
+		"@cdktn/provider-aws.configRemediationConfiguration.ConfigRemediationConfiguration",
 		reflect.TypeOf((*ConfigRemediationConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -43,6 +43,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumAutomaticAttempts", GoGetter: "MaximumAutomaticAttempts"},
 			_jsii_.MemberProperty{JsiiProperty: "maximumAutomaticAttemptsInput", GoGetter: "MaximumAutomaticAttemptsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -57,6 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putExecutionControls", GoMethod: "PutExecutionControls"},
 			_jsii_.MemberMethod{JsiiMethod: "putParameter", GoMethod: "PutParameter"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutomatic", GoMethod: "ResetAutomatic"},
 			_jsii_.MemberMethod{JsiiMethod: "resetExecutionControls", GoMethod: "ResetExecutionControls"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -85,23 +87,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigRemediationConfiguration{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationConfig",
+		"@cdktn/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationConfig",
 		reflect.TypeOf((*ConfigRemediationConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControls",
+		"@cdktn/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControls",
 		reflect.TypeOf((*ConfigRemediationConfigurationExecutionControls)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsOutputReference",
+		"@cdktn/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsOutputReference",
 		reflect.TypeOf((*ConfigRemediationConfigurationExecutionControlsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -132,16 +135,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigRemediationConfigurationExecutionControlsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsSsmControls",
+		"@cdktn/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsSsmControls",
 		reflect.TypeOf((*ConfigRemediationConfigurationExecutionControlsSsmControls)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference",
+		"@cdktn/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference",
 		reflect.TypeOf((*ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -174,16 +177,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigRemediationConfigurationExecutionControlsSsmControlsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameter",
+		"@cdktn/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameter",
 		reflect.TypeOf((*ConfigRemediationConfigurationParameter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterList",
+		"@cdktn/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterList",
 		reflect.TypeOf((*ConfigRemediationConfigurationParameterList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -200,12 +203,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigRemediationConfigurationParameterList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterOutputReference",
+		"@cdktn/provider-aws.configRemediationConfiguration.ConfigRemediationConfigurationParameterOutputReference",
 		reflect.TypeOf((*ConfigRemediationConfigurationParameterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -243,7 +246,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ConfigRemediationConfigurationParameterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

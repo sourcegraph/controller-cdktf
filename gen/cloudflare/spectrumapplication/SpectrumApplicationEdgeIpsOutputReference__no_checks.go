@@ -40,11 +40,11 @@ func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateGetStringM
 	return nil
 }
 
-func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_SpectrumApplicationEdgeIpsOutputReference) validateSetTypePar
 	return nil
 }
 
-func validateNewSpectrumApplicationEdgeIpsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSpectrumApplicationEdgeIpsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList)
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList)
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermList)
 	return nil
 }
 
-func validateNewPersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPersistentVolumeSpecNodeAffinityRequiredNodeSelectorTermListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

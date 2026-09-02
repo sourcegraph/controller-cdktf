@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCesDeployment) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCesDeployment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCesDeployment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleCesDeployment) validatePutChannelProfileParameters(valu
 }
 
 func (g *jsiiProxy_GoogleCesDeployment) validatePutTimeoutsParameters(value *GoogleCesDeploymentTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCesDeployment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleCesDeployment) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesDeployment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleCesDeployment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

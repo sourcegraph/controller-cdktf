@@ -56,6 +56,10 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateInterpolat
 	return nil
 }
 
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validatePutPostgre
 }
 
 func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validatePutTimeoutsParameters(value *DatabaseMigrationServiceConnectionProfileTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -136,7 +144,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateSetLabelsP
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfile) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

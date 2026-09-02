@@ -40,11 +40,11 @@ func (a *jsiiProxy_AccessGroupExcludeGsuiteOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupExcludeGsuiteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessGroupExcludeGsuiteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessGroupExcludeGsuiteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessGroupExcludeGsuiteOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AccessGroupExcludeGsuiteOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_AccessGroupExcludeGsuiteOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessGroupExcludeGsuiteOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAccessGroupExcludeGsuiteOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAccessGroupExcludeGsuiteOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

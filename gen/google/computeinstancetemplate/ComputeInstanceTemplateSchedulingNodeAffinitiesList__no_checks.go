@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesList) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingNodeAffinitiesList) validate
 	return nil
 }
 
-func validateNewComputeInstanceTemplateSchedulingNodeAffinitiesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeInstanceTemplateSchedulingNodeAffinitiesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

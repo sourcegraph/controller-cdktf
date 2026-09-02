@@ -56,6 +56,10 @@ func (d *jsiiProxy_DirectDatadog) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (d *jsiiProxy_DirectDatadog) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DirectDatadog) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (d *jsiiProxy_DirectDatadog) validatePutHistoricalDataRetrievalParameters(v
 }
 
 func (d *jsiiProxy_DirectDatadog) validatePutQueryDelayParameters(value *DirectDatadogQueryDelay) error {
+	return nil
+}
+
+func (d *jsiiProxy_DirectDatadog) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_DirectDatadog) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DirectDatadog) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DirectDatadog) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

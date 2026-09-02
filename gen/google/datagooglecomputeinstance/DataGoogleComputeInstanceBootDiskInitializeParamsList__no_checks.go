@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceBootDiskInitializeParamsList) valida
 	return nil
 }
 
-func validateNewDataGoogleComputeInstanceBootDiskInitializeParamsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeInstanceBootDiskInitializeParamsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

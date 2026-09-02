@@ -40,7 +40,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validateGet
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validatePut
 	return nil
 }
 
-func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VmwareengineDatastoreNfsDatastoreOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVmwareengineDatastoreNfsDatastoreOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVmwareengineDatastoreNfsDatastoreOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/kendraindex/internal"
 )
 
 type KendraIndexServerSideEncryptionConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type KendraIndexServerSideEncryptionConfigurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type KendraIndexServerSideEncryptionConfigurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKmsKeyId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type KendraIndexServerSideEncryptionConfigurationOutputReference interface {
 
 // The jsii proxy struct for KendraIndexServerSideEncryptionConfigurationOutputReference
 type jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) 
 }
 
 
-func NewKendraIndexServerSideEncryptionConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KendraIndexServerSideEncryptionConfigurationOutputReference {
+func NewKendraIndexServerSideEncryptionConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) KendraIndexServerSideEncryptionConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewKendraIndexServerSideEncryptionConfigurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewKendraIndexServerSideEncryptionConfigurationOutputReference(terraformRes
 	j := jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.kendraIndex.KendraIndexServerSideEncryptionConfigurationOutputReference",
+		"@cdktn/provider-aws.kendraIndex.KendraIndexServerSideEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewKendraIndexServerSideEncryptionConfigurationOutputReference(terraformRes
 	return &j
 }
 
-func NewKendraIndexServerSideEncryptionConfigurationOutputReference_Override(k KendraIndexServerSideEncryptionConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewKendraIndexServerSideEncryptionConfigurationOutputReference_Override(k KendraIndexServerSideEncryptionConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.kendraIndex.KendraIndexServerSideEncryptionConfigurationOutputReference",
+		"@cdktn/provider-aws.kendraIndex.KendraIndexServerSideEncryptionConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) 
 	return returns
 }
 
-func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -421,8 +421,8 @@ func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) 
 	return returns
 }
 
-func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -434,16 +434,16 @@ func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) 
 	return returns
 }
 
-func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) 
 	)
 }
 
-func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (k *jsiiProxy_KendraIndexServerSideEncryptionConfigurationOutputReference) 
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

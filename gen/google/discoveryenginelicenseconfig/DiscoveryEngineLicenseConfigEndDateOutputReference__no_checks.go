@@ -40,11 +40,11 @@ func (d *jsiiProxy_DiscoveryEngineLicenseConfigEndDateOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineLicenseConfigEndDateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineLicenseConfigEndDateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineLicenseConfigEndDateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineLicenseConfigEndDateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfigEndDateOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineLicenseConfigEndDateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineLicenseConfigEndDateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DiscoveryEngineLicenseConfigEndDateOutputReference) validateS
 	return nil
 }
 
-func validateNewDiscoveryEngineLicenseConfigEndDateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDiscoveryEngineLicenseConfigEndDateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOu
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -104,11 +104,11 @@ func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOu
 	return nil
 }
 
-func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDiscoveryEngineWidgetConfigUiSettingsGenerativeAnswerConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

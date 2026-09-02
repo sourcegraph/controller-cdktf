@@ -12,7 +12,7 @@ func (s *jsiiProxy_StorageInsightsDatasetConfigLinkList) validateGetParameters(i
 	return nil
 }
 
-func (s *jsiiProxy_StorageInsightsDatasetConfigLinkList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageInsightsDatasetConfigLinkList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfigLinkList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_StorageInsightsDatasetConfigLinkList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageInsightsDatasetConfigLinkList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_StorageInsightsDatasetConfigLinkList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewStorageInsightsDatasetConfigLinkListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStorageInsightsDatasetConfigLinkListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

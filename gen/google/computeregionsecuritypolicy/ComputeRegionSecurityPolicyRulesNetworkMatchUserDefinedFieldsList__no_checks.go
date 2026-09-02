@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFields
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFields
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFields
 	return nil
 }
 
-func validateNewComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeRegionSecurityPolicyRulesNetworkMatchUserDefinedFieldsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

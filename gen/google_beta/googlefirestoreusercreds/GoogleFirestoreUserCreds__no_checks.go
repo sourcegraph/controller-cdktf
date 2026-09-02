@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFirestoreUserCreds) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirestoreUserCreds) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirestoreUserCreds) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleFirestoreUserCreds) validateOverrideLogicalIdParameters
 }
 
 func (g *jsiiProxy_GoogleFirestoreUserCreds) validatePutTimeoutsParameters(value *GoogleFirestoreUserCredsTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirestoreUserCreds) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleFirestoreUserCreds) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirestoreUserCreds) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFirestoreUserCreds) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (m *jsiiProxy_MediaStoreContainer) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MediaStoreContainer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MediaStoreContainer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (m *jsiiProxy_MediaStoreContainer) validateMoveToIdParameters(id *string) e
 }
 
 func (m *jsiiProxy_MediaStoreContainer) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (m *jsiiProxy_MediaStoreContainer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_MediaStoreContainer) validateSetIdParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_MediaStoreContainer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MediaStoreContainer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

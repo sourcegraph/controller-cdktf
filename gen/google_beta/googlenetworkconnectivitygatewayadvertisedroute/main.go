@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleNetworkConnectivityGatewayAdvertisedRoute.GoogleNetworkConnectivityGatewayAdvertisedRoute",
+		"@cdktn/provider-google-beta.googleNetworkConnectivityGatewayAdvertisedRoute.GoogleNetworkConnectivityGatewayAdvertisedRoute",
 		reflect.TypeOf((*GoogleNetworkConnectivityGatewayAdvertisedRoute)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -46,6 +46,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -63,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "recipient", GoGetter: "Recipient"},
 			_jsii_.MemberProperty{JsiiProperty: "recipientInput", GoGetter: "RecipientInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIpRange", GoMethod: "ResetIpRange"},
@@ -89,23 +91,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uniqueId", GoGetter: "UniqueId"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleNetworkConnectivityGatewayAdvertisedRoute{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleNetworkConnectivityGatewayAdvertisedRoute.GoogleNetworkConnectivityGatewayAdvertisedRouteConfig",
+		"@cdktn/provider-google-beta.googleNetworkConnectivityGatewayAdvertisedRoute.GoogleNetworkConnectivityGatewayAdvertisedRouteConfig",
 		reflect.TypeOf((*GoogleNetworkConnectivityGatewayAdvertisedRouteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleNetworkConnectivityGatewayAdvertisedRoute.GoogleNetworkConnectivityGatewayAdvertisedRouteTimeouts",
+		"@cdktn/provider-google-beta.googleNetworkConnectivityGatewayAdvertisedRoute.GoogleNetworkConnectivityGatewayAdvertisedRouteTimeouts",
 		reflect.TypeOf((*GoogleNetworkConnectivityGatewayAdvertisedRouteTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleNetworkConnectivityGatewayAdvertisedRoute.GoogleNetworkConnectivityGatewayAdvertisedRouteTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleNetworkConnectivityGatewayAdvertisedRoute.GoogleNetworkConnectivityGatewayAdvertisedRouteTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleNetworkConnectivityGatewayAdvertisedRouteTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -141,7 +144,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleNetworkConnectivityGatewayAdvertisedRouteTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

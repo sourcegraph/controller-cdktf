@@ -40,7 +40,7 @@ func (p *jsiiProxy_PubsubSubscriptionMessageTransformsAiInferenceOutputReference
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionMessageTransformsAiInferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubSubscriptionMessageTransformsAiInferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (p *jsiiProxy_PubsubSubscriptionMessageTransformsAiInferenceOutputReference
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionMessageTransformsAiInferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubSubscriptionMessageTransformsAiInferenceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_PubsubSubscriptionMessageTransformsAiInferenceOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionMessageTransformsAiInferenceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PubsubSubscriptionMessageTransformsAiInferenceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPubsubSubscriptionMessageTransformsAiInferenceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPubsubSubscriptionMessageTransformsAiInferenceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

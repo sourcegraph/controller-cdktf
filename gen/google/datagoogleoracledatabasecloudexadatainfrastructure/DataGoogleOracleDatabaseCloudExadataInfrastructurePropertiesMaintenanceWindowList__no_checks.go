@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesM
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesM
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesM
 	return nil
 }
 
-func validateNewDataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleOracleDatabaseCloudExadataInfrastructurePropertiesMaintenanceWindowListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

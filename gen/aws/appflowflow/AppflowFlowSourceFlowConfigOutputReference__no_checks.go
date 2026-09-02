@@ -40,7 +40,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) validateGetString
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) validatePutSource
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppflowFlowSourceFlowConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppflowFlowSourceFlowConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppflowFlowSourceFlowConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

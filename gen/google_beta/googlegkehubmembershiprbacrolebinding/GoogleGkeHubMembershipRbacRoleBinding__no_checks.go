@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validatePutRoleParamet
 }
 
 func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validatePutTimeoutsParameters(value *GoogleGkeHubMembershipRbacRoleBindingTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleGkeHubMembershipRbacRoleBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

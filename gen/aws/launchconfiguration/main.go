@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfiguration",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfiguration",
 		reflect.TypeOf((*LaunchConfiguration)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "keyName", GoGetter: "KeyName"},
 			_jsii_.MemberProperty{JsiiProperty: "keyNameInput", GoGetter: "KeyNameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataOptions", GoGetter: "MetadataOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataOptionsInput", GoGetter: "MetadataOptionsInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -75,6 +76,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMetadataOptions", GoMethod: "PutMetadataOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "putRootBlockDevice", GoMethod: "PutRootBlockDevice"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssociatePublicIpAddress", GoMethod: "ResetAssociatePublicIpAddress"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEbsBlockDevice", GoMethod: "ResetEbsBlockDevice"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEbsOptimized", GoMethod: "ResetEbsOptimized"},
@@ -118,23 +120,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpcClassicLinkIdInput", GoGetter: "VpcClassicLinkIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcClassicLinkSecurityGroups", GoGetter: "VpcClassicLinkSecurityGroups"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcClassicLinkSecurityGroupsInput", GoGetter: "VpcClassicLinkSecurityGroupsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchConfiguration{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationConfig",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationConfig",
 		reflect.TypeOf((*LaunchConfigurationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDevice",
 		reflect.TypeOf((*LaunchConfigurationEbsBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceList",
 		reflect.TypeOf((*LaunchConfigurationEbsBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -151,12 +154,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchConfigurationEbsBlockDeviceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEbsBlockDeviceOutputReference",
 		reflect.TypeOf((*LaunchConfigurationEbsBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -209,16 +212,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchConfigurationEbsBlockDeviceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDevice",
 		reflect.TypeOf((*LaunchConfigurationEphemeralBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceList",
 		reflect.TypeOf((*LaunchConfigurationEphemeralBlockDeviceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -235,12 +238,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchConfigurationEphemeralBlockDeviceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationEphemeralBlockDeviceOutputReference",
 		reflect.TypeOf((*LaunchConfigurationEphemeralBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -275,16 +278,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchConfigurationEphemeralBlockDeviceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptions",
 		reflect.TypeOf((*LaunchConfigurationMetadataOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptionsOutputReference",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationMetadataOptionsOutputReference",
 		reflect.TypeOf((*LaunchConfigurationMetadataOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -320,16 +323,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchConfigurationMetadataOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDevice",
 		reflect.TypeOf((*LaunchConfigurationRootBlockDevice)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDeviceOutputReference",
+		"@cdktn/provider-aws.launchConfiguration.LaunchConfigurationRootBlockDeviceOutputReference",
 		reflect.TypeOf((*LaunchConfigurationRootBlockDeviceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -374,7 +377,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

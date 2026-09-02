@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) validateOverrideLogic
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsS3ControlMultiRegionAccessPoint_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) validateSetIdParamete
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (m *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList) validateGetP
 	return nil
 }
 
-func (m *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_MediaPackageChannelHlsIngestIngestEndpointsList) validateSetW
 	return nil
 }
 
-func validateNewMediaPackageChannelHlsIngestIngestEndpointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMediaPackageChannelHlsIngestIngestEndpointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (p *jsiiProxy_PolicyDeviceAssuranceIos) validateInterpolationForAttributePa
 	return nil
 }
 
+func (p *jsiiProxy_PolicyDeviceAssuranceIos) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceIos) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PolicyDeviceAssuranceIos) validateMoveToIdParameters(id *stri
 }
 
 func (p *jsiiProxy_PolicyDeviceAssuranceIos) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyDeviceAssuranceIos) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceIos) validateSetJailbreakParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceIos) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceIos) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

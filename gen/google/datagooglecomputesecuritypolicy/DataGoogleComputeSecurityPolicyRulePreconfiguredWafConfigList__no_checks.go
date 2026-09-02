@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigList
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigList
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigList
 	return nil
 }
 
-func validateNewDataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeSecurityPolicyRulePreconfiguredWafConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

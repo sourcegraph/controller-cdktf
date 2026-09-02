@@ -12,7 +12,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigTagsList) validateS
 	return nil
 }
 
-func validateNewGkeonpremVmwareNodePoolConfigVsphereConfigTagsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGkeonpremVmwareNodePoolConfigVsphereConfigTagsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

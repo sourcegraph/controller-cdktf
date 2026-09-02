@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/loggingmetric/internal"
 )
 
 type LoggingMetricBucketOptionsLinearBucketsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type LoggingMetricBucketOptionsLinearBucketsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Width() *float64
 	SetWidth(val *float64)
 	WidthInput() *float64
@@ -51,7 +51,7 @@ type LoggingMetricBucketOptionsLinearBucketsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type LoggingMetricBucketOptionsLinearBucketsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type LoggingMetricBucketOptionsLinearBucketsOutputReference interface {
 
 // The jsii proxy struct for LoggingMetricBucketOptionsLinearBucketsOutputReference
 type jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) ComplexObjectIndex() interface{} {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) Width
 }
 
 
-func NewLoggingMetricBucketOptionsLinearBucketsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LoggingMetricBucketOptionsLinearBucketsOutputReference {
+func NewLoggingMetricBucketOptionsLinearBucketsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LoggingMetricBucketOptionsLinearBucketsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLoggingMetricBucketOptionsLinearBucketsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewLoggingMetricBucketOptionsLinearBucketsOutputReference(terraformResource
 	j := jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsLinearBucketsOutputReference",
+		"@cdktn/provider-google.loggingMetric.LoggingMetricBucketOptionsLinearBucketsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewLoggingMetricBucketOptionsLinearBucketsOutputReference(terraformResource
 	return &j
 }
 
-func NewLoggingMetricBucketOptionsLinearBucketsOutputReference_Override(l LoggingMetricBucketOptionsLinearBucketsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLoggingMetricBucketOptionsLinearBucketsOutputReference_Override(l LoggingMetricBucketOptionsLinearBucketsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.loggingMetric.LoggingMetricBucketOptionsLinearBucketsOutputReference",
+		"@cdktn/provider-google.loggingMetric.LoggingMetricBucketOptionsLinearBucketsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) GetAn
 	return returns
 }
 
-func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -488,8 +488,8 @@ func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) GetSt
 	return returns
 }
 
-func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -501,24 +501,24 @@ func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) Inter
 	return returns
 }
 
-func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (l *jsiiProxy_LoggingMetricBucketOptionsLinearBucketsOutputReference) Resol
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionRetryPolicyList) validateGetParam
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionRetryPolicyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionRetryPolicyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionRetryPolicyList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionRetryPolicyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGooglePubsubSubscriptionRetryPolicyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionRetryPolicyList) validateSetWraps
 	return nil
 }
 
-func validateNewDataGooglePubsubSubscriptionRetryPolicyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGooglePubsubSubscriptionRetryPolicyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

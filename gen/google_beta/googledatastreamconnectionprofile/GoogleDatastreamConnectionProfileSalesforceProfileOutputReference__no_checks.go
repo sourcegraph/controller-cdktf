@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamConnectionProfileSalesforceProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamConnectionProfileSalesforceProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatastreamConnectionProfileSalesforceProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

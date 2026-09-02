@@ -40,11 +40,11 @@ func (s *jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferenc
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,11 +88,11 @@ func (j *jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferenc
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewServicecatalogProvisionedProductStackSetProvisioningPreferencesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

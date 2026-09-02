@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dataawscloudhsmv2cluster/internal"
 )
 
 type DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AwsHardwareCertificate() *string
 	ClusterCertificate() *string
 	ClusterCsr() *string
@@ -39,15 +39,15 @@ type DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference interface {
 
 // The jsii proxy struct for DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference
 type jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) AwsHardwareCertificate() *string {
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) T
 }
 
 
-func NewDataAwsCloudhsmV2ClusterClusterCertificatesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference {
+func NewDataAwsCloudhsmV2ClusterClusterCertificatesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataAwsCloudhsmV2ClusterClusterCertificatesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -211,7 +211,7 @@ func NewDataAwsCloudhsmV2ClusterClusterCertificatesOutputReference(terraformReso
 	j := jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference",
+		"@cdktn/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -219,11 +219,11 @@ func NewDataAwsCloudhsmV2ClusterClusterCertificatesOutputReference(terraformReso
 	return &j
 }
 
-func NewDataAwsCloudhsmV2ClusterClusterCertificatesOutputReference_Override(d DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataAwsCloudhsmV2ClusterClusterCertificatesOutputReference_Override(d DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference",
+		"@cdktn/provider-aws.dataAwsCloudhsmV2Cluster.DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -273,7 +273,7 @@ func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,11 +313,11 @@ func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -441,8 +441,8 @@ func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) G
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -454,24 +454,24 @@ func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) I
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -479,7 +479,7 @@ func (d *jsiiProxy_DataAwsCloudhsmV2ClusterClusterCertificatesOutputReference) R
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingCommercialInfoOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingCommercialInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingCommercialInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingCommercialInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryAnalyticsHubListingCommercialInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingCommercialInfoOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingCommercialInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryAnalyticsHubListingCommercialInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBigqueryAnalyticsHubListingCommercialInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleBigqueryAnalyticsHubListingCommercialInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

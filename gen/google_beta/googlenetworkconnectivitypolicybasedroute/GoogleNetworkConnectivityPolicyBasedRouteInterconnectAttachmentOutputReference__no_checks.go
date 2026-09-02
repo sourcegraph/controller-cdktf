@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachme
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachme
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkConnectivityPolicyBasedRouteInterconnectAttachmentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

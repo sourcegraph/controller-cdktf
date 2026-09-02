@@ -40,11 +40,11 @@ func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateGet
 	return nil
 }
 
-func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_IamProjectsPolicyBindingConditionOutputReference) validateSet
 	return nil
 }
 
-func validateNewIamProjectsPolicyBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIamProjectsPolicyBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

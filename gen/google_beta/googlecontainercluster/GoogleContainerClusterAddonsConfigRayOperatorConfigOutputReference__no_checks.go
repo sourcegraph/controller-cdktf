@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterAddonsConfigRayOperatorConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleContainerClusterAddonsConfigRayOperatorConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

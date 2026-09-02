@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReferen
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementClusterSelectorOutputReferen
 	return nil
 }
 
-func validateNewDataprocWorkflowTemplatePlacementClusterSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocWorkflowTemplatePlacementClusterSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

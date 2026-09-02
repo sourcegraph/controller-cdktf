@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkServicesServiceLbPoliciesIsolationConfigOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesServiceLbPoliciesIsolationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesServiceLbPoliciesIsolationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesServiceLbPoliciesIsolationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesServiceLbPoliciesIsolationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleNetworkServicesServiceLbPoliciesIsolationConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesServiceLbPoliciesIsolationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesServiceLbPoliciesIsolationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesServiceLbPoliciesIsolationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkServicesServiceLbPoliciesIsolationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy) validateOv
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleBigqueryDatapolicyv2DataPolicyIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingCustomDomainIssuesList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingCustomDomainIssuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseHostingCustomDomainIssuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainIssuesList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainIssuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainIssuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleFirebaseHostingCustomDomainIssuesList) validateSetWraps
 	return nil
 }
 
-func validateNewGoogleFirebaseHostingCustomDomainIssuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleFirebaseHostingCustomDomainIssuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

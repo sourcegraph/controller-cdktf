@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigqueryanalyticshublisting/internal"
 )
 
 type BigqueryAnalyticsHubListingPubsubTopicOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type BigqueryAnalyticsHubListingPubsubTopicOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Topic() *string
 	SetTopic(val *string)
 	TopicInput() *string
@@ -48,7 +48,7 @@ type BigqueryAnalyticsHubListingPubsubTopicOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type BigqueryAnalyticsHubListingPubsubTopicOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDataAffinityRegions()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type BigqueryAnalyticsHubListingPubsubTopicOutputReference interface {
 
 // The jsii proxy struct for BigqueryAnalyticsHubListingPubsubTopicOutputReference
 type jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) ComplexObjectIndex() interface{} {
@@ -163,8 +163,8 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) TopicI
 }
 
 
-func NewBigqueryAnalyticsHubListingPubsubTopicOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryAnalyticsHubListingPubsubTopicOutputReference {
+func NewBigqueryAnalyticsHubListingPubsubTopicOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BigqueryAnalyticsHubListingPubsubTopicOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBigqueryAnalyticsHubListingPubsubTopicOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewBigqueryAnalyticsHubListingPubsubTopicOutputReference(terraformResource 
 	j := jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingPubsubTopicOutputReference",
+		"@cdktn/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingPubsubTopicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewBigqueryAnalyticsHubListingPubsubTopicOutputReference(terraformResource 
 	return &j
 }
 
-func NewBigqueryAnalyticsHubListingPubsubTopicOutputReference_Override(b BigqueryAnalyticsHubListingPubsubTopicOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBigqueryAnalyticsHubListingPubsubTopicOutputReference_Override(b BigqueryAnalyticsHubListingPubsubTopicOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingPubsubTopicOutputReference",
+		"@cdktn/provider-google.bigqueryAnalyticsHubListing.BigqueryAnalyticsHubListingPubsubTopicOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -276,7 +276,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) GetAny
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -455,8 +455,8 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) GetStr
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -468,16 +468,16 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) Interp
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) ResetD
 	)
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingPubsubTopicOutputReference) Resolv
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

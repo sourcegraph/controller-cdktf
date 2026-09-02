@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -106,7 +106,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validatePutApiTargetsP
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*ApikeysKeyRestrictionsApiTargets:
 		value := value.(*[]*ApikeysKeyRestrictionsApiTargets)
@@ -125,7 +125,7 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validatePutApiTargetsP
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*ApikeysKeyRestrictionsApiTargets; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*ApikeysKeyRestrictionsApiTargets; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -165,9 +165,9 @@ func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validatePutServerKeyRe
 	return nil
 }
 
-func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -254,7 +254,7 @@ func (j *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -262,7 +262,7 @@ func (j *jsiiProxy_ApikeysKeyRestrictionsOutputReference) validateSetTerraformRe
 	return nil
 }
 
-func validateNewApikeysKeyRestrictionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApikeysKeyRestrictionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

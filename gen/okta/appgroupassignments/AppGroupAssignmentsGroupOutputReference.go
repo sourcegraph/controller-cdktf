@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/okta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/okta/appgroupassignments/internal"
 )
 
 type AppGroupAssignmentsGroupOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type AppGroupAssignmentsGroupOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type AppGroupAssignmentsGroupOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPriority()
 	ResetProfile()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type AppGroupAssignmentsGroupOutputReference interface {
 
 // The jsii proxy struct for AppGroupAssignmentsGroupOutputReference
 type jsiiProxy_AppGroupAssignmentsGroupOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppGroupAssignmentsGroupOutputReference) ComplexObjectIndex() interface{} {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_AppGroupAssignmentsGroupOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_AppGroupAssignmentsGroupOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppGroupAssignmentsGroupOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_AppGroupAssignmentsGroupOutputReference) TerraformResource() 
 }
 
 
-func NewAppGroupAssignmentsGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppGroupAssignmentsGroupOutputReference {
+func NewAppGroupAssignmentsGroupOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AppGroupAssignmentsGroupOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppGroupAssignmentsGroupOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -227,7 +227,7 @@ func NewAppGroupAssignmentsGroupOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_AppGroupAssignmentsGroupOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference",
+		"@cdktn/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewAppGroupAssignmentsGroupOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewAppGroupAssignmentsGroupOutputReference_Override(a AppGroupAssignmentsGroupOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAppGroupAssignmentsGroupOutputReference_Override(a AppGroupAssignmentsGroupOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference",
+		"@cdktn/provider-okta.appGroupAssignments.AppGroupAssignmentsGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_AppGroupAssignmentsGroupOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_AppGroupAssignmentsGroupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppGroupAssignmentsGroupOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -490,8 +490,8 @@ func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -503,16 +503,16 @@ func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) ResetProfile() {
 	)
 }
 
-func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (a *jsiiProxy_AppGroupAssignmentsGroupOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

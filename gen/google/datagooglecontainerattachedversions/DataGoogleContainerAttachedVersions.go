@@ -5,15 +5,15 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecontainerattachedversions/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/hashicorp/google/7.32.0/docs/data-sources/container_attached_versions google_container_attached_versions}.
 type DataGoogleContainerAttachedVersions interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -25,9 +25,9 @@ type DataGoogleContainerAttachedVersions interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -36,9 +36,9 @@ type DataGoogleContainerAttachedVersions interface {
 	SetId(val *string)
 	IdInput() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	Location() *string
 	SetLocation(val *string)
 	LocationInput() *string
@@ -48,13 +48,13 @@ type DataGoogleContainerAttachedVersions interface {
 	SetProject(val *string)
 	ProjectInput() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type DataGoogleContainerAttachedVersions interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,10 +81,23 @@ type DataGoogleContainerAttachedVersions interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetId()
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
@@ -101,15 +114,24 @@ type DataGoogleContainerAttachedVersions interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataGoogleContainerAttachedVersions
 type jsiiProxy_DataGoogleContainerAttachedVersions struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataGoogleContainerAttachedVersions) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataGoogleContainerAttachedVersions) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -148,8 +170,8 @@ func (j *jsiiProxy_DataGoogleContainerAttachedVersions) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerAttachedVersions) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataGoogleContainerAttachedVersions) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -198,8 +220,8 @@ func (j *jsiiProxy_DataGoogleContainerAttachedVersions) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerAttachedVersions) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataGoogleContainerAttachedVersions) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -258,8 +280,8 @@ func (j *jsiiProxy_DataGoogleContainerAttachedVersions) ProjectInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerAttachedVersions) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataGoogleContainerAttachedVersions) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -278,8 +300,8 @@ func (j *jsiiProxy_DataGoogleContainerAttachedVersions) RawOverrides() interface
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleContainerAttachedVersions) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataGoogleContainerAttachedVersions) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -329,7 +351,7 @@ func NewDataGoogleContainerAttachedVersions(scope constructs.Construct, id *stri
 	j := jsiiProxy_DataGoogleContainerAttachedVersions{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktn/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -342,7 +364,7 @@ func NewDataGoogleContainerAttachedVersions_Override(d DataGoogleContainerAttach
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktn/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -367,7 +389,7 @@ func (j *jsiiProxy_DataGoogleContainerAttachedVersions)SetDependsOn(val *[]*stri
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerAttachedVersions)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataGoogleContainerAttachedVersions)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -386,7 +408,7 @@ func (j *jsiiProxy_DataGoogleContainerAttachedVersions)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerAttachedVersions)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataGoogleContainerAttachedVersions)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -419,7 +441,7 @@ func (j *jsiiProxy_DataGoogleContainerAttachedVersions)SetProject(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataGoogleContainerAttachedVersions)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataGoogleContainerAttachedVersions)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -427,17 +449,17 @@ func (j *jsiiProxy_DataGoogleContainerAttachedVersions)SetProvider(val cdktf.Ter
 	)
 }
 
-// Generates CDKTF code for importing a DataGoogleContainerAttachedVersions resource upon running "cdktf plan <stack-name>".
-func DataGoogleContainerAttachedVersions_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataGoogleContainerAttachedVersions resource upon running "cdktn plan <stack-name>".
+func DataGoogleContainerAttachedVersions_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataGoogleContainerAttachedVersions_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktn/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -472,7 +494,7 @@ func DataGoogleContainerAttachedVersions_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktn/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +513,7 @@ func DataGoogleContainerAttachedVersions_IsTerraformDataSource(x interface{}) *b
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktn/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +532,7 @@ func DataGoogleContainerAttachedVersions_IsTerraformElement(x interface{}) *bool
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktn/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +545,7 @@ func DataGoogleContainerAttachedVersions_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
+		"@cdktn/provider-google.dataGoogleContainerAttachedVersions.DataGoogleContainerAttachedVersions",
 		"tfResourceType",
 		&returns,
 	)
@@ -557,11 +579,11 @@ func (d *jsiiProxy_DataGoogleContainerAttachedVersions) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerAttachedVersions) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleContainerAttachedVersions) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -685,11 +707,11 @@ func (d *jsiiProxy_DataGoogleContainerAttachedVersions) GetStringMapAttribute(te
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleContainerAttachedVersions) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleContainerAttachedVersions) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -709,6 +731,17 @@ func (d *jsiiProxy_DataGoogleContainerAttachedVersions) OverrideLogicalId(newLog
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataGoogleContainerAttachedVersions) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -800,6 +833,24 @@ func (d *jsiiProxy_DataGoogleContainerAttachedVersions) ToTerraform() interface{
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataGoogleContainerAttachedVersions) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

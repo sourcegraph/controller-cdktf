@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesDeprecatedOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesDeprecatedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesDeprecatedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesDeprecatedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesDeprecatedOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesDeprecatedOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesDeprecatedOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeMachineTypesMachineTypesDeprecatedOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeMachineTypesMachineTypesDeprecatedOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeMachineTypesMachineTypesDeprecatedOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

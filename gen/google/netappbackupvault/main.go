@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappBackupVault.NetappBackupVault",
+		"@cdktn/provider-google.netappBackupVault.NetappBackupVault",
 		reflect.TypeOf((*NetappBackupVault)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -69,6 +70,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putBackupRetentionPolicy", GoMethod: "PutBackupRetentionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupRegion", GoMethod: "ResetBackupRegion"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupRetentionPolicy", GoMethod: "ResetBackupRetentionPolicy"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBackupVaultType", GoMethod: "ResetBackupVaultType"},
@@ -94,19 +96,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappBackupVault{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicy",
+		"@cdktn/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicy",
 		reflect.TypeOf((*NetappBackupVaultBackupRetentionPolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicyOutputReference",
+		"@cdktn/provider-google.netappBackupVault.NetappBackupVaultBackupRetentionPolicyOutputReference",
 		reflect.TypeOf((*NetappBackupVaultBackupRetentionPolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "backupMinimumEnforcedRetentionDays", GoGetter: "BackupMinimumEnforcedRetentionDays"},
@@ -147,20 +150,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappBackupVaultBackupRetentionPolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultConfig",
+		"@cdktn/provider-google.netappBackupVault.NetappBackupVaultConfig",
 		reflect.TypeOf((*NetappBackupVaultConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultTimeouts",
+		"@cdktn/provider-google.netappBackupVault.NetappBackupVaultTimeouts",
 		reflect.TypeOf((*NetappBackupVaultTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.netappBackupVault.NetappBackupVaultTimeoutsOutputReference",
+		"@cdktn/provider-google.netappBackupVault.NetappBackupVaultTimeoutsOutputReference",
 		reflect.TypeOf((*NetappBackupVaultTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -196,7 +199,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetappBackupVaultTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

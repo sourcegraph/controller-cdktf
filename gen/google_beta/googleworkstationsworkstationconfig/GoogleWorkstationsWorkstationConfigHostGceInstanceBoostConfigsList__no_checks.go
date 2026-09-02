@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	return nil
 }
 
-func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfig
 	return nil
 }
 
-func validateNewGoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleWorkstationsWorkstationConfigHostGceInstanceBoostConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

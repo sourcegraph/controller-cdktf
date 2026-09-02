@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstanceProperties
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeReservationSpecificReservationInstancePropertiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeReservationSpecificReservationInstancePropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeReservationSpecificReservationInstancePropertiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

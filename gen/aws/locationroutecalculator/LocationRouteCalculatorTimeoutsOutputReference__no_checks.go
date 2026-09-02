@@ -40,11 +40,11 @@ func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateGetSt
 	return nil
 }
 
-func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_LocationRouteCalculatorTimeoutsOutputReference) validateSetUp
 	return nil
 }
 
-func validateNewLocationRouteCalculatorTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLocationRouteCalculatorTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

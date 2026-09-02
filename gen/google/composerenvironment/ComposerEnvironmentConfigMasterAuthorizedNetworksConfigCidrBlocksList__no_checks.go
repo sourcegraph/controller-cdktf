@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBl
 	return nil
 }
 
-func (c *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBl
 	return nil
 }
 
-func (j *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBl
 	return nil
 }
 
-func validateNewComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComposerEnvironmentConfigMasterAuthorizedNetworksConfigCidrBlocksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

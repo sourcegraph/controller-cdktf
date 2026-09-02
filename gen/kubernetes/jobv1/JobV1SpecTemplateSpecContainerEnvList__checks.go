@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (j *jsiiProxy_JobV1SpecTemplateSpecContainerEnvList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerEnvList) validateGetParameters(
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerEnvList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerEnvList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerEnvList) validateResolveParamet
 
 func (j *jsiiProxy_JobV1SpecTemplateSpecContainerEnvList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*JobV1SpecTemplateSpecContainerEnv:
 		val := val.(*[]*JobV1SpecTemplateSpecContainerEnv)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerEnvList) validateSetInternalVal
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*JobV1SpecTemplateSpecContainerEnv; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*JobV1SpecTemplateSpecContainerEnv; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerEnvList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecTemplateSpecContainerEnvList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobV1SpecTemplateSpecContainerEnvList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_JobV1SpecTemplateSpecContainerEnvList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewJobV1SpecTemplateSpecContainerEnvListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobV1SpecTemplateSpecContainerEnvListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

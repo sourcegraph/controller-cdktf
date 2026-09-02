@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateGetParameters(i
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContainerAwsNodePoolConfigTaintsList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewContainerAwsNodePoolConfigTaintsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerAwsNodePoolConfigTaintsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApigeeApiMetaDataList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeApiMetaDataList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeApiMetaDataList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ApigeeApiMetaDataList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeApiMetaDataList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApigeeApiMetaDataList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ApigeeApiMetaDataList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewApigeeApiMetaDataListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApigeeApiMetaDataListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datastreamstream/internal"
 )
 
 type DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,15 +34,15 @@ type DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReferen
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -58,12 +58,12 @@ type DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReferen
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -73,7 +73,7 @@ type DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReferen
 
 // The jsii proxy struct for DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference
 type jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) ComplexObjectIndex() interface{} {
@@ -136,8 +136,8 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObject
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -147,7 +147,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObject
 }
 
 
-func NewDatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference {
+func NewDatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -156,7 +156,7 @@ func NewDatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputRefe
 	j := jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference",
+		"@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -164,11 +164,11 @@ func NewDatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputRefe
 	return &j
 }
 
-func NewDatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference_Override(d DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference_Override(d DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference",
+		"@cdktn/provider-google.datastreamStream.DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -218,7 +218,7 @@ func (j *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObject
 	)
 }
 
-func (j *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -258,11 +258,11 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObject
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -386,8 +386,8 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObject
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -399,24 +399,24 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObject
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObjectsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -424,7 +424,7 @@ func (d *jsiiProxy_DatastreamStreamSourceConfigOracleSourceConfigDropLargeObject
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

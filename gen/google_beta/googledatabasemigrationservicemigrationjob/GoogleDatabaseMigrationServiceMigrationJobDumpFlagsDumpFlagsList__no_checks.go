@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsL
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsL
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsL
 	return nil
 }
 
-func validateNewGoogleDatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDatabaseMigrationServiceMigrationJobDumpFlagsDumpFlagsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

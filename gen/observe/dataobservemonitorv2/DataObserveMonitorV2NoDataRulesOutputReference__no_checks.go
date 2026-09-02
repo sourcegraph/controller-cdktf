@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validatePutTh
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2NoDataRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataObserveMonitorV2NoDataRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataObserveMonitorV2NoDataRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) val
 	return nil
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_IamDenyPolicyRulesDenyRuleDenialConditionOutputReference) val
 	return nil
 }
 
-func validateNewIamDenyPolicyRulesDenyRuleDenialConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIamDenyPolicyRulesDenyRuleDenialConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

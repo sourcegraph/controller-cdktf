@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/identityplatformtenant/internal"
 )
 
 type IdentityPlatformTenantTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type IdentityPlatformTenantTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type IdentityPlatformTenantTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type IdentityPlatformTenantTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type IdentityPlatformTenantTimeoutsOutputReference interface {
 
 // The jsii proxy struct for IdentityPlatformTenantTimeoutsOutputReference
 type jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) UpdateInput() 
 }
 
 
-func NewIdentityPlatformTenantTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IdentityPlatformTenantTimeoutsOutputReference {
+func NewIdentityPlatformTenantTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IdentityPlatformTenantTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIdentityPlatformTenantTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewIdentityPlatformTenantTimeoutsOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeoutsOutputReference",
+		"@cdktn/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewIdentityPlatformTenantTimeoutsOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewIdentityPlatformTenantTimeoutsOutputReference_Override(i IdentityPlatformTenantTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIdentityPlatformTenantTimeoutsOutputReference_Override(i IdentityPlatformTenantTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeoutsOutputReference",
+		"@cdktn/provider-google.identityPlatformTenant.IdentityPlatformTenantTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -491,8 +491,8 @@ func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) GetStringMapAt
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -504,16 +504,16 @@ func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) InterpolationA
 	return returns
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) ResetUpdate() 
 	)
 }
 
-func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (i *jsiiProxy_IdentityPlatformTenantTimeoutsOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

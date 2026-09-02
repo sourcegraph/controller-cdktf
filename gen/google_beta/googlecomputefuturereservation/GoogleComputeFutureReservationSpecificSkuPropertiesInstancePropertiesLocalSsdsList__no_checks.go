@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePr
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesLocalSsdsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesLocalSsdsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesLocalSsdsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesLocalSsdsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeFutureReservationSpecificSkuPropertiesInstancePr
 	return nil
 }
 
-func validateNewGoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesLocalSsdsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeFutureReservationSpecificSkuPropertiesInstancePropertiesLocalSsdsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSpannerBackupScheduleIncrementalBackupSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSpannerBackupScheduleIncrementalBackupSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

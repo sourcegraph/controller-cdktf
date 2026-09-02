@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationH
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationH
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationH
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleChronicleFeedDetailsMimecastMailSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

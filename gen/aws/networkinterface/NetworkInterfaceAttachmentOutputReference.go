@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/networkinterface/internal"
 )
 
 type NetworkInterfaceAttachmentOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AttachmentId() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -41,15 +41,15 @@ type NetworkInterfaceAttachmentOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type NetworkInterfaceAttachmentOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type NetworkInterfaceAttachmentOutputReference interface {
 
 // The jsii proxy struct for NetworkInterfaceAttachmentOutputReference
 type jsiiProxy_NetworkInterfaceAttachmentOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) AttachmentId() *string {
@@ -193,8 +193,8 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -204,7 +204,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference) TerraformResource(
 }
 
 
-func NewNetworkInterfaceAttachmentOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkInterfaceAttachmentOutputReference {
+func NewNetworkInterfaceAttachmentOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) NetworkInterfaceAttachmentOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkInterfaceAttachmentOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -213,7 +213,7 @@ func NewNetworkInterfaceAttachmentOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_NetworkInterfaceAttachmentOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference",
+		"@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -221,11 +221,11 @@ func NewNetworkInterfaceAttachmentOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewNetworkInterfaceAttachmentOutputReference_Override(n NetworkInterfaceAttachmentOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewNetworkInterfaceAttachmentOutputReference_Override(n NetworkInterfaceAttachmentOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference",
+		"@cdktn/provider-aws.networkInterface.NetworkInterfaceAttachmentOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		n,
 	)
@@ -297,7 +297,7 @@ func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkInterfaceAttachmentOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -337,11 +337,11 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -465,8 +465,8 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -478,24 +478,24 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -503,7 +503,7 @@ func (n *jsiiProxy_NetworkInterfaceAttachmentOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

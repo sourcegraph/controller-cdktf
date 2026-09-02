@@ -56,6 +56,10 @@ func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validateInterpolationForAttri
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validatePutResponseTypeParame
 }
 
 func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validatePutTimeoutsParameters(value *IdentityPlatformOauthIdpConfigTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IdentityPlatformOauthIdpConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetIssuerParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IdentityPlatformOauthIdpConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

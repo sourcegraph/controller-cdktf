@@ -40,11 +40,11 @@ func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -204,7 +204,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -220,7 +220,7 @@ func (j *jsiiProxy_DmsEndpointS3SettingsOutputReference) validateSetUseTaskStart
 	return nil
 }
 
-func validateNewDmsEndpointS3SettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDmsEndpointS3SettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

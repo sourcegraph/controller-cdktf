@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseHostingVersionConfigRewritesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleFirebaseHostingVersionConfigRewritesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleFirebaseHostingVersionConfigRewritesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

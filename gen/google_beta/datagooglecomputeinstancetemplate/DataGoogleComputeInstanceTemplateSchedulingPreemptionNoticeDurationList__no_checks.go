@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDu
 	return nil
 }
 
-func validateNewDataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeInstanceTemplateSchedulingPreemptionNoticeDurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

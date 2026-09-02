@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryGraphiteList) validateGetParameters
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryGraphiteList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryGraphiteList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryGraphiteList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryGraphiteList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryGraphiteList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryGraphiteList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewSloObjectiveRawMetricQueryGraphiteListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveRawMetricQueryGraphiteListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstance) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSqlDatabaseInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -97,6 +101,10 @@ func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutSettingsParameters(valu
 }
 
 func (g *jsiiProxy_GoogleSqlDatabaseInstance) validatePutTimeoutsParameters(value *GoogleSqlDatabaseInstanceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSqlDatabaseInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetInstanceTypeParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSqlDatabaseInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

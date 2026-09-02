@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/gkehubfeature/internal"
 )
 
 type GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDefaultConfig(value *GkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfig)
 	PutFleetScopeLogsConfig(value *GkeHubFeatureSpecFleetobservabilityLoggingConfigFleetScopeLogsConfig)
 	ResetDefaultConfig()
 	ResetFleetScopeLogsConfig()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference interface {
 
 // The jsii proxy struct for GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference
 type jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReferen
 }
 
 
-func NewGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference {
+func NewGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -204,7 +204,7 @@ func NewGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference(terrafor
 	j := jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.gkeHubFeature.GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference",
+		"@cdktn/provider-google.gkeHubFeature.GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference(terrafor
 	return &j
 }
 
-func NewGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference_Override(g GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference_Override(g GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.gkeHubFeature.GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference",
+		"@cdktn/provider-google.gkeHubFeature.GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReferen
 	)
 }
 
-func (j *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,8 +434,8 @@ func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -447,16 +447,16 @@ func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReferen
 	return returns
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReferen
 	)
 }
 
-func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GkeHubFeatureSpecFleetobservabilityLoggingConfigOutputReferen
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

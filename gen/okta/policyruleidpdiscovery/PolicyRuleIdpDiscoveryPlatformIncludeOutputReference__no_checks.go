@@ -40,11 +40,11 @@ func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) validat
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_PolicyRuleIdpDiscoveryPlatformIncludeOutputReference) validat
 	return nil
 }
 
-func validateNewPolicyRuleIdpDiscoveryPlatformIncludeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPolicyRuleIdpDiscoveryPlatformIncludeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

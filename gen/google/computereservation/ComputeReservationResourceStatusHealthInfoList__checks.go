@@ -5,7 +5,7 @@ package computereservation
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_ComputeReservationResourceStatusHealthInfoList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (c *jsiiProxy_ComputeReservationResourceStatusHealthInfoList) validateGetPa
 	return nil
 }
 
-func (c *jsiiProxy_ComputeReservationResourceStatusHealthInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_ComputeReservationResourceStatusHealthInfoList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_ComputeReservationResourceStatusHealthInfoList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeReservationResourceStatusHealthInfoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeReservationResourceStatusHealthInfoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_ComputeReservationResourceStatusHealthInfoList) validateSetWr
 	return nil
 }
 
-func validateNewComputeReservationResourceStatusHealthInfoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeReservationResourceStatusHealthInfoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

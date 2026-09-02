@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSecretVolumesVersionsOutputReference) v
 	return nil
 }
 
-func validateNewCloudfunctionsFunctionSecretVolumesVersionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudfunctionsFunctionSecretVolumesVersionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

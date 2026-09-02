@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatastreamstream/internal"
 )
 
 type GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,15 +34,15 @@ type GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputRe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -58,12 +58,12 @@ type GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputRe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -73,7 +73,7 @@ type GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputRe
 
 // The jsii proxy struct for GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference
 type jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) ComplexObjectIndex() interface{} {
@@ -136,8 +136,8 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChange
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -147,7 +147,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChange
 }
 
 
-func NewGoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference {
+func NewGoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -156,7 +156,7 @@ func NewGoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutpu
 	j := jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference",
+		"@cdktn/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -164,11 +164,11 @@ func NewGoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutpu
 	return &j
 }
 
-func NewGoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference_Override(g GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference_Override(g GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference",
+		"@cdktn/provider-google-beta.googleDatastreamStream.GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -218,7 +218,7 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChange
 	)
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -258,11 +258,11 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChange
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -386,8 +386,8 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChange
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -399,24 +399,24 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChange
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChangeTablesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -424,7 +424,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigSqlServerSourceConfigChange
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

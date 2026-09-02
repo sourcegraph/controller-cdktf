@@ -56,6 +56,10 @@ func (f *jsiiProxy_Filedrop) validateInterpolationForAttributeParameters(terrafo
 	return nil
 }
 
+func (f *jsiiProxy_Filedrop) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_Filedrop) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (f *jsiiProxy_Filedrop) validatePutConfigParameters(value *FiledropConfigA)
 }
 
 func (f *jsiiProxy_Filedrop) validatePutTimeoutsParameters(value *FiledropTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_Filedrop) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_Filedrop) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Filedrop) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Filedrop) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

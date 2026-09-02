@@ -40,7 +40,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SccOrganizationCustomModuleCustomConfigCustomOutputOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSccOrganizationCustomModuleCustomConfigCustomOutputOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSccOrganizationCustomModuleCustomConfigCustomOutputOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

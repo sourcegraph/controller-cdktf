@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	return nil
 }
 
-func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -123,9 +123,9 @@ func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	return nil
 }
 
-func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (l *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -212,7 +212,7 @@ func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -220,7 +220,7 @@ func (j *jsiiProxy_LustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutp
 	return nil
 }
 
-func validateNewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLustreInstanceMaintenancePolicyMaintenanceExclusionWindowOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GrafanaWorkspace) validateInterpolationForAttributeParameters
 	return nil
 }
 
+func (g *jsiiProxy_GrafanaWorkspace) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GrafanaWorkspace) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GrafanaWorkspace) validatePutTimeoutsParameters(value *Grafan
 }
 
 func (g *jsiiProxy_GrafanaWorkspace) validatePutVpcConfigurationParameters(value *GrafanaWorkspaceVpcConfiguration) error {
+	return nil
+}
+
+func (g *jsiiProxy_GrafanaWorkspace) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GrafanaWorkspace) validateSetIdParameters(val *string) error 
 	return nil
 }
 
-func (j *jsiiProxy_GrafanaWorkspace) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GrafanaWorkspace) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

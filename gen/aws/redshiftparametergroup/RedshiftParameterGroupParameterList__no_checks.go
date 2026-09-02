@@ -12,7 +12,7 @@ func (r *jsiiProxy_RedshiftParameterGroupParameterList) validateGetParameters(in
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftParameterGroupParameterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftParameterGroupParameterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_RedshiftParameterGroupParameterList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedshiftParameterGroupParameterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_RedshiftParameterGroupParameterList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewRedshiftParameterGroupParameterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRedshiftParameterGroupParameterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

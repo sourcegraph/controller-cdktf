@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validatePutInitialConfig
 }
 
 func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validatePutTimeoutsParameters(value *GoogleSecureSourceManagerRepositoryTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleSecureSourceManagerRepository) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetInstanceParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerRepository) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

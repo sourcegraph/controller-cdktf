@@ -40,11 +40,11 @@ func (p *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_PodV1SpecVolumeCinderOutputReference) validateSetVolumeIdPara
 	return nil
 }
 
-func validateNewPodV1SpecVolumeCinderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPodV1SpecVolumeCinderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

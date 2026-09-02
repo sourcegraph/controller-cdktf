@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
+		"@cdktn/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSink",
 		reflect.TypeOf((*DataGoogleLoggingSink)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -43,6 +43,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeHclAttributes", GoMethod: "SynthesizeHclAttributes"},
@@ -53,20 +54,21 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "writerIdentity", GoGetter: "WriterIdentity"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleLoggingSink{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptions",
+		"@cdktn/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptions",
 		reflect.TypeOf((*DataGoogleLoggingSinkBigqueryOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsList",
+		"@cdktn/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsList",
 		reflect.TypeOf((*DataGoogleLoggingSinkBigqueryOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -82,12 +84,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleLoggingSinkBigqueryOptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkBigqueryOptionsOutputReference",
 		reflect.TypeOf((*DataGoogleLoggingSinkBigqueryOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -115,20 +117,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleLoggingSinkBigqueryOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig",
+		"@cdktn/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkConfig",
 		reflect.TypeOf((*DataGoogleLoggingSinkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusions",
+		"@cdktn/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusions",
 		reflect.TypeOf((*DataGoogleLoggingSinkExclusions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsList",
+		"@cdktn/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsList",
 		reflect.TypeOf((*DataGoogleLoggingSinkExclusionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -144,12 +146,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleLoggingSinkExclusionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleLoggingSink.DataGoogleLoggingSinkExclusionsOutputReference",
 		reflect.TypeOf((*DataGoogleLoggingSinkExclusionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -180,7 +182,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleLoggingSinkExclusionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

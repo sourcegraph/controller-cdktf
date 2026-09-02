@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputRefe
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputRefe
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressions:
 		value := value.(*[]*MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressions)
@@ -114,16 +114,16 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputRefe
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressions; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressions; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -218,7 +218,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -226,7 +226,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorOutputRefe
 	return nil
 }
 
-func validateNewMutatingWebhookConfigurationV1WebhookObjectSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMutatingWebhookConfigurationV1WebhookObjectSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

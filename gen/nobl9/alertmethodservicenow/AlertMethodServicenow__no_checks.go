@@ -56,6 +56,10 @@ func (a *jsiiProxy_AlertMethodServicenow) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (a *jsiiProxy_AlertMethodServicenow) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AlertMethodServicenow) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (a *jsiiProxy_AlertMethodServicenow) validateMoveToIdParameters(id *string)
 }
 
 func (a *jsiiProxy_AlertMethodServicenow) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AlertMethodServicenow) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_AlertMethodServicenow) validateSetInstanceNameParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_AlertMethodServicenow) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AlertMethodServicenow) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

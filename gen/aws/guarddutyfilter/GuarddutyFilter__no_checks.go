@@ -56,6 +56,10 @@ func (g *jsiiProxy_GuarddutyFilter) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GuarddutyFilter) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GuarddutyFilter) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GuarddutyFilter) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (g *jsiiProxy_GuarddutyFilter) validatePutFindingCriteriaParameters(value *GuarddutyFilterFindingCriteria) error {
+	return nil
+}
+
+func (g *jsiiProxy_GuarddutyFilter) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GuarddutyFilter) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GuarddutyFilter) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GuarddutyFilter) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

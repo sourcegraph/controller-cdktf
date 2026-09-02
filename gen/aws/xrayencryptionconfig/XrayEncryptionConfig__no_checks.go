@@ -56,6 +56,10 @@ func (x *jsiiProxy_XrayEncryptionConfig) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (x *jsiiProxy_XrayEncryptionConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (x *jsiiProxy_XrayEncryptionConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (x *jsiiProxy_XrayEncryptionConfig) validateMoveToIdParameters(id *string) 
 }
 
 func (x *jsiiProxy_XrayEncryptionConfig) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (x *jsiiProxy_XrayEncryptionConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_XrayEncryptionConfig) validateSetKeyIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_XrayEncryptionConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_XrayEncryptionConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

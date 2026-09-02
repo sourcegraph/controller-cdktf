@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/report/internal"
 )
 
 type ReportDashboardOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type ReportDashboardOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type ReportDashboardOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutParameters(value interface{})
 	ResetParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ReportDashboardOutputReference interface {
 
 // The jsii proxy struct for ReportDashboardOutputReference
 type jsiiProxy_ReportDashboardOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ReportDashboardOutputReference) ComplexObjectIndex() interface{} {
@@ -217,8 +217,8 @@ func (j *jsiiProxy_ReportDashboardOutputReference) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_ReportDashboardOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ReportDashboardOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -228,7 +228,7 @@ func (j *jsiiProxy_ReportDashboardOutputReference) TerraformResource() cdktf.IIn
 }
 
 
-func NewReportDashboardOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReportDashboardOutputReference {
+func NewReportDashboardOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ReportDashboardOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewReportDashboardOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -237,7 +237,7 @@ func NewReportDashboardOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_ReportDashboardOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.report.ReportDashboardOutputReference",
+		"@cdktn/provider-observe.report.ReportDashboardOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -245,11 +245,11 @@ func NewReportDashboardOutputReference(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewReportDashboardOutputReference_Override(r ReportDashboardOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewReportDashboardOutputReference_Override(r ReportDashboardOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.report.ReportDashboardOutputReference",
+		"@cdktn/provider-observe.report.ReportDashboardOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_ReportDashboardOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_ReportDashboardOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReportDashboardOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (r *jsiiProxy_ReportDashboardOutputReference) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (r *jsiiProxy_ReportDashboardOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ReportDashboardOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -489,8 +489,8 @@ func (r *jsiiProxy_ReportDashboardOutputReference) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (r *jsiiProxy_ReportDashboardOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_ReportDashboardOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -502,16 +502,16 @@ func (r *jsiiProxy_ReportDashboardOutputReference) InterpolationAsList() cdktf.I
 	return returns
 }
 
-func (r *jsiiProxy_ReportDashboardOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_ReportDashboardOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -537,8 +537,8 @@ func (r *jsiiProxy_ReportDashboardOutputReference) ResetParameters() {
 	)
 }
 
-func (r *jsiiProxy_ReportDashboardOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ReportDashboardOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -546,7 +546,7 @@ func (r *jsiiProxy_ReportDashboardOutputReference) Resolve(_context cdktf.IResol
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

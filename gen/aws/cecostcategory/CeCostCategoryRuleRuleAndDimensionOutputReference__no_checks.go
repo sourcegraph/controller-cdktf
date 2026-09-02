@@ -40,11 +40,11 @@ func (c *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CeCostCategoryRuleRuleAndDimensionOutputReference) validateSe
 	return nil
 }
 
-func validateNewCeCostCategoryRuleRuleAndDimensionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCeCostCategoryRuleRuleAndDimensionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

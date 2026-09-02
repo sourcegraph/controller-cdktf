@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputRef
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeRegionNetworkEndpointGroupAppEngineOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

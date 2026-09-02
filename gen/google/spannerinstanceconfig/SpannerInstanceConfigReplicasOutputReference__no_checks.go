@@ -40,11 +40,11 @@ func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateGetStri
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_SpannerInstanceConfigReplicasOutputReference) validateSetType
 	return nil
 }
 
-func validateNewSpannerInstanceConfigReplicasOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSpannerInstanceConfigReplicasOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

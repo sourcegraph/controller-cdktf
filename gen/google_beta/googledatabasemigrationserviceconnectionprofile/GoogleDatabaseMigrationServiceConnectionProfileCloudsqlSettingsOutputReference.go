@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledatabasemigrationserviceconnectionprofile/internal"
 )
 
 type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ActivationPolicy() *string
 	SetActivationPolicy(val *string)
 	ActivationPolicyInput() *string
@@ -61,7 +61,7 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRefere
 	RootPassword() *string
 	SetRootPassword(val *string)
 	RootPasswordInput() *string
-	RootPasswordSet() cdktf.IResolvable
+	RootPasswordSet() cdktn.IResolvable
 	SourceId() *string
 	SetSourceId(val *string)
 	SourceIdInput() *string
@@ -73,9 +73,9 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRefere
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Tier() *string
 	SetTier(val *string)
 	TierInput() *string
@@ -90,7 +90,7 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRefere
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -106,9 +106,9 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRefere
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutIpConfig(value *GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsIpConfig)
 	ResetActivationPolicy()
 	ResetAutoStorageIncrease()
@@ -127,7 +127,7 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRefere
 	ResetZone()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -137,7 +137,7 @@ type GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRefere
 
 // The jsii proxy struct for GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference
 type jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) ActivationPolicy() *string {
@@ -410,8 +410,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) RootPasswordSet() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) RootPasswordSet() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"rootPasswordSet",
@@ -470,8 +470,8 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -541,7 +541,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 }
 
 
-func NewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference {
+func NewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -550,7 +550,7 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRef
 	j := jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -558,11 +558,11 @@ func NewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputRef
 	return &j
 }
 
-func NewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference_Override(g GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference_Override(g GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference",
+		"@cdktn/provider-google-beta.googleDatabaseMigrationServiceConnectionProfile.GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -744,7 +744,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -817,11 +817,11 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -945,8 +945,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -958,16 +958,16 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1105,8 +1105,8 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	)
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1114,7 +1114,7 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileCloudsqlSettin
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

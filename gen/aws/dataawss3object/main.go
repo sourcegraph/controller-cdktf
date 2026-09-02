@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsS3Object.DataAwsS3Object",
+		"@cdktn/provider-aws.dataAwsS3Object.DataAwsS3Object",
 		reflect.TypeOf((*DataAwsS3Object)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "range", GoGetter: "Range"},
 			_jsii_.MemberProperty{JsiiProperty: "rangeInput", GoGetter: "RangeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetRange", GoMethod: "ResetRange"},
@@ -80,15 +81,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionId", GoGetter: "VersionId"},
 			_jsii_.MemberProperty{JsiiProperty: "versionIdInput", GoGetter: "VersionIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteRedirectLocation", GoGetter: "WebsiteRedirectLocation"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsS3Object{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig",
+		"@cdktn/provider-aws.dataAwsS3Object.DataAwsS3ObjectConfig",
 		reflect.TypeOf((*DataAwsS3ObjectConfig)(nil)).Elem(),
 	)
 }

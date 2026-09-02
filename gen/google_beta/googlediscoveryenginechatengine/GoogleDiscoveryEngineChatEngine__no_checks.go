@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateInterpolationForAttr
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validatePutCommonConfigParam
 }
 
 func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validatePutTimeoutsParameters(value *GoogleDiscoveryEngineChatEngineTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetIndustryVerticalP
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineChatEngine) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/logginglinkeddataset/internal"
 )
 
 type LoggingLinkedDatasetBigqueryDatasetOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,15 +35,15 @@ type LoggingLinkedDatasetBigqueryDatasetOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -59,12 +59,12 @@ type LoggingLinkedDatasetBigqueryDatasetOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -74,7 +74,7 @@ type LoggingLinkedDatasetBigqueryDatasetOutputReference interface {
 
 // The jsii proxy struct for LoggingLinkedDatasetBigqueryDatasetOutputReference
 type jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) ComplexObjectIndex() interface{} {
@@ -147,8 +147,8 @@ func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -158,7 +158,7 @@ func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) Terraform
 }
 
 
-func NewLoggingLinkedDatasetBigqueryDatasetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoggingLinkedDatasetBigqueryDatasetOutputReference {
+func NewLoggingLinkedDatasetBigqueryDatasetOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LoggingLinkedDatasetBigqueryDatasetOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLoggingLinkedDatasetBigqueryDatasetOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -167,7 +167,7 @@ func NewLoggingLinkedDatasetBigqueryDatasetOutputReference(terraformResource cdk
 	j := jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetOutputReference",
+		"@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -175,11 +175,11 @@ func NewLoggingLinkedDatasetBigqueryDatasetOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewLoggingLinkedDatasetBigqueryDatasetOutputReference_Override(l LoggingLinkedDatasetBigqueryDatasetOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLoggingLinkedDatasetBigqueryDatasetOutputReference_Override(l LoggingLinkedDatasetBigqueryDatasetOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetOutputReference",
+		"@cdktn/provider-google.loggingLinkedDataset.LoggingLinkedDatasetBigqueryDatasetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
@@ -229,7 +229,7 @@ func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -269,11 +269,11 @@ func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) GetAnyMap
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -397,8 +397,8 @@ func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) GetString
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -410,24 +410,24 @@ func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) Interpola
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -435,7 +435,7 @@ func (l *jsiiProxy_LoggingLinkedDatasetBigqueryDatasetOutputReference) Resolve(_
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

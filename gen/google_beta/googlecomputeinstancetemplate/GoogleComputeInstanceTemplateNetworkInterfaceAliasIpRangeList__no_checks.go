@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeList
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeList
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeList
 	return nil
 }
 
-func validateNewGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeInstanceTemplateNetworkInterfaceAliasIpRangeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

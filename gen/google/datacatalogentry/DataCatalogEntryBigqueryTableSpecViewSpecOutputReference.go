@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datacatalogentry/internal"
 )
 
 type DataCatalogEntryBigqueryTableSpecViewSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,16 +34,16 @@ type DataCatalogEntryBigqueryTableSpecViewSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ViewQuery() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -59,12 +59,12 @@ type DataCatalogEntryBigqueryTableSpecViewSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -74,7 +74,7 @@ type DataCatalogEntryBigqueryTableSpecViewSpecOutputReference interface {
 
 // The jsii proxy struct for DataCatalogEntryBigqueryTableSpecViewSpecOutputReference
 type jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -158,7 +158,7 @@ func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) Vie
 }
 
 
-func NewDataCatalogEntryBigqueryTableSpecViewSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCatalogEntryBigqueryTableSpecViewSpecOutputReference {
+func NewDataCatalogEntryBigqueryTableSpecViewSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataCatalogEntryBigqueryTableSpecViewSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataCatalogEntryBigqueryTableSpecViewSpecOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -167,7 +167,7 @@ func NewDataCatalogEntryBigqueryTableSpecViewSpecOutputReference(terraformResour
 	j := jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecViewSpecOutputReference",
+		"@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecViewSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -175,11 +175,11 @@ func NewDataCatalogEntryBigqueryTableSpecViewSpecOutputReference(terraformResour
 	return &j
 }
 
-func NewDataCatalogEntryBigqueryTableSpecViewSpecOutputReference_Override(d DataCatalogEntryBigqueryTableSpecViewSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataCatalogEntryBigqueryTableSpecViewSpecOutputReference_Override(d DataCatalogEntryBigqueryTableSpecViewSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecViewSpecOutputReference",
+		"@cdktn/provider-google.dataCatalogEntry.DataCatalogEntryBigqueryTableSpecViewSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -229,7 +229,7 @@ func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -269,11 +269,11 @@ func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -397,8 +397,8 @@ func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) Get
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -410,24 +410,24 @@ func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) Int
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -435,7 +435,7 @@ func (d *jsiiProxy_DataCatalogEntryBigqueryTableSpecViewSpecOutputReference) Res
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

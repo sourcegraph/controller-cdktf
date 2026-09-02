@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateOverrideLogicalI
 }
 
 func (g *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validatePutConditionParameters(value *GoogleGkeBackupBackupPlanIamBindingCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleGkeBackupBackupPlanIamBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

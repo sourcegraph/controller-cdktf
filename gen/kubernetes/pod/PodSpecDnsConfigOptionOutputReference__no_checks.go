@@ -40,11 +40,11 @@ func (p *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PodSpecDnsConfigOptionOutputReference) validateSetValueParame
 	return nil
 }
 
-func validateNewPodSpecDnsConfigOptionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewPodSpecDnsConfigOptionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

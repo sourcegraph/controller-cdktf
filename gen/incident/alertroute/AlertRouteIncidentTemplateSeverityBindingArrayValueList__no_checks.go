@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingArrayValueList) vali
 	return nil
 }
 
-func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingArrayValueList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingArrayValueList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingArrayValueList) vali
 	return nil
 }
 
-func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingArrayValueList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingArrayValueList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AlertRouteIncidentTemplateSeverityBindingArrayValueList) vali
 	return nil
 }
 
-func validateNewAlertRouteIncidentTemplateSeverityBindingArrayValueListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlertRouteIncidentTemplateSeverityBindingArrayValueListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

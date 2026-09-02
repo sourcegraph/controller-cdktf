@@ -40,11 +40,11 @@ func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateGetStr
 	return nil
 }
 
-func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (x *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_XrayGroupInsightsConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewXrayGroupInsightsConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewXrayGroupInsightsConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

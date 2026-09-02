@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/apigeedeveloperapp/internal"
 )
 
 type ApigeeDeveloperAppAttributesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type ApigeeDeveloperAppAttributesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -48,7 +48,7 @@ type ApigeeDeveloperAppAttributesOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type ApigeeDeveloperAppAttributesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetName()
 	ResetValue()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type ApigeeDeveloperAppAttributesOutputReference interface {
 
 // The jsii proxy struct for ApigeeDeveloperAppAttributesOutputReference
 type jsiiProxy_ApigeeDeveloperAppAttributesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) ComplexObjectIndex() interface{} {
@@ -164,8 +164,8 @@ func (j *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) ValueInput() *st
 }
 
 
-func NewApigeeDeveloperAppAttributesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApigeeDeveloperAppAttributesOutputReference {
+func NewApigeeDeveloperAppAttributesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ApigeeDeveloperAppAttributesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApigeeDeveloperAppAttributesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewApigeeDeveloperAppAttributesOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_ApigeeDeveloperAppAttributesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppAttributesOutputReference",
+		"@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewApigeeDeveloperAppAttributesOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewApigeeDeveloperAppAttributesOutputReference_Override(a ApigeeDeveloperAppAttributesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewApigeeDeveloperAppAttributesOutputReference_Override(a ApigeeDeveloperAppAttributesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppAttributesOutputReference",
+		"@cdktn/provider-google.apigeeDeveloperApp.ApigeeDeveloperAppAttributesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -277,7 +277,7 @@ func (j *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -456,8 +456,8 @@ func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -469,16 +469,16 @@ func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) InterpolationAsL
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) ResetValue() {
 	)
 }
 
-func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (a *jsiiProxy_ApigeeDeveloperAppAttributesOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

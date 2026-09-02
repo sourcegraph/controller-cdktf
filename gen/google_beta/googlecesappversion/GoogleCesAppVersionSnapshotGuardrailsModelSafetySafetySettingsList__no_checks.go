@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsModelSafetySafetySetting
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsModelSafetySafetySettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsModelSafetySafetySettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsModelSafetySafetySetting
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsModelSafetySafetySettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsModelSafetySafetySettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotGuardrailsModelSafetySafetySetting
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotGuardrailsModelSafetySafetySettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotGuardrailsModelSafetySafetySettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVaria
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVaria
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIntegrationConnectorsConnectionSslConfigAdditionalVariableSecretValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

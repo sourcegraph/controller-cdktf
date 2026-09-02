@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVertexAiReasoningEngineSpecDeploymentSpecEnvOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleVertexAiReasoningEngineSpecDeploymentSpecEnvOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVertexAiReasoningEngineSpecDeploymentSpecEnvOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleVertexAiReasoningEngineSpecDeploymentSpecEnvOutputRefer
 	return nil
 }
 
-func validateNewGoogleVertexAiReasoningEngineSpecDeploymentSpecEnvOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleVertexAiReasoningEngineSpecDeploymentSpecEnvOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

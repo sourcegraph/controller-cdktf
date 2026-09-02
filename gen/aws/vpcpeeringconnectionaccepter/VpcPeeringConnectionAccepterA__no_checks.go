@@ -56,6 +56,10 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateInterpolationForAttrib
 	return nil
 }
 
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validatePutRequesterParameters
 }
 
 func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validatePutTimeoutsParameters(value *VpcPeeringConnectionAccepterTimeouts) error {
+	return nil
+}
+
+func (v *jsiiProxy_VpcPeeringConnectionAccepterA) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_VpcPeeringConnectionAccepterA) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketList) validateGetPara
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketList) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleFirebaseStorageDefaultBucketBucketList) validateSetWrap
 	return nil
 }
 
-func validateNewGoogleFirebaseStorageDefaultBucketBucketListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleFirebaseStorageDefaultBucketBucketListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

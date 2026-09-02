@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegkeonpremvmwarecluster/internal"
 )
 
 type GoogleGkeonpremVmwareClusterDataplaneV2OutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdvancedNetworking() interface{}
 	SetAdvancedNetworking(val interface{})
 	AdvancedNetworkingInput() interface{}
@@ -40,9 +40,9 @@ type GoogleGkeonpremVmwareClusterDataplaneV2OutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WindowsDataplaneV2Enabled() interface{}
 	SetWindowsDataplaneV2Enabled(val interface{})
 	WindowsDataplaneV2EnabledInput() interface{}
@@ -51,7 +51,7 @@ type GoogleGkeonpremVmwareClusterDataplaneV2OutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type GoogleGkeonpremVmwareClusterDataplaneV2OutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAdvancedNetworking()
 	ResetDataplaneV2Enabled()
 	ResetWindowsDataplaneV2Enabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleGkeonpremVmwareClusterDataplaneV2OutputReference interface {
 
 // The jsii proxy struct for GoogleGkeonpremVmwareClusterDataplaneV2OutputReference
 type jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) AdvancedNetworking() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) Windo
 }
 
 
-func NewGoogleGkeonpremVmwareClusterDataplaneV2OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleGkeonpremVmwareClusterDataplaneV2OutputReference {
+func NewGoogleGkeonpremVmwareClusterDataplaneV2OutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleGkeonpremVmwareClusterDataplaneV2OutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleGkeonpremVmwareClusterDataplaneV2OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleGkeonpremVmwareClusterDataplaneV2OutputReference(terraformResource
 	j := jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterDataplaneV2OutputReference",
+		"@cdktn/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterDataplaneV2OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleGkeonpremVmwareClusterDataplaneV2OutputReference(terraformResource
 	return &j
 }
 
-func NewGoogleGkeonpremVmwareClusterDataplaneV2OutputReference_Override(g GoogleGkeonpremVmwareClusterDataplaneV2OutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleGkeonpremVmwareClusterDataplaneV2OutputReference_Override(g GoogleGkeonpremVmwareClusterDataplaneV2OutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterDataplaneV2OutputReference",
+		"@cdktn/provider-google-beta.googleGkeonpremVmwareCluster.GoogleGkeonpremVmwareClusterDataplaneV2OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) GetAn
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -491,8 +491,8 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) GetSt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,16 +504,16 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) Inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleGkeonpremVmwareClusterDataplaneV2OutputReference) Resol
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

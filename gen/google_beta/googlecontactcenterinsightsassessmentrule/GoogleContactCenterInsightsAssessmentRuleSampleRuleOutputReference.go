@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontactcenterinsightsassessmentrule/internal"
 )
 
 type GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetConversationFilter()
 	ResetDimension()
 	ResetSamplePercentage()
 	ResetSampleRow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference interfac
 
 // The jsii proxy struct for GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference
 type jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputRefe
 }
 
 
-func NewGoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference {
+func NewGoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference(terra
 	j := jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContactCenterInsightsAssessmentRule.GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference",
+		"@cdktn/provider-google-beta.googleContactCenterInsightsAssessmentRule.GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference(terra
 	return &j
 }
 
-func NewGoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference_Override(g GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference_Override(g GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContactCenterInsightsAssessmentRule.GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference",
+		"@cdktn/provider-google-beta.googleContactCenterInsightsAssessmentRule.GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -526,8 +526,8 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -539,16 +539,16 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputRefe
 	)
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleContactCenterInsightsAssessmentRuleSampleRuleOutputRefe
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

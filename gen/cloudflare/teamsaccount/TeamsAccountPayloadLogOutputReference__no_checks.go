@@ -40,11 +40,11 @@ func (t *jsiiProxy_TeamsAccountPayloadLogOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccountPayloadLogOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TeamsAccountPayloadLogOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccountPayloadLogOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamsAccountPayloadLogOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_TeamsAccountPayloadLogOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountPayloadLogOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TeamsAccountPayloadLogOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTeamsAccountPayloadLogOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTeamsAccountPayloadLogOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

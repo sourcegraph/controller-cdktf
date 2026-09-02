@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglebackupdrdatasource/internal"
 )
 
 type DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BackupApplianceBackupConfig() DataGoogleBackupDrDataSourceBackupConfigInfoBackupApplianceBackupConfigList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -31,7 +31,7 @@ type DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference interface {
 	GcpBackupConfig() DataGoogleBackupDrDataSourceBackupConfigInfoGcpBackupConfigList
 	InternalValue() *DataGoogleBackupDrDataSourceBackupConfigInfo
 	SetInternalValue(val *DataGoogleBackupDrDataSourceBackupConfigInfo)
-	LastBackupError() cdktf.StringMap
+	LastBackupError() cdktn.StringMap
 	LastBackupState() *string
 	LastSuccessfulBackupConsistencyTime() *string
 	// Experimental.
@@ -39,15 +39,15 @@ type DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,12 +63,12 @@ type DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -78,7 +78,7 @@ type DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference interface {
 
 // The jsii proxy struct for DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference
 type jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) BackupApplianceBackupConfig() DataGoogleBackupDrDataSourceBackupConfigInfoBackupApplianceBackupConfigList {
@@ -151,8 +151,8 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) LastBackupError() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) LastBackupError() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"lastBackupError",
@@ -191,8 +191,8 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) 
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -202,7 +202,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) 
 }
 
 
-func NewDataGoogleBackupDrDataSourceBackupConfigInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference {
+func NewDataGoogleBackupDrDataSourceBackupConfigInfoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleBackupDrDataSourceBackupConfigInfoOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -211,7 +211,7 @@ func NewDataGoogleBackupDrDataSourceBackupConfigInfoOutputReference(terraformRes
 	j := jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleBackupDrDataSource.DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleBackupDrDataSource.DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -219,11 +219,11 @@ func NewDataGoogleBackupDrDataSourceBackupConfigInfoOutputReference(terraformRes
 	return &j
 }
 
-func NewDataGoogleBackupDrDataSourceBackupConfigInfoOutputReference_Override(d DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleBackupDrDataSourceBackupConfigInfoOutputReference_Override(d DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleBackupDrDataSource.DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleBackupDrDataSource.DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -273,7 +273,7 @@ func (j *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference)S
 	)
 }
 
-func (j *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -313,11 +313,11 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -441,8 +441,8 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -454,24 +454,24 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -479,7 +479,7 @@ func (d *jsiiProxy_DataGoogleBackupDrDataSourceBackupConfigInfoOutputReference) 
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

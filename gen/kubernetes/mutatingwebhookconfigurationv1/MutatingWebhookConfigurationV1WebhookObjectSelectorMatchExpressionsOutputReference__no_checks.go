@@ -40,11 +40,11 @@ func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpre
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpre
 	return nil
 }
 
-func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_MutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpre
 	return nil
 }
 
-func validateNewMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMutatingWebhookConfigurationV1WebhookObjectSelectorMatchExpressionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

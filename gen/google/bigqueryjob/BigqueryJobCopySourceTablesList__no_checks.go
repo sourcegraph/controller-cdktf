@@ -12,7 +12,7 @@ func (b *jsiiProxy_BigqueryJobCopySourceTablesList) validateGetParameters(index 
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryJobCopySourceTablesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryJobCopySourceTablesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BigqueryJobCopySourceTablesList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryJobCopySourceTablesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryJobCopySourceTablesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BigqueryJobCopySourceTablesList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewBigqueryJobCopySourceTablesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBigqueryJobCopySourceTablesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

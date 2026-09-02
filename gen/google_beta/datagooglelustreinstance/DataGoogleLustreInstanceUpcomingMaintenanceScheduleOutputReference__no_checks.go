@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleLustreInstanceUpcomingMaintenanceScheduleOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleLustreInstanceUpcomingMaintenanceScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleLustreInstanceUpcomingMaintenanceScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleLustreInstanceUpcomingMaintenanceScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleLustreInstanceUpcomingMaintenanceScheduleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleLustreInstanceUpcomingMaintenanceScheduleOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleLustreInstanceUpcomingMaintenanceScheduleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleLustreInstanceUpcomingMaintenanceScheduleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleLustreInstanceUpcomingMaintenanceScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleLustreInstanceUpcomingMaintenanceScheduleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

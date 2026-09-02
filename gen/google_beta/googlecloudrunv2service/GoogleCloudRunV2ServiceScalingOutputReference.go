@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudrunv2service/internal"
 )
 
 type GoogleCloudRunV2ServiceScalingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,15 +46,15 @@ type GoogleCloudRunV2ServiceScalingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,16 +70,16 @@ type GoogleCloudRunV2ServiceScalingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetManualInstanceCount()
 	ResetMaxInstanceCount()
 	ResetMinInstanceCount()
 	ResetScalingMode()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleCloudRunV2ServiceScalingOutputReference interface {
 
 // The jsii proxy struct for GoogleCloudRunV2ServiceScalingOutputReference
 type jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) TerraformResou
 }
 
 
-func NewGoogleCloudRunV2ServiceScalingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceScalingOutputReference {
+func NewGoogleCloudRunV2ServiceScalingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleCloudRunV2ServiceScalingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCloudRunV2ServiceScalingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleCloudRunV2ServiceScalingOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceScalingOutputReference",
+		"@cdktn/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleCloudRunV2ServiceScalingOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewGoogleCloudRunV2ServiceScalingOutputReference_Override(g GoogleCloudRunV2ServiceScalingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleCloudRunV2ServiceScalingOutputReference_Override(g GoogleCloudRunV2ServiceScalingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceScalingOutputReference",
+		"@cdktn/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -358,7 +358,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -398,11 +398,11 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -526,8 +526,8 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) GetStringMapAt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -539,16 +539,16 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) InterpolationA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) ResetScalingMo
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceScalingOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (a *jsiiProxy_AddressMapMembershipsList) validateGetParameters(index *float
 	return nil
 }
 
-func (a *jsiiProxy_AddressMapMembershipsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AddressMapMembershipsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AddressMapMembershipsList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_AddressMapMembershipsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AddressMapMembershipsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AddressMapMembershipsList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewAddressMapMembershipsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAddressMapMembershipsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

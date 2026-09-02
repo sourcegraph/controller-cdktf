@@ -40,11 +40,11 @@ func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_AccessContextManagerAuthorizedOrgsDescTimeoutsOutputReference
 	return nil
 }
 
-func validateNewAccessContextManagerAuthorizedOrgsDescTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAccessContextManagerAuthorizedOrgsDescTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

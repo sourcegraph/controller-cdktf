@@ -56,6 +56,10 @@ func (c *jsiiProxy_CodedeployDeploymentConfig) validateInterpolationForAttribute
 	return nil
 }
 
+func (c *jsiiProxy_CodedeployDeploymentConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodedeployDeploymentConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_CodedeployDeploymentConfig) validatePutMinimumHealthyHostsPar
 }
 
 func (c *jsiiProxy_CodedeployDeploymentConfig) validatePutTrafficRoutingConfigParameters(value *CodedeployDeploymentConfigTrafficRoutingConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodedeployDeploymentConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_CodedeployDeploymentConfig) validateSetIdParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CodedeployDeploymentConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

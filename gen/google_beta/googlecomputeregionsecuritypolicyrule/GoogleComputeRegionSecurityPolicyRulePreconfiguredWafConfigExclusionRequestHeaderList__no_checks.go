@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigEx
 	return nil
 }
 
-func validateNewGoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeRegionSecurityPolicyRulePreconfiguredWafConfigExclusionRequestHeaderListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

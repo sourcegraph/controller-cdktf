@@ -56,6 +56,10 @@ func (u *jsiiProxy_UserSchemaProperty) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (u *jsiiProxy_UserSchemaProperty) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (u *jsiiProxy_UserSchemaProperty) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (u *jsiiProxy_UserSchemaProperty) validatePutMasterOverridePriorityParamete
 }
 
 func (u *jsiiProxy_UserSchemaProperty) validatePutOneOfParameters(value interface{}) error {
+	return nil
+}
+
+func (u *jsiiProxy_UserSchemaProperty) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_UserSchemaProperty) validateSetIndexParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_UserSchemaProperty) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_UserSchemaProperty) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

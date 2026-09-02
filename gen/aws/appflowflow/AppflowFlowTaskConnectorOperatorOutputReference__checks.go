@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -213,7 +213,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetI
 
 func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *AppflowFlowTaskConnectorOperator:
 		val := val.(*AppflowFlowTaskConnectorOperator)
@@ -228,7 +228,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetI
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AppflowFlowTaskConnectorOperator; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *AppflowFlowTaskConnectorOperator; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -299,7 +299,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func (j *jsiiProxy_AppflowFlowTaskConnectorOperatorOutputReference) validateSetZ
 	return nil
 }
 
-func validateNewAppflowFlowTaskConnectorOperatorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAppflowFlowTaskConnectorOperatorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

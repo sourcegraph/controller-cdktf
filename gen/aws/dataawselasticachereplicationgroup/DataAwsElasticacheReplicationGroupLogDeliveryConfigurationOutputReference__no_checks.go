@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationOut
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationOut
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsElasticacheReplicationGroupLogDeliveryConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsElasticacheReplicationGroupLogDeliveryConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsElasticacheReplicationGroupLogDeliveryConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

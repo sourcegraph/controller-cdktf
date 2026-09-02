@@ -40,11 +40,11 @@ func (l *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateGe
 	return nil
 }
 
-func (l *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_LaunchConfigurationRootBlockDeviceOutputReference) validateSe
 	return nil
 }
 
-func validateNewLaunchConfigurationRootBlockDeviceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLaunchConfigurationRootBlockDeviceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/statefulset/internal"
 )
 
 type StatefulSetSpecTemplateSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ActiveDeadlineSeconds() *float64
 	SetActiveDeadlineSeconds(val *float64)
 	ActiveDeadlineSecondsInput() *float64
@@ -98,9 +98,9 @@ type StatefulSetSpecTemplateSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Toleration() StatefulSetSpecTemplateSpecTolerationList
 	TolerationInput() interface{}
 	TopologySpreadConstraint() StatefulSetSpecTemplateSpecTopologySpreadConstraintList
@@ -112,7 +112,7 @@ type StatefulSetSpecTemplateSpecOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -128,9 +128,9 @@ type StatefulSetSpecTemplateSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAffinity(value *StatefulSetSpecTemplateSpecAffinity)
 	PutContainer(value interface{})
 	PutDnsConfig(value *StatefulSetSpecTemplateSpecDnsConfig)
@@ -171,7 +171,7 @@ type StatefulSetSpecTemplateSpecOutputReference interface {
 	ResetVolume()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -181,7 +181,7 @@ type StatefulSetSpecTemplateSpecOutputReference interface {
 
 // The jsii proxy struct for StatefulSetSpecTemplateSpecOutputReference
 type jsiiProxy_StatefulSetSpecTemplateSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) ActiveDeadlineSeconds() *float64 {
@@ -724,8 +724,8 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) TerraformAttribut
 	return returns
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -795,7 +795,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) VolumeInput() int
 }
 
 
-func NewStatefulSetSpecTemplateSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecOutputReference {
+func NewStatefulSetSpecTemplateSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) StatefulSetSpecTemplateSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStatefulSetSpecTemplateSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -804,7 +804,7 @@ func NewStatefulSetSpecTemplateSpecOutputReference(terraformResource cdktf.IInte
 	j := jsiiProxy_StatefulSetSpecTemplateSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecOutputReference",
+		"@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -812,11 +812,11 @@ func NewStatefulSetSpecTemplateSpecOutputReference(terraformResource cdktf.IInte
 	return &j
 }
 
-func NewStatefulSetSpecTemplateSpecOutputReference_Override(s StatefulSetSpecTemplateSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewStatefulSetSpecTemplateSpecOutputReference_Override(s StatefulSetSpecTemplateSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecOutputReference",
+		"@cdktn/provider-kubernetes.statefulSet.StatefulSetSpecTemplateSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -1042,7 +1042,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference)SetTerraformAttrib
 	)
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -1082,11 +1082,11 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) GetAnyMapAttribut
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1210,8 +1210,8 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) GetStringMapAttri
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -1223,16 +1223,16 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) InterpolationAsLi
 	return returns
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1576,8 +1576,8 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) ResetVolume() {
 	)
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1585,7 +1585,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecOutputReference) Resolve(_context 
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

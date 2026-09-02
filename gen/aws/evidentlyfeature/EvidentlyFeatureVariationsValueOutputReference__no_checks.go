@@ -40,11 +40,11 @@ func (e *jsiiProxy_EvidentlyFeatureVariationsValueOutputReference) validateGetSt
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeatureVariationsValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EvidentlyFeatureVariationsValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EvidentlyFeatureVariationsValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EvidentlyFeatureVariationsValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_EvidentlyFeatureVariationsValueOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyFeatureVariationsValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EvidentlyFeatureVariationsValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEvidentlyFeatureVariationsValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEvidentlyFeatureVariationsValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

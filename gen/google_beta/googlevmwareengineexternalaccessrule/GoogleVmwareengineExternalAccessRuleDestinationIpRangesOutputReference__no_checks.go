@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVmwareengineExternalAccessRuleDestinationIpRangesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleVmwareengineExternalAccessRuleDestinationIpRangesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleVmwareengineExternalAccessRuleDestinationIpRangesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

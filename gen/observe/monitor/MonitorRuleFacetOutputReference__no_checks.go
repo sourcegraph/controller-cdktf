@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitorRuleFacetOutputReference) validateGetStringMapAttribut
 	return nil
 }
 
-func (m *jsiiProxy_MonitorRuleFacetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorRuleFacetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorRuleFacetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorRuleFacetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_MonitorRuleFacetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorRuleFacetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_MonitorRuleFacetOutputReference) validateSetTimeValueParamete
 	return nil
 }
 
-func validateNewMonitorRuleFacetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitorRuleFacetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

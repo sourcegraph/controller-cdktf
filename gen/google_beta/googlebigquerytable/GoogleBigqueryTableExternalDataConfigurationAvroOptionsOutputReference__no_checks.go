@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleBigqueryTableExternalDataConfigurationAvroOptionsOutput
 	return nil
 }
 
-func validateNewGoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryTableExternalDataConfigurationAvroOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

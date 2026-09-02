@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dbInstance.DbInstance",
+		"@cdktn/provider-aws.dbInstance.DbInstance",
 		reflect.TypeOf((*DbInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -104,6 +104,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindow", GoGetter: "MaintenanceWindow"},
 			_jsii_.MemberProperty{JsiiProperty: "maintenanceWindowInput", GoGetter: "MaintenanceWindowInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxAllocatedStorage", GoGetter: "MaxAllocatedStorage"},
 			_jsii_.MemberProperty{JsiiProperty: "maxAllocatedStorageInput", GoGetter: "MaxAllocatedStorageInput"},
 			_jsii_.MemberProperty{JsiiProperty: "monitoringInterval", GoGetter: "MonitoringInterval"},
@@ -146,6 +147,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putS3Import", GoMethod: "PutS3Import"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaMode", GoGetter: "ReplicaMode"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaModeInput", GoGetter: "ReplicaModeInput"},
 			_jsii_.MemberProperty{JsiiProperty: "replicas", GoGetter: "Replicas"},
@@ -253,19 +255,20 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "usernameInput", GoGetter: "UsernameInput"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIds", GoGetter: "VpcSecurityGroupIds"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcSecurityGroupIdsInput", GoGetter: "VpcSecurityGroupIdsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DbInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdate",
+		"@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdate",
 		reflect.TypeOf((*DbInstanceBlueGreenUpdate)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference",
+		"@cdktn/provider-aws.dbInstance.DbInstanceBlueGreenUpdateOutputReference",
 		reflect.TypeOf((*DbInstanceBlueGreenUpdateOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -295,20 +298,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DbInstanceBlueGreenUpdateOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dbInstance.DbInstanceConfig",
+		"@cdktn/provider-aws.dbInstance.DbInstanceConfig",
 		reflect.TypeOf((*DbInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTime",
+		"@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTime",
 		reflect.TypeOf((*DbInstanceRestoreToPointInTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
+		"@cdktn/provider-aws.dbInstance.DbInstanceRestoreToPointInTimeOutputReference",
 		reflect.TypeOf((*DbInstanceRestoreToPointInTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -350,16 +353,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DbInstanceRestoreToPointInTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dbInstance.DbInstanceS3Import",
+		"@cdktn/provider-aws.dbInstance.DbInstanceS3Import",
 		reflect.TypeOf((*DbInstanceS3Import)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dbInstance.DbInstanceS3ImportOutputReference",
+		"@cdktn/provider-aws.dbInstance.DbInstanceS3ImportOutputReference",
 		reflect.TypeOf((*DbInstanceS3ImportOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bucketName", GoGetter: "BucketName"},
@@ -397,16 +400,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DbInstanceS3ImportOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dbInstance.DbInstanceTimeouts",
+		"@cdktn/provider-aws.dbInstance.DbInstanceTimeouts",
 		reflect.TypeOf((*DbInstanceTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference",
+		"@cdktn/provider-aws.dbInstance.DbInstanceTimeoutsOutputReference",
 		reflect.TypeOf((*DbInstanceTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -442,7 +445,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DbInstanceTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

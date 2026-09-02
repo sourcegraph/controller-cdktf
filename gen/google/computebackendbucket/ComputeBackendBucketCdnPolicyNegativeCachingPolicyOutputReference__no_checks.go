@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputRefer
 	return nil
 }
 
-func validateNewComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputeBackendBucketCdnPolicyNegativeCachingPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

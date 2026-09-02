@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/privilegedaccessmanagerentitlement/internal"
 )
 
 type PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,13 +60,13 @@ type PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutManualApprovals(value *PrivilegedAccessManagerEntitlementApprovalWorkflowManualApprovals)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference interface
 
 // The jsii proxy struct for PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference
 type jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputRefer
 }
 
 
-func NewPrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference {
+func NewPrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPrivilegedAccessManagerEntitlementApprovalWorkflowOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewPrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference(terraf
 	j := jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.privilegedAccessManagerEntitlement.PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference",
+		"@cdktn/provider-google.privilegedAccessManagerEntitlement.PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewPrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference(terraf
 	return &j
 }
 
-func NewPrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference_Override(p PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference_Override(p PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.privilegedAccessManagerEntitlement.PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference",
+		"@cdktn/provider-google.privilegedAccessManagerEntitlement.PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -241,7 +241,7 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputRefer
 	)
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -281,11 +281,11 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputRefer
 	return returns
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -409,8 +409,8 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputRefer
 	return returns
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -422,16 +422,16 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputRefer
 	return returns
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -449,8 +449,8 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputRefer
 	)
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementApprovalWorkflowOutputRefer
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

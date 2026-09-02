@@ -40,11 +40,11 @@ func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DbInstanceBlueGreenUpdateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDbInstanceBlueGreenUpdateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDbInstanceBlueGreenUpdateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

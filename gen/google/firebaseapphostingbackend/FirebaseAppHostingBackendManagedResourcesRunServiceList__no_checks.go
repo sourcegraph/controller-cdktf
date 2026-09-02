@@ -12,7 +12,7 @@ func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceList) vali
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceList) vali
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_FirebaseAppHostingBackendManagedResourcesRunServiceList) vali
 	return nil
 }
 
-func validateNewFirebaseAppHostingBackendManagedResourcesRunServiceListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFirebaseAppHostingBackendManagedResourcesRunServiceListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (f *jsiiProxy_FirestoreUserCreds) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (f *jsiiProxy_FirestoreUserCreds) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirestoreUserCreds) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (f *jsiiProxy_FirestoreUserCreds) validateOverrideLogicalIdParameters(newLo
 }
 
 func (f *jsiiProxy_FirestoreUserCreds) validatePutTimeoutsParameters(value *FirestoreUserCredsTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirestoreUserCreds) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_FirestoreUserCreds) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_FirestoreUserCreds) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FirestoreUserCreds) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

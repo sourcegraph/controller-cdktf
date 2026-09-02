@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validateInterpolationForAttributePar
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFilestoreInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFilestoreInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -93,6 +97,10 @@ func (g *jsiiProxy_GoogleFilestoreInstance) validatePutPerformanceConfigParamete
 }
 
 func (g *jsiiProxy_GoogleFilestoreInstance) validatePutTimeoutsParameters(value *GoogleFilestoreInstanceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFilestoreInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_GoogleFilestoreInstance) validateSetLabelsParameters(val *map
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFilestoreInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFilestoreInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

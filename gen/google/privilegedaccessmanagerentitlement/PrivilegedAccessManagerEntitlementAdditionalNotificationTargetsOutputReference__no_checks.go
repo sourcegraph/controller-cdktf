@@ -40,11 +40,11 @@ func (p *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTarge
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTarge
 	return nil
 }
 
-func (j *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPrivilegedAccessManagerEntitlementAdditionalNotificationTargetsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

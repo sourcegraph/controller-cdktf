@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionConfigurationAuthenticationOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnectionConfigurationAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryConnectionConfigurationAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleBigqueryConnectionConfigurationAuthenticationOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryConnectionConfigurationAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryConnectionConfigurationAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleBigqueryConnectionConfigurationAuthenticationOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryConnectionConfigurationAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryConnectionConfigurationAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBigqueryConnectionConfigurationAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryConnectionConfigurationAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

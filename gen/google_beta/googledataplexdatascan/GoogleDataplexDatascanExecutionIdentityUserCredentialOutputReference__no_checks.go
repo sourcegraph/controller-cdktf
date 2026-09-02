@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityUserCredentialOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityUserCredentialOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityUserCredentialOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityUserCredentialOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityUserCredentialOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleDataplexDatascanExecutionIdentityUserCredentialOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanExecutionIdentityUserCredentialOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexDatascanExecutionIdentityUserCredentialOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataplexDatascanExecutionIdentityUserCredentialOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataplexDatascanExecutionIdentityUserCredentialOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

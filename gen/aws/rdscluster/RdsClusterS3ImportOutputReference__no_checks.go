@@ -40,11 +40,11 @@ func (r *jsiiProxy_RdsClusterS3ImportOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterS3ImportOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RdsClusterS3ImportOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RdsClusterS3ImportOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsClusterS3ImportOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_RdsClusterS3ImportOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_RdsClusterS3ImportOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RdsClusterS3ImportOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRdsClusterS3ImportOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRdsClusterS3ImportOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

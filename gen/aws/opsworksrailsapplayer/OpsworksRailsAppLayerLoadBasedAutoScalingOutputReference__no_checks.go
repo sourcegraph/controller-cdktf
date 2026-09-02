@@ -40,7 +40,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference) val
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference) val
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksRailsAppLayerLoadBasedAutoScalingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewOpsworksRailsAppLayerLoadBasedAutoScalingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewOpsworksRailsAppLayerLoadBasedAutoScalingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

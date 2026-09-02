@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/accessidentityprovider/internal"
 )
 
 type AccessIdentityProviderScimConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type AccessIdentityProviderScimConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UserDeprovision() interface{}
 	SetUserDeprovision(val interface{})
 	UserDeprovisionInput() interface{}
@@ -57,7 +57,7 @@ type AccessIdentityProviderScimConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type AccessIdentityProviderScimConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnabled()
 	ResetGroupMemberDeprovision()
 	ResetSeatDeprovision()
@@ -83,7 +83,7 @@ type AccessIdentityProviderScimConfigOutputReference interface {
 	ResetUserDeprovision()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type AccessIdentityProviderScimConfigOutputReference interface {
 
 // The jsii proxy struct for AccessIdentityProviderScimConfigOutputReference
 type jsiiProxy_AccessIdentityProviderScimConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -236,8 +236,8 @@ func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) UserDeprovis
 }
 
 
-func NewAccessIdentityProviderScimConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessIdentityProviderScimConfigOutputReference {
+func NewAccessIdentityProviderScimConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AccessIdentityProviderScimConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAccessIdentityProviderScimConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -276,7 +276,7 @@ func NewAccessIdentityProviderScimConfigOutputReference(terraformResource cdktf.
 	j := jsiiProxy_AccessIdentityProviderScimConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigOutputReference",
+		"@cdktn/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewAccessIdentityProviderScimConfigOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewAccessIdentityProviderScimConfigOutputReference_Override(a AccessIdentityProviderScimConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAccessIdentityProviderScimConfigOutputReference_Override(a AccessIdentityProviderScimConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigOutputReference",
+		"@cdktn/provider-cloudflare.accessIdentityProvider.AccessIdentityProviderScimConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AccessIdentityProviderScimConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -561,8 +561,8 @@ func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) GetStringMap
 	return returns
 }
 
-func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -574,16 +574,16 @@ func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) Interpolatio
 	return returns
 }
 
-func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) ResetUserDep
 	)
 }
 
-func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (a *jsiiProxy_AccessIdentityProviderScimConfigOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

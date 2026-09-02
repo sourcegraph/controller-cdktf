@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceAccessConfig:
 		value := value.(*[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceAccessConfig)
@@ -114,7 +114,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceAccessConfig; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceAccessConfig; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceAliasIpRange:
 		value := value.(*[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceAliasIpRange)
@@ -145,7 +145,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceAliasIpRange; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceAliasIpRange; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -157,7 +157,7 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfig:
 		value := value.(*[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfig)
@@ -176,16 +176,16 @@ func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfig; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleComputeRegionInstanceTemplateNetworkInterfaceIpv6AccessConfig; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -274,7 +274,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 
 func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *GoogleComputeRegionInstanceTemplateNetworkInterface:
 		val := val.(*GoogleComputeRegionInstanceTemplateNetworkInterface)
@@ -289,7 +289,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleComputeRegionInstanceTemplateNetworkInterface; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *GoogleComputeRegionInstanceTemplateNetworkInterface; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -376,7 +376,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -392,7 +392,7 @@ func (j *jsiiProxy_GoogleComputeRegionInstanceTemplateNetworkInterfaceOutputRefe
 	return nil
 }
 
-func validateNewGoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeRegionInstanceTemplateNetworkInterfaceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

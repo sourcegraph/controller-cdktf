@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeHealthCheck) validateInterpolationForAttributePa
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeHealthCheck) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeHealthCheck) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (g *jsiiProxy_GoogleComputeHealthCheck) validatePutTimeoutsParameters(value
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeHealthCheck) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleComputeHealthCheck_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -148,7 +156,7 @@ func (j *jsiiProxy_GoogleComputeHealthCheck) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeHealthCheck) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeHealthCheck) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

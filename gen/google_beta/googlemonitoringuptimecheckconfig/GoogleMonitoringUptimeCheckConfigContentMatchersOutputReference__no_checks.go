@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringUptimeCheckConfigContentMatchersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMonitoringUptimeCheckConfigContentMatchersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleMonitoringUptimeCheckConfigContentMatchersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

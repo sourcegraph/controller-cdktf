@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOut
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudRunV2ServiceTemplateContainersLivenessProbeGrpcOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

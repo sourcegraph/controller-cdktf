@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsOrganizationsOrganizationNonMasterAccountsList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsOrganizationsOrganizationNonMasterAccountsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsOrganizationsOrganizationNonMasterAccountsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganizationNonMasterAccountsList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsOrganizationsOrganizationNonMasterAccountsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsOrganizationsOrganizationNonMasterAccountsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsOrganizationsOrganizationNonMasterAccountsList) valida
 	return nil
 }
 
-func validateNewDataAwsOrganizationsOrganizationNonMasterAccountsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsOrganizationsOrganizationNonMasterAccountsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

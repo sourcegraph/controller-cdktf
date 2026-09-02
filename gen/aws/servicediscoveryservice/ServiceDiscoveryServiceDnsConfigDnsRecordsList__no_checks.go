@@ -12,7 +12,7 @@ func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateGetPa
 	return nil
 }
 
-func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ServiceDiscoveryServiceDnsConfigDnsRecordsList) validateSetWr
 	return nil
 }
 
-func validateNewServiceDiscoveryServiceDnsConfigDnsRecordsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewServiceDiscoveryServiceDnsConfigDnsRecordsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

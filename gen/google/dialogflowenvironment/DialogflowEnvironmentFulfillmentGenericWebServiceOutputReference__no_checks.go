@@ -40,11 +40,11 @@ func (d *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_DialogflowEnvironmentFulfillmentGenericWebServiceOutputRefere
 	return nil
 }
 
-func validateNewDialogflowEnvironmentFulfillmentGenericWebServiceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowEnvironmentFulfillmentGenericWebServiceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

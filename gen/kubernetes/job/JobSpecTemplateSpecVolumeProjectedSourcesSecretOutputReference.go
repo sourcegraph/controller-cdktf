@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/job/internal"
 )
 
 type JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,16 +66,16 @@ type JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutItems(value interface{})
 	ResetItems()
 	ResetName()
 	ResetOptional()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference interface {
 
 // The jsii proxy struct for JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference
 type jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReferenc
 }
 
 
-func NewJobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference {
+func NewJobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewJobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -228,7 +228,7 @@ func NewJobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference(terraform
 	j := jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference",
+		"@cdktn/provider-kubernetes.job.JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewJobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference(terraform
 	return &j
 }
 
-func NewJobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference_Override(j JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewJobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference_Override(j JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.job.JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference",
+		"@cdktn/provider-kubernetes.job.JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		j,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,11 +352,11 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := j.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -480,8 +480,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
@@ -493,16 +493,16 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := j.validateInterpolationForAttributeParameters(property); err != nil {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := j.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		j,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := j.validateResolveParameters(_context); err != nil {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := j.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeProjectedSourcesSecretOutputReferenc
 	_jsii_.Invoke(
 		j,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) validateInterpolationForAttribu
 	return nil
 }
 
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) validateMoveToIdParameters(id *
 }
 
 func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PolicyDeviceAssuranceAndroid) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) validateSetJailbreakParameters(
 	return nil
 }
 
-func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PolicyDeviceAssuranceAndroid) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

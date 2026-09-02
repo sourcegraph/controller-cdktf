@@ -40,7 +40,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -140,7 +140,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -152,7 +152,7 @@ func (j *jsiiProxy_StatefulSetSpecTemplateSpecContainerOutputReference) validate
 	return nil
 }
 
-func validateNewStatefulSetSpecTemplateSpecContainerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewStatefulSetSpecTemplateSpecContainerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

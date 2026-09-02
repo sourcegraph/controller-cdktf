@@ -40,11 +40,11 @@ func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputRef
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Macie2ClassificationExportConfigurationS3DestinationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMacie2ClassificationExportConfigurationS3DestinationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMacie2ClassificationExportConfigurationS3DestinationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

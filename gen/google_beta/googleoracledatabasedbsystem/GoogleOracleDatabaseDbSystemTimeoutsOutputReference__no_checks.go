@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleOracleDatabaseDbSystemTimeoutsOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOracleDatabaseDbSystemTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOracleDatabaseDbSystemTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseDbSystemTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseDbSystemTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOracleDatabaseDbSystemTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseDbSystemTimeoutsOutputReference) validate
 	return nil
 }
 
-func validateNewGoogleOracleDatabaseDbSystemTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleOracleDatabaseDbSystemTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

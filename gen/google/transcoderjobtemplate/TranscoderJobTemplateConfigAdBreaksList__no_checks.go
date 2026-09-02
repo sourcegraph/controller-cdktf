@@ -12,7 +12,7 @@ func (t *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) validateGetParameter
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_TranscoderJobTemplateConfigAdBreaksList) validateSetWrapsSetP
 	return nil
 }
 
-func validateNewTranscoderJobTemplateConfigAdBreaksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTranscoderJobTemplateConfigAdBreaksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

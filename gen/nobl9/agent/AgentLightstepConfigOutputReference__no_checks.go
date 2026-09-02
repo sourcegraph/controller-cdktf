@@ -40,11 +40,11 @@ func (a *jsiiProxy_AgentLightstepConfigOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (a *jsiiProxy_AgentLightstepConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AgentLightstepConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AgentLightstepConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AgentLightstepConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_AgentLightstepConfigOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_AgentLightstepConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AgentLightstepConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_AgentLightstepConfigOutputReference) validateSetUrlParameters
 	return nil
 }
 
-func validateNewAgentLightstepConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAgentLightstepConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (l *jsiiProxy_LustreInstance) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (l *jsiiProxy_LustreInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LustreInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (l *jsiiProxy_LustreInstance) validatePutMaintenancePolicyParameters(value 
 }
 
 func (l *jsiiProxy_LustreInstance) validatePutTimeoutsParameters(value *LustreInstanceTimeouts) error {
+	return nil
+}
+
+func (l *jsiiProxy_LustreInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_LustreInstance) validateSetLabelsParameters(val *map[string]*
 	return nil
 }
 
-func (j *jsiiProxy_LustreInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LustreInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

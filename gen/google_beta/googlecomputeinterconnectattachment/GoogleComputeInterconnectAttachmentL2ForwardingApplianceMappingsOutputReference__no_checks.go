@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachmentL2ForwardingApplianceMappi
 	return nil
 }
 
-func validateNewGoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeInterconnectAttachmentL2ForwardingApplianceMappingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

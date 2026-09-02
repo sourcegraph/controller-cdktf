@@ -4,14 +4,14 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglesqldatabaseinstances/internal"
 )
 
 type DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CaCertificate() *string
-	CascadableReplica() cdktf.IResolvable
+	CascadableReplica() cdktn.IResolvable
 	ClientCertificate() *string
 	ClientKey() *string
 	// the index of the complex object in a list.
@@ -31,7 +31,7 @@ type DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference 
 	// Experimental.
 	CreationStack() *[]*string
 	DumpFilePath() *string
-	FailoverTarget() cdktf.IResolvable
+	FailoverTarget() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleSqlDatabaseInstancesInstancesReplicaConfiguration
@@ -44,17 +44,17 @@ type DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Username() *string
-	VerifyServerCertificate() cdktf.IResolvable
+	VerifyServerCertificate() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,12 +70,12 @@ type DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference 
 
 // The jsii proxy struct for DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference
 type jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) CaCertificate() *string {
@@ -98,8 +98,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOu
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) CascadableReplica() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) CascadableReplica() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"cascadableReplica",
@@ -178,8 +178,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOu
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) FailoverTarget() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) FailoverTarget() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"failoverTarget",
@@ -248,8 +248,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOu
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -268,8 +268,8 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOu
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) VerifyServerCertificate() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) VerifyServerCertificate() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"verifyServerCertificate",
@@ -279,7 +279,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOu
 }
 
 
-func NewDataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference {
+func NewDataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -288,7 +288,7 @@ func NewDataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReferen
 	j := jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference",
+		"@cdktn/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -296,11 +296,11 @@ func NewDataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReferen
 	return &j
 }
 
-func NewDataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference_Override(d DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference_Override(d DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference",
+		"@cdktn/provider-google.dataGoogleSqlDatabaseInstances.DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -350,7 +350,7 @@ func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOu
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -390,11 +390,11 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -518,8 +518,8 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -531,24 +531,24 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOu
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -556,7 +556,7 @@ func (d *jsiiProxy_DataGoogleSqlDatabaseInstancesInstancesReplicaConfigurationOu
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

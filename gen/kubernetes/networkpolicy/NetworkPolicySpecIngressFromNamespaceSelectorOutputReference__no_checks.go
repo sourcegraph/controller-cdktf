@@ -40,7 +40,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference)
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference)
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkPolicySpecIngressFromNamespaceSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetworkPolicySpecIngressFromNamespaceSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkPolicySpecIngressFromNamespaceSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

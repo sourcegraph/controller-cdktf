@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) validateGetParam
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentLabelsList) validateSetWraps
 	return nil
 }
 
-func validateNewGoogleDeploymentManagerDeploymentLabelsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDeploymentManagerDeploymentLabelsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

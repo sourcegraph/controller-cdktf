@@ -40,11 +40,11 @@ func (i *jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference) v
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ImagebuilderContainerRecipeTargetRepositoryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewImagebuilderContainerRecipeTargetRepositoryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewImagebuilderContainerRecipeTargetRepositoryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

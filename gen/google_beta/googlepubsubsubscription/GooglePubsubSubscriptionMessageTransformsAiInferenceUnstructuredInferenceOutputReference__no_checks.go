@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsAiInferenceUnstructu
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GooglePubsubSubscriptionMessageTransformsAiInferenceUnstructu
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePubsubSubscriptionMessageTransformsAiInferenceUnstructuredInferenceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

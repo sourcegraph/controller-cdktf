@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesList) validateGetPar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleClouddeployTargetAssociatedEntitiesList) validateSetWra
 	return nil
 }
 
-func validateNewGoogleClouddeployTargetAssociatedEntitiesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleClouddeployTargetAssociatedEntitiesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationList) validateGe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretRotationList) validateSe
 	return nil
 }
 
-func validateNewDataGoogleSecretManagerRegionalSecretRotationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleSecretManagerRegionalSecretRotationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

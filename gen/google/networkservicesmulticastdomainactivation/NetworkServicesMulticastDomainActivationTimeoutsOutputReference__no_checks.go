@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTimeoutsOutputReferen
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTimeoutsOutputReferen
 	return nil
 }
 
-func validateNewNetworkServicesMulticastDomainActivationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkServicesMulticastDomainActivationTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

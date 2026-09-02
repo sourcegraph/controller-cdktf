@@ -56,6 +56,10 @@ func (s *jsiiProxy_StorageNotification) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (s *jsiiProxy_StorageNotification) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StorageNotification) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_StorageNotification) validateMoveToIdParameters(id *string) e
 }
 
 func (s *jsiiProxy_StorageNotification) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_StorageNotification) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_StorageNotification) validateSetEventTypesParameters(val *[]*
 	return nil
 }
 
-func (j *jsiiProxy_StorageNotification) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_StorageNotification) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

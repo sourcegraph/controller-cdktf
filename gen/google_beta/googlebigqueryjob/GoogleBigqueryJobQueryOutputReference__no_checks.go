@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validatePutUserDefined
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -128,7 +128,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -144,7 +144,7 @@ func (j *jsiiProxy_GoogleBigqueryJobQueryOutputReference) validateSetWriteDispos
 	return nil
 }
 
-func validateNewGoogleBigqueryJobQueryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryJobQueryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

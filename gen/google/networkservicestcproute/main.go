@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRoute",
 		reflect.TypeOf((*NetworkServicesTcpRoute)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "meshes", GoGetter: "Meshes"},
 			_jsii_.MemberProperty{JsiiProperty: "meshesInput", GoGetter: "MeshesInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRules", GoMethod: "PutRules"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetGateways", GoMethod: "ResetGateways"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -84,31 +86,32 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkServicesTcpRoute{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteConfig",
 		reflect.TypeOf((*NetworkServicesTcpRouteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRules",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRules",
 		reflect.TypeOf((*NetworkServicesTcpRouteRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesAction",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesAction",
 		reflect.TypeOf((*NetworkServicesTcpRouteRulesAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesActionDestinations",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesActionDestinations",
 		reflect.TypeOf((*NetworkServicesTcpRouteRulesActionDestinations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesActionDestinationsList",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesActionDestinationsList",
 		reflect.TypeOf((*NetworkServicesTcpRouteRulesActionDestinationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -125,12 +128,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkServicesTcpRouteRulesActionDestinationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesActionDestinationsOutputReference",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesActionDestinationsOutputReference",
 		reflect.TypeOf((*NetworkServicesTcpRouteRulesActionDestinationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -163,12 +166,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkServicesTcpRouteRulesActionDestinationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesActionOutputReference",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesActionOutputReference",
 		reflect.TypeOf((*NetworkServicesTcpRouteRulesActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -205,12 +208,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkServicesTcpRouteRulesActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesList",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesList",
 		reflect.TypeOf((*NetworkServicesTcpRouteRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -227,16 +230,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkServicesTcpRouteRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesMatches",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesMatches",
 		reflect.TypeOf((*NetworkServicesTcpRouteRulesMatches)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesMatchesList",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesMatchesList",
 		reflect.TypeOf((*NetworkServicesTcpRouteRulesMatchesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -253,12 +256,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkServicesTcpRouteRulesMatchesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesMatchesOutputReference",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesMatchesOutputReference",
 		reflect.TypeOf((*NetworkServicesTcpRouteRulesMatchesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "address", GoGetter: "Address"},
@@ -289,12 +292,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkServicesTcpRouteRulesMatchesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesOutputReference",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteRulesOutputReference",
 		reflect.TypeOf((*NetworkServicesTcpRouteRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "action", GoGetter: "Action"},
@@ -328,16 +331,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkServicesTcpRouteRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeouts",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeouts",
 		reflect.TypeOf((*NetworkServicesTcpRouteTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeoutsOutputReference",
+		"@cdktn/provider-google.networkServicesTcpRoute.NetworkServicesTcpRouteTimeoutsOutputReference",
 		reflect.TypeOf((*NetworkServicesTcpRouteTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -373,7 +376,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_NetworkServicesTcpRouteTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

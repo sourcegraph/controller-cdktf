@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesiteverificationwebresource/internal"
 )
 
 type GoogleSiteVerificationWebResourceSiteOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type GoogleSiteVerificationWebResourceSiteOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -48,7 +48,7 @@ type GoogleSiteVerificationWebResourceSiteOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type GoogleSiteVerificationWebResourceSiteOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type GoogleSiteVerificationWebResourceSiteOutputReference interface {
 
 // The jsii proxy struct for GoogleSiteVerificationWebResourceSiteOutputReference
 type jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) Terrafo
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) TypeInp
 }
 
 
-func NewGoogleSiteVerificationWebResourceSiteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSiteVerificationWebResourceSiteOutputReference {
+func NewGoogleSiteVerificationWebResourceSiteOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleSiteVerificationWebResourceSiteOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleSiteVerificationWebResourceSiteOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewGoogleSiteVerificationWebResourceSiteOutputReference(terraformResource c
 	j := jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSiteVerificationWebResource.GoogleSiteVerificationWebResourceSiteOutputReference",
+		"@cdktn/provider-google-beta.googleSiteVerificationWebResource.GoogleSiteVerificationWebResourceSiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewGoogleSiteVerificationWebResourceSiteOutputReference(terraformResource c
 	return &j
 }
 
-func NewGoogleSiteVerificationWebResourceSiteOutputReference_Override(g GoogleSiteVerificationWebResourceSiteOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleSiteVerificationWebResourceSiteOutputReference_Override(g GoogleSiteVerificationWebResourceSiteOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSiteVerificationWebResource.GoogleSiteVerificationWebResourceSiteOutputReference",
+		"@cdktn/provider-google-beta.googleSiteVerificationWebResource.GoogleSiteVerificationWebResourceSiteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference)SetTerra
 	)
 }
 
-func (j *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) GetAnyM
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -454,8 +454,8 @@ func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) GetStri
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -467,24 +467,24 @@ func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) Interpo
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (g *jsiiProxy_GoogleSiteVerificationWebResourceSiteOutputReference) Resolve
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DmsCertificate) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (d *jsiiProxy_DmsCertificate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsCertificate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (d *jsiiProxy_DmsCertificate) validateMoveToIdParameters(id *string) error 
 }
 
 func (d *jsiiProxy_DmsCertificate) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_DmsCertificate) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_DmsCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DmsCertificate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2) validateInterpolationForAttributeP
 	return nil
 }
 
+func (h *jsiiProxy_HorizontalPodAutoscalerV2) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HorizontalPodAutoscalerV2) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2) validatePutMetadataParameters(valu
 }
 
 func (h *jsiiProxy_HorizontalPodAutoscalerV2) validatePutSpecParameters(value *HorizontalPodAutoscalerV2Spec) error {
+	return nil
+}
+
+func (h *jsiiProxy_HorizontalPodAutoscalerV2) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

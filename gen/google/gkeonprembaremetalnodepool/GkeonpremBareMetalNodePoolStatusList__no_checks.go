@@ -12,7 +12,7 @@ func (g *jsiiProxy_GkeonpremBareMetalNodePoolStatusList) validateGetParameters(i
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremBareMetalNodePoolStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremBareMetalNodePoolStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePoolStatusList) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremBareMetalNodePoolStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeonpremBareMetalNodePoolStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GkeonpremBareMetalNodePoolStatusList) validateSetWrapsSetPara
 	return nil
 }
 
-func validateNewGkeonpremBareMetalNodePoolStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGkeonpremBareMetalNodePoolStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

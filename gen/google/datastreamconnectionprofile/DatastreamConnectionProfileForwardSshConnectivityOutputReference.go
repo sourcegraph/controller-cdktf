@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datastreamconnectionprofile/internal"
 )
 
 type DatastreamConnectionProfileForwardSshConnectivityOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -46,9 +46,9 @@ type DatastreamConnectionProfileForwardSshConnectivityOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Username() *string
 	SetUsername(val *string)
 	UsernameInput() *string
@@ -57,7 +57,7 @@ type DatastreamConnectionProfileForwardSshConnectivityOutputReference interface 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,15 +73,15 @@ type DatastreamConnectionProfileForwardSshConnectivityOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPassword()
 	ResetPort()
 	ResetPrivateKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -91,7 +91,7 @@ type DatastreamConnectionProfileForwardSshConnectivityOutputReference interface 
 
 // The jsii proxy struct for DatastreamConnectionProfileForwardSshConnectivityOutputReference
 type jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference) ComplexObjectIndex() interface{} {
@@ -234,8 +234,8 @@ func (j *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -265,7 +265,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputRefere
 }
 
 
-func NewDatastreamConnectionProfileForwardSshConnectivityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileForwardSshConnectivityOutputReference {
+func NewDatastreamConnectionProfileForwardSshConnectivityOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DatastreamConnectionProfileForwardSshConnectivityOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDatastreamConnectionProfileForwardSshConnectivityOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -274,7 +274,7 @@ func NewDatastreamConnectionProfileForwardSshConnectivityOutputReference(terrafo
 	j := jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivityOutputReference",
+		"@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -282,11 +282,11 @@ func NewDatastreamConnectionProfileForwardSshConnectivityOutputReference(terrafo
 	return &j
 }
 
-func NewDatastreamConnectionProfileForwardSshConnectivityOutputReference_Override(d DatastreamConnectionProfileForwardSshConnectivityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDatastreamConnectionProfileForwardSshConnectivityOutputReference_Override(d DatastreamConnectionProfileForwardSshConnectivityOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivityOutputReference",
+		"@cdktn/provider-google.datastreamConnectionProfile.DatastreamConnectionProfileForwardSshConnectivityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -380,7 +380,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -431,11 +431,11 @@ func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -559,8 +559,8 @@ func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -572,16 +572,16 @@ func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -612,8 +612,8 @@ func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputRefere
 	)
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -621,7 +621,7 @@ func (d *jsiiProxy_DatastreamConnectionProfileForwardSshConnectivityOutputRefere
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

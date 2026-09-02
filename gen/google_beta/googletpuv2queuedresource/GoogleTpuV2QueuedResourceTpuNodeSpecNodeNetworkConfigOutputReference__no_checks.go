@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleTpuV2QueuedResourceTpuNodeSpecNodeNetworkConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

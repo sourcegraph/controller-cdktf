@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList) 
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList) 
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsList) 
 	return nil
 }
 
-func validateNewAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlloydbClusterMaintenanceUpdatePolicyMaintenanceWindowsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfig",
+		"@cdktn/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfig",
 		reflect.TypeOf((*GoogleSccV2FolderNotificationConfig)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -57,6 +58,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putStreamingConfig", GoMethod: "PutStreamingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
@@ -76,23 +78,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleSccV2FolderNotificationConfig{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfigConfig",
+		"@cdktn/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfigConfig",
 		reflect.TypeOf((*GoogleSccV2FolderNotificationConfigConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfigStreamingConfig",
+		"@cdktn/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfigStreamingConfig",
 		reflect.TypeOf((*GoogleSccV2FolderNotificationConfigStreamingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfigStreamingConfigOutputReference",
+		"@cdktn/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfigStreamingConfigOutputReference",
 		reflect.TypeOf((*GoogleSccV2FolderNotificationConfigStreamingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -121,16 +124,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleSccV2FolderNotificationConfigStreamingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfigTimeouts",
+		"@cdktn/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfigTimeouts",
 		reflect.TypeOf((*GoogleSccV2FolderNotificationConfigTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfigTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleSccV2FolderNotificationConfig.GoogleSccV2FolderNotificationConfigTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleSccV2FolderNotificationConfigTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -166,7 +169,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleSccV2FolderNotificationConfigTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

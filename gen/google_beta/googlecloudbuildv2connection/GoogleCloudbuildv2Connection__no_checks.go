@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) validateInterpolationForAttribu
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudbuildv2Connection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -96,6 +100,10 @@ func (g *jsiiProxy_GoogleCloudbuildv2Connection) validatePutTimeoutsParameters(v
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudbuildv2Connection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleCloudbuildv2Connection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -132,7 +140,7 @@ func (j *jsiiProxy_GoogleCloudbuildv2Connection) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildv2Connection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleCloudbuildv2Connection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

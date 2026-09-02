@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDef
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDef
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDef
 	return nil
 }
 
-func validateNewDataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleGkeHubFeatureSpecFleetobservabilityLoggingConfigDefaultConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

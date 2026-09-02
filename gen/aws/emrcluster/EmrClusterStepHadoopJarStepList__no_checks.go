@@ -12,7 +12,7 @@ func (e *jsiiProxy_EmrClusterStepHadoopJarStepList) validateGetParameters(index 
 	return nil
 }
 
-func (e *jsiiProxy_EmrClusterStepHadoopJarStepList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmrClusterStepHadoopJarStepList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_EmrClusterStepHadoopJarStepList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmrClusterStepHadoopJarStepList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EmrClusterStepHadoopJarStepList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewEmrClusterStepHadoopJarStepListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEmrClusterStepHadoopJarStepListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

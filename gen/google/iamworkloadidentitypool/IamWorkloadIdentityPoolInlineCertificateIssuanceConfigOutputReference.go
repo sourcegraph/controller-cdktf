@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/iamworkloadidentitypool/internal"
 )
 
 type IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CaPools() *map[string]*string
 	SetCaPools(val *map[string]*string)
 	CaPoolsInput() *map[string]*string
@@ -46,9 +46,9 @@ type IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UseDefaultSharedCa() interface{}
 	SetUseDefaultSharedCa(val interface{})
 	UseDefaultSharedCaInput() interface{}
@@ -57,7 +57,7 @@ type IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference inter
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCaPools()
 	ResetKeyAlgorithm()
 	ResetLifetime()
@@ -83,7 +83,7 @@ type IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference inter
 	ResetUseDefaultSharedCa()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference inter
 
 // The jsii proxy struct for IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference
 type jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) CaPools() *map[string]*string {
@@ -236,8 +236,8 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 }
 
 
-func NewIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference {
+func NewIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference(te
 	j := jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference",
+		"@cdktn/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference(te
 	return &j
 }
 
-func NewIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference_Override(i IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference_Override(i IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference",
+		"@cdktn/provider-google.iamWorkloadIdentityPool.IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -382,7 +382,7 @@ func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -561,8 +561,8 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -574,16 +574,16 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	return returns
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	)
 }
 
-func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (i *jsiiProxy_IamWorkloadIdentityPoolInlineCertificateIssuanceConfigOutputR
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

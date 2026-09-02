@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagFilterOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentGroupEc2TagFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagFilterOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CodedeployDeploymentGroupEc2TagFilterOutputReference) validat
 	return nil
 }
 
-func validateNewCodedeployDeploymentGroupEc2TagFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCodedeployDeploymentGroupEc2TagFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

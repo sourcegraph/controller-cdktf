@@ -56,6 +56,10 @@ func (e *jsiiProxy_Env) validateInterpolationForAttributeParameters(terraformAtt
 	return nil
 }
 
+func (e *jsiiProxy_Env) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Env) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (e *jsiiProxy_Env) validatePutEnvParameters(value interface{}) error {
 }
 
 func (e *jsiiProxy_Env) validatePutMetadataParameters(value *EnvMetadata) error {
+	return nil
+}
+
+func (e *jsiiProxy_Env) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_Env) validateSetKindParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_Env) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Env) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

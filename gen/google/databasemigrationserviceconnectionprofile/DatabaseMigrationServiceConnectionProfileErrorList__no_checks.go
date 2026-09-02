@@ -12,7 +12,7 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorList) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileErrorList) validateS
 	return nil
 }
 
-func validateNewDatabaseMigrationServiceConnectionProfileErrorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDatabaseMigrationServiceConnectionProfileErrorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

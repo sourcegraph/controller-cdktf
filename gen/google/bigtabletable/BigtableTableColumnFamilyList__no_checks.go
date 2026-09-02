@@ -12,7 +12,7 @@ func (b *jsiiProxy_BigtableTableColumnFamilyList) validateGetParameters(index *f
 	return nil
 }
 
-func (b *jsiiProxy_BigtableTableColumnFamilyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableTableColumnFamilyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_BigtableTableColumnFamilyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigtableTableColumnFamilyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BigtableTableColumnFamilyList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewBigtableTableColumnFamilyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBigtableTableColumnFamilyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

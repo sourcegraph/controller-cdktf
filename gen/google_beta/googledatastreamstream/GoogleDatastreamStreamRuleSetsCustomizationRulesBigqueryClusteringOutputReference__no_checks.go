@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesBigqueryClust
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesBigqueryClust
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatastreamStreamRuleSetsCustomizationRulesBigqueryClusteringOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

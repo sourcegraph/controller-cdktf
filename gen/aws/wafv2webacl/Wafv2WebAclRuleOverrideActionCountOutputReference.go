@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/wafv2webacl/internal"
 )
 
 type Wafv2WebAclRuleOverrideActionCountOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,15 +34,15 @@ type Wafv2WebAclRuleOverrideActionCountOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -58,12 +58,12 @@ type Wafv2WebAclRuleOverrideActionCountOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -73,7 +73,7 @@ type Wafv2WebAclRuleOverrideActionCountOutputReference interface {
 
 // The jsii proxy struct for Wafv2WebAclRuleOverrideActionCountOutputReference
 type jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) ComplexObjectIndex() interface{} {
@@ -136,8 +136,8 @@ func (j *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -147,7 +147,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) TerraformR
 }
 
 
-func NewWafv2WebAclRuleOverrideActionCountOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleOverrideActionCountOutputReference {
+func NewWafv2WebAclRuleOverrideActionCountOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) Wafv2WebAclRuleOverrideActionCountOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWafv2WebAclRuleOverrideActionCountOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -156,7 +156,7 @@ func NewWafv2WebAclRuleOverrideActionCountOutputReference(terraformResource cdkt
 	j := jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCountOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -164,11 +164,11 @@ func NewWafv2WebAclRuleOverrideActionCountOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewWafv2WebAclRuleOverrideActionCountOutputReference_Override(w Wafv2WebAclRuleOverrideActionCountOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewWafv2WebAclRuleOverrideActionCountOutputReference_Override(w Wafv2WebAclRuleOverrideActionCountOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCountOutputReference",
+		"@cdktn/provider-aws.wafv2WebAcl.Wafv2WebAclRuleOverrideActionCountOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
@@ -218,7 +218,7 @@ func (j *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -258,11 +258,11 @@ func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) GetAnyMapA
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -386,8 +386,8 @@ func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) GetStringM
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -399,24 +399,24 @@ func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) Interpolat
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -424,7 +424,7 @@ func (w *jsiiProxy_Wafv2WebAclRuleOverrideActionCountOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

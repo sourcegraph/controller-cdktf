@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateOverrideLogicalId
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsEmrcontainersVirtualCluster_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateSetIdParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsEmrcontainersVirtualCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSecretEnvironmentVariablesOutputReferen
 	return nil
 }
 
-func validateNewCloudfunctionsFunctionSecretEnvironmentVariablesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudfunctionsFunctionSecretEnvironmentVariablesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

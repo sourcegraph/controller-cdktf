@@ -12,7 +12,7 @@ func (s *jsiiProxy_S3ObjectCopyGrantList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (s *jsiiProxy_S3ObjectCopyGrantList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ObjectCopyGrantList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_S3ObjectCopyGrantList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3ObjectCopyGrantList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_S3ObjectCopyGrantList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewS3ObjectCopyGrantListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewS3ObjectCopyGrantListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

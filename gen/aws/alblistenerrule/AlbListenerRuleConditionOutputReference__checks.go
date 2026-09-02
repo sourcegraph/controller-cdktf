@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validateGetStringMap
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -139,7 +139,7 @@ func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validatePutQueryStri
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*AlbListenerRuleConditionQueryString:
 		value := value.(*[]*AlbListenerRuleConditionQueryString)
@@ -158,7 +158,7 @@ func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validatePutQueryStri
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*AlbListenerRuleConditionQueryString; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*AlbListenerRuleConditionQueryString; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -176,9 +176,9 @@ func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validatePutSourceIpP
 	return nil
 }
 
-func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (a *jsiiProxy_AlbListenerRuleConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -251,7 +251,7 @@ func (j *jsiiProxy_AlbListenerRuleConditionOutputReference) validateSetComplexOb
 
 func (j *jsiiProxy_AlbListenerRuleConditionOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *AlbListenerRuleCondition:
 		val := val.(*AlbListenerRuleCondition)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_AlbListenerRuleConditionOutputReference) validateSetInternalV
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *AlbListenerRuleCondition; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *AlbListenerRuleCondition; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -281,7 +281,7 @@ func (j *jsiiProxy_AlbListenerRuleConditionOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_AlbListenerRuleConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlbListenerRuleConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -289,7 +289,7 @@ func (j *jsiiProxy_AlbListenerRuleConditionOutputReference) validateSetTerraform
 	return nil
 }
 
-func validateNewAlbListenerRuleConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlbListenerRuleConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

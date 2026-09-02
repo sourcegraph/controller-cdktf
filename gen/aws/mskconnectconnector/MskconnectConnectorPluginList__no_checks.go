@@ -12,7 +12,7 @@ func (m *jsiiProxy_MskconnectConnectorPluginList) validateGetParameters(index *f
 	return nil
 }
 
-func (m *jsiiProxy_MskconnectConnectorPluginList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskconnectConnectorPluginList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_MskconnectConnectorPluginList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_MskconnectConnectorPluginList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MskconnectConnectorPluginList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_MskconnectConnectorPluginList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewMskconnectConnectorPluginListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewMskconnectConnectorPluginListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

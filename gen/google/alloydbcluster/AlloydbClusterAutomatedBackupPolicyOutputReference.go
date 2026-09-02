@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/alloydbcluster/internal"
 )
 
 type AlloydbClusterAutomatedBackupPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BackupWindow() *string
 	SetBackupWindow(val *string)
 	BackupWindowInput() *string
@@ -50,9 +50,9 @@ type AlloydbClusterAutomatedBackupPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeBasedRetention() AlloydbClusterAutomatedBackupPolicyTimeBasedRetentionOutputReference
 	TimeBasedRetentionInput() *AlloydbClusterAutomatedBackupPolicyTimeBasedRetention
 	WeeklySchedule() AlloydbClusterAutomatedBackupPolicyWeeklyScheduleOutputReference
@@ -62,7 +62,7 @@ type AlloydbClusterAutomatedBackupPolicyOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -78,9 +78,9 @@ type AlloydbClusterAutomatedBackupPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutEncryptionConfig(value *AlloydbClusterAutomatedBackupPolicyEncryptionConfig)
 	PutQuantityBasedRetention(value *AlloydbClusterAutomatedBackupPolicyQuantityBasedRetention)
 	PutTimeBasedRetention(value *AlloydbClusterAutomatedBackupPolicyTimeBasedRetention)
@@ -95,7 +95,7 @@ type AlloydbClusterAutomatedBackupPolicyOutputReference interface {
 	ResetWeeklySchedule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -105,7 +105,7 @@ type AlloydbClusterAutomatedBackupPolicyOutputReference interface {
 
 // The jsii proxy struct for AlloydbClusterAutomatedBackupPolicyOutputReference
 type jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) BackupWindow() *string {
@@ -288,8 +288,8 @@ func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) Terraform
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -339,7 +339,7 @@ func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) WeeklySch
 }
 
 
-func NewAlloydbClusterAutomatedBackupPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlloydbClusterAutomatedBackupPolicyOutputReference {
+func NewAlloydbClusterAutomatedBackupPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AlloydbClusterAutomatedBackupPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlloydbClusterAutomatedBackupPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -348,7 +348,7 @@ func NewAlloydbClusterAutomatedBackupPolicyOutputReference(terraformResource cdk
 	j := jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyOutputReference",
+		"@cdktn/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -356,11 +356,11 @@ func NewAlloydbClusterAutomatedBackupPolicyOutputReference(terraformResource cdk
 	return &j
 }
 
-func NewAlloydbClusterAutomatedBackupPolicyOutputReference_Override(a AlloydbClusterAutomatedBackupPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlloydbClusterAutomatedBackupPolicyOutputReference_Override(a AlloydbClusterAutomatedBackupPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyOutputReference",
+		"@cdktn/provider-google.alloydbCluster.AlloydbClusterAutomatedBackupPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -454,7 +454,7 @@ func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference)SetTerrafo
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -494,11 +494,11 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) GetAnyMap
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -622,8 +622,8 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) GetString
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -635,16 +635,16 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) Interpola
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -759,8 +759,8 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) ResetWeek
 	)
 }
 
-func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -768,7 +768,7 @@ func (a *jsiiProxy_AlloydbClusterAutomatedBackupPolicyOutputReference) Resolve(_
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

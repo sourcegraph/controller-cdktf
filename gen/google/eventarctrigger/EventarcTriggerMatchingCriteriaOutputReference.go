@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/eventarctrigger/internal"
 )
 
 type EventarcTriggerMatchingCriteriaOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Attribute() *string
 	SetAttribute(val *string)
 	AttributeInput() *string
@@ -40,9 +40,9 @@ type EventarcTriggerMatchingCriteriaOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	SetValue(val *string)
 	ValueInput() *string
@@ -51,7 +51,7 @@ type EventarcTriggerMatchingCriteriaOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type EventarcTriggerMatchingCriteriaOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetOperator()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type EventarcTriggerMatchingCriteriaOutputReference interface {
 
 // The jsii proxy struct for EventarcTriggerMatchingCriteriaOutputReference
 type jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) Attribute() *string {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) ValueInput() 
 }
 
 
-func NewEventarcTriggerMatchingCriteriaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EventarcTriggerMatchingCriteriaOutputReference {
+func NewEventarcTriggerMatchingCriteriaOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EventarcTriggerMatchingCriteriaOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEventarcTriggerMatchingCriteriaOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -226,7 +226,7 @@ func NewEventarcTriggerMatchingCriteriaOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewEventarcTriggerMatchingCriteriaOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewEventarcTriggerMatchingCriteriaOutputReference_Override(e EventarcTriggerMatchingCriteriaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewEventarcTriggerMatchingCriteriaOutputReference_Override(e EventarcTriggerMatchingCriteriaOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerMatchingCriteriaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -489,8 +489,8 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) GetStringMapA
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -502,16 +502,16 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) Interpolation
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) ResetOperator
 	)
 }
 
-func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (e *jsiiProxy_EventarcTriggerMatchingCriteriaOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -24,6 +24,10 @@ func (a *jsiiProxy_Awsvpc) validateOverrideLogicalIdParameters(newLogicalId *str
 	return nil
 }
 
+func (a *jsiiProxy_Awsvpc) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateAwsvpc_IsConstructParameters(x interface{}) error {
 	return nil
 }

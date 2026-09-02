@@ -40,7 +40,7 @@ func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validateGetStringMapAttr
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validatePutConditionsPar
 	return nil
 }
 
-func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueTriggerPredicateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GlueTriggerPredicateOutputReference) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_GlueTriggerPredicateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlueTriggerPredicateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGlueTriggerPredicateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGlueTriggerPredicateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessApplication.AccessApplication",
+		"@cdktn/provider-cloudflare.accessApplication.AccessApplication",
 		reflect.TypeOf((*AccessApplication)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -59,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logoUrl", GoGetter: "LogoUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "logoUrlInput", GoGetter: "LogoUrlInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -71,6 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putCorsHeaders", GoMethod: "PutCorsHeaders"},
 			_jsii_.MemberMethod{JsiiMethod: "putSaasApp", GoMethod: "PutSaasApp"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccountId", GoMethod: "ResetAccountId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAllowedIdps", GoMethod: "ResetAllowedIdps"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAppLauncherVisible", GoMethod: "ResetAppLauncherVisible"},
@@ -112,25 +114,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "typeInput", GoGetter: "TypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessApplication{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationConfig",
+		"@cdktn/provider-cloudflare.accessApplication.AccessApplicationConfig",
 		reflect.TypeOf((*AccessApplicationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeaders",
+		"@cdktn/provider-cloudflare.accessApplication.AccessApplicationCorsHeaders",
 		reflect.TypeOf((*AccessApplicationCorsHeaders)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersList",
+		"@cdktn/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersList",
 		reflect.TypeOf((*AccessApplicationCorsHeadersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -147,12 +150,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessApplicationCorsHeadersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersOutputReference",
+		"@cdktn/provider-cloudflare.accessApplication.AccessApplicationCorsHeadersOutputReference",
 		reflect.TypeOf((*AccessApplicationCorsHeadersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowAllHeaders", GoGetter: "AllowAllHeaders"},
@@ -203,16 +206,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessApplicationCorsHeadersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasApp",
+		"@cdktn/provider-cloudflare.accessApplication.AccessApplicationSaasApp",
 		reflect.TypeOf((*AccessApplicationSaasApp)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
+		"@cdktn/provider-cloudflare.accessApplication.AccessApplicationSaasAppOutputReference",
 		reflect.TypeOf((*AccessApplicationSaasAppOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -246,7 +249,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AccessApplicationSaasAppOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

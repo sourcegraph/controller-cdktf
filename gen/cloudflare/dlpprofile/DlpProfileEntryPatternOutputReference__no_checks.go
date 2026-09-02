@@ -40,11 +40,11 @@ func (d *jsiiProxy_DlpProfileEntryPatternOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (d *jsiiProxy_DlpProfileEntryPatternOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DlpProfileEntryPatternOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DlpProfileEntryPatternOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DlpProfileEntryPatternOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DlpProfileEntryPatternOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DlpProfileEntryPatternOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DlpProfileEntryPatternOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DlpProfileEntryPatternOutputReference) validateSetValidationP
 	return nil
 }
 
-func validateNewDlpProfileEntryPatternOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDlpProfileEntryPatternOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

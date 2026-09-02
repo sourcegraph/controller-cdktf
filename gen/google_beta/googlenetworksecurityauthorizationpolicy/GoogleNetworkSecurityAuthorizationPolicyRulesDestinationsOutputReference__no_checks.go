@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetworkSecurityAuthorizationPolicyRulesDestinationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

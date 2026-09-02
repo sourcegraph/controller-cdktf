@@ -56,6 +56,10 @@ func (d *jsiiProxy_DmsReplicationSubnetGroup) validateInterpolationForAttributeP
 	return nil
 }
 
+func (d *jsiiProxy_DmsReplicationSubnetGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DmsReplicationSubnetGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DmsReplicationSubnetGroup) validateOverrideLogicalIdParameter
 }
 
 func (d *jsiiProxy_DmsReplicationSubnetGroup) validatePutTimeoutsParameters(value *DmsReplicationSubnetGroupTimeouts) error {
+	return nil
+}
+
+func (d *jsiiProxy_DmsReplicationSubnetGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_DmsReplicationSubnetGroup) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_DmsReplicationSubnetGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DmsReplicationSubnetGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

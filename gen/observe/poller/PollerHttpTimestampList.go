@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/poller/internal"
 )
 
 type PollerHttpTimestampList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type PollerHttpTimestampList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) PollerHttpTimestampOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type PollerHttpTimestampList interface {
 
 // The jsii proxy struct for PollerHttpTimestampList
 type jsiiProxy_PollerHttpTimestampList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_PollerHttpTimestampList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_PollerHttpTimestampList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PollerHttpTimestampList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PollerHttpTimestampList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_PollerHttpTimestampList) WrapsSet() *bool {
 }
 
 
-func NewPollerHttpTimestampList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PollerHttpTimestampList {
+func NewPollerHttpTimestampList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PollerHttpTimestampList {
 	_init_.Initialize()
 
 	if err := validateNewPollerHttpTimestampListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewPollerHttpTimestampList(terraformResource cdktf.IInterpolatingParent, te
 	j := jsiiProxy_PollerHttpTimestampList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.poller.PollerHttpTimestampList",
+		"@cdktn/provider-observe.poller.PollerHttpTimestampList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewPollerHttpTimestampList(terraformResource cdktf.IInterpolatingParent, te
 	return &j
 }
 
-func NewPollerHttpTimestampList_Override(p PollerHttpTimestampList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewPollerHttpTimestampList_Override(p PollerHttpTimestampList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.poller.PollerHttpTimestampList",
+		"@cdktn/provider-observe.poller.PollerHttpTimestampList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_PollerHttpTimestampList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PollerHttpTimestampList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PollerHttpTimestampList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_PollerHttpTimestampList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (p *jsiiProxy_PollerHttpTimestampList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (p *jsiiProxy_PollerHttpTimestampList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := p.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		p,
@@ -228,8 +231,8 @@ func (p *jsiiProxy_PollerHttpTimestampList) Get(index *float64) PollerHttpTimest
 	return returns
 }
 
-func (p *jsiiProxy_PollerHttpTimestampList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PollerHttpTimestampList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (p *jsiiProxy_PollerHttpTimestampList) Resolve(_context cdktf.IResolveConte
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (s *jsiiProxy_SnsPlatformApplication) validateInterpolationForAttributePara
 	return nil
 }
 
+func (s *jsiiProxy_SnsPlatformApplication) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SnsPlatformApplication) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SnsPlatformApplication) validateMoveToIdParameters(id *string
 }
 
 func (s *jsiiProxy_SnsPlatformApplication) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SnsPlatformApplication) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_SnsPlatformApplication) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_SnsPlatformApplication) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SnsPlatformApplication) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

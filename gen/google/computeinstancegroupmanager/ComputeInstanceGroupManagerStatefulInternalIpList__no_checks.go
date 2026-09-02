@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulInternalIpList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulInternalIpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulInternalIpList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulInternalIpList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulInternalIpList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulInternalIpList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulInternalIpList) validateSe
 	return nil
 }
 
-func validateNewComputeInstanceGroupManagerStatefulInternalIpListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeInstanceGroupManagerStatefulInternalIpListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

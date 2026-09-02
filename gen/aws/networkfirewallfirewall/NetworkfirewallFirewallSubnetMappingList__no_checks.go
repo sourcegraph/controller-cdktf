@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkfirewallFirewallSubnetMappingList) validateGetParamete
 	return nil
 }
 
-func (n *jsiiProxy_NetworkfirewallFirewallSubnetMappingList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkfirewallFirewallSubnetMappingList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkfirewallFirewallSubnetMappingList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewNetworkfirewallFirewallSubnetMappingListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkfirewallFirewallSubnetMappingListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

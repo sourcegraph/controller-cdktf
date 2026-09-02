@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutput
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutput
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesAppVersionSnapshotGuardrailsActionRespondImmediatelyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

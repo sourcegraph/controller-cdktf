@@ -40,11 +40,11 @@ func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReferen
 	return nil
 }
 
-func validateNewSloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveRawMetricQueryAzureMonitorDimensionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

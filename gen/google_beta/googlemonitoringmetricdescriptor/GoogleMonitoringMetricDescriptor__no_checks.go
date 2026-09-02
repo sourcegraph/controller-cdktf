@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validatePutMetadataParamete
 }
 
 func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validatePutTimeoutsParameters(value *GoogleMonitoringMetricDescriptorTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleMonitoringMetricDescriptor) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetLaunchStageParam
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleMonitoringMetricDescriptor) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

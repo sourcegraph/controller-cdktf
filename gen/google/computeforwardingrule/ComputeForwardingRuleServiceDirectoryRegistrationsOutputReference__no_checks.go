@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputRefer
 	return nil
 }
 
-func (c *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeForwardingRuleServiceDirectoryRegistrationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeForwardingRuleServiceDirectoryRegistrationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeForwardingRuleServiceDirectoryRegistrationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

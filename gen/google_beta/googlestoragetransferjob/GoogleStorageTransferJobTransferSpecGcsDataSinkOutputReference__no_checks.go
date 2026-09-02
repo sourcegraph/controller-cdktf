@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecGcsDataSinkOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecGcsDataSinkOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecGcsDataSinkOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecGcsDataSinkOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecGcsDataSinkOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecGcsDataSinkOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecGcsDataSinkOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecGcsDataSinkOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleStorageTransferJobTransferSpecGcsDataSinkOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleStorageTransferJobTransferSpecGcsDataSinkOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

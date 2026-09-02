@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigtableTableIamPolicy) validateInterpolationForAttributePara
 	return nil
 }
 
+func (b *jsiiProxy_BigtableTableIamPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigtableTableIamPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (b *jsiiProxy_BigtableTableIamPolicy) validateMoveToIdParameters(id *string
 }
 
 func (b *jsiiProxy_BigtableTableIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigtableTableIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_BigtableTableIamPolicy) validateSetInstanceNameParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_BigtableTableIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BigtableTableIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

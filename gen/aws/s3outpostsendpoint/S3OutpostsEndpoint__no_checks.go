@@ -56,6 +56,10 @@ func (s *jsiiProxy_S3OutpostsEndpoint) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (s *jsiiProxy_S3OutpostsEndpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3OutpostsEndpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_S3OutpostsEndpoint) validateMoveToIdParameters(id *string) er
 }
 
 func (s *jsiiProxy_S3OutpostsEndpoint) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3OutpostsEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_S3OutpostsEndpoint) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_S3OutpostsEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_S3OutpostsEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

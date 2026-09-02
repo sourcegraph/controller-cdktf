@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/networkservicesmulticastdomainactivation/internal"
 )
 
 type NetworkServicesMulticastDomainActivationTrafficSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AggrEgressPps() *string
 	SetAggrEgressPps(val *string)
 	AggrEgressPpsInput() *string
@@ -49,15 +49,15 @@ type NetworkServicesMulticastDomainActivationTrafficSpecOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -73,9 +73,9 @@ type NetworkServicesMulticastDomainActivationTrafficSpecOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAggrEgressPps()
 	ResetAggrIngressPps()
 	ResetAvgPacketSize()
@@ -83,7 +83,7 @@ type NetworkServicesMulticastDomainActivationTrafficSpecOutputReference interfac
 	ResetMaxPerGroupSubscribers()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type NetworkServicesMulticastDomainActivationTrafficSpecOutputReference interfac
 
 // The jsii proxy struct for NetworkServicesMulticastDomainActivationTrafficSpecOutputReference
 type jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) AggrEgressPps() *string {
@@ -256,8 +256,8 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputRefe
 }
 
 
-func NewNetworkServicesMulticastDomainActivationTrafficSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastDomainActivationTrafficSpecOutputReference {
+func NewNetworkServicesMulticastDomainActivationTrafficSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NetworkServicesMulticastDomainActivationTrafficSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetworkServicesMulticastDomainActivationTrafficSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewNetworkServicesMulticastDomainActivationTrafficSpecOutputReference(terra
 	j := jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTrafficSpecOutputReference",
+		"@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTrafficSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewNetworkServicesMulticastDomainActivationTrafficSpecOutputReference(terra
 	return &j
 }
 
-func NewNetworkServicesMulticastDomainActivationTrafficSpecOutputReference_Override(n NetworkServicesMulticastDomainActivationTrafficSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNetworkServicesMulticastDomainActivationTrafficSpecOutputReference_Override(n NetworkServicesMulticastDomainActivationTrafficSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTrafficSpecOutputReference",
+		"@cdktn/provider-google.networkServicesMulticastDomainActivation.NetworkServicesMulticastDomainActivationTrafficSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -393,7 +393,7 @@ func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputRefe
 	)
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -433,11 +433,11 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputRefe
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -561,8 +561,8 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputRefe
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -574,16 +574,16 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputRefe
 	return returns
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputRefe
 	)
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (n *jsiiProxy_NetworkServicesMulticastDomainActivationTrafficSpecOutputRefe
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

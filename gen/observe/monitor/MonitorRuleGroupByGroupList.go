@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/monitor/internal"
 )
 
 type MonitorRuleGroupByGroupList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type MonitorRuleGroupByGroupList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) MonitorRuleGroupByGroupOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type MonitorRuleGroupByGroupList interface {
 
 // The jsii proxy struct for MonitorRuleGroupByGroupList
 type jsiiProxy_MonitorRuleGroupByGroupList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_MonitorRuleGroupByGroupList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_MonitorRuleGroupByGroupList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_MonitorRuleGroupByGroupList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MonitorRuleGroupByGroupList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_MonitorRuleGroupByGroupList) WrapsSet() *bool {
 }
 
 
-func NewMonitorRuleGroupByGroupList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorRuleGroupByGroupList {
+func NewMonitorRuleGroupByGroupList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) MonitorRuleGroupByGroupList {
 	_init_.Initialize()
 
 	if err := validateNewMonitorRuleGroupByGroupListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewMonitorRuleGroupByGroupList(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_MonitorRuleGroupByGroupList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitor.MonitorRuleGroupByGroupList",
+		"@cdktn/provider-observe.monitor.MonitorRuleGroupByGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewMonitorRuleGroupByGroupList(terraformResource cdktf.IInterpolatingParent
 	return &j
 }
 
-func NewMonitorRuleGroupByGroupList_Override(m MonitorRuleGroupByGroupList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewMonitorRuleGroupByGroupList_Override(m MonitorRuleGroupByGroupList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.monitor.MonitorRuleGroupByGroupList",
+		"@cdktn/provider-observe.monitor.MonitorRuleGroupByGroupList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		m,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_MonitorRuleGroupByGroupList)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_MonitorRuleGroupByGroupList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MonitorRuleGroupByGroupList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_MonitorRuleGroupByGroupList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (m *jsiiProxy_MonitorRuleGroupByGroupList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (m *jsiiProxy_MonitorRuleGroupByGroupList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := m.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		m,
@@ -228,8 +231,8 @@ func (m *jsiiProxy_MonitorRuleGroupByGroupList) Get(index *float64) MonitorRuleG
 	return returns
 }
 
-func (m *jsiiProxy_MonitorRuleGroupByGroupList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MonitorRuleGroupByGroupList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (m *jsiiProxy_MonitorRuleGroupByGroupList) Resolve(_context cdktf.IResolveC
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

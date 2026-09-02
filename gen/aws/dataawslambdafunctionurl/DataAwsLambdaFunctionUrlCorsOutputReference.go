@@ -4,13 +4,13 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dataawslambdafunctionurl/internal"
 )
 
 type DataAwsLambdaFunctionUrlCorsOutputReference interface {
-	cdktf.ComplexObject
-	AllowCredentials() cdktf.IResolvable
+	cdktn.ComplexObject
+	AllowCredentials() cdktn.IResolvable
 	AllowHeaders() *[]*string
 	AllowMethods() *[]*string
 	AllowOrigins() *[]*string
@@ -40,15 +40,15 @@ type DataAwsLambdaFunctionUrlCorsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DataAwsLambdaFunctionUrlCorsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,11 +79,11 @@ type DataAwsLambdaFunctionUrlCorsOutputReference interface {
 
 // The jsii proxy struct for DataAwsLambdaFunctionUrlCorsOutputReference
 type jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) AllowCredentials() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) AllowCredentials() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"allowCredentials",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -213,7 +213,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) TerraformResourc
 }
 
 
-func NewDataAwsLambdaFunctionUrlCorsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionUrlCorsOutputReference {
+func NewDataAwsLambdaFunctionUrlCorsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsLambdaFunctionUrlCorsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataAwsLambdaFunctionUrlCorsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -222,7 +222,7 @@ func NewDataAwsLambdaFunctionUrlCorsOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsOutputReference",
+		"@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -230,11 +230,11 @@ func NewDataAwsLambdaFunctionUrlCorsOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewDataAwsLambdaFunctionUrlCorsOutputReference_Override(d DataAwsLambdaFunctionUrlCorsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataAwsLambdaFunctionUrlCorsOutputReference_Override(d DataAwsLambdaFunctionUrlCorsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsOutputReference",
+		"@cdktn/provider-aws.dataAwsLambdaFunctionUrl.DataAwsLambdaFunctionUrlCorsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -284,7 +284,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,11 +324,11 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -452,8 +452,8 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -465,24 +465,24 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) InterpolationAsL
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -490,7 +490,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionUrlCorsOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

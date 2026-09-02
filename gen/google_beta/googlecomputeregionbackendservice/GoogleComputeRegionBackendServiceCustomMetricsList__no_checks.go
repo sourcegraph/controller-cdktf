@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceCustomMetricsList) validateS
 	return nil
 }
 
-func validateNewGoogleComputeRegionBackendServiceCustomMetricsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeRegionBackendServiceCustomMetricsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

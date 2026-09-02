@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDnsManagedZoneServiceDirectoryConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDnsManagedZoneServiceDirectoryConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDnsManagedZoneServiceDirectoryConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

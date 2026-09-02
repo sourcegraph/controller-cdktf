@@ -40,11 +40,11 @@ func (p *jsiiProxy_PodSpecVolumeVsphereVolumeOutputReference) validateGetStringM
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeVsphereVolumeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSpecVolumeVsphereVolumeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecVolumeVsphereVolumeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecVolumeVsphereVolumeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_PodSpecVolumeVsphereVolumeOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecVolumeVsphereVolumeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecVolumeVsphereVolumeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PodSpecVolumeVsphereVolumeOutputReference) validateSetVolumeP
 	return nil
 }
 
-func validateNewPodSpecVolumeVsphereVolumeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPodSpecVolumeVsphereVolumeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

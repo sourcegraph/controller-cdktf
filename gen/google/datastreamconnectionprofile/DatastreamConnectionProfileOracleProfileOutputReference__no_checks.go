@@ -40,11 +40,11 @@ func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) vali
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_DatastreamConnectionProfileOracleProfileOutputReference) vali
 	return nil
 }
 
-func validateNewDatastreamConnectionProfileOracleProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatastreamConnectionProfileOracleProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

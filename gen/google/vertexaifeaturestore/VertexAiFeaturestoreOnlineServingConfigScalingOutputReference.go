@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/vertexaifeaturestore/internal"
 )
 
 type VertexAiFeaturestoreOnlineServingConfigScalingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type VertexAiFeaturestoreOnlineServingConfigScalingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type VertexAiFeaturestoreOnlineServingConfigScalingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type VertexAiFeaturestoreOnlineServingConfigScalingOutputReference interface {
 
 // The jsii proxy struct for VertexAiFeaturestoreOnlineServingConfigScalingOutputReference
 type jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference
 }
 
 
-func NewVertexAiFeaturestoreOnlineServingConfigScalingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) VertexAiFeaturestoreOnlineServingConfigScalingOutputReference {
+func NewVertexAiFeaturestoreOnlineServingConfigScalingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) VertexAiFeaturestoreOnlineServingConfigScalingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewVertexAiFeaturestoreOnlineServingConfigScalingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewVertexAiFeaturestoreOnlineServingConfigScalingOutputReference(terraformR
 	j := jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScalingOutputReference",
+		"@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewVertexAiFeaturestoreOnlineServingConfigScalingOutputReference(terraformR
 	return &j
 }
 
-func NewVertexAiFeaturestoreOnlineServingConfigScalingOutputReference_Override(v VertexAiFeaturestoreOnlineServingConfigScalingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewVertexAiFeaturestoreOnlineServingConfigScalingOutputReference_Override(v VertexAiFeaturestoreOnlineServingConfigScalingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScalingOutputReference",
+		"@cdktn/provider-google.vertexAiFeaturestore.VertexAiFeaturestoreOnlineServingConfigScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		v,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference
 	)
 }
 
-func (j *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := v.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -454,8 +454,8 @@ func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
@@ -467,24 +467,24 @@ func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := v.validateInterpolationForAttributeParameters(property); err != nil {
+func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := v.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		v,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := v.validateResolveParameters(_context); err != nil {
+func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := v.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (v *jsiiProxy_VertexAiFeaturestoreOnlineServingConfigScalingOutputReference
 	_jsii_.Invoke(
 		v,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

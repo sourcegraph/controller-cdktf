@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputesnapshot/internal"
 )
 
 type GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -47,15 +47,15 @@ type GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,16 +71,16 @@ type GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKmsKeySelfLink()
 	ResetKmsKeyServiceAccount()
 	ResetRawKey()
 	ResetRsaEncryptedKey()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -90,7 +90,7 @@ type GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference interface {
 
 // The jsii proxy struct for GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference
 type jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) ComplexObjectIndex() interface{} {
@@ -243,8 +243,8 @@ func (j *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -254,7 +254,7 @@ func (j *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) Te
 }
 
 
-func NewGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference {
+func NewGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeSnapshotSnapshotEncryptionKeyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -263,7 +263,7 @@ func NewGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference(terraformResou
 	j := jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference",
+		"@cdktn/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -271,11 +271,11 @@ func NewGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference(terraformResou
 	return &j
 }
 
-func NewGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference_Override(g GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeSnapshotSnapshotEncryptionKeyOutputReference_Override(g GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference",
+		"@cdktn/provider-google-beta.googleComputeSnapshot.GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -369,7 +369,7 @@ func (j *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -409,11 +409,11 @@ func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -537,8 +537,8 @@ func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) Ge
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -550,16 +550,16 @@ func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) In
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -598,8 +598,8 @@ func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) Re
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -607,7 +607,7 @@ func (g *jsiiProxy_GoogleComputeSnapshotSnapshotEncryptionKeyOutputReference) Re
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeresizerequest/internal"
 )
 
 type GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,7 +25,7 @@ type GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputRefer
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Dimensions() cdktf.StringMap
+	Dimensions() cdktn.StringMap
 	// Experimental.
 	Fqn() *string
 	FutureLimit() *float64
@@ -40,15 +40,15 @@ type GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputRefer
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputRefer
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputRefer
 
 // The jsii proxy struct for GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference
 type jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) ComplexObjectIndex() interface{} {
@@ -112,8 +112,8 @@ func (j *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) Dimensions() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) Dimensions() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"dimensions",
@@ -202,8 +202,8 @@ func (j *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaI
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -213,7 +213,7 @@ func (j *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaI
 }
 
 
-func NewGoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference {
+func NewGoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -222,7 +222,7 @@ func NewGoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputRe
 	j := jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeResizeRequest.GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference",
+		"@cdktn/provider-google-beta.googleComputeResizeRequest.GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -230,11 +230,11 @@ func NewGoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputRe
 	return &j
 }
 
-func NewGoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference_Override(g GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference_Override(g GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeResizeRequest.GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference",
+		"@cdktn/provider-google-beta.googleComputeResizeRequest.GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -284,7 +284,7 @@ func (j *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaI
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -324,11 +324,11 @@ func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaI
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -452,8 +452,8 @@ func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaI
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -465,24 +465,24 @@ func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaI
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaInfoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -490,7 +490,7 @@ func (g *jsiiProxy_GoogleComputeResizeRequestStatusErrorErrorsErrorDetailsQuotaI
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigTrialConfigList) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigTrialConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigTrialConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigTrialConfigList) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigTrialConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigTrialConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleStorageControlFolderIntelligenceConfigTrialConfigList) 
 	return nil
 }
 
-func validateNewGoogleStorageControlFolderIntelligenceConfigTrialConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleStorageControlFolderIntelligenceConfigTrialConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

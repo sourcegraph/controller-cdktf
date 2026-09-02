@@ -40,11 +40,11 @@ func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference)
 	return nil
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAssuredWorkloadsWorkloadSaaEnrollmentResponseOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

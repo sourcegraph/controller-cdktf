@@ -56,6 +56,10 @@ func (p *jsiiProxy_PubsubLiteTopic) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (p *jsiiProxy_PubsubLiteTopic) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PubsubLiteTopic) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -88,6 +92,10 @@ func (p *jsiiProxy_PubsubLiteTopic) validatePutTimeoutsParameters(value *PubsubL
 	return nil
 }
 
+func (p *jsiiProxy_PubsubLiteTopic) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validatePubsubLiteTopic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -116,7 +124,7 @@ func (j *jsiiProxy_PubsubLiteTopic) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_PubsubLiteTopic) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PubsubLiteTopic) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

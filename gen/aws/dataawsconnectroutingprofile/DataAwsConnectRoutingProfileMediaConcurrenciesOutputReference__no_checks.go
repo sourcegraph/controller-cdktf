@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsConnectRoutingProfileMediaConcurrenciesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsConnectRoutingProfileMediaConcurrenciesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsConnectRoutingProfileMediaConcurrenciesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (r *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsOutputRefe
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Route53RecoverycontrolconfigClusterClusterEndpointsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRoute53RecoverycontrolconfigClusterClusterEndpointsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRoute53RecoverycontrolconfigClusterClusterEndpointsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

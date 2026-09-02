@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimit
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMonitoringAlertPolicyAlertStrategyNotificationRateLimitOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

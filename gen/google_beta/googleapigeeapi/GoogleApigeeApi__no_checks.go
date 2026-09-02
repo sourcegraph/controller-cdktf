@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleApigeeApi) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApigeeApi) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApigeeApi) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleApigeeApi) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (g *jsiiProxy_GoogleApigeeApi) validatePutTimeoutsParameters(value *GoogleApigeeApiTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApigeeApi) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleApigeeApi) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeApi) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleApigeeApi) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentGroupConfiguredAvailabilit
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupConfiguredAvailabilit
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupConfiguredAvailabilit
 	return nil
 }
 
-func validateNewGoogleComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeInterconnectAttachmentGroupConfiguredAvailabilitySlaIntendedSlaBlockersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

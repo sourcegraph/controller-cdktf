@@ -40,11 +40,11 @@ func (g *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateGetStrin
 	return nil
 }
 
-func (g *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlueClassifierGrokClassifierOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGlueClassifierGrokClassifierOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGlueClassifierGrokClassifierOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

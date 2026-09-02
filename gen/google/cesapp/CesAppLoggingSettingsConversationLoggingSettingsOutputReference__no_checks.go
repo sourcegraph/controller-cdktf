@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReferen
 	return nil
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppLoggingSettingsConversationLoggingSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesAppLoggingSettingsConversationLoggingSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

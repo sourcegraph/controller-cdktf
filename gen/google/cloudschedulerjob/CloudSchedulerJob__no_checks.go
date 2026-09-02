@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudSchedulerJob) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (c *jsiiProxy_CloudSchedulerJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudSchedulerJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (c *jsiiProxy_CloudSchedulerJob) validatePutRetryConfigParameters(value *Cl
 }
 
 func (c *jsiiProxy_CloudSchedulerJob) validatePutTimeoutsParameters(value *CloudSchedulerJobTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudSchedulerJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_CloudSchedulerJob) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_CloudSchedulerJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudSchedulerJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

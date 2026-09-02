@@ -40,11 +40,11 @@ func (m *jsiiProxy_MonitorV2SchedulingScheduledOutputReference) validateGetStrin
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2SchedulingScheduledOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2SchedulingScheduledOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2SchedulingScheduledOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2SchedulingScheduledOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_MonitorV2SchedulingScheduledOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2SchedulingScheduledOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2SchedulingScheduledOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_MonitorV2SchedulingScheduledOutputReference) validateSetTimez
 	return nil
 }
 
-func validateNewMonitorV2SchedulingScheduledOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitorV2SchedulingScheduledOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

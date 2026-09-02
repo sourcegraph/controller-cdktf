@@ -40,11 +40,11 @@ func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GameliftFleetEc2InboundPermissionOutputReference) validateSet
 	return nil
 }
 
-func validateNewGameliftFleetEc2InboundPermissionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGameliftFleetEc2InboundPermissionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

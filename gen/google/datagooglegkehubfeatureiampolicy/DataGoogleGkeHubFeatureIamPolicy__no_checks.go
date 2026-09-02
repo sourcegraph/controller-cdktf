@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleGkeHubFeatureIamPolicy) validateOverrideLogicalIdPa
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleGkeHubFeatureIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleGkeHubFeatureIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleGkeHubFeatureIamPolicy) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleGkeHubFeatureIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleGkeHubFeatureIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVpcAccessOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudRunV2ServiceTemplateVpcAccessOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudRunV2ServiceTemplateVpcAccessOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

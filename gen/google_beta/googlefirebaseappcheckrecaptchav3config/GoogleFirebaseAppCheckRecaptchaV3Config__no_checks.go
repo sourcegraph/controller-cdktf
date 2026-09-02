@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaV3Config) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaV3Config) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaV3Config) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaV3Config) validateOverrideLogi
 }
 
 func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaV3Config) validatePutTimeoutsParameters(value *GoogleFirebaseAppCheckRecaptchaV3ConfigTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleFirebaseAppCheckRecaptchaV3Config) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaV3Config) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaV3Config) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleFirebaseAppCheckRecaptchaV3Config) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

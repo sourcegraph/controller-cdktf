@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/alertroute/internal"
 )
 
 type AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,14 +64,14 @@ type AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetLiteral()
 	ResetReference()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference inter
 
 // The jsii proxy struct for AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference
 type jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) ComplexObjectIndex() interface{} {
@@ -184,8 +184,8 @@ func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputR
 	return returns
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputR
 }
 
 
-func NewAlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference {
+func NewAlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewAlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference(te
 	j := jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertRoute.AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference",
+		"@cdktn/provider-incident.alertRoute.AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewAlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference(te
 	return &j
 }
 
-func NewAlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference_Override(a AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewAlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference_Override(a AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.alertRoute.AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference",
+		"@cdktn/provider-incident.alertRoute.AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		a,
 	)
@@ -288,7 +288,7 @@ func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputR
 	)
 }
 
-func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -328,11 +328,11 @@ func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputR
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -456,8 +456,8 @@ func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputR
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -469,16 +469,16 @@ func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputR
 	return returns
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputR
 	)
 }
 
-func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (a *jsiiProxy_AlertRouteChannelConfigMsTeamsTargetsBindingArrayValueOutputR
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

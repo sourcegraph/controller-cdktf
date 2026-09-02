@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleRedisInstanceMaintenanceScheduleList) validateGetParame
 	return nil
 }
 
-func (g *jsiiProxy_GoogleRedisInstanceMaintenanceScheduleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleRedisInstanceMaintenanceScheduleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenanceScheduleList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_GoogleRedisInstanceMaintenanceScheduleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleRedisInstanceMaintenanceScheduleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleRedisInstanceMaintenanceScheduleList) validateSetWrapsS
 	return nil
 }
 
-func validateNewGoogleRedisInstanceMaintenanceScheduleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleRedisInstanceMaintenanceScheduleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

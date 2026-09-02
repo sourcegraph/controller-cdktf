@@ -12,7 +12,7 @@ func (b *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) validateGetParameters(in
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BiglakeIcebergTableSchemaFieldsList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewBiglakeIcebergTableSchemaFieldsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBiglakeIcebergTableSchemaFieldsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

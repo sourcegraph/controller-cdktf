@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (p *jsiiProxy_PollerHttpOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (p *jsiiProxy_PollerHttpOutputReference) validateGetStringMapAttributeParam
 	return nil
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (p *jsiiProxy_PollerHttpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) validatePutRequestParameters(value
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PollerHttpRequest:
 		value := value.(*[]*PollerHttpRequest)
@@ -114,7 +114,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) validatePutRequestParameters(value
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PollerHttpRequest; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PollerHttpRequest; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -126,7 +126,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) validatePutRuleParameters(value in
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PollerHttpRule:
 		value := value.(*[]*PollerHttpRule)
@@ -145,7 +145,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) validatePutRuleParameters(value in
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PollerHttpRule; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PollerHttpRule; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -168,7 +168,7 @@ func (p *jsiiProxy_PollerHttpOutputReference) validatePutTimestampParameters(val
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*PollerHttpTimestamp:
 		value := value.(*[]*PollerHttpTimestamp)
@@ -187,16 +187,16 @@ func (p *jsiiProxy_PollerHttpOutputReference) validatePutTimestampParameters(val
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*PollerHttpTimestamp; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*PollerHttpTimestamp; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (p *jsiiProxy_PollerHttpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (p *jsiiProxy_PollerHttpOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -323,7 +323,7 @@ func (j *jsiiProxy_PollerHttpOutputReference) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_PollerHttpOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerHttpOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -331,7 +331,7 @@ func (j *jsiiProxy_PollerHttpOutputReference) validateSetTerraformResourceParame
 	return nil
 }
 
-func validateNewPollerHttpOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPollerHttpOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

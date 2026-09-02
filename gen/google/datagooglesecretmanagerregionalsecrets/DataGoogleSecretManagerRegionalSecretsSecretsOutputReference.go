@@ -4,13 +4,13 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglesecretmanagerregionalsecrets/internal"
 )
 
 type DataGoogleSecretManagerRegionalSecretsSecretsOutputReference interface {
-	cdktf.ComplexObject
-	Annotations() cdktf.StringMap
+	cdktn.ComplexObject
+	Annotations() cdktn.StringMap
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -28,40 +28,40 @@ type DataGoogleSecretManagerRegionalSecretsSecretsOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	CustomerManagedEncryption() DataGoogleSecretManagerRegionalSecretsSecretsCustomerManagedEncryptionList
-	DeletionProtection() cdktf.IResolvable
-	EffectiveAnnotations() cdktf.StringMap
-	EffectiveLabels() cdktf.StringMap
+	DeletionProtection() cdktn.IResolvable
+	EffectiveAnnotations() cdktn.StringMap
+	EffectiveLabels() cdktn.StringMap
 	ExpireTime() *string
 	// Experimental.
 	Fqn() *string
 	InternalValue() *DataGoogleSecretManagerRegionalSecretsSecrets
 	SetInternalValue(val *DataGoogleSecretManagerRegionalSecretsSecrets)
-	Labels() cdktf.StringMap
+	Labels() cdktn.StringMap
 	Location() *string
 	Name() *string
 	Project() *string
 	Rotation() DataGoogleSecretManagerRegionalSecretsSecretsRotationList
 	SecretId() *string
-	Tags() cdktf.StringMap
+	Tags() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
-	TerraformLabels() cdktf.StringMap
+	TerraformLabels() cdktn.StringMap
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Topics() DataGoogleSecretManagerRegionalSecretsSecretsTopicsList
 	Ttl() *string
-	VersionAliases() cdktf.StringMap
+	VersionAliases() cdktn.StringMap
 	VersionDestroyTtl() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -77,12 +77,12 @@ type DataGoogleSecretManagerRegionalSecretsSecretsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,11 +92,11 @@ type DataGoogleSecretManagerRegionalSecretsSecretsOutputReference interface {
 
 // The jsii proxy struct for DataGoogleSecretManagerRegionalSecretsSecretsOutputReference
 type jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) Annotations() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) Annotations() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"annotations",
@@ -155,8 +155,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) DeletionProtection() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) DeletionProtection() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"deletionProtection",
@@ -165,8 +165,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) EffectiveAnnotations() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) EffectiveAnnotations() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"effectiveAnnotations",
@@ -175,8 +175,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) EffectiveLabels() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) EffectiveLabels() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"effectiveLabels",
@@ -215,8 +215,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) Labels() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) Labels() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"labels",
@@ -275,8 +275,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) Tags() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) Tags() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"tags",
@@ -295,8 +295,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) TerraformLabels() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) TerraformLabels() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"terraformLabels",
@@ -305,8 +305,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -335,8 +335,8 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) VersionAliases() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) VersionAliases() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"versionAliases",
@@ -356,7 +356,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 }
 
 
-func NewDataGoogleSecretManagerRegionalSecretsSecretsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleSecretManagerRegionalSecretsSecretsOutputReference {
+func NewDataGoogleSecretManagerRegionalSecretsSecretsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleSecretManagerRegionalSecretsSecretsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleSecretManagerRegionalSecretsSecretsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -365,7 +365,7 @@ func NewDataGoogleSecretManagerRegionalSecretsSecretsOutputReference(terraformRe
 	j := jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsOutputReference",
+		"@cdktn/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -373,11 +373,11 @@ func NewDataGoogleSecretManagerRegionalSecretsSecretsOutputReference(terraformRe
 	return &j
 }
 
-func NewDataGoogleSecretManagerRegionalSecretsSecretsOutputReference_Override(d DataGoogleSecretManagerRegionalSecretsSecretsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleSecretManagerRegionalSecretsSecretsOutputReference_Override(d DataGoogleSecretManagerRegionalSecretsSecretsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsOutputReference",
+		"@cdktn/provider-google.dataGoogleSecretManagerRegionalSecrets.DataGoogleSecretManagerRegionalSecretsSecretsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -427,7 +427,7 @@ func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	)
 }
 
-func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,11 +467,11 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -595,8 +595,8 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -608,24 +608,24 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -633,7 +633,7 @@ func (d *jsiiProxy_DataGoogleSecretManagerRegionalSecretsSecretsOutputReference)
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

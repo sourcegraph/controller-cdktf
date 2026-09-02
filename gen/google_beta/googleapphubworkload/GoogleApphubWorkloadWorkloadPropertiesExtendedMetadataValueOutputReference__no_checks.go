@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesExtendedMetadataValueOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesExtendedMetadataValueOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleApphubWorkloadWorkloadPropertiesExtendedMetadataValueOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

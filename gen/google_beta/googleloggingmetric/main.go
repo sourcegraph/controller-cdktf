@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetric",
 		reflect.TypeOf((*GoogleLoggingMetric)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labelExtractors", GoGetter: "LabelExtractors"},
 			_jsii_.MemberProperty{JsiiProperty: "labelExtractorsInput", GoGetter: "LabelExtractorsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metricDescriptor", GoGetter: "MetricDescriptor"},
 			_jsii_.MemberProperty{JsiiProperty: "metricDescriptorInput", GoGetter: "MetricDescriptorInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -65,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putMetricDescriptor", GoMethod: "PutMetricDescriptor"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBucketName", GoMethod: "ResetBucketName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBucketOptions", GoMethod: "ResetBucketOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -89,23 +91,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "valueExtractor", GoGetter: "ValueExtractor"},
 			_jsii_.MemberProperty{JsiiProperty: "valueExtractorInput", GoGetter: "ValueExtractorInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleLoggingMetric{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptions",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptions",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBuckets",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBuckets",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsExplicitBuckets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bounds", GoGetter: "Bounds"},
@@ -134,16 +137,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleLoggingMetricBucketOptionsExplicitBucketsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBuckets",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBuckets",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsExponentialBuckets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,16 +179,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleLoggingMetricBucketOptionsExponentialBucketsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBuckets",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBuckets",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsLinearBuckets)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -218,12 +221,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleLoggingMetricBucketOptionsLinearBucketsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsOutputReference",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricBucketOptionsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricBucketOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -262,24 +265,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleLoggingMetricBucketOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricConfig",
 		reflect.TypeOf((*GoogleLoggingMetricConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptor",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptor",
 		reflect.TypeOf((*GoogleLoggingMetricMetricDescriptor)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabels",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabels",
 		reflect.TypeOf((*GoogleLoggingMetricMetricDescriptorLabels)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsList",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsList",
 		reflect.TypeOf((*GoogleLoggingMetricMetricDescriptorLabelsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -296,12 +299,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsOutputReference",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorLabelsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricMetricDescriptorLabelsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -336,12 +339,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleLoggingMetricMetricDescriptorLabelsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorOutputReference",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricMetricDescriptorOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricMetricDescriptorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -382,16 +385,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleLoggingMetricMetricDescriptorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeouts",
 		reflect.TypeOf((*GoogleLoggingMetricTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeoutsOutputReference",
+		"@cdktn/provider-google-beta.googleLoggingMetric.GoogleLoggingMetricTimeoutsOutputReference",
 		reflect.TypeOf((*GoogleLoggingMetricTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -427,7 +430,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleLoggingMetricTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

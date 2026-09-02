@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleWatchlistEntityPopulationMechanismOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleWatchlistEntityPopulationMechanismOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleWatchlistEntityPopulationMechanismOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

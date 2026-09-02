@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleHealthcareDatasetIamPolicy) validateOverrideLogical
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleHealthcareDatasetIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleHealthcareDatasetIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleHealthcareDatasetIamPolicy) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleHealthcareDatasetIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleHealthcareDatasetIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

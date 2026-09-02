@@ -40,11 +40,11 @@ func (a *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateGet
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AmplifyDomainAssociationSubDomainOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAmplifyDomainAssociationSubDomainOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAmplifyDomainAssociationSubDomainOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

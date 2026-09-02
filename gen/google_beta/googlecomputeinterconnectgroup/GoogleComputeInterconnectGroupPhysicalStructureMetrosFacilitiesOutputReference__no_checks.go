@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFaciliti
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFaciliti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeInterconnectGroupPhysicalStructureMetrosFacilitiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

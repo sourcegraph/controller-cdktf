@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaims",
+		"@cdktn/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaims",
 		reflect.TypeOf((*DataOktaAuthServerClaims)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -50,19 +51,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaAuthServerClaims{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaims",
+		"@cdktn/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaims",
 		reflect.TypeOf((*DataOktaAuthServerClaimsClaims)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsList",
+		"@cdktn/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsList",
 		reflect.TypeOf((*DataOktaAuthServerClaimsClaimsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -78,12 +80,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaAuthServerClaimsClaimsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsOutputReference",
+		"@cdktn/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsClaimsOutputReference",
 		reflect.TypeOf((*DataOktaAuthServerClaimsClaimsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alwaysIncludeInToken", GoGetter: "AlwaysIncludeInToken"},
@@ -118,12 +120,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataOktaAuthServerClaimsClaimsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsConfig",
+		"@cdktn/provider-okta.dataOktaAuthServerClaims.DataOktaAuthServerClaimsConfig",
 		reflect.TypeOf((*DataOktaAuthServerClaimsConfig)(nil)).Elem(),
 	)
 }

@@ -40,11 +40,11 @@ func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) val
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_FirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReference) val
 	return nil
 }
 
-func validateNewFirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewFirebaseAppCheckRecaptchaV3ConfigTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

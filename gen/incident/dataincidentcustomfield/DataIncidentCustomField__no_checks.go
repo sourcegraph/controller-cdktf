@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataIncidentCustomField) validateOverrideLogicalIdParameters(
 	return nil
 }
 
+func (d *jsiiProxy_DataIncidentCustomField) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataIncidentCustomField_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -72,7 +76,7 @@ func (j *jsiiProxy_DataIncidentCustomField) validateSetCountParameters(val inter
 	return nil
 }
 
-func (j *jsiiProxy_DataIncidentCustomField) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataIncidentCustomField) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

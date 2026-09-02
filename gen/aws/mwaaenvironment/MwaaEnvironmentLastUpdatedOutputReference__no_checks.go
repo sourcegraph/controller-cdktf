@@ -40,11 +40,11 @@ func (m *jsiiProxy_MwaaEnvironmentLastUpdatedOutputReference) validateGetStringM
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLastUpdatedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwaaEnvironmentLastUpdatedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLastUpdatedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwaaEnvironmentLastUpdatedOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_MwaaEnvironmentLastUpdatedOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLastUpdatedOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MwaaEnvironmentLastUpdatedOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMwaaEnvironmentLastUpdatedOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMwaaEnvironmentLastUpdatedOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

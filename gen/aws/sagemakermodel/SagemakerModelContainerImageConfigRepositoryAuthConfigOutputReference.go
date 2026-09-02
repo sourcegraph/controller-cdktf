@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/sagemakermodel/internal"
 )
 
 type SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference inter
 
 // The jsii proxy struct for SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference
 type jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputR
 }
 
 
-func NewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference {
+func NewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference(te
 	j := jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference(te
 	return &j
 }
 
-func NewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference_Override(s SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference_Override(s SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputR
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -420,8 +420,8 @@ func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputR
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -433,24 +433,24 @@ func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputR
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (s *jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputR
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

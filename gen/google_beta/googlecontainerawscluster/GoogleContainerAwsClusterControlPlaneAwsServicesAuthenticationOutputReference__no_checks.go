@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticatio
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticatio
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerAwsClusterControlPlaneAwsServicesAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleIapTunnelDestGroupIamBindingConditionOutputReference) v
 	return nil
 }
 
-func validateNewGoogleIapTunnelDestGroupIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIapTunnelDestGroupIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509OutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509OutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509OutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509OutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509OutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509OutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509OutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509OutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509OutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleIamWorkloadIdentityPoolProviderX509OutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIamWorkloadIdentityPoolProviderX509OutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

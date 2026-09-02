@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTpuV2QueuedResourceTpuNodeSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleTpuV2QueuedResourceTpuNodeSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleTpuV2QueuedResourceTpuNodeSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

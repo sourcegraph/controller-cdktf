@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsJavascriptUdfOutputRefe
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsJavascriptUdfOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsJavascriptUdfOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsJavascriptUdfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsJavascriptUdfOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsJavascriptUdfOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsJavascriptUdfOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsJavascriptUdfOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGooglePubsubTopicMessageTransformsJavascriptUdfOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGooglePubsubTopicMessageTransformsJavascriptUdfOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

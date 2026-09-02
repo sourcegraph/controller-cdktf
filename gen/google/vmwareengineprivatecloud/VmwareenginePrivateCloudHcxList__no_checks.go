@@ -12,7 +12,7 @@ func (v *jsiiProxy_VmwareenginePrivateCloudHcxList) validateGetParameters(index 
 	return nil
 }
 
-func (v *jsiiProxy_VmwareenginePrivateCloudHcxList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VmwareenginePrivateCloudHcxList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_VmwareenginePrivateCloudHcxList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_VmwareenginePrivateCloudHcxList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VmwareenginePrivateCloudHcxList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_VmwareenginePrivateCloudHcxList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewVmwareenginePrivateCloudHcxListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewVmwareenginePrivateCloudHcxListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

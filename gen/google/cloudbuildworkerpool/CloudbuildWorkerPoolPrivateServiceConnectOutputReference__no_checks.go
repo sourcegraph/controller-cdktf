@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudbuildWorkerPoolPrivateServiceConnectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudbuildWorkerPoolPrivateServiceConnectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudbuildWorkerPoolPrivateServiceConnectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validatePutWorke
 	return nil
 }
 
-func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -140,11 +140,11 @@ func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocClusterClusterConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataprocClusterClusterConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocClusterClusterConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

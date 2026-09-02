@@ -4,13 +4,13 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computereservation/internal"
 )
 
 type ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference interface {
-	cdktf.ComplexObject
-	CanReschedule() cdktf.IResolvable
+	cdktn.ComplexObject
+	CanReschedule() cdktn.IResolvable
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -31,7 +31,7 @@ type ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintena
 	InternalValue() *ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance
 	SetInternalValue(val *ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenance)
 	LatestWindowStartTime() *string
-	MaintenanceOnShutdown() cdktf.IResolvable
+	MaintenanceOnShutdown() cdktn.IResolvable
 	MaintenanceReasons() *[]*string
 	MaintenanceStatus() *string
 	// Experimental.
@@ -39,9 +39,9 @@ type ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintena
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	WindowEndTime() *string
 	WindowStartTime() *string
@@ -50,7 +50,7 @@ type ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintena
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintena
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,11 +81,11 @@ type ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintena
 
 // The jsii proxy struct for ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference
 type jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
-func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) CanReschedule() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) CanReschedule() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"canReschedule",
@@ -154,8 +154,8 @@ func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomin
 	return returns
 }
 
-func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) MaintenanceOnShutdown() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) MaintenanceOnShutdown() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"maintenanceOnShutdown",
@@ -194,8 +194,8 @@ func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomin
 	return returns
 }
 
-func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -235,7 +235,7 @@ func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomin
 }
 
 
-func NewComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference {
+func NewComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -244,7 +244,7 @@ func NewComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaint
 	j := jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference",
+		"@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -252,11 +252,11 @@ func NewComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaint
 	return &j
 }
 
-func NewComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference_Override(c ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference_Override(c ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference",
+		"@cdktn/provider-google.computeReservation.ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -306,7 +306,7 @@ func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomin
 	)
 }
 
-func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,11 +346,11 @@ func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomin
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -474,8 +474,8 @@ func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomin
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -487,24 +487,24 @@ func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomin
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomingGroupMaintenanceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -512,7 +512,7 @@ func (c *jsiiProxy_ComputeReservationResourceStatusReservationMaintenanceUpcomin
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

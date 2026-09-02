@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudIdentityGroupMembershipRolesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudIdentityGroupMembershipRolesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCloudIdentityGroupMembershipRolesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

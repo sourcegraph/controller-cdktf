@@ -12,7 +12,7 @@ func (a *jsiiProxy_AcmCertificateRenewalSummaryList) validateGetParameters(index
 	return nil
 }
 
-func (a *jsiiProxy_AcmCertificateRenewalSummaryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AcmCertificateRenewalSummaryList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_AcmCertificateRenewalSummaryList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_AcmCertificateRenewalSummaryList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AcmCertificateRenewalSummaryList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_AcmCertificateRenewalSummaryList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewAcmCertificateRenewalSummaryListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAcmCertificateRenewalSummaryListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

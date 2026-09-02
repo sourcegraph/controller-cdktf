@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggreg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggreg
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleMonitoringAlertPolicyConditionsConditionThresholdAggregationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

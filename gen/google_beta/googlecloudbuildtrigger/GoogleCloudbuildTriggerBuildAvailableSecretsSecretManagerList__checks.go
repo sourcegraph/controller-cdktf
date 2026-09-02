@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (g *jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList
 
 func (j *jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleCloudbuildTriggerBuildAvailableSecretsSecretManager:
 		val := val.(*[]*GoogleCloudbuildTriggerBuildAvailableSecretsSecretManager)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*GoogleCloudbuildTriggerBuildAvailableSecretsSecretManager; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*GoogleCloudbuildTriggerBuildAvailableSecretsSecretManager; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_GoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerList
 	return nil
 }
 
-func validateNewGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCloudbuildTriggerBuildAvailableSecretsSecretManagerListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

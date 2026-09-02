@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetType",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetType",
 		reflect.TypeOf((*ClouddeployCustomTargetType)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -51,6 +51,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -66,6 +67,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTasks", GoMethod: "PutTasks"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomActions", GoMethod: "ResetCustomActions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
@@ -91,31 +93,32 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetType{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeConfig",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeConfig",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActions",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActions",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeCustomActions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModules",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModules",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModules)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGit",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGit",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGit)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -150,16 +153,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGitOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepo)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,16 +197,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudBuildRepoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageOutputReference",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -235,12 +238,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesGoogleCloudStorageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -257,12 +260,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -304,12 +307,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeCustomActionsOutputReference",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeCustomActionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -345,24 +348,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeCustomActionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasks",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasks",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTasks)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksDeploy",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksDeploy",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTasksDeploy)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksDeployContainer",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksDeployContainer",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTasksDeployContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksDeployContainerOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksDeployContainerOutputReference",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTasksDeployContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -400,12 +403,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeTasksDeployContainerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksDeployOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksDeployOutputReference",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTasksDeployOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -436,12 +439,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeTasksDeployOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksOutputReference",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTasksOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -475,20 +478,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeTasksOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksRender",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksRender",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTasksRender)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksRenderContainer",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksRenderContainer",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTasksRenderContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksRenderContainerOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksRenderContainerOutputReference",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTasksRenderContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "args", GoGetter: "Args"},
@@ -526,12 +529,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeTasksRenderContainerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksRenderOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTasksRenderOutputReference",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTasksRenderOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -562,16 +565,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeTasksRenderOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTimeouts",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTimeouts",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTimeoutsOutputReference",
+		"@cdktn/provider-google.clouddeployCustomTargetType.ClouddeployCustomTargetTypeTimeoutsOutputReference",
 		reflect.TypeOf((*ClouddeployCustomTargetTypeTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -607,7 +610,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ClouddeployCustomTargetTypeTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

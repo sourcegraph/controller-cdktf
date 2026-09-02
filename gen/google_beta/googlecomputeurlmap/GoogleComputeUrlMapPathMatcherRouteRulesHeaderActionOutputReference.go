@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputeurlmap/internal"
 )
 
 type GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -44,15 +44,15 @@ type GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,9 +68,9 @@ type GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutRequestHeadersToAdd(value interface{})
 	PutResponseHeadersToAdd(value interface{})
 	ResetRequestHeadersToAdd()
@@ -79,7 +79,7 @@ type GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference interfa
 	ResetResponseHeadersToRemove()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference interfa
 
 // The jsii proxy struct for GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference
 type jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputRef
 }
 
 
-func NewGoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference {
+func NewGoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference(terr
 	j := jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference",
+		"@cdktn/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference(terr
 	return &j
 }
 
-func NewGoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference_Override(g GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference_Override(g GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference",
+		"@cdktn/provider-google-beta.googleComputeUrlMap.GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -336,7 +336,7 @@ func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -376,11 +376,11 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -504,8 +504,8 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -517,16 +517,16 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputRef
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleComputeUrlMapPathMatcherRouteRulesHeaderActionOutputRef
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

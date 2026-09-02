@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDiscoveryEngineControlConditionsQueryTermsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineControlConditionsQueryTermsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineControlConditionsQueryTermsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDiscoveryEngineControlConditionsQueryTermsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDiscoveryEngineControlConditionsQueryTermsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineControlConditionsQueryTermsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineControlConditionsQueryTermsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineControlConditionsQueryTermsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineControlConditionsQueryTermsOutputReferen
 	return nil
 }
 
-func validateNewGoogleDiscoveryEngineControlConditionsQueryTermsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDiscoveryEngineControlConditionsQueryTermsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

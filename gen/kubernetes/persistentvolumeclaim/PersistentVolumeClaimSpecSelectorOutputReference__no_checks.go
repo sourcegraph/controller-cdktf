@@ -40,7 +40,7 @@ func (p *jsiiProxy_PersistentVolumeClaimSpecSelectorOutputReference) validateGet
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeClaimSpecSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PersistentVolumeClaimSpecSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (p *jsiiProxy_PersistentVolumeClaimSpecSelectorOutputReference) validatePut
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeClaimSpecSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PersistentVolumeClaimSpecSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PersistentVolumeClaimSpecSelectorOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeClaimSpecSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PersistentVolumeClaimSpecSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPersistentVolumeClaimSpecSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPersistentVolumeClaimSpecSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

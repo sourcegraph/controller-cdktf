@@ -40,7 +40,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildWebhookFilterGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildWebhookFilterGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CodebuildWebhookFilterGroupOutputReference) validatePutFilter
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildWebhookFilterGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildWebhookFilterGroupOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_CodebuildWebhookFilterGroupOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildWebhookFilterGroupOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildWebhookFilterGroupOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCodebuildWebhookFilterGroupOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCodebuildWebhookFilterGroupOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

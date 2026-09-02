@@ -56,6 +56,10 @@ func (s *jsiiProxy_SplitTunnel) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_SplitTunnel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SplitTunnel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SplitTunnel) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (s *jsiiProxy_SplitTunnel) validatePutTunnelsParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SplitTunnel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SplitTunnel) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SplitTunnel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SplitTunnel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

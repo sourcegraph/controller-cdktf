@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigStreamLar
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigStreamLar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatastreamStreamSourceConfigOracleSourceConfigStreamLargeObjectsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateShieldedVmConfigOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateShieldedVmConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateShieldedVmConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateShieldedVmConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateShieldedVmConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateShieldedVmConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateShieldedVmConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateShieldedVmConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleColabRuntimeTemplateShieldedVmConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleColabRuntimeTemplateShieldedVmConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

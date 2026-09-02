@@ -12,7 +12,7 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTa
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTa
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTa
 	return nil
 }
 
-func validateNewBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBackupDrRestoreWorkloadDiskRestorePropertiesResourceManagerTagsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computepublicdelegatedprefix/internal"
 )
 
 type ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllocatablePrefixLength() *float64
 	// the index of the complex object in a list.
 	// Experimental.
@@ -28,14 +28,14 @@ type ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference interf
 	CreationStack() *[]*string
 	DelegateeProject() *string
 	Description() *string
-	EnableEnhancedIpv4Allocation() cdktf.IResolvable
+	EnableEnhancedIpv4Allocation() cdktn.IResolvable
 	// Experimental.
 	Fqn() *string
 	InternalValue() *ComputePublicDelegatedPrefixPublicDelegatedSubPrefixs
 	SetInternalValue(val *ComputePublicDelegatedPrefixPublicDelegatedSubPrefixs)
 	IpCidrRange() *string
 	Ipv6AccessType() *string
-	IsAddress() cdktf.IResolvable
+	IsAddress() cdktn.IResolvable
 	Mode() *string
 	Name() *string
 	Region() *string
@@ -45,15 +45,15 @@ type ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference interf
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,12 +69,12 @@ type ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference interf
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference interf
 
 // The jsii proxy struct for ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference
 type jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) AllocatablePrefixLength() *float64 {
@@ -147,8 +147,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) EnableEnhancedIpv4Allocation() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) EnableEnhancedIpv4Allocation() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"enableEnhancedIpv4Allocation",
@@ -197,8 +197,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) IsAddress() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) IsAddress() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"isAddress",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputRe
 	return returns
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -268,7 +268,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputRe
 }
 
 
-func NewComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference {
+func NewComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -277,7 +277,7 @@ func NewComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference(ter
 	j := jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference",
+		"@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -285,11 +285,11 @@ func NewComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference(ter
 	return &j
 }
 
-func NewComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference_Override(c ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference_Override(c ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference",
+		"@cdktn/provider-google.computePublicDelegatedPrefix.ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputRe
 	)
 }
 
-func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,11 +379,11 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -507,8 +507,8 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -520,24 +520,24 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputRe
 	return returns
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -545,7 +545,7 @@ func (c *jsiiProxy_ComputePublicDelegatedPrefixPublicDelegatedSubPrefixsOutputRe
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

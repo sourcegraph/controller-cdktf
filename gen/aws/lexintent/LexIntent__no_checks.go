@@ -56,6 +56,10 @@ func (l *jsiiProxy_LexIntent) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (l *jsiiProxy_LexIntent) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LexIntent) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (l *jsiiProxy_LexIntent) validatePutTimeoutsParameters(value *LexIntentTime
 	return nil
 }
 
+func (l *jsiiProxy_LexIntent) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateLexIntent_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -140,7 +148,7 @@ func (j *jsiiProxy_LexIntent) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LexIntent) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LexIntent) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/memorystoreinstance/internal"
 )
 
 type MemorystoreInstanceMaintenancePolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -35,9 +35,9 @@ type MemorystoreInstanceMaintenancePolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UpdateTime() *string
 	WeeklyMaintenanceWindow() MemorystoreInstanceMaintenancePolicyWeeklyMaintenanceWindowList
 	WeeklyMaintenanceWindowInput() interface{}
@@ -46,7 +46,7 @@ type MemorystoreInstanceMaintenancePolicyOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,14 +62,14 @@ type MemorystoreInstanceMaintenancePolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutWeeklyMaintenanceWindow(value interface{})
 	ResetWeeklyMaintenanceWindow()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type MemorystoreInstanceMaintenancePolicyOutputReference interface {
 
 // The jsii proxy struct for MemorystoreInstanceMaintenancePolicyOutputReference
 type jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) ComplexObjectIndex() interface{} {
@@ -152,8 +152,8 @@ func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) WeeklyMa
 }
 
 
-func NewMemorystoreInstanceMaintenancePolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) MemorystoreInstanceMaintenancePolicyOutputReference {
+func NewMemorystoreInstanceMaintenancePolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) MemorystoreInstanceMaintenancePolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewMemorystoreInstanceMaintenancePolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewMemorystoreInstanceMaintenancePolicyOutputReference(terraformResource cd
 	j := jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenancePolicyOutputReference",
+		"@cdktn/provider-google.memorystoreInstance.MemorystoreInstanceMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewMemorystoreInstanceMaintenancePolicyOutputReference(terraformResource cd
 	return &j
 }
 
-func NewMemorystoreInstanceMaintenancePolicyOutputReference_Override(m MemorystoreInstanceMaintenancePolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewMemorystoreInstanceMaintenancePolicyOutputReference_Override(m MemorystoreInstanceMaintenancePolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.memorystoreInstance.MemorystoreInstanceMaintenancePolicyOutputReference",
+		"@cdktn/provider-google.memorystoreInstance.MemorystoreInstanceMaintenancePolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		m,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,11 +304,11 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) GetAnyMa
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := m.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -432,8 +432,8 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) GetStrin
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
@@ -445,16 +445,16 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) Interpol
 	return returns
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := m.validateInterpolationForAttributeParameters(property); err != nil {
+func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := m.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		m,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -480,8 +480,8 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) ResetWee
 	)
 }
 
-func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := m.validateResolveParameters(_context); err != nil {
+func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := m.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -489,7 +489,7 @@ func (m *jsiiProxy_MemorystoreInstanceMaintenancePolicyOutputReference) Resolve(
 	_jsii_.Invoke(
 		m,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

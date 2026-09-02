@@ -40,11 +40,11 @@ func (s *jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StoragegatewayNfsFileShareNfsFileShareDefaultsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStoragegatewayNfsFileShareNfsFileShareDefaultsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStoragegatewayNfsFileShareNfsFileShareDefaultsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

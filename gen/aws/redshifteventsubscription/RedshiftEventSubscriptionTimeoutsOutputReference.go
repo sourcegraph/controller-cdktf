@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/redshifteventsubscription/internal"
 )
 
 type RedshiftEventSubscriptionTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type RedshiftEventSubscriptionTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type RedshiftEventSubscriptionTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type RedshiftEventSubscriptionTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type RedshiftEventSubscriptionTimeoutsOutputReference interface {
 
 // The jsii proxy struct for RedshiftEventSubscriptionTimeoutsOutputReference
 type jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) UpdateInput
 }
 
 
-func NewRedshiftEventSubscriptionTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) RedshiftEventSubscriptionTimeoutsOutputReference {
+func NewRedshiftEventSubscriptionTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) RedshiftEventSubscriptionTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewRedshiftEventSubscriptionTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewRedshiftEventSubscriptionTimeoutsOutputReference(terraformResource cdktf
 	j := jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference",
+		"@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewRedshiftEventSubscriptionTimeoutsOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewRedshiftEventSubscriptionTimeoutsOutputReference_Override(r RedshiftEventSubscriptionTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewRedshiftEventSubscriptionTimeoutsOutputReference_Override(r RedshiftEventSubscriptionTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference",
+		"@cdktn/provider-aws.redshiftEventSubscription.RedshiftEventSubscriptionTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -491,8 +491,8 @@ func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) GetStringMa
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -504,16 +504,16 @@ func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) Interpolati
 	return returns
 }
 
-func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) ResetUpdate
 	)
 }
 
-func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (r *jsiiProxy_RedshiftEventSubscriptionTimeoutsOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

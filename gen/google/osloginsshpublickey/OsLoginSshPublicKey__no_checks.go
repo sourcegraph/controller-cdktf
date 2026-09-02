@@ -56,6 +56,10 @@ func (o *jsiiProxy_OsLoginSshPublicKey) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (o *jsiiProxy_OsLoginSshPublicKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (o *jsiiProxy_OsLoginSshPublicKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (o *jsiiProxy_OsLoginSshPublicKey) validateOverrideLogicalIdParameters(newL
 }
 
 func (o *jsiiProxy_OsLoginSshPublicKey) validatePutTimeoutsParameters(value *OsLoginSshPublicKeyTimeouts) error {
+	return nil
+}
+
+func (o *jsiiProxy_OsLoginSshPublicKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_OsLoginSshPublicKey) validateSetKeyParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_OsLoginSshPublicKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_OsLoginSshPublicKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

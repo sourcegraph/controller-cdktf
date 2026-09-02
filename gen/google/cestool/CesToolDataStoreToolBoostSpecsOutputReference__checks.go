@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateGetStr
 	return nil
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validatePutSpe
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*CesToolDataStoreToolBoostSpecsSpec:
 		value := value.(*[]*CesToolDataStoreToolBoostSpecsSpec)
@@ -114,16 +114,16 @@ func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validatePutSpe
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*CesToolDataStoreToolBoostSpecsSpec; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*CesToolDataStoreToolBoostSpecsSpec; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (c *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -204,7 +204,7 @@ func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetDat
 
 func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *CesToolDataStoreToolBoostSpecs:
 		val := val.(*CesToolDataStoreToolBoostSpecs)
@@ -219,7 +219,7 @@ func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetInt
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *CesToolDataStoreToolBoostSpecs; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *CesToolDataStoreToolBoostSpecs; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -234,7 +234,7 @@ func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func (j *jsiiProxy_CesToolDataStoreToolBoostSpecsOutputReference) validateSetTer
 	return nil
 }
 
-func validateNewCesToolDataStoreToolBoostSpecsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesToolDataStoreToolBoostSpecsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

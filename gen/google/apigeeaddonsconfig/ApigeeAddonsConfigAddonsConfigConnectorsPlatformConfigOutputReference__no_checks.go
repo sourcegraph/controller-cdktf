@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputR
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApigeeAddonsConfigAddonsConfigConnectorsPlatformConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

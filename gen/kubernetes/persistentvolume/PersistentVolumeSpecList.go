@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/persistentvolume/internal"
 )
 
 type PersistentVolumeSpecList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type PersistentVolumeSpecList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) PersistentVolumeSpecOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type PersistentVolumeSpecList interface {
 
 // The jsii proxy struct for PersistentVolumeSpecList
 type jsiiProxy_PersistentVolumeSpecList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_PersistentVolumeSpecList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_PersistentVolumeSpecList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PersistentVolumeSpecList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_PersistentVolumeSpecList) WrapsSet() *bool {
 }
 
 
-func NewPersistentVolumeSpecList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PersistentVolumeSpecList {
+func NewPersistentVolumeSpecList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) PersistentVolumeSpecList {
 	_init_.Initialize()
 
 	if err := validateNewPersistentVolumeSpecListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewPersistentVolumeSpecList(terraformResource cdktf.IInterpolatingParent, t
 	j := jsiiProxy_PersistentVolumeSpecList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecList",
+		"@cdktn/provider-kubernetes.persistentVolume.PersistentVolumeSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewPersistentVolumeSpecList(terraformResource cdktf.IInterpolatingParent, t
 	return &j
 }
 
-func NewPersistentVolumeSpecList_Override(p PersistentVolumeSpecList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewPersistentVolumeSpecList_Override(p PersistentVolumeSpecList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.persistentVolume.PersistentVolumeSpecList",
+		"@cdktn/provider-kubernetes.persistentVolume.PersistentVolumeSpecList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		p,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_PersistentVolumeSpecList)SetTerraformAttribute(val *string) {
 	)
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PersistentVolumeSpecList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_PersistentVolumeSpecList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (p *jsiiProxy_PersistentVolumeSpecList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := p.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		p,
@@ -228,8 +231,8 @@ func (p *jsiiProxy_PersistentVolumeSpecList) Get(index *float64) PersistentVolum
 	return returns
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PersistentVolumeSpecList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (p *jsiiProxy_PersistentVolumeSpecList) Resolve(_context cdktf.IResolveCont
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

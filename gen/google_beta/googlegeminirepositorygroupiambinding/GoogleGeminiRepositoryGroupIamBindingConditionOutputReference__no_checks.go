@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamBindingConditionOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleGeminiRepositoryGroupIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamBindingConditionOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleGeminiRepositoryGroupIamBindingConditionOutputReference
 	return nil
 }
 
-func validateNewGoogleGeminiRepositoryGroupIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleGeminiRepositoryGroupIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

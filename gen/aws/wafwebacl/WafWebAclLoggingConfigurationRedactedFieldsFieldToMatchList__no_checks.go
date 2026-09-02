@@ -12,7 +12,7 @@ func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList) 
 	return nil
 }
 
-func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList) 
 	return nil
 }
 
-func (j *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WafWebAclLoggingConfigurationRedactedFieldsFieldToMatchList) 
 	return nil
 }
 
-func validateNewWafWebAclLoggingConfigurationRedactedFieldsFieldToMatchListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWafWebAclLoggingConfigurationRedactedFieldsFieldToMatchListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

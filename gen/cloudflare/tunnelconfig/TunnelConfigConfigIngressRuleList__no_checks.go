@@ -12,7 +12,7 @@ func (t *jsiiProxy_TunnelConfigConfigIngressRuleList) validateGetParameters(inde
 	return nil
 }
 
-func (t *jsiiProxy_TunnelConfigConfigIngressRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TunnelConfigConfigIngressRuleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_TunnelConfigConfigIngressRuleList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_TunnelConfigConfigIngressRuleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TunnelConfigConfigIngressRuleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_TunnelConfigConfigIngressRuleList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewTunnelConfigConfigIngressRuleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewTunnelConfigConfigIngressRuleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

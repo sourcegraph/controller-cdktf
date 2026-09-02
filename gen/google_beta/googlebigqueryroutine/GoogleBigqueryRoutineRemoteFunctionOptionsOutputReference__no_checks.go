@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleBigqueryRoutineRemoteFunctionOptionsOutputReference) va
 	return nil
 }
 
-func validateNewGoogleBigqueryRoutineRemoteFunctionOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryRoutineRemoteFunctionOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

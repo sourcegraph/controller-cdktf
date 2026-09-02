@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/bigqueryconnection/internal"
 )
 
 type BigqueryConnectionAwsAccessRoleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type BigqueryConnectionAwsAccessRoleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type BigqueryConnectionAwsAccessRoleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type BigqueryConnectionAwsAccessRoleOutputReference interface {
 
 // The jsii proxy struct for BigqueryConnectionAwsAccessRoleOutputReference
 type jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) ComplexObjectIndex() interface{} {
@@ -170,8 +170,8 @@ func (j *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -181,7 +181,7 @@ func (j *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) TerraformReso
 }
 
 
-func NewBigqueryConnectionAwsAccessRoleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BigqueryConnectionAwsAccessRoleOutputReference {
+func NewBigqueryConnectionAwsAccessRoleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BigqueryConnectionAwsAccessRoleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBigqueryConnectionAwsAccessRoleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -190,7 +190,7 @@ func NewBigqueryConnectionAwsAccessRoleOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAwsAccessRoleOutputReference",
+		"@cdktn/provider-google.bigqueryConnection.BigqueryConnectionAwsAccessRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -198,11 +198,11 @@ func NewBigqueryConnectionAwsAccessRoleOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewBigqueryConnectionAwsAccessRoleOutputReference_Override(b BigqueryConnectionAwsAccessRoleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBigqueryConnectionAwsAccessRoleOutputReference_Override(b BigqueryConnectionAwsAccessRoleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.bigqueryConnection.BigqueryConnectionAwsAccessRoleOutputReference",
+		"@cdktn/provider-google.bigqueryConnection.BigqueryConnectionAwsAccessRoleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -263,7 +263,7 @@ func (j *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -303,11 +303,11 @@ func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -431,8 +431,8 @@ func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) GetStringMapA
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -444,24 +444,24 @@ func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) Interpolation
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -469,7 +469,7 @@ func (b *jsiiProxy_BigqueryConnectionAwsAccessRoleOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

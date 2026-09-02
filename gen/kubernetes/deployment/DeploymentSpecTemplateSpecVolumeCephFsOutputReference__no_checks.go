@@ -40,7 +40,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) valida
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_DeploymentSpecTemplateSpecVolumeCephFsOutputReference) valida
 	return nil
 }
 
-func validateNewDeploymentSpecTemplateSpecVolumeCephFsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDeploymentSpecTemplateSpecVolumeCephFsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

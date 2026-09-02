@@ -40,11 +40,11 @@ func (a *jsiiProxy_AlloydbClusterContinuousBackupInfoEncryptionInfoOutputReferen
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_AlloydbClusterContinuousBackupInfoEncryptionInfoOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlloydbClusterContinuousBackupInfoEncryptionInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAlloydbClusterContinuousBackupInfoEncryptionInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewAlloydbClusterContinuousBackupInfoEncryptionInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

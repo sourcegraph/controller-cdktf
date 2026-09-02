@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList) 
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList) 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsS3ControlMultiRegionAccessPointPublicAccessBlockList) 
 	return nil
 }
 
-func validateNewDataAwsS3ControlMultiRegionAccessPointPublicAccessBlockListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsS3ControlMultiRegionAccessPointPublicAccessBlockListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

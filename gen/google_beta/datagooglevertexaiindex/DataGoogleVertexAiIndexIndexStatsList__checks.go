@@ -5,7 +5,7 @@ package datagooglevertexaiindex
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (d *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_DataGoogleVertexAiIndexIndexStatsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDataGoogleVertexAiIndexIndexStatsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleVertexAiIndexIndexStatsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

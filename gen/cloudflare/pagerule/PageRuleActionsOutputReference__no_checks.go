@@ -40,7 +40,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) validateGetStringMapAttribute
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PageRuleActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (p *jsiiProxy_PageRuleActionsOutputReference) validatePutMinifyParameters(v
 	return nil
 }
 
-func (p *jsiiProxy_PageRuleActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PageRuleActionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -204,7 +204,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -216,7 +216,7 @@ func (j *jsiiProxy_PageRuleActionsOutputReference) validateSetWafParameters(val 
 	return nil
 }
 
-func validateNewPageRuleActionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPageRuleActionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

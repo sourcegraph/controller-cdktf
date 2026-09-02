@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/pagesproject/internal"
 )
 
 type PagesProjectDeploymentConfigsProductionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AlwaysUseLatestCompatibilityDate() interface{}
 	SetAlwaysUseLatestCompatibilityDate(val interface{})
 	AlwaysUseLatestCompatibilityDateInput() interface{}
@@ -63,9 +63,9 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UsageModel() *string
 	SetUsageModel(val *string)
 	UsageModelInput() *string
@@ -74,7 +74,7 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -90,9 +90,9 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutServiceBinding(value interface{})
 	ResetAlwaysUseLatestCompatibilityDate()
 	ResetCompatibilityDate()
@@ -107,7 +107,7 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 	ResetUsageModel()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -117,7 +117,7 @@ type PagesProjectDeploymentConfigsProductionOutputReference interface {
 
 // The jsii proxy struct for PagesProjectDeploymentConfigsProductionOutputReference
 type jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) AlwaysUseLatestCompatibilityDate() interface{} {
@@ -380,8 +380,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -411,7 +411,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Usage
 }
 
 
-func NewPagesProjectDeploymentConfigsProductionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsProductionOutputReference {
+func NewPagesProjectDeploymentConfigsProductionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsProductionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPagesProjectDeploymentConfigsProductionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -420,7 +420,7 @@ func NewPagesProjectDeploymentConfigsProductionOutputReference(terraformResource
 	j := jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -428,11 +428,11 @@ func NewPagesProjectDeploymentConfigsProductionOutputReference(terraformResource
 	return &j
 }
 
-func NewPagesProjectDeploymentConfigsProductionOutputReference_Override(p PagesProjectDeploymentConfigsProductionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPagesProjectDeploymentConfigsProductionOutputReference_Override(p PagesProjectDeploymentConfigsProductionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsProductionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -581,7 +581,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -632,11 +632,11 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) GetAn
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -760,8 +760,8 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) GetSt
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -773,16 +773,16 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Inter
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -888,8 +888,8 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Reset
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -897,7 +897,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsProductionOutputReference) Resol
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

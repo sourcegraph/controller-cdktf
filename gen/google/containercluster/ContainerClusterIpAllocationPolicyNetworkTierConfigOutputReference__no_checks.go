@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerClusterIpAllocationPolicyNetworkTierConfigOutputRefe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ContainerClusterIpAllocationPolicyNetworkTierConfigOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterIpAllocationPolicyNetworkTierConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterIpAllocationPolicyNetworkTierConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterIpAllocationPolicyNetworkTierConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

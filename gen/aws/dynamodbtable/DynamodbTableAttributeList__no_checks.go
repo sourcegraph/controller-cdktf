@@ -12,7 +12,7 @@ func (d *jsiiProxy_DynamodbTableAttributeList) validateGetParameters(index *floa
 	return nil
 }
 
-func (d *jsiiProxy_DynamodbTableAttributeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DynamodbTableAttributeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DynamodbTableAttributeList) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_DynamodbTableAttributeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DynamodbTableAttributeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DynamodbTableAttributeList) validateSetWrapsSetParameters(val
 	return nil
 }
 
-func validateNewDynamodbTableAttributeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDynamodbTableAttributeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

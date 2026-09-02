@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateOverrideLogicalI
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsGlobalacceleratorAccelerator_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsGlobalacceleratorAccelerator) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

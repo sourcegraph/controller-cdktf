@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleApihubPlugin) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (g *jsiiProxy_GoogleApihubPlugin) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleApihubPlugin) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleApihubPlugin) validatePutHostingServiceParameters(value
 }
 
 func (g *jsiiProxy_GoogleApihubPlugin) validatePutTimeoutsParameters(value *GoogleApihubPluginTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleApihubPlugin) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleApihubPlugin) validateSetIdParameters(val *string) erro
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApihubPlugin) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleApihubPlugin) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

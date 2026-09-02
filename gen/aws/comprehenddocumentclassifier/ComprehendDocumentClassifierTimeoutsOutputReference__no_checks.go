@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ComprehendDocumentClassifierTimeoutsOutputReference) validate
 	return nil
 }
 
-func validateNewComprehendDocumentClassifierTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComprehendDocumentClassifierTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

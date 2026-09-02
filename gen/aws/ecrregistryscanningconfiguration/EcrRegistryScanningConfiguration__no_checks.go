@@ -56,6 +56,10 @@ func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateInterpolationForAtt
 	return nil
 }
 
+func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateOverrideLogicalIdPa
 }
 
 func (e *jsiiProxy_EcrRegistryScanningConfiguration) validatePutRuleParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_EcrRegistryScanningConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfiguration) validateSetIdParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EcrRegistryScanningConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

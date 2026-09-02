@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAncho
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAncho
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleIamWorkloadIdentityPoolProviderX509TrustStoreTrustAnchorsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

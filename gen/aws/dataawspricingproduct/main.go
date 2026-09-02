@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
+		"@cdktn/provider-aws.dataAwsPricingProduct.DataAwsPricingProduct",
 		reflect.TypeOf((*DataAwsPricingProduct)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putFilters", GoMethod: "PutFilters"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "result", GoGetter: "Result"},
@@ -53,23 +54,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsPricingProduct{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductConfig",
+		"@cdktn/provider-aws.dataAwsPricingProduct.DataAwsPricingProductConfig",
 		reflect.TypeOf((*DataAwsPricingProductConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFilters",
+		"@cdktn/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFilters",
 		reflect.TypeOf((*DataAwsPricingProductFilters)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersList",
+		"@cdktn/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersList",
 		reflect.TypeOf((*DataAwsPricingProductFiltersList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -86,12 +88,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsPricingProductFiltersList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersOutputReference",
+		"@cdktn/provider-aws.dataAwsPricingProduct.DataAwsPricingProductFiltersOutputReference",
 		reflect.TypeOf((*DataAwsPricingProductFiltersOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -122,7 +124,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsPricingProductFiltersOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

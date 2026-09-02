@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOidcTokenOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOidcTokenOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOidcTokenOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOidcTokenOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOidcTokenOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOidcTokenOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOidcTokenOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOidcTokenOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudTasksQueueHttpTargetOidcTokenOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudTasksQueueHttpTargetOidcTokenOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

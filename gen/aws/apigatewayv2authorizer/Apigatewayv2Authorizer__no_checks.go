@@ -56,6 +56,10 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) validateInterpolationForAttributePara
 	return nil
 }
 
+func (a *jsiiProxy_Apigatewayv2Authorizer) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_Apigatewayv2Authorizer) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_Apigatewayv2Authorizer) validateOverrideLogicalIdParameters(n
 }
 
 func (a *jsiiProxy_Apigatewayv2Authorizer) validatePutJwtConfigurationParameters(value *Apigatewayv2AuthorizerJwtConfiguration) error {
+	return nil
+}
+
+func (a *jsiiProxy_Apigatewayv2Authorizer) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -136,7 +144,7 @@ func (j *jsiiProxy_Apigatewayv2Authorizer) validateSetIdentitySourcesParameters(
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2Authorizer) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Apigatewayv2Authorizer) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

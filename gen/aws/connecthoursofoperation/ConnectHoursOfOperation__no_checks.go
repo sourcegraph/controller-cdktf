@@ -56,6 +56,10 @@ func (c *jsiiProxy_ConnectHoursOfOperation) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ConnectHoursOfOperation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ConnectHoursOfOperation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ConnectHoursOfOperation) validateOverrideLogicalIdParameters(
 }
 
 func (c *jsiiProxy_ConnectHoursOfOperation) validatePutConfigParameters(value interface{}) error {
+	return nil
+}
+
+func (c *jsiiProxy_ConnectHoursOfOperation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_ConnectHoursOfOperation) validateSetInstanceIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ConnectHoursOfOperation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -5,7 +5,7 @@ package biglakeicebergcatalog
 import (
 	"fmt"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (b *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -24,9 +24,9 @@ func (b *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateGetParameters(inde
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (b *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -40,7 +40,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -56,7 +56,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewBiglakeIcebergCatalogReplicasListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBiglakeIcebergCatalogReplicasListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

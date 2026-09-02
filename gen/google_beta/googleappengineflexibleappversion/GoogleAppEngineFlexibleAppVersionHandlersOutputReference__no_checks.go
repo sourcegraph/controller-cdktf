@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionHandlersOutputReference) val
 	return nil
 }
 
-func validateNewGoogleAppEngineFlexibleAppVersionHandlersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleAppEngineFlexibleAppVersionHandlersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

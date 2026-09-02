@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleNetworkConnectivityDestinationStateTimelineList) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkConnectivityDestinationStateTimelineList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkConnectivityDestinationStateTimelineList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityDestinationStateTimelineList) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkConnectivityDestinationStateTimelineList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkConnectivityDestinationStateTimelineList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleNetworkConnectivityDestinationStateTimelineList) valida
 	return nil
 }
 
-func validateNewGoogleNetworkConnectivityDestinationStateTimelineListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleNetworkConnectivityDestinationStateTimelineListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

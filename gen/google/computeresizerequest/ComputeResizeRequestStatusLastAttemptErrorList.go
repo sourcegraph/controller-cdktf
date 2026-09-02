@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeresizerequest/internal"
 )
 
 type ComputeResizeRequestStatusLastAttemptErrorList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type ComputeResizeRequestStatusLastAttemptErrorList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ComputeResizeRequestStatusLastAttemptErrorOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type ComputeResizeRequestStatusLastAttemptErrorList interface {
 
 // The jsii proxy struct for ComputeResizeRequestStatusLastAttemptErrorList
 type jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList) WrapsSet() *b
 }
 
 
-func NewComputeResizeRequestStatusLastAttemptErrorList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeResizeRequestStatusLastAttemptErrorList {
+func NewComputeResizeRequestStatusLastAttemptErrorList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeResizeRequestStatusLastAttemptErrorList {
 	_init_.Initialize()
 
 	if err := validateNewComputeResizeRequestStatusLastAttemptErrorListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewComputeResizeRequestStatusLastAttemptErrorList(terraformResource cdktf.I
 	j := jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorList",
+		"@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewComputeResizeRequestStatusLastAttemptErrorList(terraformResource cdktf.I
 	return &j
 }
 
-func NewComputeResizeRequestStatusLastAttemptErrorList_Override(c ComputeResizeRequestStatusLastAttemptErrorList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewComputeResizeRequestStatusLastAttemptErrorList_Override(c ComputeResizeRequestStatusLastAttemptErrorList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorList",
+		"@cdktn/provider-google.computeResizeRequest.ComputeResizeRequestStatusLastAttemptErrorList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList)SetWrapsSet(va
 	)
 }
 
-func (c *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (c *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := c.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		c,
@@ -205,8 +208,8 @@ func (c *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList) Get(index *fl
 	return returns
 }
 
-func (c *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (c *jsiiProxy_ComputeResizeRequestStatusLastAttemptErrorList) Resolve(_cont
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

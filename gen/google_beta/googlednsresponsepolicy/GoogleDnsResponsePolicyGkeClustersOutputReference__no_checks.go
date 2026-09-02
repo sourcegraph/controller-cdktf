@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDnsResponsePolicyGkeClustersOutputReference) validateGe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsResponsePolicyGkeClustersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDnsResponsePolicyGkeClustersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsResponsePolicyGkeClustersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDnsResponsePolicyGkeClustersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDnsResponsePolicyGkeClustersOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsResponsePolicyGkeClustersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDnsResponsePolicyGkeClustersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDnsResponsePolicyGkeClustersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDnsResponsePolicyGkeClustersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) validateGetStringMa
 	return nil
 }
 
-func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksFargateProfileSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EksFargateProfileSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEksFargateProfileSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEksFargateProfileSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

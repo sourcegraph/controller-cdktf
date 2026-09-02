@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/directoryservicedirectory/internal"
 )
 
 type DirectoryServiceDirectoryConnectSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AvailabilityZones() *[]*string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -45,9 +45,9 @@ type DirectoryServiceDirectoryConnectSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VpcId() *string
 	SetVpcId(val *string)
 	VpcIdInput() *string
@@ -56,7 +56,7 @@ type DirectoryServiceDirectoryConnectSettingsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,12 +72,12 @@ type DirectoryServiceDirectoryConnectSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -87,7 +87,7 @@ type DirectoryServiceDirectoryConnectSettingsOutputReference interface {
 
 // The jsii proxy struct for DirectoryServiceDirectoryConnectSettingsOutputReference
 type jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) AvailabilityZones() *[]*string {
@@ -230,8 +230,8 @@ func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -261,7 +261,7 @@ func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) VpcI
 }
 
 
-func NewDirectoryServiceDirectoryConnectSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DirectoryServiceDirectoryConnectSettingsOutputReference {
+func NewDirectoryServiceDirectoryConnectSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DirectoryServiceDirectoryConnectSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDirectoryServiceDirectoryConnectSettingsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -270,7 +270,7 @@ func NewDirectoryServiceDirectoryConnectSettingsOutputReference(terraformResourc
 	j := jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettingsOutputReference",
+		"@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -278,11 +278,11 @@ func NewDirectoryServiceDirectoryConnectSettingsOutputReference(terraformResourc
 	return &j
 }
 
-func NewDirectoryServiceDirectoryConnectSettingsOutputReference_Override(d DirectoryServiceDirectoryConnectSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDirectoryServiceDirectoryConnectSettingsOutputReference_Override(d DirectoryServiceDirectoryConnectSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettingsOutputReference",
+		"@cdktn/provider-aws.directoryServiceDirectory.DirectoryServiceDirectoryConnectSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -365,7 +365,7 @@ func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -416,11 +416,11 @@ func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) GetA
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -544,8 +544,8 @@ func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) GetS
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -557,24 +557,24 @@ func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) Inte
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -582,7 +582,7 @@ func (d *jsiiProxy_DirectoryServiceDirectoryConnectSettingsOutputReference) Reso
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

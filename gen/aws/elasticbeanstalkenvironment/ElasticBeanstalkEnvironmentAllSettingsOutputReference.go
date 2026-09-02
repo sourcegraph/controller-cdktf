@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/elasticbeanstalkenvironment/internal"
 )
 
 type ElasticBeanstalkEnvironmentAllSettingsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,16 +37,16 @@ type ElasticBeanstalkEnvironmentAllSettingsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Value() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type ElasticBeanstalkEnvironmentAllSettingsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type ElasticBeanstalkEnvironmentAllSettingsOutputReference interface {
 
 // The jsii proxy struct for ElasticBeanstalkEnvironmentAllSettingsOutputReference
 type jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) ComplexObjectIndex() interface{} {
@@ -170,8 +170,8 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -191,7 +191,7 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) Value(
 }
 
 
-func NewElasticBeanstalkEnvironmentAllSettingsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElasticBeanstalkEnvironmentAllSettingsOutputReference {
+func NewElasticBeanstalkEnvironmentAllSettingsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElasticBeanstalkEnvironmentAllSettingsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewElasticBeanstalkEnvironmentAllSettingsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -200,7 +200,7 @@ func NewElasticBeanstalkEnvironmentAllSettingsOutputReference(terraformResource 
 	j := jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentAllSettingsOutputReference",
+		"@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentAllSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -208,11 +208,11 @@ func NewElasticBeanstalkEnvironmentAllSettingsOutputReference(terraformResource 
 	return &j
 }
 
-func NewElasticBeanstalkEnvironmentAllSettingsOutputReference_Override(e ElasticBeanstalkEnvironmentAllSettingsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewElasticBeanstalkEnvironmentAllSettingsOutputReference_Override(e ElasticBeanstalkEnvironmentAllSettingsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentAllSettingsOutputReference",
+		"@cdktn/provider-aws.elasticBeanstalkEnvironment.ElasticBeanstalkEnvironmentAllSettingsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
@@ -262,7 +262,7 @@ func (j *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,11 +302,11 @@ func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) GetAny
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -430,8 +430,8 @@ func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) GetStr
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -443,24 +443,24 @@ func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) Interp
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -468,7 +468,7 @@ func (e *jsiiProxy_ElasticBeanstalkEnvironmentAllSettingsOutputReference) Resolv
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

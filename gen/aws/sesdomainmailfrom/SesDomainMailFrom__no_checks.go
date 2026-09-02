@@ -56,6 +56,10 @@ func (s *jsiiProxy_SesDomainMailFrom) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (s *jsiiProxy_SesDomainMailFrom) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SesDomainMailFrom) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SesDomainMailFrom) validateMoveToIdParameters(id *string) err
 }
 
 func (s *jsiiProxy_SesDomainMailFrom) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SesDomainMailFrom) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SesDomainMailFrom) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_SesDomainMailFrom) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SesDomainMailFrom) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validateGetStringM
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validatePutInfrast
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexTaskNotebookOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataplexTaskNotebookOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataplexTaskNotebookOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

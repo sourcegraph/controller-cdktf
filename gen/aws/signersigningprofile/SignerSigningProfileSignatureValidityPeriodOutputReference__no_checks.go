@@ -40,11 +40,11 @@ func (s *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) v
 	return nil
 }
 
-func (s *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_SignerSigningProfileSignatureValidityPeriodOutputReference) v
 	return nil
 }
 
-func validateNewSignerSigningProfileSignatureValidityPeriodOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSignerSigningProfileSignatureValidityPeriodOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

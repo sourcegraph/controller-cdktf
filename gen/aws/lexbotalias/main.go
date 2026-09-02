@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexBotAlias.LexBotAlias",
+		"@cdktn/provider-aws.lexBotAlias.LexBotAlias",
 		reflect.TypeOf((*LexBotAlias)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -48,6 +48,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lastUpdatedDate", GoGetter: "LastUpdatedDate"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -60,6 +61,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putConversationLogs", GoMethod: "PutConversationLogs"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetConversationLogs", GoMethod: "ResetConversationLogs"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -76,27 +78,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LexBotAlias{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConfig",
+		"@cdktn/provider-aws.lexBotAlias.LexBotAliasConfig",
 		reflect.TypeOf((*LexBotAliasConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogs",
+		"@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogs",
 		reflect.TypeOf((*LexBotAliasConversationLogs)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings",
+		"@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettings",
 		reflect.TypeOf((*LexBotAliasConversationLogsLogSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsList",
+		"@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsList",
 		reflect.TypeOf((*LexBotAliasConversationLogsLogSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -113,12 +116,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LexBotAliasConversationLogsLogSettingsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
+		"@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogsLogSettingsOutputReference",
 		reflect.TypeOf((*LexBotAliasConversationLogsLogSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -155,12 +158,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LexBotAliasConversationLogsLogSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexBotAlias.LexBotAliasConversationLogsOutputReference",
+		"@cdktn/provider-aws.lexBotAlias.LexBotAliasConversationLogsOutputReference",
 		reflect.TypeOf((*LexBotAliasConversationLogsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,16 +196,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LexBotAliasConversationLogsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeouts",
+		"@cdktn/provider-aws.lexBotAlias.LexBotAliasTimeouts",
 		reflect.TypeOf((*LexBotAliasTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.lexBotAlias.LexBotAliasTimeoutsOutputReference",
+		"@cdktn/provider-aws.lexBotAlias.LexBotAliasTimeoutsOutputReference",
 		reflect.TypeOf((*LexBotAliasTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -238,7 +241,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_LexBotAliasTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

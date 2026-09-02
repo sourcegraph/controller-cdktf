@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascan",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascan",
 		reflect.TypeOf((*DataplexDatascan)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -63,6 +63,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -82,6 +83,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putExecutionSpec", GoMethod: "PutExecutionSpec"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataDiscoverySpec", GoMethod: "ResetDataDiscoverySpec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataDocumentationSpec", GoMethod: "ResetDataDocumentationSpec"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataProfileSpec", GoMethod: "ResetDataProfileSpec"},
@@ -110,31 +112,32 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascan{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanConfig",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanConfig",
 		reflect.TypeOf((*DataplexDatascanConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanData",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanData",
 		reflect.TypeOf((*DataplexDatascanData)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpec",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpec",
 		reflect.TypeOf((*DataplexDatascanDataDiscoverySpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecBigqueryPublishingConfig",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecBigqueryPublishingConfig",
 		reflect.TypeOf((*DataplexDatascanDataDiscoverySpecBigqueryPublishingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -173,12 +176,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataDiscoverySpecBigqueryPublishingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataDiscoverySpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryPublishingConfig", GoGetter: "BigqueryPublishingConfig"},
@@ -213,20 +216,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataDiscoverySpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfig",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfig",
 		reflect.TypeOf((*DataplexDatascanDataDiscoverySpecStorageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigCsvOptions",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigCsvOptions",
 		reflect.TypeOf((*DataplexDatascanDataDiscoverySpecStorageConfigCsvOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -268,16 +271,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigCsvOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigJsonOptions",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigJsonOptions",
 		reflect.TypeOf((*DataplexDatascanDataDiscoverySpecStorageConfigJsonOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -310,12 +313,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigJsonOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDiscoverySpecStorageConfigOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataDiscoverySpecStorageConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -356,16 +359,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataDiscoverySpecStorageConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpec",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpec",
 		reflect.TypeOf((*DataplexDatascanDataDocumentationSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataDocumentationSpecOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataDocumentationSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -392,12 +395,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataDocumentationSpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -430,20 +433,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpec",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpec",
 		reflect.TypeOf((*DataplexDatascanDataProfileSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecExcludeFields",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecExcludeFields",
 		reflect.TypeOf((*DataplexDatascanDataProfileSpecExcludeFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecExcludeFieldsOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecExcludeFieldsOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataProfileSpecExcludeFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -473,16 +476,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataProfileSpecExcludeFieldsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecIncludeFields",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecIncludeFields",
 		reflect.TypeOf((*DataplexDatascanDataProfileSpecIncludeFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecIncludeFieldsOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecIncludeFieldsOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataProfileSpecIncludeFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -512,12 +515,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataProfileSpecIncludeFieldsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataProfileSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogPublishingEnabled", GoGetter: "CatalogPublishingEnabled"},
@@ -565,20 +568,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataProfileSpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecPostScanActions",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecPostScanActions",
 		reflect.TypeOf((*DataplexDatascanDataProfileSpecPostScanActions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecPostScanActionsBigqueryExport",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecPostScanActionsBigqueryExport",
 		reflect.TypeOf((*DataplexDatascanDataProfileSpecPostScanActionsBigqueryExport)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -608,12 +611,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataProfileSpecPostScanActionsBigqueryExportOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecPostScanActionsOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataProfileSpecPostScanActionsOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataProfileSpecPostScanActionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryExport", GoGetter: "BigqueryExport"},
@@ -644,16 +647,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataProfileSpecPostScanActionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpec",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpec",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "catalogPublishingEnabled", GoGetter: "CatalogPublishingEnabled"},
@@ -703,20 +706,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActions",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActions",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsBigqueryExport",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsBigqueryExport",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsBigqueryExport)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -746,20 +749,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsBigqueryExportOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReport",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReport",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsNotificationReport)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTrigger",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTrigger",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTrigger)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTriggerOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTriggerOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTriggerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -786,16 +789,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobEndTriggerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTrigger",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTrigger",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTrigger)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTriggerOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTriggerOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTriggerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -822,12 +825,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsNotificationReportJobFailureTriggerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -869,16 +872,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsNotificationReportOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipients",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipients",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipients)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipientsOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipientsOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipientsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -908,16 +911,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsNotificationReportRecipientsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTrigger",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTrigger",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTrigger)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -947,12 +950,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsNotificationReportScoreThresholdTriggerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecPostScanActionsOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecPostScanActionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bigqueryExport", GoGetter: "BigqueryExport"},
@@ -987,16 +990,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecPostScanActionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRules",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRules",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRules)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesList",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesList",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1013,16 +1016,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesNonNullExpectation",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesNonNullExpectation",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesNonNullExpectation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1049,12 +1052,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesNonNullExpectationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "attributes", GoGetter: "Attributes"},
@@ -1144,16 +1147,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRangeExpectation",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRangeExpectation",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesRangeExpectation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1192,16 +1195,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesRangeExpectationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRegexExpectation",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRegexExpectation",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesRegexExpectation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1230,16 +1233,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesRegexExpectationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRowConditionExpectation",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRowConditionExpectation",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesRowConditionExpectation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1268,16 +1271,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesRowConditionExpectationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesSetExpectation",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesSetExpectation",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesSetExpectation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesSetExpectationOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesSetExpectationOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesSetExpectationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1306,16 +1309,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesSetExpectationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesSqlAssertion",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesSqlAssertion",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesSqlAssertion)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1344,16 +1347,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesSqlAssertionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesStatisticRangeExpectation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1394,16 +1397,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesStatisticRangeExpectationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTableConditionExpectation",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTableConditionExpectation",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesTableConditionExpectation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1432,16 +1435,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesTableConditionExpectationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesTemplateReference)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1474,16 +1477,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceValues",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceValues",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesTemplateReferenceValues)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1500,12 +1503,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1536,16 +1539,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesTemplateReferenceValuesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesUniquenessExpectation",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesUniquenessExpectation",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesUniquenessExpectation)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference",
 		reflect.TypeOf((*DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1572,20 +1575,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanDataQualitySpecRulesUniquenessExpectationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentity",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentity",
 		reflect.TypeOf((*DataplexDatascanExecutionIdentity)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityDataplexServiceAgent",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityDataplexServiceAgent",
 		reflect.TypeOf((*DataplexDatascanExecutionIdentityDataplexServiceAgent)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference",
 		reflect.TypeOf((*DataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1612,12 +1615,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityOutputReference",
 		reflect.TypeOf((*DataplexDatascanExecutionIdentityOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1656,16 +1659,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanExecutionIdentityOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityServiceAccount",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityServiceAccount",
 		reflect.TypeOf((*DataplexDatascanExecutionIdentityServiceAccount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityServiceAccountOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityServiceAccountOutputReference",
 		reflect.TypeOf((*DataplexDatascanExecutionIdentityServiceAccountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1694,16 +1697,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanExecutionIdentityServiceAccountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityUserCredential",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityUserCredential",
 		reflect.TypeOf((*DataplexDatascanExecutionIdentityUserCredential)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityUserCredentialOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionIdentityUserCredentialOutputReference",
 		reflect.TypeOf((*DataplexDatascanExecutionIdentityUserCredentialOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1730,16 +1733,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanExecutionIdentityUserCredentialOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpec",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionSpec",
 		reflect.TypeOf((*DataplexDatascanExecutionSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecOutputReference",
 		reflect.TypeOf((*DataplexDatascanExecutionSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1772,20 +1775,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanExecutionSpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTrigger",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTrigger",
 		reflect.TypeOf((*DataplexDatascanExecutionSpecTrigger)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOnDemand",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOnDemand",
 		reflect.TypeOf((*DataplexDatascanExecutionSpecTriggerOnDemand)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOnDemandOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOnDemandOutputReference",
 		reflect.TypeOf((*DataplexDatascanExecutionSpecTriggerOnDemandOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1812,16 +1815,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanExecutionSpecTriggerOnDemandOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOneTime",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOneTime",
 		reflect.TypeOf((*DataplexDatascanExecutionSpecTriggerOneTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOneTimeOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOneTimeOutputReference",
 		reflect.TypeOf((*DataplexDatascanExecutionSpecTriggerOneTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1851,12 +1854,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanExecutionSpecTriggerOneTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerOutputReference",
 		reflect.TypeOf((*DataplexDatascanExecutionSpecTriggerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1895,16 +1898,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanExecutionSpecTriggerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerSchedule",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerSchedule",
 		reflect.TypeOf((*DataplexDatascanExecutionSpecTriggerSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerScheduleOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionSpecTriggerScheduleOutputReference",
 		reflect.TypeOf((*DataplexDatascanExecutionSpecTriggerScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1933,16 +1936,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanExecutionSpecTriggerScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionStatus",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionStatus",
 		reflect.TypeOf((*DataplexDatascanExecutionStatus)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionStatusList",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionStatusList",
 		reflect.TypeOf((*DataplexDatascanExecutionStatusList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1958,12 +1961,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanExecutionStatusList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanExecutionStatusOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanExecutionStatusOutputReference",
 		reflect.TypeOf((*DataplexDatascanExecutionStatusOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1992,16 +1995,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanExecutionStatusOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanTimeouts",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanTimeouts",
 		reflect.TypeOf((*DataplexDatascanTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.dataplexDatascan.DataplexDatascanTimeoutsOutputReference",
+		"@cdktn/provider-google.dataplexDatascan.DataplexDatascanTimeoutsOutputReference",
 		reflect.TypeOf((*DataplexDatascanTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -2037,7 +2040,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataplexDatascanTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

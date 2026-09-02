@@ -40,7 +40,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputR
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputR
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputR
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkServicesHttpRouteRulesActionRequestMirrorPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

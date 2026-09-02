@@ -12,7 +12,7 @@ func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasList) 
 	return nil
 }
 
-func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasList) 
 	return nil
 }
 
-func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CertificateManagerTrustConfigTrustStoresIntermediateCasList) 
 	return nil
 }
 
-func validateNewCertificateManagerTrustConfigTrustStoresIntermediateCasListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCertificateManagerTrustConfigTrustStoresIntermediateCasListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

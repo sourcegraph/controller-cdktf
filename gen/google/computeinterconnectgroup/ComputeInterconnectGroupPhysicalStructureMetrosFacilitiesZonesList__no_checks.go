@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZone
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZone
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZone
 	return nil
 }
 
-func validateNewComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeInterconnectGroupPhysicalStructureMetrosFacilitiesZonesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

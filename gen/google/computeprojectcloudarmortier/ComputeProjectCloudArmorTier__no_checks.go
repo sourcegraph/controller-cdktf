@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) validateInterpolationForAttribu
 	return nil
 }
 
+func (c *jsiiProxy_ComputeProjectCloudArmorTier) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeProjectCloudArmorTier) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeProjectCloudArmorTier) validateOverrideLogicalIdParame
 }
 
 func (c *jsiiProxy_ComputeProjectCloudArmorTier) validatePutTimeoutsParameters(value *ComputeProjectCloudArmorTierTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeProjectCloudArmorTier) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ComputeProjectCloudArmorTier) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ComputeProjectCloudArmorTier) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeProjectCloudArmorTier) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

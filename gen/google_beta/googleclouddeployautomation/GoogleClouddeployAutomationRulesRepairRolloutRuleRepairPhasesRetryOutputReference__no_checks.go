@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhases
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhases
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhases
 	return nil
 }
 
-func validateNewGoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleClouddeployAutomationRulesRepairRolloutRuleRepairPhasesRetryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

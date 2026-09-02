@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppSwa) validateInterpolationForAttributeParameters(terraform
 	return nil
 }
 
+func (a *jsiiProxy_AppSwa) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppSwa) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AppSwa) validateOverrideLogicalIdParameters(newLogicalId *str
 }
 
 func (a *jsiiProxy_AppSwa) validatePutTimeoutsParameters(value *AppSwaTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppSwa) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -152,7 +160,7 @@ func (j *jsiiProxy_AppSwa) validateSetLabelParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_AppSwa) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppSwa) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerAnalysisNoteAttestationAuthorityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerAnalysisNoteAttestationAuthorityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerAnalysisNoteAttestationAuthorityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

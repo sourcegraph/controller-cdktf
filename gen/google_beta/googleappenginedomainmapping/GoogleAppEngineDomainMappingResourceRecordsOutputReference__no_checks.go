@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAppEngineDomainMappingResourceRecordsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleAppEngineDomainMappingResourceRecordsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleAppEngineDomainMappingResourceRecordsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

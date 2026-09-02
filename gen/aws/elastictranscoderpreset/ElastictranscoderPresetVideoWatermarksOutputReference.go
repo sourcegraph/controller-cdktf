@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/elastictranscoderpreset/internal"
 )
 
 type ElastictranscoderPresetVideoWatermarksOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -58,9 +58,9 @@ type ElastictranscoderPresetVideoWatermarksOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VerticalAlign() *string
 	SetVerticalAlign(val *string)
 	VerticalAlignInput() *string
@@ -72,7 +72,7 @@ type ElastictranscoderPresetVideoWatermarksOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,9 +88,9 @@ type ElastictranscoderPresetVideoWatermarksOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetHorizontalAlign()
 	ResetHorizontalOffset()
 	ResetId()
@@ -103,7 +103,7 @@ type ElastictranscoderPresetVideoWatermarksOutputReference interface {
 	ResetVerticalOffset()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,7 +113,7 @@ type ElastictranscoderPresetVideoWatermarksOutputReference interface {
 
 // The jsii proxy struct for ElastictranscoderPresetVideoWatermarksOutputReference
 type jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) ComplexObjectIndex() interface{} {
@@ -336,8 +336,8 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) Vertic
 }
 
 
-func NewElastictranscoderPresetVideoWatermarksOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastictranscoderPresetVideoWatermarksOutputReference {
+func NewElastictranscoderPresetVideoWatermarksOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ElastictranscoderPresetVideoWatermarksOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewElastictranscoderPresetVideoWatermarksOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -396,7 +396,7 @@ func NewElastictranscoderPresetVideoWatermarksOutputReference(terraformResource 
 	j := jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference",
+		"@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -404,11 +404,11 @@ func NewElastictranscoderPresetVideoWatermarksOutputReference(terraformResource 
 	return &j
 }
 
-func NewElastictranscoderPresetVideoWatermarksOutputReference_Override(e ElastictranscoderPresetVideoWatermarksOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewElastictranscoderPresetVideoWatermarksOutputReference_Override(e ElastictranscoderPresetVideoWatermarksOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference",
+		"@cdktn/provider-aws.elastictranscoderPreset.ElastictranscoderPresetVideoWatermarksOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
@@ -546,7 +546,7 @@ func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -608,11 +608,11 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetAny
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -736,8 +736,8 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) GetStr
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -749,16 +749,16 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) Interp
 	return returns
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -845,8 +845,8 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) ResetV
 	)
 }
 
-func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -854,7 +854,7 @@ func (e *jsiiProxy_ElastictranscoderPresetVideoWatermarksOutputReference) Resolv
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

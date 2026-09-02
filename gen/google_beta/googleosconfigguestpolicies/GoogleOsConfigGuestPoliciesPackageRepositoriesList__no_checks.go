@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleOsConfigGuestPoliciesPackageRepositoriesList) validateS
 	return nil
 }
 
-func validateNewGoogleOsConfigGuestPoliciesPackageRepositoriesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleOsConfigGuestPoliciesPackageRepositoriesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesNonNullExpectationList
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesNonNullExpectationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesNonNullExpectationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesNonNullExpectationList
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesNonNullExpectationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesNonNullExpectationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleDataplexDataQualityRulesRulesNonNullExpectationList
 	return nil
 }
 
-func validateNewDataGoogleDataplexDataQualityRulesRulesNonNullExpectationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleDataplexDataQualityRulesRulesNonNullExpectationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (p *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_PubsubSubscriptionExpirationPolicyOutputReference) validateSe
 	return nil
 }
 
-func validateNewPubsubSubscriptionExpirationPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPubsubSubscriptionExpirationPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

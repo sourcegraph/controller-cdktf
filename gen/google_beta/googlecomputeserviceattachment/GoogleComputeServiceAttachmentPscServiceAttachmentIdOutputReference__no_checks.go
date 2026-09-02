@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeServiceAttachmentPscServiceAttachmentIdOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeServiceAttachmentPscServiceAttachmentIdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeServiceAttachmentPscServiceAttachmentIdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeServiceAttachmentPscServiceAttachmentIdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeServiceAttachmentPscServiceAttachmentIdOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleComputeServiceAttachmentPscServiceAttachmentIdOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeServiceAttachmentPscServiceAttachmentIdOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeServiceAttachmentPscServiceAttachmentIdOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeServiceAttachmentPscServiceAttachmentIdOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeServiceAttachmentPscServiceAttachmentIdOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

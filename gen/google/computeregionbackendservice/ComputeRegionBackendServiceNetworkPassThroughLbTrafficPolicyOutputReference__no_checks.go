@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyO
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyO
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyO
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRegionBackendServiceNetworkPassThroughLbTrafficPolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_CloudAssetFolderFeedConditionOutputReference) validateSetTitl
 	return nil
 }
 
-func validateNewCloudAssetFolderFeedConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudAssetFolderFeedConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

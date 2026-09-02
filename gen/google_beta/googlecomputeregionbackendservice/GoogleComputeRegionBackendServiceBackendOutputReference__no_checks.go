@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) vali
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -128,7 +128,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -136,7 +136,7 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceBackendOutputReference) vali
 	return nil
 }
 
-func validateNewGoogleComputeRegionBackendServiceBackendOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeRegionBackendServiceBackendOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

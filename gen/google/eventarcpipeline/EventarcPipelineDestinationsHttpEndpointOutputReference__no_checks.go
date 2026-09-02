@@ -40,11 +40,11 @@ func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) vali
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_EventarcPipelineDestinationsHttpEndpointOutputReference) vali
 	return nil
 }
 
-func validateNewEventarcPipelineDestinationsHttpEndpointOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEventarcPipelineDestinationsHttpEndpointOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

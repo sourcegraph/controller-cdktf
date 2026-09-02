@@ -12,7 +12,7 @@ func (r *jsiiProxy_Route53ZoneVpcList) validateGetParameters(index *float64) err
 	return nil
 }
 
-func (r *jsiiProxy_Route53ZoneVpcList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_Route53ZoneVpcList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_Route53ZoneVpcList) validateSetTerraformAttributeParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_Route53ZoneVpcList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Route53ZoneVpcList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_Route53ZoneVpcList) validateSetWrapsSetParameters(val *bool) 
 	return nil
 }
 
-func validateNewRoute53ZoneVpcListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRoute53ZoneVpcListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

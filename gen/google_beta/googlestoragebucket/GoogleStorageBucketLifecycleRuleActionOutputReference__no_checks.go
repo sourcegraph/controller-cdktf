@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleStorageBucketLifecycleRuleActionOutputReference) valida
 	return nil
 }
 
-func validateNewGoogleStorageBucketLifecycleRuleActionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleStorageBucketLifecycleRuleActionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

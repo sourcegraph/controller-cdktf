@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/emrserverlessapplication/internal"
 )
 
 type EmrserverlessApplicationMaximumCapacityOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type EmrserverlessApplicationMaximumCapacityOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type EmrserverlessApplicationMaximumCapacityOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDisk()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type EmrserverlessApplicationMaximumCapacityOutputReference interface {
 
 // The jsii proxy struct for EmrserverlessApplicationMaximumCapacityOutputReference
 type jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) ComplexObjectIndex() interface{} {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) Terra
 }
 
 
-func NewEmrserverlessApplicationMaximumCapacityOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationMaximumCapacityOutputReference {
+func NewEmrserverlessApplicationMaximumCapacityOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EmrserverlessApplicationMaximumCapacityOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEmrserverlessApplicationMaximumCapacityOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewEmrserverlessApplicationMaximumCapacityOutputReference(terraformResource
 	j := jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewEmrserverlessApplicationMaximumCapacityOutputReference(terraformResource
 	return &j
 }
 
-func NewEmrserverlessApplicationMaximumCapacityOutputReference_Override(e EmrserverlessApplicationMaximumCapacityOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEmrserverlessApplicationMaximumCapacityOutputReference_Override(e EmrserverlessApplicationMaximumCapacityOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
+		"@cdktn/provider-aws.emrserverlessApplication.EmrserverlessApplicationMaximumCapacityOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) GetAn
 	return returns
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -489,8 +489,8 @@ func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) GetSt
 	return returns
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -502,16 +502,16 @@ func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) Inter
 	return returns
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) Reset
 	)
 }
 
-func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (e *jsiiProxy_EmrserverlessApplicationMaximumCapacityOutputReference) Resol
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

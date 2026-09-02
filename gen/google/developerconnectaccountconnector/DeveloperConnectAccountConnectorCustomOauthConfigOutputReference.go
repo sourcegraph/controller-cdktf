@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/developerconnectaccountconnector/internal"
 )
 
 type DeveloperConnectAccountConnectorCustomOauthConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AuthUri() *string
 	SetAuthUri(val *string)
 	AuthUriInput() *string
@@ -61,9 +61,9 @@ type DeveloperConnectAccountConnectorCustomOauthConfigOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TokenUri() *string
 	SetTokenUri(val *string)
 	TokenUriInput() *string
@@ -72,7 +72,7 @@ type DeveloperConnectAccountConnectorCustomOauthConfigOutputReference interface 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -88,16 +88,16 @@ type DeveloperConnectAccountConnectorCustomOauthConfigOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutServiceDirectoryConfig(value *DeveloperConnectAccountConnectorCustomOauthConfigServiceDirectoryConfig)
 	ResetPkceDisabled()
 	ResetServiceDirectoryConfig()
 	ResetSslCaCertificate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -107,7 +107,7 @@ type DeveloperConnectAccountConnectorCustomOauthConfigOutputReference interface 
 
 // The jsii proxy struct for DeveloperConnectAccountConnectorCustomOauthConfigOutputReference
 type jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference) AuthUri() *string {
@@ -360,8 +360,8 @@ func (j *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -391,7 +391,7 @@ func (j *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputRefere
 }
 
 
-func NewDeveloperConnectAccountConnectorCustomOauthConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeveloperConnectAccountConnectorCustomOauthConfigOutputReference {
+func NewDeveloperConnectAccountConnectorCustomOauthConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DeveloperConnectAccountConnectorCustomOauthConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeveloperConnectAccountConnectorCustomOauthConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -400,7 +400,7 @@ func NewDeveloperConnectAccountConnectorCustomOauthConfigOutputReference(terrafo
 	j := jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectAccountConnector.DeveloperConnectAccountConnectorCustomOauthConfigOutputReference",
+		"@cdktn/provider-google.developerConnectAccountConnector.DeveloperConnectAccountConnectorCustomOauthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -408,11 +408,11 @@ func NewDeveloperConnectAccountConnectorCustomOauthConfigOutputReference(terrafo
 	return &j
 }
 
-func NewDeveloperConnectAccountConnectorCustomOauthConfigOutputReference_Override(d DeveloperConnectAccountConnectorCustomOauthConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDeveloperConnectAccountConnectorCustomOauthConfigOutputReference_Override(d DeveloperConnectAccountConnectorCustomOauthConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.developerConnectAccountConnector.DeveloperConnectAccountConnectorCustomOauthConfigOutputReference",
+		"@cdktn/provider-google.developerConnectAccountConnector.DeveloperConnectAccountConnectorCustomOauthConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -550,7 +550,7 @@ func (j *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputRefere
 	)
 }
 
-func (j *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -601,11 +601,11 @@ func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -729,8 +729,8 @@ func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -742,16 +742,16 @@ func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputRefere
 	return returns
 }
 
-func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -793,8 +793,8 @@ func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputRefere
 	)
 }
 
-func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -802,7 +802,7 @@ func (d *jsiiProxy_DeveloperConnectAccountConnectorCustomOauthConfigOutputRefere
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

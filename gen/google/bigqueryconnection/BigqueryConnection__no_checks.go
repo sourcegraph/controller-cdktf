@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigqueryConnection) validateInterpolationForAttributeParamete
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryConnection) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryConnection) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (b *jsiiProxy_BigqueryConnection) validatePutTimeoutsParameters(value *Bigq
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryConnection) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateBigqueryConnection_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -148,7 +156,7 @@ func (j *jsiiProxy_BigqueryConnection) validateSetKmsKeyNameParameters(val *stri
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryConnection) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BigqueryConnection) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

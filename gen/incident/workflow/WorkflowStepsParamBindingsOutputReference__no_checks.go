@@ -40,7 +40,7 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateGetStringM
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (w *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validatePutValuePa
 	return nil
 }
 
-func (w *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkflowStepsParamBindingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkflowStepsParamBindingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWorkflowStepsParamBindingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

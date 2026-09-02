@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTests) validateOverrid
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleNetworkManagementConnectivityTests) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleNetworkManagementConnectivityTests_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleNetworkManagementConnectivityTests) validateSetIdPa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleNetworkManagementConnectivityTests) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleNetworkManagementConnectivityTests) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

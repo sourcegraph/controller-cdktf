@@ -40,7 +40,7 @@ func (p *jsiiProxy_PagesProjectSourceOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PagesProjectSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (p *jsiiProxy_PagesProjectSourceOutputReference) validatePutConfigParameter
 	return nil
 }
 
-func (p *jsiiProxy_PagesProjectSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PagesProjectSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PagesProjectSourceOutputReference) validateSetTypeParameters(
 	return nil
 }
 
-func validateNewPagesProjectSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPagesProjectSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

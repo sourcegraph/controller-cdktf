@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataCatalogTagTemplateIamMember) validateInterpolationF
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataCatalogTagTemplateIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataCatalogTagTemplateIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleDataCatalogTagTemplateIamMember) validateOverrideLogica
 }
 
 func (g *jsiiProxy_GoogleDataCatalogTagTemplateIamMember) validatePutConditionParameters(value *GoogleDataCatalogTagTemplateIamMemberCondition) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataCatalogTagTemplateIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamMember) validateSetIdParameter
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataCatalogTagTemplateIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

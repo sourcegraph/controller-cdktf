@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/wafregionalrulegroup/internal"
 )
 
 type WafregionalRuleGroupActivatedRuleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Action() WafregionalRuleGroupActivatedRuleActionOutputReference
 	ActionInput() *WafregionalRuleGroupActivatedRuleAction
 	// the index of the complex object in a list.
@@ -42,9 +42,9 @@ type WafregionalRuleGroupActivatedRuleOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Type() *string
 	SetType(val *string)
 	TypeInput() *string
@@ -53,7 +53,7 @@ type WafregionalRuleGroupActivatedRuleOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,14 +69,14 @@ type WafregionalRuleGroupActivatedRuleOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAction(value *WafregionalRuleGroupActivatedRuleAction)
 	ResetType()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -86,7 +86,7 @@ type WafregionalRuleGroupActivatedRuleOutputReference interface {
 
 // The jsii proxy struct for WafregionalRuleGroupActivatedRuleOutputReference
 type jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) Action() WafregionalRuleGroupActivatedRuleActionOutputReference {
@@ -209,8 +209,8 @@ func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) TerraformAt
 	return returns
 }
 
-func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -240,7 +240,7 @@ func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) TypeInput()
 }
 
 
-func NewWafregionalRuleGroupActivatedRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WafregionalRuleGroupActivatedRuleOutputReference {
+func NewWafregionalRuleGroupActivatedRuleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WafregionalRuleGroupActivatedRuleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWafregionalRuleGroupActivatedRuleOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -249,7 +249,7 @@ func NewWafregionalRuleGroupActivatedRuleOutputReference(terraformResource cdktf
 	j := jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleOutputReference",
+		"@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -257,11 +257,11 @@ func NewWafregionalRuleGroupActivatedRuleOutputReference(terraformResource cdktf
 	return &j
 }
 
-func NewWafregionalRuleGroupActivatedRuleOutputReference_Override(w WafregionalRuleGroupActivatedRuleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewWafregionalRuleGroupActivatedRuleOutputReference_Override(w WafregionalRuleGroupActivatedRuleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleOutputReference",
+		"@cdktn/provider-aws.wafregionalRuleGroup.WafregionalRuleGroupActivatedRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
@@ -333,7 +333,7 @@ func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference)SetTerraform
 	)
 }
 
-func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -384,11 +384,11 @@ func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) GetAnyMapAt
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -512,8 +512,8 @@ func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) GetStringMa
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -525,16 +525,16 @@ func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) Interpolati
 	return returns
 }
 
-func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -560,8 +560,8 @@ func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) ResetType()
 	)
 }
 
-func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -569,7 +569,7 @@ func (w *jsiiProxy_WafregionalRuleGroupActivatedRuleOutputReference) Resolve(_co
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

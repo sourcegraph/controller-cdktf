@@ -56,6 +56,10 @@ func (b *jsiiProxy_BigqueryReservationAssignment) validateInterpolationForAttrib
 	return nil
 }
 
+func (b *jsiiProxy_BigqueryReservationAssignment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BigqueryReservationAssignment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (b *jsiiProxy_BigqueryReservationAssignment) validateOverrideLogicalIdParam
 }
 
 func (b *jsiiProxy_BigqueryReservationAssignment) validatePutTimeoutsParameters(value *BigqueryReservationAssignmentTimeouts) error {
+	return nil
+}
+
+func (b *jsiiProxy_BigqueryReservationAssignment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_BigqueryReservationAssignment) validateSetJobTypeParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryReservationAssignment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BigqueryReservationAssignment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

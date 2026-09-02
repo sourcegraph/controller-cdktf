@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateList) validateGetPar
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (d *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateList) validateResolv
 
 func (j *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DeploymentV1SpecTemplateSpecReadinessGate:
 		val := val.(*[]*DeploymentV1SpecTemplateSpecReadinessGate)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateList) validateSetInt
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*DeploymentV1SpecTemplateSpecReadinessGate; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*DeploymentV1SpecTemplateSpecReadinessGate; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_DeploymentV1SpecTemplateSpecReadinessGateList) validateSetWra
 	return nil
 }
 
-func validateNewDeploymentV1SpecTemplateSpecReadinessGateListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDeploymentV1SpecTemplateSpecReadinessGateListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

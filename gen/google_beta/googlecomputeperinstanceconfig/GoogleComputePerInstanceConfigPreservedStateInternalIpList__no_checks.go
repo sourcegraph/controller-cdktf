@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateInternalIpList) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateInternalIpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateInternalIpList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateInternalIpList) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateInternalIpList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateInternalIpList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputePerInstanceConfigPreservedStateInternalIpList) v
 	return nil
 }
 
-func validateNewGoogleComputePerInstanceConfigPreservedStateInternalIpListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputePerInstanceConfigPreservedStateInternalIpListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

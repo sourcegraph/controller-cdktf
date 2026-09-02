@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleVertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputRefe
 	return nil
 }
 
-func validateNewGoogleVertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVertexAiFeaturestoreEntitytypeFeatureTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

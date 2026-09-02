@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstance",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstance",
 		reflect.TypeOf((*DataGoogleRedisInstance)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -70,6 +70,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redisVersion", GoGetter: "RedisVersion"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "replicaCount", GoGetter: "ReplicaCount"},
 			_jsii_.MemberProperty{JsiiProperty: "reservedIpRange", GoGetter: "ReservedIpRange"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -90,23 +91,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "transitEncryptionMode", GoGetter: "TransitEncryptionMode"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstance{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceConfig",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceConfig",
 		reflect.TypeOf((*DataGoogleRedisInstanceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicy",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicy",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenancePolicy)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyList",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyList",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenancePolicyList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -122,12 +124,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyOutputReference",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenancePolicyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -158,16 +160,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindow",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindow",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindow)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -183,12 +185,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -218,16 +220,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTime)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -243,12 +245,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -279,16 +281,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceMaintenancePolicyWeeklyMaintenanceWindowStartTimeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceSchedule",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceSchedule",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenanceSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleList",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleList",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenanceScheduleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -304,12 +306,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceMaintenanceScheduleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceMaintenanceScheduleOutputReference",
 		reflect.TypeOf((*DataGoogleRedisInstanceMaintenanceScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -339,16 +341,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceMaintenanceScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceNodes",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceNodes",
 		reflect.TypeOf((*DataGoogleRedisInstanceNodes)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceNodesList",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceNodesList",
 		reflect.TypeOf((*DataGoogleRedisInstanceNodesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -364,12 +366,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceNodesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceNodesOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceNodesOutputReference",
 		reflect.TypeOf((*DataGoogleRedisInstanceNodesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -398,16 +400,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceNodesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstancePersistenceConfig",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstancePersistenceConfig",
 		reflect.TypeOf((*DataGoogleRedisInstancePersistenceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstancePersistenceConfigList",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstancePersistenceConfigList",
 		reflect.TypeOf((*DataGoogleRedisInstancePersistenceConfigList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -423,12 +425,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstancePersistenceConfigList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstancePersistenceConfigOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstancePersistenceConfigOutputReference",
 		reflect.TypeOf((*DataGoogleRedisInstancePersistenceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -459,16 +461,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstancePersistenceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCerts",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCerts",
 		reflect.TypeOf((*DataGoogleRedisInstanceServerCaCerts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsList",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsList",
 		reflect.TypeOf((*DataGoogleRedisInstanceServerCaCertsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -484,12 +486,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceServerCaCertsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleRedisInstance.DataGoogleRedisInstanceServerCaCertsOutputReference",
 		reflect.TypeOf((*DataGoogleRedisInstanceServerCaCertsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
@@ -521,7 +523,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleRedisInstanceServerCaCertsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataplexDatascanDataProfileSpecExcludeFieldsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

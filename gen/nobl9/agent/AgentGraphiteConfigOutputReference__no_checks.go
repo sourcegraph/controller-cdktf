@@ -40,11 +40,11 @@ func (a *jsiiProxy_AgentGraphiteConfigOutputReference) validateGetStringMapAttri
 	return nil
 }
 
-func (a *jsiiProxy_AgentGraphiteConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AgentGraphiteConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AgentGraphiteConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AgentGraphiteConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_AgentGraphiteConfigOutputReference) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_AgentGraphiteConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AgentGraphiteConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_AgentGraphiteConfigOutputReference) validateSetUrlParameters(
 	return nil
 }
 
-func validateNewAgentGraphiteConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAgentGraphiteConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

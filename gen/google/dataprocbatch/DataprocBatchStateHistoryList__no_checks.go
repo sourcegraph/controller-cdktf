@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataprocBatchStateHistoryList) validateGetParameters(index *f
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchStateHistoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocBatchStateHistoryList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataprocBatchStateHistoryList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchStateHistoryList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocBatchStateHistoryList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataprocBatchStateHistoryList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewDataprocBatchStateHistoryListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataprocBatchStateHistoryListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

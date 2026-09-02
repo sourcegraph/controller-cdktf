@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJso
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJso
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJso
 	return nil
 }
 
-func validateNewDataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeRegionSecurityPolicyAdvancedOptionsConfigJsonCustomConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

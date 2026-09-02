@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlesaasruntimeunitkind/internal"
 )
 
 type GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference interface
 
 // The jsii proxy struct for GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference
 type jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputRefer
 }
 
 
-func NewGoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference {
+func NewGoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewGoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference(terraf
 	j := jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSaasRuntimeUnitKind.GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference",
+		"@cdktn/provider-google-beta.googleSaasRuntimeUnitKind.GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewGoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference(terraf
 	return &j
 }
 
-func NewGoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference_Override(g GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference_Override(g GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleSaasRuntimeUnitKind.GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference",
+		"@cdktn/provider-google-beta.googleSaasRuntimeUnitKind.GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -454,8 +454,8 @@ func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -467,24 +467,24 @@ func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (g *jsiiProxy_GoogleSaasRuntimeUnitKindInputVariableMappingsFromOutputRefer
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

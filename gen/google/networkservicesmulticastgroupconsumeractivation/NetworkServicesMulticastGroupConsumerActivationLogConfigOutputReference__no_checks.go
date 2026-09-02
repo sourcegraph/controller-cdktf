@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupConsumerActivationLogConfigOutpu
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupConsumerActivationLogConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkServicesMulticastGroupConsumerActivationLogConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkServicesMulticastGroupConsumerActivationLogConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkServicesMulticastGroupConsumerActivationLogConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupConsumerActivationLogConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupConsumerActivationLogConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkServicesMulticastGroupConsumerActivationLogConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetworkServicesMulticastGroupConsumerActivationLogConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkServicesMulticastGroupConsumerActivationLogConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

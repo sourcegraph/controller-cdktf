@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/workerscript/internal"
 )
 
 type WorkerScriptAnalyticsEngineBindingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type WorkerScriptAnalyticsEngineBindingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type WorkerScriptAnalyticsEngineBindingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type WorkerScriptAnalyticsEngineBindingOutputReference interface {
 
 // The jsii proxy struct for WorkerScriptAnalyticsEngineBindingOutputReference
 type jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) TerraformR
 }
 
 
-func NewWorkerScriptAnalyticsEngineBindingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkerScriptAnalyticsEngineBindingOutputReference {
+func NewWorkerScriptAnalyticsEngineBindingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) WorkerScriptAnalyticsEngineBindingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkerScriptAnalyticsEngineBindingOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewWorkerScriptAnalyticsEngineBindingOutputReference(terraformResource cdkt
 	j := jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingOutputReference",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewWorkerScriptAnalyticsEngineBindingOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewWorkerScriptAnalyticsEngineBindingOutputReference_Override(w WorkerScriptAnalyticsEngineBindingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewWorkerScriptAnalyticsEngineBindingOutputReference_Override(w WorkerScriptAnalyticsEngineBindingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingOutputReference",
+		"@cdktn/provider-cloudflare.workerScript.WorkerScriptAnalyticsEngineBindingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		w,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) GetAnyMapA
 	return returns
 }
 
-func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -454,8 +454,8 @@ func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) GetStringM
 	return returns
 }
 
-func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -467,24 +467,24 @@ func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) Interpolat
 	return returns
 }
 
-func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (w *jsiiProxy_WorkerScriptAnalyticsEngineBindingOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncrypt
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncrypt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBackupDrRestoreWorkloadDiskRestorePropertiesDiskEncryptionKeyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

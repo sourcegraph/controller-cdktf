@@ -40,11 +40,11 @@ func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_EfsAccessPointPosixUserOutputReference) validateSetUidParamet
 	return nil
 }
 
-func validateNewEfsAccessPointPosixUserOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEfsAccessPointPosixUserOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

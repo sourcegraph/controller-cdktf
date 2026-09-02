@@ -40,11 +40,11 @@ func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MwaaEnvironmentLoggingConfigurationWebserverLogsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMwaaEnvironmentLoggingConfigurationWebserverLogsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

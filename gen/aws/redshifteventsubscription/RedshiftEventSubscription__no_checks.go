@@ -56,6 +56,10 @@ func (r *jsiiProxy_RedshiftEventSubscription) validateInterpolationForAttributeP
 	return nil
 }
 
+func (r *jsiiProxy_RedshiftEventSubscription) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedshiftEventSubscription) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (r *jsiiProxy_RedshiftEventSubscription) validateOverrideLogicalIdParameter
 }
 
 func (r *jsiiProxy_RedshiftEventSubscription) validatePutTimeoutsParameters(value *RedshiftEventSubscriptionTimeouts) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedshiftEventSubscription) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_RedshiftEventSubscription) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftEventSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RedshiftEventSubscription) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

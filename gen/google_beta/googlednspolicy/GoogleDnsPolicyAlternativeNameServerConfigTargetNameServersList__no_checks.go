@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersLi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersLi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDnsPolicyAlternativeNameServerConfigTargetNameServersLi
 	return nil
 }
 
-func validateNewGoogleDnsPolicyAlternativeNameServerConfigTargetNameServersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDnsPolicyAlternativeNameServerConfigTargetNameServersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) valida
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigtableAppProfileSingleClusterRoutingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBigtableAppProfileSingleClusterRoutingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigtableAppProfileSingleClusterRoutingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

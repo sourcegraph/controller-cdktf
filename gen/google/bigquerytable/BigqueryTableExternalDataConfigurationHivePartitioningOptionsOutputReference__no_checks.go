@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptions
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptions
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryTableExternalDataConfigurationHivePartitioningOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

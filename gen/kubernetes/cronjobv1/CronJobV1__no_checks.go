@@ -56,6 +56,10 @@ func (c *jsiiProxy_CronJobV1) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (c *jsiiProxy_CronJobV1) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CronJobV1) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_CronJobV1) validatePutSpecParameters(value *CronJobV1Spec) er
 }
 
 func (c *jsiiProxy_CronJobV1) validatePutTimeoutsParameters(value *CronJobV1Timeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CronJobV1) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_CronJobV1) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_CronJobV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CronJobV1) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

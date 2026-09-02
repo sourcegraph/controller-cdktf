@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validate
 	return nil
 }
 
-func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validate
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*EcrRegistryScanningConfigurationRuleRepositoryFilter:
 		value := value.(*[]*EcrRegistryScanningConfigurationRuleRepositoryFilter)
@@ -114,16 +114,16 @@ func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validate
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*EcrRegistryScanningConfigurationRuleRepositoryFilter; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*EcrRegistryScanningConfigurationRuleRepositoryFilter; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (e *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -196,7 +196,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validate
 
 func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *EcrRegistryScanningConfigurationRule:
 		val := val.(*EcrRegistryScanningConfigurationRule)
@@ -211,7 +211,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validate
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *EcrRegistryScanningConfigurationRule; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *EcrRegistryScanningConfigurationRule; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -234,7 +234,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -242,7 +242,7 @@ func (j *jsiiProxy_EcrRegistryScanningConfigurationRuleOutputReference) validate
 	return nil
 }
 
-func validateNewEcrRegistryScanningConfigurationRuleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEcrRegistryScanningConfigurationRuleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

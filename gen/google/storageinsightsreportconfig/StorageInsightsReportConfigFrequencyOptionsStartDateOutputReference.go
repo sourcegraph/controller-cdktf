@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/storageinsightsreportconfig/internal"
 )
 
 type StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Year() *float64
 	SetYear(val *float64)
 	YearInput() *float64
@@ -51,7 +51,7 @@ type StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference interfa
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference interfa
 
 // The jsii proxy struct for StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference
 type jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) ComplexObjectIndex() interface{} {
@@ -185,8 +185,8 @@ func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputRef
 }
 
 
-func NewStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference {
+func NewStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStorageInsightsReportConfigFrequencyOptionsStartDateOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference(terr
 	j := jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageInsightsReportConfig.StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference",
+		"@cdktn/provider-google.storageInsightsReportConfig.StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference(terr
 	return &j
 }
 
-func NewStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference_Override(s StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewStorageInsightsReportConfigFrequencyOptionsStartDateOutputReference_Override(s StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageInsightsReportConfig.StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference",
+		"@cdktn/provider-google.storageInsightsReportConfig.StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -309,7 +309,7 @@ func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputRef
 	)
 }
 
-func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputRef
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -488,8 +488,8 @@ func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputRef
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -501,24 +501,24 @@ func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputRef
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (s *jsiiProxy_StorageInsightsReportConfigFrequencyOptionsStartDateOutputRef
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

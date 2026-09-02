@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateInterpolati
 	return nil
 }
 
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateOverrideLog
 }
 
 func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validatePutTimeoutsParameters(value *NetworkmanagerTransitGatewayRegistrationTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetIdParame
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkmanagerTransitGatewayRegistration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

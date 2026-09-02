@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/devicemanagednetworks/internal"
 )
 
 type DeviceManagedNetworksConfigAOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type DeviceManagedNetworksConfigAOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TlsSockaddr() *string
 	SetTlsSockaddr(val *string)
 	TlsSockaddrInput() *string
@@ -48,7 +48,7 @@ type DeviceManagedNetworksConfigAOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DeviceManagedNetworksConfigAOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type DeviceManagedNetworksConfigAOutputReference interface {
 
 // The jsii proxy struct for DeviceManagedNetworksConfigAOutputReference
 type jsiiProxy_DeviceManagedNetworksConfigAOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) ComplexObjectIndex() interface{} {
@@ -162,8 +162,8 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) TerraformAttribu
 	return returns
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) TlsSockaddrInput
 }
 
 
-func NewDeviceManagedNetworksConfigAOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DeviceManagedNetworksConfigAOutputReference {
+func NewDeviceManagedNetworksConfigAOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DeviceManagedNetworksConfigAOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDeviceManagedNetworksConfigAOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewDeviceManagedNetworksConfigAOutputReference(terraformResource cdktf.IInt
 	j := jsiiProxy_DeviceManagedNetworksConfigAOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
+		"@cdktn/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewDeviceManagedNetworksConfigAOutputReference(terraformResource cdktf.IInt
 	return &j
 }
 
-func NewDeviceManagedNetworksConfigAOutputReference_Override(d DeviceManagedNetworksConfigAOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDeviceManagedNetworksConfigAOutputReference_Override(d DeviceManagedNetworksConfigAOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
+		"@cdktn/provider-cloudflare.deviceManagedNetworks.DeviceManagedNetworksConfigAOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -275,7 +275,7 @@ func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetTerraformAttri
 	)
 }
 
-func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DeviceManagedNetworksConfigAOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetAnyMapAttribu
 	return returns
 }
 
-func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -454,8 +454,8 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) GetStringMapAttr
 	return returns
 }
 
-func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -467,24 +467,24 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) InterpolationAsL
 	return returns
 }
 
-func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (d *jsiiProxy_DeviceManagedNetworksConfigAOutputReference) Resolve(_context
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

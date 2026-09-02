@@ -40,7 +40,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeCephFsOutputReference) validateGetSt
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeCephFsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeCephFsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeCephFsOutputReference) validatePutSe
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeCephFsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeCephFsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeCephFsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_JobSpecTemplateSpecVolumeCephFsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobSpecTemplateSpecVolumeCephFsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_JobSpecTemplateSpecVolumeCephFsOutputReference) validateSetUs
 	return nil
 }
 
-func validateNewJobSpecTemplateSpecVolumeCephFsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewJobSpecTemplateSpecVolumeCephFsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

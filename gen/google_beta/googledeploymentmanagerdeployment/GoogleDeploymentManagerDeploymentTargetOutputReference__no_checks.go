@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDeploymentManagerDeploymentTargetOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDeploymentManagerDeploymentTargetOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDeploymentManagerDeploymentTargetOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

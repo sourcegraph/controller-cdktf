@@ -12,7 +12,7 @@ func (i *jsiiProxy_InlineHookHeadersList) validateGetParameters(index *float64) 
 	return nil
 }
 
-func (i *jsiiProxy_InlineHookHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InlineHookHeadersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_InlineHookHeadersList) validateSetTerraformAttributeParameter
 	return nil
 }
 
-func (j *jsiiProxy_InlineHookHeadersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_InlineHookHeadersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_InlineHookHeadersList) validateSetWrapsSetParameters(val *boo
 	return nil
 }
 
-func validateNewInlineHookHeadersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewInlineHookHeadersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

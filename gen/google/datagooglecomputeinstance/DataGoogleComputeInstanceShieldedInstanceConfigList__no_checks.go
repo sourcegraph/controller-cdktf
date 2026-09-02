@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceShieldedInstanceConfigList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceShieldedInstanceConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceShieldedInstanceConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceShieldedInstanceConfigList) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceShieldedInstanceConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceShieldedInstanceConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceShieldedInstanceConfigList) validate
 	return nil
 }
 
-func validateNewDataGoogleComputeInstanceShieldedInstanceConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeInstanceShieldedInstanceConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

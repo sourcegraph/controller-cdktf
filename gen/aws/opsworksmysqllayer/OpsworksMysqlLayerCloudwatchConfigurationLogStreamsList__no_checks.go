@@ -12,7 +12,7 @@ func (o *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList) vali
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_OpsworksMysqlLayerCloudwatchConfigurationLogStreamsList) vali
 	return nil
 }
 
-func validateNewOpsworksMysqlLayerCloudwatchConfigurationLogStreamsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOpsworksMysqlLayerCloudwatchConfigurationLogStreamsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

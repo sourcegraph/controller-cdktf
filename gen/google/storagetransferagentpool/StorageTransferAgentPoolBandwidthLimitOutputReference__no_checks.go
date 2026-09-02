@@ -40,11 +40,11 @@ func (s *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) valida
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageTransferAgentPoolBandwidthLimitOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStorageTransferAgentPoolBandwidthLimitOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStorageTransferAgentPoolBandwidthLimitOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhCon
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhCon
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhCon
 	return nil
 }
 
-func validateNewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleVertexAiIndexMetadataConfigAlgorithmConfigTreeAhConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

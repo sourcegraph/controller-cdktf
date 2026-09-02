@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.amplifyApp.AmplifyApp",
+		"@cdktn/provider-aws.amplifyApp.AmplifyApp",
 		reflect.TypeOf((*AmplifyApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessToken", GoGetter: "AccessToken"},
@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -81,6 +82,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAutoBranchCreationConfig", GoMethod: "PutAutoBranchCreationConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putCustomRule", GoMethod: "PutCustomRule"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "repository", GoGetter: "Repository"},
 			_jsii_.MemberProperty{JsiiProperty: "repositoryInput", GoGetter: "RepositoryInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessToken", GoMethod: "ResetAccessToken"},
@@ -116,19 +118,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_AmplifyApp{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig",
+		"@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfig",
 		reflect.TypeOf((*AmplifyAppAutoBranchCreationConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference",
+		"@cdktn/provider-aws.amplifyApp.AmplifyAppAutoBranchCreationConfigOutputReference",
 		reflect.TypeOf((*AmplifyAppAutoBranchCreationConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "basicAuthCredentials", GoGetter: "BasicAuthCredentials"},
@@ -185,20 +188,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AmplifyAppAutoBranchCreationConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.amplifyApp.AmplifyAppConfig",
+		"@cdktn/provider-aws.amplifyApp.AmplifyAppConfig",
 		reflect.TypeOf((*AmplifyAppConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRule",
+		"@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRule",
 		reflect.TypeOf((*AmplifyAppCustomRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleList",
+		"@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleList",
 		reflect.TypeOf((*AmplifyAppCustomRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -215,12 +218,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AmplifyAppCustomRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference",
+		"@cdktn/provider-aws.amplifyApp.AmplifyAppCustomRuleOutputReference",
 		reflect.TypeOf((*AmplifyAppCustomRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -257,16 +260,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AmplifyAppCustomRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranch",
+		"@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranch",
 		reflect.TypeOf((*AmplifyAppProductionBranch)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchList",
+		"@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchList",
 		reflect.TypeOf((*AmplifyAppProductionBranchList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -282,12 +285,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AmplifyAppProductionBranchList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference",
+		"@cdktn/provider-aws.amplifyApp.AmplifyAppProductionBranchOutputReference",
 		reflect.TypeOf((*AmplifyAppProductionBranchOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "branchName", GoGetter: "BranchName"},
@@ -318,7 +321,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AmplifyAppProductionBranchOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -40,11 +40,11 @@ func (r *jsiiProxy_RateLimitMatchRequestOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (r *jsiiProxy_RateLimitMatchRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RateLimitMatchRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RateLimitMatchRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RateLimitMatchRequestOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_RateLimitMatchRequestOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_RateLimitMatchRequestOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RateLimitMatchRequestOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_RateLimitMatchRequestOutputReference) validateSetUrlPatternPa
 	return nil
 }
 
-func validateNewRateLimitMatchRequestOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRateLimitMatchRequestOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglepubsubtopic/internal"
 )
 
 type DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,21 +29,21 @@ type DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutpu
 	Fqn() *string
 	InternalValue() *DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInference
 	SetInternalValue(val *DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInference)
-	Parameters() cdktf.StringMap
+	Parameters() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -59,12 +59,12 @@ type DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutpu
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -74,7 +74,7 @@ type DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutpu
 
 // The jsii proxy struct for DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference
 type jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) ComplexObjectIndex() interface{} {
@@ -127,8 +127,8 @@ func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructured
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) Parameters() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) Parameters() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"parameters",
@@ -147,8 +147,8 @@ func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructured
 	return returns
 }
 
-func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -158,7 +158,7 @@ func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructured
 }
 
 
-func NewDataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference {
+func NewDataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -167,7 +167,7 @@ func NewDataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOu
 	j := jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference",
+		"@cdktn/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -175,11 +175,11 @@ func NewDataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOu
 	return &j
 }
 
-func NewDataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference_Override(d DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference_Override(d DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference",
+		"@cdktn/provider-google-beta.dataGooglePubsubTopic.DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -229,7 +229,7 @@ func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructured
 	)
 }
 
-func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -269,11 +269,11 @@ func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructured
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -397,8 +397,8 @@ func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructured
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -410,24 +410,24 @@ func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructured
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructuredInferenceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -435,7 +435,7 @@ func (d *jsiiProxy_DataGooglePubsubTopicMessageTransformsAiInferenceUnstructured
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

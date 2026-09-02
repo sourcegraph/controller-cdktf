@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateInterpolation
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validatePutSourceConf
 }
 
 func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validatePutTimeoutsParameters(value *GoogleOracleDatabaseAutonomousDatabaseTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetLabelsPara
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleOracleDatabaseAutonomousDatabase) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

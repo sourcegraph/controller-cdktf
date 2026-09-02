@@ -12,7 +12,7 @@ func (e *jsiiProxy_EksFargateProfileSelectorList) validateGetParameters(index *f
 	return nil
 }
 
-func (e *jsiiProxy_EksFargateProfileSelectorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EksFargateProfileSelectorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EksFargateProfileSelectorList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_EksFargateProfileSelectorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EksFargateProfileSelectorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EksFargateProfileSelectorList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewEksFargateProfileSelectorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEksFargateProfileSelectorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

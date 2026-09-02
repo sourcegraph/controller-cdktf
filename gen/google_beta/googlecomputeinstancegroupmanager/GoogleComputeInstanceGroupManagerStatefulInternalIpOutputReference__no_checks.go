@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceGroupManagerStatefulInternalIpOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeInstanceGroupManagerStatefulInternalIpOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeInstanceGroupManagerStatefulInternalIpOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

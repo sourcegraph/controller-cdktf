@@ -5,15 +5,15 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/dataincidentcustomfieldoption/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs/data-sources/custom_field_option incident_custom_field_option}.
 type DataIncidentCustomFieldOption interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -28,31 +28,31 @@ type DataIncidentCustomFieldOption interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
 	FriendlyUniqueId() *string
 	Id() *string
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	// The tree node.
 	Node() constructs.Node
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	SortKey() *float64
 	SetSortKey(val *float64)
 	SortKeyInput() *float64
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -65,7 +65,7 @@ type DataIncidentCustomFieldOption interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,10 +81,23 @@ type DataIncidentCustomFieldOption interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	// Resets a previously passed logical Id to use the auto-generated logical id again.
 	// Experimental.
 	ResetOverrideLogicalId()
@@ -101,15 +114,24 @@ type DataIncidentCustomFieldOption interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataIncidentCustomFieldOption
 type jsiiProxy_DataIncidentCustomFieldOption struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataIncidentCustomFieldOption) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -168,8 +190,8 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption) DependsOn() *[]*string {
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataIncidentCustomFieldOption) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -208,8 +230,8 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption) Id() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataIncidentCustomFieldOption) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -228,8 +250,8 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption) Node() constructs.Node {
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataIncidentCustomFieldOption) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -268,8 +290,8 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption) SortKeyInput() *float64 {
 	return returns
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataIncidentCustomFieldOption) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -329,7 +351,7 @@ func NewDataIncidentCustomFieldOption(scope constructs.Construct, id *string, co
 	j := jsiiProxy_DataIncidentCustomFieldOption{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
+		"@cdktn/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -342,7 +364,7 @@ func NewDataIncidentCustomFieldOption_Override(d DataIncidentCustomFieldOption, 
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
+		"@cdktn/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -378,7 +400,7 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataIncidentCustomFieldOption)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -386,7 +408,7 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption)SetForEach(val cdktf.ITerraform
 	)
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataIncidentCustomFieldOption)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,7 +419,7 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption)SetLifecycle(val *cdktf.Terrafo
 	)
 }
 
-func (j *jsiiProxy_DataIncidentCustomFieldOption)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataIncidentCustomFieldOption)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -427,17 +449,17 @@ func (j *jsiiProxy_DataIncidentCustomFieldOption)SetValue(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataIncidentCustomFieldOption resource upon running "cdktf plan <stack-name>".
-func DataIncidentCustomFieldOption_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataIncidentCustomFieldOption resource upon running "cdktn plan <stack-name>".
+func DataIncidentCustomFieldOption_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataIncidentCustomFieldOption_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
+		"@cdktn/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -472,7 +494,7 @@ func DataIncidentCustomFieldOption_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
+		"@cdktn/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -491,7 +513,7 @@ func DataIncidentCustomFieldOption_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
+		"@cdktn/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -510,7 +532,7 @@ func DataIncidentCustomFieldOption_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
+		"@cdktn/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -523,7 +545,7 @@ func DataIncidentCustomFieldOption_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
+		"@cdktn/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		"tfResourceType",
 		&returns,
 	)
@@ -557,11 +579,11 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) GetAnyMapAttribute(terraformAt
 	return returns
 }
 
-func (d *jsiiProxy_DataIncidentCustomFieldOption) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataIncidentCustomFieldOption) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -685,11 +707,11 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) GetStringMapAttribute(terrafor
 	return returns
 }
 
-func (d *jsiiProxy_DataIncidentCustomFieldOption) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataIncidentCustomFieldOption) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -709,6 +731,17 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) OverrideLogicalId(newLogicalId
 		d,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (d *jsiiProxy_DataIncidentCustomFieldOption) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -800,6 +833,24 @@ func (d *jsiiProxy_DataIncidentCustomFieldOption) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataIncidentCustomFieldOption) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

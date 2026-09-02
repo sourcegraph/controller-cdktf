@@ -40,7 +40,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validateGetString
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validatePutSource
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VertexAiReasoningEngineSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVertexAiReasoningEngineSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVertexAiReasoningEngineSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

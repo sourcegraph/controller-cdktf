@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/ivschatloggingconfiguration/internal"
 )
 
 type IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputRefe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputRefe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputRefe
 
 // The jsii proxy struct for IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference
 type jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatch
 	return returns
 }
 
-func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatch
 }
 
 
-func NewIvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference {
+func NewIvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewIvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputR
 	j := jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference",
+		"@cdktn/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewIvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputR
 	return &j
 }
 
-func NewIvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference_Override(i IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference_Override(i IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference",
+		"@cdktn/provider-aws.ivschatLoggingConfiguration.IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatch
 	)
 }
 
-func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatch
 	return returns
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -420,8 +420,8 @@ func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatch
 	return returns
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -433,24 +433,24 @@ func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatch
 	return returns
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatchLogsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (i *jsiiProxy_IvschatLoggingConfigurationDestinationConfigurationCloudwatch
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

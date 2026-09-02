@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckConfigList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckConfigList) validate
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsServiceDiscoveryServiceHealthCheckConfigList) validate
 	return nil
 }
 
-func validateNewDataAwsServiceDiscoveryServiceHealthCheckConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsServiceDiscoveryServiceHealthCheckConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

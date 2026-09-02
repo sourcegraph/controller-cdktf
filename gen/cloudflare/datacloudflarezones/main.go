@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZones",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZones",
 		reflect.TypeOf((*DataCloudflareZones)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -39,6 +39,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putFilter", GoMethod: "PutFilter"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "synthesizeAttributes", GoMethod: "SynthesizeAttributes"},
@@ -50,24 +51,25 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zones", GoGetter: "Zones"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZones{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesConfig",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesConfig",
 		reflect.TypeOf((*DataCloudflareZonesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesFilter",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesFilter",
 		reflect.TypeOf((*DataCloudflareZonesFilter)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesFilterOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesFilterOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesFilterOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -112,16 +114,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesFilterOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZones",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZones",
 		reflect.TypeOf((*DataCloudflareZonesZones)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesList",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesList",
 		reflect.TypeOf((*DataCloudflareZonesZonesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -137,12 +139,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesZonesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesOutputReference",
+		"@cdktn/provider-cloudflare.dataCloudflareZones.DataCloudflareZonesZonesOutputReference",
 		reflect.TypeOf((*DataCloudflareZonesZonesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -171,7 +173,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataCloudflareZonesZonesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

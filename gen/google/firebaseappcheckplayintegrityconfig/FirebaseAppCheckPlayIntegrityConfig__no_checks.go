@@ -56,6 +56,10 @@ func (f *jsiiProxy_FirebaseAppCheckPlayIntegrityConfig) validateInterpolationFor
 	return nil
 }
 
+func (f *jsiiProxy_FirebaseAppCheckPlayIntegrityConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (f *jsiiProxy_FirebaseAppCheckPlayIntegrityConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (f *jsiiProxy_FirebaseAppCheckPlayIntegrityConfig) validateOverrideLogicalI
 }
 
 func (f *jsiiProxy_FirebaseAppCheckPlayIntegrityConfig) validatePutTimeoutsParameters(value *FirebaseAppCheckPlayIntegrityConfigTimeouts) error {
+	return nil
+}
+
+func (f *jsiiProxy_FirebaseAppCheckPlayIntegrityConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_FirebaseAppCheckPlayIntegrityConfig) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_FirebaseAppCheckPlayIntegrityConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_FirebaseAppCheckPlayIntegrityConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

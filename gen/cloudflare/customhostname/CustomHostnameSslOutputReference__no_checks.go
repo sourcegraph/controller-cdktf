@@ -40,7 +40,7 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameSslOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CustomHostnameSslOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CustomHostnameSslOutputReference) validatePutSettingsParamete
 	return nil
 }
 
-func (c *jsiiProxy_CustomHostnameSslOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomHostnameSslOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -96,7 +96,7 @@ func (j *jsiiProxy_CustomHostnameSslOutputReference) validateSetWildcardParamete
 	return nil
 }
 
-func validateNewCustomHostnameSslOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCustomHostnameSslOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

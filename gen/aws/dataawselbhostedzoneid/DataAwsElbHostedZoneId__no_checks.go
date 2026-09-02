@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataAwsElbHostedZoneId) validateOverrideLogicalIdParameters(n
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsElbHostedZoneId) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsElbHostedZoneId_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataAwsElbHostedZoneId) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsElbHostedZoneId) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsElbHostedZoneId) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

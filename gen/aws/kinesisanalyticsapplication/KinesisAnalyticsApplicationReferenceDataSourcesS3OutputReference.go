@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/kinesisanalyticsapplication/internal"
 )
 
 type KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BucketArn() *string
 	SetBucketArn(val *string)
 	BucketArnInput() *string
@@ -43,15 +43,15 @@ type KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference interface 
 
 // The jsii proxy struct for KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference
 type jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) BucketArn() *string {
@@ -205,8 +205,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 }
 
 
-func NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference {
+func NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference {
 	_init_.Initialize()
 
 	if err := validateNewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference(terrafo
 	j := jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference",
+		"@cdktn/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference(terrafo
 	return &j
 }
 
-func NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference_Override(k KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewKinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference_Override(k KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference",
+		"@cdktn/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)
@@ -320,7 +320,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -488,8 +488,8 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -501,24 +501,24 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationReferenceDataSourcesS3OutputRefere
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

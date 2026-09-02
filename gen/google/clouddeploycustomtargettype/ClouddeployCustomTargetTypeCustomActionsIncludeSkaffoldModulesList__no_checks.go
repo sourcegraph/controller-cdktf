@@ -12,7 +12,7 @@ func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
 	return nil
 }
 
-func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModule
 	return nil
 }
 
-func validateNewClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewClouddeployCustomTargetTypeCustomActionsIncludeSkaffoldModulesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerClusterAuthenticatorGroupsConfigOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterAuthenticatorGroupsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterAuthenticatorGroupsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterAuthenticatorGroupsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterAuthenticatorGroupsConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerClusterAuthenticatorGroupsConfigOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterAuthenticatorGroupsConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterAuthenticatorGroupsConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterAuthenticatorGroupsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterAuthenticatorGroupsConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

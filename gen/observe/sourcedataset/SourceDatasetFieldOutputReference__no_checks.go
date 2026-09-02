@@ -40,11 +40,11 @@ func (s *jsiiProxy_SourceDatasetFieldOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (s *jsiiProxy_SourceDatasetFieldOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SourceDatasetFieldOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SourceDatasetFieldOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SourceDatasetFieldOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_SourceDatasetFieldOutputReference) validateSetTypeParameters(
 	return nil
 }
 
-func validateNewSourceDatasetFieldOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSourceDatasetFieldOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

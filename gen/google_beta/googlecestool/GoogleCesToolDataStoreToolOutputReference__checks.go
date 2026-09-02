@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,9 +82,9 @@ func (g *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validateGetStringM
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
@@ -95,7 +95,7 @@ func (g *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validatePutBoostSp
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleCesToolDataStoreToolBoostSpecs:
 		value := value.(*[]*GoogleCesToolDataStoreToolBoostSpecs)
@@ -114,7 +114,7 @@ func (g *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validatePutBoostSp
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleCesToolDataStoreToolBoostSpecs; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleCesToolDataStoreToolBoostSpecs; received %#v (a %T)", value, value)
 		}
 	}
 
@@ -137,7 +137,7 @@ func (g *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validatePutModalit
 		return fmt.Errorf("parameter value is required, but nil was provided")
 	}
 	switch value.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*GoogleCesToolDataStoreToolModalityConfigs:
 		value := value.(*[]*GoogleCesToolDataStoreToolModalityConfigs)
@@ -156,16 +156,16 @@ func (g *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validatePutModalit
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(value) {
-			return fmt.Errorf("parameter value must be one of the allowed types: cdktf.IResolvable, *[]*GoogleCesToolDataStoreToolModalityConfigs; received %#v (a %T)", value, value)
+			return fmt.Errorf("parameter value must be one of the allowed types: cdktn.IResolvable, *[]*GoogleCesToolDataStoreToolModalityConfigs; received %#v (a %T)", value, value)
 		}
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -276,7 +276,7 @@ func (j *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -284,7 +284,7 @@ func (j *jsiiProxy_GoogleCesToolDataStoreToolOutputReference) validateSetTerrafo
 	return nil
 }
 
-func validateNewGoogleCesToolDataStoreToolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCesToolDataStoreToolOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

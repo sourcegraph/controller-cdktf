@@ -12,7 +12,7 @@ func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfig
 	return nil
 }
 
-func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfig
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ChronicleDashboardChartDashboardChartVisualizationTableConfig
 	return nil
 }
 
-func validateNewChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewChronicleDashboardChartDashboardChartVisualizationTableConfigColumnRenderTypeSettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

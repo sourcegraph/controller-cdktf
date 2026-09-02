@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudtrailAdvancedEventSelectorFieldSelectorOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCloudtrailAdvancedEventSelectorFieldSelectorOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginFlexShieldingOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginFlexShieldingOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginFlexShieldingOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginFlexShieldingOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginFlexShieldingOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginFlexShieldingOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginFlexShieldingOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkServicesEdgeCacheOriginFlexShieldingOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkServicesEdgeCacheOriginFlexShieldingOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkServicesEdgeCacheOriginFlexShieldingOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

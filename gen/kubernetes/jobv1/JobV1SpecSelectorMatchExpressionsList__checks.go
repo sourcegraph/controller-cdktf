@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsList) validateGetParameters(
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsList) validateResolveParamet
 
 func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*JobV1SpecSelectorMatchExpressions:
 		val := val.(*[]*JobV1SpecSelectorMatchExpressions)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsList) validateSetInternalVal
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*JobV1SpecSelectorMatchExpressions; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*JobV1SpecSelectorMatchExpressions; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_JobV1SpecSelectorMatchExpressionsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewJobV1SpecSelectorMatchExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewJobV1SpecSelectorMatchExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

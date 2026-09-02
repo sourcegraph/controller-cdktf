@@ -12,7 +12,7 @@ func (e *jsiiProxy_EmailDomainDnsValidationRecordsList) validateGetParameters(in
 	return nil
 }
 
-func (e *jsiiProxy_EmailDomainDnsValidationRecordsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EmailDomainDnsValidationRecordsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_EmailDomainDnsValidationRecordsList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_EmailDomainDnsValidationRecordsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EmailDomainDnsValidationRecordsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_EmailDomainDnsValidationRecordsList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewEmailDomainDnsValidationRecordsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEmailDomainDnsValidationRecordsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

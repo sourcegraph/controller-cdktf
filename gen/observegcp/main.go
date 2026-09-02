@@ -1,4 +1,4 @@
-// @cdktf/provider-observegcp
+// @cdktn/provider-observegcp
 package observegcp
 
 import (
@@ -9,7 +9,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observegcp.Observegcp",
+		"@cdktn/provider-observegcp.Observegcp",
 		reflect.TypeOf((*Observegcp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "pubsubMessageRetentionDuration", GoGetter: "PubsubMessageRetentionDuration"},
 			_jsii_.MemberProperty{JsiiProperty: "pubsubMinimumBackoff", GoGetter: "PubsubMinimumBackoff"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "resource", GoGetter: "Resource"},
 			_jsii_.MemberProperty{JsiiProperty: "serviceAccountKeyOutput", GoGetter: "ServiceAccountKeyOutput"},
@@ -72,15 +73,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "version", GoGetter: "Version"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Observegcp{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformModule)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformModule)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observegcp.ObservegcpConfig",
+		"@cdktn/provider-observegcp.ObservegcpConfig",
 		reflect.TypeOf((*ObservegcpConfig)(nil)).Elem(),
 	)
 }

@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ContainerAzureClusterAuthorizationAdminGroupsList) validateSe
 	return nil
 }
 
-func validateNewContainerAzureClusterAuthorizationAdminGroupsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerAzureClusterAuthorizationAdminGroupsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

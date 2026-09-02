@@ -40,7 +40,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsGroupOutputReference) valida
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsGroupOutputReference) valida
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsGroupOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsGroupOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsGroupOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecRunAsGroupOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPodSecurityPolicyV1Beta1SpecRunAsGroupOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPodSecurityPolicyV1Beta1SpecRunAsGroupOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

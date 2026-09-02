@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleFoldersFoldersList) validateGetParameters(index *fl
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleFoldersFoldersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleFoldersFoldersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleFoldersFoldersList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleFoldersFoldersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleFoldersFoldersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleFoldersFoldersList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewDataGoogleFoldersFoldersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleFoldersFoldersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

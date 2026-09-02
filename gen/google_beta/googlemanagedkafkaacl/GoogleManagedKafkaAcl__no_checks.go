@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleManagedKafkaAcl) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleManagedKafkaAcl) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleManagedKafkaAcl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleManagedKafkaAcl) validatePutAclEntriesParameters(value 
 }
 
 func (g *jsiiProxy_GoogleManagedKafkaAcl) validatePutTimeoutsParameters(value *GoogleManagedKafkaAclTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleManagedKafkaAcl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleManagedKafkaAcl) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

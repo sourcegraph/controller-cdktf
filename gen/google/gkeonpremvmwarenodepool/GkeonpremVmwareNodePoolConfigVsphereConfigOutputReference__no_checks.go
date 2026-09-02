@@ -40,7 +40,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeonpremVmwareNodePoolConfigVsphereConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGkeonpremVmwareNodePoolConfigVsphereConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/elasticacheglobalreplicationgroup/internal"
 )
 
 type ElasticacheGlobalReplicationGroupGlobalNodeGroupsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -17,26 +17,29 @@ type ElasticacheGlobalReplicationGroupGlobalNodeGroupsList interface {
 	CreationStack() *[]*string
 	// Experimental.
 	Fqn() *string
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ElasticacheGlobalReplicationGroupGlobalNodeGroupsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -46,7 +49,7 @@ type ElasticacheGlobalReplicationGroupGlobalNodeGroupsList interface {
 
 // The jsii proxy struct for ElasticacheGlobalReplicationGroupGlobalNodeGroupsList
 type jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) CreationStack() *[]*string {
@@ -79,8 +82,8 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -100,7 +103,7 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) WrapsS
 }
 
 
-func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticacheGlobalReplicationGroupGlobalNodeGroupsList {
+func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ElasticacheGlobalReplicationGroupGlobalNodeGroupsList {
 	_init_.Initialize()
 
 	if err := validateNewElasticacheGlobalReplicationGroupGlobalNodeGroupsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -109,7 +112,7 @@ func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList(terraformResource 
 	j := jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsList",
+		"@cdktn/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -117,11 +120,11 @@ func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList(terraformResource 
 	return &j
 }
 
-func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList_Override(e ElasticacheGlobalReplicationGroupGlobalNodeGroupsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewElasticacheGlobalReplicationGroupGlobalNodeGroupsList_Override(e ElasticacheGlobalReplicationGroupGlobalNodeGroupsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsList",
+		"@cdktn/provider-aws.elasticacheGlobalReplicationGroup.ElasticacheGlobalReplicationGroupGlobalNodeGroupsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		e,
 	)
@@ -138,7 +141,7 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList)SetTerr
 	)
 }
 
-func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -160,11 +163,11 @@ func (j *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList)SetWrap
 	)
 }
 
-func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := e.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		e,
@@ -205,8 +208,8 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) Get(in
 	return returns
 }
 
-func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -214,7 +217,7 @@ func (e *jsiiProxy_ElasticacheGlobalReplicationGroupGlobalNodeGroupsList) Resolv
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

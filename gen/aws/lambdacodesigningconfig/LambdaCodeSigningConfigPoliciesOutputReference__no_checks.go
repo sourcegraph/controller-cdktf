@@ -40,11 +40,11 @@ func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) validateGetSt
 	return nil
 }
 
-func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_LambdaCodeSigningConfigPoliciesOutputReference) validateSetUn
 	return nil
 }
 
-func validateNewLambdaCodeSigningConfigPoliciesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLambdaCodeSigningConfigPoliciesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

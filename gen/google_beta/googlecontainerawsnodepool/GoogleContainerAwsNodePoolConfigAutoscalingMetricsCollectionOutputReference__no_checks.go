@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerAwsNodePoolConfigAutoscalingMetricsCollectionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthentication
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthentication
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsNetskopeAlertSettingsAuthentication
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleChronicleFeedDetailsNetskopeAlertSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

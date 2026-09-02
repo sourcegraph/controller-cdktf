@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorList) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorList) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorList) va
 	return nil
 }
 
-func validateNewGoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleFirebaseExtensionsInstanceRuntimeDataFatalErrorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

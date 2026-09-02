@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomain",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomain",
 		reflect.TypeOf((*ElasticsearchDomain)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessPolicies", GoGetter: "AccessPolicies"},
@@ -64,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "logPublishingOptions", GoGetter: "LogPublishingOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "logPublishingOptionsInput", GoGetter: "LogPublishingOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -86,6 +87,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberMethod{JsiiMethod: "putVpcOptions", GoMethod: "PutVpcOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessPolicies", GoMethod: "ResetAccessPolicies"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedOptions", GoMethod: "ResetAdvancedOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedSecurityOptions", GoMethod: "ResetAdvancedSecurityOptions"},
@@ -124,23 +126,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcOptions", GoGetter: "VpcOptions"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcOptionsInput", GoGetter: "VpcOptionsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomain{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptions",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptions",
 		reflect.TypeOf((*ElasticsearchDomainAdvancedSecurityOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions",
 		reflect.TypeOf((*ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -176,12 +179,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsMasterUserOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainAdvancedSecurityOptionsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainAdvancedSecurityOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -217,24 +220,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainAdvancedSecurityOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptions",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptions",
 		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule",
 		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsMaintenanceSchedule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration",
 		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,12 +268,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList",
 		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -287,12 +290,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -326,12 +329,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainAutoTuneOptionsMaintenanceScheduleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainAutoTuneOptionsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainAutoTuneOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -367,20 +370,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainAutoTuneOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfig",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfig",
 		reflect.TypeOf((*ElasticsearchDomainClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigColdStorageOptions",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigColdStorageOptions",
 		reflect.TypeOf((*ElasticsearchDomainClusterConfigColdStorageOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -410,12 +413,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainClusterConfigColdStorageOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainClusterConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "coldStorageOptions", GoGetter: "ColdStorageOptions"},
@@ -477,16 +480,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainClusterConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigZoneAwarenessConfig",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigZoneAwarenessConfig",
 		reflect.TypeOf((*ElasticsearchDomainClusterConfigZoneAwarenessConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZoneCount", GoGetter: "AvailabilityZoneCount"},
@@ -516,16 +519,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainClusterConfigZoneAwarenessConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainCognitoOptions",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainCognitoOptions",
 		reflect.TypeOf((*ElasticsearchDomainCognitoOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainCognitoOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainCognitoOptionsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainCognitoOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -561,20 +564,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainConfig",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainConfig",
 		reflect.TypeOf((*ElasticsearchDomainConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainDomainEndpointOptions",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainDomainEndpointOptions",
 		reflect.TypeOf((*ElasticsearchDomainDomainEndpointOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainDomainEndpointOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainDomainEndpointOptionsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainDomainEndpointOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -616,16 +619,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainDomainEndpointOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEbsOptions",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainEbsOptions",
 		reflect.TypeOf((*ElasticsearchDomainEbsOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEbsOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainEbsOptionsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainEbsOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -666,16 +669,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainEbsOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEncryptAtRest",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainEncryptAtRest",
 		reflect.TypeOf((*ElasticsearchDomainEncryptAtRest)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainEncryptAtRestOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainEncryptAtRestOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainEncryptAtRestOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -707,16 +710,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainEncryptAtRestOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptions",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptions",
 		reflect.TypeOf((*ElasticsearchDomainLogPublishingOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptionsList",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptionsList",
 		reflect.TypeOf((*ElasticsearchDomainLogPublishingOptionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -733,12 +736,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainLogPublishingOptionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainLogPublishingOptionsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainLogPublishingOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cloudwatchLogGroupArn", GoGetter: "CloudwatchLogGroupArn"},
@@ -772,16 +775,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainLogPublishingOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainNodeToNodeEncryption",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainNodeToNodeEncryption",
 		reflect.TypeOf((*ElasticsearchDomainNodeToNodeEncryption)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainNodeToNodeEncryptionOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainNodeToNodeEncryptionOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainNodeToNodeEncryptionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -810,16 +813,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainNodeToNodeEncryptionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainSnapshotOptions",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainSnapshotOptions",
 		reflect.TypeOf((*ElasticsearchDomainSnapshotOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainSnapshotOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainSnapshotOptionsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainSnapshotOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "automatedSnapshotStartHour", GoGetter: "AutomatedSnapshotStartHour"},
@@ -848,16 +851,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainSnapshotOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainTimeouts",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainTimeouts",
 		reflect.TypeOf((*ElasticsearchDomainTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainTimeoutsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainTimeoutsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -893,16 +896,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainVpcOptions",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainVpcOptions",
 		reflect.TypeOf((*ElasticsearchDomainVpcOptions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.elasticsearchDomain.ElasticsearchDomainVpcOptionsOutputReference",
+		"@cdktn/provider-aws.elasticsearchDomain.ElasticsearchDomainVpcOptionsOutputReference",
 		reflect.TypeOf((*ElasticsearchDomainVpcOptionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "availabilityZones", GoGetter: "AvailabilityZones"},
@@ -937,7 +940,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ElasticsearchDomainVpcOptionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorAction",
+		"@cdktn/provider-observe.dataObserveMonitorAction.DataObserveMonitorAction",
 		reflect.TypeOf((*DataObserveMonitorAction)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rateLimit", GoGetter: "RateLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -58,25 +59,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "webhook", GoGetter: "Webhook"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorAction{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionConfig",
+		"@cdktn/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionConfig",
 		reflect.TypeOf((*DataObserveMonitorActionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmail",
+		"@cdktn/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmail",
 		reflect.TypeOf((*DataObserveMonitorActionEmail)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmailList",
+		"@cdktn/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmailList",
 		reflect.TypeOf((*DataObserveMonitorActionEmailList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -92,12 +94,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorActionEmailList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmailOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionEmailOutputReference",
 		reflect.TypeOf((*DataObserveMonitorActionEmailOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bodyTemplate", GoGetter: "BodyTemplate"},
@@ -128,16 +130,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorActionEmailOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionWebhook",
+		"@cdktn/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionWebhook",
 		reflect.TypeOf((*DataObserveMonitorActionWebhook)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionWebhookList",
+		"@cdktn/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionWebhookList",
 		reflect.TypeOf((*DataObserveMonitorActionWebhookList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -153,12 +155,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorActionWebhookList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionWebhookOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitorAction.DataObserveMonitorActionWebhookOutputReference",
 		reflect.TypeOf((*DataObserveMonitorActionWebhookOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bodyTemplate", GoGetter: "BodyTemplate"},
@@ -189,7 +191,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorActionWebhookOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

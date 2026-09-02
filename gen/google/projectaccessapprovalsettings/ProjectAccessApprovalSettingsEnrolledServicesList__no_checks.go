@@ -12,7 +12,7 @@ func (p *jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesList) validateGe
 	return nil
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettingsEnrolledServicesList) validateSe
 	return nil
 }
 
-func validateNewProjectAccessApprovalSettingsEnrolledServicesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewProjectAccessApprovalSettingsEnrolledServicesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

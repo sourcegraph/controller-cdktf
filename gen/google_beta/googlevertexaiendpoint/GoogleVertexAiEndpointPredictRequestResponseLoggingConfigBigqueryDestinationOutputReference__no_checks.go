@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVertexAiEndpointPredictRequestResponseLoggingConfigBigq
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleVertexAiEndpointPredictRequestResponseLoggingConfigBigq
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleVertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVertexAiEndpointPredictRequestResponseLoggingConfigBigqueryDestinationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

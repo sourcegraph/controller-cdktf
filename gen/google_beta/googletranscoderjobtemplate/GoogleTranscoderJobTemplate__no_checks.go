@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplate) validateInterpolationForAttribut
 	return nil
 }
 
+func (g *jsiiProxy_GoogleTranscoderJobTemplate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleTranscoderJobTemplate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleTranscoderJobTemplate) validatePutConfigParameters(valu
 }
 
 func (g *jsiiProxy_GoogleTranscoderJobTemplate) validatePutTimeoutsParameters(value *GoogleTranscoderJobTemplateTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleTranscoderJobTemplate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleTranscoderJobTemplate) validateSetLabelsParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTranscoderJobTemplate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleTranscoderJobTemplate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

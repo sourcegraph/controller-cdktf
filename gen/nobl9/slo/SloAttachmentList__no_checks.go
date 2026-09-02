@@ -12,7 +12,7 @@ func (s *jsiiProxy_SloAttachmentList) validateGetParameters(index *float64) erro
 	return nil
 }
 
-func (s *jsiiProxy_SloAttachmentList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SloAttachmentList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SloAttachmentList) validateSetTerraformAttributeParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_SloAttachmentList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloAttachmentList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SloAttachmentList) validateSetWrapsSetParameters(val *bool) e
 	return nil
 }
 
-func validateNewSloAttachmentListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloAttachmentListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

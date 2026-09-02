@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/clouddeploytarget/internal"
 )
 
 type ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Cluster() *string
 	SetCluster(val *string)
 	ClusterInput() *string
@@ -43,15 +43,15 @@ type ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCluster()
 	ResetInternalIp()
 	ResetProxyUrl()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference interface {
 
 // The jsii proxy struct for ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 type jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) Cluster() *string {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 	return returns
 }
 
-func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 }
 
 
-func NewClouddeployTargetAssociatedEntitiesGkeClustersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference {
+func NewClouddeployTargetAssociatedEntitiesGkeClustersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewClouddeployTargetAssociatedEntitiesGkeClustersOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -228,7 +228,7 @@ func NewClouddeployTargetAssociatedEntitiesGkeClustersOutputReference(terraformR
 	j := jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference",
+		"@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewClouddeployTargetAssociatedEntitiesGkeClustersOutputReference(terraformR
 	return &j
 }
 
-func NewClouddeployTargetAssociatedEntitiesGkeClustersOutputReference_Override(c ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewClouddeployTargetAssociatedEntitiesGkeClustersOutputReference_Override(c ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference",
+		"@cdktn/provider-google.clouddeployTarget.ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		c,
 	)
@@ -323,7 +323,7 @@ func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 	)
 }
 
-func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -491,8 +491,8 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -504,16 +504,16 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 	return returns
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 	)
 }
 
-func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (c *jsiiProxy_ClouddeployTargetAssociatedEntitiesGkeClustersOutputReference
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

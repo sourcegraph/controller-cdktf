@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleIamWorkforcePool) validateInterpolationForAttributePara
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamWorkforcePool) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamWorkforcePool) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleIamWorkforcePool) validatePutAccessRestrictionsParamete
 }
 
 func (g *jsiiProxy_GoogleIamWorkforcePool) validatePutTimeoutsParameters(value *GoogleIamWorkforcePoolTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamWorkforcePool) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleIamWorkforcePool) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

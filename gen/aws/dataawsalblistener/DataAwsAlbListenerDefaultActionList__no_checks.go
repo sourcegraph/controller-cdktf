@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsAlbListenerDefaultActionList) validateGetParameters(in
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsAlbListenerDefaultActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsAlbListenerDefaultActionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsAlbListenerDefaultActionList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsAlbListenerDefaultActionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsAlbListenerDefaultActionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsAlbListenerDefaultActionList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewDataAwsAlbListenerDefaultActionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsAlbListenerDefaultActionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

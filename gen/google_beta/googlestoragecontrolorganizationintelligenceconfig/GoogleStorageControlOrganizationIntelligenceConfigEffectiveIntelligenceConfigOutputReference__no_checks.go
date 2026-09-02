@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigEffectiveIn
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigEffectiveIn
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleStorageControlOrganizationIntelligenceConfigEffectiveIntelligenceConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleOracleDatabaseOdbSubnet) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleOracleDatabaseOdbSubnet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleOracleDatabaseOdbSubnet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleOracleDatabaseOdbSubnet) validateOverrideLogicalIdParam
 }
 
 func (g *jsiiProxy_GoogleOracleDatabaseOdbSubnet) validatePutTimeoutsParameters(value *GoogleOracleDatabaseOdbSubnetTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleOracleDatabaseOdbSubnet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleOracleDatabaseOdbSubnet) validateSetLabelsParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleOracleDatabaseOdbSubnet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleOracleDatabaseOdbSubnet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (e *jsiiProxy_ElastictranscoderPipeline) validateInterpolationForAttributeP
 	return nil
 }
 
+func (e *jsiiProxy_ElastictranscoderPipeline) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_ElastictranscoderPipeline) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (e *jsiiProxy_ElastictranscoderPipeline) validatePutThumbnailConfigParamete
 }
 
 func (e *jsiiProxy_ElastictranscoderPipeline) validatePutThumbnailConfigPermissionsParameters(value interface{}) error {
+	return nil
+}
+
+func (e *jsiiProxy_ElastictranscoderPipeline) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_ElastictranscoderPipeline) validateSetInputBucketParameters(v
 	return nil
 }
 
-func (j *jsiiProxy_ElastictranscoderPipeline) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ElastictranscoderPipeline) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

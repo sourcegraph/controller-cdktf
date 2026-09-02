@@ -40,11 +40,11 @@ func (k *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validat
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_KeyspacesTableEncryptionSpecificationOutputReference) validat
 	return nil
 }
 
-func validateNewKeyspacesTableEncryptionSpecificationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKeyspacesTableEncryptionSpecificationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

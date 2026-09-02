@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleaccesscontextmanagerserviceperimeter/internal"
 )
 
 type GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOut
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,16 +66,16 @@ type GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOut
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutSources(value interface{})
 	ResetIdentities()
 	ResetIdentityType()
 	ResetSources()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOut
 
 // The jsii proxy struct for GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference
 type jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference) ComplexObjectIndex() interface{} {
@@ -208,8 +208,8 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 	return returns
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 }
 
 
-func NewGoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference {
+func NewGoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewGoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFrom
 	j := jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference",
+		"@cdktn/provider-google-beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewGoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFrom
 	return &j
 }
 
-func NewGoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference_Override(g GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference_Override(g GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference",
+		"@cdktn/provider-google-beta.googleAccessContextManagerServicePerimeter.GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 	)
 }
 
-func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -352,11 +352,11 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -480,8 +480,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -493,16 +493,16 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 	return returns
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 	)
 }
 
-func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPoliciesIngressFromOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (g *jsiiProxy_GoogleAccessContextManagerServicePerimeterSpecIngressPolicies
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

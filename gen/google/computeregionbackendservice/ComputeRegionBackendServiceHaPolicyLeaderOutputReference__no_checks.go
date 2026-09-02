@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderOutputReference) val
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRegionBackendServiceHaPolicyLeaderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeRegionBackendServiceHaPolicyLeaderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeRegionBackendServiceHaPolicyLeaderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

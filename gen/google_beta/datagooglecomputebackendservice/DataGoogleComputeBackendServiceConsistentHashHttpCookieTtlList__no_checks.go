@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlLis
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlLis
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeBackendServiceConsistentHashHttpCookieTtlLis
 	return nil
 }
 
-func validateNewDataGoogleComputeBackendServiceConsistentHashHttpCookieTtlListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeBackendServiceConsistentHashHttpCookieTtlListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

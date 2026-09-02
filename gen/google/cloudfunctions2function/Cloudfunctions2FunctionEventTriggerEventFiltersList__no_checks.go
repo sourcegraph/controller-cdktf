@@ -12,7 +12,7 @@ func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersList) validate
 	return nil
 }
 
-func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersList) validate
 	return nil
 }
 
-func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_Cloudfunctions2FunctionEventTriggerEventFiltersList) validate
 	return nil
 }
 
-func validateNewCloudfunctions2FunctionEventTriggerEventFiltersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCloudfunctions2FunctionEventTriggerEventFiltersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

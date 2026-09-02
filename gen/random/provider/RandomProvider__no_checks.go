@@ -12,6 +12,10 @@ func (r *jsiiProxy_RandomProvider) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (r *jsiiProxy_RandomProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateRandomProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

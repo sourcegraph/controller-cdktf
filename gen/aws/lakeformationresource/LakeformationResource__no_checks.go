@@ -56,6 +56,10 @@ func (l *jsiiProxy_LakeformationResource) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (l *jsiiProxy_LakeformationResource) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LakeformationResource) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (l *jsiiProxy_LakeformationResource) validateMoveToIdParameters(id *string)
 }
 
 func (l *jsiiProxy_LakeformationResource) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (l *jsiiProxy_LakeformationResource) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_LakeformationResource) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_LakeformationResource) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LakeformationResource) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

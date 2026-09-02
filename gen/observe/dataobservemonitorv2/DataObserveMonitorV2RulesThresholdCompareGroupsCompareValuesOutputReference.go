@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/dataobservemonitorv2/internal"
 )
 
 type DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	CompareFn() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -35,10 +35,10 @@ type DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	ValueBool() cdktf.BooleanList
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	ValueBool() cdktn.BooleanList
 	ValueDuration() *[]*string
 	ValueFloat64() *[]*float64
 	ValueInt64() *[]*float64
@@ -49,7 +49,7 @@ type DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,12 +65,12 @@ type DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference
 
 // The jsii proxy struct for DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference
 type jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) CompareFn() *string {
@@ -153,8 +153,8 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesO
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -163,8 +163,8 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesO
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) ValueBool() cdktf.BooleanList {
-	var returns cdktf.BooleanList
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) ValueBool() cdktn.BooleanList {
+	var returns cdktn.BooleanList
 	_jsii_.Get(
 		j,
 		"valueBool",
@@ -224,7 +224,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesO
 }
 
 
-func NewDataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference {
+func NewDataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -233,7 +233,7 @@ func NewDataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputRefere
 	j := jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -241,11 +241,11 @@ func NewDataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputRefere
 	return &j
 }
 
-func NewDataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference_Override(d DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference_Override(d DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -295,7 +295,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesO
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -335,11 +335,11 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesO
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -463,8 +463,8 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesO
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -476,24 +476,24 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesO
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesThresholdCompareGroupsCompareValuesO
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

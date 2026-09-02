@@ -56,6 +56,10 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) valid
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) valid
 }
 
 func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) validatePutTimeoutsParameters(value *AccessContextManagerServicePerimeterDryRunEgressPolicyTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) valid
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AccessContextManagerServicePerimeterDryRunEgressPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

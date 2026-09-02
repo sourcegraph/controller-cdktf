@@ -40,11 +40,11 @@ func (e *jsiiProxy_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference) 
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Ec2ClientVpnEndpointClientLoginBannerOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEc2ClientVpnEndpointClientLoginBannerOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEc2ClientVpnEndpointClientLoginBannerOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

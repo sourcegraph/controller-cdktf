@@ -12,7 +12,7 @@ func (d *jsiiProxy_DnsRecordSetRoutingPolicyWrrList) validateGetParameters(index
 	return nil
 }
 
-func (d *jsiiProxy_DnsRecordSetRoutingPolicyWrrList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsRecordSetRoutingPolicyWrrList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DnsRecordSetRoutingPolicyWrrList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewDnsRecordSetRoutingPolicyWrrListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDnsRecordSetRoutingPolicyWrrListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

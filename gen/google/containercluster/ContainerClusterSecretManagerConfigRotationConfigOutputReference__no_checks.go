@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputRefere
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterSecretManagerConfigRotationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterSecretManagerConfigRotationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterSecretManagerConfigRotationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

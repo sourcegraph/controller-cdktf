@@ -56,6 +56,10 @@ func (e *jsiiProxy_Ec2TransitGatewayPolicyTable) validateInterpolationForAttribu
 	return nil
 }
 
+func (e *jsiiProxy_Ec2TransitGatewayPolicyTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_Ec2TransitGatewayPolicyTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_Ec2TransitGatewayPolicyTable) validateMoveToIdParameters(id *
 }
 
 func (e *jsiiProxy_Ec2TransitGatewayPolicyTable) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_Ec2TransitGatewayPolicyTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_Ec2TransitGatewayPolicyTable) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_Ec2TransitGatewayPolicyTable) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Ec2TransitGatewayPolicyTable) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateInterpolationFo
 	return nil
 }
 
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateOverrideLogical
 }
 
 func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validatePutProtocolParameters(value *DatasyncLocationFsxOpenzfsFileSystemProtocol) error {
+	return nil
+}
+
+func (d *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DatasyncLocationFsxOpenzfsFileSystem) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

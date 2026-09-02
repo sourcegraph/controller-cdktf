@@ -12,7 +12,7 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigReadinessChecksList) validateGet
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigReadinessChecksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigReadinessChecksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigReadinessChecksList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigReadinessChecksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigReadinessChecksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigReadinessChecksList) validateSet
 	return nil
 }
 
-func validateNewWorkstationsWorkstationConfigReadinessChecksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWorkstationsWorkstationConfigReadinessChecksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

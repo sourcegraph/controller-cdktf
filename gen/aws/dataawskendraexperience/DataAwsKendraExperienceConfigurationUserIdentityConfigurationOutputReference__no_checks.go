@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfiguration
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfiguration
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsKendraExperienceConfigurationUserIdentityConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

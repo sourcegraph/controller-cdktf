@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudrunv2workerpool/internal"
 )
 
 type CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetLimits()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference interface {
 
 // The jsii proxy struct for CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference
 type jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReferenc
 }
 
 
-func NewCloudRunV2WorkerPoolTemplateContainersResourcesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference {
+func NewCloudRunV2WorkerPoolTemplateContainersResourcesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudRunV2WorkerPoolTemplateContainersResourcesOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewCloudRunV2WorkerPoolTemplateContainersResourcesOutputReference(terraform
 	j := jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference",
+		"@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewCloudRunV2WorkerPoolTemplateContainersResourcesOutputReference(terraform
 	return &j
 }
 
-func NewCloudRunV2WorkerPoolTemplateContainersResourcesOutputReference_Override(c CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudRunV2WorkerPoolTemplateContainersResourcesOutputReference_Override(c CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference",
+		"@cdktn/provider-google.cloudRunV2WorkerPool.CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -421,8 +421,8 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -434,16 +434,16 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReferenc
 	)
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateContainersResourcesOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutpu
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerNodePoolNetworkConfigPodCidrOverprovisionConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

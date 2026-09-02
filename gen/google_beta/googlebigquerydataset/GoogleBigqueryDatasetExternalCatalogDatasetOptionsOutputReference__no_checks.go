@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBigqueryDatasetExternalCatalogDatasetOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

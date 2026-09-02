@@ -12,7 +12,7 @@ func (a *jsiiProxy_AccessApplicationCorsHeadersList) validateGetParameters(index
 	return nil
 }
 
-func (a *jsiiProxy_AccessApplicationCorsHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessApplicationCorsHeadersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AccessApplicationCorsHeadersList) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_AccessApplicationCorsHeadersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessApplicationCorsHeadersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AccessApplicationCorsHeadersList) validateSetWrapsSetParamete
 	return nil
 }
 
-func validateNewAccessApplicationCorsHeadersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAccessApplicationCorsHeadersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

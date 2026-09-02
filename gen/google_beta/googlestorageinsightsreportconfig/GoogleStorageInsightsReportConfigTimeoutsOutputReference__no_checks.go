@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfigTimeoutsOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageInsightsReportConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageInsightsReportConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageInsightsReportConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageInsightsReportConfigTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfigTimeoutsOutputReference) val
 	return nil
 }
 
-func validateNewGoogleStorageInsightsReportConfigTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleStorageInsightsReportConfigTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleVmwareengineDatastoreTimeoutsOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineDatastoreTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleVmwareengineDatastoreTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleVmwareengineDatastoreTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleVmwareengineDatastoreTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleVmwareengineDatastoreTimeoutsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleVmwareengineDatastoreTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleVmwareengineDatastoreTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleVmwareengineDatastoreTimeoutsOutputReference) validateS
 	return nil
 }
 
-func validateNewGoogleVmwareengineDatastoreTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleVmwareengineDatastoreTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

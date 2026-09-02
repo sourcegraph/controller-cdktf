@@ -56,6 +56,10 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (s *jsiiProxy_SagemakerHumanTaskUi) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SagemakerHumanTaskUi) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SagemakerHumanTaskUi) validateOverrideLogicalIdParameters(new
 }
 
 func (s *jsiiProxy_SagemakerHumanTaskUi) validatePutUiTemplateParameters(value *SagemakerHumanTaskUiUiTemplate) error {
+	return nil
+}
+
+func (s *jsiiProxy_SagemakerHumanTaskUi) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SagemakerHumanTaskUi) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerHumanTaskUi) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SagemakerHumanTaskUi) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslO
 	return nil
 }
 
-func validateNewGoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatabaseMigrationServiceConnectionProfilePostgresqlSslOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

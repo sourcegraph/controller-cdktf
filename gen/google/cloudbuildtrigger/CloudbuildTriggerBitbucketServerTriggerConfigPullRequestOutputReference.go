@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudbuildtrigger/internal"
 )
 
 type CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Branch() *string
 	SetBranch(val *string)
 	BranchInput() *string
@@ -43,15 +43,15 @@ type CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference int
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference int
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCommentControl()
 	ResetInvertRegex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference int
 
 // The jsii proxy struct for CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference
 type jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) Branch() *string {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutpu
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutpu
 }
 
 
-func NewCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference {
+func NewCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference(
 	j := jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference(
 	return &j
 }
 
-func NewCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference_Override(c CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference_Override(c CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutpu
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutpu
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -490,8 +490,8 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutpu
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -503,16 +503,16 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutpu
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutpu
 	)
 }
 
-func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (c *jsiiProxy_CloudbuildTriggerBitbucketServerTriggerConfigPullRequestOutpu
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

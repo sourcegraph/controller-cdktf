@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/pubsubschemaiambinding/internal"
 )
 
 type PubsubSchemaIamBindingConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type PubsubSchemaIamBindingConditionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type PubsubSchemaIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type PubsubSchemaIamBindingConditionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type PubsubSchemaIamBindingConditionOutputReference interface {
 
 // The jsii proxy struct for PubsubSchemaIamBindingConditionOutputReference
 type jsiiProxy_PubsubSchemaIamBindingConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) TitleInput() 
 }
 
 
-func NewPubsubSchemaIamBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubSchemaIamBindingConditionOutputReference {
+func NewPubsubSchemaIamBindingConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PubsubSchemaIamBindingConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPubsubSchemaIamBindingConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewPubsubSchemaIamBindingConditionOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_PubsubSchemaIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBindingConditionOutputReference",
+		"@cdktn/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewPubsubSchemaIamBindingConditionOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewPubsubSchemaIamBindingConditionOutputReference_Override(p PubsubSchemaIamBindingConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPubsubSchemaIamBindingConditionOutputReference_Override(p PubsubSchemaIamBindingConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBindingConditionOutputReference",
+		"@cdktn/provider-google.pubsubSchemaIamBinding.PubsubSchemaIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -489,8 +489,8 @@ func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) GetStringMapA
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -502,16 +502,16 @@ func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) Interpolation
 	return returns
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) ResetDescript
 	)
 }
 
-func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (p *jsiiProxy_PubsubSchemaIamBindingConditionOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

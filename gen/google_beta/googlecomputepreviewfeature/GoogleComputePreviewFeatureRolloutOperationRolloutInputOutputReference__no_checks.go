@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputePreviewFeatureRolloutOperationRolloutInputOutput
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePreviewFeatureRolloutOperationRolloutInputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputePreviewFeatureRolloutOperationRolloutInputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputePreviewFeatureRolloutOperationRolloutInputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputePreviewFeatureRolloutOperationRolloutInputOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleComputePreviewFeatureRolloutOperationRolloutInputOutput
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputePreviewFeatureRolloutOperationRolloutInputOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputePreviewFeatureRolloutOperationRolloutInputOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputePreviewFeatureRolloutOperationRolloutInputOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputePreviewFeatureRolloutOperationRolloutInputOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

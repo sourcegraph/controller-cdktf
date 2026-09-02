@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/kinesisanalyticsapplication/internal"
 )
 
 type KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference interface {
 
 // The jsii proxy struct for KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference
 type jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReferenc
 }
 
 
-func NewKinesisAnalyticsApplicationOutputsKinesisStreamOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference {
+func NewKinesisAnalyticsApplicationOutputsKinesisStreamOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewKinesisAnalyticsApplicationOutputsKinesisStreamOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewKinesisAnalyticsApplicationOutputsKinesisStreamOutputReference(terraform
 	j := jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference",
+		"@cdktn/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewKinesisAnalyticsApplicationOutputsKinesisStreamOutputReference(terraform
 	return &j
 }
 
-func NewKinesisAnalyticsApplicationOutputsKinesisStreamOutputReference_Override(k KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewKinesisAnalyticsApplicationOutputsKinesisStreamOutputReference_Override(k KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference",
+		"@cdktn/provider-aws.kinesisAnalyticsApplication.KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReferenc
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -454,8 +454,8 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReferenc
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -467,24 +467,24 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReferenc
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationOutputsKinesisStreamOutputReferenc
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

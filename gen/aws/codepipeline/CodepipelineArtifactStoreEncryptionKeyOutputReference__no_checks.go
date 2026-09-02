@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CodepipelineArtifactStoreEncryptionKeyOutputReference) valida
 	return nil
 }
 
-func validateNewCodepipelineArtifactStoreEncryptionKeyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodepipelineArtifactStoreEncryptionKeyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

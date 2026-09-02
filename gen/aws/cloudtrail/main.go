@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cloudtrail.Cloudtrail",
+		"@cdktn/provider-aws.cloudtrail.Cloudtrail",
 		reflect.TypeOf((*Cloudtrail)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -60,6 +60,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyId", GoGetter: "KmsKeyId"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyIdInput", GoGetter: "KmsKeyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -73,6 +74,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putEventSelector", GoMethod: "PutEventSelector"},
 			_jsii_.MemberMethod{JsiiMethod: "putInsightSelector", GoMethod: "PutInsightSelector"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvancedEventSelector", GoMethod: "ResetAdvancedEventSelector"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudWatchLogsGroupArn", GoMethod: "ResetCloudWatchLogsGroupArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCloudWatchLogsRoleArn", GoMethod: "ResetCloudWatchLogsRoleArn"},
@@ -109,23 +111,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Cloudtrail{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelector",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelector",
 		reflect.TypeOf((*CloudtrailAdvancedEventSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelector",
 		reflect.TypeOf((*CloudtrailAdvancedEventSelectorFieldSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorList",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorList",
 		reflect.TypeOf((*CloudtrailAdvancedEventSelectorFieldSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -142,12 +145,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorOutputReference",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorFieldSelectorOutputReference",
 		reflect.TypeOf((*CloudtrailAdvancedEventSelectorFieldSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -194,12 +197,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudtrailAdvancedEventSelectorFieldSelectorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorList",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorList",
 		reflect.TypeOf((*CloudtrailAdvancedEventSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -216,12 +219,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudtrailAdvancedEventSelectorList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailAdvancedEventSelectorOutputReference",
 		reflect.TypeOf((*CloudtrailAdvancedEventSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -254,24 +257,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudtrailAdvancedEventSelectorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailConfig",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailConfig",
 		reflect.TypeOf((*CloudtrailConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailEventSelector",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailEventSelector",
 		reflect.TypeOf((*CloudtrailEventSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailEventSelectorDataResource",
 		reflect.TypeOf((*CloudtrailEventSelectorDataResource)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceList",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceList",
 		reflect.TypeOf((*CloudtrailEventSelectorDataResourceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -288,12 +291,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudtrailEventSelectorDataResourceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceOutputReference",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailEventSelectorDataResourceOutputReference",
 		reflect.TypeOf((*CloudtrailEventSelectorDataResourceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -324,12 +327,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudtrailEventSelectorDataResourceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorList",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailEventSelectorList",
 		reflect.TypeOf((*CloudtrailEventSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -346,12 +349,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudtrailEventSelectorList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailEventSelectorOutputReference",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailEventSelectorOutputReference",
 		reflect.TypeOf((*CloudtrailEventSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -391,16 +394,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudtrailEventSelectorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelector",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailInsightSelector",
 		reflect.TypeOf((*CloudtrailInsightSelector)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorList",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailInsightSelectorList",
 		reflect.TypeOf((*CloudtrailInsightSelectorList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -417,12 +420,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudtrailInsightSelectorList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.cloudtrail.CloudtrailInsightSelectorOutputReference",
+		"@cdktn/provider-aws.cloudtrail.CloudtrailInsightSelectorOutputReference",
 		reflect.TypeOf((*CloudtrailInsightSelectorOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -451,7 +454,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CloudtrailInsightSelectorOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

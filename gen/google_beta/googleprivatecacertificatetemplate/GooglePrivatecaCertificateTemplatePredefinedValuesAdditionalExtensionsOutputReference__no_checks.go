@@ -40,7 +40,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalE
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalE
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalE
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesAdditionalE
 	return nil
 }
 
-func validateNewGooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGooglePrivatecaCertificateTemplatePredefinedValuesAdditionalExtensionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

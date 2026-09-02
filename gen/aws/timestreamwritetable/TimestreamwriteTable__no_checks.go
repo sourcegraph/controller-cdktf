@@ -56,6 +56,10 @@ func (t *jsiiProxy_TimestreamwriteTable) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (t *jsiiProxy_TimestreamwriteTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (t *jsiiProxy_TimestreamwriteTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (t *jsiiProxy_TimestreamwriteTable) validatePutMagneticStoreWriteProperties
 }
 
 func (t *jsiiProxy_TimestreamwriteTable) validatePutRetentionPropertiesParameters(value *TimestreamwriteTableRetentionProperties) error {
+	return nil
+}
+
+func (t *jsiiProxy_TimestreamwriteTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_TimestreamwriteTable) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_TimestreamwriteTable) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_TimestreamwriteTable) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

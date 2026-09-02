@@ -40,11 +40,11 @@ func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validate
 	return nil
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_LightsailInstancePublicPortsPortInfoOutputReference) validate
 	return nil
 }
 
-func validateNewLightsailInstancePublicPortsPortInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLightsailInstancePublicPortsPortInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

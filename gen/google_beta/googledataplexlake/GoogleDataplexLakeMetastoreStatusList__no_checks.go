@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDataplexLakeMetastoreStatusList) validateGetParameters(
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexLakeMetastoreStatusList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexLakeMetastoreStatusList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleDataplexLakeMetastoreStatusList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexLakeMetastoreStatusList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexLakeMetastoreStatusList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleDataplexLakeMetastoreStatusList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewGoogleDataplexLakeMetastoreStatusListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDataplexLakeMetastoreStatusListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

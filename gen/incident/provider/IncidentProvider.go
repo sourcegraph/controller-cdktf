@@ -5,13 +5,13 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/incident/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/incident/provider/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/incident-io/incident/5.21.1/docs incident}.
 type IncidentProvider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
@@ -19,7 +19,7 @@ type IncidentProvider interface {
 	SetApiKey(val *string)
 	ApiKeyInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	Endpoint() *string
@@ -36,7 +36,7 @@ type IncidentProvider interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -46,6 +46,19 @@ type IncidentProvider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAlias()
 	ResetApiKey()
 	ResetEndpoint()
@@ -63,11 +76,20 @@ type IncidentProvider interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for IncidentProvider
 type jsiiProxy_IncidentProvider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_IncidentProvider) Alias() *string {
@@ -110,8 +132,8 @@ func (j *jsiiProxy_IncidentProvider) ApiKeyInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IncidentProvider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_IncidentProvider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -200,8 +222,8 @@ func (j *jsiiProxy_IncidentProvider) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_IncidentProvider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_IncidentProvider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -241,7 +263,7 @@ func NewIncidentProvider(scope constructs.Construct, id *string, config *Inciden
 	j := jsiiProxy_IncidentProvider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.provider.IncidentProvider",
+		"@cdktn/provider-incident.provider.IncidentProvider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -254,7 +276,7 @@ func NewIncidentProvider_Override(i IncidentProvider, scope constructs.Construct
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-incident.provider.IncidentProvider",
+		"@cdktn/provider-incident.provider.IncidentProvider",
 		[]interface{}{scope, id, config},
 		i,
 	)
@@ -284,17 +306,17 @@ func (j *jsiiProxy_IncidentProvider)SetEndpoint(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a IncidentProvider resource upon running "cdktf plan <stack-name>".
-func IncidentProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a IncidentProvider resource upon running "cdktn plan <stack-name>".
+func IncidentProvider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateIncidentProvider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.provider.IncidentProvider",
+		"@cdktn/provider-incident.provider.IncidentProvider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -329,7 +351,7 @@ func IncidentProvider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.provider.IncidentProvider",
+		"@cdktn/provider-incident.provider.IncidentProvider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -348,7 +370,7 @@ func IncidentProvider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.provider.IncidentProvider",
+		"@cdktn/provider-incident.provider.IncidentProvider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -367,7 +389,7 @@ func IncidentProvider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-incident.provider.IncidentProvider",
+		"@cdktn/provider-incident.provider.IncidentProvider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -380,7 +402,7 @@ func IncidentProvider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-incident.provider.IncidentProvider",
+		"@cdktn/provider-incident.provider.IncidentProvider",
 		"tfResourceType",
 		&returns,
 	)
@@ -406,6 +428,17 @@ func (i *jsiiProxy_IncidentProvider) OverrideLogicalId(newLogicalId *string) {
 		i,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (i *jsiiProxy_IncidentProvider) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := i.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		i,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -513,6 +546,24 @@ func (i *jsiiProxy_IncidentProvider) ToTerraform() interface{} {
 		i,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (i *jsiiProxy_IncidentProvider) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		i,
+		"with",
+		args,
 		&returns,
 	)
 

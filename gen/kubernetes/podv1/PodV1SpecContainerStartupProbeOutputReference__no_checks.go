@@ -40,7 +40,7 @@ func (p *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateGetStr
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -56,7 +56,7 @@ func (p *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validatePutTcp
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_PodV1SpecContainerStartupProbeOutputReference) validateSetTim
 	return nil
 }
 
-func validateNewPodV1SpecContainerStartupProbeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPodV1SpecContainerStartupProbeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkPolicySpecEgressList) validateGetParameters(index *flo
 	return nil
 }
 
-func (n *jsiiProxy_NetworkPolicySpecEgressList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkPolicySpecEgressList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkPolicySpecEgressList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_NetworkPolicySpecEgressList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkPolicySpecEgressList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkPolicySpecEgressList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewNetworkPolicySpecEgressListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkPolicySpecEgressListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

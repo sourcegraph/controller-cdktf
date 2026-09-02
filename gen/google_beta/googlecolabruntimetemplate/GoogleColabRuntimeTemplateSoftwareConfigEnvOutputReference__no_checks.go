@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleColabRuntimeTemplateSoftwareConfigEnvOutputReference) v
 	return nil
 }
 
-func validateNewGoogleColabRuntimeTemplateSoftwareConfigEnvOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleColabRuntimeTemplateSoftwareConfigEnvOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_ComputeHttpsHealthCheck) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_ComputeHttpsHealthCheck) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ComputeHttpsHealthCheck) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ComputeHttpsHealthCheck) validateOverrideLogicalIdParameters(
 }
 
 func (c *jsiiProxy_ComputeHttpsHealthCheck) validatePutTimeoutsParameters(value *ComputeHttpsHealthCheckTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ComputeHttpsHealthCheck) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ComputeHttpsHealthCheck) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_ComputeHttpsHealthCheck) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ComputeHttpsHealthCheck) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateInterpolationFor
 	return nil
 }
 
+func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validatePutTargetParamet
 }
 
 func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validatePutTimeoutsParameters(value *GoogleIamOrganizationsPolicyBindingTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleIamOrganizationsPolicyBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

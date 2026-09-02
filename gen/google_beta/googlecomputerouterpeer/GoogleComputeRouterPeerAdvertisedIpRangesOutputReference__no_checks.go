@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRouterPeerAdvertisedIpRangesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeRouterPeerAdvertisedIpRangesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeRouterPeerAdvertisedIpRangesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

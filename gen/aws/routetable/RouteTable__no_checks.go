@@ -56,6 +56,10 @@ func (r *jsiiProxy_RouteTable) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (r *jsiiProxy_RouteTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RouteTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (r *jsiiProxy_RouteTable) validatePutRouteParameters(value interface{}) err
 }
 
 func (r *jsiiProxy_RouteTable) validatePutTimeoutsParameters(value *RouteTableTimeouts) error {
+	return nil
+}
+
+func (r *jsiiProxy_RouteTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_RouteTable) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_RouteTable) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RouteTable) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

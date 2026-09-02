@@ -40,11 +40,11 @@ func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) validateGetStri
 	return nil
 }
 
-func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificateSigningRequestSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CertificateSigningRequestSpecOutputReference) validateSetUsag
 	return nil
 }
 
-func validateNewCertificateSigningRequestSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCertificateSigningRequestSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleclouddeployautomation/internal"
 )
 
 type GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Wait() *string
 	SetWait(val *string)
 	WaitInput() *string
@@ -54,7 +54,7 @@ type GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference interface
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -70,15 +70,15 @@ type GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDestinationPhase()
 	ResetDestinationTargetId()
 	ResetWait()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -88,7 +88,7 @@ type GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference interface
 
 // The jsii proxy struct for GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference
 type jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference) ComplexObjectIndex() interface{} {
@@ -211,8 +211,8 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -242,7 +242,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputRefer
 }
 
 
-func NewGoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference {
+func NewGoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -251,7 +251,7 @@ func NewGoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference(terraf
 	j := jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference",
+		"@cdktn/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -259,11 +259,11 @@ func NewGoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference(terraf
 	return &j
 }
 
-func NewGoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference_Override(g GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference_Override(g GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference",
+		"@cdktn/provider-google-beta.googleClouddeployAutomation.GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -346,7 +346,7 @@ func (j *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputRefer
 	)
 }
 
-func (j *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -397,11 +397,11 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -525,8 +525,8 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -538,16 +538,16 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputRefer
 	return returns
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -578,8 +578,8 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputRefer
 	)
 }
 
-func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -587,7 +587,7 @@ func (g *jsiiProxy_GoogleClouddeployAutomationRulesPromoteReleaseRuleOutputRefer
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

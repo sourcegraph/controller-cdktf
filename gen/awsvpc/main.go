@@ -1,4 +1,4 @@
-// @cdktf/provider-awsvpc
+// @cdktn/provider-awsvpc
 package awsvpc
 
 import (
@@ -9,7 +9,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-awsvpc.Awsvpc",
+		"@cdktn/provider-awsvpc.Awsvpc",
 		reflect.TypeOf((*Awsvpc)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -291,6 +291,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "redshiftSubnetsOutput", GoGetter: "RedshiftSubnetsOutput"},
 			_jsii_.MemberProperty{JsiiProperty: "redshiftSubnetSuffix", GoGetter: "RedshiftSubnetSuffix"},
 			_jsii_.MemberProperty{JsiiProperty: "redshiftSubnetTags", GoGetter: "RedshiftSubnetTags"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "reuseNatIps", GoGetter: "ReuseNatIps"},
 			_jsii_.MemberProperty{JsiiProperty: "secondaryCidrBlocks", GoGetter: "SecondaryCidrBlocks"},
@@ -330,15 +331,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayAz", GoGetter: "VpnGatewayAz"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayId", GoGetter: "VpnGatewayId"},
 			_jsii_.MemberProperty{JsiiProperty: "vpnGatewayTags", GoGetter: "VpnGatewayTags"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Awsvpc{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformModule)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformModule)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-awsvpc.AwsvpcConfig",
+		"@cdktn/provider-awsvpc.AwsvpcConfig",
 		reflect.TypeOf((*AwsvpcConfig)(nil)).Elem(),
 	)
 }

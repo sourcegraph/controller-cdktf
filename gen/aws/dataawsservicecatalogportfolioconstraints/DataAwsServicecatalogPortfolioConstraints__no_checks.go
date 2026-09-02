@@ -56,6 +56,10 @@ func (d *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) validatePutTimeout
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsServicecatalogPortfolioConstraints_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) validateSetIdParam
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsServicecatalogPortfolioConstraints) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

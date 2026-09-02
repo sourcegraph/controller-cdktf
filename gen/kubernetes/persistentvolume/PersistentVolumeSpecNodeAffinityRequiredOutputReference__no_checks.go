@@ -40,7 +40,7 @@ func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredOutputReference) vali
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredOutputReference) vali
 	return nil
 }
 
-func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PersistentVolumeSpecNodeAffinityRequiredOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPersistentVolumeSpecNodeAffinityRequiredOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPersistentVolumeSpecNodeAffinityRequiredOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

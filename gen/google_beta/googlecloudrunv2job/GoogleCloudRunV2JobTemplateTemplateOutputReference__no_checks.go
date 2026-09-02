@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateG
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -108,7 +108,7 @@ func (j *jsiiProxy_GoogleCloudRunV2JobTemplateTemplateOutputReference) validateS
 	return nil
 }
 
-func validateNewGoogleCloudRunV2JobTemplateTemplateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudRunV2JobTemplateTemplateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

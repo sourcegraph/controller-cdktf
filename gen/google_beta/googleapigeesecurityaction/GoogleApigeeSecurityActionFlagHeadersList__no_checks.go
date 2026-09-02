@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleApigeeSecurityActionFlagHeadersList) validateGetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApigeeSecurityActionFlagHeadersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApigeeSecurityActionFlagHeadersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleApigeeSecurityActionFlagHeadersList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApigeeSecurityActionFlagHeadersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApigeeSecurityActionFlagHeadersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleApigeeSecurityActionFlagHeadersList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewGoogleApigeeSecurityActionFlagHeadersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleApigeeSecurityActionFlagHeadersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

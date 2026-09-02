@@ -12,7 +12,7 @@ func (a *jsiiProxy_AppGroupAssignmentsGroupList) validateGetParameters(index *fl
 	return nil
 }
 
-func (a *jsiiProxy_AppGroupAssignmentsGroupList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppGroupAssignmentsGroupList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AppGroupAssignmentsGroupList) validateSetTerraformAttributePa
 	return nil
 }
 
-func (j *jsiiProxy_AppGroupAssignmentsGroupList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppGroupAssignmentsGroupList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AppGroupAssignmentsGroupList) validateSetWrapsSetParameters(v
 	return nil
 }
 
-func validateNewAppGroupAssignmentsGroupListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAppGroupAssignmentsGroupListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

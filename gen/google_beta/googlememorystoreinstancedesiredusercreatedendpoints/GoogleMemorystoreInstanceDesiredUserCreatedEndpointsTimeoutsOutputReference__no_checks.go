@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsO
 	return nil
 }
 
-func validateNewGoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMemorystoreInstanceDesiredUserCreatedEndpointsTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

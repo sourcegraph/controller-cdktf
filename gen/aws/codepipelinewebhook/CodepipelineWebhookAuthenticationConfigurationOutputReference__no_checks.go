@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodepipelineWebhookAuthenticationConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCodepipelineWebhookAuthenticationConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodepipelineWebhookAuthenticationConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/lambdafunctionurl/internal"
 )
 
 type LambdaFunctionUrlTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type LambdaFunctionUrlTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type LambdaFunctionUrlTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type LambdaFunctionUrlTimeoutsOutputReference interface {
 
 // The jsii proxy struct for LambdaFunctionUrlTimeoutsOutputReference
 type jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) TerraformAttribute(
 	return returns
 }
 
-func (j *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) TerraformResource()
 }
 
 
-func NewLambdaFunctionUrlTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LambdaFunctionUrlTimeoutsOutputReference {
+func NewLambdaFunctionUrlTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LambdaFunctionUrlTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLambdaFunctionUrlTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewLambdaFunctionUrlTimeoutsOutputReference(terraformResource cdktf.IInterp
 	j := jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeoutsOutputReference",
+		"@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewLambdaFunctionUrlTimeoutsOutputReference(terraformResource cdktf.IInterp
 	return &j
 }
 
-func NewLambdaFunctionUrlTimeoutsOutputReference_Override(l LambdaFunctionUrlTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLambdaFunctionUrlTimeoutsOutputReference_Override(l LambdaFunctionUrlTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeoutsOutputReference",
+		"@cdktn/provider-aws.lambdaFunctionUrl.LambdaFunctionUrlTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference)SetTerraformAttribut
 	)
 }
 
-func (j *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) GetAnyMapAttribute(
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -421,8 +421,8 @@ func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) GetStringMapAttribu
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -434,16 +434,16 @@ func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) InterpolationAsList
 	return returns
 }
 
-func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) ResetCreate() {
 	)
 }
 
-func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (l *jsiiProxy_LambdaFunctionUrlTimeoutsOutputReference) Resolve(_context cd
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

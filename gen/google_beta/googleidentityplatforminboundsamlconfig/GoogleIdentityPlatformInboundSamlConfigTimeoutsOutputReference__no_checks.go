@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReferenc
 	return nil
 }
 
-func validateNewGoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIdentityPlatformInboundSamlConfigTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

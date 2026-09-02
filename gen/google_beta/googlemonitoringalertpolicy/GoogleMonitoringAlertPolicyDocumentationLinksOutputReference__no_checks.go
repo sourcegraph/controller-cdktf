@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleMonitoringAlertPolicyDocumentationLinksOutputReference)
 	return nil
 }
 
-func validateNewGoogleMonitoringAlertPolicyDocumentationLinksOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleMonitoringAlertPolicyDocumentationLinksOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

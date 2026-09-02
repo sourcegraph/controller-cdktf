@@ -12,7 +12,7 @@ func (o *jsiiProxy_OpsworksMysqlLayerEbsVolumeList) validateGetParameters(index 
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMysqlLayerEbsVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksMysqlLayerEbsVolumeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_OpsworksMysqlLayerEbsVolumeList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewOpsworksMysqlLayerEbsVolumeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOpsworksMysqlLayerEbsVolumeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

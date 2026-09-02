@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputRe
 	return nil
 }
 
-func validateNewGoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIntegrationConnectorsEndpointAttachmentTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

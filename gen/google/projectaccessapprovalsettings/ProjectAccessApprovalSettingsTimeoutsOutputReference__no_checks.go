@@ -40,11 +40,11 @@ func (p *jsiiProxy_ProjectAccessApprovalSettingsTimeoutsOutputReference) validat
 	return nil
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_ProjectAccessApprovalSettingsTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_ProjectAccessApprovalSettingsTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_ProjectAccessApprovalSettingsTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettingsTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ProjectAccessApprovalSettingsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ProjectAccessApprovalSettingsTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_ProjectAccessApprovalSettingsTimeoutsOutputReference) validat
 	return nil
 }
 
-func validateNewProjectAccessApprovalSettingsTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewProjectAccessApprovalSettingsTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

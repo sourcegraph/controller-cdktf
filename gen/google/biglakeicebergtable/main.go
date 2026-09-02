@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTable",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTable",
 		reflect.TypeOf((*BiglakeIcebergTable)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -40,6 +40,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -61,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putSchema", GoMethod: "PutSchema"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLocation", GoMethod: "ResetLocation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -81,27 +83,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_BiglakeIcebergTable{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableConfig",
 		reflect.TypeOf((*BiglakeIcebergTableConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpec",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpec",
 		reflect.TypeOf((*BiglakeIcebergTablePartitionSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFields",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFields",
 		reflect.TypeOf((*BiglakeIcebergTablePartitionSpecFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFieldsList",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFieldsList",
 		reflect.TypeOf((*BiglakeIcebergTablePartitionSpecFieldsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -118,12 +121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFieldsOutputReference",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecFieldsOutputReference",
 		reflect.TypeOf((*BiglakeIcebergTablePartitionSpecFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -157,12 +160,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BiglakeIcebergTablePartitionSpecFieldsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecOutputReference",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTablePartitionSpecOutputReference",
 		reflect.TypeOf((*BiglakeIcebergTablePartitionSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -193,20 +196,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BiglakeIcebergTablePartitionSpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchema",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchema",
 		reflect.TypeOf((*BiglakeIcebergTableSchema)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFields",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFields",
 		reflect.TypeOf((*BiglakeIcebergTableSchemaFields)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsList",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsList",
 		reflect.TypeOf((*BiglakeIcebergTableSchemaFieldsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -223,12 +226,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BiglakeIcebergTableSchemaFieldsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsOutputReference",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaFieldsOutputReference",
 		reflect.TypeOf((*BiglakeIcebergTableSchemaFieldsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -266,12 +269,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BiglakeIcebergTableSchemaFieldsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaOutputReference",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableSchemaOutputReference",
 		reflect.TypeOf((*BiglakeIcebergTableSchemaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -308,16 +311,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BiglakeIcebergTableSchemaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeouts",
 		reflect.TypeOf((*BiglakeIcebergTableTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeoutsOutputReference",
+		"@cdktn/provider-google.biglakeIcebergTable.BiglakeIcebergTableTimeoutsOutputReference",
 		reflect.TypeOf((*BiglakeIcebergTableTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -353,7 +356,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_BiglakeIcebergTableTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

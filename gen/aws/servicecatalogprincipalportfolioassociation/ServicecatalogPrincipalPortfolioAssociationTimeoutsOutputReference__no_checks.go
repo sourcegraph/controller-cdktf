@@ -40,11 +40,11 @@ func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociationTimeoutsOutputRefe
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociationTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociationTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServicecatalogPrincipalPortfolioAssociationTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociationTimeoutsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ServicecatalogPrincipalPortfolioAssociationTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewServicecatalogPrincipalPortfolioAssociationTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewServicecatalogPrincipalPortfolioAssociationTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

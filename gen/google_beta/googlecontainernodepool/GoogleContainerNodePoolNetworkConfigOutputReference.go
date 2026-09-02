@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecontainernodepool/internal"
 )
 
 type GoogleContainerNodePoolNetworkConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AcceleratorNetworkProfile() *string
 	SetAcceleratorNetworkProfile(val *string)
 	AcceleratorNetworkProfileInput() *string
@@ -60,15 +60,15 @@ type GoogleContainerNodePoolNetworkConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -84,9 +84,9 @@ type GoogleContainerNodePoolNetworkConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAdditionalNodeNetworkConfigs(value interface{})
 	PutAdditionalPodNetworkConfigs(value interface{})
 	PutNetworkPerformanceConfig(value *GoogleContainerNodePoolNetworkConfigNetworkPerformanceConfig)
@@ -103,7 +103,7 @@ type GoogleContainerNodePoolNetworkConfigOutputReference interface {
 	ResetSubnetwork()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,7 +113,7 @@ type GoogleContainerNodePoolNetworkConfigOutputReference interface {
 
 // The jsii proxy struct for GoogleContainerNodePoolNetworkConfigOutputReference
 type jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) AcceleratorNetworkProfile() *string {
@@ -376,8 +376,8 @@ func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) Terrafor
 }
 
 
-func NewGoogleContainerNodePoolNetworkConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleContainerNodePoolNetworkConfigOutputReference {
+func NewGoogleContainerNodePoolNetworkConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleContainerNodePoolNetworkConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleContainerNodePoolNetworkConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -396,7 +396,7 @@ func NewGoogleContainerNodePoolNetworkConfigOutputReference(terraformResource cd
 	j := jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNetworkConfigOutputReference",
+		"@cdktn/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -404,11 +404,11 @@ func NewGoogleContainerNodePoolNetworkConfigOutputReference(terraformResource cd
 	return &j
 }
 
-func NewGoogleContainerNodePoolNetworkConfigOutputReference_Override(g GoogleContainerNodePoolNetworkConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleContainerNodePoolNetworkConfigOutputReference_Override(g GoogleContainerNodePoolNetworkConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNetworkConfigOutputReference",
+		"@cdktn/provider-google-beta.googleContainerNodePool.GoogleContainerNodePoolNetworkConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -524,7 +524,7 @@ func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -564,11 +564,11 @@ func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) GetAnyMa
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -692,8 +692,8 @@ func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) GetStrin
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -705,16 +705,16 @@ func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) Interpol
 	return returns
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -845,8 +845,8 @@ func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) ResetSub
 	)
 }
 
-func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -854,7 +854,7 @@ func (g *jsiiProxy_GoogleContainerNodePoolNetworkConfigOutputReference) Resolve(
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

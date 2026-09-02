@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/tfe/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/tfe/workspace/internal"
 )
 
 type WorkspaceVcsRepoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Branch() *string
 	SetBranch(val *string)
 	BranchInput() *string
@@ -52,15 +52,15 @@ type WorkspaceVcsRepoOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type WorkspaceVcsRepoOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBranch()
 	ResetGithubAppInstallationId()
 	ResetIngressSubmodules()
@@ -86,7 +86,7 @@ type WorkspaceVcsRepoOutputReference interface {
 	ResetTagsRegex()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type WorkspaceVcsRepoOutputReference interface {
 
 // The jsii proxy struct for WorkspaceVcsRepoOutputReference
 type jsiiProxy_WorkspaceVcsRepoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) Branch() *string {
@@ -279,8 +279,8 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) TerraformAttribute() *string
 	return returns
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -290,7 +290,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference) TerraformResource() cdktf.II
 }
 
 
-func NewWorkspaceVcsRepoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) WorkspaceVcsRepoOutputReference {
+func NewWorkspaceVcsRepoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) WorkspaceVcsRepoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewWorkspaceVcsRepoOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -299,7 +299,7 @@ func NewWorkspaceVcsRepoOutputReference(terraformResource cdktf.IInterpolatingPa
 	j := jsiiProxy_WorkspaceVcsRepoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference",
+		"@cdktn/provider-tfe.workspace.WorkspaceVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -307,11 +307,11 @@ func NewWorkspaceVcsRepoOutputReference(terraformResource cdktf.IInterpolatingPa
 	return &j
 }
 
-func NewWorkspaceVcsRepoOutputReference_Override(w WorkspaceVcsRepoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewWorkspaceVcsRepoOutputReference_Override(w WorkspaceVcsRepoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-tfe.workspace.WorkspaceVcsRepoOutputReference",
+		"@cdktn/provider-tfe.workspace.WorkspaceVcsRepoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		w,
 	)
@@ -427,7 +427,7 @@ func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetTerraformAttribute(val *st
 	)
 }
 
-func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_WorkspaceVcsRepoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -467,11 +467,11 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetAnyMapAttribute(terraform
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := w.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -595,8 +595,8 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) GetStringMapAttribute(terraf
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
@@ -608,16 +608,16 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) InterpolationAsList() cdktf.
 	return returns
 }
 
-func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := w.validateInterpolationForAttributeParameters(property); err != nil {
+func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := w.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		w,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -664,8 +664,8 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) ResetTagsRegex() {
 	)
 }
 
-func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := w.validateResolveParameters(_context); err != nil {
+func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := w.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -673,7 +673,7 @@ func (w *jsiiProxy_WorkspaceVcsRepoOutputReference) Resolve(_context cdktf.IReso
 	_jsii_.Invoke(
 		w,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleStorageBucketEncryptionList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleStorageBucketEncryptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleStorageBucketEncryptionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketEncryptionList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleStorageBucketEncryptionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleStorageBucketEncryptionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleStorageBucketEncryptionList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDataGoogleStorageBucketEncryptionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleStorageBucketEncryptionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

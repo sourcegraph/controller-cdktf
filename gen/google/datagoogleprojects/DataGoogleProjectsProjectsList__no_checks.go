@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleProjectsProjectsList) validateGetParameters(index *
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleProjectsProjectsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleProjectsProjectsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleProjectsProjectsList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleProjectsProjectsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleProjectsProjectsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleProjectsProjectsList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewDataGoogleProjectsProjectsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleProjectsProjectsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

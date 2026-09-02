@@ -56,6 +56,10 @@ func (s *jsiiProxy_SsmDocument) validateInterpolationForAttributeParameters(terr
 	return nil
 }
 
+func (s *jsiiProxy_SsmDocument) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsmDocument) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SsmDocument) validateOverrideLogicalIdParameters(newLogicalId
 }
 
 func (s *jsiiProxy_SsmDocument) validatePutAttachmentsSourceParameters(value interface{}) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsmDocument) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_SsmDocument) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_SsmDocument) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SsmDocument) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

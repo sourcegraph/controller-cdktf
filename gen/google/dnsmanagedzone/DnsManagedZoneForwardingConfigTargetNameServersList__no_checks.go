@@ -12,7 +12,7 @@ func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersList) validate
 	return nil
 }
 
-func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersList) validate
 	return nil
 }
 
-func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DnsManagedZoneForwardingConfigTargetNameServersList) validate
 	return nil
 }
 
-func validateNewDnsManagedZoneForwardingConfigTargetNameServersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDnsManagedZoneForwardingConfigTargetNameServersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

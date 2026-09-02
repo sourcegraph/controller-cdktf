@@ -40,11 +40,11 @@ func (t *jsiiProxy_TeamsAccountProxyOutputReference) validateGetStringMapAttribu
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccountProxyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TeamsAccountProxyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TeamsAccountProxyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamsAccountProxyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetTerraformAttribu
 	return nil
 }
 
-func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_TeamsAccountProxyOutputReference) validateSetUdpParameters(va
 	return nil
 }
 
-func validateNewTeamsAccountProxyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTeamsAccountProxyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

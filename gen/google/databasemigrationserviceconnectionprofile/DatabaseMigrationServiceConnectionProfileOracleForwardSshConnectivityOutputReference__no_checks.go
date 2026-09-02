@@ -40,11 +40,11 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleForwardSshConn
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleForwardSshConn
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileOracleForwardSshConn
 	return nil
 }
 
-func validateNewDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

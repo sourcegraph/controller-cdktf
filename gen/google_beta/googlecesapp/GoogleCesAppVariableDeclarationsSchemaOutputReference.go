@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecesapp/internal"
 )
 
 type GoogleCesAppVariableDeclarationsSchemaOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AdditionalProperties() *string
 	SetAdditionalProperties(val *string)
 	AdditionalPropertiesInput() *string
@@ -70,9 +70,9 @@ type GoogleCesAppVariableDeclarationsSchemaOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -87,7 +87,7 @@ type GoogleCesAppVariableDeclarationsSchemaOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -103,9 +103,9 @@ type GoogleCesAppVariableDeclarationsSchemaOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAdditionalProperties()
 	ResetAnyOf()
 	ResetDefault()
@@ -122,7 +122,7 @@ type GoogleCesAppVariableDeclarationsSchemaOutputReference interface {
 	ResetUniqueItems()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -132,7 +132,7 @@ type GoogleCesAppVariableDeclarationsSchemaOutputReference interface {
 
 // The jsii proxy struct for GoogleCesAppVariableDeclarationsSchemaOutputReference
 type jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) AdditionalProperties() *string {
@@ -435,8 +435,8 @@ func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Terraf
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -506,7 +506,7 @@ func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Unique
 }
 
 
-func NewGoogleCesAppVariableDeclarationsSchemaOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCesAppVariableDeclarationsSchemaOutputReference {
+func NewGoogleCesAppVariableDeclarationsSchemaOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleCesAppVariableDeclarationsSchemaOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCesAppVariableDeclarationsSchemaOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -515,7 +515,7 @@ func NewGoogleCesAppVariableDeclarationsSchemaOutputReference(terraformResource 
 	j := jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsSchemaOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -523,11 +523,11 @@ func NewGoogleCesAppVariableDeclarationsSchemaOutputReference(terraformResource 
 	return &j
 }
 
-func NewGoogleCesAppVariableDeclarationsSchemaOutputReference_Override(g GoogleCesAppVariableDeclarationsSchemaOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleCesAppVariableDeclarationsSchemaOutputReference_Override(g GoogleCesAppVariableDeclarationsSchemaOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsSchemaOutputReference",
+		"@cdktn/provider-google-beta.googleCesApp.GoogleCesAppVariableDeclarationsSchemaOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -709,7 +709,7 @@ func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetTerr
 	)
 }
 
-func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -782,11 +782,11 @@ func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetAny
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -910,8 +910,8 @@ func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) GetStr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -923,16 +923,16 @@ func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Interp
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -1051,8 +1051,8 @@ func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) ResetU
 	)
 }
 
-func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -1060,7 +1060,7 @@ func (g *jsiiProxy_GoogleCesAppVariableDeclarationsSchemaOutputReference) Resolv
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

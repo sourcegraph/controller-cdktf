@@ -56,6 +56,10 @@ func (e *jsiiProxy_EgressOnlyInternetGateway) validateInterpolationForAttributeP
 	return nil
 }
 
+func (e *jsiiProxy_EgressOnlyInternetGateway) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EgressOnlyInternetGateway) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (e *jsiiProxy_EgressOnlyInternetGateway) validateMoveToIdParameters(id *str
 }
 
 func (e *jsiiProxy_EgressOnlyInternetGateway) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (e *jsiiProxy_EgressOnlyInternetGateway) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_EgressOnlyInternetGateway) validateSetIdParameters(val *strin
 	return nil
 }
 
-func (j *jsiiProxy_EgressOnlyInternetGateway) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EgressOnlyInternetGateway) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

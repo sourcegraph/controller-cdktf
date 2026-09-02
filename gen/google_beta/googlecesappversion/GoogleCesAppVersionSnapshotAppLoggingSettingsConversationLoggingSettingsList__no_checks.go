@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLogg
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLogg
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsConversationLogg
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotAppLoggingSettingsConversationLoggingSettingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

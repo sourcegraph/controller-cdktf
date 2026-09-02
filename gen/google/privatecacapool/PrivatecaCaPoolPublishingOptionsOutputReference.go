@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/privatecacapool/internal"
 )
 
 type PrivatecaCaPoolPublishingOptionsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type PrivatecaCaPoolPublishingOptionsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type PrivatecaCaPoolPublishingOptionsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEncodingFormat()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type PrivatecaCaPoolPublishingOptionsOutputReference interface {
 
 // The jsii proxy struct for PrivatecaCaPoolPublishingOptionsOutputReference
 type jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) ComplexObjectIndex() interface{} {
@@ -206,8 +206,8 @@ func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) TerraformRes
 }
 
 
-func NewPrivatecaCaPoolPublishingOptionsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PrivatecaCaPoolPublishingOptionsOutputReference {
+func NewPrivatecaCaPoolPublishingOptionsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PrivatecaCaPoolPublishingOptionsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPrivatecaCaPoolPublishingOptionsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewPrivatecaCaPoolPublishingOptionsOutputReference(terraformResource cdktf.
 	j := jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolPublishingOptionsOutputReference",
+		"@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolPublishingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewPrivatecaCaPoolPublishingOptionsOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewPrivatecaCaPoolPublishingOptionsOutputReference_Override(p PrivatecaCaPoolPublishingOptionsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPrivatecaCaPoolPublishingOptionsOutputReference_Override(p PrivatecaCaPoolPublishingOptionsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.privatecaCaPool.PrivatecaCaPoolPublishingOptionsOutputReference",
+		"@cdktn/provider-google.privatecaCaPool.PrivatecaCaPoolPublishingOptionsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -321,7 +321,7 @@ func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -489,8 +489,8 @@ func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) GetStringMap
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -502,16 +502,16 @@ func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) Interpolatio
 	return returns
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) ResetEncodin
 	)
 }
 
-func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (p *jsiiProxy_PrivatecaCaPoolPublishingOptionsOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

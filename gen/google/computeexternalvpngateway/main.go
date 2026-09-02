@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
+		"@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGateway",
 		reflect.TypeOf((*ComputeExternalVpnGateway)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "labels", GoGetter: "Labels"},
 			_jsii_.MemberProperty{JsiiProperty: "labelsInput", GoGetter: "LabelsInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -63,6 +64,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "redundancyType", GoGetter: "RedundancyType"},
 			_jsii_.MemberProperty{JsiiProperty: "redundancyTypeInput", GoGetter: "RedundancyTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDescription", GoMethod: "ResetDescription"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetInterface", GoMethod: "ResetInterface"},
@@ -85,23 +87,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeExternalVpnGateway{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig",
+		"@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayConfig",
 		reflect.TypeOf((*ComputeExternalVpnGatewayConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterface",
+		"@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterface",
 		reflect.TypeOf((*ComputeExternalVpnGatewayInterface)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceList",
+		"@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceList",
 		reflect.TypeOf((*ComputeExternalVpnGatewayInterfaceList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -118,12 +121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeExternalVpnGatewayInterfaceList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceOutputReference",
+		"@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayInterfaceOutputReference",
 		reflect.TypeOf((*ComputeExternalVpnGatewayInterfaceOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -159,16 +162,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeExternalVpnGatewayInterfaceOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams",
+		"@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParams",
 		reflect.TypeOf((*ComputeExternalVpnGatewayParams)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference",
+		"@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayParamsOutputReference",
 		reflect.TypeOf((*ComputeExternalVpnGatewayParamsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -198,16 +201,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeExternalVpnGatewayParamsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts",
+		"@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeouts",
 		reflect.TypeOf((*ComputeExternalVpnGatewayTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeoutsOutputReference",
+		"@cdktn/provider-google.computeExternalVpnGateway.ComputeExternalVpnGatewayTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeExternalVpnGatewayTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -243,7 +246,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeExternalVpnGatewayTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

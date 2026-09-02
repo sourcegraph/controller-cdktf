@@ -12,7 +12,7 @@ func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SsmMaintenanceWindowTaskTargetsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SsmMaintenanceWindowTaskTargetsList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewSsmMaintenanceWindowTaskTargetsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSsmMaintenanceWindowTaskTargetsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

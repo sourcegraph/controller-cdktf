@@ -40,11 +40,11 @@ func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_DatabaseMigrationServiceConnectionProfileMysqlSslOutputRefere
 	return nil
 }
 
-func validateNewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatabaseMigrationServiceConnectionProfileMysqlSslOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

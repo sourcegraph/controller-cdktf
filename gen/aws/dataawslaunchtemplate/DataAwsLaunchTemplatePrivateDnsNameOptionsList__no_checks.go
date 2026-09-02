@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsLaunchTemplatePrivateDnsNameOptionsList) validateSetWr
 	return nil
 }
 
-func validateNewDataAwsLaunchTemplatePrivateDnsNameOptionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsLaunchTemplatePrivateDnsNameOptionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

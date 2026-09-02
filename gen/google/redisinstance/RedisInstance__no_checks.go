@@ -56,6 +56,10 @@ func (r *jsiiProxy_RedisInstance) validateInterpolationForAttributeParameters(te
 	return nil
 }
 
+func (r *jsiiProxy_RedisInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (r *jsiiProxy_RedisInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (r *jsiiProxy_RedisInstance) validatePutPersistenceConfigParameters(value *
 }
 
 func (r *jsiiProxy_RedisInstance) validatePutTimeoutsParameters(value *RedisInstanceTimeouts) error {
+	return nil
+}
+
+func (r *jsiiProxy_RedisInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -144,7 +152,7 @@ func (j *jsiiProxy_RedisInstance) validateSetLabelsParameters(val *map[string]*s
 	return nil
 }
 
-func (j *jsiiProxy_RedisInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_RedisInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatastreamConnectionProfilePostgresqlProfileSslConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDatastreamConnectionProfilePostgresqlProfileSslConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatastreamConnectionProfilePostgresqlProfileSslConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

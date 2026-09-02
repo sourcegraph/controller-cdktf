@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferences",
+		"@cdktn/provider-aws.snsSmsPreferences.SnsSmsPreferences",
 		reflect.TypeOf((*SnsSmsPreferences)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "monthlySpendLimit", GoGetter: "MonthlySpendLimit"},
 			_jsii_.MemberProperty{JsiiProperty: "monthlySpendLimitInput", GoGetter: "MonthlySpendLimitInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -54,6 +55,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultSenderId", GoMethod: "ResetDefaultSenderId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDefaultSmsType", GoMethod: "ResetDefaultSmsType"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDeliveryStatusIamRoleArn", GoMethod: "ResetDeliveryStatusIamRoleArn"},
@@ -73,15 +75,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "usageReportS3Bucket", GoGetter: "UsageReportS3Bucket"},
 			_jsii_.MemberProperty{JsiiProperty: "usageReportS3BucketInput", GoGetter: "UsageReportS3BucketInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SnsSmsPreferences{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.snsSmsPreferences.SnsSmsPreferencesConfig",
+		"@cdktn/provider-aws.snsSmsPreferences.SnsSmsPreferencesConfig",
 		reflect.TypeOf((*SnsSmsPreferencesConfig)(nil)).Elem(),
 	)
 }

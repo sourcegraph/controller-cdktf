@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDeveloperConnectConnectionHttpConfigBearerTokenAuthenti
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectConnectionHttpConfigBearerTokenAuthenti
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleDeveloperConnectConnectionHttpConfigBearerTokenAuthenti
 	return nil
 }
 
-func validateNewGoogleDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDeveloperConnectConnectionHttpConfigBearerTokenAuthenticationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

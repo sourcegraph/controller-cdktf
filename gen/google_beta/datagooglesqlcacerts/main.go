@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
+		"@cdktn/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCerts",
 		reflect.TypeOf((*DataGoogleSqlCaCerts)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "activeVersion", GoGetter: "ActiveVersion"},
@@ -42,6 +42,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "projectInput", GoGetter: "ProjectInput"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -54,19 +55,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleSqlCaCerts{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCerts",
+		"@cdktn/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCerts",
 		reflect.TypeOf((*DataGoogleSqlCaCertsCerts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsList",
+		"@cdktn/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsList",
 		reflect.TypeOf((*DataGoogleSqlCaCertsCertsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -82,12 +84,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleSqlCaCertsCertsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsCertsOutputReference",
 		reflect.TypeOf((*DataGoogleSqlCaCertsCertsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cert", GoGetter: "Cert"},
@@ -119,12 +121,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleSqlCaCertsCertsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig",
+		"@cdktn/provider-google-beta.dataGoogleSqlCaCerts.DataGoogleSqlCaCertsConfig",
 		reflect.TypeOf((*DataGoogleSqlCaCertsConfig)(nil)).Elem(),
 	)
 }

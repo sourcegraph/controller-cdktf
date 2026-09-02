@@ -12,7 +12,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateGetPa
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionPartitionKeyList) validateSetWr
 	return nil
 }
 
-func validateNewKeyspacesTableSchemaDefinitionPartitionKeyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewKeyspacesTableSchemaDefinitionPartitionKeyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

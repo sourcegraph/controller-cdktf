@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationUserManagedOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerSecretReplicationUserManagedOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSecretManagerSecretReplicationUserManagedOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleSecretManagerSecretReplicationUserManagedOutputReferenc
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerSecretReplicationUserManagedOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSecretManagerSecretReplicationUserManagedOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleSecretManagerSecretReplicationUserManagedOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerSecretReplicationUserManagedOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecretManagerSecretReplicationUserManagedOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSecretManagerSecretReplicationUserManagedOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSecretManagerSecretReplicationUserManagedOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataKubernetesPodV1SpecContainerStartupProbeHttpGetList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataKubernetesPodV1SpecContainerStartupProbeHttpGetList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataKubernetesPodV1SpecContainerStartupProbeHttpGetList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecContainerStartupProbeHttpGetList) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataKubernetesPodV1SpecContainerStartupProbeHttpGetList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataKubernetesPodV1SpecContainerStartupProbeHttpGetList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataKubernetesPodV1SpecContainerStartupProbeHttpGetList) vali
 	return nil
 }
 
-func validateNewDataKubernetesPodV1SpecContainerStartupProbeHttpGetListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataKubernetesPodV1SpecContainerStartupProbeHttpGetListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

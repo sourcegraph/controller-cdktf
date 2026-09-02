@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDataplexDatascanExecutionIdentityDataplexServiceAgentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

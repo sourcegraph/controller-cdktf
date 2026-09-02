@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsList) validateGetParameters(index 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleTpuV2VmNetworkConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsList) validateSetTerraformAttribut
 	return nil
 }
 
-func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleTpuV2VmNetworkConfigsList) validateSetWrapsSetParameter
 	return nil
 }
 
-func validateNewGoogleTpuV2VmNetworkConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleTpuV2VmNetworkConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

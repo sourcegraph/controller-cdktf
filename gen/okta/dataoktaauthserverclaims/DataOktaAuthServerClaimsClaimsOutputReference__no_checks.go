@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataOktaAuthServerClaimsClaimsOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaAuthServerClaimsClaimsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataOktaAuthServerClaimsClaimsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaAuthServerClaimsClaimsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaAuthServerClaimsClaimsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataOktaAuthServerClaimsClaimsOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaAuthServerClaimsClaimsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaAuthServerClaimsClaimsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataOktaAuthServerClaimsClaimsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataOktaAuthServerClaimsClaimsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

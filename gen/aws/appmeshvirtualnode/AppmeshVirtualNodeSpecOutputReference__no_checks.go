@@ -40,7 +40,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validatePutServiceDisc
 	return nil
 }
 
-func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppmeshVirtualNodeSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppmeshVirtualNodeSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppmeshVirtualNodeSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

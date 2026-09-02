@@ -40,7 +40,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileOutputRefere
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileOutputRefere
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkSecuritySecurityProfileUrlFilteringProfileOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewNetworkSecuritySecurityProfileUrlFilteringProfileOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkSecuritySecurityProfileUrlFilteringProfileOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

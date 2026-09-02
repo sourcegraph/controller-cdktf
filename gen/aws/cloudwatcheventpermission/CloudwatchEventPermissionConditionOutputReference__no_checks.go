@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudwatchEventPermissionConditionOutputReference) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventPermissionConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudwatchEventPermissionConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudwatchEventPermissionConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudwatchEventPermissionConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CloudwatchEventPermissionConditionOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_CloudwatchEventPermissionConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudwatchEventPermissionConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CloudwatchEventPermissionConditionOutputReference) validateSe
 	return nil
 }
 
-func validateNewCloudwatchEventPermissionConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudwatchEventPermissionConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

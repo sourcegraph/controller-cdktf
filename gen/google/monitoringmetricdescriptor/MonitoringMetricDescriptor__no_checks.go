@@ -56,6 +56,10 @@ func (m *jsiiProxy_MonitoringMetricDescriptor) validateInterpolationForAttribute
 	return nil
 }
 
+func (m *jsiiProxy_MonitoringMetricDescriptor) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MonitoringMetricDescriptor) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (m *jsiiProxy_MonitoringMetricDescriptor) validatePutMetadataParameters(val
 }
 
 func (m *jsiiProxy_MonitoringMetricDescriptor) validatePutTimeoutsParameters(value *MonitoringMetricDescriptorTimeouts) error {
+	return nil
+}
+
+func (m *jsiiProxy_MonitoringMetricDescriptor) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_MonitoringMetricDescriptor) validateSetLaunchStageParameters(
 	return nil
 }
 
-func (j *jsiiProxy_MonitoringMetricDescriptor) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MonitoringMetricDescriptor) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

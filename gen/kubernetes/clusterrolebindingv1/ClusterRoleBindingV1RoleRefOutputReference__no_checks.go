@@ -40,11 +40,11 @@ func (c *jsiiProxy_ClusterRoleBindingV1RoleRefOutputReference) validateGetString
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1RoleRefOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClusterRoleBindingV1RoleRefOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClusterRoleBindingV1RoleRefOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClusterRoleBindingV1RoleRefOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ClusterRoleBindingV1RoleRefOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_ClusterRoleBindingV1RoleRefOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClusterRoleBindingV1RoleRefOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewClusterRoleBindingV1RoleRefOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewClusterRoleBindingV1RoleRefOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

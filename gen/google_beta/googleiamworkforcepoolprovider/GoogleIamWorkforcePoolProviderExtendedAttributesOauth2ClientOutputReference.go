@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiamworkforcepoolprovider/internal"
 )
 
 type GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AttributesType() *string
 	SetAttributesType(val *string)
 	AttributesTypeInput() *string
@@ -47,15 +47,15 @@ type GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,15 +71,15 @@ type GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutClientSecret(value *GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientClientSecret)
 	PutQueryParameters(value *GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientQueryParameters)
 	ResetQueryParameters()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference
 
 // The jsii proxy struct for GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference
 type jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference) AttributesType() *string {
@@ -252,8 +252,8 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientO
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -263,7 +263,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientO
 }
 
 
-func NewGoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference {
+func NewGoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -272,7 +272,7 @@ func NewGoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputRefere
 	j := jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference",
+		"@cdktn/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -280,11 +280,11 @@ func NewGoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputRefere
 	return &j
 }
 
-func NewGoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference_Override(g GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference_Override(g GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference",
+		"@cdktn/provider-google-beta.googleIamWorkforcePoolProvider.GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -367,7 +367,7 @@ func (j *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientO
 	)
 }
 
-func (j *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -407,11 +407,11 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientO
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -535,8 +535,8 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientO
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -548,16 +548,16 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientO
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -594,8 +594,8 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientO
 	)
 }
 
-func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -603,7 +603,7 @@ func (g *jsiiProxy_GoogleIamWorkforcePoolProviderExtendedAttributesOauth2ClientO
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

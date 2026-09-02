@@ -40,11 +40,11 @@ func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validate
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (q *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_QuicksightDataSourceParametersAthenaOutputReference) validate
 	return nil
 }
 
-func validateNewQuicksightDataSourceParametersAthenaOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewQuicksightDataSourceParametersAthenaOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

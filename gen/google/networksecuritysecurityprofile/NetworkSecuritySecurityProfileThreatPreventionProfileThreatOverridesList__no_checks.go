@@ -12,7 +12,7 @@ func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOv
 	return nil
 }
 
-func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOv
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_NetworkSecuritySecurityProfileThreatPreventionProfileThreatOv
 	return nil
 }
 
-func validateNewNetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewNetworkSecuritySecurityProfileThreatPreventionProfileThreatOverridesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

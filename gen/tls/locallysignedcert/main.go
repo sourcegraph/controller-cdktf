@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-tls.locallySignedCert.LocallySignedCert",
+		"@cdktn/provider-tls.locallySignedCert.LocallySignedCert",
 		reflect.TypeOf((*LocallySignedCert)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isCaCertificate", GoGetter: "IsCaCertificate"},
 			_jsii_.MemberProperty{JsiiProperty: "isCaCertificateInput", GoGetter: "IsCaCertificateInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -58,6 +59,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "readyForRenewal", GoGetter: "ReadyForRenewal"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEarlyRenewalHours", GoMethod: "ResetEarlyRenewalHours"},
 			_jsii_.MemberMethod{JsiiMethod: "resetIsCaCertificate", GoMethod: "ResetIsCaCertificate"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
@@ -77,15 +79,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "validityPeriodHours", GoGetter: "ValidityPeriodHours"},
 			_jsii_.MemberProperty{JsiiProperty: "validityPeriodHoursInput", GoGetter: "ValidityPeriodHoursInput"},
 			_jsii_.MemberProperty{JsiiProperty: "validityStartTime", GoGetter: "ValidityStartTime"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_LocallySignedCert{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-tls.locallySignedCert.LocallySignedCertConfig",
+		"@cdktn/provider-tls.locallySignedCert.LocallySignedCertConfig",
 		reflect.TypeOf((*LocallySignedCertConfig)(nil)).Elem(),
 	)
 }

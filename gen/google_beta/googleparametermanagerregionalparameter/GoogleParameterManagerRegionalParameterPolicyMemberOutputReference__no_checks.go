@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleParameterManagerRegionalParameterPolicyMemberOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleParameterManagerRegionalParameterPolicyMemberOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleParameterManagerRegionalParameterPolicyMemberOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleParameterManagerRegionalParameterPolicyMemberOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleParameterManagerRegionalParameterPolicyMemberOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleParameterManagerRegionalParameterPolicyMemberOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleParameterManagerRegionalParameterPolicyMemberOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleParameterManagerRegionalParameterPolicyMemberOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleParameterManagerRegionalParameterPolicyMemberOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleParameterManagerRegionalParameterPolicyMemberOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

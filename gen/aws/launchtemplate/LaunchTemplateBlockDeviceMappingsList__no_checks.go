@@ -12,7 +12,7 @@ func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) validateGetParameters(
 	return nil
 }
 
-func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LaunchTemplateBlockDeviceMappingsList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewLaunchTemplateBlockDeviceMappingsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLaunchTemplateBlockDeviceMappingsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudrunv2service/internal"
 )
 
 type GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference interface 
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Version() *string
 	SetVersion(val *string)
 	VersionInput() *string
@@ -51,7 +51,7 @@ type GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference interface 
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference interface 
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetMode()
 	ResetVersion()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference interface 
 
 // The jsii proxy struct for GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference
 type jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) ComplexObjectIndex() interface{} {
@@ -187,8 +187,8 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 }
 
 
-func NewGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference {
+func NewGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -227,7 +227,7 @@ func NewGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference(terrafo
 	j := jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference",
+		"@cdktn/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference(terrafo
 	return &j
 }
 
-func NewGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference_Override(g GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference_Override(g GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference",
+		"@cdktn/provider-google-beta.googleCloudRunV2Service.GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -311,7 +311,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -490,8 +490,8 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -503,16 +503,16 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDataprocClusterClusterConfigInitializationActionList) v
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataprocClusterClusterConfigInitializationActionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataprocClusterClusterConfigInitializationActionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigInitializationActionList) v
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataprocClusterClusterConfigInitializationActionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataprocClusterClusterConfigInitializationActionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDataprocClusterClusterConfigInitializationActionList) v
 	return nil
 }
 
-func validateNewGoogleDataprocClusterClusterConfigInitializationActionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDataprocClusterClusterConfigInitializationActionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

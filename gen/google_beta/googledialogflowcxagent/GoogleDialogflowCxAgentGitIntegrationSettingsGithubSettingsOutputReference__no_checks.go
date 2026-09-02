@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOu
 	return nil
 }
 
-func validateNewGoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowCxAgentGitIntegrationSettingsGithubSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

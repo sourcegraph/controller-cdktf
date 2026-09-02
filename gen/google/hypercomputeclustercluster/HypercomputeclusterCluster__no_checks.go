@@ -56,6 +56,10 @@ func (h *jsiiProxy_HypercomputeclusterCluster) validateInterpolationForAttribute
 	return nil
 }
 
+func (h *jsiiProxy_HypercomputeclusterCluster) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (h *jsiiProxy_HypercomputeclusterCluster) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (h *jsiiProxy_HypercomputeclusterCluster) validatePutStorageResourcesParame
 }
 
 func (h *jsiiProxy_HypercomputeclusterCluster) validatePutTimeoutsParameters(value *HypercomputeclusterClusterTimeouts) error {
+	return nil
+}
+
+func (h *jsiiProxy_HypercomputeclusterCluster) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_HypercomputeclusterCluster) validateSetLabelsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterCluster) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_HypercomputeclusterCluster) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

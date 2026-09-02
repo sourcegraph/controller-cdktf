@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computebackendservice/internal"
 )
 
 type ComputeBackendServiceIapOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -44,15 +44,15 @@ type ComputeBackendServiceIapOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -68,14 +68,14 @@ type ComputeBackendServiceIapOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetOauth2ClientId()
 	ResetOauth2ClientSecret()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ComputeBackendServiceIapOutputReference interface {
 
 // The jsii proxy struct for ComputeBackendServiceIapOutputReference
 type jsiiProxy_ComputeBackendServiceIapOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeBackendServiceIapOutputReference) ComplexObjectIndex() interface{} {
@@ -218,8 +218,8 @@ func (j *jsiiProxy_ComputeBackendServiceIapOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_ComputeBackendServiceIapOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeBackendServiceIapOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -229,7 +229,7 @@ func (j *jsiiProxy_ComputeBackendServiceIapOutputReference) TerraformResource() 
 }
 
 
-func NewComputeBackendServiceIapOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceIapOutputReference {
+func NewComputeBackendServiceIapOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeBackendServiceIapOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeBackendServiceIapOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -238,7 +238,7 @@ func NewComputeBackendServiceIapOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_ComputeBackendServiceIapOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference",
+		"@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -246,11 +246,11 @@ func NewComputeBackendServiceIapOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewComputeBackendServiceIapOutputReference_Override(c ComputeBackendServiceIapOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeBackendServiceIapOutputReference_Override(c ComputeBackendServiceIapOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference",
+		"@cdktn/provider-google.computeBackendService.ComputeBackendServiceIapOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -333,7 +333,7 @@ func (j *jsiiProxy_ComputeBackendServiceIapOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_ComputeBackendServiceIapOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeBackendServiceIapOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -373,11 +373,11 @@ func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -501,8 +501,8 @@ func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -514,16 +514,16 @@ func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -546,8 +546,8 @@ func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) ResetOauth2ClientSec
 	)
 }
 
-func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -555,7 +555,7 @@ func (c *jsiiProxy_ComputeBackendServiceIapOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (c *jsiiProxy_CustomizedSigninPage) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (c *jsiiProxy_CustomizedSigninPage) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CustomizedSigninPage) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_CustomizedSigninPage) validatePutContentSecurityPolicySetting
 }
 
 func (c *jsiiProxy_CustomizedSigninPage) validatePutWidgetCustomizationsParameters(value *CustomizedSigninPageWidgetCustomizations) error {
+	return nil
+}
+
+func (c *jsiiProxy_CustomizedSigninPage) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_CustomizedSigninPage) validateSetCountParameters(val interfac
 	return nil
 }
 
-func (j *jsiiProxy_CustomizedSigninPage) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CustomizedSigninPage) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

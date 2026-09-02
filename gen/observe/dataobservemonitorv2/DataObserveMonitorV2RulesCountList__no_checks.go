@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountList) validateGetParameters(ind
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesCountList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesCountList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewDataObserveMonitorV2RulesCountListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataObserveMonitorV2RulesCountListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

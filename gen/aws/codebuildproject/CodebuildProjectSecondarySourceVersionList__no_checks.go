@@ -12,7 +12,7 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourceVersionList) validateGetParame
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourceVersionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectSecondarySourceVersionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourceVersionList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourceVersionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildProjectSecondarySourceVersionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourceVersionList) validateSetWrapsS
 	return nil
 }
 
-func validateNewCodebuildProjectSecondarySourceVersionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCodebuildProjectSecondarySourceVersionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

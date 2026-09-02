@@ -40,11 +40,11 @@ func (s *jsiiProxy_StoragegatewayFileSystemAssociationCacheAttributesOutputRefer
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayFileSystemAssociationCacheAttributesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StoragegatewayFileSystemAssociationCacheAttributesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayFileSystemAssociationCacheAttributesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StoragegatewayFileSystemAssociationCacheAttributesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_StoragegatewayFileSystemAssociationCacheAttributesOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayFileSystemAssociationCacheAttributesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StoragegatewayFileSystemAssociationCacheAttributesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStoragegatewayFileSystemAssociationCacheAttributesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStoragegatewayFileSystemAssociationCacheAttributesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

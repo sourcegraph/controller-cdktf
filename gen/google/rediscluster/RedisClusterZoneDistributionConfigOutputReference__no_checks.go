@@ -40,11 +40,11 @@ func (r *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_RedisClusterZoneDistributionConfigOutputReference) validateSe
 	return nil
 }
 
-func validateNewRedisClusterZoneDistributionConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRedisClusterZoneDistributionConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

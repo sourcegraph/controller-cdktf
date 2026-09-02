@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -100,7 +100,7 @@ func (j *jsiiProxy_CloudRunV2ServiceBuildConfigOutputReference) validateSetWorke
 	return nil
 }
 
-func validateNewCloudRunV2ServiceBuildConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudRunV2ServiceBuildConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

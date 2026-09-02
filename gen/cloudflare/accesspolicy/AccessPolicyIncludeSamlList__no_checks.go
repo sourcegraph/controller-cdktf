@@ -12,7 +12,7 @@ func (a *jsiiProxy_AccessPolicyIncludeSamlList) validateGetParameters(index *flo
 	return nil
 }
 
-func (a *jsiiProxy_AccessPolicyIncludeSamlList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AccessPolicyIncludeSamlList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AccessPolicyIncludeSamlList) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_AccessPolicyIncludeSamlList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AccessPolicyIncludeSamlList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AccessPolicyIncludeSamlList) validateSetWrapsSetParameters(va
 	return nil
 }
 
-func validateNewAccessPolicyIncludeSamlListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAccessPolicyIncludeSamlListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

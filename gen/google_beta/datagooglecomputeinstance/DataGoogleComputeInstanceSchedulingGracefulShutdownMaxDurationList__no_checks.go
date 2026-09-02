@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingGracefulShutdownMaxDuratio
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingGracefulShutdownMaxDurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeInstanceSchedulingGracefulShutdownMaxDurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingGracefulShutdownMaxDuratio
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingGracefulShutdownMaxDurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingGracefulShutdownMaxDurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceSchedulingGracefulShutdownMaxDuratio
 	return nil
 }
 
-func validateNewDataGoogleComputeInstanceSchedulingGracefulShutdownMaxDurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeInstanceSchedulingGracefulShutdownMaxDurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

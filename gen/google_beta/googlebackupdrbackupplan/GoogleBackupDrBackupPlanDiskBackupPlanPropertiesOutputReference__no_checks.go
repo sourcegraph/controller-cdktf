@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBackupDrBackupPlanDiskBackupPlanPropertiesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (s *jsiiProxy_ServiceAccountV1SecretList) validateGetParameters(index *floa
 	return nil
 }
 
-func (s *jsiiProxy_ServiceAccountV1SecretList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_ServiceAccountV1SecretList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ServiceAccountV1SecretList) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_ServiceAccountV1SecretList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ServiceAccountV1SecretList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ServiceAccountV1SecretList) validateSetWrapsSetParameters(val
 	return nil
 }
 
-func validateNewServiceAccountV1SecretListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewServiceAccountV1SecretListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

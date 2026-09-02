@@ -56,6 +56,10 @@ func (w *jsiiProxy_Wafv2RegexPatternSet) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (w *jsiiProxy_Wafv2RegexPatternSet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (w *jsiiProxy_Wafv2RegexPatternSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (w *jsiiProxy_Wafv2RegexPatternSet) validateOverrideLogicalIdParameters(new
 }
 
 func (w *jsiiProxy_Wafv2RegexPatternSet) validatePutRegularExpressionParameters(value interface{}) error {
+	return nil
+}
+
+func (w *jsiiProxy_Wafv2RegexPatternSet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_Wafv2RegexPatternSet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

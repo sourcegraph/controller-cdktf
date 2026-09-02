@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecomputerolloutplan/internal"
 )
 
 type GoogleComputeRolloutPlanWavesValidationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type GoogleComputeRolloutPlanWavesValidationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TimeBasedValidationMetadata() GoogleComputeRolloutPlanWavesValidationTimeBasedValidationMetadataOutputReference
 	TimeBasedValidationMetadataInput() *GoogleComputeRolloutPlanWavesValidationTimeBasedValidationMetadata
 	Type() *string
@@ -47,7 +47,7 @@ type GoogleComputeRolloutPlanWavesValidationOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -63,14 +63,14 @@ type GoogleComputeRolloutPlanWavesValidationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTimeBasedValidationMetadata(value *GoogleComputeRolloutPlanWavesValidationTimeBasedValidationMetadata)
 	ResetTimeBasedValidationMetadata()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type GoogleComputeRolloutPlanWavesValidationOutputReference interface {
 
 // The jsii proxy struct for GoogleComputeRolloutPlanWavesValidationOutputReference
 type jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) ComplexObjectIndex() interface{} {
@@ -143,8 +143,8 @@ func (j *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) TypeI
 }
 
 
-func NewGoogleComputeRolloutPlanWavesValidationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleComputeRolloutPlanWavesValidationOutputReference {
+func NewGoogleComputeRolloutPlanWavesValidationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleComputeRolloutPlanWavesValidationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleComputeRolloutPlanWavesValidationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewGoogleComputeRolloutPlanWavesValidationOutputReference(terraformResource
 	j := jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRolloutPlan.GoogleComputeRolloutPlanWavesValidationOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRolloutPlan.GoogleComputeRolloutPlanWavesValidationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewGoogleComputeRolloutPlanWavesValidationOutputReference(terraformResource
 	return &j
 }
 
-func NewGoogleComputeRolloutPlanWavesValidationOutputReference_Override(g GoogleComputeRolloutPlanWavesValidationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleComputeRolloutPlanWavesValidationOutputReference_Override(g GoogleComputeRolloutPlanWavesValidationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleComputeRolloutPlan.GoogleComputeRolloutPlanWavesValidationOutputReference",
+		"@cdktn/provider-google-beta.googleComputeRolloutPlan.GoogleComputeRolloutPlanWavesValidationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -265,7 +265,7 @@ func (j *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -316,11 +316,11 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) GetAn
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -444,8 +444,8 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) GetSt
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -457,16 +457,16 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) Inter
 	return returns
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) Reset
 	)
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesValidationOutputReference) Resol
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

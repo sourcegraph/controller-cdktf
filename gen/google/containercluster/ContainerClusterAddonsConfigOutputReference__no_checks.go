@@ -40,7 +40,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateGetStrin
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -104,7 +104,7 @@ func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validatePutState
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -124,11 +124,11 @@ func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterAddonsConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterAddonsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterAddonsConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

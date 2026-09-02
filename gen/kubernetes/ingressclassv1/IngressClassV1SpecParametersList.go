@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/ingressclassv1/internal"
 )
 
 type IngressClassV1SpecParametersList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type IngressClassV1SpecParametersList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) IngressClassV1SpecParametersOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type IngressClassV1SpecParametersList interface {
 
 // The jsii proxy struct for IngressClassV1SpecParametersList
 type jsiiProxy_IngressClassV1SpecParametersList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_IngressClassV1SpecParametersList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_IngressClassV1SpecParametersList) TerraformAttribute() *strin
 	return returns
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IngressClassV1SpecParametersList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersList) WrapsSet() *bool {
 }
 
 
-func NewIngressClassV1SpecParametersList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IngressClassV1SpecParametersList {
+func NewIngressClassV1SpecParametersList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IngressClassV1SpecParametersList {
 	_init_.Initialize()
 
 	if err := validateNewIngressClassV1SpecParametersListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewIngressClassV1SpecParametersList(terraformResource cdktf.IInterpolatingP
 	j := jsiiProxy_IngressClassV1SpecParametersList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.ingressClassV1.IngressClassV1SpecParametersList",
+		"@cdktn/provider-kubernetes.ingressClassV1.IngressClassV1SpecParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewIngressClassV1SpecParametersList(terraformResource cdktf.IInterpolatingP
 	return &j
 }
 
-func NewIngressClassV1SpecParametersList_Override(i IngressClassV1SpecParametersList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewIngressClassV1SpecParametersList_Override(i IngressClassV1SpecParametersList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.ingressClassV1.IngressClassV1SpecParametersList",
+		"@cdktn/provider-kubernetes.ingressClassV1.IngressClassV1SpecParametersList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_IngressClassV1SpecParametersList)SetTerraformAttribute(val *s
 	)
 }
 
-func (j *jsiiProxy_IngressClassV1SpecParametersList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IngressClassV1SpecParametersList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_IngressClassV1SpecParametersList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (i *jsiiProxy_IngressClassV1SpecParametersList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (i *jsiiProxy_IngressClassV1SpecParametersList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := i.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		i,
@@ -228,8 +231,8 @@ func (i *jsiiProxy_IngressClassV1SpecParametersList) Get(index *float64) Ingress
 	return returns
 }
 
-func (i *jsiiProxy_IngressClassV1SpecParametersList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IngressClassV1SpecParametersList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (i *jsiiProxy_IngressClassV1SpecParametersList) Resolve(_context cdktf.IRes
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

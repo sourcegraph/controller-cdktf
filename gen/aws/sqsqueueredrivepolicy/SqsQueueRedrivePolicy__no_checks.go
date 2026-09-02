@@ -56,6 +56,10 @@ func (s *jsiiProxy_SqsQueueRedrivePolicy) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_SqsQueueRedrivePolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SqsQueueRedrivePolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (s *jsiiProxy_SqsQueueRedrivePolicy) validateMoveToIdParameters(id *string)
 }
 
 func (s *jsiiProxy_SqsQueueRedrivePolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (s *jsiiProxy_SqsQueueRedrivePolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_SqsQueueRedrivePolicy) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_SqsQueueRedrivePolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SqsQueueRedrivePolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

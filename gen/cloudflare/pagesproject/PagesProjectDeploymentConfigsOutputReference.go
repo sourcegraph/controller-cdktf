@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/cloudflare/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/cloudflare/pagesproject/internal"
 )
 
 type PagesProjectDeploymentConfigsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,15 +38,15 @@ type PagesProjectDeploymentConfigsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,14 +62,14 @@ type PagesProjectDeploymentConfigsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPreview(value *PagesProjectDeploymentConfigsPreview)
 	PutProduction(value *PagesProjectDeploymentConfigsProduction)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type PagesProjectDeploymentConfigsOutputReference interface {
 
 // The jsii proxy struct for PagesProjectDeploymentConfigsOutputReference
 type jsiiProxy_PagesProjectDeploymentConfigsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) ComplexObjectIndex() interface{} {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) TerraformResour
 }
 
 
-func NewPagesProjectDeploymentConfigsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsOutputReference {
+func NewPagesProjectDeploymentConfigsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PagesProjectDeploymentConfigsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPagesProjectDeploymentConfigsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewPagesProjectDeploymentConfigsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_PagesProjectDeploymentConfigsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewPagesProjectDeploymentConfigsOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewPagesProjectDeploymentConfigsOutputReference_Override(p PagesProjectDeploymentConfigsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPagesProjectDeploymentConfigsOutputReference_Override(p PagesProjectDeploymentConfigsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference",
+		"@cdktn/provider-cloudflare.pagesProject.PagesProjectDeploymentConfigsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PagesProjectDeploymentConfigsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,11 +304,11 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -432,8 +432,8 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -445,16 +445,16 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InterpolationAs
 	return returns
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -483,8 +483,8 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) PutProduction(v
 	)
 }
 
-func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (p *jsiiProxy_PagesProjectDeploymentConfigsOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

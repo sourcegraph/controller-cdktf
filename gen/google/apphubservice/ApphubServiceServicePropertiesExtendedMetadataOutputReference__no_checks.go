@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApphubServiceServicePropertiesExtendedMetadataOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApphubServiceServicePropertiesExtendedMetadataOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewApphubServiceServicePropertiesExtendedMetadataOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

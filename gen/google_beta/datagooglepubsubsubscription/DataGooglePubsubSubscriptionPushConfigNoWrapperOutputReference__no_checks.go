@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenc
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGooglePubsubSubscriptionPushConfigNoWrapperOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGooglePubsubSubscriptionPushConfigNoWrapperOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

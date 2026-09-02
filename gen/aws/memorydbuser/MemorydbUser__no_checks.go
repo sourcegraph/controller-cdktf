@@ -56,6 +56,10 @@ func (m *jsiiProxy_MemorydbUser) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (m *jsiiProxy_MemorydbUser) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorydbUser) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (m *jsiiProxy_MemorydbUser) validateOverrideLogicalIdParameters(newLogicalI
 }
 
 func (m *jsiiProxy_MemorydbUser) validatePutAuthenticationModeParameters(value *MemorydbUserAuthenticationMode) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorydbUser) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_MemorydbUser) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_MemorydbUser) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MemorydbUser) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

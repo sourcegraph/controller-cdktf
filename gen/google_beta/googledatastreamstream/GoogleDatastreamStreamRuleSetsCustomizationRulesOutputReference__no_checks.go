@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatastreamStreamRuleSetsCustomizationRulesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDatastreamStreamRuleSetsCustomizationRulesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleDatastreamStreamRuleSetsCustomizationRulesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

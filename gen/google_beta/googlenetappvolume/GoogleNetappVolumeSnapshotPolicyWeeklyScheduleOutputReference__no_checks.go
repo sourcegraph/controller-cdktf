@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetappVolumeSnapshotPolicyWeeklyScheduleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

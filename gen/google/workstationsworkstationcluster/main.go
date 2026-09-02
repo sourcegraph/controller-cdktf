@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationCluster",
+		"@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationCluster",
 		reflect.TypeOf((*WorkstationsWorkstationCluster)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -53,6 +53,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "location", GoGetter: "Location"},
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -71,6 +72,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putPrivateClusterConfig", GoMethod: "PutPrivateClusterConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAnnotations", GoMethod: "ResetAnnotations"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDisplayName", GoMethod: "ResetDisplayName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDomainConfig", GoMethod: "ResetDomainConfig"},
@@ -99,21 +101,22 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "uid", GoGetter: "Uid"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workstationClusterId", GoGetter: "WorkstationClusterId"},
 			_jsii_.MemberProperty{JsiiProperty: "workstationClusterIdInput", GoGetter: "WorkstationClusterIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkstationsWorkstationCluster{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConditions",
+		"@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConditions",
 		reflect.TypeOf((*WorkstationsWorkstationClusterConditions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConditionsList",
+		"@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConditionsList",
 		reflect.TypeOf((*WorkstationsWorkstationClusterConditionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -129,12 +132,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkstationsWorkstationClusterConditionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConditionsOutputReference",
+		"@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConditionsOutputReference",
 		reflect.TypeOf((*WorkstationsWorkstationClusterConditionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "code", GoGetter: "Code"},
@@ -164,20 +167,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkstationsWorkstationClusterConditionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConfig",
+		"@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterConfig",
 		reflect.TypeOf((*WorkstationsWorkstationClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterDomainConfig",
+		"@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterDomainConfig",
 		reflect.TypeOf((*WorkstationsWorkstationClusterDomainConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterDomainConfigOutputReference",
+		"@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterDomainConfigOutputReference",
 		reflect.TypeOf((*WorkstationsWorkstationClusterDomainConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -206,16 +209,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkstationsWorkstationClusterDomainConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterPrivateClusterConfig",
+		"@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterPrivateClusterConfig",
 		reflect.TypeOf((*WorkstationsWorkstationClusterPrivateClusterConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterPrivateClusterConfigOutputReference",
+		"@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterPrivateClusterConfigOutputReference",
 		reflect.TypeOf((*WorkstationsWorkstationClusterPrivateClusterConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "allowedProjects", GoGetter: "AllowedProjects"},
@@ -249,16 +252,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkstationsWorkstationClusterPrivateClusterConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterTimeouts",
+		"@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterTimeouts",
 		reflect.TypeOf((*WorkstationsWorkstationClusterTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterTimeoutsOutputReference",
+		"@cdktn/provider-google.workstationsWorkstationCluster.WorkstationsWorkstationClusterTimeoutsOutputReference",
 		reflect.TypeOf((*WorkstationsWorkstationClusterTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -294,7 +297,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_WorkstationsWorkstationClusterTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

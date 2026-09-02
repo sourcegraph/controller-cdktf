@@ -40,7 +40,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateGetStringM
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CesAppVariableDeclarationsOutputReference) validatePutSchemaP
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVariableDeclarationsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesAppVariableDeclarationsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewCesAppVariableDeclarationsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

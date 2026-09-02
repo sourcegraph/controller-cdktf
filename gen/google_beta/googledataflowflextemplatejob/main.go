@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
+		"@cdktn/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJob",
 		reflect.TypeOf((*GoogleDataflowFlexTemplateJob)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalExperiments", GoGetter: "AdditionalExperiments"},
@@ -58,6 +58,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "machineType", GoGetter: "MachineType"},
 			_jsii_.MemberProperty{JsiiProperty: "machineTypeInput", GoGetter: "MachineTypeInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxWorkers", GoGetter: "MaxWorkers"},
 			_jsii_.MemberProperty{JsiiProperty: "maxWorkersInput", GoGetter: "MaxWorkersInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -82,6 +83,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalExperiments", GoMethod: "ResetAdditionalExperiments"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdditionalPipelineOptions", GoMethod: "ResetAdditionalPipelineOptions"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAutoscalingAlgorithm", GoMethod: "ResetAutoscalingAlgorithm"},
@@ -133,15 +135,16 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "transformNameMapping", GoGetter: "TransformNameMapping"},
 			_jsii_.MemberProperty{JsiiProperty: "transformNameMappingInput", GoGetter: "TransformNameMappingInput"},
 			_jsii_.MemberProperty{JsiiProperty: "type", GoGetter: "Type"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_GoogleDataflowFlexTemplateJob{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJobConfig",
+		"@cdktn/provider-google-beta.googleDataflowFlexTemplateJob.GoogleDataflowFlexTemplateJobConfig",
 		reflect.TypeOf((*GoogleDataflowFlexTemplateJobConfig)(nil)).Elem(),
 	)
 }

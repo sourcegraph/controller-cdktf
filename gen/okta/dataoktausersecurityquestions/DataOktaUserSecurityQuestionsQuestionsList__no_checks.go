@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsList) validateGetParame
 	return nil
 }
 
-func (d *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataOktaUserSecurityQuestionsQuestionsList) validateSetWrapsS
 	return nil
 }
 
-func validateNewDataOktaUserSecurityQuestionsQuestionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataOktaUserSecurityQuestionsQuestionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

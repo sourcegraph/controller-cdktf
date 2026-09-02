@@ -40,7 +40,7 @@ func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_CodedeployDeploymentConfigTrafficRoutingConfigOutputReference
 	return nil
 }
 
-func validateNewCodedeployDeploymentConfigTrafficRoutingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodedeployDeploymentConfigTrafficRoutingConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

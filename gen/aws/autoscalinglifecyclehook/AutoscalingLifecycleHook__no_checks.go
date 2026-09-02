@@ -56,6 +56,10 @@ func (a *jsiiProxy_AutoscalingLifecycleHook) validateInterpolationForAttributePa
 	return nil
 }
 
+func (a *jsiiProxy_AutoscalingLifecycleHook) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AutoscalingLifecycleHook) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (a *jsiiProxy_AutoscalingLifecycleHook) validateMoveToIdParameters(id *stri
 }
 
 func (a *jsiiProxy_AutoscalingLifecycleHook) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AutoscalingLifecycleHook) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AutoscalingLifecycleHook) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

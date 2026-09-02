@@ -40,11 +40,11 @@ func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamBindingConditionOutputReferenc
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryDatapolicyDataPolicyIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBindingConditionOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_BigqueryDatapolicyDataPolicyIamBindingConditionOutputReferenc
 	return nil
 }
 
-func validateNewBigqueryDatapolicyDataPolicyIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBigqueryDatapolicyDataPolicyIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (i *jsiiProxy_IdentityPlatformConfig) validateInterpolationForAttributePara
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IdentityPlatformConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -108,6 +112,10 @@ func (i *jsiiProxy_IdentityPlatformConfig) validatePutTimeoutsParameters(value *
 	return nil
 }
 
+func (i *jsiiProxy_IdentityPlatformConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateIdentityPlatformConfig_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -144,7 +152,7 @@ func (j *jsiiProxy_IdentityPlatformConfig) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_IdentityPlatformConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IdentityPlatformConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

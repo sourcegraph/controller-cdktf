@@ -40,11 +40,11 @@ func (c *jsiiProxy_ChannelActionEmailOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (c *jsiiProxy_ChannelActionEmailOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ChannelActionEmailOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ChannelActionEmailOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ChannelActionEmailOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_ChannelActionEmailOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ChannelActionEmailOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_ChannelActionEmailOutputReference) validateSetToParameters(va
 	return nil
 }
 
-func validateNewChannelActionEmailOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewChannelActionEmailOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

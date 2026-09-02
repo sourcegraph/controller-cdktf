@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleAlloydbInstancePscInstanceConfigList) validateGetPa
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbInstancePscInstanceConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbInstancePscInstanceConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleAlloydbInstancePscInstanceConfigList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbInstancePscInstanceConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleAlloydbInstancePscInstanceConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleAlloydbInstancePscInstanceConfigList) validateSetWr
 	return nil
 }
 
-func validateNewDataGoogleAlloydbInstancePscInstanceConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleAlloydbInstancePscInstanceConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

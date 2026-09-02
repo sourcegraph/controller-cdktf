@@ -40,7 +40,7 @@ func (i *jsiiProxy_InstanceCapacityReservationSpecificationOutputReference) vali
 	return nil
 }
 
-func (i *jsiiProxy_InstanceCapacityReservationSpecificationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_InstanceCapacityReservationSpecificationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (i *jsiiProxy_InstanceCapacityReservationSpecificationOutputReference) vali
 	return nil
 }
 
-func (i *jsiiProxy_InstanceCapacityReservationSpecificationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_InstanceCapacityReservationSpecificationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_InstanceCapacityReservationSpecificationOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_InstanceCapacityReservationSpecificationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_InstanceCapacityReservationSpecificationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewInstanceCapacityReservationSpecificationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewInstanceCapacityReservationSpecificationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (c *jsiiProxy_CustomSslCustomSslPriorityList) validateGetParameters(index *
 	return nil
 }
 
-func (c *jsiiProxy_CustomSslCustomSslPriorityList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CustomSslCustomSslPriorityList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CustomSslCustomSslPriorityList) validateSetTerraformAttribute
 	return nil
 }
 
-func (j *jsiiProxy_CustomSslCustomSslPriorityList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CustomSslCustomSslPriorityList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CustomSslCustomSslPriorityList) validateSetWrapsSetParameters
 	return nil
 }
 
-func validateNewCustomSslCustomSslPriorityListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCustomSslCustomSslPriorityListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

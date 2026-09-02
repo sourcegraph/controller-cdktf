@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutp
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutp
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterNodePoolAutoConfigNodeKubeletConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

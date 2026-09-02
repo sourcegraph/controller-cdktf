@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference)
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleMonitoringMeshIstioServiceTelemetryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleMonitoringMeshIstioServiceTelemetryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleMonitoringMeshIstioServiceTelemetryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

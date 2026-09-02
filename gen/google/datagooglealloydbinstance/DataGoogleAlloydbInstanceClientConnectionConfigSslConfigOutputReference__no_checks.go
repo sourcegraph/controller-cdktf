@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigSslConfigOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigSslConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleAlloydbInstanceClientConnectionConfigSslConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleAlloydbInstanceClientConnectionConfigSslConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleAlloydbInstanceClientConnectionConfigSslConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

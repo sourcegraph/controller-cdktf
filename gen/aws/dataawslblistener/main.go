@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListener",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListener",
 		reflect.TypeOf((*DataAwsLbListener)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -47,6 +47,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetArn", GoMethod: "ResetArn"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetLoadBalancerArn", GoMethod: "ResetLoadBalancerArn"},
@@ -68,27 +69,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListener{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerConfig",
 		reflect.TypeOf((*DataAwsLbListenerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultAction",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultAction",
 		reflect.TypeOf((*DataAwsLbListenerDefaultAction)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognito",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognito",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionAuthenticateCognito)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognitoList",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognitoList",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionAuthenticateCognitoList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -104,12 +106,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionAuthenticateCognitoList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
@@ -144,16 +146,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionAuthenticateCognitoOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidc",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidc",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionAuthenticateOidc)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidcList",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidcList",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionAuthenticateOidcList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -169,12 +171,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionAuthenticateOidcList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidcOutputReference",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionAuthenticateOidcOutputReference",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionAuthenticateOidcOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticationRequestExtraParams", GoGetter: "AuthenticationRequestExtraParams"},
@@ -212,16 +214,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionAuthenticateOidcOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionFixedResponse",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionFixedResponse",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionFixedResponse)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionFixedResponseList",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionFixedResponseList",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionFixedResponseList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -237,12 +239,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionFixedResponseList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionFixedResponseOutputReference",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionFixedResponseOutputReference",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionFixedResponseOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -272,16 +274,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionFixedResponseOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForward",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForward",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionForward)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardList",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardList",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionForwardList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -297,12 +299,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionForwardList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardOutputReference",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardOutputReference",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionForwardOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -331,16 +333,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionForwardOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardStickiness",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardStickiness",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionForwardStickiness)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardStickinessList",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardStickinessList",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionForwardStickinessList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -356,12 +358,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionForwardStickinessList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardStickinessOutputReference",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardStickinessOutputReference",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionForwardStickinessOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -390,16 +392,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionForwardStickinessOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroup",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroup",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionForwardTargetGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroupList",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroupList",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionForwardTargetGroupList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -415,12 +417,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionForwardTargetGroupList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroupOutputReference",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionForwardTargetGroupOutputReference",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionForwardTargetGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "arn", GoGetter: "Arn"},
@@ -449,12 +451,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionForwardTargetGroupOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionList",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionList",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -470,12 +472,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionOutputReference",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionOutputReference",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "authenticateCognito", GoGetter: "AuthenticateCognito"},
@@ -510,16 +512,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirect",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirect",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionRedirect)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirectList",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirectList",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionRedirectList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -535,12 +537,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionRedirectList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirectOutputReference",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerDefaultActionRedirectOutputReference",
 		reflect.TypeOf((*DataAwsLbListenerDefaultActionRedirectOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -573,16 +575,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerDefaultActionRedirectOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeouts",
 		reflect.TypeOf((*DataAwsLbListenerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference",
+		"@cdktn/provider-aws.dataAwsLbListener.DataAwsLbListenerTimeoutsOutputReference",
 		reflect.TypeOf((*DataAwsLbListenerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -612,7 +614,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataAwsLbListenerTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

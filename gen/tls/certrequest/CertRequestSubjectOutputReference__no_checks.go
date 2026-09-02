@@ -40,11 +40,11 @@ func (c *jsiiProxy_CertRequestSubjectOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (c *jsiiProxy_CertRequestSubjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CertRequestSubjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CertRequestSubjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertRequestSubjectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -100,11 +100,11 @@ func (j *jsiiProxy_CertRequestSubjectOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_CertRequestSubjectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CertRequestSubjectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCertRequestSubjectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCertRequestSubjectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

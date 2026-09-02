@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputRefer
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputRefer
 	return nil
 }
 
-func validateNewGoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMonitoringSloWindowsBasedSliMetricSumInRangeOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

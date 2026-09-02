@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleapigeekeystoresaliasespkcs12/internal"
 )
 
 type GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BasicConstraints() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -43,9 +43,9 @@ type GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	ValidFrom() *string
 	Version() *float64
 	// Experimental.
@@ -53,7 +53,7 @@ type GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference interfac
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,12 +69,12 @@ type GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference interfac
 
 // The jsii proxy struct for GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference
 type jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) BasicConstraints() *string {
@@ -237,8 +237,8 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -268,7 +268,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputRefe
 }
 
 
-func NewGoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference {
+func NewGoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -277,7 +277,7 @@ func NewGoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference(terra
 	j := jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference",
+		"@cdktn/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -285,11 +285,11 @@ func NewGoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference(terra
 	return &j
 }
 
-func NewGoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference_Override(g GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference_Override(g GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference",
+		"@cdktn/provider-google-beta.googleApigeeKeystoresAliasesPkcs12.GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,11 +379,11 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -507,8 +507,8 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -520,24 +520,24 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -545,7 +545,7 @@ func (g *jsiiProxy_GoogleApigeeKeystoresAliasesPkcs12CertsInfoCertInfoOutputRefe
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

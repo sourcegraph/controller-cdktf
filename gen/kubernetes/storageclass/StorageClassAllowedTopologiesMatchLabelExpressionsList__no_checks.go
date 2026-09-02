@@ -12,7 +12,7 @@ func (s *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsList) valid
 	return nil
 }
 
-func (s *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_StorageClassAllowedTopologiesMatchLabelExpressionsList) valid
 	return nil
 }
 
-func validateNewStorageClassAllowedTopologiesMatchLabelExpressionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewStorageClassAllowedTopologiesMatchLabelExpressionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

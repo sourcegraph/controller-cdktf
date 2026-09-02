@@ -12,7 +12,7 @@ func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeList) validateGetParameters(in
 	return nil
 }
 
-func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (o *jsiiProxy_OpsworksMemcachedLayerEbsVolumeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_OpsworksMemcachedLayerEbsVolumeList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewOpsworksMemcachedLayerEbsVolumeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewOpsworksMemcachedLayerEbsVolumeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

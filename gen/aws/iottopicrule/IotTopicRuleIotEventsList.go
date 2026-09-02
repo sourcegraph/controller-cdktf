@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/iottopicrule/internal"
 )
 
 type IotTopicRuleIotEventsList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type IotTopicRuleIotEventsList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) IotTopicRuleIotEventsOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type IotTopicRuleIotEventsList interface {
 
 // The jsii proxy struct for IotTopicRuleIotEventsList
 type jsiiProxy_IotTopicRuleIotEventsList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_IotTopicRuleIotEventsList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_IotTopicRuleIotEventsList) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_IotTopicRuleIotEventsList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IotTopicRuleIotEventsList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_IotTopicRuleIotEventsList) WrapsSet() *bool {
 }
 
 
-func NewIotTopicRuleIotEventsList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleIotEventsList {
+func NewIotTopicRuleIotEventsList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) IotTopicRuleIotEventsList {
 	_init_.Initialize()
 
 	if err := validateNewIotTopicRuleIotEventsListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewIotTopicRuleIotEventsList(terraformResource cdktf.IInterpolatingParent, 
 	j := jsiiProxy_IotTopicRuleIotEventsList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsList",
+		"@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewIotTopicRuleIotEventsList(terraformResource cdktf.IInterpolatingParent, 
 	return &j
 }
 
-func NewIotTopicRuleIotEventsList_Override(i IotTopicRuleIotEventsList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewIotTopicRuleIotEventsList_Override(i IotTopicRuleIotEventsList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.iotTopicRule.IotTopicRuleIotEventsList",
+		"@cdktn/provider-aws.iotTopicRule.IotTopicRuleIotEventsList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		i,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_IotTopicRuleIotEventsList)SetTerraformAttribute(val *string) 
 	)
 }
 
-func (j *jsiiProxy_IotTopicRuleIotEventsList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IotTopicRuleIotEventsList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_IotTopicRuleIotEventsList)SetWrapsSet(val *bool) {
 	)
 }
 
-func (i *jsiiProxy_IotTopicRuleIotEventsList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (i *jsiiProxy_IotTopicRuleIotEventsList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := i.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		i,
@@ -228,8 +231,8 @@ func (i *jsiiProxy_IotTopicRuleIotEventsList) Get(index *float64) IotTopicRuleIo
 	return returns
 }
 
-func (i *jsiiProxy_IotTopicRuleIotEventsList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IotTopicRuleIotEventsList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (i *jsiiProxy_IotTopicRuleIotEventsList) Resolve(_context cdktf.IResolveCon
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

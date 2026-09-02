@@ -40,11 +40,11 @@ func (e *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateGetStringMap
 	return nil
 }
 
-func (e *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EfsFileSystemSizeInBytesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewEfsFileSystemSizeInBytesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEfsFileSystemSizeInBytesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

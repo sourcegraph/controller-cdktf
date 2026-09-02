@@ -40,11 +40,11 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLogging
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLogging
 	return nil
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewKinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewKinesisFirehoseDeliveryStreamS3ConfigurationCloudwatchLoggingOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

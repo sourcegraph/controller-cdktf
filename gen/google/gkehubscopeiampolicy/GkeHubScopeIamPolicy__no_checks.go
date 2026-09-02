@@ -56,6 +56,10 @@ func (g *jsiiProxy_GkeHubScopeIamPolicy) validateInterpolationForAttributeParame
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubScopeIamPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubScopeIamPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (g *jsiiProxy_GkeHubScopeIamPolicy) validateMoveToIdParameters(id *string) 
 }
 
 func (g *jsiiProxy_GkeHubScopeIamPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubScopeIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -100,7 +108,7 @@ func (j *jsiiProxy_GkeHubScopeIamPolicy) validateSetIdParameters(val *string) er
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubScopeIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GkeHubScopeIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -165,7 +165,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 
 func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *GoogleCloudRunV2ServiceTemplateVolumesSecretItems:
 		val := val.(*GoogleCloudRunV2ServiceTemplateVolumesSecretItems)
@@ -180,7 +180,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *GoogleCloudRunV2ServiceTemplateVolumesSecretItems; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *GoogleCloudRunV2ServiceTemplateVolumesSecretItems; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -211,7 +211,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -227,7 +227,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputRefere
 	return nil
 }
 
-func validateNewGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCloudRunV2ServiceTemplateVolumesSecretItemsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

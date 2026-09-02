@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationLi
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationLi
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationLi
 	return nil
 }
 
-func validateNewDataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsRoute53TrafficPolicyDocumentRuleGeoProximityLocationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSccV2OrganizationNotificationConfigStreamingConfigOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationNotificationConfigStreamingConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSccV2OrganizationNotificationConfigStreamingConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccV2OrganizationNotificationConfigStreamingConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSccV2OrganizationNotificationConfigStreamingConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleSccV2OrganizationNotificationConfigStreamingConfigOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccV2OrganizationNotificationConfigStreamingConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSccV2OrganizationNotificationConfigStreamingConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSccV2OrganizationNotificationConfigStreamingConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSccV2OrganizationNotificationConfigStreamingConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

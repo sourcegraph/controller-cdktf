@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validate
 	return nil
 }
 
-func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -120,11 +120,11 @@ func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleStorageTransferJobTransferSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleStorageTransferJobTransferSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleStorageTransferJobTransferSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

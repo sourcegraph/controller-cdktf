@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (g *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkSecurityClientTlsPolicyClientCertificateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

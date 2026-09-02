@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateInterpolatio
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validatePutCmekSetti
 }
 
 func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validatePutIndexConfigsParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleLoggingBillingAccountBucketConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

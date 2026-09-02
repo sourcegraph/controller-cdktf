@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (s *jsiiProxy_SloObjectiveCountMetricsTotalDatadogList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalDatadogList) validateGetParamete
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsTotalDatadogList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SloObjectiveCountMetricsTotalDatadogList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (s *jsiiProxy_SloObjectiveCountMetricsTotalDatadogList) validateResolvePara
 
 func (j *jsiiProxy_SloObjectiveCountMetricsTotalDatadogList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*SloObjectiveCountMetricsTotalDatadog:
 		val := val.(*[]*SloObjectiveCountMetricsTotalDatadog)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalDatadogList) validateSetInternal
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*SloObjectiveCountMetricsTotalDatadog; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*SloObjectiveCountMetricsTotalDatadog; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalDatadogList) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsTotalDatadogList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsTotalDatadogList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsTotalDatadogList) validateSetWrapsSet
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsTotalDatadogListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSloObjectiveCountMetricsTotalDatadogListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

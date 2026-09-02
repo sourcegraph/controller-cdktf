@@ -12,7 +12,7 @@ func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList)
 	return nil
 }
 
-func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList)
 	return nil
 }
 
-func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleList)
 	return nil
 }
 
-func validateNewCognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCognitoIdentityPoolRolesAttachmentRoleMappingMappingRuleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

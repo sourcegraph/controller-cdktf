@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleIapTunnelDestGroupTimeoutsOutputReference) validateGetS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapTunnelDestGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleIapTunnelDestGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIapTunnelDestGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIapTunnelDestGroupTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleIapTunnelDestGroupTimeoutsOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIapTunnelDestGroupTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIapTunnelDestGroupTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleIapTunnelDestGroupTimeoutsOutputReference) validateSetU
 	return nil
 }
 
-func validateNewGoogleIapTunnelDestGroupTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleIapTunnelDestGroupTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

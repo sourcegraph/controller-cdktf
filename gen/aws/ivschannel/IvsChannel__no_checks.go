@@ -56,6 +56,10 @@ func (i *jsiiProxy_IvsChannel) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (i *jsiiProxy_IvsChannel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IvsChannel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (i *jsiiProxy_IvsChannel) validateOverrideLogicalIdParameters(newLogicalId 
 }
 
 func (i *jsiiProxy_IvsChannel) validatePutTimeoutsParameters(value *IvsChannelTimeouts) error {
+	return nil
+}
+
+func (i *jsiiProxy_IvsChannel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_IvsChannel) validateSetLatencyModeParameters(val *string) err
 	return nil
 }
 
-func (j *jsiiProxy_IvsChannel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IvsChannel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

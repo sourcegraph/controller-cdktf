@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetappVolumeReplicationHybridPeeringDetailsOutputRefere
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeReplicationHybridPeeringDetailsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetappVolumeReplicationHybridPeeringDetailsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetappVolumeReplicationHybridPeeringDetailsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetappVolumeReplicationHybridPeeringDetailsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleNetappVolumeReplicationHybridPeeringDetailsOutputRefere
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetappVolumeReplicationHybridPeeringDetailsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetappVolumeReplicationHybridPeeringDetailsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetappVolumeReplicationHybridPeeringDetailsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleNetappVolumeReplicationHybridPeeringDetailsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

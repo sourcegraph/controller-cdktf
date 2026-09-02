@@ -40,11 +40,11 @@ func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference) v
 	return nil
 }
 
-func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_BlockchainNodeEngineBlockchainNodesTimeoutsOutputReference) v
 	return nil
 }
 
-func validateNewBlockchainNodeEngineBlockchainNodesTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBlockchainNodeEngineBlockchainNodesTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

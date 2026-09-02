@@ -12,7 +12,7 @@ func (s *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleList) validateGetPar
 	return nil
 }
 
-func (s *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleList) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_S3ControlBucketLifecycleConfigurationRuleList) validateSetWra
 	return nil
 }
 
-func validateNewS3ControlBucketLifecycleConfigurationRuleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewS3ControlBucketLifecycleConfigurationRuleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

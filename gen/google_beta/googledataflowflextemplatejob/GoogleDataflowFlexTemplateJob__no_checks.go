@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) validateInterpolationForAttrib
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) validateMoveToIdParameters(id 
 }
 
 func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDataflowFlexTemplateJob) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -136,7 +144,7 @@ func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetLauncherMachineType
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDataflowFlexTemplateJob) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

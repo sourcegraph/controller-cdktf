@@ -40,11 +40,11 @@ func (d *jsiiProxy_DmsReplicationSubnetGroupTimeoutsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DmsReplicationSubnetGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DmsReplicationSubnetGroupTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DmsReplicationSubnetGroupTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DmsReplicationSubnetGroupTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DmsReplicationSubnetGroupTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DmsReplicationSubnetGroupTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DmsReplicationSubnetGroupTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DmsReplicationSubnetGroupTimeoutsOutputReference) validateSet
 	return nil
 }
 
-func validateNewDmsReplicationSubnetGroupTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDmsReplicationSubnetGroupTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

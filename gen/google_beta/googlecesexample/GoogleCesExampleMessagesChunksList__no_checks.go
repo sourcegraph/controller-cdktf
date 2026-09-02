@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesExampleMessagesChunksList) validateGetParameters(ind
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesExampleMessagesChunksList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesExampleMessagesChunksList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleCesExampleMessagesChunksList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesExampleMessagesChunksList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesExampleMessagesChunksList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleCesExampleMessagesChunksList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewGoogleCesExampleMessagesChunksListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesExampleMessagesChunksListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsAudioRecordingCo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsAudioRecordingCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleCesAppVersionSnapshotAppLoggingSettingsAudioRecordingCo
 	return nil
 }
 
-func validateNewGoogleCesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleCesAppVersionSnapshotAppLoggingSettingsAudioRecordingConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (s *jsiiProxy_StoragegatewayGateway) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (s *jsiiProxy_StoragegatewayGateway) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_StoragegatewayGateway) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (s *jsiiProxy_StoragegatewayGateway) validatePutSmbActiveDirectorySettingsP
 }
 
 func (s *jsiiProxy_StoragegatewayGateway) validatePutTimeoutsParameters(value *StoragegatewayGatewayTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_StoragegatewayGateway) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -148,7 +156,7 @@ func (j *jsiiProxy_StoragegatewayGateway) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayGateway) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_StoragegatewayGateway) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

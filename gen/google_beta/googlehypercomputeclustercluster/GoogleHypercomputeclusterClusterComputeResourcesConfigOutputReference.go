@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlehypercomputeclustercluster/internal"
 )
 
 type GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -42,15 +42,15 @@ type GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference inter
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,9 +66,9 @@ type GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference inter
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutNewFlexStartInstances(value *GoogleHypercomputeclusterClusterComputeResourcesConfigNewFlexStartInstances)
 	PutNewOnDemandInstances(value *GoogleHypercomputeclusterClusterComputeResourcesConfigNewOnDemandInstances)
 	PutNewReservedInstances(value *GoogleHypercomputeclusterClusterComputeResourcesConfigNewReservedInstances)
@@ -79,7 +79,7 @@ type GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference inter
 	ResetNewSpotInstances()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference inter
 
 // The jsii proxy struct for GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference
 type jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -232,8 +232,8 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputR
 	return returns
 }
 
-func (j *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -243,7 +243,7 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputR
 }
 
 
-func NewGoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference {
+func NewGoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleHypercomputeclusterClusterComputeResourcesConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -252,7 +252,7 @@ func NewGoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference(te
 	j := jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleHypercomputeclusterCluster.GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference",
+		"@cdktn/provider-google-beta.googleHypercomputeclusterCluster.GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -260,11 +260,11 @@ func NewGoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference(te
 	return &j
 }
 
-func NewGoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference_Override(g GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference_Override(g GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleHypercomputeclusterCluster.GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference",
+		"@cdktn/provider-google-beta.googleHypercomputeclusterCluster.GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -314,7 +314,7 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputR
 	)
 }
 
-func (j *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -354,11 +354,11 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -482,8 +482,8 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -495,16 +495,16 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputR
 	return returns
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -587,8 +587,8 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputR
 	)
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -596,7 +596,7 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterComputeResourcesConfigOutputR
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

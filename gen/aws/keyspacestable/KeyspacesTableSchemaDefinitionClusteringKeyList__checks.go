@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateGetP
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateReso
 
 func (j *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*KeyspacesTableSchemaDefinitionClusteringKey:
 		val := val.(*[]*KeyspacesTableSchemaDefinitionClusteringKey)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateSetI
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*KeyspacesTableSchemaDefinitionClusteringKey; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*KeyspacesTableSchemaDefinitionClusteringKey; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionClusteringKeyList) validateSetW
 	return nil
 }
 
-func validateNewKeyspacesTableSchemaDefinitionClusteringKeyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewKeyspacesTableSchemaDefinitionClusteringKeyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

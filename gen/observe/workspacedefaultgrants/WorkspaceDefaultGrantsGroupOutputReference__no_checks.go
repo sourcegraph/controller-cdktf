@@ -40,11 +40,11 @@ func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateGetString
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkspaceDefaultGrantsGroupOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkspaceDefaultGrantsGroupOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewWorkspaceDefaultGrantsGroupOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

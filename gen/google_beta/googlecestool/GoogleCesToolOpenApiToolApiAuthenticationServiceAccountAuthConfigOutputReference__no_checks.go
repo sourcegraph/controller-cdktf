@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAccountAuthCo
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAccountAuthCo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCesToolOpenApiToolApiAuthenticationServiceAccountAuthConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

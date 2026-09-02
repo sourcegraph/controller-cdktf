@@ -40,7 +40,7 @@ func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateGe
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validatePu
 	return nil
 }
 
-func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StatefulSetSpecVolumeClaimTemplateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStatefulSetSpecVolumeClaimTemplateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewStatefulSetSpecVolumeClaimTemplateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesList) valida
 	return nil
 }
 
-func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesList) valida
 	return nil
 }
 
-func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleAppEngineFlexibleAppVersionResourcesVolumesList) valida
 	return nil
 }
 
-func validateNewGoogleAppEngineFlexibleAppVersionResourcesVolumesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleAppEngineFlexibleAppVersionResourcesVolumesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

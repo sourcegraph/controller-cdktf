@@ -12,7 +12,7 @@ func (c *jsiiProxy_ConnectHoursOfOperationConfigAList) validateGetParameters(ind
 	return nil
 }
 
-func (c *jsiiProxy_ConnectHoursOfOperationConfigAList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectHoursOfOperationConfigAList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ConnectHoursOfOperationConfigAList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_ConnectHoursOfOperationConfigAList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConnectHoursOfOperationConfigAList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ConnectHoursOfOperationConfigAList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewConnectHoursOfOperationConfigAListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewConnectHoursOfOperationConfigAListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

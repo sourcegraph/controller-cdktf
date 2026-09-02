@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigTextConfigOutputRef
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigTextConfigOutputRef
 	return nil
 }
 
-func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePubsubSubscriptionCloudStorageConfigTextConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

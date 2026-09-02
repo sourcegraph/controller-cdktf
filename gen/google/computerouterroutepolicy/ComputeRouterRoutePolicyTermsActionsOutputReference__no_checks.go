@@ -40,11 +40,11 @@ func (c *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_ComputeRouterRoutePolicyTermsActionsOutputReference) validate
 	return nil
 }
 
-func validateNewComputeRouterRoutePolicyTermsActionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewComputeRouterRoutePolicyTermsActionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

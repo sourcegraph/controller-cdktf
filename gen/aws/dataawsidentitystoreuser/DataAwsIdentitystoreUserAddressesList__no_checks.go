@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserAddressesList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUserAddressesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsIdentitystoreUserAddressesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserAddressesList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserAddressesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsIdentitystoreUserAddressesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserAddressesList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDataAwsIdentitystoreUserAddressesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsIdentitystoreUserAddressesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

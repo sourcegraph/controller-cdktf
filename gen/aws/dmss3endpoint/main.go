@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3Endpoint",
+		"@cdktn/provider-aws.dmsS3Endpoint.DmsS3Endpoint",
 		reflect.TypeOf((*DmsS3Endpoint)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "addColumnName", GoGetter: "AddColumnName"},
@@ -105,6 +105,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArn", GoGetter: "KmsKeyArn"},
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyArnInput", GoGetter: "KmsKeyArnInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "maxFileSize", GoGetter: "MaxFileSize"},
 			_jsii_.MemberProperty{JsiiProperty: "maxFileSizeInput", GoGetter: "MaxFileSizeInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -122,6 +123,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putTimeouts", GoMethod: "PutTimeouts"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAddColumnName", GoMethod: "ResetAddColumnName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAddTrailingPaddingCharacter", GoMethod: "ResetAddTrailingPaddingCharacter"},
 			_jsii_.MemberMethod{JsiiMethod: "resetBucketFolder", GoMethod: "ResetBucketFolder"},
@@ -200,23 +202,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "useCsvNoSupValueInput", GoGetter: "UseCsvNoSupValueInput"},
 			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestamp", GoGetter: "UseTaskStartTimeForFullLoadTimestamp"},
 			_jsii_.MemberProperty{JsiiProperty: "useTaskStartTimeForFullLoadTimestampInput", GoGetter: "UseTaskStartTimeForFullLoadTimestampInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsS3Endpoint{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig",
+		"@cdktn/provider-aws.dmsS3Endpoint.DmsS3EndpointConfig",
 		reflect.TypeOf((*DmsS3EndpointConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeouts",
+		"@cdktn/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeouts",
 		reflect.TypeOf((*DmsS3EndpointTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference",
+		"@cdktn/provider-aws.dmsS3Endpoint.DmsS3EndpointTimeoutsOutputReference",
 		reflect.TypeOf((*DmsS3EndpointTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -249,7 +252,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DmsS3EndpointTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

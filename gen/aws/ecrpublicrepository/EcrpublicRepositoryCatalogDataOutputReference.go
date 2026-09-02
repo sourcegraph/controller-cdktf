@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/ecrpublicrepository/internal"
 )
 
 type EcrpublicRepositoryCatalogDataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AboutText() *string
 	SetAboutText(val *string)
 	AboutTextInput() *string
@@ -49,9 +49,9 @@ type EcrpublicRepositoryCatalogDataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UsageText() *string
 	SetUsageText(val *string)
 	UsageTextInput() *string
@@ -60,7 +60,7 @@ type EcrpublicRepositoryCatalogDataOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type EcrpublicRepositoryCatalogDataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAboutText()
 	ResetArchitectures()
 	ResetDescription()
@@ -87,7 +87,7 @@ type EcrpublicRepositoryCatalogDataOutputReference interface {
 	ResetUsageText()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -97,7 +97,7 @@ type EcrpublicRepositoryCatalogDataOutputReference interface {
 
 // The jsii proxy struct for EcrpublicRepositoryCatalogDataOutputReference
 type jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) AboutText() *string {
@@ -260,8 +260,8 @@ func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -291,7 +291,7 @@ func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) UsageTextInput
 }
 
 
-func NewEcrpublicRepositoryCatalogDataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EcrpublicRepositoryCatalogDataOutputReference {
+func NewEcrpublicRepositoryCatalogDataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EcrpublicRepositoryCatalogDataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEcrpublicRepositoryCatalogDataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -300,7 +300,7 @@ func NewEcrpublicRepositoryCatalogDataOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference",
+		"@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -308,11 +308,11 @@ func NewEcrpublicRepositoryCatalogDataOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewEcrpublicRepositoryCatalogDataOutputReference_Override(e EcrpublicRepositoryCatalogDataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEcrpublicRepositoryCatalogDataOutputReference_Override(e EcrpublicRepositoryCatalogDataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference",
+		"@cdktn/provider-aws.ecrpublicRepository.EcrpublicRepositoryCatalogDataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -417,7 +417,7 @@ func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -468,11 +468,11 @@ func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -596,8 +596,8 @@ func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) GetStringMapAt
 	return returns
 }
 
-func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -609,16 +609,16 @@ func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) InterpolationA
 	return returns
 }
 
-func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -673,8 +673,8 @@ func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) ResetUsageText
 	)
 }
 
-func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -682,7 +682,7 @@ func (e *jsiiProxy_EcrpublicRepositoryCatalogDataOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlecloudtasksqueue/internal"
 )
 
 type GoogleCloudTasksQueueHttpTargetOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type GoogleCloudTasksQueueHttpTargetOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UriOverride() GoogleCloudTasksQueueHttpTargetUriOverrideOutputReference
 	UriOverrideInput() *GoogleCloudTasksQueueHttpTargetUriOverride
 	// Experimental.
@@ -53,7 +53,7 @@ type GoogleCloudTasksQueueHttpTargetOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,9 +69,9 @@ type GoogleCloudTasksQueueHttpTargetOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutHeaderOverrides(value interface{})
 	PutOauthToken(value *GoogleCloudTasksQueueHttpTargetOauthToken)
 	PutOidcToken(value *GoogleCloudTasksQueueHttpTargetOidcToken)
@@ -83,7 +83,7 @@ type GoogleCloudTasksQueueHttpTargetOutputReference interface {
 	ResetUriOverride()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -93,7 +93,7 @@ type GoogleCloudTasksQueueHttpTargetOutputReference interface {
 
 // The jsii proxy struct for GoogleCloudTasksQueueHttpTargetOutputReference
 type jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) ComplexObjectIndex() interface{} {
@@ -236,8 +236,8 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) TerraformAttr
 	return returns
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -267,7 +267,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) UriOverrideIn
 }
 
 
-func NewGoogleCloudTasksQueueHttpTargetOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleCloudTasksQueueHttpTargetOutputReference {
+func NewGoogleCloudTasksQueueHttpTargetOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleCloudTasksQueueHttpTargetOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleCloudTasksQueueHttpTargetOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -276,7 +276,7 @@ func NewGoogleCloudTasksQueueHttpTargetOutputReference(terraformResource cdktf.I
 	j := jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueHttpTargetOutputReference",
+		"@cdktn/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueHttpTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -284,11 +284,11 @@ func NewGoogleCloudTasksQueueHttpTargetOutputReference(terraformResource cdktf.I
 	return &j
 }
 
-func NewGoogleCloudTasksQueueHttpTargetOutputReference_Override(g GoogleCloudTasksQueueHttpTargetOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleCloudTasksQueueHttpTargetOutputReference_Override(g GoogleCloudTasksQueueHttpTargetOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueHttpTargetOutputReference",
+		"@cdktn/provider-google-beta.googleCloudTasksQueue.GoogleCloudTasksQueueHttpTargetOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -349,7 +349,7 @@ func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetTerraformAt
 	)
 }
 
-func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -389,11 +389,11 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetAnyMapAttr
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -517,8 +517,8 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) GetStringMapA
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -530,16 +530,16 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) Interpolation
 	return returns
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -630,8 +630,8 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) ResetUriOverr
 	)
 }
 
-func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -639,7 +639,7 @@ func (g *jsiiProxy_GoogleCloudTasksQueueHttpTargetOutputReference) Resolve(_cont
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

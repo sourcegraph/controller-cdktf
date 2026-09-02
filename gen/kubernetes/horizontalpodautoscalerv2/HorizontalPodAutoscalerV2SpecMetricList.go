@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/horizontalpodautoscalerv2/internal"
 )
 
 type HorizontalPodAutoscalerV2SpecMetricList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type HorizontalPodAutoscalerV2SpecMetricList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) HorizontalPodAutoscalerV2SpecMetricOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type HorizontalPodAutoscalerV2SpecMetricList interface {
 
 // The jsii proxy struct for HorizontalPodAutoscalerV2SpecMetricList
 type jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList) WrapsSet() *bool {
 }
 
 
-func NewHorizontalPodAutoscalerV2SpecMetricList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HorizontalPodAutoscalerV2SpecMetricList {
+func NewHorizontalPodAutoscalerV2SpecMetricList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) HorizontalPodAutoscalerV2SpecMetricList {
 	_init_.Initialize()
 
 	if err := validateNewHorizontalPodAutoscalerV2SpecMetricListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewHorizontalPodAutoscalerV2SpecMetricList(terraformResource cdktf.IInterpo
 	j := jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricList",
+		"@cdktn/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewHorizontalPodAutoscalerV2SpecMetricList(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewHorizontalPodAutoscalerV2SpecMetricList_Override(h HorizontalPodAutoscalerV2SpecMetricList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewHorizontalPodAutoscalerV2SpecMetricList_Override(h HorizontalPodAutoscalerV2SpecMetricList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricList",
+		"@cdktn/provider-kubernetes.horizontalPodAutoscalerV2.HorizontalPodAutoscalerV2SpecMetricList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		h,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList)SetWrapsSet(val *bool
 	)
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := h.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		h,
@@ -228,8 +231,8 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList) Get(index *float64) 
 	return returns
 }
 
-func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := h.validateResolveParameters(_context); err != nil {
+func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := h.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (h *jsiiProxy_HorizontalPodAutoscalerV2SpecMetricList) Resolve(_context cdk
 	_jsii_.Invoke(
 		h,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

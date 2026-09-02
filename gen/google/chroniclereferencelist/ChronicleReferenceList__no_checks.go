@@ -56,6 +56,10 @@ func (c *jsiiProxy_ChronicleReferenceList) validateInterpolationForAttributePara
 	return nil
 }
 
+func (c *jsiiProxy_ChronicleReferenceList) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ChronicleReferenceList) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_ChronicleReferenceList) validatePutScopeInfoParameters(value 
 }
 
 func (c *jsiiProxy_ChronicleReferenceList) validatePutTimeoutsParameters(value *ChronicleReferenceListTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_ChronicleReferenceList) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_ChronicleReferenceList) validateSetInstanceParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ChronicleReferenceList) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ChronicleReferenceList) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

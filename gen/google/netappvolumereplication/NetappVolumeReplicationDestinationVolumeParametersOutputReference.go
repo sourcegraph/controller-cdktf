@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/netappvolumereplication/internal"
 )
 
 type NetappVolumeReplicationDestinationVolumeParametersOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,9 +43,9 @@ type NetappVolumeReplicationDestinationVolumeParametersOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TieringPolicy() NetappVolumeReplicationDestinationVolumeParametersTieringPolicyOutputReference
 	TieringPolicyInput() *NetappVolumeReplicationDestinationVolumeParametersTieringPolicy
 	VolumeId() *string
@@ -56,7 +56,7 @@ type NetappVolumeReplicationDestinationVolumeParametersOutputReference interface
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -72,9 +72,9 @@ type NetappVolumeReplicationDestinationVolumeParametersOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutTieringPolicy(value *NetappVolumeReplicationDestinationVolumeParametersTieringPolicy)
 	ResetDescription()
 	ResetShareName()
@@ -82,7 +82,7 @@ type NetappVolumeReplicationDestinationVolumeParametersOutputReference interface
 	ResetVolumeId()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -92,7 +92,7 @@ type NetappVolumeReplicationDestinationVolumeParametersOutputReference interface
 
 // The jsii proxy struct for NetappVolumeReplicationDestinationVolumeParametersOutputReference
 type jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) ComplexObjectIndex() interface{} {
@@ -215,8 +215,8 @@ func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -266,7 +266,7 @@ func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 }
 
 
-func NewNetappVolumeReplicationDestinationVolumeParametersOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) NetappVolumeReplicationDestinationVolumeParametersOutputReference {
+func NewNetappVolumeReplicationDestinationVolumeParametersOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) NetappVolumeReplicationDestinationVolumeParametersOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewNetappVolumeReplicationDestinationVolumeParametersOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -275,7 +275,7 @@ func NewNetappVolumeReplicationDestinationVolumeParametersOutputReference(terraf
 	j := jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.netappVolumeReplication.NetappVolumeReplicationDestinationVolumeParametersOutputReference",
+		"@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationDestinationVolumeParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -283,11 +283,11 @@ func NewNetappVolumeReplicationDestinationVolumeParametersOutputReference(terraf
 	return &j
 }
 
-func NewNetappVolumeReplicationDestinationVolumeParametersOutputReference_Override(n NetappVolumeReplicationDestinationVolumeParametersOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewNetappVolumeReplicationDestinationVolumeParametersOutputReference_Override(n NetappVolumeReplicationDestinationVolumeParametersOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.netappVolumeReplication.NetappVolumeReplicationDestinationVolumeParametersOutputReference",
+		"@cdktn/provider-google.netappVolumeReplication.NetappVolumeReplicationDestinationVolumeParametersOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		n,
 	)
@@ -370,7 +370,7 @@ func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	)
 }
 
-func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -421,11 +421,11 @@ func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := n.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -549,8 +549,8 @@ func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
@@ -562,16 +562,16 @@ func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	return returns
 }
 
-func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := n.validateInterpolationForAttributeParameters(property); err != nil {
+func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := n.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		n,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -621,8 +621,8 @@ func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	)
 }
 
-func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := n.validateResolveParameters(_context); err != nil {
+func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := n.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -630,7 +630,7 @@ func (n *jsiiProxy_NetappVolumeReplicationDestinationVolumeParametersOutputRefer
 	_jsii_.Invoke(
 		n,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataTfeTeamProjectAccess) validateOverrideLogicalIdParameters
 	return nil
 }
 
+func (d *jsiiProxy_DataTfeTeamProjectAccess) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataTfeTeamProjectAccess_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataTfeTeamProjectAccess) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeTeamProjectAccess) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataTfeTeamProjectAccess) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

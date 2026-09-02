@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSecretManagerRegionalSecretVersionTimeoutsOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerRegionalSecretVersionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecretVersionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecretManagerRegionalSecretVersionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSecretManagerRegionalSecretVersionTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersionTimeoutsOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleSecretManagerRegionalSecretVersionTimeoutsOutputReferen
 	return nil
 }
 
-func validateNewGoogleSecretManagerRegionalSecretVersionTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSecretManagerRegionalSecretVersionTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

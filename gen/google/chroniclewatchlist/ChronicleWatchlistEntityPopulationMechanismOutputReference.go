@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/chroniclewatchlist/internal"
 )
 
 type ChronicleWatchlistEntityPopulationMechanismOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type ChronicleWatchlistEntityPopulationMechanismOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type ChronicleWatchlistEntityPopulationMechanismOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutManual(value *ChronicleWatchlistEntityPopulationMechanismManual)
 	ResetManual()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type ChronicleWatchlistEntityPopulationMechanismOutputReference interface {
 
 // The jsii proxy struct for ChronicleWatchlistEntityPopulationMechanismOutputReference
 type jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) T
 }
 
 
-func NewChronicleWatchlistEntityPopulationMechanismOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ChronicleWatchlistEntityPopulationMechanismOutputReference {
+func NewChronicleWatchlistEntityPopulationMechanismOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ChronicleWatchlistEntityPopulationMechanismOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewChronicleWatchlistEntityPopulationMechanismOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewChronicleWatchlistEntityPopulationMechanismOutputReference(terraformReso
 	j := jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismOutputReference",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewChronicleWatchlistEntityPopulationMechanismOutputReference(terraformReso
 	return &j
 }
 
-func NewChronicleWatchlistEntityPopulationMechanismOutputReference_Override(c ChronicleWatchlistEntityPopulationMechanismOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewChronicleWatchlistEntityPopulationMechanismOutputReference_Override(c ChronicleWatchlistEntityPopulationMechanismOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismOutputReference",
+		"@cdktn/provider-google.chronicleWatchlist.ChronicleWatchlistEntityPopulationMechanismOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -410,8 +410,8 @@ func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) G
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -423,16 +423,16 @@ func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) I
 	return returns
 }
 
-func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) R
 	)
 }
 
-func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (c *jsiiProxy_ChronicleWatchlistEntityPopulationMechanismOutputReference) R
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

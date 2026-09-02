@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -120,7 +120,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -128,7 +128,7 @@ func (j *jsiiProxy_GoogleCloudRunV2ServiceTemplateContainersOutputReference) val
 	return nil
 }
 
-func validateNewGoogleCloudRunV2ServiceTemplateContainersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleCloudRunV2ServiceTemplateContainersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

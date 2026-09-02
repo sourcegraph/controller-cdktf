@@ -12,7 +12,7 @@ func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOp
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOp
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOptionList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_EcsServiceServiceConnectConfigurationLogConfigurationSecretOp
 	return nil
 }
 
-func validateNewEcsServiceServiceConnectConfigurationLogConfigurationSecretOptionListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEcsServiceServiceConnectConfigurationLogConfigurationSecretOptionListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

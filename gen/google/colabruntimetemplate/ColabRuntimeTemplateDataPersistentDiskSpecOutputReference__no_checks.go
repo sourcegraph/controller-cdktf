@@ -40,11 +40,11 @@ func (c *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) va
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ColabRuntimeTemplateDataPersistentDiskSpecOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewColabRuntimeTemplateDataPersistentDiskSpecOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewColabRuntimeTemplateDataPersistentDiskSpecOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

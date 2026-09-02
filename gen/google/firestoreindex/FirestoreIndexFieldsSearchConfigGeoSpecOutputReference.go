@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/firestoreindex/internal"
 )
 
 type FirestoreIndexFieldsSearchConfigGeoSpecOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type FirestoreIndexFieldsSearchConfigGeoSpecOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,12 +61,12 @@ type FirestoreIndexFieldsSearchConfigGeoSpecOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -76,7 +76,7 @@ type FirestoreIndexFieldsSearchConfigGeoSpecOutputReference interface {
 
 // The jsii proxy struct for FirestoreIndexFieldsSearchConfigGeoSpecOutputReference
 type jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) ComplexObjectIndex() interface{} {
@@ -159,8 +159,8 @@ func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) Terra
 	return returns
 }
 
-func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -170,7 +170,7 @@ func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) Terra
 }
 
 
-func NewFirestoreIndexFieldsSearchConfigGeoSpecOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FirestoreIndexFieldsSearchConfigGeoSpecOutputReference {
+func NewFirestoreIndexFieldsSearchConfigGeoSpecOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FirestoreIndexFieldsSearchConfigGeoSpecOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFirestoreIndexFieldsSearchConfigGeoSpecOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -179,7 +179,7 @@ func NewFirestoreIndexFieldsSearchConfigGeoSpecOutputReference(terraformResource
 	j := jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigGeoSpecOutputReference",
+		"@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigGeoSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -187,11 +187,11 @@ func NewFirestoreIndexFieldsSearchConfigGeoSpecOutputReference(terraformResource
 	return &j
 }
 
-func NewFirestoreIndexFieldsSearchConfigGeoSpecOutputReference_Override(f FirestoreIndexFieldsSearchConfigGeoSpecOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFirestoreIndexFieldsSearchConfigGeoSpecOutputReference_Override(f FirestoreIndexFieldsSearchConfigGeoSpecOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigGeoSpecOutputReference",
+		"@cdktn/provider-google.firestoreIndex.FirestoreIndexFieldsSearchConfigGeoSpecOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -252,7 +252,7 @@ func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference)SetTer
 	)
 }
 
-func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -292,11 +292,11 @@ func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) GetAn
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -420,8 +420,8 @@ func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) GetSt
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -433,24 +433,24 @@ func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) Inter
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -458,7 +458,7 @@ func (f *jsiiProxy_FirestoreIndexFieldsSearchConfigGeoSpecOutputReference) Resol
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

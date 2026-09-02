@@ -40,11 +40,11 @@ func (s *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReferenc
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_StoragegatewayGatewaySmbActiveDirectorySettingsOutputReferenc
 	return nil
 }
 
-func validateNewStoragegatewayGatewaySmbActiveDirectorySettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStoragegatewayGatewaySmbActiveDirectorySettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

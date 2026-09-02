@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList) validateAllWithMapKeyParameters(mapKeyAttributeName *string) error {
@@ -26,9 +26,9 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitiali
 	return nil
 }
 
-func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -36,7 +36,7 @@ func (d *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitiali
 
 func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *[]*DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions:
 		val := val.(*[]*DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions)
@@ -55,7 +55,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitiali
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *[]*DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *[]*DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActions; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -70,7 +70,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitiali
 	return nil
 }
 
-func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -86,7 +86,7 @@ func (j *jsiiProxy_DataprocWorkflowTemplatePlacementManagedClusterConfigInitiali
 	return nil
 }
 
-func validateNewDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataprocWorkflowTemplatePlacementManagedClusterConfigInitializationActionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

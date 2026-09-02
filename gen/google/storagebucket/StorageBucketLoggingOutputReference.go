@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/storagebucket/internal"
 )
 
 type StorageBucketLoggingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type StorageBucketLoggingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type StorageBucketLoggingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetLogObjectPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type StorageBucketLoggingOutputReference interface {
 
 // The jsii proxy struct for StorageBucketLoggingOutputReference
 type jsiiProxy_StorageBucketLoggingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_StorageBucketLoggingOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_StorageBucketLoggingOutputReference) TerraformAttribute() *st
 	return returns
 }
 
-func (j *jsiiProxy_StorageBucketLoggingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_StorageBucketLoggingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_StorageBucketLoggingOutputReference) TerraformResource() cdkt
 }
 
 
-func NewStorageBucketLoggingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) StorageBucketLoggingOutputReference {
+func NewStorageBucketLoggingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) StorageBucketLoggingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewStorageBucketLoggingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewStorageBucketLoggingOutputReference(terraformResource cdktf.IInterpolati
 	j := jsiiProxy_StorageBucketLoggingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference",
+		"@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewStorageBucketLoggingOutputReference(terraformResource cdktf.IInterpolati
 	return &j
 }
 
-func NewStorageBucketLoggingOutputReference_Override(s StorageBucketLoggingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewStorageBucketLoggingOutputReference_Override(s StorageBucketLoggingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.storageBucket.StorageBucketLoggingOutputReference",
+		"@cdktn/provider-google.storageBucket.StorageBucketLoggingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_StorageBucketLoggingOutputReference)SetTerraformAttribute(val
 	)
 }
 
-func (j *jsiiProxy_StorageBucketLoggingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_StorageBucketLoggingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (s *jsiiProxy_StorageBucketLoggingOutputReference) GetAnyMapAttribute(terra
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketLoggingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_StorageBucketLoggingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -455,8 +455,8 @@ func (s *jsiiProxy_StorageBucketLoggingOutputReference) GetStringMapAttribute(te
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketLoggingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_StorageBucketLoggingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -468,16 +468,16 @@ func (s *jsiiProxy_StorageBucketLoggingOutputReference) InterpolationAsList() cd
 	return returns
 }
 
-func (s *jsiiProxy_StorageBucketLoggingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_StorageBucketLoggingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (s *jsiiProxy_StorageBucketLoggingOutputReference) ResetLogObjectPrefix() {
 	)
 }
 
-func (s *jsiiProxy_StorageBucketLoggingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_StorageBucketLoggingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (s *jsiiProxy_StorageBucketLoggingOutputReference) Resolve(_context cdktf.I
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

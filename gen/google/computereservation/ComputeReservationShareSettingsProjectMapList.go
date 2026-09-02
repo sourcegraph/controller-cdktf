@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computereservation/internal"
 )
 
 type ComputeReservationShareSettingsProjectMapList interface {
-	cdktf.ComplexList
+	cdktn.ComplexList
 	// The creation stack of this resolvable which will be appended to errors thrown during resolution.
 	//
 	// If this returns an empty array the stack will not be attached.
@@ -19,26 +19,29 @@ type ComputeReservationShareSettingsProjectMapList interface {
 	Fqn() *string
 	InternalValue() interface{}
 	SetInternalValue(val interface{})
-	// The attribute on the parent resource this class is referencing.
+	// Experimental.
 	TerraformAttribute() *string
+	// Experimental.
 	SetTerraformAttribute(val *string)
-	// The parent resource.
-	TerraformResource() cdktf.IInterpolatingParent
-	SetTerraformResource(val cdktf.IInterpolatingParent)
-	// whether the list is wrapping a set (will add tolist() to be able to access an item via an index).
+	// Experimental.
+	TerraformResource() cdktn.IInterpolatingParent
+	// Experimental.
+	SetTerraformResource(val cdktn.IInterpolatingParent)
+	// Experimental.
 	WrapsSet() *bool
+	// Experimental.
 	SetWrapsSet(val *bool)
 	// Creating an iterator for this complex list.
 	//
 	// The list will be converted into a map with the mapKeyAttributeName as the key.
 	// Experimental.
-	AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator
+	AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator
 	// Experimental.
 	ComputeFqn() *string
 	Get(index *float64) ComputeReservationShareSettingsProjectMapOutputReference
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -48,7 +51,7 @@ type ComputeReservationShareSettingsProjectMapList interface {
 
 // The jsii proxy struct for ComputeReservationShareSettingsProjectMapList
 type jsiiProxy_ComputeReservationShareSettingsProjectMapList struct {
-	internal.Type__cdktfComplexList
+	internal.Type__cdktnComplexList
 }
 
 func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapList) CreationStack() *[]*string {
@@ -91,8 +94,8 @@ func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapList) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapList) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapList) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -112,7 +115,7 @@ func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapList) WrapsSet() *bo
 }
 
 
-func NewComputeReservationShareSettingsProjectMapList(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeReservationShareSettingsProjectMapList {
+func NewComputeReservationShareSettingsProjectMapList(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) ComputeReservationShareSettingsProjectMapList {
 	_init_.Initialize()
 
 	if err := validateNewComputeReservationShareSettingsProjectMapListParameters(terraformResource, terraformAttribute, wrapsSet); err != nil {
@@ -121,7 +124,7 @@ func NewComputeReservationShareSettingsProjectMapList(terraformResource cdktf.II
 	j := jsiiProxy_ComputeReservationShareSettingsProjectMapList{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapList",
+		"@cdktn/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		&j,
 	)
@@ -129,11 +132,11 @@ func NewComputeReservationShareSettingsProjectMapList(terraformResource cdktf.II
 	return &j
 }
 
-func NewComputeReservationShareSettingsProjectMapList_Override(c ComputeReservationShareSettingsProjectMapList, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
+func NewComputeReservationShareSettingsProjectMapList_Override(c ComputeReservationShareSettingsProjectMapList, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapList",
+		"@cdktn/provider-google.computeReservation.ComputeReservationShareSettingsProjectMapList",
 		[]interface{}{terraformResource, terraformAttribute, wrapsSet},
 		c,
 	)
@@ -161,7 +164,7 @@ func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapList)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapList)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapList)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -183,11 +186,11 @@ func (j *jsiiProxy_ComputeReservationShareSettingsProjectMapList)SetWrapsSet(val
 	)
 }
 
-func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) AllWithMapKey(mapKeyAttributeName *string) cdktf.DynamicListTerraformIterator {
+func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) AllWithMapKey(mapKeyAttributeName *string) cdktn.DynamicListTerraformIterator {
 	if err := c.validateAllWithMapKeyParameters(mapKeyAttributeName); err != nil {
 		panic(err)
 	}
-	var returns cdktf.DynamicListTerraformIterator
+	var returns cdktn.DynamicListTerraformIterator
 
 	_jsii_.Invoke(
 		c,
@@ -228,8 +231,8 @@ func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) Get(index *flo
 	return returns
 }
 
-func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -237,7 +240,7 @@ func (c *jsiiProxy_ComputeReservationShareSettingsProjectMapList) Resolve(_conte
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

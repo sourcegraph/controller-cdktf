@@ -12,7 +12,7 @@ func (c *jsiiProxy_CertificatePackValidationErrorsList) validateGetParameters(in
 	return nil
 }
 
-func (c *jsiiProxy_CertificatePackValidationErrorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CertificatePackValidationErrorsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CertificatePackValidationErrorsList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_CertificatePackValidationErrorsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CertificatePackValidationErrorsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CertificatePackValidationErrorsList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewCertificatePackValidationErrorsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCertificatePackValidationErrorsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewBucketAuto
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewBucketAuto
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewHypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewHypercomputeclusterClusterStorageResourcesConfigNewBucketAutoclassOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

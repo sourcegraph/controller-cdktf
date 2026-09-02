@@ -40,11 +40,11 @@ func (t *jsiiProxy_TeamsRuleRuleSettingsAuditSshOutputReference) validateGetStri
 	return nil
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsAuditSshOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TeamsRuleRuleSettingsAuditSshOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TeamsRuleRuleSettingsAuditSshOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TeamsRuleRuleSettingsAuditSshOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_TeamsRuleRuleSettingsAuditSshOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_TeamsRuleRuleSettingsAuditSshOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TeamsRuleRuleSettingsAuditSshOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTeamsRuleRuleSettingsAuditSshOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTeamsRuleRuleSettingsAuditSshOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

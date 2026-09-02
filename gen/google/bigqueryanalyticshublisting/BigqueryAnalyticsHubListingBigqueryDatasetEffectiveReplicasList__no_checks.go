@@ -12,7 +12,7 @@ func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasLi
 	return nil
 }
 
-func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasLi
 	return nil
 }
 
-func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_BigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasLi
 	return nil
 }
 
-func validateNewBigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBigqueryAnalyticsHubListingBigqueryDatasetEffectiveReplicasListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

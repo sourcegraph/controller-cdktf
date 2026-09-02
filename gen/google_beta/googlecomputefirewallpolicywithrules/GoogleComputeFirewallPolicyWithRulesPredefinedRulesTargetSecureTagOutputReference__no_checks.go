@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleComputeFirewallPolicyWithRulesPredefinedRulesTargetSecureTagOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

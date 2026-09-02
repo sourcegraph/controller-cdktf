@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsLambdaFunctionEphemeralStorageList) validateGetParamet
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsLambdaFunctionEphemeralStorageList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsLambdaFunctionEphemeralStorageList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionEphemeralStorageList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsLambdaFunctionEphemeralStorageList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsLambdaFunctionEphemeralStorageList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataAwsLambdaFunctionEphemeralStorageList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewDataAwsLambdaFunctionEphemeralStorageListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsLambdaFunctionEphemeralStorageListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

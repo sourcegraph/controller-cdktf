@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagooglevmwareengineannouncements/internal"
 )
 
 type DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Code() *string
 	// the index of the complex object in a list.
 	// Experimental.
@@ -30,7 +30,7 @@ type DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference interface {
 	Fqn() *string
 	InternalValue() *DataGoogleVmwareengineAnnouncementsAnnouncements
 	SetInternalValue(val *DataGoogleVmwareengineAnnouncementsAnnouncements)
-	Metadata() cdktf.StringMap
+	Metadata() cdktn.StringMap
 	Name() *string
 	TargetResourceType() *string
 	// Experimental.
@@ -38,15 +38,15 @@ type DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,12 +62,12 @@ type DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference interface {
 
 // The jsii proxy struct for DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference
 type jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) Code() *string {
@@ -140,8 +140,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) Metadata() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) Metadata() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"metadata",
@@ -180,8 +180,8 @@ func (j *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReferen
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -191,7 +191,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReferen
 }
 
 
-func NewDataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference {
+func NewDataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleVmwareengineAnnouncementsAnnouncementsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -200,7 +200,7 @@ func NewDataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference(terrafor
 	j := jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -208,11 +208,11 @@ func NewDataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference(terrafor
 	return &j
 }
 
-func NewDataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference_Override(d DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference_Override(d DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleVmwareengineAnnouncements.DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -262,7 +262,7 @@ func (j *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReferen
 	)
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -302,11 +302,11 @@ func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -430,8 +430,8 @@ func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -443,24 +443,24 @@ func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReferen
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -468,7 +468,7 @@ func (d *jsiiProxy_DataGoogleVmwareengineAnnouncementsAnnouncementsOutputReferen
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

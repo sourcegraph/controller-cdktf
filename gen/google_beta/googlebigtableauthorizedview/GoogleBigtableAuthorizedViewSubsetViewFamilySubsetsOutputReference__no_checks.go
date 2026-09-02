@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputRefe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputRefe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleBigtableAuthorizedViewSubsetViewFamilySubsetsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

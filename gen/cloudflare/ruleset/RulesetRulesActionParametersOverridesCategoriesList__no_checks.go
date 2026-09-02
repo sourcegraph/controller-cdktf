@@ -12,7 +12,7 @@ func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) validate
 	return nil
 }
 
-func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) validate
 	return nil
 }
 
-func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_RulesetRulesActionParametersOverridesCategoriesList) validate
 	return nil
 }
 
-func validateNewRulesetRulesActionParametersOverridesCategoriesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRulesetRulesActionParametersOverridesCategoriesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

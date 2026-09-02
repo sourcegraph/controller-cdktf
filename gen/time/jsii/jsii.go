@@ -10,19 +10,19 @@ import (
 	_jsii_     "github.com/aws/jsii-runtime-go/runtime"
 
 	constructs "github.com/aws/constructs-go/constructs/v10/jsii"
-	cdktf      "github.com/hashicorp/terraform-cdk-go/cdktf/jsii"
+	cdktn      "github.com/open-constructs/cdk-terrain-go/cdktn/jsii"
 )
 
-//go:embed cdktf-provider-time-0.0.1.tgz
+//go:embed cdktn-provider-time-0.0.1.tgz
 var tarball []byte
 
 // Initialize loads the necessary packages in the @jsii/kernel to support the enclosing module.
 // The implementation is idempotent (and hence safe to be called over and over).
 func Initialize() {
 	// Ensure all dependencies are initialized
-	cdktf.Initialize()
+	cdktn.Initialize()
 	constructs.Initialize()
 
 	// Load this library into the kernel
-	_jsii_.Load("@cdktf/provider-time", "0.0.1", tarball)
+	_jsii_.Load("@cdktn/provider-time", "0.0.1", tarball)
 }

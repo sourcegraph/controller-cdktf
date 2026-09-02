@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateInterpolationForAtt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validatePutQuotaConfigParam
 }
 
 func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validatePutTimeoutsParameters(value *GoogleCloudQuotasQuotaPreferenceTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateSetJustificationPar
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleCloudQuotasQuotaPreference) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

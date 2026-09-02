@@ -56,6 +56,10 @@ func (s *jsiiProxy_ServicecatalogPortfolioShare) validateInterpolationForAttribu
 	return nil
 }
 
+func (s *jsiiProxy_ServicecatalogPortfolioShare) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_ServicecatalogPortfolioShare) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_ServicecatalogPortfolioShare) validateOverrideLogicalIdParame
 }
 
 func (s *jsiiProxy_ServicecatalogPortfolioShare) validatePutTimeoutsParameters(value *ServicecatalogPortfolioShareTimeouts) error {
+	return nil
+}
+
+func (s *jsiiProxy_ServicecatalogPortfolioShare) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ServicecatalogPortfolioShare) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

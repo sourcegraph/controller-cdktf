@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleGkeBackupRestorePlanIamPolicy) validateOverrideLogi
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleGkeBackupRestorePlanIamPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleGkeBackupRestorePlanIamPolicy_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGoogleGkeBackupRestorePlanIamPolicy) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleGkeBackupRestorePlanIamPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleGkeBackupRestorePlanIamPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

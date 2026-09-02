@@ -40,7 +40,7 @@ func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference
 	return nil
 }
 
-func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ColabScheduleCreateNotebookExecutionJobRequestOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewColabScheduleCreateNotebookExecutionJobRequestOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewColabScheduleCreateNotebookExecutionJobRequestOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

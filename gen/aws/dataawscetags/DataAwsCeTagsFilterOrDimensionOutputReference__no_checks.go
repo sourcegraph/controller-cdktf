@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateGetStr
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateSetTer
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_DataAwsCeTagsFilterOrDimensionOutputReference) validateSetVal
 	return nil
 }
 
-func validateNewDataAwsCeTagsFilterOrDimensionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataAwsCeTagsFilterOrDimensionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

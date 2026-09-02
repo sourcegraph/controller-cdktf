@@ -12,7 +12,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceServerCaCertList) validateGetParameters(in
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceServerCaCertList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceServerCaCertList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceServerCaCertList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceServerCaCertList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SqlDatabaseInstanceServerCaCertList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceServerCaCertList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewSqlDatabaseInstanceServerCaCertListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSqlDatabaseInstanceServerCaCertListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

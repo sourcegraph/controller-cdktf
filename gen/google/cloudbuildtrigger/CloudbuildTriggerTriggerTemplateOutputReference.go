@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/cloudbuildtrigger/internal"
 )
 
 type CloudbuildTriggerTriggerTemplateOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	BranchName() *string
 	SetBranchName(val *string)
 	BranchNameInput() *string
@@ -55,15 +55,15 @@ type CloudbuildTriggerTriggerTemplateOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -79,9 +79,9 @@ type CloudbuildTriggerTriggerTemplateOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetBranchName()
 	ResetCommitSha()
 	ResetDir()
@@ -91,7 +91,7 @@ type CloudbuildTriggerTriggerTemplateOutputReference interface {
 	ResetTagName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -101,7 +101,7 @@ type CloudbuildTriggerTriggerTemplateOutputReference interface {
 
 // The jsii proxy struct for CloudbuildTriggerTriggerTemplateOutputReference
 type jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) BranchName() *string {
@@ -304,8 +304,8 @@ func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -315,7 +315,7 @@ func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) TerraformRes
 }
 
 
-func NewCloudbuildTriggerTriggerTemplateOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CloudbuildTriggerTriggerTemplateOutputReference {
+func NewCloudbuildTriggerTriggerTemplateOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CloudbuildTriggerTriggerTemplateOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCloudbuildTriggerTriggerTemplateOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -324,7 +324,7 @@ func NewCloudbuildTriggerTriggerTemplateOutputReference(terraformResource cdktf.
 	j := jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -332,11 +332,11 @@ func NewCloudbuildTriggerTriggerTemplateOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewCloudbuildTriggerTriggerTemplateOutputReference_Override(c CloudbuildTriggerTriggerTemplateOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCloudbuildTriggerTriggerTemplateOutputReference_Override(c CloudbuildTriggerTriggerTemplateOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference",
+		"@cdktn/provider-google.cloudbuildTrigger.CloudbuildTriggerTriggerTemplateOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -463,7 +463,7 @@ func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -503,11 +503,11 @@ func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -631,8 +631,8 @@ func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) GetStringMap
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -644,16 +644,16 @@ func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) Interpolatio
 	return returns
 }
 
-func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -716,8 +716,8 @@ func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) ResetTagName
 	)
 }
 
-func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -725,7 +725,7 @@ func (c *jsiiProxy_CloudbuildTriggerTriggerTemplateOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (m *jsiiProxy_MemorystoreInstance) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (m *jsiiProxy_MemorystoreInstance) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MemorystoreInstance) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -109,6 +113,10 @@ func (m *jsiiProxy_MemorystoreInstance) validatePutTimeoutsParameters(value *Mem
 }
 
 func (m *jsiiProxy_MemorystoreInstance) validatePutZoneDistributionConfigParameters(value *MemorystoreInstanceZoneDistributionConfig) error {
+	return nil
+}
+
+func (m *jsiiProxy_MemorystoreInstance) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -168,7 +176,7 @@ func (j *jsiiProxy_MemorystoreInstance) validateSetLabelsParameters(val *map[str
 	return nil
 }
 
-func (j *jsiiProxy_MemorystoreInstance) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MemorystoreInstance) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

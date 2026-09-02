@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/osconfigv2policyorchestrator/internal"
 )
 
 type OsConfigV2PolicyOrchestratorTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type OsConfigV2PolicyOrchestratorTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type OsConfigV2PolicyOrchestratorTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type OsConfigV2PolicyOrchestratorTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type OsConfigV2PolicyOrchestratorTimeoutsOutputReference interface {
 
 // The jsii proxy struct for OsConfigV2PolicyOrchestratorTimeoutsOutputReference
 type jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) UpdateIn
 }
 
 
-func NewOsConfigV2PolicyOrchestratorTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorTimeoutsOutputReference {
+func NewOsConfigV2PolicyOrchestratorTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) OsConfigV2PolicyOrchestratorTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOsConfigV2PolicyOrchestratorTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewOsConfigV2PolicyOrchestratorTimeoutsOutputReference(terraformResource cd
 	j := jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeoutsOutputReference",
+		"@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewOsConfigV2PolicyOrchestratorTimeoutsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewOsConfigV2PolicyOrchestratorTimeoutsOutputReference_Override(o OsConfigV2PolicyOrchestratorTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOsConfigV2PolicyOrchestratorTimeoutsOutputReference_Override(o OsConfigV2PolicyOrchestratorTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeoutsOutputReference",
+		"@cdktn/provider-google.osConfigV2PolicyOrchestrator.OsConfigV2PolicyOrchestratorTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) GetAnyMa
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -491,8 +491,8 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) GetStrin
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -504,16 +504,16 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) Interpol
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) ResetUpd
 	)
 }
 
-func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (o *jsiiProxy_OsConfigV2PolicyOrchestratorTimeoutsOutputReference) Resolve(
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

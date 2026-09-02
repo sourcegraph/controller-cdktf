@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThres
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThres
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeSecurityPolicyRuleRateLimitOptionsRateLimitThresholdAOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

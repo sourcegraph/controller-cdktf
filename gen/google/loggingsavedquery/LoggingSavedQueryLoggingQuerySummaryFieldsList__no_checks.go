@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList) validateGetPa
 	return nil
 }
 
-func (l *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoggingSavedQueryLoggingQuerySummaryFieldsList) validateSetWr
 	return nil
 }
 
-func validateNewLoggingSavedQueryLoggingQuerySummaryFieldsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoggingSavedQueryLoggingQuerySummaryFieldsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

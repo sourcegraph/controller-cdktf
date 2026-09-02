@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/eventarctrigger/internal"
 )
 
 type EventarcTriggerTransportOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type EventarcTriggerTransportOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type EventarcTriggerTransportOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPubsub(value *EventarcTriggerTransportPubsub)
 	ResetPubsub()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type EventarcTriggerTransportOutputReference interface {
 
 // The jsii proxy struct for EventarcTriggerTransportOutputReference
 type jsiiProxy_EventarcTriggerTransportOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EventarcTriggerTransportOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_EventarcTriggerTransportOutputReference) TerraformAttribute()
 	return returns
 }
 
-func (j *jsiiProxy_EventarcTriggerTransportOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EventarcTriggerTransportOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_EventarcTriggerTransportOutputReference) TerraformResource() 
 }
 
 
-func NewEventarcTriggerTransportOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) EventarcTriggerTransportOutputReference {
+func NewEventarcTriggerTransportOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) EventarcTriggerTransportOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEventarcTriggerTransportOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewEventarcTriggerTransportOutputReference(terraformResource cdktf.IInterpo
 	j := jsiiProxy_EventarcTriggerTransportOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerTransportOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewEventarcTriggerTransportOutputReference(terraformResource cdktf.IInterpo
 	return &j
 }
 
-func NewEventarcTriggerTransportOutputReference_Override(e EventarcTriggerTransportOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewEventarcTriggerTransportOutputReference_Override(e EventarcTriggerTransportOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.eventarcTrigger.EventarcTriggerTransportOutputReference",
+		"@cdktn/provider-google.eventarcTrigger.EventarcTriggerTransportOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		e,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetTerraformAttribute
 	)
 }
 
-func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EventarcTriggerTransportOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetAnyMapAttribute(t
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -410,8 +410,8 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) GetStringMapAttribut
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTriggerTransportOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EventarcTriggerTransportOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -423,16 +423,16 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) InterpolationAsList(
 	return returns
 }
 
-func (e *jsiiProxy_EventarcTriggerTransportOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EventarcTriggerTransportOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) ResetPubsub() {
 	)
 }
 
-func (e *jsiiProxy_EventarcTriggerTransportOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EventarcTriggerTransportOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (e *jsiiProxy_EventarcTriggerTransportOutputReference) Resolve(_context cdk
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

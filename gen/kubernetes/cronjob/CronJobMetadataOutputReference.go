@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/cronjob/internal"
 )
 
 type CronJobMetadataOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Annotations() *map[string]*string
 	SetAnnotations(val *map[string]*string)
 	AnnotationsInput() *map[string]*string
@@ -51,16 +51,16 @@ type CronJobMetadataOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Uid() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -76,9 +76,9 @@ type CronJobMetadataOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAnnotations()
 	ResetGenerateName()
 	ResetLabels()
@@ -86,7 +86,7 @@ type CronJobMetadataOutputReference interface {
 	ResetNamespace()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -96,7 +96,7 @@ type CronJobMetadataOutputReference interface {
 
 // The jsii proxy struct for CronJobMetadataOutputReference
 type jsiiProxy_CronJobMetadataOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_CronJobMetadataOutputReference) Annotations() *map[string]*string {
@@ -279,8 +279,8 @@ func (j *jsiiProxy_CronJobMetadataOutputReference) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_CronJobMetadataOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_CronJobMetadataOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -300,7 +300,7 @@ func (j *jsiiProxy_CronJobMetadataOutputReference) Uid() *string {
 }
 
 
-func NewCronJobMetadataOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) CronJobMetadataOutputReference {
+func NewCronJobMetadataOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) CronJobMetadataOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewCronJobMetadataOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -309,7 +309,7 @@ func NewCronJobMetadataOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_CronJobMetadataOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.cronJob.CronJobMetadataOutputReference",
+		"@cdktn/provider-kubernetes.cronJob.CronJobMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -317,11 +317,11 @@ func NewCronJobMetadataOutputReference(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewCronJobMetadataOutputReference_Override(c CronJobMetadataOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewCronJobMetadataOutputReference_Override(c CronJobMetadataOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.cronJob.CronJobMetadataOutputReference",
+		"@cdktn/provider-kubernetes.cronJob.CronJobMetadataOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -426,7 +426,7 @@ func (j *jsiiProxy_CronJobMetadataOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_CronJobMetadataOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_CronJobMetadataOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -466,11 +466,11 @@ func (c *jsiiProxy_CronJobMetadataOutputReference) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (c *jsiiProxy_CronJobMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_CronJobMetadataOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -594,8 +594,8 @@ func (c *jsiiProxy_CronJobMetadataOutputReference) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (c *jsiiProxy_CronJobMetadataOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_CronJobMetadataOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -607,16 +607,16 @@ func (c *jsiiProxy_CronJobMetadataOutputReference) InterpolationAsList() cdktf.I
 	return returns
 }
 
-func (c *jsiiProxy_CronJobMetadataOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_CronJobMetadataOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -663,8 +663,8 @@ func (c *jsiiProxy_CronJobMetadataOutputReference) ResetNamespace() {
 	)
 }
 
-func (c *jsiiProxy_CronJobMetadataOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_CronJobMetadataOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -672,7 +672,7 @@ func (c *jsiiProxy_CronJobMetadataOutputReference) Resolve(_context cdktf.IResol
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/kinesisvideostream/internal"
 )
 
 type KinesisVideoStreamTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type KinesisVideoStreamTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type KinesisVideoStreamTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type KinesisVideoStreamTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type KinesisVideoStreamTimeoutsOutputReference interface {
 
 // The jsii proxy struct for KinesisVideoStreamTimeoutsOutputReference
 type jsiiProxy_KinesisVideoStreamTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) TerraformAttribute
 	return returns
 }
 
-func (j *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) UpdateInput() *str
 }
 
 
-func NewKinesisVideoStreamTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) KinesisVideoStreamTimeoutsOutputReference {
+func NewKinesisVideoStreamTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) KinesisVideoStreamTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewKinesisVideoStreamTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewKinesisVideoStreamTimeoutsOutputReference(terraformResource cdktf.IInter
 	j := jsiiProxy_KinesisVideoStreamTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStreamTimeoutsOutputReference",
+		"@cdktn/provider-aws.kinesisVideoStream.KinesisVideoStreamTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewKinesisVideoStreamTimeoutsOutputReference(terraformResource cdktf.IInter
 	return &j
 }
 
-func NewKinesisVideoStreamTimeoutsOutputReference_Override(k KinesisVideoStreamTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewKinesisVideoStreamTimeoutsOutputReference_Override(k KinesisVideoStreamTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.kinesisVideoStream.KinesisVideoStreamTimeoutsOutputReference",
+		"@cdktn/provider-aws.kinesisVideoStream.KinesisVideoStreamTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		k,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference)SetTerraformAttribu
 	)
 }
 
-func (j *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) GetAnyMapAttribute
 	return returns
 }
 
-func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := k.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -491,8 +491,8 @@ func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) GetStringMapAttrib
 	return returns
 }
 
-func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
@@ -504,16 +504,16 @@ func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) InterpolationAsLis
 	return returns
 }
 
-func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := k.validateInterpolationForAttributeParameters(property); err != nil {
+func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := k.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		k,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := k.validateResolveParameters(_context); err != nil {
+func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := k.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (k *jsiiProxy_KinesisVideoStreamTimeoutsOutputReference) Resolve(_context c
 	_jsii_.Invoke(
 		k,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

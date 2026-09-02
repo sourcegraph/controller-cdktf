@@ -40,11 +40,11 @@ func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingBucke
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (h *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingBucke
 	return nil
 }
 
-func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_HypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewHypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewHypercomputeclusterClusterStorageResourcesConfigExistingBucketOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

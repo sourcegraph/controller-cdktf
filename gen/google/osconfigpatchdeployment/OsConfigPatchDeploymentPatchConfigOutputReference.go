@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/osconfigpatchdeployment/internal"
 )
 
 type OsConfigPatchDeploymentPatchConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Apt() OsConfigPatchDeploymentPatchConfigAptOutputReference
 	AptInput() *OsConfigPatchDeploymentPatchConfigApt
 	// the index of the complex object in a list.
@@ -51,9 +51,9 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WindowsUpdate() OsConfigPatchDeploymentPatchConfigWindowsUpdateOutputReference
 	WindowsUpdateInput() *OsConfigPatchDeploymentPatchConfigWindowsUpdate
 	Yum() OsConfigPatchDeploymentPatchConfigYumOutputReference
@@ -65,7 +65,7 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -81,9 +81,9 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApt(value *OsConfigPatchDeploymentPatchConfigApt)
 	PutGoo(value *OsConfigPatchDeploymentPatchConfigGoo)
 	PutPostStep(value *OsConfigPatchDeploymentPatchConfigPostStep)
@@ -103,7 +103,7 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 	ResetZypper()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -113,7 +113,7 @@ type OsConfigPatchDeploymentPatchConfigOutputReference interface {
 
 // The jsii proxy struct for OsConfigPatchDeploymentPatchConfigOutputReference
 type jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) Apt() OsConfigPatchDeploymentPatchConfigAptOutputReference {
@@ -316,8 +316,8 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -387,7 +387,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) ZypperInpu
 }
 
 
-func NewOsConfigPatchDeploymentPatchConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigOutputReference {
+func NewOsConfigPatchDeploymentPatchConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) OsConfigPatchDeploymentPatchConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOsConfigPatchDeploymentPatchConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -396,7 +396,7 @@ func NewOsConfigPatchDeploymentPatchConfigOutputReference(terraformResource cdkt
 	j := jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference",
+		"@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -404,11 +404,11 @@ func NewOsConfigPatchDeploymentPatchConfigOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewOsConfigPatchDeploymentPatchConfigOutputReference_Override(o OsConfigPatchDeploymentPatchConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOsConfigPatchDeploymentPatchConfigOutputReference_Override(o OsConfigPatchDeploymentPatchConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference",
+		"@cdktn/provider-google.osConfigPatchDeployment.OsConfigPatchDeploymentPatchConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -491,7 +491,7 @@ func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -531,11 +531,11 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetAnyMapA
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -659,8 +659,8 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) GetStringM
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -672,16 +672,16 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) Interpolat
 	return returns
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -845,8 +845,8 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) ResetZyppe
 	)
 }
 
-func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -854,7 +854,7 @@ func (o *jsiiProxy_OsConfigPatchDeploymentPatchConfigOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

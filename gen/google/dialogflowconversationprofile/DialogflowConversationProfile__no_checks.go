@@ -56,6 +56,10 @@ func (d *jsiiProxy_DialogflowConversationProfile) validateInterpolationForAttrib
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowConversationProfile) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (d *jsiiProxy_DialogflowConversationProfile) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -112,6 +116,10 @@ func (d *jsiiProxy_DialogflowConversationProfile) validatePutTtsConfigParameters
 	return nil
 }
 
+func (d *jsiiProxy_DialogflowConversationProfile) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDialogflowConversationProfile_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -148,7 +156,7 @@ func (j *jsiiProxy_DialogflowConversationProfile) validateSetLanguageCodeParamet
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowConversationProfile) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DialogflowConversationProfile) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

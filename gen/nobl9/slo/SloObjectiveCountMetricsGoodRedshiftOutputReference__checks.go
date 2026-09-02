@@ -7,7 +7,7 @@ import (
 
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 )
 
 func (s *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validateGetAnyMapAttributeParameters(terraformAttribute *string) error {
@@ -82,17 +82,17 @@ func (s *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validate
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validateInterpolationForAttributeParameters(property *string) error {
-	if property == nil {
-		return fmt.Errorf("parameter property is required, but nil was provided")
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
+	if terraformAttribute == nil {
+		return fmt.Errorf("parameter terraformAttribute is required, but nil was provided")
 	}
 
 	return nil
 }
 
-func (s *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
-	if _context == nil {
-		return fmt.Errorf("parameter _context is required, but nil was provided")
+func (s *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
+	if context == nil {
+		return fmt.Errorf("parameter context is required, but nil was provided")
 	}
 
 	return nil
@@ -181,7 +181,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validate
 
 func (j *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validateSetInternalValueParameters(val interface{}) error {
 	switch val.(type) {
-	case cdktf.IResolvable:
+	case cdktn.IResolvable:
 		// ok
 	case *SloObjectiveCountMetricsGoodRedshift:
 		val := val.(*SloObjectiveCountMetricsGoodRedshift)
@@ -196,7 +196,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validate
 		}
 	default:
 		if !_jsii_.IsAnonymousProxy(val) {
-			return fmt.Errorf("parameter val must be one of the allowed types: cdktf.IResolvable, *SloObjectiveCountMetricsGoodRedshift; received %#v (a %T)", val, val)
+			return fmt.Errorf("parameter val must be one of the allowed types: cdktn.IResolvable, *SloObjectiveCountMetricsGoodRedshift; received %#v (a %T)", val, val)
 		}
 	}
 
@@ -227,7 +227,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	if val == nil {
 		return fmt.Errorf("parameter val is required, but nil was provided")
 	}
@@ -235,7 +235,7 @@ func (j *jsiiProxy_SloObjectiveCountMetricsGoodRedshiftOutputReference) validate
 	return nil
 }
 
-func validateNewSloObjectiveCountMetricsGoodRedshiftOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSloObjectiveCountMetricsGoodRedshiftOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	if terraformResource == nil {
 		return fmt.Errorf("parameter terraformResource is required, but nil was provided")
 	}

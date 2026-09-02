@@ -40,7 +40,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputRefer
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (v *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputRefer
 	return nil
 }
 
-func (v *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (v *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_VertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewVertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewVertexAiFeatureOnlineStoreDedicatedServingEndpointOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

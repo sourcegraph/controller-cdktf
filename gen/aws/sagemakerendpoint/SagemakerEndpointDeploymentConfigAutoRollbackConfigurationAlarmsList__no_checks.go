@@ -12,7 +12,7 @@ func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAla
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAla
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SagemakerEndpointDeploymentConfigAutoRollbackConfigurationAla
 	return nil
 }
 
-func validateNewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSagemakerEndpointDeploymentConfigAutoRollbackConfigurationAlarmsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateGetS
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Apigatewayv2IntegrationTlsConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewApigatewayv2IntegrationTlsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApigatewayv2IntegrationTlsConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppEngineServiceNetworkSettingsNetworkSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppEngineServiceNetworkSettingsNetworkSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppEngineServiceNetworkSettingsNetworkSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

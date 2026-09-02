@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudRunDomainMapping) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (c *jsiiProxy_CloudRunDomainMapping) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudRunDomainMapping) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_CloudRunDomainMapping) validatePutSpecParameters(value *Cloud
 }
 
 func (c *jsiiProxy_CloudRunDomainMapping) validatePutTimeoutsParameters(value *CloudRunDomainMappingTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudRunDomainMapping) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_CloudRunDomainMapping) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunDomainMapping) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudRunDomainMapping) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

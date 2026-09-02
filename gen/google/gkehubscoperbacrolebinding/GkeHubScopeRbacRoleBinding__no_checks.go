@@ -56,6 +56,10 @@ func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateInterpolationForAttribute
 	return nil
 }
 
+func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validatePutRoleParameters(value *
 }
 
 func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validatePutTimeoutsParameters(value *GkeHubScopeRbacRoleBindingTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GkeHubScopeRbacRoleBinding) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GkeHubScopeRbacRoleBinding) validateSetLabelsParameters(val *
 	return nil
 }
 
-func (j *jsiiProxy_GkeHubScopeRbacRoleBinding) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GkeHubScopeRbacRoleBinding) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

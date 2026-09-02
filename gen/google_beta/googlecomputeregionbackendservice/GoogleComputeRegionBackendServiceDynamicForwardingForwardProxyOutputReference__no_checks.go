@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingForwardProx
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingForwardProxyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingForwardProxyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingForwardProxyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingForwardProxyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingForwardProx
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingForwardProxyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionBackendServiceDynamicForwardingForwardProxyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeRegionBackendServiceDynamicForwardingForwardProxyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeRegionBackendServiceDynamicForwardingForwardProxyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

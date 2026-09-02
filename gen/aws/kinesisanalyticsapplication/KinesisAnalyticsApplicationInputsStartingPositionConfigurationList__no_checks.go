@@ -12,7 +12,7 @@ func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	return nil
 }
 
-func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	return nil
 }
 
-func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_KinesisAnalyticsApplicationInputsStartingPositionConfiguratio
 	return nil
 }
 
-func validateNewKinesisAnalyticsApplicationInputsStartingPositionConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewKinesisAnalyticsApplicationInputsStartingPositionConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

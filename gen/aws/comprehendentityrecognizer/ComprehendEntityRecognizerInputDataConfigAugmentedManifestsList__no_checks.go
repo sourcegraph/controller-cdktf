@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsLi
 	return nil
 }
 
-func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsLi
 	return nil
 }
 
-func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComprehendEntityRecognizerInputDataConfigAugmentedManifestsLi
 	return nil
 }
 
-func validateNewComprehendEntityRecognizerInputDataConfigAugmentedManifestsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComprehendEntityRecognizerInputDataConfigAugmentedManifestsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

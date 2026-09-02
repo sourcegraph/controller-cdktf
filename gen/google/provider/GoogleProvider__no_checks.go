@@ -12,6 +12,10 @@ func (g *jsiiProxy_GoogleProvider) validateOverrideLogicalIdParameters(newLogica
 	return nil
 }
 
+func (g *jsiiProxy_GoogleProvider) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateGoogleProvider_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWin
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWin
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWin
 	return nil
 }
 
-func validateNewDataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleLustreInstanceMaintenancePolicyWeeklyMaintenanceWindowsStartTimeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

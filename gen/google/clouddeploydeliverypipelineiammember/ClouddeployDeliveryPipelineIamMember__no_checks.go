@@ -56,6 +56,10 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateInterpolationFo
 	return nil
 }
 
+func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateOverrideLogical
 }
 
 func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validatePutConditionParameters(value *ClouddeployDeliveryPipelineIamMemberCondition) error {
+	return nil
+}
+
+func (c *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateSetIdParameters
 	return nil
 }
 
-func (j *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ClouddeployDeliveryPipelineIamMember) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

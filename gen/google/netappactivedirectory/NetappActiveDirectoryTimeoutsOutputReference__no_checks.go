@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateGetStri
 	return nil
 }
 
-func (n *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_NetappActiveDirectoryTimeoutsOutputReference) validateSetUpda
 	return nil
 }
 
-func validateNewNetappActiveDirectoryTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetappActiveDirectoryTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

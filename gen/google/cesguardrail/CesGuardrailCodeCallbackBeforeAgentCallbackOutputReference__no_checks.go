@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) v
 	return nil
 }
 
-func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) v
 	return nil
 }
 
-func (j *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesGuardrailCodeCallbackBeforeAgentCallbackOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCesGuardrailCodeCallbackBeforeAgentCallbackOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesGuardrailCodeCallbackBeforeAgentCallbackOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

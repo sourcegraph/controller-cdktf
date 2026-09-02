@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataAwsEc2InstanceTypesFilterList) validateGetParameters(inde
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsEc2InstanceTypesFilterList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsEc2InstanceTypesFilterList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypesFilterList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsEc2InstanceTypesFilterList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsEc2InstanceTypesFilterList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataAwsEc2InstanceTypesFilterList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewDataAwsEc2InstanceTypesFilterListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataAwsEc2InstanceTypesFilterListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeR
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeR
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_SagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeR
 	return nil
 }
 
-func validateNewSagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewSagemakerUserProfileUserSettingsJupyterServerAppSettingsCodeRepositoryListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googlegkeonprembaremetalcluster/internal"
 )
 
 type GoogleGkeonpremBareMetalClusterControlPlaneOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApiServerArgs() GoogleGkeonpremBareMetalClusterControlPlaneApiServerArgsList
 	ApiServerArgsInput() interface{}
 	// the index of the complex object in a list.
@@ -38,15 +38,15 @@ type GoogleGkeonpremBareMetalClusterControlPlaneOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,15 +62,15 @@ type GoogleGkeonpremBareMetalClusterControlPlaneOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutApiServerArgs(value interface{})
 	PutControlPlaneNodePoolConfig(value *GoogleGkeonpremBareMetalClusterControlPlaneControlPlaneNodePoolConfig)
 	ResetApiServerArgs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type GoogleGkeonpremBareMetalClusterControlPlaneOutputReference interface {
 
 // The jsii proxy struct for GoogleGkeonpremBareMetalClusterControlPlaneOutputReference
 type jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) ApiServerArgs() GoogleGkeonpremBareMetalClusterControlPlaneApiServerArgsList {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) T
 }
 
 
-func NewGoogleGkeonpremBareMetalClusterControlPlaneOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleGkeonpremBareMetalClusterControlPlaneOutputReference {
+func NewGoogleGkeonpremBareMetalClusterControlPlaneOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleGkeonpremBareMetalClusterControlPlaneOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleGkeonpremBareMetalClusterControlPlaneOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewGoogleGkeonpremBareMetalClusterControlPlaneOutputReference(terraformReso
 	j := jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneOutputReference",
+		"@cdktn/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewGoogleGkeonpremBareMetalClusterControlPlaneOutputReference(terraformReso
 	return &j
 }
 
-func NewGoogleGkeonpremBareMetalClusterControlPlaneOutputReference_Override(g GoogleGkeonpremBareMetalClusterControlPlaneOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleGkeonpremBareMetalClusterControlPlaneOutputReference_Override(g GoogleGkeonpremBareMetalClusterControlPlaneOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneOutputReference",
+		"@cdktn/provider-google-beta.googleGkeonpremBareMetalCluster.GoogleGkeonpremBareMetalClusterControlPlaneOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -265,7 +265,7 @@ func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -305,11 +305,11 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -433,8 +433,8 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) G
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -446,16 +446,16 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) I
 	return returns
 }
 
-func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) R
 	)
 }
 
-func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (g *jsiiProxy_GoogleGkeonpremBareMetalClusterControlPlaneOutputReference) R
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigSubjectConfigSubject
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -96,11 +96,11 @@ func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigSubjectConfigSubject
 	return nil
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGooglePrivatecaCertificateAuthorityConfigSubjectConfigSubjectOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

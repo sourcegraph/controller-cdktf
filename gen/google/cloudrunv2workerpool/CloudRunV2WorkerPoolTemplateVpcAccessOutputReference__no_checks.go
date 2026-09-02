@@ -40,7 +40,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudRunV2WorkerPoolTemplateVpcAccessOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCloudRunV2WorkerPoolTemplateVpcAccessOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudRunV2WorkerPoolTemplateVpcAccessOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

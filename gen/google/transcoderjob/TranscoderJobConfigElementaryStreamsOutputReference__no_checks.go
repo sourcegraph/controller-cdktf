@@ -40,7 +40,7 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validate
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validate
 	return nil
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewTranscoderJobConfigElementaryStreamsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewTranscoderJobConfigElementaryStreamsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

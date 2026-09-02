@@ -12,7 +12,7 @@ func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelFiveList) validate
 	return nil
 }
 
-func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelFiveList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelFiveList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelFiveList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelFiveList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelFiveList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ConnectUserHierarchyGroupHierarchyPathLevelFiveList) validate
 	return nil
 }
 
-func validateNewConnectUserHierarchyGroupHierarchyPathLevelFiveListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewConnectUserHierarchyGroupHierarchyPathLevelFiveListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

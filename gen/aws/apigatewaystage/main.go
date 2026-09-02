@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStage",
+		"@cdktn/provider-aws.apiGatewayStage.ApiGatewayStage",
 		reflect.TypeOf((*ApiGatewayStage)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accessLogSettings", GoGetter: "AccessLogSettings"},
@@ -55,6 +55,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "invokeUrl", GoGetter: "InvokeUrl"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -65,6 +66,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putAccessLogSettings", GoMethod: "PutAccessLogSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putCanarySettings", GoMethod: "PutCanarySettings"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAccessLogSettings", GoMethod: "ResetAccessLogSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCacheClusterEnabled", GoMethod: "ResetCacheClusterEnabled"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCacheClusterSize", GoMethod: "ResetCacheClusterSize"},
@@ -98,21 +100,22 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "variables", GoGetter: "Variables"},
 			_jsii_.MemberProperty{JsiiProperty: "variablesInput", GoGetter: "VariablesInput"},
 			_jsii_.MemberProperty{JsiiProperty: "webAclArn", GoGetter: "WebAclArn"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "xrayTracingEnabled", GoGetter: "XrayTracingEnabled"},
 			_jsii_.MemberProperty{JsiiProperty: "xrayTracingEnabledInput", GoGetter: "XrayTracingEnabledInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiGatewayStage{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageAccessLogSettings",
+		"@cdktn/provider-aws.apiGatewayStage.ApiGatewayStageAccessLogSettings",
 		reflect.TypeOf((*ApiGatewayStageAccessLogSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageAccessLogSettingsOutputReference",
+		"@cdktn/provider-aws.apiGatewayStage.ApiGatewayStageAccessLogSettingsOutputReference",
 		reflect.TypeOf((*ApiGatewayStageAccessLogSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -143,16 +146,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiGatewayStageAccessLogSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageCanarySettings",
+		"@cdktn/provider-aws.apiGatewayStage.ApiGatewayStageCanarySettings",
 		reflect.TypeOf((*ApiGatewayStageCanarySettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageCanarySettingsOutputReference",
+		"@cdktn/provider-aws.apiGatewayStage.ApiGatewayStageCanarySettingsOutputReference",
 		reflect.TypeOf((*ApiGatewayStageCanarySettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -188,12 +191,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ApiGatewayStageCanarySettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.apiGatewayStage.ApiGatewayStageConfig",
+		"@cdktn/provider-aws.apiGatewayStage.ApiGatewayStageConfig",
 		reflect.TypeOf((*ApiGatewayStageConfig)(nil)).Elem(),
 	)
 }

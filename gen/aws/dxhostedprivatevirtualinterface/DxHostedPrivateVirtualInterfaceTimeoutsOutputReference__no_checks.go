@@ -40,11 +40,11 @@ func (d *jsiiProxy_DxHostedPrivateVirtualInterfaceTimeoutsOutputReference) valid
 	return nil
 }
 
-func (d *jsiiProxy_DxHostedPrivateVirtualInterfaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DxHostedPrivateVirtualInterfaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DxHostedPrivateVirtualInterfaceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DxHostedPrivateVirtualInterfaceTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DxHostedPrivateVirtualInterfaceTimeoutsOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_DxHostedPrivateVirtualInterfaceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DxHostedPrivateVirtualInterfaceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDxHostedPrivateVirtualInterfaceTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDxHostedPrivateVirtualInterfaceTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

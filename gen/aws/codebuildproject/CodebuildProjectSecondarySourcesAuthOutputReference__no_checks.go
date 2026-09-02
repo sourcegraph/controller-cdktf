@@ -40,11 +40,11 @@ func (c *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validate
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CodebuildProjectSecondarySourcesAuthOutputReference) validate
 	return nil
 }
 
-func validateNewCodebuildProjectSecondarySourcesAuthOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCodebuildProjectSecondarySourcesAuthOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

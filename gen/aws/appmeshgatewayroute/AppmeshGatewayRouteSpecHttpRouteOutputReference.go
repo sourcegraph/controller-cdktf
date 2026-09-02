@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/appmeshgatewayroute/internal"
 )
 
 type AppmeshGatewayRouteSpecHttpRouteOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Action() AppmeshGatewayRouteSpecHttpRouteActionOutputReference
 	ActionInput() *AppmeshGatewayRouteSpecHttpRouteAction
 	// the index of the complex object in a list.
@@ -38,15 +38,15 @@ type AppmeshGatewayRouteSpecHttpRouteOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,14 +62,14 @@ type AppmeshGatewayRouteSpecHttpRouteOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAction(value *AppmeshGatewayRouteSpecHttpRouteAction)
 	PutMatch(value *AppmeshGatewayRouteSpecHttpRouteMatch)
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type AppmeshGatewayRouteSpecHttpRouteOutputReference interface {
 
 // The jsii proxy struct for AppmeshGatewayRouteSpecHttpRouteOutputReference
 type jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) Action() AppmeshGatewayRouteSpecHttpRouteActionOutputReference {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) TerraformRes
 }
 
 
-func NewAppmeshGatewayRouteSpecHttpRouteOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteOutputReference {
+func NewAppmeshGatewayRouteSpecHttpRouteOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AppmeshGatewayRouteSpecHttpRouteOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAppmeshGatewayRouteSpecHttpRouteOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewAppmeshGatewayRouteSpecHttpRouteOutputReference(terraformResource cdktf.
 	j := jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteOutputReference",
+		"@cdktn/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewAppmeshGatewayRouteSpecHttpRouteOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewAppmeshGatewayRouteSpecHttpRouteOutputReference_Override(a AppmeshGatewayRouteSpecHttpRouteOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAppmeshGatewayRouteSpecHttpRouteOutputReference_Override(a AppmeshGatewayRouteSpecHttpRouteOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteOutputReference",
+		"@cdktn/provider-aws.appmeshGatewayRoute.AppmeshGatewayRouteSpecHttpRouteOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -264,7 +264,7 @@ func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -304,11 +304,11 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -432,8 +432,8 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) GetStringMap
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -445,16 +445,16 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) Interpolatio
 	return returns
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -483,8 +483,8 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) PutMatch(val
 	)
 }
 
-func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (a *jsiiProxy_AppmeshGatewayRouteSpecHttpRouteOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

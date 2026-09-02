@@ -40,11 +40,11 @@ func (a *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validat
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ArtifactRegistryRepositoryMavenConfigOutputReference) validat
 	return nil
 }
 
-func validateNewArtifactRegistryRepositoryMavenConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewArtifactRegistryRepositoryMavenConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

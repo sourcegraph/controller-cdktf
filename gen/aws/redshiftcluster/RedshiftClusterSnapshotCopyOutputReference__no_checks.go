@@ -40,11 +40,11 @@ func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) validateGetString
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedshiftClusterSnapshotCopyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRedshiftClusterSnapshotCopyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewRedshiftClusterSnapshotCopyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

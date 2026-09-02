@@ -12,7 +12,7 @@ func (f *jsiiProxy_FsxFileCacheLustreConfigurationList) validateGetParameters(in
 	return nil
 }
 
-func (f *jsiiProxy_FsxFileCacheLustreConfigurationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (f *jsiiProxy_FsxFileCacheLustreConfigurationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_FsxFileCacheLustreConfigurationList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewFsxFileCacheLustreConfigurationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewFsxFileCacheLustreConfigurationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

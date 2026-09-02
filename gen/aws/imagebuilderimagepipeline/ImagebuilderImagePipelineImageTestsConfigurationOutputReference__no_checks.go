@@ -40,11 +40,11 @@ func (i *jsiiProxy_ImagebuilderImagePipelineImageTestsConfigurationOutputReferen
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImagePipelineImageTestsConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_ImagebuilderImagePipelineImageTestsConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_ImagebuilderImagePipelineImageTestsConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_ImagebuilderImagePipelineImageTestsConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_ImagebuilderImagePipelineImageTestsConfigurationOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderImagePipelineImageTestsConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ImagebuilderImagePipelineImageTestsConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ImagebuilderImagePipelineImageTestsConfigurationOutputReferen
 	return nil
 }
 
-func validateNewImagebuilderImagePipelineImageTestsConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewImagebuilderImagePipelineImageTestsConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

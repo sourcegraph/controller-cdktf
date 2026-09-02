@@ -56,6 +56,10 @@ func (p *jsiiProxy_PinpointApnsVoipChannel) validateInterpolationForAttributePar
 	return nil
 }
 
+func (p *jsiiProxy_PinpointApnsVoipChannel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (p *jsiiProxy_PinpointApnsVoipChannel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (p *jsiiProxy_PinpointApnsVoipChannel) validateMoveToIdParameters(id *strin
 }
 
 func (p *jsiiProxy_PinpointApnsVoipChannel) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (p *jsiiProxy_PinpointApnsVoipChannel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_PinpointApnsVoipChannel) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_PinpointApnsVoipChannel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_PinpointApnsVoipChannel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

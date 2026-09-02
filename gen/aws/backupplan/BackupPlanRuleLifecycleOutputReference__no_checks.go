@@ -40,11 +40,11 @@ func (b *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (b *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupPlanRuleLifecycleOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBackupPlanRuleLifecycleOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBackupPlanRuleLifecycleOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

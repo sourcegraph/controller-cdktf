@@ -56,6 +56,10 @@ func (e *jsiiProxy_EvidentlyLaunch) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (e *jsiiProxy_EvidentlyLaunch) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (e *jsiiProxy_EvidentlyLaunch) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -85,6 +89,10 @@ func (e *jsiiProxy_EvidentlyLaunch) validatePutScheduledSplitsConfigParameters(v
 }
 
 func (e *jsiiProxy_EvidentlyLaunch) validatePutTimeoutsParameters(value *EvidentlyLaunchTimeouts) error {
+	return nil
+}
+
+func (e *jsiiProxy_EvidentlyLaunch) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_EvidentlyLaunch) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_EvidentlyLaunch) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_EvidentlyLaunch) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

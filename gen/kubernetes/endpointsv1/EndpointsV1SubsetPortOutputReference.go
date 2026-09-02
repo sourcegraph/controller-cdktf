@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/endpointsv1/internal"
 )
 
 type EndpointsV1SubsetPortOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type EndpointsV1SubsetPortOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type EndpointsV1SubsetPortOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetName()
 	ResetProtocol()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type EndpointsV1SubsetPortOutputReference interface {
 
 // The jsii proxy struct for EndpointsV1SubsetPortOutputReference
 type jsiiProxy_EndpointsV1SubsetPortOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_EndpointsV1SubsetPortOutputReference) ComplexObjectIndex() interface{} {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_EndpointsV1SubsetPortOutputReference) TerraformAttribute() *s
 	return returns
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetPortOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_EndpointsV1SubsetPortOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_EndpointsV1SubsetPortOutputReference) TerraformResource() cdk
 }
 
 
-func NewEndpointsV1SubsetPortOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EndpointsV1SubsetPortOutputReference {
+func NewEndpointsV1SubsetPortOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) EndpointsV1SubsetPortOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewEndpointsV1SubsetPortOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -227,7 +227,7 @@ func NewEndpointsV1SubsetPortOutputReference(terraformResource cdktf.IInterpolat
 	j := jsiiProxy_EndpointsV1SubsetPortOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetPortOutputReference",
+		"@cdktn/provider-kubernetes.endpointsV1.EndpointsV1SubsetPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewEndpointsV1SubsetPortOutputReference(terraformResource cdktf.IInterpolat
 	return &j
 }
 
-func NewEndpointsV1SubsetPortOutputReference_Override(e EndpointsV1SubsetPortOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewEndpointsV1SubsetPortOutputReference_Override(e EndpointsV1SubsetPortOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.endpointsV1.EndpointsV1SubsetPortOutputReference",
+		"@cdktn/provider-kubernetes.endpointsV1.EndpointsV1SubsetPortOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		e,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_EndpointsV1SubsetPortOutputReference)SetTerraformAttribute(va
 	)
 }
 
-func (j *jsiiProxy_EndpointsV1SubsetPortOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_EndpointsV1SubsetPortOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) GetAnyMapAttribute(terr
 	return returns
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := e.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -490,8 +490,8 @@ func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) GetStringMapAttribute(t
 	return returns
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
@@ -503,16 +503,16 @@ func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) InterpolationAsList() c
 	return returns
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := e.validateInterpolationForAttributeParameters(property); err != nil {
+func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := e.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		e,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) ResetProtocol() {
 	)
 }
 
-func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := e.validateResolveParameters(_context); err != nil {
+func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := e.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (e *jsiiProxy_EndpointsV1SubsetPortOutputReference) Resolve(_context cdktf.
 	_jsii_.Invoke(
 		e,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -56,6 +56,10 @@ func (i *jsiiProxy_ImagebuilderComponent) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (i *jsiiProxy_ImagebuilderComponent) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_ImagebuilderComponent) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (i *jsiiProxy_ImagebuilderComponent) validateMoveToIdParameters(id *string)
 }
 
 func (i *jsiiProxy_ImagebuilderComponent) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (i *jsiiProxy_ImagebuilderComponent) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_ImagebuilderComponent) validateSetKmsKeyIdParameters(val *str
 	return nil
 }
 
-func (j *jsiiProxy_ImagebuilderComponent) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_ImagebuilderComponent) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyOutputReference) valid
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMemcacheInstanceMaintenancePolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleMemcacheInstanceMaintenancePolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleMemcacheInstanceMaintenancePolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

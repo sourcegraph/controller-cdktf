@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCoo
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieTtlOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieTtlOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieTtlOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieTtlOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCoo
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieTtlOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieTtlOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieTtlOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeRegionBackendServiceStrongSessionAffinityCookieTtlOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

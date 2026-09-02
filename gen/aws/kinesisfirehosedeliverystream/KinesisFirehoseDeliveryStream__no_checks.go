@@ -56,6 +56,10 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validateInterpolationForAttrib
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -104,6 +108,10 @@ func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validatePutSplunkConfiguration
 	return nil
 }
 
+func (k *jsiiProxy_KinesisFirehoseDeliveryStream) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateKinesisFirehoseDeliveryStream_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -144,7 +152,7 @@ func (j *jsiiProxy_KinesisFirehoseDeliveryStream) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_KinesisFirehoseDeliveryStream) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KinesisFirehoseDeliveryStream) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

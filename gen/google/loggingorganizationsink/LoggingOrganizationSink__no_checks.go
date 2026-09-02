@@ -56,6 +56,10 @@ func (l *jsiiProxy_LoggingOrganizationSink) validateInterpolationForAttributePar
 	return nil
 }
 
+func (l *jsiiProxy_LoggingOrganizationSink) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LoggingOrganizationSink) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (l *jsiiProxy_LoggingOrganizationSink) validatePutBigqueryOptionsParameters
 }
 
 func (l *jsiiProxy_LoggingOrganizationSink) validatePutExclusionsParameters(value interface{}) error {
+	return nil
+}
+
+func (l *jsiiProxy_LoggingOrganizationSink) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -132,7 +140,7 @@ func (j *jsiiProxy_LoggingOrganizationSink) validateSetInterceptChildrenParamete
 	return nil
 }
 
-func (j *jsiiProxy_LoggingOrganizationSink) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LoggingOrganizationSink) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

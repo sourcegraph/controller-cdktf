@@ -12,7 +12,7 @@ func (w *jsiiProxy_WafregionalWebAclRuleList) validateGetParameters(index *float
 	return nil
 }
 
-func (w *jsiiProxy_WafregionalWebAclRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafregionalWebAclRuleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WafregionalWebAclRuleList) validateSetTerraformAttributeParam
 	return nil
 }
 
-func (j *jsiiProxy_WafregionalWebAclRuleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WafregionalWebAclRuleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WafregionalWebAclRuleList) validateSetWrapsSetParameters(val 
 	return nil
 }
 
-func validateNewWafregionalWebAclRuleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWafregionalWebAclRuleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/opsworksecsclusterlayer/internal"
 )
 
 type OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -39,9 +39,9 @@ type OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Upscaling() OpsworksEcsClusterLayerLoadBasedAutoScalingUpscalingOutputReference
 	UpscalingInput() *OpsworksEcsClusterLayerLoadBasedAutoScalingUpscaling
 	// Experimental.
@@ -49,7 +49,7 @@ type OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,9 +65,9 @@ type OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutDownscaling(value *OpsworksEcsClusterLayerLoadBasedAutoScalingDownscaling)
 	PutUpscaling(value *OpsworksEcsClusterLayerLoadBasedAutoScalingUpscaling)
 	ResetDownscaling()
@@ -75,7 +75,7 @@ type OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference interface {
 	ResetUpscaling()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference interface {
 
 // The jsii proxy struct for OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference
 type jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) T
 	return returns
 }
 
-func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) U
 }
 
 
-func NewOpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference {
+func NewOpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewOpsworksEcsClusterLayerLoadBasedAutoScalingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewOpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference(terraformReso
 	j := jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference",
+		"@cdktn/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewOpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference(terraformReso
 	return &j
 }
 
-func NewOpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference_Override(o OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewOpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference_Override(o OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference",
+		"@cdktn/provider-aws.opsworksEcsClusterLayer.OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		o,
 	)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference)Se
 	)
 }
 
-func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,11 +341,11 @@ func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) G
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := o.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -469,8 +469,8 @@ func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) G
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
@@ -482,16 +482,16 @@ func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) I
 	return returns
 }
 
-func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := o.validateInterpolationForAttributeParameters(property); err != nil {
+func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := o.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		o,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) R
 	)
 }
 
-func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := o.validateResolveParameters(_context); err != nil {
+func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := o.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (o *jsiiProxy_OpsworksEcsClusterLayerLoadBasedAutoScalingOutputReference) R
 	_jsii_.Invoke(
 		o,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

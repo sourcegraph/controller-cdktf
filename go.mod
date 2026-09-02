@@ -2,7 +2,7 @@ module github.com/sourcegraph/controller-cdktf
 
 go 1.25.0
 
-require github.com/sourcegraph/cdktf-provider-gen v0.0.0-20250903010805-ef644dd16c04
+require github.com/sourcegraph/cdktf-provider-gen v0.0.0-20260902211826-ce2a4875e27f
 
 require (
 	bitbucket.org/creachadair/shell v0.0.7 // indirect

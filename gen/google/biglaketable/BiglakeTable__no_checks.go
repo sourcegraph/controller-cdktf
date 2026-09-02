@@ -56,6 +56,10 @@ func (b *jsiiProxy_BiglakeTable) validateInterpolationForAttributeParameters(ter
 	return nil
 }
 
+func (b *jsiiProxy_BiglakeTable) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (b *jsiiProxy_BiglakeTable) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (b *jsiiProxy_BiglakeTable) validatePutHiveOptionsParameters(value *Biglake
 }
 
 func (b *jsiiProxy_BiglakeTable) validatePutTimeoutsParameters(value *BiglakeTableTimeouts) error {
+	return nil
+}
+
+func (b *jsiiProxy_BiglakeTable) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_BiglakeTable) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeTable) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_BiglakeTable) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

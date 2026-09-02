@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertific
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertific
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleNetworkSecurityServerTlsPolicyServerCertificateCertificateProviderInstanceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) validateGetParameters(index *f
 	return nil
 }
 
-func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_Ec2ManagedPrefixListEntryList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryList) validateSetTerraformAttributeP
 	return nil
 }
 
-func (j *jsiiProxy_Ec2ManagedPrefixListEntryList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_Ec2ManagedPrefixListEntryList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_Ec2ManagedPrefixListEntryList) validateSetWrapsSetParameters(
 	return nil
 }
 
-func validateNewEc2ManagedPrefixListEntryListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEc2ManagedPrefixListEntryListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

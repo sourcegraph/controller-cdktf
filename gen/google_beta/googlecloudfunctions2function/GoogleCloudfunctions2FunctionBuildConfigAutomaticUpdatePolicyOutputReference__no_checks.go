@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicy
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudfunctions2FunctionBuildConfigAutomaticUpdatePolicyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

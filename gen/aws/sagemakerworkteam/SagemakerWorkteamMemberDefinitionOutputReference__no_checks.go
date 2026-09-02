@@ -40,7 +40,7 @@ func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateGet
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validatePut
 	return nil
 }
 
-func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SagemakerWorkteamMemberDefinitionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewSagemakerWorkteamMemberDefinitionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewSagemakerWorkteamMemberDefinitionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

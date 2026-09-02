@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDataplexDataProductAccessGroupsList) validateGetParamet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDataplexDataProductAccessGroupsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDataplexDataProductAccessGroupsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDataplexDataProductAccessGroupsList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDataplexDataProductAccessGroupsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDataplexDataProductAccessGroupsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDataplexDataProductAccessGroupsList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewGoogleDataplexDataProductAccessGroupsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDataplexDataProductAccessGroupsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DeploymentSpecStrategyRollingUpdateOutputReference) validateG
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecStrategyRollingUpdateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DeploymentSpecStrategyRollingUpdateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DeploymentSpecStrategyRollingUpdateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DeploymentSpecStrategyRollingUpdateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_DeploymentSpecStrategyRollingUpdateOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_DeploymentSpecStrategyRollingUpdateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DeploymentSpecStrategyRollingUpdateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDeploymentSpecStrategyRollingUpdateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDeploymentSpecStrategyRollingUpdateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

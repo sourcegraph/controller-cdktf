@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketList) validateGetParame
 	return nil
 }
 
-func (p *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketList) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodSpecContainerLivenessProbeTcpSocketList) validateSetWrapsS
 	return nil
 }
 
-func validateNewPodSpecContainerLivenessProbeTcpSocketListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSpecContainerLivenessProbeTcpSocketListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

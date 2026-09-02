@@ -40,11 +40,11 @@ func (d *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_DatasyncLocationNfsMountOptionsOutputReference) validateSetVe
 	return nil
 }
 
-func validateNewDatasyncLocationNfsMountOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDatasyncLocationNfsMountOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateInt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateOve
 }
 
 func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validatePutTimeoutsParameters(value *GoogleNetworkSecurityBackendAuthenticationConfigTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleNetworkSecurityBackendAuthenticationConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

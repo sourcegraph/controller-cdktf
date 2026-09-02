@@ -12,7 +12,7 @@ func (g *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateGetParameters
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GlobalacceleratorListenerPortRangeList) validateSetWrapsSetPa
 	return nil
 }
 
-func validateNewGlobalacceleratorListenerPortRangeListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGlobalacceleratorListenerPortRangeListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

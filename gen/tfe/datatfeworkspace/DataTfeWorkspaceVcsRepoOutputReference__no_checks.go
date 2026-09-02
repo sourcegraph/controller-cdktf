@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataTfeWorkspaceVcsRepoOutputReference) validateGetStringMapA
 	return nil
 }
 
-func (d *jsiiProxy_DataTfeWorkspaceVcsRepoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataTfeWorkspaceVcsRepoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataTfeWorkspaceVcsRepoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataTfeWorkspaceVcsRepoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataTfeWorkspaceVcsRepoOutputReference) validateSetTerraformA
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeWorkspaceVcsRepoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataTfeWorkspaceVcsRepoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataTfeWorkspaceVcsRepoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataTfeWorkspaceVcsRepoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

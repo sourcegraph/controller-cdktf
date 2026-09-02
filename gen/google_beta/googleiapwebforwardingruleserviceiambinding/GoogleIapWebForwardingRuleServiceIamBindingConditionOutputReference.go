@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleiapwebforwardingruleserviceiambinding/internal"
 )
 
 type GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	SetTitle(val *string)
 	TitleInput() *string
@@ -51,7 +51,7 @@ type GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference interfa
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,13 +67,13 @@ type GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDescription()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -83,7 +83,7 @@ type GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference interfa
 
 // The jsii proxy struct for GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference
 type jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference) ComplexObjectIndex() interface{} {
@@ -186,8 +186,8 @@ func (j *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -217,7 +217,7 @@ func (j *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputRef
 }
 
 
-func NewGoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference {
+func NewGoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleIapWebForwardingRuleServiceIamBindingConditionOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -226,7 +226,7 @@ func NewGoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference(terr
 	j := jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIapWebForwardingRuleServiceIamBinding.GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference",
+		"@cdktn/provider-google-beta.googleIapWebForwardingRuleServiceIamBinding.GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -234,11 +234,11 @@ func NewGoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference(terr
 	return &j
 }
 
-func NewGoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference_Override(g GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference_Override(g GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleIapWebForwardingRuleServiceIamBinding.GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference",
+		"@cdktn/provider-google-beta.googleIapWebForwardingRuleServiceIamBinding.GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -310,7 +310,7 @@ func (j *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputRef
 	)
 }
 
-func (j *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -361,11 +361,11 @@ func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -489,8 +489,8 @@ func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -502,16 +502,16 @@ func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputRef
 	return returns
 }
 
-func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -526,8 +526,8 @@ func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputRef
 	)
 }
 
-func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -535,7 +535,7 @@ func (g *jsiiProxy_GoogleIapWebForwardingRuleServiceIamBindingConditionOutputRef
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList) validateG
 	return nil
 }
 
-func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodSecurityPolicyV1Beta1SpecAllowedFlexVolumesList) validateS
 	return nil
 }
 
-func validateNewPodSecurityPolicyV1Beta1SpecAllowedFlexVolumesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodSecurityPolicyV1Beta1SpecAllowedFlexVolumesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

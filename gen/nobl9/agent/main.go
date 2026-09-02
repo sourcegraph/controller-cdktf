@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.Agent",
+		"@cdktn/provider-nobl9.agent.Agent",
 		reflect.TypeOf((*Agent)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -78,6 +78,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "lightstepConfigInput", GoGetter: "LightstepConfigInput"},
 			_jsii_.MemberProperty{JsiiProperty: "logicMonitorConfig", GoGetter: "LogicMonitorConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "logicMonitorConfigInput", GoGetter: "LogicMonitorConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -129,6 +130,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "redshiftConfig", GoGetter: "RedshiftConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "redshiftConfigInput", GoGetter: "RedshiftConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannel", GoGetter: "ReleaseChannel"},
 			_jsii_.MemberProperty{JsiiProperty: "releaseChannelInput", GoGetter: "ReleaseChannelInput"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAmazonPrometheusConfig", GoMethod: "ResetAmazonPrometheusConfig"},
@@ -184,19 +186,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_Agent{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentAmazonPrometheusConfig",
+		"@cdktn/provider-nobl9.agent.AgentAmazonPrometheusConfig",
 		reflect.TypeOf((*AgentAmazonPrometheusConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentAmazonPrometheusConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentAmazonPrometheusConfigOutputReference",
 		reflect.TypeOf((*AgentAmazonPrometheusConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -227,16 +230,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentAmazonPrometheusConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentAppdynamicsConfig",
+		"@cdktn/provider-nobl9.agent.AgentAppdynamicsConfig",
 		reflect.TypeOf((*AgentAppdynamicsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentAppdynamicsConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentAppdynamicsConfigOutputReference",
 		reflect.TypeOf((*AgentAppdynamicsConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -265,16 +268,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentAppdynamicsConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentAzureMonitorConfig",
+		"@cdktn/provider-nobl9.agent.AgentAzureMonitorConfig",
 		reflect.TypeOf((*AgentAzureMonitorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentAzureMonitorConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentAzureMonitorConfigOutputReference",
 		reflect.TypeOf((*AgentAzureMonitorConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -303,16 +306,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentAzureMonitorConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentBigqueryConfig",
+		"@cdktn/provider-nobl9.agent.AgentBigqueryConfig",
 		reflect.TypeOf((*AgentBigqueryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentBigqueryConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentBigqueryConfigOutputReference",
 		reflect.TypeOf((*AgentBigqueryConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -339,16 +342,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentBigqueryConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentCloudwatchConfig",
+		"@cdktn/provider-nobl9.agent.AgentCloudwatchConfig",
 		reflect.TypeOf((*AgentCloudwatchConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentCloudwatchConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentCloudwatchConfigOutputReference",
 		reflect.TypeOf((*AgentCloudwatchConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -375,20 +378,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentCloudwatchConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentConfig",
+		"@cdktn/provider-nobl9.agent.AgentConfig",
 		reflect.TypeOf((*AgentConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentDatadogConfig",
+		"@cdktn/provider-nobl9.agent.AgentDatadogConfig",
 		reflect.TypeOf((*AgentDatadogConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentDatadogConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentDatadogConfigOutputReference",
 		reflect.TypeOf((*AgentDatadogConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -417,16 +420,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentDatadogConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentDynatraceConfig",
+		"@cdktn/provider-nobl9.agent.AgentDynatraceConfig",
 		reflect.TypeOf((*AgentDynatraceConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentDynatraceConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentDynatraceConfigOutputReference",
 		reflect.TypeOf((*AgentDynatraceConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -455,16 +458,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentDynatraceConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentElasticsearchConfig",
+		"@cdktn/provider-nobl9.agent.AgentElasticsearchConfig",
 		reflect.TypeOf((*AgentElasticsearchConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentElasticsearchConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentElasticsearchConfigOutputReference",
 		reflect.TypeOf((*AgentElasticsearchConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -493,16 +496,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentElasticsearchConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentGcmConfig",
+		"@cdktn/provider-nobl9.agent.AgentGcmConfig",
 		reflect.TypeOf((*AgentGcmConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentGcmConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentGcmConfigOutputReference",
 		reflect.TypeOf((*AgentGcmConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -529,16 +532,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentGcmConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentGrafanaLokiConfig",
+		"@cdktn/provider-nobl9.agent.AgentGrafanaLokiConfig",
 		reflect.TypeOf((*AgentGrafanaLokiConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentGrafanaLokiConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentGrafanaLokiConfigOutputReference",
 		reflect.TypeOf((*AgentGrafanaLokiConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -567,16 +570,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentGrafanaLokiConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentGraphiteConfig",
+		"@cdktn/provider-nobl9.agent.AgentGraphiteConfig",
 		reflect.TypeOf((*AgentGraphiteConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentGraphiteConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentGraphiteConfigOutputReference",
 		reflect.TypeOf((*AgentGraphiteConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -605,20 +608,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentGraphiteConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrieval",
+		"@cdktn/provider-nobl9.agent.AgentHistoricalDataRetrieval",
 		reflect.TypeOf((*AgentHistoricalDataRetrieval)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDuration",
+		"@cdktn/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDuration",
 		reflect.TypeOf((*AgentHistoricalDataRetrievalDefaultDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDurationList",
+		"@cdktn/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDurationList",
 		reflect.TypeOf((*AgentHistoricalDataRetrievalDefaultDurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -635,12 +638,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDurationOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentHistoricalDataRetrievalDefaultDurationOutputReference",
 		reflect.TypeOf((*AgentHistoricalDataRetrievalDefaultDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -671,16 +674,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentHistoricalDataRetrievalDefaultDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalMaxDuration",
+		"@cdktn/provider-nobl9.agent.AgentHistoricalDataRetrievalMaxDuration",
 		reflect.TypeOf((*AgentHistoricalDataRetrievalMaxDuration)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalMaxDurationList",
+		"@cdktn/provider-nobl9.agent.AgentHistoricalDataRetrievalMaxDurationList",
 		reflect.TypeOf((*AgentHistoricalDataRetrievalMaxDurationList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -697,12 +700,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentHistoricalDataRetrievalMaxDurationList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalMaxDurationOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentHistoricalDataRetrievalMaxDurationOutputReference",
 		reflect.TypeOf((*AgentHistoricalDataRetrievalMaxDurationOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -733,12 +736,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentHistoricalDataRetrievalMaxDurationOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentHistoricalDataRetrievalOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentHistoricalDataRetrievalOutputReference",
 		reflect.TypeOf((*AgentHistoricalDataRetrievalOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -771,16 +774,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentHistoricalDataRetrievalOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentHoneycombConfig",
+		"@cdktn/provider-nobl9.agent.AgentHoneycombConfig",
 		reflect.TypeOf((*AgentHoneycombConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentHoneycombConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentHoneycombConfigOutputReference",
 		reflect.TypeOf((*AgentHoneycombConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -807,16 +810,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentHoneycombConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentInfluxdbConfig",
+		"@cdktn/provider-nobl9.agent.AgentInfluxdbConfig",
 		reflect.TypeOf((*AgentInfluxdbConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentInfluxdbConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentInfluxdbConfigOutputReference",
 		reflect.TypeOf((*AgentInfluxdbConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -845,16 +848,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentInfluxdbConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentInstanaConfig",
+		"@cdktn/provider-nobl9.agent.AgentInstanaConfig",
 		reflect.TypeOf((*AgentInstanaConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentInstanaConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentInstanaConfigOutputReference",
 		reflect.TypeOf((*AgentInstanaConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -883,16 +886,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentInstanaConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentLightstepConfig",
+		"@cdktn/provider-nobl9.agent.AgentLightstepConfig",
 		reflect.TypeOf((*AgentLightstepConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentLightstepConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentLightstepConfigOutputReference",
 		reflect.TypeOf((*AgentLightstepConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -926,16 +929,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentLightstepConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentLogicMonitorConfig",
+		"@cdktn/provider-nobl9.agent.AgentLogicMonitorConfig",
 		reflect.TypeOf((*AgentLogicMonitorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentLogicMonitorConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentLogicMonitorConfigOutputReference",
 		reflect.TypeOf((*AgentLogicMonitorConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "account", GoGetter: "Account"},
@@ -964,16 +967,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentLogicMonitorConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentNewrelicConfig",
+		"@cdktn/provider-nobl9.agent.AgentNewrelicConfig",
 		reflect.TypeOf((*AgentNewrelicConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentNewrelicConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentNewrelicConfigOutputReference",
 		reflect.TypeOf((*AgentNewrelicConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "accountId", GoGetter: "AccountId"},
@@ -1002,16 +1005,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentNewrelicConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentOpentsdbConfig",
+		"@cdktn/provider-nobl9.agent.AgentOpentsdbConfig",
 		reflect.TypeOf((*AgentOpentsdbConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentOpentsdbConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentOpentsdbConfigOutputReference",
 		reflect.TypeOf((*AgentOpentsdbConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1040,16 +1043,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentOpentsdbConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentPingdomConfig",
+		"@cdktn/provider-nobl9.agent.AgentPingdomConfig",
 		reflect.TypeOf((*AgentPingdomConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentPingdomConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentPingdomConfigOutputReference",
 		reflect.TypeOf((*AgentPingdomConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1076,16 +1079,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentPingdomConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentPrometheusConfig",
+		"@cdktn/provider-nobl9.agent.AgentPrometheusConfig",
 		reflect.TypeOf((*AgentPrometheusConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentPrometheusConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentPrometheusConfigOutputReference",
 		reflect.TypeOf((*AgentPrometheusConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1114,16 +1117,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentPrometheusConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentQueryDelay",
+		"@cdktn/provider-nobl9.agent.AgentQueryDelay",
 		reflect.TypeOf((*AgentQueryDelay)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentQueryDelayOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentQueryDelayOutputReference",
 		reflect.TypeOf((*AgentQueryDelayOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1154,16 +1157,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentQueryDelayOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentRedshiftConfig",
+		"@cdktn/provider-nobl9.agent.AgentRedshiftConfig",
 		reflect.TypeOf((*AgentRedshiftConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentRedshiftConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentRedshiftConfigOutputReference",
 		reflect.TypeOf((*AgentRedshiftConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1190,16 +1193,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentRedshiftConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentSplunkConfig",
+		"@cdktn/provider-nobl9.agent.AgentSplunkConfig",
 		reflect.TypeOf((*AgentSplunkConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentSplunkConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentSplunkConfigOutputReference",
 		reflect.TypeOf((*AgentSplunkConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1228,16 +1231,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentSplunkConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentSplunkObservabilityConfig",
+		"@cdktn/provider-nobl9.agent.AgentSplunkObservabilityConfig",
 		reflect.TypeOf((*AgentSplunkObservabilityConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentSplunkObservabilityConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentSplunkObservabilityConfigOutputReference",
 		reflect.TypeOf((*AgentSplunkObservabilityConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1266,16 +1269,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentSplunkObservabilityConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentSumologicConfig",
+		"@cdktn/provider-nobl9.agent.AgentSumologicConfig",
 		reflect.TypeOf((*AgentSumologicConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentSumologicConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentSumologicConfigOutputReference",
 		reflect.TypeOf((*AgentSumologicConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1304,16 +1307,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentSumologicConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-nobl9.agent.AgentThousandeyesConfig",
+		"@cdktn/provider-nobl9.agent.AgentThousandeyesConfig",
 		reflect.TypeOf((*AgentThousandeyesConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-nobl9.agent.AgentThousandeyesConfigOutputReference",
+		"@cdktn/provider-nobl9.agent.AgentThousandeyesConfigOutputReference",
 		reflect.TypeOf((*AgentThousandeyesConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1340,7 +1343,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_AgentThousandeyesConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

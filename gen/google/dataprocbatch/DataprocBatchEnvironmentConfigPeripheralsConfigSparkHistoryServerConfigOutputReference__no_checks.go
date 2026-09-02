@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistorySe
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistorySe
 	return nil
 }
 
-func (j *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDataprocBatchEnvironmentConfigPeripheralsConfigSparkHistoryServerConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

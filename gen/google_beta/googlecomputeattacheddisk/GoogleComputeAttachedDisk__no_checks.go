@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeAttachedDisk) validateInterpolationForAttributeP
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeAttachedDisk) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeAttachedDisk) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeAttachedDisk) validateOverrideLogicalIdParameter
 }
 
 func (g *jsiiProxy_GoogleComputeAttachedDisk) validatePutTimeoutsParameters(value *GoogleComputeAttachedDiskTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeAttachedDisk) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_GoogleComputeAttachedDisk) validateSetInterfaceParameters(val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeAttachedDisk) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeAttachedDisk) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

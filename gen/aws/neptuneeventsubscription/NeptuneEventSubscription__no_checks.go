@@ -56,6 +56,10 @@ func (n *jsiiProxy_NeptuneEventSubscription) validateInterpolationForAttributePa
 	return nil
 }
 
+func (n *jsiiProxy_NeptuneEventSubscription) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneEventSubscription) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NeptuneEventSubscription) validateOverrideLogicalIdParameters
 }
 
 func (n *jsiiProxy_NeptuneEventSubscription) validatePutTimeoutsParameters(value *NeptuneEventSubscriptionTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NeptuneEventSubscription) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_NeptuneEventSubscription) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneEventSubscription) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NeptuneEventSubscription) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

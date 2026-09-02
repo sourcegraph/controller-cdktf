@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/backupreportplan/internal"
 )
 
 type BackupReportPlanReportSettingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type BackupReportPlanReportSettingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type BackupReportPlanReportSettingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetFrameworkArns()
 	ResetNumberOfFrameworks()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type BackupReportPlanReportSettingOutputReference interface {
 
 // The jsii proxy struct for BackupReportPlanReportSettingOutputReference
 type jsiiProxy_BackupReportPlanReportSettingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) ComplexObjectIndex() interface{} {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference) TerraformResour
 }
 
 
-func NewBackupReportPlanReportSettingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) BackupReportPlanReportSettingOutputReference {
+func NewBackupReportPlanReportSettingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) BackupReportPlanReportSettingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewBackupReportPlanReportSettingOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewBackupReportPlanReportSettingOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_BackupReportPlanReportSettingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
+		"@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewBackupReportPlanReportSettingOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewBackupReportPlanReportSettingOutputReference_Override(b BackupReportPlanReportSettingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewBackupReportPlanReportSettingOutputReference_Override(b BackupReportPlanReportSettingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
+		"@cdktn/provider-aws.backupReportPlan.BackupReportPlanReportSettingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		b,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_BackupReportPlanReportSettingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := b.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -490,8 +490,8 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
@@ -503,16 +503,16 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) InterpolationAs
 	return returns
 }
 
-func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := b.validateInterpolationForAttributeParameters(property); err != nil {
+func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := b.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		b,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) ResetNumberOfFr
 	)
 }
 
-func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := b.validateResolveParameters(_context); err != nil {
+func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := b.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (b *jsiiProxy_BackupReportPlanReportSettingOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		b,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

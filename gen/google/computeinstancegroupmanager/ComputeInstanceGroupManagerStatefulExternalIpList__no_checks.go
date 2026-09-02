@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateGe
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeInstanceGroupManagerStatefulExternalIpList) validateSe
 	return nil
 }
 
-func validateNewComputeInstanceGroupManagerStatefulExternalIpListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeInstanceGroupManagerStatefulExternalIpListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

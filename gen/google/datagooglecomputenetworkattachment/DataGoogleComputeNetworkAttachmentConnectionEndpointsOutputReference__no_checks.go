@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputRe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleComputeNetworkAttachmentConnectionEndpointsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

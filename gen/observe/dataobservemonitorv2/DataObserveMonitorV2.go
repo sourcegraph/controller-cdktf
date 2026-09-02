@@ -5,18 +5,18 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/observe/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/observe/dataobservemonitorv2/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/observeinc/observe/0.14.47/docs/data-sources/monitor_v2 observe_monitor_v2}.
 type DataObserveMonitorV2 interface {
-	cdktf.TerraformDataSource
+	cdktn.TerraformDataSource
 	Actions() DataObserveMonitorV2ActionsList
 	ActionsInput() interface{}
 	Bindings() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	// Experimental.
 	ConstructNodeMetadata() *map[string]interface{}
 	// Experimental.
@@ -30,11 +30,11 @@ type DataObserveMonitorV2 interface {
 	// Experimental.
 	SetDependsOn(val *[]*string)
 	Description() *string
-	Disabled() cdktf.IResolvable
+	Disabled() cdktn.IResolvable
 	// Experimental.
-	ForEach() cdktf.ITerraformIterator
+	ForEach() cdktn.ITerraformIterator
 	// Experimental.
-	SetForEach(val cdktf.ITerraformIterator)
+	SetForEach(val cdktn.ITerraformIterator)
 	// Experimental.
 	Fqn() *string
 	// Experimental.
@@ -45,11 +45,11 @@ type DataObserveMonitorV2 interface {
 	Id() *string
 	SetId(val *string)
 	IdInput() *string
-	Inputs() cdktf.StringMap
+	Inputs() cdktn.StringMap
 	// Experimental.
-	Lifecycle() *cdktf.TerraformResourceLifecycle
+	Lifecycle() *cdktn.TerraformResourceLifecycle
 	// Experimental.
-	SetLifecycle(val *cdktf.TerraformResourceLifecycle)
+	SetLifecycle(val *cdktn.TerraformResourceLifecycle)
 	LookbackTime() *string
 	MaxAlertsPerHour() *float64
 	Name() *string
@@ -61,9 +61,9 @@ type DataObserveMonitorV2 interface {
 	Node() constructs.Node
 	Oid() *string
 	// Experimental.
-	Provider() cdktf.TerraformProvider
+	Provider() cdktn.TerraformProvider
 	// Experimental.
-	SetProvider(val cdktf.TerraformProvider)
+	SetProvider(val cdktn.TerraformProvider)
 	// Experimental.
 	RawOverrides() interface{}
 	RuleKind() *string
@@ -74,7 +74,7 @@ type DataObserveMonitorV2 interface {
 	Stage() DataObserveMonitorV2StageList
 	StageInput() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformMetaArguments() *map[string]interface{}
 	// Experimental.
@@ -87,7 +87,7 @@ type DataObserveMonitorV2 interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -103,7 +103,7 @@ type DataObserveMonitorV2 interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
@@ -113,6 +113,19 @@ type DataObserveMonitorV2 interface {
 	PutRules(value interface{})
 	PutScheduling(value interface{})
 	PutStage(value interface{})
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetActions()
 	ResetGroupings()
 	ResetId()
@@ -137,11 +150,20 @@ type DataObserveMonitorV2 interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for DataObserveMonitorV2
 type jsiiProxy_DataObserveMonitorV2 struct {
-	internal.Type__cdktfTerraformDataSource
+	internal.Type__cdktnTerraformDataSource
 }
 
 func (j *jsiiProxy_DataObserveMonitorV2) Actions() DataObserveMonitorV2ActionsList {
@@ -174,8 +196,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) Bindings() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_DataObserveMonitorV2) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -244,8 +266,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) Description() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) Disabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataObserveMonitorV2) Disabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"disabled",
@@ -254,8 +276,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) Disabled() cdktf.IResolvable {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) ForEach() cdktf.ITerraformIterator {
-	var returns cdktf.ITerraformIterator
+func (j *jsiiProxy_DataObserveMonitorV2) ForEach() cdktn.ITerraformIterator {
+	var returns cdktn.ITerraformIterator
 	_jsii_.Get(
 		j,
 		"forEach",
@@ -334,8 +356,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) IdInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) Inputs() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataObserveMonitorV2) Inputs() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"inputs",
@@ -344,8 +366,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) Inputs() cdktf.StringMap {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) Lifecycle() *cdktf.TerraformResourceLifecycle {
-	var returns *cdktf.TerraformResourceLifecycle
+func (j *jsiiProxy_DataObserveMonitorV2) Lifecycle() *cdktn.TerraformResourceLifecycle {
+	var returns *cdktn.TerraformResourceLifecycle
 	_jsii_.Get(
 		j,
 		"lifecycle",
@@ -434,8 +456,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) Oid() *string {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) Provider() cdktf.TerraformProvider {
-	var returns cdktf.TerraformProvider
+func (j *jsiiProxy_DataObserveMonitorV2) Provider() cdktn.TerraformProvider {
+	var returns cdktn.TerraformProvider
 	_jsii_.Get(
 		j,
 		"provider",
@@ -524,8 +546,8 @@ func (j *jsiiProxy_DataObserveMonitorV2) StageInput() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_DataObserveMonitorV2) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -585,7 +607,7 @@ func NewDataObserveMonitorV2(scope constructs.Construct, id *string, config *Dat
 	j := jsiiProxy_DataObserveMonitorV2{}
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
+		"@cdktn/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -598,7 +620,7 @@ func NewDataObserveMonitorV2_Override(d DataObserveMonitorV2, scope constructs.C
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
+		"@cdktn/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
 		[]interface{}{scope, id, config},
 		d,
 	)
@@ -623,7 +645,7 @@ func (j *jsiiProxy_DataObserveMonitorV2)SetDependsOn(val *[]*string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2)SetForEach(val cdktf.ITerraformIterator) {
+func (j *jsiiProxy_DataObserveMonitorV2)SetForEach(val cdktn.ITerraformIterator) {
 	_jsii_.Set(
 		j,
 		"forEach",
@@ -642,7 +664,7 @@ func (j *jsiiProxy_DataObserveMonitorV2)SetId(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2)SetLifecycle(val *cdktf.TerraformResourceLifecycle) {
+func (j *jsiiProxy_DataObserveMonitorV2)SetLifecycle(val *cdktn.TerraformResourceLifecycle) {
 	if err := j.validateSetLifecycleParameters(val); err != nil {
 		panic(err)
 	}
@@ -664,7 +686,7 @@ func (j *jsiiProxy_DataObserveMonitorV2)SetName(val *string) {
 	)
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2)SetProvider(val cdktf.TerraformProvider) {
+func (j *jsiiProxy_DataObserveMonitorV2)SetProvider(val cdktn.TerraformProvider) {
 	_jsii_.Set(
 		j,
 		"provider",
@@ -683,17 +705,17 @@ func (j *jsiiProxy_DataObserveMonitorV2)SetWorkspace(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a DataObserveMonitorV2 resource upon running "cdktf plan <stack-name>".
-func DataObserveMonitorV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a DataObserveMonitorV2 resource upon running "cdktn plan <stack-name>".
+func DataObserveMonitorV2_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateDataObserveMonitorV2_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
+		"@cdktn/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -728,7 +750,7 @@ func DataObserveMonitorV2_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
+		"@cdktn/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -747,7 +769,7 @@ func DataObserveMonitorV2_IsTerraformDataSource(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
+		"@cdktn/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
 		"isTerraformDataSource",
 		[]interface{}{x},
 		&returns,
@@ -766,7 +788,7 @@ func DataObserveMonitorV2_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
+		"@cdktn/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -779,7 +801,7 @@ func DataObserveMonitorV2_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
+		"@cdktn/provider-observe.dataObserveMonitorV2.DataObserveMonitorV2",
 		"tfResourceType",
 		&returns,
 	)
@@ -813,11 +835,11 @@ func (d *jsiiProxy_DataObserveMonitorV2) GetAnyMapAttribute(terraformAttribute *
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataObserveMonitorV2) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -941,11 +963,11 @@ func (d *jsiiProxy_DataObserveMonitorV2) GetStringMapAttribute(terraformAttribut
 	return returns
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2) InterpolationForAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataObserveMonitorV2) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -1031,6 +1053,17 @@ func (d *jsiiProxy_DataObserveMonitorV2) PutStage(value interface{}) {
 		d,
 		"putStage",
 		[]interface{}{value},
+	)
+}
+
+func (d *jsiiProxy_DataObserveMonitorV2) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := d.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		d,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -1186,6 +1219,24 @@ func (d *jsiiProxy_DataObserveMonitorV2) ToTerraform() interface{} {
 		d,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (d *jsiiProxy_DataObserveMonitorV2) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		d,
+		"with",
+		args,
 		&returns,
 	)
 

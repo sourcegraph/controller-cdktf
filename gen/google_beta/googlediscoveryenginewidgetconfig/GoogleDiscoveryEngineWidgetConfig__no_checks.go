@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfig) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfig) validatePutUiBrandingParam
 }
 
 func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfig) validatePutUiSettingsParameters(value *GoogleDiscoveryEngineWidgetConfigUiSettings) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleDiscoveryEngineWidgetConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfig) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleDiscoveryEngineWidgetConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

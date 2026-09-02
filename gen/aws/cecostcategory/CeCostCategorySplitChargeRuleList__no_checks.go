@@ -12,7 +12,7 @@ func (c *jsiiProxy_CeCostCategorySplitChargeRuleList) validateGetParameters(inde
 	return nil
 }
 
-func (c *jsiiProxy_CeCostCategorySplitChargeRuleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CeCostCategorySplitChargeRuleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_CeCostCategorySplitChargeRuleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CeCostCategorySplitChargeRuleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_CeCostCategorySplitChargeRuleList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewCeCostCategorySplitChargeRuleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCeCostCategorySplitChargeRuleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

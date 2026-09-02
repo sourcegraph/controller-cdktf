@@ -56,6 +56,10 @@ func (m *jsiiProxy_MigrationCenterPreferenceSet) validateInterpolationForAttribu
 	return nil
 }
 
+func (m *jsiiProxy_MigrationCenterPreferenceSet) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (m *jsiiProxy_MigrationCenterPreferenceSet) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (m *jsiiProxy_MigrationCenterPreferenceSet) validatePutTimeoutsParameters(v
 }
 
 func (m *jsiiProxy_MigrationCenterPreferenceSet) validatePutVirtualMachinePreferencesParameters(value *MigrationCenterPreferenceSetVirtualMachinePreferences) error {
+	return nil
+}
+
+func (m *jsiiProxy_MigrationCenterPreferenceSet) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_MigrationCenterPreferenceSet) validateSetIdParameters(val *st
 	return nil
 }
 
-func (j *jsiiProxy_MigrationCenterPreferenceSet) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_MigrationCenterPreferenceSet) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

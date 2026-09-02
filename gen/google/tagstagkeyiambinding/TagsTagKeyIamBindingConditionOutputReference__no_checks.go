@@ -40,11 +40,11 @@ func (t *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateGetStri
 	return nil
 }
 
-func (t *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (t *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (t *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (t *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_TagsTagKeyIamBindingConditionOutputReference) validateSetTitl
 	return nil
 }
 
-func validateNewTagsTagKeyIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewTagsTagKeyIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

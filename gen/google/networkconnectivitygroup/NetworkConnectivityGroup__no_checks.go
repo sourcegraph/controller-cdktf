@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkConnectivityGroup) validateInterpolationForAttributePa
 	return nil
 }
 
+func (n *jsiiProxy_NetworkConnectivityGroup) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkConnectivityGroup) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (n *jsiiProxy_NetworkConnectivityGroup) validatePutAutoAcceptParameters(val
 }
 
 func (n *jsiiProxy_NetworkConnectivityGroup) validatePutTimeoutsParameters(value *NetworkConnectivityGroupTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkConnectivityGroup) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_NetworkConnectivityGroup) validateSetLabelsParameters(val *ma
 	return nil
 }
 
-func (j *jsiiProxy_NetworkConnectivityGroup) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkConnectivityGroup) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

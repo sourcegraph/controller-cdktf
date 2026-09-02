@@ -56,6 +56,10 @@ func (k *jsiiProxy_KmsExternalKey) validateInterpolationForAttributeParameters(t
 	return nil
 }
 
+func (k *jsiiProxy_KmsExternalKey) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (k *jsiiProxy_KmsExternalKey) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (k *jsiiProxy_KmsExternalKey) validateMoveToIdParameters(id *string) error 
 }
 
 func (k *jsiiProxy_KmsExternalKey) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (k *jsiiProxy_KmsExternalKey) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -120,7 +128,7 @@ func (j *jsiiProxy_KmsExternalKey) validateSetKeyMaterialBase64Parameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_KmsExternalKey) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_KmsExternalKey) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

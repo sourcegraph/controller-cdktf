@@ -40,7 +40,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateG
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateP
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2RulesPromoteCompareColumnsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMonitorV2RulesPromoteCompareColumnsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewMonitorV2RulesPromoteCompareColumnsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

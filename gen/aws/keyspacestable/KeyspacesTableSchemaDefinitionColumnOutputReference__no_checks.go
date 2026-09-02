@@ -40,11 +40,11 @@ func (k *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validate
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (k *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_KeyspacesTableSchemaDefinitionColumnOutputReference) validate
 	return nil
 }
 
-func validateNewKeyspacesTableSchemaDefinitionColumnOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewKeyspacesTableSchemaDefinitionColumnOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

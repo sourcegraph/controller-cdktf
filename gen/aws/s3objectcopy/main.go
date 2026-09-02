@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopy",
+		"@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopy",
 		reflect.TypeOf((*S3ObjectCopy)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "acl", GoGetter: "Acl"},
@@ -85,6 +85,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "kmsKeyIdInput", GoGetter: "KmsKeyIdInput"},
 			_jsii_.MemberProperty{JsiiProperty: "lastModified", GoGetter: "LastModified"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataDirective", GoGetter: "MetadataDirective"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataDirectiveInput", GoGetter: "MetadataDirectiveInput"},
@@ -104,6 +105,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putGrant", GoMethod: "PutGrant"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberProperty{JsiiProperty: "requestCharged", GoGetter: "RequestCharged"},
 			_jsii_.MemberProperty{JsiiProperty: "requestPayer", GoGetter: "RequestPayer"},
 			_jsii_.MemberProperty{JsiiProperty: "requestPayerInput", GoGetter: "RequestPayerInput"},
@@ -176,23 +178,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "versionId", GoGetter: "VersionId"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteRedirect", GoGetter: "WebsiteRedirect"},
 			_jsii_.MemberProperty{JsiiProperty: "websiteRedirectInput", GoGetter: "WebsiteRedirectInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_S3ObjectCopy{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyConfig",
+		"@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyConfig",
 		reflect.TypeOf((*S3ObjectCopyConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrant",
+		"@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrant",
 		reflect.TypeOf((*S3ObjectCopyGrant)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList",
+		"@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantList",
 		reflect.TypeOf((*S3ObjectCopyGrantList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -209,12 +212,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3ObjectCopyGrantList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference",
+		"@cdktn/provider-aws.s3ObjectCopy.S3ObjectCopyGrantOutputReference",
 		reflect.TypeOf((*S3ObjectCopyGrantOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -254,7 +257,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_S3ObjectCopyGrantOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

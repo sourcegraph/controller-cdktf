@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppCookieStickinessPolicy) validateInterpolationForAttributeP
 	return nil
 }
 
+func (a *jsiiProxy_AppCookieStickinessPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppCookieStickinessPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (a *jsiiProxy_AppCookieStickinessPolicy) validateMoveToIdParameters(id *str
 }
 
 func (a *jsiiProxy_AppCookieStickinessPolicy) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppCookieStickinessPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetLbPortParameters(val *f
 	return nil
 }
 
-func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppCookieStickinessPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

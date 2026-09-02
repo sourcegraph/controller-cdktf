@@ -40,11 +40,11 @@ func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateG
 	return nil
 }
 
-func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_LoggingMetricMetricDescriptorLabelsOutputReference) validateS
 	return nil
 }
 
-func validateNewLoggingMetricMetricDescriptorLabelsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLoggingMetricMetricDescriptorLabelsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

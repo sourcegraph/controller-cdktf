@@ -40,11 +40,11 @@ func (d *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateGetStringMa
 	return nil
 }
 
-func (d *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateSetTerrafor
 	return nil
 }
 
-func (j *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DirectHoneycombQueryDelayOutputReference) validateSetValuePar
 	return nil
 }
 
-func validateNewDirectHoneycombQueryDelayOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDirectHoneycombQueryDelayOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

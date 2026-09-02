@@ -56,6 +56,10 @@ func (l *jsiiProxy_LimitRange) validateInterpolationForAttributeParameters(terra
 	return nil
 }
 
+func (l *jsiiProxy_LimitRange) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LimitRange) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (l *jsiiProxy_LimitRange) validatePutMetadataParameters(value *LimitRangeMe
 }
 
 func (l *jsiiProxy_LimitRange) validatePutSpecParameters(value *LimitRangeSpec) error {
+	return nil
+}
+
+func (l *jsiiProxy_LimitRange) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_LimitRange) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_LimitRange) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LimitRange) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

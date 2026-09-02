@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFile
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFile
 	return nil
 }
 
-func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFile
 	return nil
 }
 
-func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GoogleHypercomputeclusterClusterStorageResourcesConfigNewFile
 	return nil
 }
 
-func validateNewGoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleHypercomputeclusterClusterStorageResourcesConfigNewFilestoreOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

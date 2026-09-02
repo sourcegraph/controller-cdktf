@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dataawsopensearchdomain/internal"
 )
 
 type DataAwsOpensearchDomainClusterConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ColdStorageOptions() DataAwsOpensearchDomainClusterConfigColdStorageOptionsList
 	// the index of the complex object in a list.
 	// Experimental.
@@ -27,7 +27,7 @@ type DataAwsOpensearchDomainClusterConfigOutputReference interface {
 	// Experimental.
 	CreationStack() *[]*string
 	DedicatedMasterCount() *float64
-	DedicatedMasterEnabled() cdktf.IResolvable
+	DedicatedMasterEnabled() cdktn.IResolvable
 	DedicatedMasterType() *string
 	// Experimental.
 	Fqn() *string
@@ -40,20 +40,20 @@ type DataAwsOpensearchDomainClusterConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WarmCount() *float64
-	WarmEnabled() cdktf.IResolvable
+	WarmEnabled() cdktn.IResolvable
 	WarmType() *string
 	ZoneAwarenessConfig() DataAwsOpensearchDomainClusterConfigZoneAwarenessConfigList
-	ZoneAwarenessEnabled() cdktf.IResolvable
+	ZoneAwarenessEnabled() cdktn.IResolvable
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -69,12 +69,12 @@ type DataAwsOpensearchDomainClusterConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type DataAwsOpensearchDomainClusterConfigOutputReference interface {
 
 // The jsii proxy struct for DataAwsOpensearchDomainClusterConfigOutputReference
 type jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) ColdStorageOptions() DataAwsOpensearchDomainClusterConfigColdStorageOptionsList {
@@ -137,8 +137,8 @@ func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) Dedicate
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) DedicatedMasterEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) DedicatedMasterEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"dedicatedMasterEnabled",
@@ -207,8 +207,8 @@ func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -227,8 +227,8 @@ func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) WarmCoun
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) WarmEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) WarmEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"warmEnabled",
@@ -257,8 +257,8 @@ func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) ZoneAwar
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) ZoneAwarenessEnabled() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) ZoneAwarenessEnabled() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"zoneAwarenessEnabled",
@@ -268,7 +268,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) ZoneAwar
 }
 
 
-func NewDataAwsOpensearchDomainClusterConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainClusterConfigOutputReference {
+func NewDataAwsOpensearchDomainClusterConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataAwsOpensearchDomainClusterConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataAwsOpensearchDomainClusterConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -277,7 +277,7 @@ func NewDataAwsOpensearchDomainClusterConfigOutputReference(terraformResource cd
 	j := jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigOutputReference",
+		"@cdktn/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -285,11 +285,11 @@ func NewDataAwsOpensearchDomainClusterConfigOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDataAwsOpensearchDomainClusterConfigOutputReference_Override(d DataAwsOpensearchDomainClusterConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataAwsOpensearchDomainClusterConfigOutputReference_Override(d DataAwsOpensearchDomainClusterConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigOutputReference",
+		"@cdktn/provider-aws.dataAwsOpensearchDomain.DataAwsOpensearchDomainClusterConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -339,7 +339,7 @@ func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -379,11 +379,11 @@ func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -507,8 +507,8 @@ func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -520,24 +520,24 @@ func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -545,7 +545,7 @@ func (d *jsiiProxy_DataAwsOpensearchDomainClusterConfigOutputReference) Resolve(
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

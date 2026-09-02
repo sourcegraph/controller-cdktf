@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateOverrideLogicalIdP
 }
 
 func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validatePutTimeoutsParameters(value *GoogleComputeRegionSslCertificateTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleComputeRegionSslCertificate) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_GoogleComputeRegionSslCertificate) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionSslCertificate) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleComputeRegionSslCertificate) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

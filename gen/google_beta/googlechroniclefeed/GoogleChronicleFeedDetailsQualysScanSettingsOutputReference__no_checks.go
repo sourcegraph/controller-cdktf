@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsOutputReference) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsQualysScanSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsQualysScanSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsQualysScanSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

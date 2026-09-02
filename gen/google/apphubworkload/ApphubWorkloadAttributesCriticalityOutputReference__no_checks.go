@@ -40,11 +40,11 @@ func (a *jsiiProxy_ApphubWorkloadAttributesCriticalityOutputReference) validateG
 	return nil
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesCriticalityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_ApphubWorkloadAttributesCriticalityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_ApphubWorkloadAttributesCriticalityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApphubWorkloadAttributesCriticalityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_ApphubWorkloadAttributesCriticalityOutputReference) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ApphubWorkloadAttributesCriticalityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApphubWorkloadAttributesCriticalityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ApphubWorkloadAttributesCriticalityOutputReference) validateS
 	return nil
 }
 
-func validateNewApphubWorkloadAttributesCriticalityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewApphubWorkloadAttributesCriticalityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

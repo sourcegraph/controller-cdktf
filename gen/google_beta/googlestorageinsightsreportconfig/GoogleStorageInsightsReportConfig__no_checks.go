@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validateInterpolationForAt
 	return nil
 }
 
+func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -89,6 +93,10 @@ func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validatePutParquetOptionsP
 }
 
 func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validatePutTimeoutsParameters(value *GoogleStorageInsightsReportConfigTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleStorageInsightsReportConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -128,7 +136,7 @@ func (j *jsiiProxy_GoogleStorageInsightsReportConfig) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleStorageInsightsReportConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleStorageInsightsReportConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

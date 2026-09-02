@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googleprivatecacertificatetemplate/internal"
 )
 
 type GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -61,15 +61,15 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputRefe
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -85,9 +85,9 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputRefe
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetExcludedDnsNames()
 	ResetExcludedEmailAddresses()
 	ResetExcludedIpRanges()
@@ -98,7 +98,7 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputRefe
 	ResetPermittedUris()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -108,7 +108,7 @@ type GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputRefe
 
 // The jsii proxy struct for GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference
 type jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference) ComplexObjectIndex() interface{} {
@@ -351,8 +351,8 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstra
 	return returns
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -362,7 +362,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstra
 }
 
 
-func NewGooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference {
+func NewGooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -371,7 +371,7 @@ func NewGooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputR
 	j := jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference",
+		"@cdktn/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -379,11 +379,11 @@ func NewGooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputR
 	return &j
 }
 
-func NewGooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference_Override(g GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewGooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference_Override(g GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference",
+		"@cdktn/provider-google-beta.googlePrivatecaCertificateTemplate.GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		g,
 	)
@@ -532,7 +532,7 @@ func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstra
 	)
 }
 
-func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -572,11 +572,11 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstra
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -700,8 +700,8 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstra
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -713,16 +713,16 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstra
 	return returns
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -793,8 +793,8 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstra
 	)
 }
 
-func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstraintsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -802,7 +802,7 @@ func (g *jsiiProxy_GooglePrivatecaCertificateTemplatePredefinedValuesNameConstra
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerNodePoolNodeConfigSandboxConfigOutputReference) vali
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigSandboxConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigSandboxConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerNodePoolNodeConfigSandboxConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerNodePoolNodeConfigSandboxConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigSandboxConfigOutputReference) vali
 	return nil
 }
 
-func (j *jsiiProxy_ContainerNodePoolNodeConfigSandboxConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerNodePoolNodeConfigSandboxConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_ContainerNodePoolNodeConfigSandboxConfigOutputReference) vali
 	return nil
 }
 
-func validateNewContainerNodePoolNodeConfigSandboxConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerNodePoolNodeConfigSandboxConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

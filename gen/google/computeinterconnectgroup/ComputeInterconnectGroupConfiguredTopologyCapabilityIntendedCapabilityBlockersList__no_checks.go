@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedC
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedC
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ComputeInterconnectGroupConfiguredTopologyCapabilityIntendedC
 	return nil
 }
 
-func validateNewComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeInterconnectGroupConfiguredTopologyCapabilityIntendedCapabilityBlockersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

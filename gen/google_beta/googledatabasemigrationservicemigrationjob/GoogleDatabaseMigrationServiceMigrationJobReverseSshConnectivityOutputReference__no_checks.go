@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobReverseSshConnectiv
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobReverseSshConnectiv
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceMigrationJobReverseSshConnectiv
 	return nil
 }
 
-func validateNewGoogleDatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatabaseMigrationServiceMigrationJobReverseSshConnectivityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

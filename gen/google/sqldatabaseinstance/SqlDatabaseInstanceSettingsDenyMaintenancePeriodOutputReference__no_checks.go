@@ -40,11 +40,11 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReferen
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReferen
 	return nil
 }
 
-func validateNewSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewSqlDatabaseInstanceSettingsDenyMaintenancePeriodOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

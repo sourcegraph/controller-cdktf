@@ -56,6 +56,10 @@ func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateInterpolationForAt
 	return nil
 }
 
+func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateOverrideLogicalIdP
 }
 
 func (s *jsiiProxy_S3ControlStorageLensConfiguration) validatePutStorageLensConfigurationParameters(value *S3ControlStorageLensConfigurationStorageLensConfiguration) error {
+	return nil
+}
+
+func (s *jsiiProxy_S3ControlStorageLensConfiguration) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_S3ControlStorageLensConfiguration) validateSetIdParameters(va
 	return nil
 }
 
-func (j *jsiiProxy_S3ControlStorageLensConfiguration) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_S3ControlStorageLensConfiguration) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

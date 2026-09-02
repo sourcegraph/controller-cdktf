@@ -40,11 +40,11 @@ func (b *jsiiProxy_BackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputRefer
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (b *jsiiProxy_BackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_BackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputRefer
 	return nil
 }
 
-func (j *jsiiProxy_BackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewBackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewBackupDrRestoreWorkloadRegionDiskTargetEnvironmentOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

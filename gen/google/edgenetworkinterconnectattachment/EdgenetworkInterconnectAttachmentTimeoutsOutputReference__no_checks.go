@@ -40,11 +40,11 @@ func (e *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) val
 	return nil
 }
 
-func (e *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_EdgenetworkInterconnectAttachmentTimeoutsOutputReference) val
 	return nil
 }
 
-func validateNewEdgenetworkInterconnectAttachmentTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewEdgenetworkInterconnectAttachmentTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

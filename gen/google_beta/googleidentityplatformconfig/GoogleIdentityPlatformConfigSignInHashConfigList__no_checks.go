@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleIdentityPlatformConfigSignInHashConfigList) validateGet
 	return nil
 }
 
-func (g *jsiiProxy_GoogleIdentityPlatformConfigSignInHashConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleIdentityPlatformConfigSignInHashConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigSignInHashConfigList) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_GoogleIdentityPlatformConfigSignInHashConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleIdentityPlatformConfigSignInHashConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleIdentityPlatformConfigSignInHashConfigList) validateSet
 	return nil
 }
 
-func validateNewGoogleIdentityPlatformConfigSignInHashConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleIdentityPlatformConfigSignInHashConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

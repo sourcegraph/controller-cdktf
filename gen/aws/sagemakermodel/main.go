@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModel",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModel",
 		reflect.TypeOf((*SagemakerModel)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -45,6 +45,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "inferenceExecutionConfigInput", GoGetter: "InferenceExecutionConfigInput"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -61,6 +62,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putPrimaryContainer", GoMethod: "PutPrimaryContainer"},
 			_jsii_.MemberMethod{JsiiMethod: "putVpcConfig", GoMethod: "PutVpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetContainer", GoMethod: "ResetContainer"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnableNetworkIsolation", GoMethod: "ResetEnableNetworkIsolation"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -86,27 +88,28 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfig", GoGetter: "VpcConfig"},
 			_jsii_.MemberProperty{JsiiProperty: "vpcConfigInput", GoGetter: "VpcConfigInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerModel{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelConfig",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelConfig",
 		reflect.TypeOf((*SagemakerModelConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainer",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelContainer",
 		reflect.TypeOf((*SagemakerModelContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfig",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfig",
 		reflect.TypeOf((*SagemakerModelContainerImageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigOutputReference",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigOutputReference",
 		reflect.TypeOf((*SagemakerModelContainerImageConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -139,16 +142,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerModelContainerImageConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfig",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfig",
 		reflect.TypeOf((*SagemakerModelContainerImageConfigRepositoryAuthConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference",
 		reflect.TypeOf((*SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -177,12 +180,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerModelContainerImageConfigRepositoryAuthConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerList",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerList",
 		reflect.TypeOf((*SagemakerModelContainerList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -199,12 +202,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerModelContainerList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelContainerOutputReference",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelContainerOutputReference",
 		reflect.TypeOf((*SagemakerModelContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -249,16 +252,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerModelContainerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfig",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfig",
 		reflect.TypeOf((*SagemakerModelInferenceExecutionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfigOutputReference",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelInferenceExecutionConfigOutputReference",
 		reflect.TypeOf((*SagemakerModelInferenceExecutionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -287,20 +290,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerModelInferenceExecutionConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainer",
 		reflect.TypeOf((*SagemakerModelPrimaryContainer)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfig",
 		reflect.TypeOf((*SagemakerModelPrimaryContainerImageConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigOutputReference",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigOutputReference",
 		reflect.TypeOf((*SagemakerModelPrimaryContainerImageConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -333,16 +336,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerModelPrimaryContainerImageConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig",
 		reflect.TypeOf((*SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference",
 		reflect.TypeOf((*SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -371,12 +374,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerModelPrimaryContainerImageConfigRepositoryAuthConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerOutputReference",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelPrimaryContainerOutputReference",
 		reflect.TypeOf((*SagemakerModelPrimaryContainerOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -421,16 +424,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerModelPrimaryContainerOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelVpcConfig",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelVpcConfig",
 		reflect.TypeOf((*SagemakerModelVpcConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-aws.sagemakerModel.SagemakerModelVpcConfigOutputReference",
+		"@cdktn/provider-aws.sagemakerModel.SagemakerModelVpcConfigOutputReference",
 		reflect.TypeOf((*SagemakerModelVpcConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -461,7 +464,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_SagemakerModelVpcConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

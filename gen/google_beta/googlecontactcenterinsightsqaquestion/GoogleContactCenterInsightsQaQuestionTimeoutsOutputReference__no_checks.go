@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTimeoutsOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContactCenterInsightsQaQuestionTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleContactCenterInsightsQaQuestionTimeoutsOutputReference)
 	return nil
 }
 
-func validateNewGoogleContactCenterInsightsQaQuestionTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContactCenterInsightsQaQuestionTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

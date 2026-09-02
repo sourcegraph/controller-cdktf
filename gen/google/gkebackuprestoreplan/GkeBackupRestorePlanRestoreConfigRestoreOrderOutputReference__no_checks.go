@@ -40,7 +40,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference)
 	return nil
 }
 
-func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GkeBackupRestorePlanRestoreConfigRestoreOrderOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGkeBackupRestorePlanRestoreConfigRestoreOrderOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

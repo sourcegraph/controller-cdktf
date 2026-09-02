@@ -12,7 +12,7 @@ func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsList) vali
 	return nil
 }
 
-func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsList) vali
 	return nil
 }
 
-func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AlloydbInstancePscInstanceConfigPscInterfaceConfigsList) vali
 	return nil
 }
 
-func validateNewAlloydbInstancePscInstanceConfigPscInterfaceConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAlloydbInstancePscInstanceConfigPscInterfaceConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (b *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateGetParameters(inde
 	return nil
 }
 
-func (b *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (b *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_BiglakeIcebergCatalogReplicasList) validateSetWrapsSetParamet
 	return nil
 }
 
-func validateNewBiglakeIcebergCatalogReplicasListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewBiglakeIcebergCatalogReplicasListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

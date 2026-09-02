@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validateInterpolationForAttr
 	return nil
 }
 
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validatePutSecretsParameters
 }
 
 func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validatePutTimeoutsParameters(value *CloudbuildBitbucketServerConfigTimeouts) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudbuildBitbucketServerConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -124,7 +132,7 @@ func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudbuildBitbucketServerConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

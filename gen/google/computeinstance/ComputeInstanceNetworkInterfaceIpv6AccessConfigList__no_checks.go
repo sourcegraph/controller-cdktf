@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigList) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeInstanceNetworkInterfaceIpv6AccessConfigList) validate
 	return nil
 }
 
-func validateNewComputeInstanceNetworkInterfaceIpv6AccessConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeInstanceNetworkInterfaceIpv6AccessConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

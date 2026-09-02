@@ -12,7 +12,7 @@ func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateGetPa
 	return nil
 }
 
-func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GlobalacceleratorEndpointGroupPortOverrideList) validateSetWr
 	return nil
 }
 
-func validateNewGlobalacceleratorEndpointGroupPortOverrideListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGlobalacceleratorEndpointGroupPortOverrideListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

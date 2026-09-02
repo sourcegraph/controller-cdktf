@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/googledialogflowcxtestcase/internal"
 )
 
 type GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -34,9 +34,9 @@ type GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference interfac
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	UserInput() GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInputOutputReference
 	UserInputInput() *GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInput
 	VirtualAgentOutput() GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutputOutputReference
@@ -46,7 +46,7 @@ type GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference interfac
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -62,16 +62,16 @@ type GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference interfac
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutUserInput(value *GoogleDialogflowCxTestCaseTestCaseConversationTurnsUserInput)
 	PutVirtualAgentOutput(value *GoogleDialogflowCxTestCaseTestCaseConversationTurnsVirtualAgentOutput)
 	ResetUserInput()
 	ResetVirtualAgentOutput()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference interfac
 
 // The jsii proxy struct for GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference
 type jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference) ComplexObjectIndex() interface{} {
@@ -144,8 +144,8 @@ func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputRefe
 	return returns
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -195,7 +195,7 @@ func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputRefe
 }
 
 
-func NewGoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference {
+func NewGoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewGoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -204,7 +204,7 @@ func NewGoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference(terra
 	j := jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDialogflowCxTestCase.GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference",
+		"@cdktn/provider-google-beta.googleDialogflowCxTestCase.GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -212,11 +212,11 @@ func NewGoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference(terra
 	return &j
 }
 
-func NewGoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference_Override(g GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewGoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference_Override(g GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.googleDialogflowCxTestCase.GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference",
+		"@cdktn/provider-google-beta.googleDialogflowCxTestCase.GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		g,
 	)
@@ -266,7 +266,7 @@ func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputRefe
 	)
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -306,11 +306,11 @@ func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := g.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -434,8 +434,8 @@ func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
@@ -447,16 +447,16 @@ func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputRefe
 	return returns
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := g.validateInterpolationForAttributeParameters(property); err != nil {
+func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := g.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		g,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -501,8 +501,8 @@ func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputRefe
 	)
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := g.validateResolveParameters(_context); err != nil {
+func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := g.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -510,7 +510,7 @@ func (g *jsiiProxy_GoogleDialogflowCxTestCaseTestCaseConversationTurnsOutputRefe
 	_jsii_.Invoke(
 		g,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -40,7 +40,7 @@ func (e *jsiiProxy_EscalationPathPathOutputReference) validateGetStringMapAttrib
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EscalationPathPathOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (e *jsiiProxy_EscalationPathPathOutputReference) validatePutRepeatParameter
 	return nil
 }
 
-func (e *jsiiProxy_EscalationPathPathOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EscalationPathPathOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_EscalationPathPathOutputReference) validateSetTerraformAttrib
 	return nil
 }
 
-func (j *jsiiProxy_EscalationPathPathOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EscalationPathPathOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -92,7 +92,7 @@ func (j *jsiiProxy_EscalationPathPathOutputReference) validateSetTypeParameters(
 	return nil
 }
 
-func validateNewEscalationPathPathOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEscalationPathPathOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

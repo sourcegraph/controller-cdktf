@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVe
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVe
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVe
 	return nil
 }
 
-func validateNewDataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleCloudfunctions2FunctionServiceConfigSecretVolumesVersionsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfM
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfM
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfM
 	return nil
 }
 
-func validateNewGoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBackupDrBackupPlanBackupRulesStandardScheduleWeekDayOfMonthOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

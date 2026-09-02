@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutpu
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutpu
 	return nil
 }
 
-func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleCloudfunctions2FunctionBuildConfigSourceRepoSourceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

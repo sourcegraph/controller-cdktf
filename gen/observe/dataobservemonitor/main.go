@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitor",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitor",
 		reflect.TypeOf((*DataObserveMonitor)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -52,6 +52,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putRule", GoMethod: "PutRule"},
 			_jsii_.MemberMethod{JsiiMethod: "putStage", GoMethod: "PutStage"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetName", GoMethod: "ResetName"},
 			_jsii_.MemberMethod{JsiiMethod: "resetNotificationSpec", GoMethod: "ResetNotificationSpec"},
@@ -72,25 +73,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "workspace", GoGetter: "Workspace"},
 			_jsii_.MemberProperty{JsiiProperty: "workspaceInput", GoGetter: "WorkspaceInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitor{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorConfig",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorConfig",
 		reflect.TypeOf((*DataObserveMonitorConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorNotificationSpec",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorNotificationSpec",
 		reflect.TypeOf((*DataObserveMonitorNotificationSpec)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorNotificationSpecList",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorNotificationSpecList",
 		reflect.TypeOf((*DataObserveMonitorNotificationSpecList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -107,12 +109,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorNotificationSpecList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorNotificationSpecOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorNotificationSpecOutputReference",
 		reflect.TypeOf((*DataObserveMonitorNotificationSpecOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -144,20 +146,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorNotificationSpecOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRule",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRule",
 		reflect.TypeOf((*DataObserveMonitorRule)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleChange",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleChange",
 		reflect.TypeOf((*DataObserveMonitorRuleChange)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleChangeList",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleChangeList",
 		reflect.TypeOf((*DataObserveMonitorRuleChangeList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -174,12 +176,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleChangeList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleChangeOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleChangeOutputReference",
 		reflect.TypeOf((*DataObserveMonitorRuleChangeOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "aggregateFunction", GoGetter: "AggregateFunction"},
@@ -213,16 +215,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleChangeOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleCount",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleCount",
 		reflect.TypeOf((*DataObserveMonitorRuleCount)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleCountList",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleCountList",
 		reflect.TypeOf((*DataObserveMonitorRuleCountList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -239,12 +241,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleCountList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleCountOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleCountOutputReference",
 		reflect.TypeOf((*DataObserveMonitorRuleCountOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "compareFunction", GoGetter: "CompareFunction"},
@@ -274,16 +276,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleCountOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleFacet",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleFacet",
 		reflect.TypeOf((*DataObserveMonitorRuleFacet)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleFacetList",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleFacetList",
 		reflect.TypeOf((*DataObserveMonitorRuleFacetList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -300,12 +302,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleFacetList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleFacetOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleFacetOutputReference",
 		reflect.TypeOf((*DataObserveMonitorRuleFacetOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -337,16 +339,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleFacetOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleGroupByGroup",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleGroupByGroup",
 		reflect.TypeOf((*DataObserveMonitorRuleGroupByGroup)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleGroupByGroupList",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleGroupByGroupList",
 		reflect.TypeOf((*DataObserveMonitorRuleGroupByGroupList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -363,12 +365,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleGroupByGroupList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleGroupByGroupOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleGroupByGroupOutputReference",
 		reflect.TypeOf((*DataObserveMonitorRuleGroupByGroupOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "columns", GoGetter: "Columns"},
@@ -397,12 +399,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleGroupByGroupOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleList",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleList",
 		reflect.TypeOf((*DataObserveMonitorRuleList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -419,16 +421,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleLog",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleLog",
 		reflect.TypeOf((*DataObserveMonitorRuleLog)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleLogList",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleLogList",
 		reflect.TypeOf((*DataObserveMonitorRuleLogList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -445,12 +447,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleLogList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleLogOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleLogOutputReference",
 		reflect.TypeOf((*DataObserveMonitorRuleLogOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "compareFunction", GoGetter: "CompareFunction"},
@@ -491,12 +493,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleLogOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleOutputReference",
 		reflect.TypeOf((*DataObserveMonitorRuleOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "change", GoGetter: "Change"},
@@ -552,16 +554,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRulePromote",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRulePromote",
 		reflect.TypeOf((*DataObserveMonitorRulePromote)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRulePromoteList",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRulePromoteList",
 		reflect.TypeOf((*DataObserveMonitorRulePromoteList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -578,12 +580,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRulePromoteList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRulePromoteOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRulePromoteOutputReference",
 		reflect.TypeOf((*DataObserveMonitorRulePromoteOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -613,16 +615,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRulePromoteOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleThreshold",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleThreshold",
 		reflect.TypeOf((*DataObserveMonitorRuleThreshold)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleThresholdList",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleThresholdList",
 		reflect.TypeOf((*DataObserveMonitorRuleThresholdList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -639,12 +641,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleThresholdList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorRuleThresholdOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorRuleThresholdOutputReference",
 		reflect.TypeOf((*DataObserveMonitorRuleThresholdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "compareFunction", GoGetter: "CompareFunction"},
@@ -683,16 +685,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorRuleThresholdOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorStage",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorStage",
 		reflect.TypeOf((*DataObserveMonitorStage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorStageList",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorStageList",
 		reflect.TypeOf((*DataObserveMonitorStageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -709,12 +711,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorStageList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveMonitor.DataObserveMonitorStageOutputReference",
+		"@cdktn/provider-observe.dataObserveMonitor.DataObserveMonitorStageOutputReference",
 		reflect.TypeOf((*DataObserveMonitorStageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -745,7 +747,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveMonitorStageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

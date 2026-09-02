@@ -56,6 +56,10 @@ func (c *jsiiProxy_CloudfrontOriginRequestPolicy) validateInterpolationForAttrib
 	return nil
 }
 
+func (c *jsiiProxy_CloudfrontOriginRequestPolicy) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CloudfrontOriginRequestPolicy) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (c *jsiiProxy_CloudfrontOriginRequestPolicy) validatePutHeadersConfigParame
 }
 
 func (c *jsiiProxy_CloudfrontOriginRequestPolicy) validatePutQueryStringsConfigParameters(value *CloudfrontOriginRequestPolicyQueryStringsConfig) error {
+	return nil
+}
+
+func (c *jsiiProxy_CloudfrontOriginRequestPolicy) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_CloudfrontOriginRequestPolicy) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_CloudfrontOriginRequestPolicy) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CloudfrontOriginRequestPolicy) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGooglePubsubTopic) validateOverrideLogicalIdParameters(ne
 	return nil
 }
 
+func (d *jsiiProxy_DataGooglePubsubTopic) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGooglePubsubTopic_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -76,7 +80,7 @@ func (j *jsiiProxy_DataGooglePubsubTopic) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubTopic) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGooglePubsubTopic) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

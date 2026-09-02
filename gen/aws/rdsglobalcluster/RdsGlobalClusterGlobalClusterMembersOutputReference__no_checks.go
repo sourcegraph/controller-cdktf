@@ -40,11 +40,11 @@ func (r *jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference) validate
 	return nil
 }
 
-func (r *jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RdsGlobalClusterGlobalClusterMembersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewRdsGlobalClusterGlobalClusterMembersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewRdsGlobalClusterGlobalClusterMembersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

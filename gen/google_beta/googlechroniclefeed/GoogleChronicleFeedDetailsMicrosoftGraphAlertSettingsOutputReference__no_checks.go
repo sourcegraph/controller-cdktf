@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleChronicleFeedDetailsMicrosoftGraphAlertSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

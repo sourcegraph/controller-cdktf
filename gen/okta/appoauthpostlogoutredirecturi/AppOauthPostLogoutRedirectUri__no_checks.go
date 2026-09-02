@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppOauthPostLogoutRedirectUri) validateInterpolationForAttrib
 	return nil
 }
 
+func (a *jsiiProxy_AppOauthPostLogoutRedirectUri) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppOauthPostLogoutRedirectUri) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (a *jsiiProxy_AppOauthPostLogoutRedirectUri) validateMoveToIdParameters(id 
 }
 
 func (a *jsiiProxy_AppOauthPostLogoutRedirectUri) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppOauthPostLogoutRedirectUri) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -104,7 +112,7 @@ func (j *jsiiProxy_AppOauthPostLogoutRedirectUri) validateSetIdParameters(val *s
 	return nil
 }
 
-func (j *jsiiProxy_AppOauthPostLogoutRedirectUri) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppOauthPostLogoutRedirectUri) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (c *jsiiProxy_CesExampleMessagesChunksToolResponseToolsetToolOutputReferenc
 	return nil
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksToolResponseToolsetToolOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CesExampleMessagesChunksToolResponseToolsetToolOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CesExampleMessagesChunksToolResponseToolsetToolOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesExampleMessagesChunksToolResponseToolsetToolOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksToolResponseToolsetToolOutputReferenc
 	return nil
 }
 
-func (j *jsiiProxy_CesExampleMessagesChunksToolResponseToolsetToolOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesExampleMessagesChunksToolResponseToolsetToolOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_CesExampleMessagesChunksToolResponseToolsetToolOutputReferenc
 	return nil
 }
 
-func validateNewCesExampleMessagesChunksToolResponseToolsetToolOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCesExampleMessagesChunksToolResponseToolsetToolOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

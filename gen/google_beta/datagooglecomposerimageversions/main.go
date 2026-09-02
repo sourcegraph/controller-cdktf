@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
+		"@cdktn/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersions",
 		reflect.TypeOf((*DataGoogleComposerImageVersions)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -41,6 +41,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetProject", GoMethod: "ResetProject"},
@@ -54,23 +55,24 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComposerImageVersions{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig",
+		"@cdktn/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsConfig",
 		reflect.TypeOf((*DataGoogleComposerImageVersionsConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersions",
+		"@cdktn/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersions",
 		reflect.TypeOf((*DataGoogleComposerImageVersionsImageVersions)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsList",
+		"@cdktn/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsList",
 		reflect.TypeOf((*DataGoogleComposerImageVersionsImageVersionsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -86,12 +88,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComposerImageVersionsImageVersionsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleComposerImageVersions.DataGoogleComposerImageVersionsImageVersionsOutputReference",
 		reflect.TypeOf((*DataGoogleComposerImageVersionsImageVersionsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -120,7 +122,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataGoogleComposerImageVersionsImageVersionsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

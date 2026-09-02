@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleProjectIamAuditConfigAuditLogConfigOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectIamAuditConfigAuditLogConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleProjectIamAuditConfigAuditLogConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleProjectIamAuditConfigAuditLogConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleProjectIamAuditConfigAuditLogConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_GoogleProjectIamAuditConfigAuditLogConfigOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleProjectIamAuditConfigAuditLogConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleProjectIamAuditConfigAuditLogConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleProjectIamAuditConfigAuditLogConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewGoogleProjectIamAuditConfigAuditLogConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

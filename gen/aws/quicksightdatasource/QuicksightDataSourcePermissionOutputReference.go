@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/quicksightdatasource/internal"
 )
 
 type QuicksightDataSourcePermissionOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Actions() *[]*string
 	SetActions(val *[]*string)
 	ActionsInput() *[]*string
@@ -40,15 +40,15 @@ type QuicksightDataSourcePermissionOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type QuicksightDataSourcePermissionOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type QuicksightDataSourcePermissionOutputReference interface {
 
 // The jsii proxy struct for QuicksightDataSourcePermissionOutputReference
 type jsiiProxy_QuicksightDataSourcePermissionOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference) Actions() *[]*string {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference) TerraformResou
 }
 
 
-func NewQuicksightDataSourcePermissionOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QuicksightDataSourcePermissionOutputReference {
+func NewQuicksightDataSourcePermissionOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) QuicksightDataSourcePermissionOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewQuicksightDataSourcePermissionOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -202,7 +202,7 @@ func NewQuicksightDataSourcePermissionOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_QuicksightDataSourcePermissionOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference",
+		"@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewQuicksightDataSourcePermissionOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewQuicksightDataSourcePermissionOutputReference_Override(q QuicksightDataSourcePermissionOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewQuicksightDataSourcePermissionOutputReference_Override(q QuicksightDataSourcePermissionOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference",
+		"@cdktn/provider-aws.quicksightDataSource.QuicksightDataSourcePermissionOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		q,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_QuicksightDataSourcePermissionOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := q.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -454,8 +454,8 @@ func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) GetStringMapAt
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
@@ -467,24 +467,24 @@ func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) InterpolationA
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := q.validateInterpolationForAttributeParameters(property); err != nil {
+func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := q.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		q,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := q.validateResolveParameters(_context); err != nil {
+func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := q.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (q *jsiiProxy_QuicksightDataSourcePermissionOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		q,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

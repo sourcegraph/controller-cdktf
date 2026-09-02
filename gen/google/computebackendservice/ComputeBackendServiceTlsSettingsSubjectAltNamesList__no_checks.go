@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesList) validate
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesList) validate
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeBackendServiceTlsSettingsSubjectAltNamesList) validate
 	return nil
 }
 
-func validateNewComputeBackendServiceTlsSettingsSubjectAltNamesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeBackendServiceTlsSettingsSubjectAltNamesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

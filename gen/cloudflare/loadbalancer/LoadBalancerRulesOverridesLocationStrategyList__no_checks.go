@@ -12,7 +12,7 @@ func (l *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyList) validateGetPa
 	return nil
 }
 
-func (l *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyList) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_LoadBalancerRulesOverridesLocationStrategyList) validateSetWr
 	return nil
 }
 
-func validateNewLoadBalancerRulesOverridesLocationStrategyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewLoadBalancerRulesOverridesLocationStrategyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

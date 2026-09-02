@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/dataawsidentitystoreuser/internal"
 )
 
 type DataAwsIdentitystoreUserFilterOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AttributePath() *string
 	SetAttributePath(val *string)
 	AttributePathInput() *string
@@ -40,15 +40,15 @@ type DataAwsIdentitystoreUserFilterOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type DataAwsIdentitystoreUserFilterOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type DataAwsIdentitystoreUserFilterOutputReference interface {
 
 // The jsii proxy struct for DataAwsIdentitystoreUserFilterOutputReference
 type jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) AttributePath() *string {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) TerraformAttri
 	return returns
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) TerraformResou
 }
 
 
-func NewDataAwsIdentitystoreUserFilterOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) DataAwsIdentitystoreUserFilterOutputReference {
+func NewDataAwsIdentitystoreUserFilterOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) DataAwsIdentitystoreUserFilterOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataAwsIdentitystoreUserFilterOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewDataAwsIdentitystoreUserFilterOutputReference(terraformResource cdktf.II
 	j := jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
+		"@cdktn/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewDataAwsIdentitystoreUserFilterOutputReference(terraformResource cdktf.II
 	return &j
 }
 
-func NewDataAwsIdentitystoreUserFilterOutputReference_Override(d DataAwsIdentitystoreUserFilterOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewDataAwsIdentitystoreUserFilterOutputReference_Override(d DataAwsIdentitystoreUserFilterOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
+		"@cdktn/provider-aws.dataAwsIdentitystoreUser.DataAwsIdentitystoreUserFilterOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		d,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference)SetTerraformAtt
 	)
 }
 
-func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) GetAnyMapAttri
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -454,8 +454,8 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) GetStringMapAt
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -467,24 +467,24 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) InterpolationA
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (d *jsiiProxy_DataAwsIdentitystoreUserFilterOutputReference) Resolve(_conte
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

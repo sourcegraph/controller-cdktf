@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveQuery.DataObserveQuery",
+		"@cdktn/provider-observe.dataObserveQuery.DataObserveQuery",
 		reflect.TypeOf((*DataObserveQuery)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -49,6 +49,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putPoll", GoMethod: "PutPoll"},
 			_jsii_.MemberMethod{JsiiMethod: "putStage", GoMethod: "PutStage"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAssert", GoMethod: "ResetAssert"},
 			_jsii_.MemberMethod{JsiiMethod: "resetEnd", GoMethod: "ResetEnd"},
 			_jsii_.MemberMethod{JsiiMethod: "resetId", GoMethod: "ResetId"},
@@ -70,19 +71,20 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveQuery{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveQuery.DataObserveQueryAssert",
+		"@cdktn/provider-observe.dataObserveQuery.DataObserveQueryAssert",
 		reflect.TypeOf((*DataObserveQueryAssert)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveQuery.DataObserveQueryAssertOutputReference",
+		"@cdktn/provider-observe.dataObserveQuery.DataObserveQueryAssertOutputReference",
 		reflect.TypeOf((*DataObserveQueryAssertOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -114,20 +116,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveQueryAssertOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveQuery.DataObserveQueryConfig",
+		"@cdktn/provider-observe.dataObserveQuery.DataObserveQueryConfig",
 		reflect.TypeOf((*DataObserveQueryConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveQuery.DataObserveQueryPoll",
+		"@cdktn/provider-observe.dataObserveQuery.DataObserveQueryPoll",
 		reflect.TypeOf((*DataObserveQueryPoll)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveQuery.DataObserveQueryPollOutputReference",
+		"@cdktn/provider-observe.dataObserveQuery.DataObserveQueryPollOutputReference",
 		reflect.TypeOf((*DataObserveQueryPollOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -160,16 +162,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveQueryPollOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-observe.dataObserveQuery.DataObserveQueryStage",
+		"@cdktn/provider-observe.dataObserveQuery.DataObserveQueryStage",
 		reflect.TypeOf((*DataObserveQueryStage)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveQuery.DataObserveQueryStageList",
+		"@cdktn/provider-observe.dataObserveQuery.DataObserveQueryStageList",
 		reflect.TypeOf((*DataObserveQueryStageList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -186,12 +188,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveQueryStageList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-observe.dataObserveQuery.DataObserveQueryStageOutputReference",
+		"@cdktn/provider-observe.dataObserveQuery.DataObserveQueryStageOutputReference",
 		reflect.TypeOf((*DataObserveQueryStageOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "alias", GoGetter: "Alias"},
@@ -230,7 +232,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_DataObserveQueryStageOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

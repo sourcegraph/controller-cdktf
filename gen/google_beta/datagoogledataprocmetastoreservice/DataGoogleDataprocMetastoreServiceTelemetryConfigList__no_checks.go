@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceTelemetryConfigList) valida
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceTelemetryConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceTelemetryConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceTelemetryConfigList) valida
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceTelemetryConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceTelemetryConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceTelemetryConfigList) valida
 	return nil
 }
 
-func validateNewDataGoogleDataprocMetastoreServiceTelemetryConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleDataprocMetastoreServiceTelemetryConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

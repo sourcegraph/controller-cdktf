@@ -12,7 +12,7 @@ func (e *jsiiProxy_EdgecontainerClusterMaintenanceEventsList) validateGetParamet
 	return nil
 }
 
-func (e *jsiiProxy_EdgecontainerClusterMaintenanceEventsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EdgecontainerClusterMaintenanceEventsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_EdgecontainerClusterMaintenanceEventsList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_EdgecontainerClusterMaintenanceEventsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EdgecontainerClusterMaintenanceEventsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_EdgecontainerClusterMaintenanceEventsList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewEdgecontainerClusterMaintenanceEventsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewEdgecontainerClusterMaintenanceEventsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

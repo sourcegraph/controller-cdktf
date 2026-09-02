@@ -56,6 +56,10 @@ func (a *jsiiProxy_AccessContextManagerAccessLevel) validateInterpolationForAttr
 	return nil
 }
 
+func (a *jsiiProxy_AccessContextManagerAccessLevel) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AccessContextManagerAccessLevel) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (a *jsiiProxy_AccessContextManagerAccessLevel) validatePutCustomParameters(
 }
 
 func (a *jsiiProxy_AccessContextManagerAccessLevel) validatePutTimeoutsParameters(value *AccessContextManagerAccessLevelTimeouts) error {
+	return nil
+}
+
+func (a *jsiiProxy_AccessContextManagerAccessLevel) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_AccessContextManagerAccessLevel) validateSetIdParameters(val 
 	return nil
 }
 
-func (j *jsiiProxy_AccessContextManagerAccessLevel) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AccessContextManagerAccessLevel) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

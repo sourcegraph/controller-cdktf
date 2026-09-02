@@ -40,11 +40,11 @@ func (d *jsiiProxy_DevicePostureRuleInputOutputReference) validateGetStringMapAt
 	return nil
 }
 
-func (d *jsiiProxy_DevicePostureRuleInputOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DevicePostureRuleInputOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DevicePostureRuleInputOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -132,7 +132,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -148,7 +148,7 @@ func (j *jsiiProxy_DevicePostureRuleInputOutputReference) validateSetVersionOper
 	return nil
 }
 
-func validateNewDevicePostureRuleInputOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDevicePostureRuleInputOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

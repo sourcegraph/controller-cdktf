@@ -40,11 +40,11 @@ func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateGe
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ReportSystemHealthReviewThresholdsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewReportSystemHealthReviewThresholdsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewReportSystemHealthReviewThresholdsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

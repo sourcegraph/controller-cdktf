@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleCloudQuotasQuotaInfosQuotaInfosDimensionsInfosOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

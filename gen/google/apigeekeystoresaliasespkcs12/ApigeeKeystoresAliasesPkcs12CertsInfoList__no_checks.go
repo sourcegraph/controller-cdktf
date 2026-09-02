@@ -12,7 +12,7 @@ func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateGetParamet
 	return nil
 }
 
-func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateSetTerrafo
 	return nil
 }
 
-func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ApigeeKeystoresAliasesPkcs12CertsInfoList) validateSetWrapsSe
 	return nil
 }
 
-func validateNewApigeeKeystoresAliasesPkcs12CertsInfoListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewApigeeKeystoresAliasesPkcs12CertsInfoListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) valid
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) valid
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MskClusterLoggingInfoBrokerLogsFirehoseOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMskClusterLoggingInfoBrokerLogsFirehoseOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMskClusterLoggingInfoBrokerLogsFirehoseOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

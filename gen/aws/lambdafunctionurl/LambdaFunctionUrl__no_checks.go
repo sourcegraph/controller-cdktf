@@ -56,6 +56,10 @@ func (l *jsiiProxy_LambdaFunctionUrl) validateInterpolationForAttributeParameter
 	return nil
 }
 
+func (l *jsiiProxy_LambdaFunctionUrl) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (l *jsiiProxy_LambdaFunctionUrl) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (l *jsiiProxy_LambdaFunctionUrl) validatePutCorsParameters(value *LambdaFun
 }
 
 func (l *jsiiProxy_LambdaFunctionUrl) validatePutTimeoutsParameters(value *LambdaFunctionUrlTimeouts) error {
+	return nil
+}
+
+func (l *jsiiProxy_LambdaFunctionUrl) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_LambdaFunctionUrl) validateSetIdParameters(val *string) error
 	return nil
 }
 
-func (j *jsiiProxy_LambdaFunctionUrl) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_LambdaFunctionUrl) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (e *jsiiProxy_EcsServiceOrderedPlacementStrategyOutputReference) validateGe
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceOrderedPlacementStrategyOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_EcsServiceOrderedPlacementStrategyOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_EcsServiceOrderedPlacementStrategyOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_EcsServiceOrderedPlacementStrategyOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_EcsServiceOrderedPlacementStrategyOutputReference) validateSe
 	return nil
 }
 
-func (j *jsiiProxy_EcsServiceOrderedPlacementStrategyOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_EcsServiceOrderedPlacementStrategyOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_EcsServiceOrderedPlacementStrategyOutputReference) validateSe
 	return nil
 }
 
-func validateNewEcsServiceOrderedPlacementStrategyOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewEcsServiceOrderedPlacementStrategyOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

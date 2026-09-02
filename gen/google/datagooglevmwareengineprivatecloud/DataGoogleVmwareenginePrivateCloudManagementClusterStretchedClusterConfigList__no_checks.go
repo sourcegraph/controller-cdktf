@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterStretchedC
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterStretchedC
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleVmwareenginePrivateCloudManagementClusterStretchedC
 	return nil
 }
 
-func validateNewDataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleVmwareenginePrivateCloudManagementClusterStretchedClusterConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

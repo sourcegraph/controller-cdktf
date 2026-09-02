@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataTfeOrganizationMembersMembersList) validateGetParameters(
 	return nil
 }
 
-func (d *jsiiProxy_DataTfeOrganizationMembersMembersList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataTfeOrganizationMembersMembersList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataTfeOrganizationMembersMembersList) validateSetTerraformAt
 	return nil
 }
 
-func (j *jsiiProxy_DataTfeOrganizationMembersMembersList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataTfeOrganizationMembersMembersList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataTfeOrganizationMembersMembersList) validateSetWrapsSetPar
 	return nil
 }
 
-func validateNewDataTfeOrganizationMembersMembersListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataTfeOrganizationMembersMembersListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigPredicateOutputReferen
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigPredicateOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigPredicateOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigPredicateOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigPredicateOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigPredicateOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigPredicateOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigPredicateOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_GoogleSccFolderCustomModuleCustomConfigPredicateOutputReferen
 	return nil
 }
 
-func validateNewGoogleSccFolderCustomModuleCustomConfigPredicateOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSccFolderCustomModuleCustomConfigPredicateOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/alloydbcluster/internal"
 )
 
 type AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference interfa
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference interfa
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetKmsKeyName()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference interfa
 
 // The jsii proxy struct for AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference
 type jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputRef
 	return returns
 }
 
-func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputRef
 }
 
 
-func NewAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference {
+func NewAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference(terr
 	j := jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.alloydbCluster.AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference",
+		"@cdktn/provider-google.alloydbCluster.AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference(terr
 	return &j
 }
 
-func NewAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference_Override(a AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewAlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference_Override(a AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.alloydbCluster.AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference",
+		"@cdktn/provider-google.alloydbCluster.AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputRef
 	)
 }
 
-func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputRef
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -421,8 +421,8 @@ func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputRef
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -434,16 +434,16 @@ func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputRef
 	return returns
 }
 
-func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputRef
 	)
 }
 
-func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (a *jsiiProxy_AlloydbClusterContinuousBackupConfigEncryptionConfigOutputRef
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

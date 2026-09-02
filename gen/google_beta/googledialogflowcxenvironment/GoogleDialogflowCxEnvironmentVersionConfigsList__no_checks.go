@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDialogflowCxEnvironmentVersionConfigsList) validateGetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxEnvironmentVersionConfigsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxEnvironmentVersionConfigsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleDialogflowCxEnvironmentVersionConfigsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxEnvironmentVersionConfigsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxEnvironmentVersionConfigsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleDialogflowCxEnvironmentVersionConfigsList) validateSetW
 	return nil
 }
 
-func validateNewGoogleDialogflowCxEnvironmentVersionConfigsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowCxEnvironmentVersionConfigsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

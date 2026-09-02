@@ -40,11 +40,11 @@ func (l *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateGetString
 	return nil
 }
 
-func (l *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (l *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateSetTerraf
 	return nil
 }
 
-func (j *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LbTargetGroupTargetFailoverOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLbTargetGroupTargetFailoverOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewLbTargetGroupTargetFailoverOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

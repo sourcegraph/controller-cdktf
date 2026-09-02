@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleContainerClusterManagedMachineLearningDiagnosticsConfig
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_GoogleContainerClusterManagedMachineLearningDiagnosticsConfig
 	return nil
 }
 
-func (j *jsiiProxy_GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleContainerClusterManagedMachineLearningDiagnosticsConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

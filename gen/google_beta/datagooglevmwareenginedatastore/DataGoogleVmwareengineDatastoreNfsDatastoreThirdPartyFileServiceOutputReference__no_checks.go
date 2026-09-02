@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServ
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServ
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleVmwareengineDatastoreNfsDatastoreThirdPartyFileServiceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

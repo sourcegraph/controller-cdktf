@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/reportsystemhealthreview/internal"
 )
 
 type ReportSystemHealthReviewTimeFrameSnapshotOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -43,15 +43,15 @@ type ReportSystemHealthReviewTimeFrameSnapshotOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type ReportSystemHealthReviewTimeFrameSnapshotOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDateTime()
 	ResetRrule()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ReportSystemHealthReviewTimeFrameSnapshotOutputReference interface {
 
 // The jsii proxy struct for ReportSystemHealthReviewTimeFrameSnapshotOutputReference
 type jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) ComplexObjectIndex() interface{} {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) Ter
 }
 
 
-func NewReportSystemHealthReviewTimeFrameSnapshotOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ReportSystemHealthReviewTimeFrameSnapshotOutputReference {
+func NewReportSystemHealthReviewTimeFrameSnapshotOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ReportSystemHealthReviewTimeFrameSnapshotOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewReportSystemHealthReviewTimeFrameSnapshotOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewReportSystemHealthReviewTimeFrameSnapshotOutputReference(terraformResour
 	j := jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrameSnapshotOutputReference",
+		"@cdktn/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrameSnapshotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewReportSystemHealthReviewTimeFrameSnapshotOutputReference(terraformResour
 	return &j
 }
 
-func NewReportSystemHealthReviewTimeFrameSnapshotOutputReference_Override(r ReportSystemHealthReviewTimeFrameSnapshotOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewReportSystemHealthReviewTimeFrameSnapshotOutputReference_Override(r ReportSystemHealthReviewTimeFrameSnapshotOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrameSnapshotOutputReference",
+		"@cdktn/provider-nobl9.reportSystemHealthReview.ReportSystemHealthReviewTimeFrameSnapshotOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		r,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) Get
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := r.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -490,8 +490,8 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) Get
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
@@ -503,16 +503,16 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) Int
 	return returns
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := r.validateInterpolationForAttributeParameters(property); err != nil {
+func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := r.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		r,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) Res
 	)
 }
 
-func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := r.validateResolveParameters(_context); err != nil {
+func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := r.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (r *jsiiProxy_ReportSystemHealthReviewTimeFrameSnapshotOutputReference) Res
 	_jsii_.Invoke(
 		r,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/kubernetes/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/kubernetes/ingressv1/internal"
 )
 
 type IngressV1SpecRuleHttpPathBackendResourceOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	ApiGroup() *string
 	SetApiGroup(val *string)
 	ApiGroupInput() *string
@@ -43,15 +43,15 @@ type IngressV1SpecRuleHttpPathBackendResourceOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,12 +67,12 @@ type IngressV1SpecRuleHttpPathBackendResourceOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -82,7 +82,7 @@ type IngressV1SpecRuleHttpPathBackendResourceOutputReference interface {
 
 // The jsii proxy struct for IngressV1SpecRuleHttpPathBackendResourceOutputReference
 type jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) ApiGroup() *string {
@@ -205,8 +205,8 @@ func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) Terr
 	return returns
 }
 
-func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -216,7 +216,7 @@ func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) Terr
 }
 
 
-func NewIngressV1SpecRuleHttpPathBackendResourceOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) IngressV1SpecRuleHttpPathBackendResourceOutputReference {
+func NewIngressV1SpecRuleHttpPathBackendResourceOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) IngressV1SpecRuleHttpPathBackendResourceOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewIngressV1SpecRuleHttpPathBackendResourceOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -225,7 +225,7 @@ func NewIngressV1SpecRuleHttpPathBackendResourceOutputReference(terraformResourc
 	j := jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecRuleHttpPathBackendResourceOutputReference",
+		"@cdktn/provider-kubernetes.ingressV1.IngressV1SpecRuleHttpPathBackendResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -233,11 +233,11 @@ func NewIngressV1SpecRuleHttpPathBackendResourceOutputReference(terraformResourc
 	return &j
 }
 
-func NewIngressV1SpecRuleHttpPathBackendResourceOutputReference_Override(i IngressV1SpecRuleHttpPathBackendResourceOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewIngressV1SpecRuleHttpPathBackendResourceOutputReference_Override(i IngressV1SpecRuleHttpPathBackendResourceOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-kubernetes.ingressV1.IngressV1SpecRuleHttpPathBackendResourceOutputReference",
+		"@cdktn/provider-kubernetes.ingressV1.IngressV1SpecRuleHttpPathBackendResourceOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		i,
 	)
@@ -320,7 +320,7 @@ func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference)SetTe
 	)
 }
 
-func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -360,11 +360,11 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) GetA
 	return returns
 }
 
-func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := i.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -488,8 +488,8 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) GetS
 	return returns
 }
 
-func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
@@ -501,24 +501,24 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) Inte
 	return returns
 }
 
-func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := i.validateInterpolationForAttributeParameters(property); err != nil {
+func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := i.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		i,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := i.validateResolveParameters(_context); err != nil {
+func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := i.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -526,7 +526,7 @@ func (i *jsiiProxy_IngressV1SpecRuleHttpPathBackendResourceOutputReference) Reso
 	_jsii_.Invoke(
 		i,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

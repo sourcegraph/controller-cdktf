@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/transcoderjob/internal"
 )
 
 type TranscoderJobConfigElementaryStreamsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AudioStream() TranscoderJobConfigElementaryStreamsAudioStreamOutputReference
 	AudioStreamInput() *TranscoderJobConfigElementaryStreamsAudioStream
 	// the index of the complex object in a list.
@@ -39,9 +39,9 @@ type TranscoderJobConfigElementaryStreamsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	VideoStream() TranscoderJobConfigElementaryStreamsVideoStreamOutputReference
 	VideoStreamInput() *TranscoderJobConfigElementaryStreamsVideoStream
 	// Experimental.
@@ -49,7 +49,7 @@ type TranscoderJobConfigElementaryStreamsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -65,9 +65,9 @@ type TranscoderJobConfigElementaryStreamsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutAudioStream(value *TranscoderJobConfigElementaryStreamsAudioStream)
 	PutVideoStream(value *TranscoderJobConfigElementaryStreamsVideoStream)
 	ResetAudioStream()
@@ -75,7 +75,7 @@ type TranscoderJobConfigElementaryStreamsOutputReference interface {
 	ResetVideoStream()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type TranscoderJobConfigElementaryStreamsOutputReference interface {
 
 // The jsii proxy struct for TranscoderJobConfigElementaryStreamsOutputReference
 type jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) AudioStream() TranscoderJobConfigElementaryStreamsAudioStreamOutputReference {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) VideoStr
 }
 
 
-func NewTranscoderJobConfigElementaryStreamsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TranscoderJobConfigElementaryStreamsOutputReference {
+func NewTranscoderJobConfigElementaryStreamsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) TranscoderJobConfigElementaryStreamsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewTranscoderJobConfigElementaryStreamsOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -228,7 +228,7 @@ func NewTranscoderJobConfigElementaryStreamsOutputReference(terraformResource cd
 	j := jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference",
+		"@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewTranscoderJobConfigElementaryStreamsOutputReference(terraformResource cd
 	return &j
 }
 
-func NewTranscoderJobConfigElementaryStreamsOutputReference_Override(t TranscoderJobConfigElementaryStreamsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewTranscoderJobConfigElementaryStreamsOutputReference_Override(t TranscoderJobConfigElementaryStreamsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference",
+		"@cdktn/provider-google.transcoderJob.TranscoderJobConfigElementaryStreamsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		t,
 	)
@@ -301,7 +301,7 @@ func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -341,11 +341,11 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) GetAnyMa
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := t.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -469,8 +469,8 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) GetStrin
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
@@ -482,16 +482,16 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) Interpol
 	return returns
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := t.validateInterpolationForAttributeParameters(property); err != nil {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := t.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		t,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) ResetVid
 	)
 }
 
-func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := t.validateResolveParameters(_context); err != nil {
+func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := t.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (t *jsiiProxy_TranscoderJobConfigElementaryStreamsOutputReference) Resolve(
 	_jsii_.Invoke(
 		t,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

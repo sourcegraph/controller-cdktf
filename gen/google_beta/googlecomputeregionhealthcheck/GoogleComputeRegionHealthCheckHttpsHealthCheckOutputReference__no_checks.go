@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRegionHealthCheckHttpsHealthCheckOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleComputeRegionHealthCheckHttpsHealthCheckOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleComputeRegionHealthCheckHttpsHealthCheckOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

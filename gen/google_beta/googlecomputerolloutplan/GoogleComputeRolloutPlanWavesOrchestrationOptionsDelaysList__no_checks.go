@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeRolloutPlanWavesOrchestrationOptionsDelaysList) 
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeRolloutPlanWavesOrchestrationOptionsDelaysList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeRolloutPlanWavesOrchestrationOptionsDelaysList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleComputeRolloutPlanWavesOrchestrationOptionsDelaysList) 
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeRolloutPlanWavesOrchestrationOptionsDelaysList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeRolloutPlanWavesOrchestrationOptionsDelaysList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleComputeRolloutPlanWavesOrchestrationOptionsDelaysList) 
 	return nil
 }
 
-func validateNewGoogleComputeRolloutPlanWavesOrchestrationOptionsDelaysListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeRolloutPlanWavesOrchestrationOptionsDelaysListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (c *jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationA
 	return nil
 }
 
-func (c *jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationA
 	return nil
 }
 
-func (j *jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_CesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationA
 	return nil
 }
 
-func validateNewCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewCesAppVersionSnapshotToolsetsOpenApiToolsetApiAuthenticationApiKeyConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

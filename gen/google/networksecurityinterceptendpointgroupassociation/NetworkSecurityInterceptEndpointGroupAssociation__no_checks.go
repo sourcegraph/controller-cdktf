@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociation) validateInt
 	return nil
 }
 
+func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociation) validateOve
 }
 
 func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociation) validatePutTimeoutsParameters(value *NetworkSecurityInterceptEndpointGroupAssociationTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociation) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkSecurityInterceptEndpointGroupAssociation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

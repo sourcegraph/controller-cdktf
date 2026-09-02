@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleForwardS
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleForwardS
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -88,7 +88,7 @@ func (j *jsiiProxy_GoogleDatabaseMigrationServiceConnectionProfileOracleForwardS
 	return nil
 }
 
-func validateNewGoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDatabaseMigrationServiceConnectionProfileOracleForwardSshConnectivityOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

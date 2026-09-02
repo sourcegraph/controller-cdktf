@@ -60,6 +60,10 @@ func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validatePutRuleParameter
 	return nil
 }
 
+func (d *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataAwsRoute53TrafficPolicyDocument_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -84,7 +88,7 @@ func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validateSetIdParameters(
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataAwsRoute53TrafficPolicyDocument) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationH
 	return nil
 }
 
-func (g *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationH
 	return nil
 }
 
-func (j *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_GoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationH
 	return nil
 }
 
-func validateNewGoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleChronicleFeedDetailsDummyLogTypeSettingsAuthenticationHeaderKeyValuesListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

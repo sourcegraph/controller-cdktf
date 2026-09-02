@@ -5,18 +5,18 @@ import (
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/nobl9/jsii"
 
 	"github.com/aws/constructs-go/constructs/v10"
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/nobl9/provider/internal"
 )
 
 // Represents a {@link https://registry.terraform.io/providers/nobl9/nobl9/0.37.0/docs nobl9}.
 type Nobl9Provider interface {
-	cdktf.TerraformProvider
+	cdktn.TerraformProvider
 	Alias() *string
 	SetAlias(val *string)
 	AliasInput() *string
 	// Experimental.
-	CdktfStack() cdktf.TerraformStack
+	CdktfStack() cdktn.TerraformStack
 	ClientId() *string
 	SetClientId(val *string)
 	ClientIdInput() *string
@@ -51,7 +51,7 @@ type Nobl9Provider interface {
 	// Experimental.
 	RawOverrides() interface{}
 	// Experimental.
-	TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata
+	TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata
 	// Experimental.
 	TerraformProviderSource() *string
 	// Experimental.
@@ -61,6 +61,19 @@ type Nobl9Provider interface {
 	// Overrides the auto-generated logical ID with a specific ID.
 	// Experimental.
 	OverrideLogicalId(newLogicalId *string)
+	// Registers a synth-time validation that the project's declared targetVersions admit the given provider-protocol feature family.
+	//
+	// Called by generated provider bindings when a versioned feature is
+	// structurally in use - the element's existence in the construct tree
+	// already implies the feature is used, e.g. constructing a
+	// `TerraformEphemeralResource` at all - so, unlike
+	// `_registerResolveDiscoveredProviderFeatureUsage`, this registration is
+	// never deactivated by `_resetResolveDiscoveredProviderFeatureUsage`. Not
+	// intended to be called directly by user code. Lives on `TerraformElement`
+	// (rather than `TerraformResource`) so it covers any element subclass
+	// that needs it.
+	// Experimental.
+	RegisterProviderFeatureUsage(feature cdktn.ProviderFeature)
 	ResetAlias()
 	ResetClientId()
 	ResetClientSecret()
@@ -83,11 +96,20 @@ type Nobl9Provider interface {
 	// Adds this resource to the terraform JSON output.
 	// Experimental.
 	ToTerraform() interface{}
+	// Applies one or more mixins to this construct.
+	//
+	// Mixins are applied in order. The list of constructs is captured at the
+	// start of the call, so constructs added by a mixin will not be visited.
+	// Use multiple `with()` calls if subsequent mixins should apply to added
+	// constructs.
+	//
+	// Returns: This construct for chaining.
+	With(mixins ...constructs.IMixin) constructs.IConstruct
 }
 
 // The jsii proxy struct for Nobl9Provider
 type jsiiProxy_Nobl9Provider struct {
-	internal.Type__cdktfTerraformProvider
+	internal.Type__cdktnTerraformProvider
 }
 
 func (j *jsiiProxy_Nobl9Provider) Alias() *string {
@@ -110,8 +132,8 @@ func (j *jsiiProxy_Nobl9Provider) AliasInput() *string {
 	return returns
 }
 
-func (j *jsiiProxy_Nobl9Provider) CdktfStack() cdktf.TerraformStack {
-	var returns cdktf.TerraformStack
+func (j *jsiiProxy_Nobl9Provider) CdktfStack() cdktn.TerraformStack {
+	var returns cdktn.TerraformStack
 	_jsii_.Get(
 		j,
 		"cdktfStack",
@@ -320,8 +342,8 @@ func (j *jsiiProxy_Nobl9Provider) RawOverrides() interface{} {
 	return returns
 }
 
-func (j *jsiiProxy_Nobl9Provider) TerraformGeneratorMetadata() *cdktf.TerraformProviderGeneratorMetadata {
-	var returns *cdktf.TerraformProviderGeneratorMetadata
+func (j *jsiiProxy_Nobl9Provider) TerraformGeneratorMetadata() *cdktn.TerraformProviderGeneratorMetadata {
+	var returns *cdktn.TerraformProviderGeneratorMetadata
 	_jsii_.Get(
 		j,
 		"terraformGeneratorMetadata",
@@ -361,7 +383,7 @@ func NewNobl9Provider(scope constructs.Construct, id *string, config *Nobl9Provi
 	j := jsiiProxy_Nobl9Provider{}
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.provider.Nobl9Provider",
+		"@cdktn/provider-nobl9.provider.Nobl9Provider",
 		[]interface{}{scope, id, config},
 		&j,
 	)
@@ -374,7 +396,7 @@ func NewNobl9Provider_Override(n Nobl9Provider, scope constructs.Construct, id *
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-nobl9.provider.Nobl9Provider",
+		"@cdktn/provider-nobl9.provider.Nobl9Provider",
 		[]interface{}{scope, id, config},
 		n,
 	)
@@ -444,17 +466,17 @@ func (j *jsiiProxy_Nobl9Provider)SetProject(val *string) {
 	)
 }
 
-// Generates CDKTF code for importing a Nobl9Provider resource upon running "cdktf plan <stack-name>".
-func Nobl9Provider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktf.TerraformProvider) cdktf.ImportableResource {
+// Generates CDKTN code for importing a Nobl9Provider resource upon running "cdktn plan <stack-name>".
+func Nobl9Provider_GenerateConfigForImport(scope constructs.Construct, importToId *string, importFromId *string, provider cdktn.TerraformProvider) cdktn.ImportableResource {
 	_init_.Initialize()
 
 	if err := validateNobl9Provider_GenerateConfigForImportParameters(scope, importToId, importFromId); err != nil {
 		panic(err)
 	}
-	var returns cdktf.ImportableResource
+	var returns cdktn.ImportableResource
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-nobl9.provider.Nobl9Provider",
+		"@cdktn/provider-nobl9.provider.Nobl9Provider",
 		"generateConfigForImport",
 		[]interface{}{scope, importToId, importFromId, provider},
 		&returns,
@@ -489,7 +511,7 @@ func Nobl9Provider_IsConstruct(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-nobl9.provider.Nobl9Provider",
+		"@cdktn/provider-nobl9.provider.Nobl9Provider",
 		"isConstruct",
 		[]interface{}{x},
 		&returns,
@@ -508,7 +530,7 @@ func Nobl9Provider_IsTerraformElement(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-nobl9.provider.Nobl9Provider",
+		"@cdktn/provider-nobl9.provider.Nobl9Provider",
 		"isTerraformElement",
 		[]interface{}{x},
 		&returns,
@@ -527,7 +549,7 @@ func Nobl9Provider_IsTerraformProvider(x interface{}) *bool {
 	var returns *bool
 
 	_jsii_.StaticInvoke(
-		"@cdktf/provider-nobl9.provider.Nobl9Provider",
+		"@cdktn/provider-nobl9.provider.Nobl9Provider",
 		"isTerraformProvider",
 		[]interface{}{x},
 		&returns,
@@ -540,7 +562,7 @@ func Nobl9Provider_TfResourceType() *string {
 	_init_.Initialize()
 	var returns *string
 	_jsii_.StaticGet(
-		"@cdktf/provider-nobl9.provider.Nobl9Provider",
+		"@cdktn/provider-nobl9.provider.Nobl9Provider",
 		"tfResourceType",
 		&returns,
 	)
@@ -566,6 +588,17 @@ func (n *jsiiProxy_Nobl9Provider) OverrideLogicalId(newLogicalId *string) {
 		n,
 		"overrideLogicalId",
 		[]interface{}{newLogicalId},
+	)
+}
+
+func (n *jsiiProxy_Nobl9Provider) RegisterProviderFeatureUsage(feature cdktn.ProviderFeature) {
+	if err := n.validateRegisterProviderFeatureUsageParameters(feature); err != nil {
+		panic(err)
+	}
+	_jsii_.InvokeVoid(
+		n,
+		"registerProviderFeatureUsage",
+		[]interface{}{feature},
 	)
 }
 
@@ -713,6 +746,24 @@ func (n *jsiiProxy_Nobl9Provider) ToTerraform() interface{} {
 		n,
 		"toTerraform",
 		nil, // no parameters
+		&returns,
+	)
+
+	return returns
+}
+
+func (n *jsiiProxy_Nobl9Provider) With(mixins ...constructs.IMixin) constructs.IConstruct {
+	args := []interface{}{}
+	for _, a := range mixins {
+		args = append(args, a)
+	}
+
+	var returns constructs.IConstruct
+
+	_jsii_.Invoke(
+		n,
+		"with",
+		args,
 		&returns,
 	)
 

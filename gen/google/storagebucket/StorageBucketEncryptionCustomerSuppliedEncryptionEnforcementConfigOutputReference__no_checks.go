@@ -40,11 +40,11 @@ func (s *jsiiProxy_StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementC
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (s *jsiiProxy_StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (s *jsiiProxy_StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (s *jsiiProxy_StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementC
 	return nil
 }
 
-func (j *jsiiProxy_StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_StorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewStorageBucketEncryptionCustomerSuppliedEncryptionEnforcementConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

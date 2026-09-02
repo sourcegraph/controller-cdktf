@@ -40,11 +40,11 @@ func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPosta
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -92,11 +92,11 @@ func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPosta
 	return nil
 }
 
-func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewClouddomainsRegistrationContactSettingsRegistrantContactPostalAddressOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumnLi
 	return nil
 }
 
-func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumnList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumnList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumnLi
 	return nil
 }
 
-func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumnList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumnList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_DataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumnLi
 	return nil
 }
 
-func validateNewDataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumnListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataObserveMonitorV2RulesCountCompareGroupsColumnLinkColumnListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

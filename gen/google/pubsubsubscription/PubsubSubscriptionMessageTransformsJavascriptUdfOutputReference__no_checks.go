@@ -40,11 +40,11 @@ func (p *jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReferen
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReferen
 	return nil
 }
 
-func (j *jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PubsubSubscriptionMessageTransformsJavascriptUdfOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPubsubSubscriptionMessageTransformsJavascriptUdfOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPubsubSubscriptionMessageTransformsJavascriptUdfOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

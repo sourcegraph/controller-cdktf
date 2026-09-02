@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivation) validateInte
 	return nil
 }
 
+func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivation) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivation) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivation) validateOver
 }
 
 func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivation) validatePutTimeoutsParameters(value *NetworkServicesMulticastGroupProducerActivationTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetworkServicesMulticastGroupProducerActivation) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -112,7 +120,7 @@ func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivation) validateSetL
 	return nil
 }
 
-func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivation) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetworkServicesMulticastGroupProducerActivation) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

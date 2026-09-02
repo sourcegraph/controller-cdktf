@@ -12,7 +12,7 @@ func (p *jsiiProxy_PodV1SpecContainerPortList) validateGetParameters(index *floa
 	return nil
 }
 
-func (p *jsiiProxy_PodV1SpecContainerPortList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PodV1SpecContainerPortList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_PodV1SpecContainerPortList) validateSetTerraformAttributePara
 	return nil
 }
 
-func (j *jsiiProxy_PodV1SpecContainerPortList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PodV1SpecContainerPortList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_PodV1SpecContainerPortList) validateSetWrapsSetParameters(val
 	return nil
 }
 
-func validateNewPodV1SpecContainerPortListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewPodV1SpecContainerPortListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

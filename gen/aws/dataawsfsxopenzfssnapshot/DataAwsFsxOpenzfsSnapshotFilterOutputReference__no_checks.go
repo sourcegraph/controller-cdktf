@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateGetSt
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateSetTe
 	return nil
 }
 
-func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_DataAwsFsxOpenzfsSnapshotFilterOutputReference) validateSetVa
 	return nil
 }
 
-func validateNewDataAwsFsxOpenzfsSnapshotFilterOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataAwsFsxOpenzfsSnapshotFilterOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

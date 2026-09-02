@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
+		"@cdktn/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOption",
 		reflect.TypeOf((*DataIncidentCustomFieldOption)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addOverride", GoMethod: "AddOverride"},
@@ -37,6 +37,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "overrideLogicalId", GoMethod: "OverrideLogicalId"},
 			_jsii_.MemberProperty{JsiiProperty: "provider", GoGetter: "Provider"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetOverrideLogicalId", GoMethod: "ResetOverrideLogicalId"},
 			_jsii_.MemberMethod{JsiiMethod: "resetSortKey", GoMethod: "ResetSortKey"},
 			_jsii_.MemberProperty{JsiiProperty: "sortKey", GoGetter: "SortKey"},
@@ -52,15 +53,16 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "value", GoGetter: "Value"},
 			_jsii_.MemberProperty{JsiiProperty: "valueInput", GoGetter: "ValueInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_DataIncidentCustomFieldOption{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformDataSource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformDataSource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOptionConfig",
+		"@cdktn/provider-incident.dataIncidentCustomFieldOption.DataIncidentCustomFieldOptionConfig",
 		reflect.TypeOf((*DataIncidentCustomFieldOptionConfig)(nil)).Elem(),
 	)
 }

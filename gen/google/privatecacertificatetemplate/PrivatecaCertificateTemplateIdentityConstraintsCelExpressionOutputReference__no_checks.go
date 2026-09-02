@@ -40,11 +40,11 @@ func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsCelExpressionO
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsCelExpressionO
 	return nil
 }
 
-func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_PrivatecaCertificateTemplateIdentityConstraintsCelExpressionO
 	return nil
 }
 
-func validateNewPrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPrivatecaCertificateTemplateIdentityConstraintsCelExpressionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (g *jsiiProxy_GoogleDialogflowConversationProfileHumanAgentAssistantConfigO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowConversationProfileHumanAgentAssistantConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleDialogflowConversationProfileHumanAgentAssistantConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (g *jsiiProxy_GoogleDialogflowConversationProfileHumanAgentAssistantConfigO
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowConversationProfileHumanAgentAssistantConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowConversationProfileHumanAgentAssistantConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleDialogflowConversationProfileHumanAgentAssistantConfigO
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowConversationProfileHumanAgentAssistantConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowConversationProfileHumanAgentAssistantConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleDialogflowConversationProfileHumanAgentAssistantConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleDialogflowConversationProfileHumanAgentAssistantConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

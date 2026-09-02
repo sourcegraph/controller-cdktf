@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleApiGatewayGatewayIamBindingConditionOutputReference) va
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayGatewayIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleApiGatewayGatewayIamBindingConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleApiGatewayGatewayIamBindingConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleApiGatewayGatewayIamBindingConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleApiGatewayGatewayIamBindingConditionOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_GoogleApiGatewayGatewayIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleApiGatewayGatewayIamBindingConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleApiGatewayGatewayIamBindingConditionOutputReference) va
 	return nil
 }
 
-func validateNewGoogleApiGatewayGatewayIamBindingConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleApiGatewayGatewayIamBindingConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (e *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateGet
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (e *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (e *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (e *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -84,7 +84,7 @@ func (j *jsiiProxy_ElasticsearchDomainCognitoOptionsOutputReference) validateSet
 	return nil
 }
 
-func validateNewElasticsearchDomainCognitoOptionsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewElasticsearchDomainCognitoOptionsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutpu
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,11 +64,11 @@ func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutpu
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
+func validateNewDataGoogleDataprocMetastoreServiceNetworkConfigConsumersOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) error {
 	return nil
 }
 

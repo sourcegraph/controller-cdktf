@@ -56,6 +56,10 @@ func (a *jsiiProxy_AppstreamDirectoryConfig) validateInterpolationForAttributePa
 	return nil
 }
 
+func (a *jsiiProxy_AppstreamDirectoryConfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (a *jsiiProxy_AppstreamDirectoryConfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (a *jsiiProxy_AppstreamDirectoryConfig) validateOverrideLogicalIdParameters
 }
 
 func (a *jsiiProxy_AppstreamDirectoryConfig) validatePutServiceAccountCredentialsParameters(value *AppstreamDirectoryConfigServiceAccountCredentials) error {
+	return nil
+}
+
+func (a *jsiiProxy_AppstreamDirectoryConfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_AppstreamDirectoryConfig) validateSetIdParameters(val *string
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamDirectoryConfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_AppstreamDirectoryConfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

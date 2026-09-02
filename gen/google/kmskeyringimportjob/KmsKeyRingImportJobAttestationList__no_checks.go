@@ -12,7 +12,7 @@ func (k *jsiiProxy_KmsKeyRingImportJobAttestationList) validateGetParameters(ind
 	return nil
 }
 
-func (k *jsiiProxy_KmsKeyRingImportJobAttestationList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (k *jsiiProxy_KmsKeyRingImportJobAttestationList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_KmsKeyRingImportJobAttestationList) validateSetTerraformAttri
 	return nil
 }
 
-func (j *jsiiProxy_KmsKeyRingImportJobAttestationList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_KmsKeyRingImportJobAttestationList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_KmsKeyRingImportJobAttestationList) validateSetWrapsSetParame
 	return nil
 }
 
-func validateNewKmsKeyRingImportJobAttestationListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewKmsKeyRingImportJobAttestationListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

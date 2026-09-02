@@ -40,11 +40,11 @@ func (p *jsiiProxy_PollerPubsubOutputReference) validateGetStringMapAttributePar
 	return nil
 }
 
-func (p *jsiiProxy_PollerPubsubOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (p *jsiiProxy_PollerPubsubOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (p *jsiiProxy_PollerPubsubOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (p *jsiiProxy_PollerPubsubOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -76,11 +76,11 @@ func (j *jsiiProxy_PollerPubsubOutputReference) validateSetTerraformAttributePar
 	return nil
 }
 
-func (j *jsiiProxy_PollerPubsubOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_PollerPubsubOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewPollerPubsubOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewPollerPubsubOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

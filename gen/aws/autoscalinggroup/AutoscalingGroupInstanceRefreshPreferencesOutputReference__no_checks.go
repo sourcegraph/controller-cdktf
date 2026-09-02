@@ -40,11 +40,11 @@ func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) va
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -84,11 +84,11 @@ func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) va
 	return nil
 }
 
-func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AutoscalingGroupInstanceRefreshPreferencesOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAutoscalingGroupInstanceRefreshPreferencesOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAutoscalingGroupInstanceRefreshPreferencesOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

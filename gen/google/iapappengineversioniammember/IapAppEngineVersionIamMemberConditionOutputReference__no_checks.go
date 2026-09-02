@@ -40,11 +40,11 @@ func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validat
 	return nil
 }
 
-func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (i *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_IapAppEngineVersionIamMemberConditionOutputReference) validat
 	return nil
 }
 
-func validateNewIapAppEngineVersionIamMemberConditionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewIapAppEngineVersionIamMemberConditionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

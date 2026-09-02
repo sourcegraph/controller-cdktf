@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList) v
 	return nil
 }
 
-func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList) v
 	return nil
 }
 
-func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGooglePubsubTopicIngestionDataSourceSettingsAwsMskList) v
 	return nil
 }
 
-func validateNewDataGooglePubsubTopicIngestionDataSourceSettingsAwsMskListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGooglePubsubTopicIngestionDataSourceSettingsAwsMskListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleSecureSourceManagerInstancePrivateConfigCustomHostConfi
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerInstancePrivateConfigCustomHostConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleSecureSourceManagerInstancePrivateConfigCustomHostConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleSecureSourceManagerInstancePrivateConfigCustomHostConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleSecureSourceManagerInstancePrivateConfigCustomHostConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleSecureSourceManagerInstancePrivateConfigCustomHostConfi
 	return nil
 }
 
-func (j *jsiiProxy_GoogleSecureSourceManagerInstancePrivateConfigCustomHostConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleSecureSourceManagerInstancePrivateConfigCustomHostConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleSecureSourceManagerInstancePrivateConfigCustomHostConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleSecureSourceManagerInstancePrivateConfigCustomHostConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

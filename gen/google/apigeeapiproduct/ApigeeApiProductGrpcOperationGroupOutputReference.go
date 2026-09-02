@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/apigeeapiproduct/internal"
 )
 
 type ApigeeApiProductGrpcOperationGroupOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -36,15 +36,15 @@ type ApigeeApiProductGrpcOperationGroupOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,14 +60,14 @@ type ApigeeApiProductGrpcOperationGroupOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutOperationConfigs(value interface{})
 	ResetOperationConfigs()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type ApigeeApiProductGrpcOperationGroupOutputReference interface {
 
 // The jsii proxy struct for ApigeeApiProductGrpcOperationGroupOutputReference
 type jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) TerraformA
 	return returns
 }
 
-func (j *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) TerraformR
 }
 
 
-func NewApigeeApiProductGrpcOperationGroupOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ApigeeApiProductGrpcOperationGroupOutputReference {
+func NewApigeeApiProductGrpcOperationGroupOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ApigeeApiProductGrpcOperationGroupOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewApigeeApiProductGrpcOperationGroupOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewApigeeApiProductGrpcOperationGroupOutputReference(terraformResource cdkt
 	j := jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference",
+		"@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewApigeeApiProductGrpcOperationGroupOutputReference(terraformResource cdkt
 	return &j
 }
 
-func NewApigeeApiProductGrpcOperationGroupOutputReference_Override(a ApigeeApiProductGrpcOperationGroupOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewApigeeApiProductGrpcOperationGroupOutputReference_Override(a ApigeeApiProductGrpcOperationGroupOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference",
+		"@cdktn/provider-google.apigeeApiProduct.ApigeeApiProductGrpcOperationGroupOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		a,
 	)
@@ -242,7 +242,7 @@ func (j *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference)SetTerrafor
 	)
 }
 
-func (j *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -282,11 +282,11 @@ func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) GetAnyMapA
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := a.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -410,8 +410,8 @@ func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) GetStringM
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
@@ -423,16 +423,16 @@ func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) Interpolat
 	return returns
 }
 
-func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := a.validateInterpolationForAttributeParameters(property); err != nil {
+func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := a.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		a,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) ResetOpera
 	)
 }
 
-func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := a.validateResolveParameters(_context); err != nil {
+func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := a.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (a *jsiiProxy_ApigeeApiProductGrpcOperationGroupOutputReference) Resolve(_c
 	_jsii_.Invoke(
 		a,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

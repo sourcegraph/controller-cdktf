@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/fisexperimenttemplate/internal"
 )
 
 type FisExperimentTemplateTimeoutsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,9 +40,9 @@ type FisExperimentTemplateTimeoutsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Update() *string
 	SetUpdate(val *string)
 	UpdateInput() *string
@@ -51,7 +51,7 @@ type FisExperimentTemplateTimeoutsOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,15 +67,15 @@ type FisExperimentTemplateTimeoutsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetCreate()
 	ResetDelete()
 	ResetUpdate()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type FisExperimentTemplateTimeoutsOutputReference interface {
 
 // The jsii proxy struct for FisExperimentTemplateTimeoutsOutputReference
 type jsiiProxy_FisExperimentTemplateTimeoutsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) TerraformAttrib
 	return returns
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) UpdateInput() *
 }
 
 
-func NewFisExperimentTemplateTimeoutsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) FisExperimentTemplateTimeoutsOutputReference {
+func NewFisExperimentTemplateTimeoutsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) FisExperimentTemplateTimeoutsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewFisExperimentTemplateTimeoutsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewFisExperimentTemplateTimeoutsOutputReference(terraformResource cdktf.IIn
 	j := jsiiProxy_FisExperimentTemplateTimeoutsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewFisExperimentTemplateTimeoutsOutputReference(terraformResource cdktf.IIn
 	return &j
 }
 
-func NewFisExperimentTemplateTimeoutsOutputReference_Override(f FisExperimentTemplateTimeoutsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewFisExperimentTemplateTimeoutsOutputReference_Override(f FisExperimentTemplateTimeoutsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference",
+		"@cdktn/provider-aws.fisExperimentTemplate.FisExperimentTemplateTimeoutsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		f,
 	)
@@ -312,7 +312,7 @@ func (j *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference)SetTerraformAttr
 	)
 }
 
-func (j *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -363,11 +363,11 @@ func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) GetAnyMapAttrib
 	return returns
 }
 
-func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := f.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -491,8 +491,8 @@ func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) GetStringMapAtt
 	return returns
 }
 
-func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
@@ -504,16 +504,16 @@ func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) InterpolationAs
 	return returns
 }
 
-func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := f.validateInterpolationForAttributeParameters(property); err != nil {
+func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := f.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		f,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) ResetUpdate() {
 	)
 }
 
-func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := f.validateResolveParameters(_context); err != nil {
+func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := f.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (f *jsiiProxy_FisExperimentTemplateTimeoutsOutputReference) Resolve(_contex
 	_jsii_.Invoke(
 		f,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

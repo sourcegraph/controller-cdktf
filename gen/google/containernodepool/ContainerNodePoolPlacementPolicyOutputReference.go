@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containernodepool/internal"
 )
 
 type ContainerNodePoolPlacementPolicyOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,9 +37,9 @@ type ContainerNodePoolPlacementPolicyOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	TpuTopology() *string
 	SetTpuTopology(val *string)
 	TpuTopologyInput() *string
@@ -51,7 +51,7 @@ type ContainerNodePoolPlacementPolicyOutputReference interface {
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type ContainerNodePoolPlacementPolicyOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetPolicyName()
 	ResetTpuTopology()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type ContainerNodePoolPlacementPolicyOutputReference interface {
 
 // The jsii proxy struct for ContainerNodePoolPlacementPolicyOutputReference
 type jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) ComplexObjectIndex() interface{} {
@@ -167,8 +167,8 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) TerraformAtt
 	return returns
 }
 
-func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) TypeInput() 
 }
 
 
-func NewContainerNodePoolPlacementPolicyOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerNodePoolPlacementPolicyOutputReference {
+func NewContainerNodePoolPlacementPolicyOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerNodePoolPlacementPolicyOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerNodePoolPlacementPolicyOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewContainerNodePoolPlacementPolicyOutputReference(terraformResource cdktf.
 	j := jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerNodePool.ContainerNodePoolPlacementPolicyOutputReference",
+		"@cdktn/provider-google.containerNodePool.ContainerNodePoolPlacementPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewContainerNodePoolPlacementPolicyOutputReference(terraformResource cdktf.
 	return &j
 }
 
-func NewContainerNodePoolPlacementPolicyOutputReference_Override(c ContainerNodePoolPlacementPolicyOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerNodePoolPlacementPolicyOutputReference_Override(c ContainerNodePoolPlacementPolicyOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerNodePool.ContainerNodePoolPlacementPolicyOutputReference",
+		"@cdktn/provider-google.containerNodePool.ContainerNodePoolPlacementPolicyOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -300,7 +300,7 @@ func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetTerraformA
 	)
 }
 
-func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetAnyMapAtt
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -490,8 +490,8 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) GetStringMap
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -503,16 +503,16 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) Interpolatio
 	return returns
 }
 
-func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) ResetTpuTopo
 	)
 }
 
-func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (c *jsiiProxy_ContainerNodePoolPlacementPolicyOutputReference) Resolve(_con
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

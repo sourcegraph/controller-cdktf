@@ -40,11 +40,11 @@ func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference)
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (n *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference)
 	return nil
 }
 
-func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_NetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReference)
 	return nil
 }
 
-func validateNewNetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewNetworkmanagerSiteToSiteVpnAttachmentTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

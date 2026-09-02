@@ -12,7 +12,7 @@ func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) vali
 	return nil
 }
 
-func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) vali
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_DataGoogleComputeReservationShareSettingsProjectMapList) vali
 	return nil
 }
 
-func validateNewDataGoogleComputeReservationShareSettingsProjectMapListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewDataGoogleComputeReservationShareSettingsProjectMapListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

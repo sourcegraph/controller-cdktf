@@ -40,11 +40,11 @@ func (c *jsiiProxy_CloudfunctionsFunctionSourceRepositoryOutputReference) valida
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSourceRepositoryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSourceRepositoryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_CloudfunctionsFunctionSourceRepositoryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CloudfunctionsFunctionSourceRepositoryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -64,7 +64,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSourceRepositoryOutputReference) valida
 	return nil
 }
 
-func (j *jsiiProxy_CloudfunctionsFunctionSourceRepositoryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CloudfunctionsFunctionSourceRepositoryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_CloudfunctionsFunctionSourceRepositoryOutputReference) valida
 	return nil
 }
 
-func validateNewCloudfunctionsFunctionSourceRepositoryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCloudfunctionsFunctionSourceRepositoryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

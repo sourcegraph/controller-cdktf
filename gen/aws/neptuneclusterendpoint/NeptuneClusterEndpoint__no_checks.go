@@ -56,6 +56,10 @@ func (n *jsiiProxy_NeptuneClusterEndpoint) validateInterpolationForAttributePara
 	return nil
 }
 
+func (n *jsiiProxy_NeptuneClusterEndpoint) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NeptuneClusterEndpoint) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -69,6 +73,10 @@ func (n *jsiiProxy_NeptuneClusterEndpoint) validateMoveToIdParameters(id *string
 }
 
 func (n *jsiiProxy_NeptuneClusterEndpoint) validateOverrideLogicalIdParameters(newLogicalId *string) error {
+	return nil
+}
+
+func (n *jsiiProxy_NeptuneClusterEndpoint) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_NeptuneClusterEndpoint) validateSetIdParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_NeptuneClusterEndpoint) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NeptuneClusterEndpoint) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

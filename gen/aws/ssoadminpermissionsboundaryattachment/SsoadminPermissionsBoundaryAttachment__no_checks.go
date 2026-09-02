@@ -56,6 +56,10 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateInterpolationF
 	return nil
 }
 
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateOverrideLogica
 }
 
 func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validatePutPermissionsBoundaryParameters(value *SsoadminPermissionsBoundaryAttachmentPermissionsBoundary) error {
+	return nil
+}
+
+func (s *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetInstanceArn
 	return nil
 }
 
-func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_SsoadminPermissionsBoundaryAttachment) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

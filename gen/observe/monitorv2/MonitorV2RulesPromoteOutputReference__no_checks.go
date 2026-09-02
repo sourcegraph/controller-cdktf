@@ -40,7 +40,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) validateGetStringMapAtt
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) validatePutCompareColum
 	return nil
 }
 
-func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MonitorV2RulesPromoteOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,11 +68,11 @@ func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) validateSetTerraformAtt
 	return nil
 }
 
-func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MonitorV2RulesPromoteOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMonitorV2RulesPromoteOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMonitorV2RulesPromoteOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

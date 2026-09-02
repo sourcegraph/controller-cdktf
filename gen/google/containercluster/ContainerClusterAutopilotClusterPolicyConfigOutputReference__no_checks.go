@@ -40,11 +40,11 @@ func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) 
 	return nil
 }
 
-func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerClusterAutopilotClusterPolicyConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewContainerClusterAutopilotClusterPolicyConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewContainerClusterAutopilotClusterPolicyConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

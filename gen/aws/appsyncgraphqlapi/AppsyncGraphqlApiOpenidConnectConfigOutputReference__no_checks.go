@@ -40,11 +40,11 @@ func (a *jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference) validate
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference) validate
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppsyncGraphqlApiOpenidConnectConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppsyncGraphqlApiOpenidConnectConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppsyncGraphqlApiOpenidConnectConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/pubsubtopic/internal"
 )
 
 type PubsubTopicMessageTransformsJavascriptUdfOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Code() *string
 	SetCode(val *string)
 	CodeInput() *string
@@ -40,15 +40,15 @@ type PubsubTopicMessageTransformsJavascriptUdfOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,12 +64,12 @@ type PubsubTopicMessageTransformsJavascriptUdfOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -79,7 +79,7 @@ type PubsubTopicMessageTransformsJavascriptUdfOutputReference interface {
 
 // The jsii proxy struct for PubsubTopicMessageTransformsJavascriptUdfOutputReference
 type jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) Code() *string {
@@ -182,8 +182,8 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) Ter
 	return returns
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -193,7 +193,7 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) Ter
 }
 
 
-func NewPubsubTopicMessageTransformsJavascriptUdfOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) PubsubTopicMessageTransformsJavascriptUdfOutputReference {
+func NewPubsubTopicMessageTransformsJavascriptUdfOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) PubsubTopicMessageTransformsJavascriptUdfOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewPubsubTopicMessageTransformsJavascriptUdfOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -202,7 +202,7 @@ func NewPubsubTopicMessageTransformsJavascriptUdfOutputReference(terraformResour
 	j := jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdfOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdfOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -210,11 +210,11 @@ func NewPubsubTopicMessageTransformsJavascriptUdfOutputReference(terraformResour
 	return &j
 }
 
-func NewPubsubTopicMessageTransformsJavascriptUdfOutputReference_Override(p PubsubTopicMessageTransformsJavascriptUdfOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewPubsubTopicMessageTransformsJavascriptUdfOutputReference_Override(p PubsubTopicMessageTransformsJavascriptUdfOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdfOutputReference",
+		"@cdktn/provider-google.pubsubTopic.PubsubTopicMessageTransformsJavascriptUdfOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		p,
 	)
@@ -286,7 +286,7 @@ func (j *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference)SetT
 	)
 }
 
-func (j *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -326,11 +326,11 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) Get
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := p.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -454,8 +454,8 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) Get
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
@@ -467,24 +467,24 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) Int
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := p.validateInterpolationForAttributeParameters(property); err != nil {
+func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := p.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		p,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := p.validateResolveParameters(_context); err != nil {
+func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := p.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -492,7 +492,7 @@ func (p *jsiiProxy_PubsubTopicMessageTransformsJavascriptUdfOutputReference) Res
 	_jsii_.Invoke(
 		p,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

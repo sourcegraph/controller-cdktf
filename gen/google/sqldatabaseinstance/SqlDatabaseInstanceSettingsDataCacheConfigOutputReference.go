@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/sqldatabaseinstance/internal"
 )
 
 type SqlDatabaseInstanceSettingsDataCacheConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -37,15 +37,15 @@ type SqlDatabaseInstanceSettingsDataCacheConfigOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -61,13 +61,13 @@ type SqlDatabaseInstanceSettingsDataCacheConfigOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetDataCacheEnabled()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -77,7 +77,7 @@ type SqlDatabaseInstanceSettingsDataCacheConfigOutputReference interface {
 
 // The jsii proxy struct for SqlDatabaseInstanceSettingsDataCacheConfigOutputReference
 type jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -160,8 +160,8 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) Te
 	return returns
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -171,7 +171,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) Te
 }
 
 
-func NewSqlDatabaseInstanceSettingsDataCacheConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) SqlDatabaseInstanceSettingsDataCacheConfigOutputReference {
+func NewSqlDatabaseInstanceSettingsDataCacheConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) SqlDatabaseInstanceSettingsDataCacheConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewSqlDatabaseInstanceSettingsDataCacheConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -180,7 +180,7 @@ func NewSqlDatabaseInstanceSettingsDataCacheConfigOutputReference(terraformResou
 	j := jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference",
+		"@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -188,11 +188,11 @@ func NewSqlDatabaseInstanceSettingsDataCacheConfigOutputReference(terraformResou
 	return &j
 }
 
-func NewSqlDatabaseInstanceSettingsDataCacheConfigOutputReference_Override(s SqlDatabaseInstanceSettingsDataCacheConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewSqlDatabaseInstanceSettingsDataCacheConfigOutputReference_Override(s SqlDatabaseInstanceSettingsDataCacheConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference",
+		"@cdktn/provider-google.sqlDatabaseInstance.SqlDatabaseInstanceSettingsDataCacheConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		s,
 	)
@@ -253,7 +253,7 @@ func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference)Set
 	)
 }
 
-func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -293,11 +293,11 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) Ge
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := s.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -421,8 +421,8 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) Ge
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
@@ -434,16 +434,16 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) In
 	return returns
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := s.validateInterpolationForAttributeParameters(property); err != nil {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := s.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		s,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -458,8 +458,8 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) Re
 	)
 }
 
-func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := s.validateResolveParameters(_context); err != nil {
+func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := s.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -467,7 +467,7 @@ func (s *jsiiProxy_SqlDatabaseInstanceSettingsDataCacheConfigOutputReference) Re
 	_jsii_.Invoke(
 		s,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

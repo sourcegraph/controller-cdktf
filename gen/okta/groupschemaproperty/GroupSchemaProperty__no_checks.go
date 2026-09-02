@@ -56,6 +56,10 @@ func (g *jsiiProxy_GroupSchemaProperty) validateInterpolationForAttributeParamet
 	return nil
 }
 
+func (g *jsiiProxy_GroupSchemaProperty) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GroupSchemaProperty) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -81,6 +85,10 @@ func (g *jsiiProxy_GroupSchemaProperty) validatePutMasterOverridePriorityParamet
 }
 
 func (g *jsiiProxy_GroupSchemaProperty) validatePutOneOfParameters(value interface{}) error {
+	return nil
+}
+
+func (g *jsiiProxy_GroupSchemaProperty) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -140,7 +148,7 @@ func (j *jsiiProxy_GroupSchemaProperty) validateSetIndexParameters(val *string) 
 	return nil
 }
 
-func (j *jsiiProxy_GroupSchemaProperty) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GroupSchemaProperty) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

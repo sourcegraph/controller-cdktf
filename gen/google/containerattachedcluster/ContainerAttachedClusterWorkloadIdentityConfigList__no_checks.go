@@ -12,7 +12,7 @@ func (c *jsiiProxy_ContainerAttachedClusterWorkloadIdentityConfigList) validateG
 	return nil
 }
 
-func (c *jsiiProxy_ContainerAttachedClusterWorkloadIdentityConfigList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ContainerAttachedClusterWorkloadIdentityConfigList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_ContainerAttachedClusterWorkloadIdentityConfigList) validateS
 	return nil
 }
 
-func (j *jsiiProxy_ContainerAttachedClusterWorkloadIdentityConfigList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ContainerAttachedClusterWorkloadIdentityConfigList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_ContainerAttachedClusterWorkloadIdentityConfigList) validateS
 	return nil
 }
 
-func validateNewContainerAttachedClusterWorkloadIdentityConfigListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewContainerAttachedClusterWorkloadIdentityConfigListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

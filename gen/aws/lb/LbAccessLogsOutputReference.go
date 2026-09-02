@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/lb/internal"
 )
 
 type LbAccessLogsOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	Bucket() *string
 	SetBucket(val *string)
 	BucketInput() *string
@@ -43,15 +43,15 @@ type LbAccessLogsOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -67,14 +67,14 @@ type LbAccessLogsOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetEnabled()
 	ResetPrefix()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -84,7 +84,7 @@ type LbAccessLogsOutputReference interface {
 
 // The jsii proxy struct for LbAccessLogsOutputReference
 type jsiiProxy_LbAccessLogsOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LbAccessLogsOutputReference) Bucket() *string {
@@ -207,8 +207,8 @@ func (j *jsiiProxy_LbAccessLogsOutputReference) TerraformAttribute() *string {
 	return returns
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LbAccessLogsOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -218,7 +218,7 @@ func (j *jsiiProxy_LbAccessLogsOutputReference) TerraformResource() cdktf.IInter
 }
 
 
-func NewLbAccessLogsOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) LbAccessLogsOutputReference {
+func NewLbAccessLogsOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) LbAccessLogsOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLbAccessLogsOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -227,7 +227,7 @@ func NewLbAccessLogsOutputReference(terraformResource cdktf.IInterpolatingParent
 	j := jsiiProxy_LbAccessLogsOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lb.LbAccessLogsOutputReference",
+		"@cdktn/provider-aws.lb.LbAccessLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -235,11 +235,11 @@ func NewLbAccessLogsOutputReference(terraformResource cdktf.IInterpolatingParent
 	return &j
 }
 
-func NewLbAccessLogsOutputReference_Override(l LbAccessLogsOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewLbAccessLogsOutputReference_Override(l LbAccessLogsOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lb.LbAccessLogsOutputReference",
+		"@cdktn/provider-aws.lb.LbAccessLogsOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		l,
 	)
@@ -322,7 +322,7 @@ func (j *jsiiProxy_LbAccessLogsOutputReference)SetTerraformAttribute(val *string
 	)
 }
 
-func (j *jsiiProxy_LbAccessLogsOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbAccessLogsOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -362,11 +362,11 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) GetAnyMapAttribute(terraformAttr
 	return returns
 }
 
-func (l *jsiiProxy_LbAccessLogsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LbAccessLogsOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -490,8 +490,8 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) GetStringMapAttribute(terraformA
 	return returns
 }
 
-func (l *jsiiProxy_LbAccessLogsOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LbAccessLogsOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -503,16 +503,16 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) InterpolationAsList() cdktf.IRes
 	return returns
 }
 
-func (l *jsiiProxy_LbAccessLogsOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LbAccessLogsOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -535,8 +535,8 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) ResetPrefix() {
 	)
 }
 
-func (l *jsiiProxy_LbAccessLogsOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LbAccessLogsOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -544,7 +544,7 @@ func (l *jsiiProxy_LbAccessLogsOutputReference) Resolve(_context cdktf.IResolveC
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

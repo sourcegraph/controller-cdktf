@@ -40,7 +40,7 @@ func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateGetStringMap
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validatePutEncryptio
 	return nil
 }
 
-func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (m *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateSetTerraform
 	return nil
 }
 
-func (j *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_MskClusterEncryptionInfoOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewMskClusterEncryptionInfoOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewMskClusterEncryptionInfoOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

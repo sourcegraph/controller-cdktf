@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleComputeInstanceFromMachineImageBootDiskInitializeParams
 	return nil
 }
 
-func validateNewGoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeInstanceFromMachineImageBootDiskInitializeParamsSourceImageEncryptionKeyListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

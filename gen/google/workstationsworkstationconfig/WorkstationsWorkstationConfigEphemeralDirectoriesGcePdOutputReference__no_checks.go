@@ -40,11 +40,11 @@ func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputR
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputR
 	return nil
 }
 
-func (j *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewWorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewWorkstationsWorkstationConfigEphemeralDirectoriesGcePdOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

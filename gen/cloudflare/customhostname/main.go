@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostname",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostname",
 		reflect.TypeOf((*CustomHostname)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -44,6 +44,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "importFrom", GoMethod: "ImportFrom"},
 			_jsii_.MemberMethod{JsiiMethod: "interpolationForAttribute", GoMethod: "InterpolationForAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
 			_jsii_.MemberMethod{JsiiMethod: "moveTo", GoMethod: "MoveTo"},
 			_jsii_.MemberMethod{JsiiMethod: "moveToId", GoMethod: "MoveToId"},
@@ -55,6 +56,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "provisioners", GoGetter: "Provisioners"},
 			_jsii_.MemberMethod{JsiiMethod: "putSsl", GoMethod: "PutSsl"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomMetadata", GoMethod: "ResetCustomMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomOriginServer", GoMethod: "ResetCustomOriginServer"},
 			_jsii_.MemberMethod{JsiiMethod: "resetCustomOriginSni", GoMethod: "ResetCustomOriginSni"},
@@ -76,25 +78,26 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForSslPendingValidation", GoGetter: "WaitForSslPendingValidation"},
 			_jsii_.MemberProperty{JsiiProperty: "waitForSslPendingValidationInput", GoGetter: "WaitForSslPendingValidationInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneId", GoGetter: "ZoneId"},
 			_jsii_.MemberProperty{JsiiProperty: "zoneIdInput", GoGetter: "ZoneIdInput"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostname{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameConfig",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameConfig",
 		reflect.TypeOf((*CustomHostnameConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSsl",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSsl",
 		reflect.TypeOf((*CustomHostnameSsl)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslList",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslList",
 		reflect.TypeOf((*CustomHostnameSslList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -111,12 +114,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslOutputReference",
 		reflect.TypeOf((*CustomHostnameSslOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "certificateAuthority", GoGetter: "CertificateAuthority"},
@@ -168,16 +171,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettings",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslSettings",
 		reflect.TypeOf((*CustomHostnameSslSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsList",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslSettingsList",
 		reflect.TypeOf((*CustomHostnameSslSettingsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -194,12 +197,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslSettingsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslSettingsOutputReference",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslSettingsOutputReference",
 		reflect.TypeOf((*CustomHostnameSslSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ciphers", GoGetter: "Ciphers"},
@@ -241,16 +244,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrors",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslValidationErrors",
 		reflect.TypeOf((*CustomHostnameSslValidationErrors)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsList",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsList",
 		reflect.TypeOf((*CustomHostnameSslValidationErrorsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -266,12 +269,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslValidationErrorsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsOutputReference",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslValidationErrorsOutputReference",
 		reflect.TypeOf((*CustomHostnameSslValidationErrorsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -299,16 +302,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslValidationErrorsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecords",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslValidationRecords",
 		reflect.TypeOf((*CustomHostnameSslValidationRecords)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsList",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsList",
 		reflect.TypeOf((*CustomHostnameSslValidationRecordsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -324,12 +327,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslValidationRecordsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsOutputReference",
+		"@cdktn/provider-cloudflare.customHostname.CustomHostnameSslValidationRecordsOutputReference",
 		reflect.TypeOf((*CustomHostnameSslValidationRecordsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "cnameName", GoGetter: "CnameName"},
@@ -363,7 +366,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CustomHostnameSslValidationRecordsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

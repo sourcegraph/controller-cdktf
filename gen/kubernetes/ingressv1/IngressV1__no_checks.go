@@ -56,6 +56,10 @@ func (i *jsiiProxy_IngressV1) validateInterpolationForAttributeParameters(terraf
 	return nil
 }
 
+func (i *jsiiProxy_IngressV1) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (i *jsiiProxy_IngressV1) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (i *jsiiProxy_IngressV1) validatePutMetadataParameters(value *IngressV1Meta
 }
 
 func (i *jsiiProxy_IngressV1) validatePutSpecParameters(value *IngressV1Spec) error {
+	return nil
+}
+
+func (i *jsiiProxy_IngressV1) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_IngressV1) validateSetIdParameters(val *string) error {
 	return nil
 }
 
-func (j *jsiiProxy_IngressV1) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_IngressV1) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

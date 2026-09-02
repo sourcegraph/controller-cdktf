@@ -56,6 +56,10 @@ func (n *jsiiProxy_NetappKmsconfig) validateInterpolationForAttributeParameters(
 	return nil
 }
 
+func (n *jsiiProxy_NetappKmsconfig) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (n *jsiiProxy_NetappKmsconfig) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (n *jsiiProxy_NetappKmsconfig) validateOverrideLogicalIdParameters(newLogic
 }
 
 func (n *jsiiProxy_NetappKmsconfig) validatePutTimeoutsParameters(value *NetappKmsconfigTimeouts) error {
+	return nil
+}
+
+func (n *jsiiProxy_NetappKmsconfig) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -116,7 +124,7 @@ func (j *jsiiProxy_NetappKmsconfig) validateSetLabelsParameters(val *map[string]
 	return nil
 }
 
-func (j *jsiiProxy_NetappKmsconfig) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_NetappKmsconfig) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

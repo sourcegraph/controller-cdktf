@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleBiglakeIcebergNamespaceTimeoutsOutputReference) validat
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBiglakeIcebergNamespaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleBiglakeIcebergNamespaceTimeoutsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleBiglakeIcebergNamespaceTimeoutsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleBiglakeIcebergNamespaceTimeoutsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,7 +72,7 @@ func (j *jsiiProxy_GoogleBiglakeIcebergNamespaceTimeoutsOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_GoogleBiglakeIcebergNamespaceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleBiglakeIcebergNamespaceTimeoutsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -80,7 +80,7 @@ func (j *jsiiProxy_GoogleBiglakeIcebergNamespaceTimeoutsOutputReference) validat
 	return nil
 }
 
-func validateNewGoogleBiglakeIcebergNamespaceTimeoutsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleBiglakeIcebergNamespaceTimeoutsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

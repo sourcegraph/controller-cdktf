@@ -40,7 +40,7 @@ func (c *jsiiProxy_ComputeBackendServiceOutlierDetectionOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceOutlierDetectionOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_ComputeBackendServiceOutlierDetectionOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -52,7 +52,7 @@ func (c *jsiiProxy_ComputeBackendServiceOutlierDetectionOutputReference) validat
 	return nil
 }
 
-func (c *jsiiProxy_ComputeBackendServiceOutlierDetectionOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeBackendServiceOutlierDetectionOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -108,11 +108,11 @@ func (j *jsiiProxy_ComputeBackendServiceOutlierDetectionOutputReference) validat
 	return nil
 }
 
-func (j *jsiiProxy_ComputeBackendServiceOutlierDetectionOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeBackendServiceOutlierDetectionOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewComputeBackendServiceOutlierDetectionOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewComputeBackendServiceOutlierDetectionOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

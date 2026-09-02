@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleComputeInterconnectAttachmentGroupLogicalStructureList)
 	return nil
 }
 
-func (g *jsiiProxy_GoogleComputeInterconnectAttachmentGroupLogicalStructureList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleComputeInterconnectAttachmentGroupLogicalStructureList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupLogicalStructureList)
 	return nil
 }
 
-func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupLogicalStructureList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupLogicalStructureList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleComputeInterconnectAttachmentGroupLogicalStructureList)
 	return nil
 }
 
-func validateNewGoogleComputeInterconnectAttachmentGroupLogicalStructureListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleComputeInterconnectAttachmentGroupLogicalStructureListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeTasksRenderContainerOutputRe
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeTasksRenderContainerOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeTasksRenderContainerOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeTasksRenderContainerOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleClouddeployCustomTargetTypeTasksRenderContainerOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_GoogleClouddeployCustomTargetTypeTasksRenderContainerOutputRe
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddeployCustomTargetTypeTasksRenderContainerOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleClouddeployCustomTargetTypeTasksRenderContainerOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewGoogleClouddeployCustomTargetTypeTasksRenderContainerOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleClouddeployCustomTargetTypeTasksRenderContainerOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

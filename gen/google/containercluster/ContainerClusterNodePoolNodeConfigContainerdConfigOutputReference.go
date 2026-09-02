@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/containercluster/internal"
 )
 
 type ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -38,9 +38,9 @@ type ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference interface
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	WritableCgroups() ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroupsOutputReference
 	WritableCgroupsInput() *ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups
 	// Experimental.
@@ -48,7 +48,7 @@ type ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference interface
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,9 +64,9 @@ type ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference interface
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	PutPrivateRegistryAccessConfig(value *ContainerClusterNodePoolNodeConfigContainerdConfigPrivateRegistryAccessConfig)
 	PutRegistryHosts(value interface{})
 	PutWritableCgroups(value *ContainerClusterNodePoolNodeConfigContainerdConfigWritableCgroups)
@@ -75,7 +75,7 @@ type ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference interface
 	ResetWritableCgroups()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -85,7 +85,7 @@ type ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference interface
 
 // The jsii proxy struct for ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference
 type jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -188,8 +188,8 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	return returns
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -219,7 +219,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 }
 
 
-func NewContainerClusterNodePoolNodeConfigContainerdConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference {
+func NewContainerClusterNodePoolNodeConfigContainerdConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewContainerClusterNodePoolNodeConfigContainerdConfigOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -228,7 +228,7 @@ func NewContainerClusterNodePoolNodeConfigContainerdConfigOutputReference(terraf
 	j := jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -236,11 +236,11 @@ func NewContainerClusterNodePoolNodeConfigContainerdConfigOutputReference(terraf
 	return &j
 }
 
-func NewContainerClusterNodePoolNodeConfigContainerdConfigOutputReference_Override(c ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewContainerClusterNodePoolNodeConfigContainerdConfigOutputReference_Override(c ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference",
+		"@cdktn/provider-google.containerCluster.ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -290,7 +290,7 @@ func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	)
 }
 
-func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -330,11 +330,11 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -458,8 +458,8 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -471,16 +471,16 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	return returns
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -544,8 +544,8 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	)
 }
 
-func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -553,7 +553,7 @@ func (c *jsiiProxy_ContainerClusterNodePoolNodeConfigContainerdConfigOutputRefer
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

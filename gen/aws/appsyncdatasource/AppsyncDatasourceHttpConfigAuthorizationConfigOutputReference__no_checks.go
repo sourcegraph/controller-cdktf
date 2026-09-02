@@ -40,7 +40,7 @@ func (a *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (a *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (a *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference
 	return nil
 }
 
-func (a *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference
 	return nil
 }
 
-func (j *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppsyncDatasourceHttpConfigAuthorizationConfigOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewAppsyncDatasourceHttpConfigAuthorizationConfigOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewAppsyncDatasourceHttpConfigAuthorizationConfigOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

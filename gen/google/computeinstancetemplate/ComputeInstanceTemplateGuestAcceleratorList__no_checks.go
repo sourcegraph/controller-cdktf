@@ -12,7 +12,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateGuestAcceleratorList) validateGetParam
 	return nil
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateGuestAcceleratorList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_ComputeInstanceTemplateGuestAcceleratorList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateGuestAcceleratorList) validateSetTerra
 	return nil
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateGuestAcceleratorList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_ComputeInstanceTemplateGuestAcceleratorList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateGuestAcceleratorList) validateSetWraps
 	return nil
 }
 
-func validateNewComputeInstanceTemplateGuestAcceleratorListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewComputeInstanceTemplateGuestAcceleratorListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

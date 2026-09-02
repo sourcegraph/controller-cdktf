@@ -12,7 +12,7 @@ func (a *jsiiProxy_AppstreamStackStorageConnectorsList) validateGetParameters(in
 	return nil
 }
 
-func (a *jsiiProxy_AppstreamStackStorageConnectorsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (a *jsiiProxy_AppstreamStackStorageConnectorsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_AppstreamStackStorageConnectorsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_AppstreamStackStorageConnectorsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_AppstreamStackStorageConnectorsList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewAppstreamStackStorageConnectorsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewAppstreamStackStorageConnectorsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

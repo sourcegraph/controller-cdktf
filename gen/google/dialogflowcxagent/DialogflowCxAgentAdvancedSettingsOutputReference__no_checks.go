@@ -40,7 +40,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateGet
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -60,7 +60,7 @@ func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validatePut
 	return nil
 }
 
-func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (d *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateSet
 	return nil
 }
 
-func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_DialogflowCxAgentAdvancedSettingsOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewDialogflowCxAgentAdvancedSettingsOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewDialogflowCxAgentAdvancedSettingsOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUser
 	return nil
 }
 
-func (g *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUser
 	return nil
 }
 
-func (j *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleDialogflowCxTestCaseLastTestResultConversationTurnsUser
 	return nil
 }
 
-func validateNewGoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleDialogflowCxTestCaseLastTestResultConversationTurnsUserInputListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

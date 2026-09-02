@@ -56,6 +56,10 @@ func (g *jsiiProxy_GoogleLoggingLogScope) validateInterpolationForAttributeParam
 	return nil
 }
 
+func (g *jsiiProxy_GoogleLoggingLogScope) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (g *jsiiProxy_GoogleLoggingLogScope) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -73,6 +77,10 @@ func (g *jsiiProxy_GoogleLoggingLogScope) validateOverrideLogicalIdParameters(ne
 }
 
 func (g *jsiiProxy_GoogleLoggingLogScope) validatePutTimeoutsParameters(value *GoogleLoggingLogScopeTimeouts) error {
+	return nil
+}
+
+func (g *jsiiProxy_GoogleLoggingLogScope) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_GoogleLoggingLogScope) validateSetIdParameters(val *string) e
 	return nil
 }
 
-func (j *jsiiProxy_GoogleLoggingLogScope) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_GoogleLoggingLogScope) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

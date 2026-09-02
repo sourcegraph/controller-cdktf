@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeer",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeer",
 		reflect.TypeOf((*ComputeRouterPeer)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -71,6 +71,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "isCustomLearnedPrioritySet", GoGetter: "IsCustomLearnedPrioritySet"},
 			_jsii_.MemberProperty{JsiiProperty: "lifecycle", GoGetter: "Lifecycle"},
 			_jsii_.MemberProperty{JsiiProperty: "managementType", GoGetter: "ManagementType"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "md5AuthenticationKey", GoGetter: "Md5AuthenticationKey"},
 			_jsii_.MemberProperty{JsiiProperty: "md5AuthenticationKeyInput", GoGetter: "Md5AuthenticationKeyInput"},
 			_jsii_.MemberMethod{JsiiMethod: "moveFromId", GoMethod: "MoveFromId"},
@@ -100,6 +101,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
 			_jsii_.MemberProperty{JsiiProperty: "region", GoGetter: "Region"},
 			_jsii_.MemberProperty{JsiiProperty: "regionInput", GoGetter: "RegionInput"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvertisedGroups", GoMethod: "ResetAdvertisedGroups"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvertisedIpRanges", GoMethod: "ResetAdvertisedIpRanges"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAdvertisedRoutePriority", GoMethod: "ResetAdvertisedRoutePriority"},
@@ -142,6 +144,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "toMetadata", GoMethod: "ToMetadata"},
 			_jsii_.MemberMethod{JsiiMethod: "toString", GoMethod: "ToString"},
 			_jsii_.MemberMethod{JsiiMethod: "toTerraform", GoMethod: "ToTerraform"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 			_jsii_.MemberProperty{JsiiProperty: "zeroAdvertisedRoutePriority", GoGetter: "ZeroAdvertisedRoutePriority"},
 			_jsii_.MemberProperty{JsiiProperty: "zeroAdvertisedRoutePriorityInput", GoGetter: "ZeroAdvertisedRoutePriorityInput"},
 			_jsii_.MemberProperty{JsiiProperty: "zeroCustomLearnedRoutePriority", GoGetter: "ZeroCustomLearnedRoutePriority"},
@@ -149,16 +152,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterPeer{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRanges",
 		reflect.TypeOf((*ComputeRouterPeerAdvertisedIpRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesList",
 		reflect.TypeOf((*ComputeRouterPeerAdvertisedIpRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -175,12 +178,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterPeerAdvertisedIpRangesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerAdvertisedIpRangesOutputReference",
 		reflect.TypeOf((*ComputeRouterPeerAdvertisedIpRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -212,16 +215,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterPeerAdvertisedIpRangesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerBfd",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerBfd",
 		reflect.TypeOf((*ComputeRouterPeerBfd)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerBfdOutputReference",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerBfdOutputReference",
 		reflect.TypeOf((*ComputeRouterPeerBfdOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -259,20 +262,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterPeerBfdOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerConfig",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerConfig",
 		reflect.TypeOf((*ComputeRouterPeerConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRanges",
 		reflect.TypeOf((*ComputeRouterPeerCustomLearnedIpRanges)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesList",
 		reflect.TypeOf((*ComputeRouterPeerCustomLearnedIpRangesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -289,12 +292,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterPeerCustomLearnedIpRangesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerCustomLearnedIpRangesOutputReference",
 		reflect.TypeOf((*ComputeRouterPeerCustomLearnedIpRangesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -323,16 +326,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterPeerCustomLearnedIpRangesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerMd5AuthenticationKey",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerMd5AuthenticationKey",
 		reflect.TypeOf((*ComputeRouterPeerMd5AuthenticationKey)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerMd5AuthenticationKeyOutputReference",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerMd5AuthenticationKeyOutputReference",
 		reflect.TypeOf((*ComputeRouterPeerMd5AuthenticationKeyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -363,16 +366,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterPeerMd5AuthenticationKeyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeouts",
 		reflect.TypeOf((*ComputeRouterPeerTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference",
+		"@cdktn/provider-google.computeRouterPeer.ComputeRouterPeerTimeoutsOutputReference",
 		reflect.TypeOf((*ComputeRouterPeerTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -408,7 +411,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_ComputeRouterPeerTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

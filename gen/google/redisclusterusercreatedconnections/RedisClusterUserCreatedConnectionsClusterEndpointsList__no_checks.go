@@ -12,7 +12,7 @@ func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsList) valid
 	return nil
 }
 
-func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (r *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsList) valid
 	return nil
 }
 
-func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_RedisClusterUserCreatedConnectionsClusterEndpointsList) valid
 	return nil
 }
 
-func validateNewRedisClusterUserCreatedConnectionsClusterEndpointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewRedisClusterUserCreatedConnectionsClusterEndpointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

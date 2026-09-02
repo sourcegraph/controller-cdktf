@@ -12,7 +12,7 @@ func (w *jsiiProxy_WafRegexMatchSetRegexMatchTupleList) validateGetParameters(in
 	return nil
 }
 
-func (w *jsiiProxy_WafRegexMatchSetRegexMatchTupleList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (w *jsiiProxy_WafRegexMatchSetRegexMatchTupleList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -24,7 +24,7 @@ func (j *jsiiProxy_WafRegexMatchSetRegexMatchTupleList) validateSetTerraformAttr
 	return nil
 }
 
-func (j *jsiiProxy_WafRegexMatchSetRegexMatchTupleList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_WafRegexMatchSetRegexMatchTupleList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -32,7 +32,7 @@ func (j *jsiiProxy_WafRegexMatchSetRegexMatchTupleList) validateSetWrapsSetParam
 	return nil
 }
 
-func validateNewWafRegexMatchSetRegexMatchTupleListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewWafRegexMatchSetRegexMatchTupleListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

@@ -40,7 +40,7 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateGetStri
 	return nil
 }
 
-func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validatePutSumm
 	return nil
 }
 
-func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (l *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -80,11 +80,11 @@ func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateSetTerr
 	return nil
 }
 
-func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_LoggingSavedQueryLoggingQueryOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewLoggingSavedQueryLoggingQueryOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewLoggingSavedQueryLoggingQueryOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

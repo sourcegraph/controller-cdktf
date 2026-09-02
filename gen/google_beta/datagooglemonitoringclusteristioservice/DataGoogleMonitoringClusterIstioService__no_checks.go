@@ -52,6 +52,10 @@ func (d *jsiiProxy_DataGoogleMonitoringClusterIstioService) validateOverrideLogi
 	return nil
 }
 
+func (d *jsiiProxy_DataGoogleMonitoringClusterIstioService) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
+	return nil
+}
+
 func validateDataGoogleMonitoringClusterIstioService_GenerateConfigForImportParameters(scope constructs.Construct, importToId *string, importFromId *string) error {
 	return nil
 }
@@ -80,7 +84,7 @@ func (j *jsiiProxy_DataGoogleMonitoringClusterIstioService) validateSetIdParamet
 	return nil
 }
 
-func (j *jsiiProxy_DataGoogleMonitoringClusterIstioService) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_DataGoogleMonitoringClusterIstioService) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

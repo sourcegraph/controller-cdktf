@@ -56,6 +56,10 @@ func (c *jsiiProxy_CodestarconnectionsHost) validateInterpolationForAttributePar
 	return nil
 }
 
+func (c *jsiiProxy_CodestarconnectionsHost) validateMarkWriteOnlyAttributeParameters(value interface{}) error {
+	return nil
+}
+
 func (c *jsiiProxy_CodestarconnectionsHost) validateMoveFromIdParameters(id *string) error {
 	return nil
 }
@@ -77,6 +81,10 @@ func (c *jsiiProxy_CodestarconnectionsHost) validatePutTimeoutsParameters(value 
 }
 
 func (c *jsiiProxy_CodestarconnectionsHost) validatePutVpcConfigurationParameters(value *CodestarconnectionsHostVpcConfiguration) error {
+	return nil
+}
+
+func (c *jsiiProxy_CodestarconnectionsHost) validateRegisterProviderFeatureUsageParameters(feature cdktn.ProviderFeature) error {
 	return nil
 }
 
@@ -108,7 +116,7 @@ func (j *jsiiProxy_CodestarconnectionsHost) validateSetIdParameters(val *string)
 	return nil
 }
 
-func (j *jsiiProxy_CodestarconnectionsHost) validateSetLifecycleParameters(val *cdktf.TerraformResourceLifecycle) error {
+func (j *jsiiProxy_CodestarconnectionsHost) validateSetLifecycleParameters(val *cdktn.TerraformResourceLifecycle) error {
 	return nil
 }
 

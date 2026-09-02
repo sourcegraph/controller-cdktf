@@ -12,7 +12,7 @@ func (g *jsiiProxy_GoogleMemorystoreInstanceDiscoveryEndpointsList) validateGetP
 	return nil
 }
 
-func (g *jsiiProxy_GoogleMemorystoreInstanceDiscoveryEndpointsList) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleMemorystoreInstanceDiscoveryEndpointsList) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -20,7 +20,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDiscoveryEndpointsList) validateSetT
 	return nil
 }
 
-func (j *jsiiProxy_GoogleMemorystoreInstanceDiscoveryEndpointsList) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleMemorystoreInstanceDiscoveryEndpointsList) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -28,7 +28,7 @@ func (j *jsiiProxy_GoogleMemorystoreInstanceDiscoveryEndpointsList) validateSetW
 	return nil
 }
 
-func validateNewGoogleMemorystoreInstanceDiscoveryEndpointsListParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
+func validateNewGoogleMemorystoreInstanceDiscoveryEndpointsListParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, wrapsSet *bool) error {
 	return nil
 }
 

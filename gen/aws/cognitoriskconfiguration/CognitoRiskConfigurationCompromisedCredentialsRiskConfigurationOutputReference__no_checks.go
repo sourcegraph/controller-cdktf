@@ -40,7 +40,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurati
 	return nil
 }
 
-func (c *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (c *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
@@ -48,7 +48,7 @@ func (c *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurati
 	return nil
 }
 
-func (c *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (c *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -72,11 +72,11 @@ func (j *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurati
 	return nil
 }
 
-func (j *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_CognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
-func validateNewCognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewCognitoRiskConfigurationCompromisedCredentialsRiskConfigurationOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 

@@ -8,7 +8,7 @@ import (
 
 func init() {
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesApp",
+		"@cdktn/provider-google.cesApp.CesApp",
 		reflect.TypeOf((*CesApp)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "addMoveTarget", GoMethod: "AddMoveTarget"},
@@ -65,6 +65,7 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "locationInput", GoGetter: "LocationInput"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingSettings", GoGetter: "LoggingSettings"},
 			_jsii_.MemberProperty{JsiiProperty: "loggingSettingsInput", GoGetter: "LoggingSettingsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "markWriteOnlyAttribute", GoMethod: "MarkWriteOnlyAttribute"},
 			_jsii_.MemberProperty{JsiiProperty: "metadata", GoGetter: "Metadata"},
 			_jsii_.MemberProperty{JsiiProperty: "metadataInput", GoGetter: "MetadataInput"},
 			_jsii_.MemberProperty{JsiiProperty: "modelSettings", GoGetter: "ModelSettings"},
@@ -93,6 +94,7 @@ func init() {
 			_jsii_.MemberMethod{JsiiMethod: "putTimeZoneSettings", GoMethod: "PutTimeZoneSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "putVariableDeclarations", GoMethod: "PutVariableDeclarations"},
 			_jsii_.MemberProperty{JsiiProperty: "rawOverrides", GoGetter: "RawOverrides"},
+			_jsii_.MemberMethod{JsiiMethod: "registerProviderFeatureUsage", GoMethod: "RegisterProviderFeatureUsage"},
 			_jsii_.MemberMethod{JsiiMethod: "resetAudioProcessingConfig", GoMethod: "ResetAudioProcessingConfig"},
 			_jsii_.MemberMethod{JsiiMethod: "resetClientCertificateSettings", GoMethod: "ResetClientCertificateSettings"},
 			_jsii_.MemberMethod{JsiiMethod: "resetDataStoreSettings", GoMethod: "ResetDataStoreSettings"},
@@ -131,23 +133,24 @@ func init() {
 			_jsii_.MemberProperty{JsiiProperty: "updateTime", GoGetter: "UpdateTime"},
 			_jsii_.MemberProperty{JsiiProperty: "variableDeclarations", GoGetter: "VariableDeclarations"},
 			_jsii_.MemberProperty{JsiiProperty: "variableDeclarationsInput", GoGetter: "VariableDeclarationsInput"},
+			_jsii_.MemberMethod{JsiiMethod: "with", GoMethod: "With"},
 		},
 		func() interface{} {
 			j := jsiiProxy_CesApp{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfTerraformResource)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnTerraformResource)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfig",
+		"@cdktn/provider-google.cesApp.CesAppAudioProcessingConfig",
 		reflect.TypeOf((*CesAppAudioProcessingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigAmbientSoundConfig",
+		"@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigAmbientSoundConfig",
 		reflect.TypeOf((*CesAppAudioProcessingConfigAmbientSoundConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigAmbientSoundConfigOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigAmbientSoundConfigOutputReference",
 		reflect.TypeOf((*CesAppAudioProcessingConfigAmbientSoundConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -183,16 +186,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppAudioProcessingConfigAmbientSoundConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigBargeInConfig",
+		"@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigBargeInConfig",
 		reflect.TypeOf((*CesAppAudioProcessingConfigBargeInConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigBargeInConfigOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigBargeInConfigOutputReference",
 		reflect.TypeOf((*CesAppAudioProcessingConfigBargeInConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "bargeInAwareness", GoGetter: "BargeInAwareness"},
@@ -222,12 +225,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppAudioProcessingConfigBargeInConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigOutputReference",
 		reflect.TypeOf((*CesAppAudioProcessingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "ambientSoundConfig", GoGetter: "AmbientSoundConfig"},
@@ -269,16 +272,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppAudioProcessingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs",
+		"@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigs",
 		reflect.TypeOf((*CesAppAudioProcessingConfigSynthesizeSpeechConfigs)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsList",
+		"@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsList",
 		reflect.TypeOf((*CesAppAudioProcessingConfigSynthesizeSpeechConfigsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -295,12 +298,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference",
 		reflect.TypeOf((*CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -335,16 +338,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppAudioProcessingConfigSynthesizeSpeechConfigsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppClientCertificateSettings",
+		"@cdktn/provider-google.cesApp.CesAppClientCertificateSettings",
 		reflect.TypeOf((*CesAppClientCertificateSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppClientCertificateSettingsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppClientCertificateSettingsOutputReference",
 		reflect.TypeOf((*CesAppClientCertificateSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -378,24 +381,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppClientCertificateSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppConfig",
+		"@cdktn/provider-google.cesApp.CesAppConfig",
 		reflect.TypeOf((*CesAppConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppDataStoreSettings",
+		"@cdktn/provider-google.cesApp.CesAppDataStoreSettings",
 		reflect.TypeOf((*CesAppDataStoreSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppDataStoreSettingsEngines",
+		"@cdktn/provider-google.cesApp.CesAppDataStoreSettingsEngines",
 		reflect.TypeOf((*CesAppDataStoreSettingsEngines)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppDataStoreSettingsEnginesList",
+		"@cdktn/provider-google.cesApp.CesAppDataStoreSettingsEnginesList",
 		reflect.TypeOf((*CesAppDataStoreSettingsEnginesList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -411,12 +414,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppDataStoreSettingsEnginesList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppDataStoreSettingsEnginesOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppDataStoreSettingsEnginesOutputReference",
 		reflect.TypeOf((*CesAppDataStoreSettingsEnginesOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -445,12 +448,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppDataStoreSettingsEnginesOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppDataStoreSettingsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppDataStoreSettingsOutputReference",
 		reflect.TypeOf((*CesAppDataStoreSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -478,16 +481,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppDataStoreSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfile",
+		"@cdktn/provider-google.cesApp.CesAppDefaultChannelProfile",
 		reflect.TypeOf((*CesAppDefaultChannelProfile)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileOutputReference",
 		reflect.TypeOf((*CesAppDefaultChannelProfileOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "channelType", GoGetter: "ChannelType"},
@@ -534,16 +537,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppDefaultChannelProfileOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfilePersonaProperty",
+		"@cdktn/provider-google.cesApp.CesAppDefaultChannelProfilePersonaProperty",
 		reflect.TypeOf((*CesAppDefaultChannelProfilePersonaProperty)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfilePersonaPropertyOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppDefaultChannelProfilePersonaPropertyOutputReference",
 		reflect.TypeOf((*CesAppDefaultChannelProfilePersonaPropertyOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -573,16 +576,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppDefaultChannelProfilePersonaPropertyOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig",
+		"@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfig",
 		reflect.TypeOf((*CesAppDefaultChannelProfileWebWidgetConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppDefaultChannelProfileWebWidgetConfigOutputReference",
 		reflect.TypeOf((*CesAppDefaultChannelProfileWebWidgetConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -618,24 +621,24 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppDefaultChannelProfileWebWidgetConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholds",
+		"@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholds",
 		reflect.TypeOf((*CesAppEvaluationMetricsThresholds)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds",
+		"@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds",
 		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholds)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds",
+		"@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds",
 		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference",
 		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -665,12 +668,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsExpectationLevelMetricsThresholdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference",
 		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -705,16 +708,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds",
+		"@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds",
 		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholds)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference",
 		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -747,12 +750,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppEvaluationMetricsThresholdsGoldenEvaluationMetricsThresholdsTurnLevelMetricsThresholdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppEvaluationMetricsThresholdsOutputReference",
 		reflect.TypeOf((*CesAppEvaluationMetricsThresholdsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -783,16 +786,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppEvaluationMetricsThresholdsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppLanguageSettings",
+		"@cdktn/provider-google.cesApp.CesAppLanguageSettings",
 		reflect.TypeOf((*CesAppLanguageSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppLanguageSettingsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppLanguageSettingsOutputReference",
 		reflect.TypeOf((*CesAppLanguageSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -831,20 +834,20 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppLanguageSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettings",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettings",
 		reflect.TypeOf((*CesAppLoggingSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfig",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfig",
 		reflect.TypeOf((*CesAppLoggingSettingsAudioRecordingConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfigOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsAudioRecordingConfigOutputReference",
 		reflect.TypeOf((*CesAppLoggingSettingsAudioRecordingConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -877,16 +880,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppLoggingSettingsAudioRecordingConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettings",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettings",
 		reflect.TypeOf((*CesAppLoggingSettingsBigqueryExportSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettingsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsBigqueryExportSettingsOutputReference",
 		reflect.TypeOf((*CesAppLoggingSettingsBigqueryExportSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -922,16 +925,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppLoggingSettingsBigqueryExportSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsCloudLoggingSettings",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsCloudLoggingSettings",
 		reflect.TypeOf((*CesAppLoggingSettingsCloudLoggingSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsCloudLoggingSettingsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsCloudLoggingSettingsOutputReference",
 		reflect.TypeOf((*CesAppLoggingSettingsCloudLoggingSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -961,16 +964,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppLoggingSettingsCloudLoggingSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettings",
 		reflect.TypeOf((*CesAppLoggingSettingsConversationLoggingSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsConversationLoggingSettingsOutputReference",
 		reflect.TypeOf((*CesAppLoggingSettingsConversationLoggingSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1000,12 +1003,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppLoggingSettingsConversationLoggingSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsOutputReference",
 		reflect.TypeOf((*CesAppLoggingSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "audioRecordingConfig", GoGetter: "AudioRecordingConfig"},
@@ -1052,16 +1055,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppLoggingSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsRedactionConfig",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsRedactionConfig",
 		reflect.TypeOf((*CesAppLoggingSettingsRedactionConfig)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppLoggingSettingsRedactionConfigOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppLoggingSettingsRedactionConfigOutputReference",
 		reflect.TypeOf((*CesAppLoggingSettingsRedactionConfigOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1097,16 +1100,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppLoggingSettingsRedactionConfigOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppModelSettings",
+		"@cdktn/provider-google.cesApp.CesAppModelSettings",
 		reflect.TypeOf((*CesAppModelSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppModelSettingsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppModelSettingsOutputReference",
 		reflect.TypeOf((*CesAppModelSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1139,16 +1142,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppModelSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppTimeZoneSettings",
+		"@cdktn/provider-google.cesApp.CesAppTimeZoneSettings",
 		reflect.TypeOf((*CesAppTimeZoneSettings)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppTimeZoneSettingsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppTimeZoneSettingsOutputReference",
 		reflect.TypeOf((*CesAppTimeZoneSettingsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1178,16 +1181,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppTimeZoneSettingsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppTimeouts",
+		"@cdktn/provider-google.cesApp.CesAppTimeouts",
 		reflect.TypeOf((*CesAppTimeouts)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppTimeoutsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppTimeoutsOutputReference",
 		reflect.TypeOf((*CesAppTimeoutsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1223,16 +1226,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppTimeoutsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppVariableDeclarations",
+		"@cdktn/provider-google.cesApp.CesAppVariableDeclarations",
 		reflect.TypeOf((*CesAppVariableDeclarations)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppVariableDeclarationsList",
+		"@cdktn/provider-google.cesApp.CesAppVariableDeclarationsList",
 		reflect.TypeOf((*CesAppVariableDeclarationsList)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberMethod{JsiiMethod: "allWithMapKey", GoMethod: "AllWithMapKey"},
@@ -1249,12 +1252,12 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppVariableDeclarationsList{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexList)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexList)
 			return &j
 		},
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppVariableDeclarationsOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppVariableDeclarationsOutputReference",
 		reflect.TypeOf((*CesAppVariableDeclarationsOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "complexObjectIndex", GoGetter: "ComplexObjectIndex"},
@@ -1288,16 +1291,16 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppVariableDeclarationsOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)
 	_jsii_.RegisterStruct(
-		"@cdktf/provider-google.cesApp.CesAppVariableDeclarationsSchema",
+		"@cdktn/provider-google.cesApp.CesAppVariableDeclarationsSchema",
 		reflect.TypeOf((*CesAppVariableDeclarationsSchema)(nil)).Elem(),
 	)
 	_jsii_.RegisterClass(
-		"@cdktf/provider-google.cesApp.CesAppVariableDeclarationsSchemaOutputReference",
+		"@cdktn/provider-google.cesApp.CesAppVariableDeclarationsSchemaOutputReference",
 		reflect.TypeOf((*CesAppVariableDeclarationsSchemaOutputReference)(nil)).Elem(),
 		[]_jsii_.Member{
 			_jsii_.MemberProperty{JsiiProperty: "additionalProperties", GoGetter: "AdditionalProperties"},
@@ -1368,7 +1371,7 @@ func init() {
 		},
 		func() interface{} {
 			j := jsiiProxy_CesAppVariableDeclarationsSchemaOutputReference{}
-			_jsii_.InitJsiiProxy(&j.Type__cdktfComplexObject)
+			_jsii_.InitJsiiProxy(&j.Type__cdktnComplexObject)
 			return &j
 		},
 	)

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/computeinstancetemplate/internal"
 )
 
 type ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -40,15 +40,15 @@ type ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -64,13 +64,13 @@ type ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetNanos()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -80,7 +80,7 @@ type ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference interface {
 
 // The jsii proxy struct for ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference
 type jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference) ComplexObjectIndex() interface{} {
@@ -183,8 +183,8 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReferenc
 	return returns
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -194,7 +194,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReferenc
 }
 
 
-func NewComputeInstanceTemplateSchedulingMaxRunDurationOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference {
+func NewComputeInstanceTemplateSchedulingMaxRunDurationOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewComputeInstanceTemplateSchedulingMaxRunDurationOutputReferenceParameters(terraformResource, terraformAttribute); err != nil {
@@ -203,7 +203,7 @@ func NewComputeInstanceTemplateSchedulingMaxRunDurationOutputReference(terraform
 	j := jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference",
+		"@cdktn/provider-google.computeInstanceTemplate.ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		&j,
 	)
@@ -211,11 +211,11 @@ func NewComputeInstanceTemplateSchedulingMaxRunDurationOutputReference(terraform
 	return &j
 }
 
-func NewComputeInstanceTemplateSchedulingMaxRunDurationOutputReference_Override(c ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) {
+func NewComputeInstanceTemplateSchedulingMaxRunDurationOutputReference_Override(c ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.computeInstanceTemplate.ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference",
+		"@cdktn/provider-google.computeInstanceTemplate.ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference",
 		[]interface{}{terraformResource, terraformAttribute},
 		c,
 	)
@@ -287,7 +287,7 @@ func (j *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReferenc
 	)
 }
 
-func (j *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -327,11 +327,11 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := c.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -455,8 +455,8 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
@@ -468,16 +468,16 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReferenc
 	return returns
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := c.validateInterpolationForAttributeParameters(property); err != nil {
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := c.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		c,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -492,8 +492,8 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReferenc
 	)
 }
 
-func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := c.validateResolveParameters(_context); err != nil {
+func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := c.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -501,7 +501,7 @@ func (c *jsiiProxy_ComputeInstanceTemplateSchedulingMaxRunDurationOutputReferenc
 	_jsii_.Invoke(
 		c,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

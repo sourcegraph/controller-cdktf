@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google_beta/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google_beta/datagoogleprojectiamcustomroles/internal"
 )
 
 type DataGoogleProjectIamCustomRolesRolesOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -25,7 +25,7 @@ type DataGoogleProjectIamCustomRolesRolesOutputReference interface {
 	// If this returns an empty array the stack will not be attached.
 	// Experimental.
 	CreationStack() *[]*string
-	Deleted() cdktf.IResolvable
+	Deleted() cdktn.IResolvable
 	Description() *string
 	// Experimental.
 	Fqn() *string
@@ -41,16 +41,16 @@ type DataGoogleProjectIamCustomRolesRolesOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	Title() *string
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -66,12 +66,12 @@ type DataGoogleProjectIamCustomRolesRolesOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -81,7 +81,7 @@ type DataGoogleProjectIamCustomRolesRolesOutputReference interface {
 
 // The jsii proxy struct for DataGoogleProjectIamCustomRolesRolesOutputReference
 type jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) ComplexObjectIndex() interface{} {
@@ -114,8 +114,8 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) Creation
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) Deleted() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) Deleted() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 	_jsii_.Get(
 		j,
 		"deleted",
@@ -214,8 +214,8 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) Terrafor
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -235,7 +235,7 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) Title() 
 }
 
 
-func NewDataGoogleProjectIamCustomRolesRolesOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleProjectIamCustomRolesRolesOutputReference {
+func NewDataGoogleProjectIamCustomRolesRolesOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleProjectIamCustomRolesRolesOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleProjectIamCustomRolesRolesOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -244,7 +244,7 @@ func NewDataGoogleProjectIamCustomRolesRolesOutputReference(terraformResource cd
 	j := jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesRolesOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesRolesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -252,11 +252,11 @@ func NewDataGoogleProjectIamCustomRolesRolesOutputReference(terraformResource cd
 	return &j
 }
 
-func NewDataGoogleProjectIamCustomRolesRolesOutputReference_Override(d DataGoogleProjectIamCustomRolesRolesOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleProjectIamCustomRolesRolesOutputReference_Override(d DataGoogleProjectIamCustomRolesRolesOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google-beta.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesRolesOutputReference",
+		"@cdktn/provider-google-beta.dataGoogleProjectIamCustomRoles.DataGoogleProjectIamCustomRolesRolesOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -306,7 +306,7 @@ func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference)SetTerraf
 	)
 }
 
-func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -346,11 +346,11 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) GetAnyMa
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -474,8 +474,8 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) GetStrin
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -487,24 +487,24 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) Interpol
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -512,7 +512,7 @@ func (d *jsiiProxy_DataGoogleProjectIamCustomRolesRolesOutputReference) Resolve(
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/aws/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/aws/lb/internal"
 )
 
 type LbSubnetMappingOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	AllocationId() *string
 	SetAllocationId(val *string)
 	AllocationIdInput() *string
@@ -47,15 +47,15 @@ type LbSubnetMappingOutputReference interface {
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -71,15 +71,15 @@ type LbSubnetMappingOutputReference interface {
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	ResetAllocationId()
 	ResetIpv6Address()
 	ResetPrivateIpv4Address()
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -89,7 +89,7 @@ type LbSubnetMappingOutputReference interface {
 
 // The jsii proxy struct for LbSubnetMappingOutputReference
 type jsiiProxy_LbSubnetMappingOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_LbSubnetMappingOutputReference) AllocationId() *string {
@@ -242,8 +242,8 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference) TerraformAttribute() *string 
 	return returns
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_LbSubnetMappingOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -253,7 +253,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference) TerraformResource() cdktf.IIn
 }
 
 
-func NewLbSubnetMappingOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LbSubnetMappingOutputReference {
+func NewLbSubnetMappingOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) LbSubnetMappingOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewLbSubnetMappingOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -262,7 +262,7 @@ func NewLbSubnetMappingOutputReference(terraformResource cdktf.IInterpolatingPar
 	j := jsiiProxy_LbSubnetMappingOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lb.LbSubnetMappingOutputReference",
+		"@cdktn/provider-aws.lb.LbSubnetMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -270,11 +270,11 @@ func NewLbSubnetMappingOutputReference(terraformResource cdktf.IInterpolatingPar
 	return &j
 }
 
-func NewLbSubnetMappingOutputReference_Override(l LbSubnetMappingOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewLbSubnetMappingOutputReference_Override(l LbSubnetMappingOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-aws.lb.LbSubnetMappingOutputReference",
+		"@cdktn/provider-aws.lb.LbSubnetMappingOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		l,
 	)
@@ -368,7 +368,7 @@ func (j *jsiiProxy_LbSubnetMappingOutputReference)SetTerraformAttribute(val *str
 	)
 }
 
-func (j *jsiiProxy_LbSubnetMappingOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_LbSubnetMappingOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -408,11 +408,11 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) GetAnyMapAttribute(terraformA
 	return returns
 }
 
-func (l *jsiiProxy_LbSubnetMappingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (l *jsiiProxy_LbSubnetMappingOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := l.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -536,8 +536,8 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) GetStringMapAttribute(terrafo
 	return returns
 }
 
-func (l *jsiiProxy_LbSubnetMappingOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (l *jsiiProxy_LbSubnetMappingOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
@@ -549,16 +549,16 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) InterpolationAsList() cdktf.I
 	return returns
 }
 
-func (l *jsiiProxy_LbSubnetMappingOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := l.validateInterpolationForAttributeParameters(property); err != nil {
+func (l *jsiiProxy_LbSubnetMappingOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := l.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		l,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
@@ -589,8 +589,8 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) ResetPrivateIpv4Address() {
 	)
 }
 
-func (l *jsiiProxy_LbSubnetMappingOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := l.validateResolveParameters(_context); err != nil {
+func (l *jsiiProxy_LbSubnetMappingOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := l.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -598,7 +598,7 @@ func (l *jsiiProxy_LbSubnetMappingOutputReference) Resolve(_context cdktf.IResol
 	_jsii_.Invoke(
 		l,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

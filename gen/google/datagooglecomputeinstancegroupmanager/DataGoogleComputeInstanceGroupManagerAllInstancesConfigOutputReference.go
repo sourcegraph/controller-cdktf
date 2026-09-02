@@ -4,12 +4,12 @@ import (
 	_jsii_ "github.com/aws/jsii-runtime-go/runtime"
 	_init_ "github.com/sourcegraph/controller-cdktf/gen/google/jsii"
 
-	"github.com/hashicorp/terraform-cdk-go/cdktf"
+	"github.com/open-constructs/cdk-terrain-go/cdktn"
 	"github.com/sourcegraph/controller-cdktf/gen/google/datagooglecomputeinstancegroupmanager/internal"
 )
 
 type DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference interface {
-	cdktf.ComplexObject
+	cdktn.ComplexObject
 	// the index of the complex object in a list.
 	// Experimental.
 	ComplexObjectIndex() interface{}
@@ -29,22 +29,22 @@ type DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference inte
 	Fqn() *string
 	InternalValue() *DataGoogleComputeInstanceGroupManagerAllInstancesConfig
 	SetInternalValue(val *DataGoogleComputeInstanceGroupManagerAllInstancesConfig)
-	Labels() cdktf.StringMap
-	Metadata() cdktf.StringMap
+	Labels() cdktn.StringMap
+	Metadata() cdktn.StringMap
 	// Experimental.
 	TerraformAttribute() *string
 	// Experimental.
 	SetTerraformAttribute(val *string)
 	// Experimental.
-	TerraformResource() cdktf.IInterpolatingParent
+	TerraformResource() cdktn.IInterpolatingParent
 	// Experimental.
-	SetTerraformResource(val cdktf.IInterpolatingParent)
+	SetTerraformResource(val cdktn.IInterpolatingParent)
 	// Experimental.
 	ComputeFqn() *string
 	// Experimental.
 	GetAnyMapAttribute(terraformAttribute *string) *map[string]interface{}
 	// Experimental.
-	GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable
+	GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Experimental.
 	GetBooleanMapAttribute(terraformAttribute *string) *map[string]*bool
 	// Experimental.
@@ -60,12 +60,12 @@ type DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference inte
 	// Experimental.
 	GetStringMapAttribute(terraformAttribute *string) *map[string]*string
 	// Experimental.
-	InterpolationAsList() cdktf.IResolvable
+	InterpolationAsList() cdktn.IResolvable
 	// Experimental.
-	InterpolationForAttribute(property *string) cdktf.IResolvable
+	InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable
 	// Produce the Token's value at resolution time.
 	// Experimental.
-	Resolve(_context cdktf.IResolveContext) interface{}
+	Resolve(context cdktn.IResolveContext) interface{}
 	// Return a string representation of this resolvable object.
 	//
 	// Returns a reversible string representation.
@@ -75,7 +75,7 @@ type DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference inte
 
 // The jsii proxy struct for DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference
 type jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference struct {
-	internal.Type__cdktfComplexObject
+	internal.Type__cdktnComplexObject
 }
 
 func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) ComplexObjectIndex() interface{} {
@@ -128,8 +128,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) Labels() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) Labels() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"labels",
@@ -138,8 +138,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) Metadata() cdktf.StringMap {
-	var returns cdktf.StringMap
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) Metadata() cdktn.StringMap {
+	var returns cdktn.StringMap
 	_jsii_.Get(
 		j,
 		"metadata",
@@ -158,8 +158,8 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutput
 	return returns
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) TerraformResource() cdktf.IInterpolatingParent {
-	var returns cdktf.IInterpolatingParent
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) TerraformResource() cdktn.IInterpolatingParent {
+	var returns cdktn.IInterpolatingParent
 	_jsii_.Get(
 		j,
 		"terraformResource",
@@ -169,7 +169,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutput
 }
 
 
-func NewDataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference {
+func NewDataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference {
 	_init_.Initialize()
 
 	if err := validateNewDataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReferenceParameters(terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet); err != nil {
@@ -178,7 +178,7 @@ func NewDataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference(t
 	j := jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference{}
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference",
+		"@cdktn/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		&j,
 	)
@@ -186,11 +186,11 @@ func NewDataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference(t
 	return &j
 }
 
-func NewDataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference_Override(d DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference, terraformResource cdktf.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
+func NewDataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference_Override(d DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference, terraformResource cdktn.IInterpolatingParent, terraformAttribute *string, complexObjectIndex *float64, complexObjectIsFromSet *bool) {
 	_init_.Initialize()
 
 	_jsii_.Create(
-		"@cdktf/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference",
+		"@cdktn/provider-google.dataGoogleComputeInstanceGroupManager.DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference",
 		[]interface{}{terraformResource, terraformAttribute, complexObjectIndex, complexObjectIsFromSet},
 		d,
 	)
@@ -240,7 +240,7 @@ func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutput
 	)
 }
 
-func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference)SetTerraformResource(val cdktf.IInterpolatingParent) {
+func (j *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference)SetTerraformResource(val cdktn.IInterpolatingParent) {
 	if err := j.validateSetTerraformResourceParameters(val); err != nil {
 		panic(err)
 	}
@@ -280,11 +280,11 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutput
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktf.IResolvable {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) GetBooleanAttribute(terraformAttribute *string) cdktn.IResolvable {
 	if err := d.validateGetBooleanAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -408,8 +408,8 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutput
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) InterpolationAsList() cdktf.IResolvable {
-	var returns cdktf.IResolvable
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) InterpolationAsList() cdktn.IResolvable {
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
@@ -421,24 +421,24 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutput
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) InterpolationForAttribute(property *string) cdktf.IResolvable {
-	if err := d.validateInterpolationForAttributeParameters(property); err != nil {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) InterpolationForAttribute(terraformAttribute *string) cdktn.IResolvable {
+	if err := d.validateInterpolationForAttributeParameters(terraformAttribute); err != nil {
 		panic(err)
 	}
-	var returns cdktf.IResolvable
+	var returns cdktn.IResolvable
 
 	_jsii_.Invoke(
 		d,
 		"interpolationForAttribute",
-		[]interface{}{property},
+		[]interface{}{terraformAttribute},
 		&returns,
 	)
 
 	return returns
 }
 
-func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) Resolve(_context cdktf.IResolveContext) interface{} {
-	if err := d.validateResolveParameters(_context); err != nil {
+func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutputReference) Resolve(context cdktn.IResolveContext) interface{} {
+	if err := d.validateResolveParameters(context); err != nil {
 		panic(err)
 	}
 	var returns interface{}
@@ -446,7 +446,7 @@ func (d *jsiiProxy_DataGoogleComputeInstanceGroupManagerAllInstancesConfigOutput
 	_jsii_.Invoke(
 		d,
 		"resolve",
-		[]interface{}{_context},
+		[]interface{}{context},
 		&returns,
 	)
 

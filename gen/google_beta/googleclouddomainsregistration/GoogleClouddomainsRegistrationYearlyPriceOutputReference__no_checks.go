@@ -40,11 +40,11 @@ func (g *jsiiProxy_GoogleClouddomainsRegistrationYearlyPriceOutputReference) val
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddomainsRegistrationYearlyPriceOutputReference) validateInterpolationForAttributeParameters(property *string) error {
+func (g *jsiiProxy_GoogleClouddomainsRegistrationYearlyPriceOutputReference) validateInterpolationForAttributeParameters(terraformAttribute *string) error {
 	return nil
 }
 
-func (g *jsiiProxy_GoogleClouddomainsRegistrationYearlyPriceOutputReference) validateResolveParameters(_context cdktf.IResolveContext) error {
+func (g *jsiiProxy_GoogleClouddomainsRegistrationYearlyPriceOutputReference) validateResolveParameters(context cdktn.IResolveContext) error {
 	return nil
 }
 
@@ -68,7 +68,7 @@ func (j *jsiiProxy_GoogleClouddomainsRegistrationYearlyPriceOutputReference) val
 	return nil
 }
 
-func (j *jsiiProxy_GoogleClouddomainsRegistrationYearlyPriceOutputReference) validateSetTerraformResourceParameters(val cdktf.IInterpolatingParent) error {
+func (j *jsiiProxy_GoogleClouddomainsRegistrationYearlyPriceOutputReference) validateSetTerraformResourceParameters(val cdktn.IInterpolatingParent) error {
 	return nil
 }
 
@@ -76,7 +76,7 @@ func (j *jsiiProxy_GoogleClouddomainsRegistrationYearlyPriceOutputReference) val
 	return nil
 }
 
-func validateNewGoogleClouddomainsRegistrationYearlyPriceOutputReferenceParameters(terraformResource cdktf.IInterpolatingParent, terraformAttribute *string) error {
+func validateNewGoogleClouddomainsRegistrationYearlyPriceOutputReferenceParameters(terraformResource cdktn.IInterpolatingParent, terraformAttribute *string) error {
 	return nil
 }
 
